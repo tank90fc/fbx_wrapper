@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3EE118B8-61CC-46B6-9431-0EF0FE9BB512}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FbxWrapper</RootNamespace>
+    <AssemblyName>FbxWrapper</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\build\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0108</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FbxAnimCurveBase.cs" />
+    <Compile Include="FbxAnimCurveKeyBase.cs" />
+    <Compile Include="FbxAnimCurveNode.cs" />
+    <Compile Include="FbxAnimLayer.cs" />
+    <Compile Include="FbxAnimStack.cs" />
+    <Compile Include="FbxAxisSystem.cs" />
+    <Compile Include="FbxCollection.cs" />
+    <Compile Include="FbxConnectEvent.cs" />
+    <Compile Include="FbxDocument.cs" />
+    <Compile Include="FbxDocumentInfo.cs" />
+    <Compile Include="FbxDouble2.cs" />
+    <Compile Include="FbxDouble3.cs" />
+    <Compile Include="FbxDouble4.cs" />
+    <Compile Include="FbxDouble4x4.cs" />
+    <Compile Include="FbxEmitter.cs" />
+    <Compile Include="FbxEventBase.cs" />
+    <Compile Include="FbxIOInfo.cs" />
+    <Compile Include="FbxIOSettings.cs" />
+    <Compile Include="FbxIteratorDstBase.cs" />
+    <Compile Include="FbxIteratorSrcBase.cs" />
+    <Compile Include="FbxManager.cs" />
+    <Compile Include="FbxNode.cs" />
+    <Compile Include="FbxObject.cs" />
+    <Compile Include="FbxObjectPropertyChanged.cs" />
+    <Compile Include="FbxObjectPropertyChangedBase.cs" />
+    <Compile Include="FbxProperty.cs" />
+    <Compile Include="FbxScene.cs" />
+    <Compile Include="FbxVector2.cs" />
+    <Compile Include="FbxVector4.cs" />
+    <Compile Include="fbx_wrapper.cs" />
+    <Compile Include="fbx_wrapperPINVOKE.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SWIGTYPE_p_bool.cs" />
+    <Compile Include="SWIGTYPE_p_double.cs" />
+    <Compile Include="SWIGTYPE_p_EFbxQuatInterpMode.cs" />
+    <Compile Include="SWIGTYPE_p_EFbxRotationOrder.cs" />
+    <Compile Include="SWIGTYPE_p_EFbxType.cs" />
+    <Compile Include="SWIGTYPE_p_FbxAMatrix.cs" />
+    <Compile Include="SWIGTYPE_p_FbxAnimCurve.cs" />
+    <Compile Include="SWIGTYPE_p_FbxAnimEvaluator.cs" />
+    <Compile Include="SWIGTYPE_p_FbxArrayT_FbxAnimCurve_p_t.cs" />
+    <Compile Include="SWIGTYPE_p_FbxArrayT_FbxDocument_p_t.cs" />
+    <Compile Include="SWIGTYPE_p_FbxArrayT_FbxObject_p_t.cs" />
+    <Compile Include="SWIGTYPE_p_FbxArrayT_FbxPlugin_const_p_t.cs" />
+    <Compile Include="SWIGTYPE_p_FbxArrayT_FbxPose_p_t.cs" />
+    <Compile Include="SWIGTYPE_p_FbxArrayT_FbxString_p_t.cs" />
+    <Compile Include="SWIGTYPE_p_FbxArrayT_FbxSurfaceMaterial_p_t.cs" />
+    <Compile Include="SWIGTYPE_p_FbxArrayT_FbxTexture_p_t.cs" />
+    <Compile Include="SWIGTYPE_p_FbxCachedEffect.cs" />
+    <Compile Include="SWIGTYPE_p_FbxCamera.cs" />
+    <Compile Include="SWIGTYPE_p_FbxCameraStereo.cs" />
+    <Compile Include="SWIGTYPE_p_FbxCameraSwitcher.cs" />
+    <Compile Include="SWIGTYPE_p_FbxCharacter.cs" />
+    <Compile Include="SWIGTYPE_p_FbxCharacterPose.cs" />
+    <Compile Include="SWIGTYPE_p_FbxClassId.cs" />
+    <Compile Include="SWIGTYPE_p_FbxConnection__EType.cs" />
+    <Compile Include="SWIGTYPE_p_FbxControlSetPlug.cs" />
+    <Compile Include="SWIGTYPE_p_FbxCriteria.cs" />
+    <Compile Include="SWIGTYPE_p_FbxDataType.cs" />
+    <Compile Include="SWIGTYPE_p_FbxEventHandler.cs" />
+    <Compile Include="SWIGTYPE_p_FbxGenericNode.cs" />
+    <Compile Include="SWIGTYPE_p_FbxGeometry.cs" />
+    <Compile Include="SWIGTYPE_p_FbxGlobalCameraSettings.cs" />
+    <Compile Include="SWIGTYPE_p_FbxGlobalLightSettings.cs" />
+    <Compile Include="SWIGTYPE_p_FbxGlobalSettings.cs" />
+    <Compile Include="SWIGTYPE_p_FbxImplementation.cs" />
+    <Compile Include="SWIGTYPE_p_FbxImplementationFilter.cs" />
+    <Compile Include="SWIGTYPE_p_FbxIO.cs" />
+    <Compile Include="SWIGTYPE_p_FbxIOPluginRegistry.cs" />
+    <Compile Include="SWIGTYPE_p_FbxIOPropInfo.cs" />
+    <Compile Include="SWIGTYPE_p_FbxLibrary.cs" />
+    <Compile Include="SWIGTYPE_p_FbxLight.cs" />
+    <Compile Include="SWIGTYPE_p_FbxLimits.cs" />
+    <Compile Include="SWIGTYPE_p_FbxLine.cs" />
+    <Compile Include="SWIGTYPE_p_FbxLocalizationManager.cs" />
+    <Compile Include="SWIGTYPE_p_FbxLODGroup.cs" />
+    <Compile Include="SWIGTYPE_p_FbxMarker.cs" />
+    <Compile Include="SWIGTYPE_p_FbxMesh.cs" />
+    <Compile Include="SWIGTYPE_p_FbxMessage.cs" />
+    <Compile Include="SWIGTYPE_p_FbxMessageEmitter.cs" />
+    <Compile Include="SWIGTYPE_p_FbxMultiMap.cs" />
+    <Compile Include="SWIGTYPE_p_FbxNodeAttribute.cs" />
+    <Compile Include="SWIGTYPE_p_FbxNodeAttribute__EType.cs" />
+    <Compile Include="SWIGTYPE_p_FbxNode__EPivotState.cs" />
+    <Compile Include="SWIGTYPE_p_FbxNull.cs" />
+    <Compile Include="SWIGTYPE_p_FbxNurbs.cs" />
+    <Compile Include="SWIGTYPE_p_FbxNurbsCurve.cs" />
+    <Compile Include="SWIGTYPE_p_FbxNurbsSurface.cs" />
+    <Compile Include="SWIGTYPE_p_FbxOpticalReference.cs" />
+    <Compile Include="SWIGTYPE_p_FbxPatch.cs" />
+    <Compile Include="SWIGTYPE_p_FbxPeripheral.cs" />
+    <Compile Include="SWIGTYPE_p_FbxPlugin.cs" />
+    <Compile Include="SWIGTYPE_p_FbxPose.cs" />
+    <Compile Include="SWIGTYPE_p_FbxPropertyFlags__EFlags.cs" />
+    <Compile Include="SWIGTYPE_p_FbxPropertyFlags__EInheritType.cs" />
+    <Compile Include="SWIGTYPE_p_FbxPropertyHandle.cs" />
+    <Compile Include="SWIGTYPE_p_FbxPropertyTT_bool_t.cs" />
+    <Compile Include="SWIGTYPE_p_FbxPropertyTT_double_t.cs" />
+    <Compile Include="SWIGTYPE_p_FbxPropertyTT_EFbxQuatInterpMode_t.cs" />
+    <Compile Include="SWIGTYPE_p_FbxPropertyTT_EFbxRotationOrder_t.cs" />
+    <Compile Include="SWIGTYPE_p_FbxPropertyTT_FbxDateTime_t.cs" />
+    <Compile Include="SWIGTYPE_p_FbxPropertyTT_FbxObject_p_t.cs" />
+    <Compile Include="SWIGTYPE_p_FbxPropertyTT_FbxString_t.cs" />
+    <Compile Include="SWIGTYPE_p_FbxPropertyTT_FbxTime_t.cs" />
+    <Compile Include="SWIGTYPE_p_FbxPropertyTT_FbxTransform__EInheritType_t.cs" />
+    <Compile Include="SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t.cs" />
+    <Compile Include="SWIGTYPE_p_FbxPropertyTT_int_t.cs" />
+    <Compile Include="SWIGTYPE_p_FbxPropertyValue.cs" />
+    <Compile Include="SWIGTYPE_p_FbxQuaternion.cs" />
+    <Compile Include="SWIGTYPE_p_FbxSceneReference.cs" />
+    <Compile Include="SWIGTYPE_p_FbxSkeleton.cs" />
+    <Compile Include="SWIGTYPE_p_FbxStatus.cs" />
+    <Compile Include="SWIGTYPE_p_FbxStream.cs" />
+    <Compile Include="SWIGTYPE_p_FbxString.cs" />
+    <Compile Include="SWIGTYPE_p_FbxStringList.cs" />
+    <Compile Include="SWIGTYPE_p_FbxSubDiv.cs" />
+    <Compile Include="SWIGTYPE_p_FbxSurfaceMaterial.cs" />
+    <Compile Include="SWIGTYPE_p_FbxTakeInfo.cs" />
+    <Compile Include="SWIGTYPE_p_FbxTexture.cs" />
+    <Compile Include="SWIGTYPE_p_FbxThumbnail.cs" />
+    <Compile Include="SWIGTYPE_p_FbxTime.cs" />
+    <Compile Include="SWIGTYPE_p_FbxTimeSpan.cs" />
+    <Compile Include="SWIGTYPE_p_FbxTime__EMode.cs" />
+    <Compile Include="SWIGTYPE_p_FbxTransform.cs" />
+    <Compile Include="SWIGTYPE_p_FbxTransform__EInheritType.cs" />
+    <Compile Include="SWIGTYPE_p_FbxTrimNurbsSurface.cs" />
+    <Compile Include="SWIGTYPE_p_FbxUserNotification.cs" />
+    <Compile Include="SWIGTYPE_p_FbxVectorTemplate3T_FbxVectorTemplate4T_FbxDouble_t_t.cs" />
+    <Compile Include="SWIGTYPE_p_FbxVideo.cs" />
+    <Compile Include="SWIGTYPE_p_FbxXRefManager.cs" />
+    <Compile Include="SWIGTYPE_p_int.cs" />
+    <Compile Include="SWIGTYPE_p_KFCurveNode.cs" />
+    <Compile Include="SWIGTYPE_p_p_FbxCharacter.cs" />
+    <Compile Include="SWIGTYPE_p_p_FbxVectorTemplate2T_double_t.cs" />
+    <Compile Include="SWIGTYPE_p_p_FbxVectorTemplate3T_double_t.cs" />
+    <Compile Include="SWIGTYPE_p_p_FbxVectorTemplate3T_FbxVectorTemplate4T_FbxDouble_t_t.cs" />
+    <Compile Include="SWIGTYPE_p_signed___int64.cs" />
+    <Compile Include="SWIGTYPE_p_unsigned___int64.cs" />
+    <Compile Include="SWIGTYPE_p_void.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
