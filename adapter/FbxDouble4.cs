@@ -100,6 +100,10 @@ public class FbxDouble4 : global::System.IDisposable {
     } 
   }
 
+  public void setDataValue(int pIndex, double dValue) {
+    fbx_wrapperPINVOKE.FbxDouble4_setDataValue(swigCPtr, pIndex, dValue);
+  }
+
 }
 
 }

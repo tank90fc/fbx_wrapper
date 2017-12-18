@@ -251,19 +251,19 @@ public class FbxIOSettings : FbxObject {
     fbx_wrapperPINVOKE.FbxIOSettings_SetIntProp(swigCPtr, pName, pValue);
   }
 
-  public SWIGTYPE_p_FbxTime GetTimeProp(string pName, SWIGTYPE_p_FbxTime pDefValue) {
-    SWIGTYPE_p_FbxTime ret = new SWIGTYPE_p_FbxTime(fbx_wrapperPINVOKE.FbxIOSettings_GetTimeProp(swigCPtr, pName, SWIGTYPE_p_FbxTime.getCPtr(pDefValue)), true);
+  public FbxTime GetTimeProp(string pName, FbxTime pDefValue) {
+    FbxTime ret = new FbxTime(fbx_wrapperPINVOKE.FbxIOSettings_GetTimeProp(swigCPtr, pName, FbxTime.getCPtr(pDefValue)), true);
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public void SetTimeProp(string pName, SWIGTYPE_p_FbxTime pValue) {
-    fbx_wrapperPINVOKE.FbxIOSettings_SetTimeProp(swigCPtr, pName, SWIGTYPE_p_FbxTime.getCPtr(pValue));
+  public void SetTimeProp(string pName, FbxTime pValue) {
+    fbx_wrapperPINVOKE.FbxIOSettings_SetTimeProp(swigCPtr, pName, FbxTime.getCPtr(pValue));
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public SWIGTYPE_p_FbxString GetEnumProp(string pName, SWIGTYPE_p_FbxString pDefValue) {
-    SWIGTYPE_p_FbxString ret = new SWIGTYPE_p_FbxString(fbx_wrapperPINVOKE.FbxIOSettings_GetEnumProp__SWIG_0(swigCPtr, pName, SWIGTYPE_p_FbxString.getCPtr(pDefValue)), true);
+  public FbxString GetEnumProp(string pName, FbxString pDefValue) {
+    FbxString ret = new FbxString(fbx_wrapperPINVOKE.FbxIOSettings_GetEnumProp__SWIG_0(swigCPtr, pName, FbxString.getCPtr(pDefValue)), true);
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
@@ -273,14 +273,14 @@ public class FbxIOSettings : FbxObject {
     return ret;
   }
 
-  public int GetEnumIndex(string pName, SWIGTYPE_p_FbxString pValue) {
-    int ret = fbx_wrapperPINVOKE.FbxIOSettings_GetEnumIndex__SWIG_0(swigCPtr, pName, SWIGTYPE_p_FbxString.getCPtr(pValue));
+  public int GetEnumIndex(string pName, FbxString pValue) {
+    int ret = fbx_wrapperPINVOKE.FbxIOSettings_GetEnumIndex__SWIG_0(swigCPtr, pName, FbxString.getCPtr(pValue));
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public void SetEnumProp(string pName, SWIGTYPE_p_FbxString pValue) {
-    fbx_wrapperPINVOKE.FbxIOSettings_SetEnumProp__SWIG_0(swigCPtr, pName, SWIGTYPE_p_FbxString.getCPtr(pValue));
+  public void SetEnumProp(string pName, FbxString pValue) {
+    fbx_wrapperPINVOKE.FbxIOSettings_SetEnumProp__SWIG_0(swigCPtr, pName, FbxString.getCPtr(pValue));
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
   }
 
@@ -288,8 +288,8 @@ public class FbxIOSettings : FbxObject {
     fbx_wrapperPINVOKE.FbxIOSettings_SetEnumProp__SWIG_1(swigCPtr, pName, pValue);
   }
 
-  public void RemoveEnumPropValue(string pName, SWIGTYPE_p_FbxString pValue) {
-    fbx_wrapperPINVOKE.FbxIOSettings_RemoveEnumPropValue(swigCPtr, pName, SWIGTYPE_p_FbxString.getCPtr(pValue));
+  public void RemoveEnumPropValue(string pName, FbxString pValue) {
+    fbx_wrapperPINVOKE.FbxIOSettings_RemoveEnumPropValue(swigCPtr, pName, FbxString.getCPtr(pValue));
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
   }
 
@@ -297,20 +297,20 @@ public class FbxIOSettings : FbxObject {
     fbx_wrapperPINVOKE.FbxIOSettings_EmptyEnumProp(swigCPtr, pName);
   }
 
-  public bool IsEnumExist(FbxProperty pProp, SWIGTYPE_p_FbxString enumString) {
-    bool ret = fbx_wrapperPINVOKE.FbxIOSettings_IsEnumExist(swigCPtr, FbxProperty.getCPtr(pProp), SWIGTYPE_p_FbxString.getCPtr(enumString));
+  public bool IsEnumExist(FbxProperty pProp, FbxString enumString) {
+    bool ret = fbx_wrapperPINVOKE.FbxIOSettings_IsEnumExist(swigCPtr, FbxProperty.getCPtr(pProp), FbxString.getCPtr(enumString));
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public int GetEnumIndex(FbxProperty pProp, SWIGTYPE_p_FbxString enumString, bool pNoCase) {
-    int ret = fbx_wrapperPINVOKE.FbxIOSettings_GetEnumIndex__SWIG_1(swigCPtr, FbxProperty.getCPtr(pProp), SWIGTYPE_p_FbxString.getCPtr(enumString), pNoCase);
+  public int GetEnumIndex(FbxProperty pProp, FbxString enumString, bool pNoCase) {
+    int ret = fbx_wrapperPINVOKE.FbxIOSettings_GetEnumIndex__SWIG_1(swigCPtr, FbxProperty.getCPtr(pProp), FbxString.getCPtr(enumString), pNoCase);
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public int GetEnumIndex(FbxProperty pProp, SWIGTYPE_p_FbxString enumString) {
-    int ret = fbx_wrapperPINVOKE.FbxIOSettings_GetEnumIndex__SWIG_2(swigCPtr, FbxProperty.getCPtr(pProp), SWIGTYPE_p_FbxString.getCPtr(enumString));
+  public int GetEnumIndex(FbxProperty pProp, FbxString enumString) {
+    int ret = fbx_wrapperPINVOKE.FbxIOSettings_GetEnumIndex__SWIG_2(swigCPtr, FbxProperty.getCPtr(pProp), FbxString.getCPtr(enumString));
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
@@ -321,31 +321,31 @@ public class FbxIOSettings : FbxObject {
     return ret;
   }
 
-  public SWIGTYPE_p_FbxString GetStringProp(string pName, SWIGTYPE_p_FbxString pDefValue) {
-    SWIGTYPE_p_FbxString ret = new SWIGTYPE_p_FbxString(fbx_wrapperPINVOKE.FbxIOSettings_GetStringProp(swigCPtr, pName, SWIGTYPE_p_FbxString.getCPtr(pDefValue)), true);
+  public FbxString GetStringProp(string pName, FbxString pDefValue) {
+    FbxString ret = new FbxString(fbx_wrapperPINVOKE.FbxIOSettings_GetStringProp(swigCPtr, pName, FbxString.getCPtr(pDefValue)), true);
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public void SetStringProp(string pName, SWIGTYPE_p_FbxString pValue) {
-    fbx_wrapperPINVOKE.FbxIOSettings_SetStringProp(swigCPtr, pName, SWIGTYPE_p_FbxString.getCPtr(pValue));
+  public void SetStringProp(string pName, FbxString pValue) {
+    fbx_wrapperPINVOKE.FbxIOSettings_SetStringProp(swigCPtr, pName, FbxString.getCPtr(pValue));
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public virtual bool ReadXMLFile(SWIGTYPE_p_FbxString path) {
-    bool ret = fbx_wrapperPINVOKE.FbxIOSettings_ReadXMLFile(swigCPtr, SWIGTYPE_p_FbxString.getCPtr(path));
-    if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
-    return ret;
-  }
-
-  public virtual bool WriteXMLFile(SWIGTYPE_p_FbxString path) {
-    bool ret = fbx_wrapperPINVOKE.FbxIOSettings_WriteXMLFile(swigCPtr, SWIGTYPE_p_FbxString.getCPtr(path));
+  public virtual bool ReadXMLFile(FbxString path) {
+    bool ret = fbx_wrapperPINVOKE.FbxIOSettings_ReadXMLFile(swigCPtr, FbxString.getCPtr(path));
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public bool WriteXmlPropToFile(SWIGTYPE_p_FbxString pFullPath, SWIGTYPE_p_FbxString propPath) {
-    bool ret = fbx_wrapperPINVOKE.FbxIOSettings_WriteXmlPropToFile(swigCPtr, SWIGTYPE_p_FbxString.getCPtr(pFullPath), SWIGTYPE_p_FbxString.getCPtr(propPath));
+  public virtual bool WriteXMLFile(FbxString path) {
+    bool ret = fbx_wrapperPINVOKE.FbxIOSettings_WriteXMLFile(swigCPtr, FbxString.getCPtr(path));
+    if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public bool WriteXmlPropToFile(FbxString pFullPath, FbxString propPath) {
+    bool ret = fbx_wrapperPINVOKE.FbxIOSettings_WriteXmlPropToFile(swigCPtr, FbxString.getCPtr(pFullPath), FbxString.getCPtr(propPath));
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
@@ -367,14 +367,14 @@ public class FbxIOSettings : FbxObject {
     } 
   }
 
-  public SWIGTYPE_p_FbxString GetLanguageLabel(FbxProperty pProp) {
-    SWIGTYPE_p_FbxString ret = new SWIGTYPE_p_FbxString(fbx_wrapperPINVOKE.FbxIOSettings_GetLanguageLabel(swigCPtr, FbxProperty.getCPtr(pProp)), true);
+  public FbxString GetLanguageLabel(FbxProperty pProp) {
+    FbxString ret = new FbxString(fbx_wrapperPINVOKE.FbxIOSettings_GetLanguageLabel(swigCPtr, FbxProperty.getCPtr(pProp)), true);
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public void SetLanguageLabel(FbxProperty pProp, SWIGTYPE_p_FbxString pLabel) {
-    fbx_wrapperPINVOKE.FbxIOSettings_SetLanguageLabel(swigCPtr, FbxProperty.getCPtr(pProp), SWIGTYPE_p_FbxString.getCPtr(pLabel));
+  public void SetLanguageLabel(FbxProperty pProp, FbxString pLabel) {
+    fbx_wrapperPINVOKE.FbxIOSettings_SetLanguageLabel(swigCPtr, FbxProperty.getCPtr(pProp), FbxString.getCPtr(pLabel));
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
   }
 
@@ -400,8 +400,8 @@ public class FbxIOSettings : FbxObject {
     } 
   }
 
-  public static SWIGTYPE_p_FbxString GetUserMyDocumentDir() {
-    SWIGTYPE_p_FbxString ret = new SWIGTYPE_p_FbxString(fbx_wrapperPINVOKE.FbxIOSettings_GetUserMyDocumentDir(), true);
+  public static FbxString GetUserMyDocumentDir() {
+    FbxString ret = new FbxString(fbx_wrapperPINVOKE.FbxIOSettings_GetUserMyDocumentDir(), true);
     return ret;
   }
 
@@ -410,14 +410,14 @@ public class FbxIOSettings : FbxObject {
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public bool ReadXmlPropFromMyDocument(SWIGTYPE_p_FbxString subDir, SWIGTYPE_p_FbxString filename) {
-    bool ret = fbx_wrapperPINVOKE.FbxIOSettings_ReadXmlPropFromMyDocument(swigCPtr, SWIGTYPE_p_FbxString.getCPtr(subDir), SWIGTYPE_p_FbxString.getCPtr(filename));
+  public bool ReadXmlPropFromMyDocument(FbxString subDir, FbxString filename) {
+    bool ret = fbx_wrapperPINVOKE.FbxIOSettings_ReadXmlPropFromMyDocument(swigCPtr, FbxString.getCPtr(subDir), FbxString.getCPtr(filename));
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public bool WriteXmlPropToMyDocument(SWIGTYPE_p_FbxString subDir, SWIGTYPE_p_FbxString filename, SWIGTYPE_p_FbxString propPath) {
-    bool ret = fbx_wrapperPINVOKE.FbxIOSettings_WriteXmlPropToMyDocument(swigCPtr, SWIGTYPE_p_FbxString.getCPtr(subDir), SWIGTYPE_p_FbxString.getCPtr(filename), SWIGTYPE_p_FbxString.getCPtr(propPath));
+  public bool WriteXmlPropToMyDocument(FbxString subDir, FbxString filename, FbxString propPath) {
+    bool ret = fbx_wrapperPINVOKE.FbxIOSettings_WriteXmlPropToMyDocument(swigCPtr, FbxString.getCPtr(subDir), FbxString.getCPtr(filename), FbxString.getCPtr(propPath));
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }

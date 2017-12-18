@@ -308,6 +308,144 @@ SWIGEXPORT void SWIGSTDCALL SWIGRegisterStringCallback_fbx_wrapper(SWIG_CSharpSt
 #include <fbxsdk\utils\fbxrenamingstrategyfbx7.h>
 
 
+typedef double DoubleArray;
+
+SWIGINTERN DoubleArray *new_DoubleArray(int nelements){
+  return new double[nelements]();
+}
+SWIGINTERN void delete_DoubleArray(DoubleArray *self){
+  delete [] self;
+}
+SWIGINTERN double DoubleArray_getitem(DoubleArray *self,int index){
+  return self[index];
+}
+SWIGINTERN void DoubleArray_setitem(DoubleArray *self,int index,double value){
+  self[index] = value;
+}
+SWIGINTERN double *DoubleArray_cast(DoubleArray *self){
+  return self;
+}
+SWIGINTERN DoubleArray *DoubleArray_frompointer(double *t){
+  return (DoubleArray *) t;
+}
+
+typedef float FloatArray;
+
+SWIGINTERN FloatArray *new_FloatArray(int nelements){
+  return new float[nelements]();
+}
+SWIGINTERN void delete_FloatArray(FloatArray *self){
+  delete [] self;
+}
+SWIGINTERN float FloatArray_getitem(FloatArray *self,int index){
+  return self[index];
+}
+SWIGINTERN void FloatArray_setitem(FloatArray *self,int index,float value){
+  self[index] = value;
+}
+SWIGINTERN float *FloatArray_cast(FloatArray *self){
+  return self;
+}
+SWIGINTERN FloatArray *FloatArray_frompointer(float *t){
+  return (FloatArray *) t;
+}
+
+typedef int IntArray;
+
+SWIGINTERN IntArray *new_IntArray(int nelements){
+  return new int[nelements]();
+}
+SWIGINTERN void delete_IntArray(IntArray *self){
+  delete [] self;
+}
+SWIGINTERN int IntArray_getitem(IntArray *self,int index){
+  return self[index];
+}
+SWIGINTERN void IntArray_setitem(IntArray *self,int index,int value){
+  self[index] = value;
+}
+SWIGINTERN int *IntArray_cast(IntArray *self){
+  return self;
+}
+SWIGINTERN IntArray *IntArray_frompointer(int *t){
+  return (IntArray *) t;
+}
+
+typedef int int_p;
+
+SWIGINTERN int_p *new_int_p(){
+  return new int();
+}
+SWIGINTERN void delete_int_p(int_p *self){
+  if (self) delete self;
+}
+SWIGINTERN void int_p_assign(int_p *self,int value){
+  *self = value;
+}
+SWIGINTERN int int_p_value(int_p *self){
+  return *self;
+}
+SWIGINTERN int *int_p_cast(int_p *self){
+  return self;
+}
+SWIGINTERN int_p *int_p_frompointer(int *t){
+  return (int_p *) t;
+}
+
+typedef float Float_p;
+
+SWIGINTERN Float_p *new_Float_p(){
+  return new float();
+}
+SWIGINTERN void delete_Float_p(Float_p *self){
+  if (self) delete self;
+}
+SWIGINTERN void Float_p_assign(Float_p *self,float value){
+  *self = value;
+}
+SWIGINTERN float Float_p_value(Float_p *self){
+  return *self;
+}
+SWIGINTERN float *Float_p_cast(Float_p *self){
+  return self;
+}
+SWIGINTERN Float_p *Float_p_frompointer(float *t){
+  return (Float_p *) t;
+}
+
+typedef double double_p;
+
+SWIGINTERN double_p *new_double_p(){
+  return new double();
+}
+SWIGINTERN void delete_double_p(double_p *self){
+  if (self) delete self;
+}
+SWIGINTERN void double_p_assign(double_p *self,double value){
+  *self = value;
+}
+SWIGINTERN double double_p_value(double_p *self){
+  return *self;
+}
+SWIGINTERN double *double_p_cast(double_p *self){
+  return self;
+}
+SWIGINTERN double_p *double_p_frompointer(double *t){
+  return (double_p *) t;
+}
+SWIGINTERN void FbxVectorTemplate2_Sl_FbxDouble_Sg__setDataValue(FbxVectorTemplate2< FbxDouble > *self,int pIndex,double dValue){ 
+		self->mData[pIndex] = dValue; 
+	}
+SWIGINTERN void FbxVectorTemplate3_Sl_FbxDouble_Sg__setDataValue(FbxVectorTemplate3< FbxDouble > *self,int pIndex,double dValue){ 
+		self->mData[pIndex] = dValue; 
+	}
+SWIGINTERN void FbxVectorTemplate4_Sl_FbxDouble_Sg__setDataValue(FbxVectorTemplate4< FbxDouble > *self,int pIndex,double dValue){ 
+		self->mData[pIndex] = dValue; 
+	}
+SWIGINTERN void FbxVectorTemplate4_Sl_FbxDouble4_Sg__setDataValue(FbxVectorTemplate4< FbxDouble4 > *self,int pIndex,FbxVectorTemplate4< double > dValue){ 
+		self->mData[pIndex] = dValue; 
+	}
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -318,6 +456,408 @@ SWIGEXPORT int SWIGSTDCALL CSharp_Fbx__MSC_VER_get() {
   
   result = (int)(1800);
   jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_DoubleArray(int jarg1) {
+  void * jresult ;
+  int arg1 ;
+  DoubleArray *result = 0 ;
+  
+  arg1 = (int)jarg1; 
+  result = (DoubleArray *)new_DoubleArray(arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_DoubleArray(void * jarg1) {
+  DoubleArray *arg1 = (DoubleArray *) 0 ;
+  
+  arg1 = (DoubleArray *)jarg1; 
+  delete_DoubleArray(arg1);
+}
+
+
+SWIGEXPORT double SWIGSTDCALL CSharp_Fbx_DoubleArray_getitem(void * jarg1, int jarg2) {
+  double jresult ;
+  DoubleArray *arg1 = (DoubleArray *) 0 ;
+  int arg2 ;
+  double result;
+  
+  arg1 = (DoubleArray *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (double)DoubleArray_getitem(arg1,arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_DoubleArray_setitem(void * jarg1, int jarg2, double jarg3) {
+  DoubleArray *arg1 = (DoubleArray *) 0 ;
+  int arg2 ;
+  double arg3 ;
+  
+  arg1 = (DoubleArray *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (double)jarg3; 
+  DoubleArray_setitem(arg1,arg2,arg3);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_DoubleArray_cast(void * jarg1) {
+  void * jresult ;
+  DoubleArray *arg1 = (DoubleArray *) 0 ;
+  double *result = 0 ;
+  
+  arg1 = (DoubleArray *)jarg1; 
+  result = (double *)DoubleArray_cast(arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_DoubleArray_frompointer(void * jarg1) {
+  void * jresult ;
+  double *arg1 = (double *) 0 ;
+  DoubleArray *result = 0 ;
+  
+  arg1 = (double *)jarg1; 
+  result = (DoubleArray *)DoubleArray_frompointer(arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FloatArray(int jarg1) {
+  void * jresult ;
+  int arg1 ;
+  FloatArray *result = 0 ;
+  
+  arg1 = (int)jarg1; 
+  result = (FloatArray *)new_FloatArray(arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FloatArray(void * jarg1) {
+  FloatArray *arg1 = (FloatArray *) 0 ;
+  
+  arg1 = (FloatArray *)jarg1; 
+  delete_FloatArray(arg1);
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FloatArray_getitem(void * jarg1, int jarg2) {
+  float jresult ;
+  FloatArray *arg1 = (FloatArray *) 0 ;
+  int arg2 ;
+  float result;
+  
+  arg1 = (FloatArray *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (float)FloatArray_getitem(arg1,arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FloatArray_setitem(void * jarg1, int jarg2, float jarg3) {
+  FloatArray *arg1 = (FloatArray *) 0 ;
+  int arg2 ;
+  float arg3 ;
+  
+  arg1 = (FloatArray *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (float)jarg3; 
+  FloatArray_setitem(arg1,arg2,arg3);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FloatArray_cast(void * jarg1) {
+  void * jresult ;
+  FloatArray *arg1 = (FloatArray *) 0 ;
+  float *result = 0 ;
+  
+  arg1 = (FloatArray *)jarg1; 
+  result = (float *)FloatArray_cast(arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FloatArray_frompointer(void * jarg1) {
+  void * jresult ;
+  float *arg1 = (float *) 0 ;
+  FloatArray *result = 0 ;
+  
+  arg1 = (float *)jarg1; 
+  result = (FloatArray *)FloatArray_frompointer(arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_IntArray(int jarg1) {
+  void * jresult ;
+  int arg1 ;
+  IntArray *result = 0 ;
+  
+  arg1 = (int)jarg1; 
+  result = (IntArray *)new_IntArray(arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_IntArray(void * jarg1) {
+  IntArray *arg1 = (IntArray *) 0 ;
+  
+  arg1 = (IntArray *)jarg1; 
+  delete_IntArray(arg1);
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_IntArray_getitem(void * jarg1, int jarg2) {
+  int jresult ;
+  IntArray *arg1 = (IntArray *) 0 ;
+  int arg2 ;
+  int result;
+  
+  arg1 = (IntArray *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (int)IntArray_getitem(arg1,arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_IntArray_setitem(void * jarg1, int jarg2, int jarg3) {
+  IntArray *arg1 = (IntArray *) 0 ;
+  int arg2 ;
+  int arg3 ;
+  
+  arg1 = (IntArray *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (int)jarg3; 
+  IntArray_setitem(arg1,arg2,arg3);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_IntArray_cast(void * jarg1) {
+  void * jresult ;
+  IntArray *arg1 = (IntArray *) 0 ;
+  int *result = 0 ;
+  
+  arg1 = (IntArray *)jarg1; 
+  result = (int *)IntArray_cast(arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_IntArray_frompointer(void * jarg1) {
+  void * jresult ;
+  int *arg1 = (int *) 0 ;
+  IntArray *result = 0 ;
+  
+  arg1 = (int *)jarg1; 
+  result = (IntArray *)IntArray_frompointer(arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_int_p() {
+  void * jresult ;
+  int_p *result = 0 ;
+  
+  result = (int_p *)new_int_p();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_int_p(void * jarg1) {
+  int_p *arg1 = (int_p *) 0 ;
+  
+  arg1 = (int_p *)jarg1; 
+  delete_int_p(arg1);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_int_p_assign(void * jarg1, int jarg2) {
+  int_p *arg1 = (int_p *) 0 ;
+  int arg2 ;
+  
+  arg1 = (int_p *)jarg1; 
+  arg2 = (int)jarg2; 
+  int_p_assign(arg1,arg2);
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_int_p_value(void * jarg1) {
+  int jresult ;
+  int_p *arg1 = (int_p *) 0 ;
+  int result;
+  
+  arg1 = (int_p *)jarg1; 
+  result = (int)int_p_value(arg1);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_int_p_cast(void * jarg1) {
+  void * jresult ;
+  int_p *arg1 = (int_p *) 0 ;
+  int *result = 0 ;
+  
+  arg1 = (int_p *)jarg1; 
+  result = (int *)int_p_cast(arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_int_p_frompointer(void * jarg1) {
+  void * jresult ;
+  int *arg1 = (int *) 0 ;
+  int_p *result = 0 ;
+  
+  arg1 = (int *)jarg1; 
+  result = (int_p *)int_p_frompointer(arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_Float_p() {
+  void * jresult ;
+  Float_p *result = 0 ;
+  
+  result = (Float_p *)new_Float_p();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_Float_p(void * jarg1) {
+  Float_p *arg1 = (Float_p *) 0 ;
+  
+  arg1 = (Float_p *)jarg1; 
+  delete_Float_p(arg1);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_Float_p_assign(void * jarg1, float jarg2) {
+  Float_p *arg1 = (Float_p *) 0 ;
+  float arg2 ;
+  
+  arg1 = (Float_p *)jarg1; 
+  arg2 = (float)jarg2; 
+  Float_p_assign(arg1,arg2);
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_Float_p_value(void * jarg1) {
+  float jresult ;
+  Float_p *arg1 = (Float_p *) 0 ;
+  float result;
+  
+  arg1 = (Float_p *)jarg1; 
+  result = (float)Float_p_value(arg1);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_Float_p_cast(void * jarg1) {
+  void * jresult ;
+  Float_p *arg1 = (Float_p *) 0 ;
+  float *result = 0 ;
+  
+  arg1 = (Float_p *)jarg1; 
+  result = (float *)Float_p_cast(arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_Float_p_frompointer(void * jarg1) {
+  void * jresult ;
+  float *arg1 = (float *) 0 ;
+  Float_p *result = 0 ;
+  
+  arg1 = (float *)jarg1; 
+  result = (Float_p *)Float_p_frompointer(arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_double_p() {
+  void * jresult ;
+  double_p *result = 0 ;
+  
+  result = (double_p *)new_double_p();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_double_p(void * jarg1) {
+  double_p *arg1 = (double_p *) 0 ;
+  
+  arg1 = (double_p *)jarg1; 
+  delete_double_p(arg1);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_double_p_assign(void * jarg1, double jarg2) {
+  double_p *arg1 = (double_p *) 0 ;
+  double arg2 ;
+  
+  arg1 = (double_p *)jarg1; 
+  arg2 = (double)jarg2; 
+  double_p_assign(arg1,arg2);
+}
+
+
+SWIGEXPORT double SWIGSTDCALL CSharp_Fbx_double_p_value(void * jarg1) {
+  double jresult ;
+  double_p *arg1 = (double_p *) 0 ;
+  double result;
+  
+  arg1 = (double_p *)jarg1; 
+  result = (double)double_p_value(arg1);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_double_p_cast(void * jarg1) {
+  void * jresult ;
+  double_p *arg1 = (double_p *) 0 ;
+  double *result = 0 ;
+  
+  arg1 = (double_p *)jarg1; 
+  result = (double *)double_p_cast(arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_double_p_frompointer(void * jarg1) {
+  void * jresult ;
+  double *arg1 = (double *) 0 ;
+  double_p *result = 0 ;
+  
+  arg1 = (double *)jarg1; 
+  result = (double_p *)double_p_frompointer(arg1);
+  jresult = (void *)result; 
   return jresult;
 }
 
@@ -982,6 +1522,18 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxDouble2_mData_get(void * jarg1) {
 }
 
 
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxDouble2_setDataValue(void * jarg1, int jarg2, double jarg3) {
+  FbxVectorTemplate2< FbxDouble > *arg1 = (FbxVectorTemplate2< FbxDouble > *) 0 ;
+  int arg2 ;
+  double arg3 ;
+  
+  arg1 = (FbxVectorTemplate2< FbxDouble > *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (double)jarg3; 
+  FbxVectorTemplate2_Sl_FbxDouble_Sg__setDataValue(arg1,arg2,arg3);
+}
+
+
 SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxDouble3__SWIG_0() {
   void * jresult ;
   FbxVectorTemplate3< FbxDouble > *result = 0 ;
@@ -1165,6 +1717,18 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxDouble3_mData_get(void * jarg1) {
   result = (double *)(double *) ((arg1)->mData);
   jresult = result; 
   return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxDouble3_setDataValue(void * jarg1, int jarg2, double jarg3) {
+  FbxVectorTemplate3< FbxDouble > *arg1 = (FbxVectorTemplate3< FbxDouble > *) 0 ;
+  int arg2 ;
+  double arg3 ;
+  
+  arg1 = (FbxVectorTemplate3< FbxDouble > *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (double)jarg3; 
+  FbxVectorTemplate3_Sl_FbxDouble_Sg__setDataValue(arg1,arg2,arg3);
 }
 
 
@@ -1353,6 +1917,18 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxDouble4_mData_get(void * jarg1) {
   result = (double *)(double *) ((arg1)->mData);
   jresult = result; 
   return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxDouble4_setDataValue(void * jarg1, int jarg2, double jarg3) {
+  FbxVectorTemplate4< FbxDouble > *arg1 = (FbxVectorTemplate4< FbxDouble > *) 0 ;
+  int arg2 ;
+  double arg3 ;
+  
+  arg1 = (FbxVectorTemplate4< FbxDouble > *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (double)jarg3; 
+  FbxVectorTemplate4_Sl_FbxDouble_Sg__setDataValue(arg1,arg2,arg3);
 }
 
 
@@ -1573,6 +2149,24 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxDouble4x4_mData_get(void * jarg1) {
   result = (FbxVectorTemplate4< double > *)(FbxVectorTemplate4< double > *) ((arg1)->mData);
   jresult = result; 
   return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxDouble4x4_setDataValue(void * jarg1, int jarg2, void * jarg3) {
+  FbxVectorTemplate4< FbxDouble4 > *arg1 = (FbxVectorTemplate4< FbxDouble4 > *) 0 ;
+  int arg2 ;
+  FbxVectorTemplate4< double > arg3 ;
+  FbxVectorTemplate4< double > *argp3 ;
+  
+  arg1 = (FbxVectorTemplate4< FbxDouble4 > *)jarg1; 
+  arg2 = (int)jarg2; 
+  argp3 = (FbxVectorTemplate4< double > *)jarg3; 
+  if (!argp3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxVectorTemplate4< double >", 0);
+    return ;
+  }
+  arg3 = *argp3; 
+  FbxVectorTemplate4_Sl_FbxDouble4_Sg__setDataValue(arg1,arg2,arg3);
 }
 
 
@@ -2748,6 +3342,1520 @@ SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxVector4(void * jarg1) {
 }
 
 
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxUTF8ToWC__SWIG_0(char * jarg1, void * jarg2, void * jarg3) {
+  char *arg1 = (char *) 0 ;
+  wchar_t **arg2 = 0 ;
+  size_t *arg3 = (size_t *) 0 ;
+  
+  arg1 = (char *)jarg1; 
+  arg2 = (wchar_t **)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "wchar_t *& type is null", 0);
+    return ;
+  } 
+  arg3 = (size_t *)jarg3; 
+  FbxUTF8ToWC((char const *)arg1,*arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxUTF8ToWC__SWIG_1(char * jarg1, void * jarg2) {
+  char *arg1 = (char *) 0 ;
+  wchar_t **arg2 = 0 ;
+  
+  arg1 = (char *)jarg1; 
+  arg2 = (wchar_t **)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "wchar_t *& type is null", 0);
+    return ;
+  } 
+  FbxUTF8ToWC((char const *)arg1,*arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxWCToUTF8__SWIG_0(void * jarg1, char * jarg2, void * jarg3) {
+  wchar_t *arg1 = (wchar_t *) 0 ;
+  char **arg2 = 0 ;
+  size_t *arg3 = (size_t *) 0 ;
+  char *temp2 = 0 ;
+  
+  arg1 = (wchar_t *)jarg1; 
+  
+  temp2 = (char *)jarg2;
+  arg2 = &temp2;
+  
+  arg3 = (size_t *)jarg3; 
+  FbxWCToUTF8((wchar_t const *)arg1,*arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxWCToUTF8__SWIG_1(void * jarg1, char * jarg2) {
+  wchar_t *arg1 = (wchar_t *) 0 ;
+  char **arg2 = 0 ;
+  char *temp2 = 0 ;
+  
+  arg1 = (wchar_t *)jarg1; 
+  
+  temp2 = (char *)jarg2;
+  arg2 = &temp2;
+  
+  FbxWCToUTF8((wchar_t const *)arg1,*arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxWCToAnsi__SWIG_0(void * jarg1, char * jarg2, void * jarg3) {
+  wchar_t *arg1 = (wchar_t *) 0 ;
+  char **arg2 = 0 ;
+  size_t *arg3 = (size_t *) 0 ;
+  char *temp2 = 0 ;
+  
+  arg1 = (wchar_t *)jarg1; 
+  
+  temp2 = (char *)jarg2;
+  arg2 = &temp2;
+  
+  arg3 = (size_t *)jarg3; 
+  FbxWCToAnsi((wchar_t const *)arg1,*arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxWCToAnsi__SWIG_1(void * jarg1, char * jarg2) {
+  wchar_t *arg1 = (wchar_t *) 0 ;
+  char **arg2 = 0 ;
+  char *temp2 = 0 ;
+  
+  arg1 = (wchar_t *)jarg1; 
+  
+  temp2 = (char *)jarg2;
+  arg2 = &temp2;
+  
+  FbxWCToAnsi((wchar_t const *)arg1,*arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnsiToWC__SWIG_0(char * jarg1, void * jarg2, void * jarg3) {
+  char *arg1 = (char *) 0 ;
+  wchar_t **arg2 = 0 ;
+  size_t *arg3 = (size_t *) 0 ;
+  
+  arg1 = (char *)jarg1; 
+  arg2 = (wchar_t **)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "wchar_t *& type is null", 0);
+    return ;
+  } 
+  arg3 = (size_t *)jarg3; 
+  FbxAnsiToWC((char const *)arg1,*arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnsiToWC__SWIG_1(char * jarg1, void * jarg2) {
+  char *arg1 = (char *) 0 ;
+  wchar_t **arg2 = 0 ;
+  
+  arg1 = (char *)jarg1; 
+  arg2 = (wchar_t **)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "wchar_t *& type is null", 0);
+    return ;
+  } 
+  FbxAnsiToWC((char const *)arg1,*arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnsiToUTF8__SWIG_0(char * jarg1, char * jarg2, void * jarg3) {
+  char *arg1 = (char *) 0 ;
+  char **arg2 = 0 ;
+  size_t *arg3 = (size_t *) 0 ;
+  char *temp2 = 0 ;
+  
+  arg1 = (char *)jarg1; 
+  
+  temp2 = (char *)jarg2;
+  arg2 = &temp2;
+  
+  arg3 = (size_t *)jarg3; 
+  FbxAnsiToUTF8((char const *)arg1,*arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnsiToUTF8__SWIG_1(char * jarg1, char * jarg2) {
+  char *arg1 = (char *) 0 ;
+  char **arg2 = 0 ;
+  char *temp2 = 0 ;
+  
+  arg1 = (char *)jarg1; 
+  
+  temp2 = (char *)jarg2;
+  arg2 = &temp2;
+  
+  FbxAnsiToUTF8((char const *)arg1,*arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxUTF8ToAnsi__SWIG_0(char * jarg1, char * jarg2, void * jarg3) {
+  char *arg1 = (char *) 0 ;
+  char **arg2 = 0 ;
+  size_t *arg3 = (size_t *) 0 ;
+  char *temp2 = 0 ;
+  
+  arg1 = (char *)jarg1; 
+  
+  temp2 = (char *)jarg2;
+  arg2 = &temp2;
+  
+  arg3 = (size_t *)jarg3; 
+  FbxUTF8ToAnsi((char const *)arg1,*arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxUTF8ToAnsi__SWIG_1(char * jarg1, char * jarg2) {
+  char *arg1 = (char *) 0 ;
+  char **arg2 = 0 ;
+  char *temp2 = 0 ;
+  
+  arg1 = (char *)jarg1; 
+  
+  temp2 = (char *)jarg2;
+  arg2 = &temp2;
+  
+  FbxUTF8ToAnsi((char const *)arg1,*arg2);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxString__SWIG_0() {
+  void * jresult ;
+  FbxString *result = 0 ;
+  
+  result = (FbxString *)new FbxString();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxString__SWIG_1(void * jarg1) {
+  void * jresult ;
+  FbxString *arg1 = 0 ;
+  FbxString *result = 0 ;
+  
+  arg1 = (FbxString *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString const & type is null", 0);
+    return 0;
+  } 
+  result = (FbxString *)new FbxString((FbxString const &)*arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxString__SWIG_2(char * jarg1) {
+  void * jresult ;
+  char *arg1 = (char *) 0 ;
+  FbxString *result = 0 ;
+  
+  arg1 = (char *)jarg1; 
+  result = (FbxString *)new FbxString((char const *)arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxString__SWIG_3(char jarg1, unsigned long jarg2) {
+  void * jresult ;
+  char arg1 ;
+  size_t arg2 ;
+  FbxString *result = 0 ;
+  
+  arg1 = (char)jarg1; 
+  arg2 = (size_t)jarg2; 
+  result = (FbxString *)new FbxString(arg1,arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxString__SWIG_4(char jarg1) {
+  void * jresult ;
+  char arg1 ;
+  FbxString *result = 0 ;
+  
+  arg1 = (char)jarg1; 
+  result = (FbxString *)new FbxString(arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxString__SWIG_5(char * jarg1, unsigned long jarg2) {
+  void * jresult ;
+  char *arg1 = (char *) 0 ;
+  size_t arg2 ;
+  FbxString *result = 0 ;
+  
+  arg1 = (char *)jarg1; 
+  arg2 = (size_t)jarg2; 
+  result = (FbxString *)new FbxString((char const *)arg1,arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxString__SWIG_6(int jarg1) {
+  void * jresult ;
+  int arg1 ;
+  FbxString *result = 0 ;
+  
+  arg1 = (int)jarg1; 
+  result = (FbxString *)new FbxString(arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxString__SWIG_7(float jarg1) {
+  void * jresult ;
+  float arg1 ;
+  FbxString *result = 0 ;
+  
+  arg1 = (float)jarg1; 
+  result = (FbxString *)new FbxString(arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxString__SWIG_8(double jarg1) {
+  void * jresult ;
+  double arg1 ;
+  FbxString *result = 0 ;
+  
+  arg1 = (double)jarg1; 
+  result = (FbxString *)new FbxString(arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxString(void * jarg1) {
+  FbxString *arg1 = (FbxString *) 0 ;
+  
+  arg1 = (FbxString *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT unsigned long SWIGSTDCALL CSharp_Fbx_FbxString_GetLen(void * jarg1) {
+  unsigned long jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  size_t result;
+  
+  arg1 = (FbxString *)jarg1; 
+  result = ((FbxString const *)arg1)->GetLen();
+  jresult = (unsigned long)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned long SWIGSTDCALL CSharp_Fbx_FbxString_Size(void * jarg1) {
+  unsigned long jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  size_t result;
+  
+  arg1 = (FbxString *)jarg1; 
+  result = ((FbxString const *)arg1)->Size();
+  jresult = (unsigned long)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxString_IsEmpty(void * jarg1) {
+  unsigned int jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  bool result;
+  
+  arg1 = (FbxString *)jarg1; 
+  result = (bool)((FbxString const *)arg1)->IsEmpty();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxString_Clear(void * jarg1) {
+  void * jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  FbxString *result = 0 ;
+  
+  arg1 = (FbxString *)jarg1; 
+  result = (FbxString *) &(arg1)->Clear();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxString_at__SWIG_0(void * jarg1, int jarg2) {
+  void * jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  int arg2 ;
+  char *result = 0 ;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (char *) &(arg1)->operator [](arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FbxString_Buffer__SWIG_0(void * jarg1) {
+  char * jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  char *result = 0 ;
+  
+  arg1 = (FbxString *)jarg1; 
+  result = (char *)(arg1)->Buffer();
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxString_assign__SWIG_0(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  FbxString *arg2 = 0 ;
+  FbxString *result = 0 ;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (FbxString *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString const & type is null", 0);
+    return 0;
+  } 
+  result = (FbxString *) &(arg1)->operator =((FbxString const &)*arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxString_assign__SWIG_1(void * jarg1, char jarg2) {
+  void * jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  char arg2 ;
+  FbxString *result = 0 ;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (char)jarg2; 
+  result = (FbxString *) &(arg1)->operator =(arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxString_assign__SWIG_2(void * jarg1, char * jarg2) {
+  void * jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  char *arg2 = (char *) 0 ;
+  FbxString *result = 0 ;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (FbxString *) &(arg1)->operator =((char const *)arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxString_assign__SWIG_3(void * jarg1, int jarg2) {
+  void * jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  int arg2 ;
+  FbxString *result = 0 ;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (FbxString *) &(arg1)->operator =(arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxString_assign__SWIG_4(void * jarg1, float jarg2) {
+  void * jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  float arg2 ;
+  FbxString *result = 0 ;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (float)jarg2; 
+  result = (FbxString *) &(arg1)->operator =(arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxString_assign__SWIG_5(void * jarg1, double jarg2) {
+  void * jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  double arg2 ;
+  FbxString *result = 0 ;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (double)jarg2; 
+  result = (FbxString *) &(arg1)->operator =(arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxString_add_assign__SWIG_0(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  FbxString *arg2 = 0 ;
+  FbxString *result = 0 ;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (FbxString *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString const & type is null", 0);
+    return 0;
+  } 
+  result = (FbxString *) &(arg1)->operator +=((FbxString const &)*arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxString_add_assign__SWIG_1(void * jarg1, char jarg2) {
+  void * jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  char arg2 ;
+  FbxString *result = 0 ;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (char)jarg2; 
+  result = (FbxString *) &(arg1)->operator +=(arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxString_add_assign__SWIG_2(void * jarg1, char * jarg2) {
+  void * jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  char *arg2 = (char *) 0 ;
+  FbxString *result = 0 ;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (FbxString *) &(arg1)->operator +=((char const *)arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxString_add_assign__SWIG_3(void * jarg1, int jarg2) {
+  void * jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  int arg2 ;
+  FbxString *result = 0 ;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (FbxString *) &(arg1)->operator +=(arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxString_add_assign__SWIG_4(void * jarg1, float jarg2) {
+  void * jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  float arg2 ;
+  FbxString *result = 0 ;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (float)jarg2; 
+  result = (FbxString *) &(arg1)->operator +=(arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxString_add_assign__SWIG_5(void * jarg1, double jarg2) {
+  void * jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  double arg2 ;
+  FbxString *result = 0 ;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (double)jarg2; 
+  result = (FbxString *) &(arg1)->operator +=(arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxString_eq__SWIG_0(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  FbxString *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (FbxString *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString const & type is null", 0);
+    return 0;
+  } 
+  result = (bool)((FbxString const *)arg1)->operator ==((FbxString const &)*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxString_ne__SWIG_0(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  FbxString *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (FbxString *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString const & type is null", 0);
+    return 0;
+  } 
+  result = (bool)((FbxString const *)arg1)->operator !=((FbxString const &)*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxString_lt__SWIG_0(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  FbxString *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (FbxString *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString const & type is null", 0);
+    return 0;
+  } 
+  result = (bool)((FbxString const *)arg1)->operator <((FbxString const &)*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxString_lte__SWIG_0(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  FbxString *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (FbxString *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString const & type is null", 0);
+    return 0;
+  } 
+  result = (bool)((FbxString const *)arg1)->operator <=((FbxString const &)*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxString_gte__SWIG_0(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  FbxString *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (FbxString *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString const & type is null", 0);
+    return 0;
+  } 
+  result = (bool)((FbxString const *)arg1)->operator >=((FbxString const &)*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxString_gt__SWIG_0(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  FbxString *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (FbxString *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString const & type is null", 0);
+    return 0;
+  } 
+  result = (bool)((FbxString const *)arg1)->operator >((FbxString const &)*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxString_eq__SWIG_1(void * jarg1, char * jarg2) {
+  unsigned int jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  char *arg2 = (char *) 0 ;
+  bool result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (bool)((FbxString const *)arg1)->operator ==((char const *)arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxString_ne__SWIG_1(void * jarg1, char * jarg2) {
+  unsigned int jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  char *arg2 = (char *) 0 ;
+  bool result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (bool)((FbxString const *)arg1)->operator !=((char const *)arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxString_lt__SWIG_1(void * jarg1, char * jarg2) {
+  unsigned int jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  char *arg2 = (char *) 0 ;
+  bool result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (bool)((FbxString const *)arg1)->operator <((char const *)arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxString_lte__SWIG_1(void * jarg1, char * jarg2) {
+  unsigned int jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  char *arg2 = (char *) 0 ;
+  bool result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (bool)((FbxString const *)arg1)->operator <=((char const *)arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxString_gte__SWIG_1(void * jarg1, char * jarg2) {
+  unsigned int jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  char *arg2 = (char *) 0 ;
+  bool result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (bool)((FbxString const *)arg1)->operator >=((char const *)arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxString_gt__SWIG_1(void * jarg1, char * jarg2) {
+  unsigned int jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  char *arg2 = (char *) 0 ;
+  bool result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (bool)((FbxString const *)arg1)->operator >((char const *)arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_add__SWIG_0(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxString *arg1 = 0 ;
+  FbxString *arg2 = 0 ;
+  FbxString result;
+  
+  arg1 = (FbxString *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString const & type is null", 0);
+    return 0;
+  } 
+  arg2 = (FbxString *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString const & type is null", 0);
+    return 0;
+  } 
+  result = operator +((FbxString const &)*arg1,(FbxString const &)*arg2);
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_add__SWIG_1(void * jarg1, char jarg2) {
+  void * jresult ;
+  FbxString *arg1 = 0 ;
+  char arg2 ;
+  FbxString result;
+  
+  arg1 = (FbxString *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString const & type is null", 0);
+    return 0;
+  } 
+  arg2 = (char)jarg2; 
+  result = operator +((FbxString const &)*arg1,arg2);
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_add__SWIG_2(char jarg1, void * jarg2) {
+  void * jresult ;
+  char arg1 ;
+  FbxString *arg2 = 0 ;
+  FbxString result;
+  
+  arg1 = (char)jarg1; 
+  arg2 = (FbxString *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString const & type is null", 0);
+    return 0;
+  } 
+  result = operator +(arg1,(FbxString const &)*arg2);
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_add__SWIG_3(void * jarg1, char * jarg2) {
+  void * jresult ;
+  FbxString *arg1 = 0 ;
+  char *arg2 = (char *) 0 ;
+  FbxString result;
+  
+  arg1 = (FbxString *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString const & type is null", 0);
+    return 0;
+  } 
+  arg2 = (char *)jarg2; 
+  result = operator +((FbxString const &)*arg1,(char const *)arg2);
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_add__SWIG_4(char * jarg1, void * jarg2) {
+  void * jresult ;
+  char *arg1 = (char *) 0 ;
+  FbxString *arg2 = 0 ;
+  FbxString result;
+  
+  arg1 = (char *)jarg1; 
+  arg2 = (FbxString *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString const & type is null", 0);
+    return 0;
+  } 
+  result = operator +((char const *)arg1,(FbxString const &)*arg2);
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_add__SWIG_5(void * jarg1, int jarg2) {
+  void * jresult ;
+  FbxString *arg1 = 0 ;
+  int arg2 ;
+  FbxString result;
+  
+  arg1 = (FbxString *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString const & type is null", 0);
+    return 0;
+  } 
+  arg2 = (int)jarg2; 
+  result = operator +((FbxString const &)*arg1,arg2);
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_add__SWIG_6(int jarg1, void * jarg2) {
+  void * jresult ;
+  int arg1 ;
+  FbxString *arg2 = 0 ;
+  FbxString result;
+  
+  arg1 = (int)jarg1; 
+  arg2 = (FbxString *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString const & type is null", 0);
+    return 0;
+  } 
+  result = operator +(arg1,(FbxString const &)*arg2);
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_add__SWIG_7(void * jarg1, float jarg2) {
+  void * jresult ;
+  FbxString *arg1 = 0 ;
+  float arg2 ;
+  FbxString result;
+  
+  arg1 = (FbxString *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString const & type is null", 0);
+    return 0;
+  } 
+  arg2 = (float)jarg2; 
+  result = operator +((FbxString const &)*arg1,arg2);
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_add__SWIG_8(float jarg1, void * jarg2) {
+  void * jresult ;
+  float arg1 ;
+  FbxString *arg2 = 0 ;
+  FbxString result;
+  
+  arg1 = (float)jarg1; 
+  arg2 = (FbxString *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString const & type is null", 0);
+    return 0;
+  } 
+  result = operator +(arg1,(FbxString const &)*arg2);
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_add__SWIG_9(void * jarg1, double jarg2) {
+  void * jresult ;
+  FbxString *arg1 = 0 ;
+  double arg2 ;
+  FbxString result;
+  
+  arg1 = (FbxString *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString const & type is null", 0);
+    return 0;
+  } 
+  arg2 = (double)jarg2; 
+  result = operator +((FbxString const &)*arg1,arg2);
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxString_Copy(void * jarg1, char * jarg2, unsigned long jarg3) {
+  void * jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  char *arg2 = (char *) 0 ;
+  size_t arg3 ;
+  FbxString *result = 0 ;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (char *)jarg2; 
+  arg3 = (size_t)jarg3; 
+  result = (FbxString *) &(arg1)->Copy((char const *)arg2,arg3);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxString_Append(void * jarg1, char * jarg2, unsigned long jarg3) {
+  void * jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  char *arg2 = (char *) 0 ;
+  size_t arg3 ;
+  FbxString *result = 0 ;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (char *)jarg2; 
+  arg3 = (size_t)jarg3; 
+  result = (FbxString *) &(arg1)->Append((char const *)arg2,arg3);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxString_Compare(void * jarg1, char * jarg2) {
+  int jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  char *arg2 = (char *) 0 ;
+  int result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (int)((FbxString const *)arg1)->Compare((char const *)arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxString_CompareNoCase(void * jarg1, char * jarg2) {
+  int jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  char *arg2 = (char *) 0 ;
+  int result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (int)((FbxString const *)arg1)->CompareNoCase((char const *)arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxString_Swap(void * jarg1, void * jarg2) {
+  FbxString *arg1 = (FbxString *) 0 ;
+  FbxString *arg2 = 0 ;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (FbxString *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString & type is null", 0);
+    return ;
+  } 
+  (arg1)->Swap(*arg2);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxString_Upper(void * jarg1) {
+  void * jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  FbxString result;
+  
+  arg1 = (FbxString *)jarg1; 
+  result = ((FbxString const *)arg1)->Upper();
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxString_Lower(void * jarg1) {
+  void * jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  FbxString result;
+  
+  arg1 = (FbxString *)jarg1; 
+  result = ((FbxString const *)arg1)->Lower();
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxString_Mid__SWIG_0(void * jarg1, unsigned long jarg2, unsigned long jarg3) {
+  void * jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  size_t arg2 ;
+  size_t arg3 ;
+  FbxString result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (size_t)jarg2; 
+  arg3 = (size_t)jarg3; 
+  result = ((FbxString const *)arg1)->Mid(arg2,arg3);
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxString_Mid__SWIG_1(void * jarg1, unsigned long jarg2) {
+  void * jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  size_t arg2 ;
+  FbxString result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (size_t)jarg2; 
+  result = ((FbxString const *)arg1)->Mid(arg2);
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxString_Left(void * jarg1, unsigned long jarg2) {
+  void * jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  size_t arg2 ;
+  FbxString result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (size_t)jarg2; 
+  result = ((FbxString const *)arg1)->Left(arg2);
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxString_Right(void * jarg1, unsigned long jarg2) {
+  void * jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  size_t arg2 ;
+  FbxString result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (size_t)jarg2; 
+  result = ((FbxString const *)arg1)->Right(arg2);
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxString_Pad__SWIG_0(void * jarg1, int jarg2, unsigned long jarg3, char jarg4) {
+  void * jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  FbxString::EPaddingType arg2 ;
+  size_t arg3 ;
+  char arg4 ;
+  FbxString result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (FbxString::EPaddingType)jarg2; 
+  arg3 = (size_t)jarg3; 
+  arg4 = (char)jarg4; 
+  result = ((FbxString const *)arg1)->Pad(arg2,arg3,arg4);
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxString_Pad__SWIG_1(void * jarg1, int jarg2, unsigned long jarg3) {
+  void * jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  FbxString::EPaddingType arg2 ;
+  size_t arg3 ;
+  FbxString result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (FbxString::EPaddingType)jarg2; 
+  arg3 = (size_t)jarg3; 
+  result = ((FbxString const *)arg1)->Pad(arg2,arg3);
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxString_UnPad__SWIG_0(void * jarg1, int jarg2, char jarg3) {
+  void * jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  FbxString::EPaddingType arg2 ;
+  char arg3 ;
+  FbxString result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (FbxString::EPaddingType)jarg2; 
+  arg3 = (char)jarg3; 
+  result = ((FbxString const *)arg1)->UnPad(arg2,arg3);
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxString_UnPad__SWIG_1(void * jarg1, int jarg2) {
+  void * jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  FbxString::EPaddingType arg2 ;
+  FbxString result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (FbxString::EPaddingType)jarg2; 
+  result = ((FbxString const *)arg1)->UnPad(arg2);
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxString_Find__SWIG_0(void * jarg1, char jarg2, unsigned long jarg3) {
+  int jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  char arg2 ;
+  size_t arg3 ;
+  int result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (char)jarg2; 
+  arg3 = (size_t)jarg3; 
+  result = (int)((FbxString const *)arg1)->Find(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxString_Find__SWIG_1(void * jarg1, char jarg2) {
+  int jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  char arg2 ;
+  int result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (char)jarg2; 
+  result = (int)((FbxString const *)arg1)->Find(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxString_Find__SWIG_2(void * jarg1, char * jarg2, unsigned long jarg3) {
+  int jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  char *arg2 = (char *) 0 ;
+  size_t arg3 ;
+  int result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (char *)jarg2; 
+  arg3 = (size_t)jarg3; 
+  result = (int)((FbxString const *)arg1)->Find((char const *)arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxString_Find__SWIG_3(void * jarg1, char * jarg2) {
+  int jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  char *arg2 = (char *) 0 ;
+  int result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (int)((FbxString const *)arg1)->Find((char const *)arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxString_ReverseFind(void * jarg1, char jarg2) {
+  int jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  char arg2 ;
+  int result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (char)jarg2; 
+  result = (int)((FbxString const *)arg1)->ReverseFind(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxString_FindOneOf__SWIG_0(void * jarg1, char * jarg2, unsigned long jarg3) {
+  int jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  char *arg2 = (char *) 0 ;
+  size_t arg3 ;
+  int result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (char *)jarg2; 
+  arg3 = (size_t)jarg3; 
+  result = (int)((FbxString const *)arg1)->FindOneOf((char const *)arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxString_FindOneOf__SWIG_1(void * jarg1, char * jarg2) {
+  int jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  char *arg2 = (char *) 0 ;
+  int result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (int)((FbxString const *)arg1)->FindOneOf((char const *)arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxString_FindAndReplace__SWIG_0(void * jarg1, char * jarg2, char * jarg3, unsigned long jarg4) {
+  unsigned int jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  char *arg2 = (char *) 0 ;
+  char *arg3 = (char *) 0 ;
+  size_t arg4 ;
+  bool result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (char *)jarg2; 
+  arg3 = (char *)jarg3; 
+  arg4 = (size_t)jarg4; 
+  result = (bool)(arg1)->FindAndReplace((char const *)arg2,(char const *)arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxString_FindAndReplace__SWIG_1(void * jarg1, char * jarg2, char * jarg3) {
+  unsigned int jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  char *arg2 = (char *) 0 ;
+  char *arg3 = (char *) 0 ;
+  bool result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (char *)jarg2; 
+  arg3 = (char *)jarg3; 
+  result = (bool)(arg1)->FindAndReplace((char const *)arg2,(char const *)arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxString_ReplaceAll__SWIG_0(void * jarg1, char * jarg2, char * jarg3) {
+  unsigned int jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  char *arg2 = (char *) 0 ;
+  char *arg3 = (char *) 0 ;
+  bool result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (char *)jarg2; 
+  arg3 = (char *)jarg3; 
+  result = (bool)(arg1)->ReplaceAll((char const *)arg2,(char const *)arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxString_ReplaceAll__SWIG_1(void * jarg1, char jarg2, char jarg3) {
+  unsigned int jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  char arg2 ;
+  char arg3 ;
+  bool result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (char)jarg2; 
+  arg3 = (char)jarg3; 
+  result = (bool)(arg1)->ReplaceAll(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxString_GetTokenCount(void * jarg1, char * jarg2) {
+  int jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  char *arg2 = (char *) 0 ;
+  int result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (int)((FbxString const *)arg1)->GetTokenCount((char const *)arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxString_GetToken(void * jarg1, int jarg2, char * jarg3) {
+  void * jresult ;
+  FbxString *arg1 = (FbxString *) 0 ;
+  int arg2 ;
+  char *arg3 = (char *) 0 ;
+  FbxString result;
+  
+  arg1 = (FbxString *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (char *)jarg3; 
+  result = ((FbxString const *)arg1)->GetToken(arg2,(char const *)arg3);
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxStringCompare_cast(void * jarg1, void * jarg2, void * jarg3) {
+  int jresult ;
+  FbxStringCompare *arg1 = (FbxStringCompare *) 0 ;
+  FbxString *arg2 = 0 ;
+  FbxString *arg3 = 0 ;
+  int result;
+  
+  arg1 = (FbxStringCompare *)jarg1; 
+  arg2 = (FbxString *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString const & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxString *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString const & type is null", 0);
+    return 0;
+  } 
+  result = (int)((FbxStringCompare const *)arg1)->operator ()((FbxString const &)*arg2,(FbxString const &)*arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxStringCompare() {
+  void * jresult ;
+  FbxStringCompare *result = 0 ;
+  
+  result = (FbxStringCompare *)new FbxStringCompare();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxStringCompare(void * jarg1) {
+  FbxStringCompare *arg1 = (FbxStringCompare *) 0 ;
+  
+  arg1 = (FbxStringCompare *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxStringCompareNoCase_cast(void * jarg1, void * jarg2, void * jarg3) {
+  int jresult ;
+  FbxStringCompareNoCase *arg1 = (FbxStringCompareNoCase *) 0 ;
+  FbxString *arg2 = 0 ;
+  FbxString *arg3 = 0 ;
+  int result;
+  
+  arg1 = (FbxStringCompareNoCase *)jarg1; 
+  arg2 = (FbxString *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString const & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxString *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString const & type is null", 0);
+    return 0;
+  } 
+  result = (int)((FbxStringCompareNoCase const *)arg1)->operator ()((FbxString const &)*arg2,(FbxString const &)*arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxStringCompareNoCase() {
+  void * jresult ;
+  FbxStringCompareNoCase *result = 0 ;
+  
+  result = (FbxStringCompareNoCase *)new FbxStringCompareNoCase();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxStringCompareNoCase(void * jarg1) {
+  FbxStringCompareNoCase *arg1 = (FbxStringCompareNoCase *) 0 ;
+  
+  arg1 = (FbxStringCompareNoCase *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxCharPtrCompare_cast(void * jarg1, char * jarg2, char * jarg3) {
+  int jresult ;
+  FbxCharPtrCompare *arg1 = (FbxCharPtrCompare *) 0 ;
+  char *arg2 = (char *) 0 ;
+  char *arg3 = (char *) 0 ;
+  int result;
+  
+  arg1 = (FbxCharPtrCompare *)jarg1; 
+  arg2 = (char *)jarg2; 
+  arg3 = (char *)jarg3; 
+  result = (int)((FbxCharPtrCompare const *)arg1)->operator ()((char const *)arg2,(char const *)arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxCharPtrCompare() {
+  void * jresult ;
+  FbxCharPtrCompare *result = 0 ;
+  
+  result = (FbxCharPtrCompare *)new FbxCharPtrCompare();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxCharPtrCompare(void * jarg1) {
+  FbxCharPtrCompare *arg1 = (FbxCharPtrCompare *) 0 ;
+  
+  arg1 = (FbxCharPtrCompare *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxCharPtrCompareNoCase_cast(void * jarg1, char * jarg2, char * jarg3) {
+  int jresult ;
+  FbxCharPtrCompareNoCase *arg1 = (FbxCharPtrCompareNoCase *) 0 ;
+  char *arg2 = (char *) 0 ;
+  char *arg3 = (char *) 0 ;
+  int result;
+  
+  arg1 = (FbxCharPtrCompareNoCase *)jarg1; 
+  arg2 = (char *)jarg2; 
+  arg3 = (char *)jarg3; 
+  result = (int)((FbxCharPtrCompareNoCase const *)arg1)->operator ()((char const *)arg2,(char const *)arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxCharPtrCompareNoCase() {
+  void * jresult ;
+  FbxCharPtrCompareNoCase *result = 0 ;
+  
+  result = (FbxCharPtrCompareNoCase *)new FbxCharPtrCompareNoCase();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxCharPtrCompareNoCase(void * jarg1) {
+  FbxCharPtrCompareNoCase *arg1 = (FbxCharPtrCompareNoCase *) 0 ;
+  
+  arg1 = (FbxCharPtrCompareNoCase *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxRemoveChar(void * jarg1, char jarg2) {
+  FbxString *arg1 = 0 ;
+  char arg2 ;
+  
+  arg1 = (FbxString *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString & type is null", 0);
+    return ;
+  } 
+  arg2 = (char)jarg2; 
+  FbxRemoveChar(*arg1,arg2);
+}
+
+
 SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxManager_Create() {
   void * jresult ;
   FbxManager *result = 0 ;
@@ -3576,6 +5684,1898 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxManager_GetNextFbxClass(void * jarg1
 }
 
 
+SWIGEXPORT double SWIGSTDCALL CSharp_Fbx_FBXSDK_TIME_ASSERT_EPSILON_get() {
+  double jresult ;
+  double result;
+  
+  result = (double)(0.5);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FBXSDK_TIME_FORWARD_get() {
+  int jresult ;
+  int result;
+  
+  result = (int)(1);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FBXSDK_TIME_BACKWARD_get() {
+  int jresult ;
+  int result;
+  
+  result = (int)(-1);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxTime__SWIG_0(void * jarg1) {
+  void * jresult ;
+  FbxLongLong arg1 ;
+  FbxLongLong const *argp1 ;
+  FbxTime *result = 0 ;
+  
+  argp1 = (FbxLongLong *)jarg1; 
+  if (!argp1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxLongLong const", 0);
+    return 0;
+  }
+  arg1 = *argp1; 
+  result = (FbxTime *)new FbxTime(arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxTime__SWIG_1() {
+  void * jresult ;
+  FbxTime *result = 0 ;
+  
+  result = (FbxTime *)new FbxTime();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxTime_SetGlobalTimeMode__SWIG_0(int jarg1, double jarg2) {
+  FbxTime::EMode arg1 ;
+  double arg2 ;
+  
+  arg1 = (FbxTime::EMode)jarg1; 
+  arg2 = (double)jarg2; 
+  FbxTime::SetGlobalTimeMode(arg1,arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxTime_SetGlobalTimeMode__SWIG_1(int jarg1) {
+  FbxTime::EMode arg1 ;
+  
+  arg1 = (FbxTime::EMode)jarg1; 
+  FbxTime::SetGlobalTimeMode(arg1);
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxTime_GetGlobalTimeMode() {
+  int jresult ;
+  FbxTime::EMode result;
+  
+  result = (FbxTime::EMode)FbxTime::GetGlobalTimeMode();
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxTime_SetGlobalTimeProtocol(int jarg1) {
+  FbxTime::EProtocol arg1 ;
+  
+  arg1 = (FbxTime::EProtocol)jarg1; 
+  FbxTime::SetGlobalTimeProtocol(arg1);
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxTime_GetGlobalTimeProtocol() {
+  int jresult ;
+  FbxTime::EProtocol result;
+  
+  result = (FbxTime::EProtocol)FbxTime::GetGlobalTimeProtocol();
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT double SWIGSTDCALL CSharp_Fbx_FbxTime_GetFrameRate(int jarg1) {
+  double jresult ;
+  FbxTime::EMode arg1 ;
+  double result;
+  
+  arg1 = (FbxTime::EMode)jarg1; 
+  result = (double)FbxTime::GetFrameRate(arg1);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxTime_ConvertFrameRateToTimeMode__SWIG_0(double jarg1, double jarg2) {
+  int jresult ;
+  double arg1 ;
+  double arg2 ;
+  FbxTime::EMode result;
+  
+  arg1 = (double)jarg1; 
+  arg2 = (double)jarg2; 
+  result = (FbxTime::EMode)FbxTime::ConvertFrameRateToTimeMode(arg1,arg2);
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxTime_ConvertFrameRateToTimeMode__SWIG_1(double jarg1) {
+  int jresult ;
+  double arg1 ;
+  FbxTime::EMode result;
+  
+  arg1 = (double)jarg1; 
+  result = (FbxTime::EMode)FbxTime::ConvertFrameRateToTimeMode(arg1);
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxTime_Set(void * jarg1, void * jarg2) {
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxLongLong arg2 ;
+  FbxLongLong *argp2 ;
+  
+  arg1 = (FbxTime *)jarg1; 
+  argp2 = (FbxLongLong *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxLongLong", 0);
+    return ;
+  }
+  arg2 = *argp2; 
+  (arg1)->Set(arg2);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxTime_Get(void * jarg1) {
+  void * jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxLongLong result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  result = ((FbxTime const *)arg1)->Get();
+  jresult = new FbxLongLong((const FbxLongLong &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxTime_SetMilliSeconds(void * jarg1, void * jarg2) {
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxLongLong arg2 ;
+  FbxLongLong *argp2 ;
+  
+  arg1 = (FbxTime *)jarg1; 
+  argp2 = (FbxLongLong *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxLongLong", 0);
+    return ;
+  }
+  arg2 = *argp2; 
+  (arg1)->SetMilliSeconds(arg2);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxTime_GetMilliSeconds(void * jarg1) {
+  void * jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxLongLong result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  result = ((FbxTime const *)arg1)->GetMilliSeconds();
+  jresult = new FbxLongLong((const FbxLongLong &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxTime_SetSecondDouble(void * jarg1, double jarg2) {
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  double arg2 ;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (double)jarg2; 
+  (arg1)->SetSecondDouble(arg2);
+}
+
+
+SWIGEXPORT double SWIGSTDCALL CSharp_Fbx_FbxTime_GetSecondDouble(void * jarg1) {
+  double jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  double result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  result = (double)((FbxTime const *)arg1)->GetSecondDouble();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxTime_SetTime__SWIG_0(void * jarg1, int jarg2, int jarg3, int jarg4, int jarg5, int jarg6, int jarg7) {
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  int arg2 ;
+  int arg3 ;
+  int arg4 ;
+  int arg5 ;
+  int arg6 ;
+  FbxTime::EMode arg7 ;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (int)jarg3; 
+  arg4 = (int)jarg4; 
+  arg5 = (int)jarg5; 
+  arg6 = (int)jarg6; 
+  arg7 = (FbxTime::EMode)jarg7; 
+  (arg1)->SetTime(arg2,arg3,arg4,arg5,arg6,arg7);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxTime_SetTime__SWIG_1(void * jarg1, int jarg2, int jarg3, int jarg4, int jarg5, int jarg6) {
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  int arg2 ;
+  int arg3 ;
+  int arg4 ;
+  int arg5 ;
+  int arg6 ;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (int)jarg3; 
+  arg4 = (int)jarg4; 
+  arg5 = (int)jarg5; 
+  arg6 = (int)jarg6; 
+  (arg1)->SetTime(arg2,arg3,arg4,arg5,arg6);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxTime_SetTime__SWIG_2(void * jarg1, int jarg2, int jarg3, int jarg4, int jarg5) {
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  int arg2 ;
+  int arg3 ;
+  int arg4 ;
+  int arg5 ;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (int)jarg3; 
+  arg4 = (int)jarg4; 
+  arg5 = (int)jarg5; 
+  (arg1)->SetTime(arg2,arg3,arg4,arg5);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxTime_SetTime__SWIG_3(void * jarg1, int jarg2, int jarg3, int jarg4) {
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  int arg2 ;
+  int arg3 ;
+  int arg4 ;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (int)jarg3; 
+  arg4 = (int)jarg4; 
+  (arg1)->SetTime(arg2,arg3,arg4);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxTime_SetTime__SWIG_4(void * jarg1, int jarg2, int jarg3, int jarg4, int jarg5, int jarg6, int jarg7, int jarg8) {
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  int arg2 ;
+  int arg3 ;
+  int arg4 ;
+  int arg5 ;
+  int arg6 ;
+  int arg7 ;
+  FbxTime::EMode arg8 ;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (int)jarg3; 
+  arg4 = (int)jarg4; 
+  arg5 = (int)jarg5; 
+  arg6 = (int)jarg6; 
+  arg7 = (int)jarg7; 
+  arg8 = (FbxTime::EMode)jarg8; 
+  (arg1)->SetTime(arg2,arg3,arg4,arg5,arg6,arg7,arg8);
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxTime_GetTime__SWIG_0(void * jarg1, void * jarg2, void * jarg3, void * jarg4, void * jarg5, void * jarg6, void * jarg7, int jarg8) {
+  unsigned int jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  int *arg2 = 0 ;
+  int *arg3 = 0 ;
+  int *arg4 = 0 ;
+  int *arg5 = 0 ;
+  int *arg6 = 0 ;
+  int *arg7 = 0 ;
+  FbxTime::EMode arg8 ;
+  bool result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (int *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "int & type is null", 0);
+    return 0;
+  } 
+  arg3 = (int *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "int & type is null", 0);
+    return 0;
+  } 
+  arg4 = (int *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "int & type is null", 0);
+    return 0;
+  } 
+  arg5 = (int *)jarg5;
+  if (!arg5) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "int & type is null", 0);
+    return 0;
+  } 
+  arg6 = (int *)jarg6;
+  if (!arg6) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "int & type is null", 0);
+    return 0;
+  } 
+  arg7 = (int *)jarg7;
+  if (!arg7) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "int & type is null", 0);
+    return 0;
+  } 
+  arg8 = (FbxTime::EMode)jarg8; 
+  result = (bool)((FbxTime const *)arg1)->GetTime(*arg2,*arg3,*arg4,*arg5,*arg6,*arg7,arg8);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxTime_GetTime__SWIG_1(void * jarg1, void * jarg2, void * jarg3, void * jarg4, void * jarg5, void * jarg6, void * jarg7) {
+  unsigned int jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  int *arg2 = 0 ;
+  int *arg3 = 0 ;
+  int *arg4 = 0 ;
+  int *arg5 = 0 ;
+  int *arg6 = 0 ;
+  int *arg7 = 0 ;
+  bool result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (int *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "int & type is null", 0);
+    return 0;
+  } 
+  arg3 = (int *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "int & type is null", 0);
+    return 0;
+  } 
+  arg4 = (int *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "int & type is null", 0);
+    return 0;
+  } 
+  arg5 = (int *)jarg5;
+  if (!arg5) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "int & type is null", 0);
+    return 0;
+  } 
+  arg6 = (int *)jarg6;
+  if (!arg6) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "int & type is null", 0);
+    return 0;
+  } 
+  arg7 = (int *)jarg7;
+  if (!arg7) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "int & type is null", 0);
+    return 0;
+  } 
+  result = (bool)((FbxTime const *)arg1)->GetTime(*arg2,*arg3,*arg4,*arg5,*arg6,*arg7);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxTime_GetFramedTime__SWIG_0(void * jarg1, unsigned int jarg2) {
+  void * jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  bool arg2 ;
+  FbxTime result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  result = ((FbxTime const *)arg1)->GetFramedTime(arg2);
+  jresult = new FbxTime((const FbxTime &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxTime_GetFramedTime__SWIG_1(void * jarg1) {
+  void * jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxTime result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  result = ((FbxTime const *)arg1)->GetFramedTime();
+  jresult = new FbxTime((const FbxTime &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxTime_SetFrame__SWIG_0(void * jarg1, void * jarg2, int jarg3) {
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxLongLong arg2 ;
+  FbxTime::EMode arg3 ;
+  FbxLongLong *argp2 ;
+  
+  arg1 = (FbxTime *)jarg1; 
+  argp2 = (FbxLongLong *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxLongLong", 0);
+    return ;
+  }
+  arg2 = *argp2; 
+  arg3 = (FbxTime::EMode)jarg3; 
+  (arg1)->SetFrame(arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxTime_SetFrame__SWIG_1(void * jarg1, void * jarg2) {
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxLongLong arg2 ;
+  FbxLongLong *argp2 ;
+  
+  arg1 = (FbxTime *)jarg1; 
+  argp2 = (FbxLongLong *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxLongLong", 0);
+    return ;
+  }
+  arg2 = *argp2; 
+  (arg1)->SetFrame(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxTime_SetFramePrecise__SWIG_0(void * jarg1, double jarg2, int jarg3) {
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxDouble arg2 ;
+  FbxTime::EMode arg3 ;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (FbxDouble)jarg2; 
+  arg3 = (FbxTime::EMode)jarg3; 
+  (arg1)->SetFramePrecise(arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxTime_SetFramePrecise__SWIG_1(void * jarg1, double jarg2) {
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxDouble arg2 ;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (FbxDouble)jarg2; 
+  (arg1)->SetFramePrecise(arg2);
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxTime_GetHourCount(void * jarg1) {
+  int jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  int result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  result = (int)((FbxTime const *)arg1)->GetHourCount();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxTime_GetMinuteCount(void * jarg1) {
+  int jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  int result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  result = (int)((FbxTime const *)arg1)->GetMinuteCount();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxTime_GetSecondCount(void * jarg1) {
+  int jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  int result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  result = (int)((FbxTime const *)arg1)->GetSecondCount();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxTime_GetFrameCount__SWIG_0(void * jarg1, int jarg2) {
+  void * jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxTime::EMode arg2 ;
+  FbxLongLong result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (FbxTime::EMode)jarg2; 
+  result = ((FbxTime const *)arg1)->GetFrameCount(arg2);
+  jresult = new FbxLongLong((const FbxLongLong &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxTime_GetFrameCount__SWIG_1(void * jarg1) {
+  void * jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxLongLong result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  result = ((FbxTime const *)arg1)->GetFrameCount();
+  jresult = new FbxLongLong((const FbxLongLong &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT double SWIGSTDCALL CSharp_Fbx_FbxTime_GetFrameCountPrecise__SWIG_0(void * jarg1, int jarg2) {
+  double jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxTime::EMode arg2 ;
+  FbxDouble result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (FbxTime::EMode)jarg2; 
+  result = (FbxDouble)((FbxTime const *)arg1)->GetFrameCountPrecise(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT double SWIGSTDCALL CSharp_Fbx_FbxTime_GetFrameCountPrecise__SWIG_1(void * jarg1) {
+  double jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxDouble result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  result = (FbxDouble)((FbxTime const *)arg1)->GetFrameCountPrecise();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxTime_GetFieldCount__SWIG_0(void * jarg1, int jarg2) {
+  void * jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxTime::EMode arg2 ;
+  FbxLongLong result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (FbxTime::EMode)jarg2; 
+  result = ((FbxTime const *)arg1)->GetFieldCount(arg2);
+  jresult = new FbxLongLong((const FbxLongLong &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxTime_GetFieldCount__SWIG_1(void * jarg1) {
+  void * jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxLongLong result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  result = ((FbxTime const *)arg1)->GetFieldCount();
+  jresult = new FbxLongLong((const FbxLongLong &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxTime_GetResidual__SWIG_0(void * jarg1, int jarg2) {
+  int jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxTime::EMode arg2 ;
+  int result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (FbxTime::EMode)jarg2; 
+  result = (int)((FbxTime const *)arg1)->GetResidual(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxTime_GetResidual__SWIG_1(void * jarg1) {
+  int jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  int result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  result = (int)((FbxTime const *)arg1)->GetResidual();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxTime_IsDropFrame__SWIG_0(int jarg1) {
+  unsigned int jresult ;
+  FbxTime::EMode arg1 ;
+  bool result;
+  
+  arg1 = (FbxTime::EMode)jarg1; 
+  result = (bool)FbxTime::IsDropFrame(arg1);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxTime_IsDropFrame__SWIG_1() {
+  unsigned int jresult ;
+  bool result;
+  
+  result = (bool)FbxTime::IsDropFrame();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT char SWIGSTDCALL CSharp_Fbx_FbxTime_GetFrameSeparator__SWIG_0(void * jarg1, int jarg2) {
+  char jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxTime::EMode arg2 ;
+  char result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (FbxTime::EMode)jarg2; 
+  result = (char)((FbxTime const *)arg1)->GetFrameSeparator(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT char SWIGSTDCALL CSharp_Fbx_FbxTime_GetFrameSeparator__SWIG_1(void * jarg1) {
+  char jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  char result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  result = (char)((FbxTime const *)arg1)->GetFrameSeparator();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FbxTime_GetTimeString__SWIG_0(void * jarg1, char * jarg2, unsigned short jarg3, int jarg4, int jarg5, int jarg6) {
+  char * jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  char *arg2 = (char *) 0 ;
+  FbxUShort *arg3 = 0 ;
+  int arg4 ;
+  FbxTime::EMode arg5 ;
+  FbxTime::EProtocol arg6 ;
+  FbxUShort temp3 ;
+  char *result = 0 ;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (char *)jarg2; 
+  temp3 = (FbxUShort)jarg3; 
+  arg3 = &temp3; 
+  arg4 = (int)jarg4; 
+  arg5 = (FbxTime::EMode)jarg5; 
+  arg6 = (FbxTime::EProtocol)jarg6; 
+  result = (char *)((FbxTime const *)arg1)->GetTimeString(arg2,(FbxUShort const &)*arg3,arg4,arg5,arg6);
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FbxTime_GetTimeString__SWIG_1(void * jarg1, char * jarg2, unsigned short jarg3, int jarg4, int jarg5) {
+  char * jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  char *arg2 = (char *) 0 ;
+  FbxUShort *arg3 = 0 ;
+  int arg4 ;
+  FbxTime::EMode arg5 ;
+  FbxUShort temp3 ;
+  char *result = 0 ;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (char *)jarg2; 
+  temp3 = (FbxUShort)jarg3; 
+  arg3 = &temp3; 
+  arg4 = (int)jarg4; 
+  arg5 = (FbxTime::EMode)jarg5; 
+  result = (char *)((FbxTime const *)arg1)->GetTimeString(arg2,(FbxUShort const &)*arg3,arg4,arg5);
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FbxTime_GetTimeString__SWIG_2(void * jarg1, char * jarg2, unsigned short jarg3, int jarg4) {
+  char * jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  char *arg2 = (char *) 0 ;
+  FbxUShort *arg3 = 0 ;
+  int arg4 ;
+  FbxUShort temp3 ;
+  char *result = 0 ;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (char *)jarg2; 
+  temp3 = (FbxUShort)jarg3; 
+  arg3 = &temp3; 
+  arg4 = (int)jarg4; 
+  result = (char *)((FbxTime const *)arg1)->GetTimeString(arg2,(FbxUShort const &)*arg3,arg4);
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FbxTime_GetTimeString__SWIG_3(void * jarg1, char * jarg2, unsigned short jarg3) {
+  char * jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  char *arg2 = (char *) 0 ;
+  FbxUShort *arg3 = 0 ;
+  FbxUShort temp3 ;
+  char *result = 0 ;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (char *)jarg2; 
+  temp3 = (FbxUShort)jarg3; 
+  arg3 = &temp3; 
+  result = (char *)((FbxTime const *)arg1)->GetTimeString(arg2,(FbxUShort const &)*arg3);
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxTime_GetTimeString__SWIG_4(void * jarg1, int jarg2, int jarg3, int jarg4, int jarg5) {
+  void * jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxTime::EElement arg2 ;
+  FbxTime::EElement arg3 ;
+  FbxTime::EMode arg4 ;
+  FbxTime::EProtocol arg5 ;
+  FbxString result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (FbxTime::EElement)jarg2; 
+  arg3 = (FbxTime::EElement)jarg3; 
+  arg4 = (FbxTime::EMode)jarg4; 
+  arg5 = (FbxTime::EProtocol)jarg5; 
+  result = ((FbxTime const *)arg1)->GetTimeString(arg2,arg3,arg4,arg5);
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxTime_GetTimeString__SWIG_5(void * jarg1, int jarg2, int jarg3, int jarg4) {
+  void * jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxTime::EElement arg2 ;
+  FbxTime::EElement arg3 ;
+  FbxTime::EMode arg4 ;
+  FbxString result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (FbxTime::EElement)jarg2; 
+  arg3 = (FbxTime::EElement)jarg3; 
+  arg4 = (FbxTime::EMode)jarg4; 
+  result = ((FbxTime const *)arg1)->GetTimeString(arg2,arg3,arg4);
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxTime_GetTimeString__SWIG_6(void * jarg1, int jarg2, int jarg3) {
+  void * jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxTime::EElement arg2 ;
+  FbxTime::EElement arg3 ;
+  FbxString result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (FbxTime::EElement)jarg2; 
+  arg3 = (FbxTime::EElement)jarg3; 
+  result = ((FbxTime const *)arg1)->GetTimeString(arg2,arg3);
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxTime_GetTimeString__SWIG_7(void * jarg1, int jarg2) {
+  void * jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxTime::EElement arg2 ;
+  FbxString result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (FbxTime::EElement)jarg2; 
+  result = ((FbxTime const *)arg1)->GetTimeString(arg2);
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxTime_GetTimeString__SWIG_8(void * jarg1) {
+  void * jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxString result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  result = ((FbxTime const *)arg1)->GetTimeString();
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxTime_SetTimeString__SWIG_0(void * jarg1, char * jarg2, int jarg3, int jarg4) {
+  unsigned int jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  char *arg2 = (char *) 0 ;
+  FbxTime::EMode arg3 ;
+  FbxTime::EProtocol arg4 ;
+  bool result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (char *)jarg2; 
+  arg3 = (FbxTime::EMode)jarg3; 
+  arg4 = (FbxTime::EProtocol)jarg4; 
+  result = (bool)(arg1)->SetTimeString((char const *)arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxTime_SetTimeString__SWIG_1(void * jarg1, char * jarg2, int jarg3) {
+  unsigned int jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  char *arg2 = (char *) 0 ;
+  FbxTime::EMode arg3 ;
+  bool result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (char *)jarg2; 
+  arg3 = (FbxTime::EMode)jarg3; 
+  result = (bool)(arg1)->SetTimeString((char const *)arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxTime_SetTimeString__SWIG_2(void * jarg1, char * jarg2) {
+  unsigned int jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  char *arg2 = (char *) 0 ;
+  bool result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (bool)(arg1)->SetTimeString((char const *)arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxTime_eq(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxTime *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (FbxTime *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  result = (bool)((FbxTime const *)arg1)->operator ==((FbxTime const &)*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxTime_ne(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxTime *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (FbxTime *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  result = (bool)((FbxTime const *)arg1)->operator !=((FbxTime const &)*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxTime_gte(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxTime *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (FbxTime *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  result = (bool)((FbxTime const *)arg1)->operator >=((FbxTime const &)*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxTime_lte(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxTime *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (FbxTime *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  result = (bool)((FbxTime const *)arg1)->operator <=((FbxTime const &)*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxTime_gt(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxTime *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (FbxTime *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  result = (bool)((FbxTime const *)arg1)->operator >((FbxTime const &)*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxTime_lt(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxTime *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (FbxTime *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  result = (bool)((FbxTime const *)arg1)->operator <((FbxTime const &)*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxTime_assign(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxTime *arg2 = 0 ;
+  FbxTime *result = 0 ;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (FbxTime *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  result = (FbxTime *) &(arg1)->operator =((FbxTime const &)*arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxTime_add_assign(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxTime *arg2 = 0 ;
+  FbxTime *result = 0 ;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (FbxTime *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  result = (FbxTime *) &(arg1)->operator +=((FbxTime const &)*arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxTime_sub_assign(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxTime *arg2 = 0 ;
+  FbxTime *result = 0 ;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (FbxTime *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  result = (FbxTime *) &(arg1)->operator -=((FbxTime const &)*arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxTime_add(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxTime *arg2 = 0 ;
+  FbxTime result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (FbxTime *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  result = ((FbxTime const *)arg1)->operator +((FbxTime const &)*arg2);
+  jresult = new FbxTime((const FbxTime &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxTime_sub(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxTime *arg2 = 0 ;
+  FbxTime result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (FbxTime *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  result = ((FbxTime const *)arg1)->operator -((FbxTime const &)*arg2);
+  jresult = new FbxTime((const FbxTime &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxTime_mul__SWIG_0(void * jarg1, int jarg2) {
+  void * jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  int arg2 ;
+  FbxTime result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = ((FbxTime const *)arg1)->operator *(arg2);
+  jresult = new FbxTime((const FbxTime &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxTime_div(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxTime *arg2 = 0 ;
+  FbxTime result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (FbxTime *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  result = ((FbxTime const *)arg1)->operator /((FbxTime const &)*arg2);
+  jresult = new FbxTime((const FbxTime &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxTime_mul__SWIG_1(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  FbxTime *arg2 = 0 ;
+  FbxTime result;
+  
+  arg1 = (FbxTime *)jarg1; 
+  arg2 = (FbxTime *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  result = ((FbxTime const *)arg1)->operator *((FbxTime const &)*arg2);
+  jresult = new FbxTime((const FbxTime &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxTime_GetOneFrameValue__SWIG_0(int jarg1) {
+  void * jresult ;
+  FbxTime::EMode arg1 ;
+  FbxLongLong result;
+  
+  arg1 = (FbxTime::EMode)jarg1; 
+  result = FbxTime::GetOneFrameValue(arg1);
+  jresult = new FbxLongLong((const FbxLongLong &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxTime_GetOneFrameValue__SWIG_1() {
+  void * jresult ;
+  FbxLongLong result;
+  
+  result = FbxTime::GetOneFrameValue();
+  jresult = new FbxLongLong((const FbxLongLong &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxGetGlobalTimeMode() {
+  int jresult ;
+  FbxTime::EMode result;
+  
+  result = (FbxTime::EMode)FbxGetGlobalTimeMode();
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxGetGlobalTimeModeObject() {
+  void * jresult ;
+  FbxTimeModeObject *result = 0 ;
+  
+  result = (FbxTimeModeObject *)FbxGetGlobalTimeModeObject();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxGetGlobalTimeFormat() {
+  int jresult ;
+  FbxTime::EProtocol result;
+  
+  result = (FbxTime::EProtocol)FbxGetGlobalTimeFormat();
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxSetGlobalTimeMode__SWIG_0(int jarg1, double jarg2) {
+  FbxTime::EMode arg1 ;
+  double arg2 ;
+  
+  arg1 = (FbxTime::EMode)jarg1; 
+  arg2 = (double)jarg2; 
+  FbxSetGlobalTimeMode(arg1,arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxSetGlobalTimeFormat(int jarg1) {
+  FbxTime::EProtocol arg1 ;
+  
+  arg1 = (FbxTime::EProtocol)jarg1; 
+  FbxSetGlobalTimeFormat(arg1);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxTime(void * jarg1) {
+  FbxTime *arg1 = (FbxTime *) 0 ;
+  
+  arg1 = (FbxTime *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxTimeSeconds__SWIG_0(double jarg1) {
+  void * jresult ;
+  FbxDouble *arg1 = 0 ;
+  FbxDouble temp1 ;
+  FbxTime result;
+  
+  temp1 = (FbxDouble)jarg1; 
+  arg1 = &temp1; 
+  result = FbxTimeSeconds((double const &)*arg1);
+  jresult = new FbxTime((const FbxTime &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxTimeSeconds__SWIG_1() {
+  void * jresult ;
+  FbxTime result;
+  
+  result = FbxTimeSeconds();
+  jresult = new FbxTime((const FbxTime &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxTimeSpan__SWIG_0() {
+  void * jresult ;
+  FbxTimeSpan *result = 0 ;
+  
+  result = (FbxTimeSpan *)new FbxTimeSpan();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxTimeSpan__SWIG_1(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxTime arg1 ;
+  FbxTime arg2 ;
+  FbxTime *argp1 ;
+  FbxTime *argp2 ;
+  FbxTimeSpan *result = 0 ;
+  
+  argp1 = (FbxTime *)jarg1; 
+  if (!argp1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return 0;
+  }
+  arg1 = *argp1; 
+  argp2 = (FbxTime *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return 0;
+  }
+  arg2 = *argp2; 
+  result = (FbxTimeSpan *)new FbxTimeSpan(arg1,arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxTimeSpan_Set(void * jarg1, void * jarg2, void * jarg3) {
+  FbxTimeSpan *arg1 = (FbxTimeSpan *) 0 ;
+  FbxTime arg2 ;
+  FbxTime arg3 ;
+  FbxTime *argp2 ;
+  FbxTime *argp3 ;
+  
+  arg1 = (FbxTimeSpan *)jarg1; 
+  argp2 = (FbxTime *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg2 = *argp2; 
+  argp3 = (FbxTime *)jarg3; 
+  if (!argp3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg3 = *argp3; 
+  (arg1)->Set(arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxTimeSpan_SetStart(void * jarg1, void * jarg2) {
+  FbxTimeSpan *arg1 = (FbxTimeSpan *) 0 ;
+  FbxTime arg2 ;
+  FbxTime *argp2 ;
+  
+  arg1 = (FbxTimeSpan *)jarg1; 
+  argp2 = (FbxTime *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg2 = *argp2; 
+  (arg1)->SetStart(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxTimeSpan_SetStop(void * jarg1, void * jarg2) {
+  FbxTimeSpan *arg1 = (FbxTimeSpan *) 0 ;
+  FbxTime arg2 ;
+  FbxTime *argp2 ;
+  
+  arg1 = (FbxTimeSpan *)jarg1; 
+  argp2 = (FbxTime *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg2 = *argp2; 
+  (arg1)->SetStop(arg2);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxTimeSpan_GetStart(void * jarg1) {
+  void * jresult ;
+  FbxTimeSpan *arg1 = (FbxTimeSpan *) 0 ;
+  FbxTime result;
+  
+  arg1 = (FbxTimeSpan *)jarg1; 
+  result = ((FbxTimeSpan const *)arg1)->GetStart();
+  jresult = new FbxTime((const FbxTime &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxTimeSpan_GetStop(void * jarg1) {
+  void * jresult ;
+  FbxTimeSpan *arg1 = (FbxTimeSpan *) 0 ;
+  FbxTime result;
+  
+  arg1 = (FbxTimeSpan *)jarg1; 
+  result = ((FbxTimeSpan const *)arg1)->GetStop();
+  jresult = new FbxTime((const FbxTime &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxTimeSpan_GetDuration(void * jarg1) {
+  void * jresult ;
+  FbxTimeSpan *arg1 = (FbxTimeSpan *) 0 ;
+  FbxTime result;
+  
+  arg1 = (FbxTimeSpan *)jarg1; 
+  result = ((FbxTimeSpan const *)arg1)->GetDuration();
+  jresult = new FbxTime((const FbxTime &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxTimeSpan_GetSignedDuration(void * jarg1) {
+  void * jresult ;
+  FbxTimeSpan *arg1 = (FbxTimeSpan *) 0 ;
+  FbxTime result;
+  
+  arg1 = (FbxTimeSpan *)jarg1; 
+  result = ((FbxTimeSpan const *)arg1)->GetSignedDuration();
+  jresult = new FbxTime((const FbxTime &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxTimeSpan_GetDirection(void * jarg1) {
+  int jresult ;
+  FbxTimeSpan *arg1 = (FbxTimeSpan *) 0 ;
+  int result;
+  
+  arg1 = (FbxTimeSpan *)jarg1; 
+  result = (int)((FbxTimeSpan const *)arg1)->GetDirection();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxTimeSpan_IsInside(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxTimeSpan *arg1 = (FbxTimeSpan *) 0 ;
+  FbxTime arg2 ;
+  FbxTime *argp2 ;
+  bool result;
+  
+  arg1 = (FbxTimeSpan *)jarg1; 
+  argp2 = (FbxTime *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return 0;
+  }
+  arg2 = *argp2; 
+  result = (bool)((FbxTimeSpan const *)arg1)->IsInside(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxTimeSpan_Intersect(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxTimeSpan *arg1 = (FbxTimeSpan *) 0 ;
+  FbxTimeSpan *arg2 = 0 ;
+  FbxTimeSpan result;
+  
+  arg1 = (FbxTimeSpan *)jarg1; 
+  arg2 = (FbxTimeSpan *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTimeSpan const & type is null", 0);
+    return 0;
+  } 
+  result = ((FbxTimeSpan const *)arg1)->Intersect((FbxTimeSpan const &)*arg2);
+  jresult = new FbxTimeSpan((const FbxTimeSpan &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxTimeSpan_ne(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxTimeSpan *arg1 = (FbxTimeSpan *) 0 ;
+  FbxTimeSpan *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxTimeSpan *)jarg1; 
+  arg2 = (FbxTimeSpan *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTimeSpan const & type is null", 0);
+    return 0;
+  } 
+  result = (bool)((FbxTimeSpan const *)arg1)->operator !=((FbxTimeSpan const &)*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxTimeSpan_eq(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxTimeSpan *arg1 = (FbxTimeSpan *) 0 ;
+  FbxTimeSpan *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxTimeSpan *)jarg1; 
+  arg2 = (FbxTimeSpan *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTimeSpan const & type is null", 0);
+    return 0;
+  } 
+  result = (bool)((FbxTimeSpan const *)arg1)->operator ==((FbxTimeSpan const &)*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxTimeSpan_UnionAssignment__SWIG_0(void * jarg1, void * jarg2, int jarg3) {
+  FbxTimeSpan *arg1 = (FbxTimeSpan *) 0 ;
+  FbxTimeSpan *arg2 = 0 ;
+  int arg3 ;
+  
+  arg1 = (FbxTimeSpan *)jarg1; 
+  arg2 = (FbxTimeSpan *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTimeSpan const & type is null", 0);
+    return ;
+  } 
+  arg3 = (int)jarg3; 
+  (arg1)->UnionAssignment((FbxTimeSpan const &)*arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxTimeSpan_UnionAssignment__SWIG_1(void * jarg1, void * jarg2) {
+  FbxTimeSpan *arg1 = (FbxTimeSpan *) 0 ;
+  FbxTimeSpan *arg2 = 0 ;
+  
+  arg1 = (FbxTimeSpan *)jarg1; 
+  arg2 = (FbxTimeSpan *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTimeSpan const & type is null", 0);
+    return ;
+  } 
+  (arg1)->UnionAssignment((FbxTimeSpan const &)*arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxTimeSpan(void * jarg1) {
+  FbxTimeSpan *arg1 = (FbxTimeSpan *) 0 ;
+  
+  arg1 = (FbxTimeSpan *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxLocalTime() {
+  void * jresult ;
+  FbxLocalTime *result = 0 ;
+  
+  result = (FbxLocalTime *)new FbxLocalTime();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxLocalTime_mYear_set(void * jarg1, int jarg2) {
+  FbxLocalTime *arg1 = (FbxLocalTime *) 0 ;
+  int arg2 ;
+  
+  arg1 = (FbxLocalTime *)jarg1; 
+  arg2 = (int)jarg2; 
+  if (arg1) (arg1)->mYear = arg2;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxLocalTime_mYear_get(void * jarg1) {
+  int jresult ;
+  FbxLocalTime *arg1 = (FbxLocalTime *) 0 ;
+  int result;
+  
+  arg1 = (FbxLocalTime *)jarg1; 
+  result = (int) ((arg1)->mYear);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxLocalTime_mMonth_set(void * jarg1, int jarg2) {
+  FbxLocalTime *arg1 = (FbxLocalTime *) 0 ;
+  int arg2 ;
+  
+  arg1 = (FbxLocalTime *)jarg1; 
+  arg2 = (int)jarg2; 
+  if (arg1) (arg1)->mMonth = arg2;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxLocalTime_mMonth_get(void * jarg1) {
+  int jresult ;
+  FbxLocalTime *arg1 = (FbxLocalTime *) 0 ;
+  int result;
+  
+  arg1 = (FbxLocalTime *)jarg1; 
+  result = (int) ((arg1)->mMonth);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxLocalTime_mDay_set(void * jarg1, int jarg2) {
+  FbxLocalTime *arg1 = (FbxLocalTime *) 0 ;
+  int arg2 ;
+  
+  arg1 = (FbxLocalTime *)jarg1; 
+  arg2 = (int)jarg2; 
+  if (arg1) (arg1)->mDay = arg2;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxLocalTime_mDay_get(void * jarg1) {
+  int jresult ;
+  FbxLocalTime *arg1 = (FbxLocalTime *) 0 ;
+  int result;
+  
+  arg1 = (FbxLocalTime *)jarg1; 
+  result = (int) ((arg1)->mDay);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxLocalTime_mHour_set(void * jarg1, int jarg2) {
+  FbxLocalTime *arg1 = (FbxLocalTime *) 0 ;
+  int arg2 ;
+  
+  arg1 = (FbxLocalTime *)jarg1; 
+  arg2 = (int)jarg2; 
+  if (arg1) (arg1)->mHour = arg2;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxLocalTime_mHour_get(void * jarg1) {
+  int jresult ;
+  FbxLocalTime *arg1 = (FbxLocalTime *) 0 ;
+  int result;
+  
+  arg1 = (FbxLocalTime *)jarg1; 
+  result = (int) ((arg1)->mHour);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxLocalTime_mMinute_set(void * jarg1, int jarg2) {
+  FbxLocalTime *arg1 = (FbxLocalTime *) 0 ;
+  int arg2 ;
+  
+  arg1 = (FbxLocalTime *)jarg1; 
+  arg2 = (int)jarg2; 
+  if (arg1) (arg1)->mMinute = arg2;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxLocalTime_mMinute_get(void * jarg1) {
+  int jresult ;
+  FbxLocalTime *arg1 = (FbxLocalTime *) 0 ;
+  int result;
+  
+  arg1 = (FbxLocalTime *)jarg1; 
+  result = (int) ((arg1)->mMinute);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxLocalTime_mSecond_set(void * jarg1, int jarg2) {
+  FbxLocalTime *arg1 = (FbxLocalTime *) 0 ;
+  int arg2 ;
+  
+  arg1 = (FbxLocalTime *)jarg1; 
+  arg2 = (int)jarg2; 
+  if (arg1) (arg1)->mSecond = arg2;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxLocalTime_mSecond_get(void * jarg1) {
+  int jresult ;
+  FbxLocalTime *arg1 = (FbxLocalTime *) 0 ;
+  int result;
+  
+  arg1 = (FbxLocalTime *)jarg1; 
+  result = (int) ((arg1)->mSecond);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxLocalTime_mMillisecond_set(void * jarg1, int jarg2) {
+  FbxLocalTime *arg1 = (FbxLocalTime *) 0 ;
+  int arg2 ;
+  
+  arg1 = (FbxLocalTime *)jarg1; 
+  arg2 = (int)jarg2; 
+  if (arg1) (arg1)->mMillisecond = arg2;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxLocalTime_mMillisecond_get(void * jarg1) {
+  int jresult ;
+  FbxLocalTime *arg1 = (FbxLocalTime *) 0 ;
+  int result;
+  
+  arg1 = (FbxLocalTime *)jarg1; 
+  result = (int) ((arg1)->mMillisecond);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxLocalTime(void * jarg1) {
+  FbxLocalTime *arg1 = (FbxLocalTime *) 0 ;
+  
+  arg1 = (FbxLocalTime *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxGetCurrentLocalTime(void * jarg1) {
+  FbxLocalTime *arg1 = 0 ;
+  
+  arg1 = (FbxLocalTime *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxLocalTime & type is null", 0);
+    return ;
+  } 
+  FbxGetCurrentLocalTime(*arg1);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxSetGlobalTimeMode__SWIG_1(int jarg1) {
+  FbxTime::EMode arg1 ;
+  
+  arg1 = (FbxTime::EMode)jarg1; 
+  FbxSetGlobalTimeMode(arg1);
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxGetOldTimeModeCorrespondance(int jarg1) {
+  int jresult ;
+  FbxTime::EMode arg1 ;
+  FbxTime::EOldMode result;
+  
+  arg1 = (FbxTime::EMode)jarg1; 
+  result = (FbxTime::EOldMode)FbxGetOldTimeModeCorrespondance(arg1);
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxGetTimeModeFromOldValue(int jarg1) {
+  int jresult ;
+  FbxTime::EOldMode arg1 ;
+  FbxTime::EMode result;
+  
+  arg1 = (FbxTime::EOldMode)jarg1; 
+  result = (FbxTime::EMode)FbxGetTimeModeFromOldValue(arg1);
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxGetTimeModeFromFrameRate(char * jarg1) {
+  int jresult ;
+  char *arg1 = (char *) 0 ;
+  FbxTime::EMode result;
+  
+  arg1 = (char *)jarg1; 
+  result = (FbxTime::EMode)FbxGetTimeModeFromFrameRate(arg1);
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxGetControlStringList(char * jarg1, int jarg2) {
+  char *arg1 = (char *) 0 ;
+  FbxTime::EProtocol arg2 ;
+  
+  arg1 = (char *)jarg1; 
+  arg2 = (FbxTime::EProtocol)jarg2; 
+  FbxGetControlStringList(arg1,arg2);
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FbxGetGlobalFrameRateString(int jarg1) {
+  char * jresult ;
+  FbxTime::EMode arg1 ;
+  char *result = 0 ;
+  
+  arg1 = (FbxTime::EMode)jarg1; 
+  result = (char *)FbxGetGlobalFrameRateString(arg1);
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FbxGetGlobalTimeModeString(int jarg1) {
+  char * jresult ;
+  FbxTime::EMode arg1 ;
+  char *result = 0 ;
+  
+  arg1 = (FbxTime::EMode)jarg1; 
+  result = (char *)FbxGetGlobalTimeModeString(arg1);
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT double SWIGSTDCALL CSharp_Fbx_FbxGetFrameRate(int jarg1) {
+  double jresult ;
+  FbxTime::EMode arg1 ;
+  double result;
+  
+  arg1 = (FbxTime::EMode)jarg1; 
+  result = (double)FbxGetFrameRate(arg1);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxSelectionToTimeFormat(int jarg1) {
+  int jresult ;
+  int arg1 ;
+  FbxTime::EProtocol result;
+  
+  arg1 = (int)jarg1; 
+  result = (FbxTime::EProtocol)FbxSelectionToTimeFormat(arg1);
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxSelectionToTimeMode(int jarg1) {
+  int jresult ;
+  int arg1 ;
+  FbxTime::EMode result;
+  
+  arg1 = (int)jarg1; 
+  result = (FbxTime::EMode)FbxSelectionToTimeMode(arg1);
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxTimeToSelection__SWIG_0(int jarg1, int jarg2) {
+  int jresult ;
+  FbxTime::EMode arg1 ;
+  int arg2 ;
+  int result;
+  
+  arg1 = (FbxTime::EMode)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (int)FbxTimeToSelection(arg1,arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxTimeToSelection__SWIG_1(int jarg1) {
+  int jresult ;
+  FbxTime::EMode arg1 ;
+  int result;
+  
+  arg1 = (FbxTime::EMode)jarg1; 
+  result = (int)FbxTimeToSelection(arg1);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxTimeToSelection__SWIG_2() {
+  int jresult ;
+  int result;
+  
+  result = (int)FbxTimeToSelection();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FbxGetTimeModeName(int jarg1) {
+  char * jresult ;
+  FbxTime::EMode arg1 ;
+  char *result = 0 ;
+  
+  arg1 = (FbxTime::EMode)jarg1; 
+  result = (char *)FbxGetTimeModeName(arg1);
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxGetFrameRateStringListIndex(int jarg1) {
+  int jresult ;
+  FbxTime::EMode arg1 ;
+  int result;
+  
+  arg1 = (FbxTime::EMode)jarg1; 
+  result = (int)FbxGetFrameRateStringListIndex(arg1);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxIsValidCustomFrameRate(double jarg1) {
+  unsigned int jresult ;
+  double arg1 ;
+  bool result;
+  
+  arg1 = (double)jarg1; 
+  result = (bool)FbxIsValidCustomFrameRate(arg1);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxGetNearestCustomFrameRate(double jarg1, void * jarg2) {
+  unsigned int jresult ;
+  double arg1 ;
+  double *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (double)jarg1; 
+  arg2 = (double *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "double & type is null", 0);
+    return 0;
+  } 
+  result = (bool)FbxGetNearestCustomFrameRate(arg1,*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
 SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxEventBase(void * jarg1) {
   FbxEventBase *arg1 = (FbxEventBase *) 0 ;
   
@@ -4118,7 +8118,7 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxObject_GetNameSpaceArray(void * jarg
   void * jresult ;
   FbxObject *arg1 = (FbxObject *) 0 ;
   char arg2 ;
-  FbxArray< FbxString * > result;
+  SwigValueWrapper< FbxArray< FbxString * > > result;
   
   arg1 = (FbxObject *)jarg1; 
   arg2 = (char)jarg2; 
@@ -6222,48 +10222,36 @@ SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxIOInfo_Reset(void * jarg1, int jarg2) 
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxIOInfo_SetTimeMode__SWIG_0(void * jarg1, void * jarg2, double jarg3) {
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxIOInfo_SetTimeMode__SWIG_0(void * jarg1, int jarg2, double jarg3) {
   FbxIOInfo *arg1 = (FbxIOInfo *) 0 ;
   FbxTime::EMode arg2 ;
   double arg3 ;
-  FbxTime::EMode *argp2 ;
   
   arg1 = (FbxIOInfo *)jarg1; 
-  argp2 = (FbxTime::EMode *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime::EMode", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (FbxTime::EMode)jarg2; 
   arg3 = (double)jarg3; 
   (arg1)->SetTimeMode(arg2,arg3);
 }
 
 
-SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxIOInfo_SetTimeMode__SWIG_1(void * jarg1, void * jarg2) {
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxIOInfo_SetTimeMode__SWIG_1(void * jarg1, int jarg2) {
   FbxIOInfo *arg1 = (FbxIOInfo *) 0 ;
   FbxTime::EMode arg2 ;
-  FbxTime::EMode *argp2 ;
   
   arg1 = (FbxIOInfo *)jarg1; 
-  argp2 = (FbxTime::EMode *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime::EMode", 0);
-    return ;
-  }
-  arg2 = *argp2; 
+  arg2 = (FbxTime::EMode)jarg2; 
   (arg1)->SetTimeMode(arg2);
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxIOInfo_GetTimeMode(void * jarg1) {
-  void * jresult ;
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxIOInfo_GetTimeMode(void * jarg1) {
+  int jresult ;
   FbxIOInfo *arg1 = (FbxIOInfo *) 0 ;
   FbxTime::EMode result;
   
   arg1 = (FbxIOInfo *)jarg1; 
-  result = (arg1)->GetTimeMode();
-  jresult = new FbxTime::EMode((const FbxTime::EMode &)result); 
+  result = (FbxTime::EMode)(arg1)->GetTimeMode();
+  jresult = (int)result; 
   return jresult;
 }
 
@@ -10203,6 +14191,2018 @@ SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FbxProperty_sHierarchicalSeparator_get(
 }
 
 
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyString_StaticInit__SWIG_0(void * jarg1, void * jarg2, char * jarg3, void * jarg4, unsigned int jarg5, void * jarg6) {
+  void * jresult ;
+  FbxPropertyT< FbxString > *arg1 = (FbxPropertyT< FbxString > *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  char *arg3 = (char *) 0 ;
+  FbxString *arg4 = 0 ;
+  bool arg5 ;
+  FbxPropertyFlags::EFlags arg6 ;
+  FbxPropertyFlags::EFlags *argp6 ;
+  FbxProperty *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxString > *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (char *)jarg3; 
+  arg4 = (FbxString *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString const & type is null", 0);
+    return 0;
+  } 
+  arg5 = jarg5 ? true : false; 
+  argp6 = (FbxPropertyFlags::EFlags *)jarg6; 
+  if (!argp6) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxPropertyFlags::EFlags", 0);
+    return 0;
+  }
+  arg6 = *argp6; 
+  result = (FbxProperty *) &(arg1)->StaticInit(arg2,(char const *)arg3,(FbxString const &)*arg4,arg5,arg6);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyString_StaticInit__SWIG_1(void * jarg1, void * jarg2, char * jarg3, void * jarg4, unsigned int jarg5) {
+  void * jresult ;
+  FbxPropertyT< FbxString > *arg1 = (FbxPropertyT< FbxString > *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  char *arg3 = (char *) 0 ;
+  FbxString *arg4 = 0 ;
+  bool arg5 ;
+  FbxProperty *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxString > *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (char *)jarg3; 
+  arg4 = (FbxString *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString const & type is null", 0);
+    return 0;
+  } 
+  arg5 = jarg5 ? true : false; 
+  result = (FbxProperty *) &(arg1)->StaticInit(arg2,(char const *)arg3,(FbxString const &)*arg4,arg5);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyString_StaticInit__SWIG_2(void * jarg1, void * jarg2, char * jarg3, void * jarg4, void * jarg5, unsigned int jarg6, void * jarg7) {
+  void * jresult ;
+  FbxPropertyT< FbxString > *arg1 = (FbxPropertyT< FbxString > *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  char *arg3 = (char *) 0 ;
+  FbxDataType *arg4 = 0 ;
+  FbxString *arg5 = 0 ;
+  bool arg6 ;
+  FbxPropertyFlags::EFlags arg7 ;
+  FbxPropertyFlags::EFlags *argp7 ;
+  FbxProperty *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxString > *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (char *)jarg3; 
+  arg4 = (FbxDataType *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxDataType const & type is null", 0);
+    return 0;
+  } 
+  arg5 = (FbxString *)jarg5;
+  if (!arg5) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString const & type is null", 0);
+    return 0;
+  } 
+  arg6 = jarg6 ? true : false; 
+  argp7 = (FbxPropertyFlags::EFlags *)jarg7; 
+  if (!argp7) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxPropertyFlags::EFlags", 0);
+    return 0;
+  }
+  arg7 = *argp7; 
+  result = (FbxProperty *) &(arg1)->StaticInit(arg2,(char const *)arg3,(FbxDataType const &)*arg4,(FbxString const &)*arg5,arg6,arg7);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyString_StaticInit__SWIG_3(void * jarg1, void * jarg2, char * jarg3, void * jarg4, void * jarg5, unsigned int jarg6) {
+  void * jresult ;
+  FbxPropertyT< FbxString > *arg1 = (FbxPropertyT< FbxString > *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  char *arg3 = (char *) 0 ;
+  FbxDataType *arg4 = 0 ;
+  FbxString *arg5 = 0 ;
+  bool arg6 ;
+  FbxProperty *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxString > *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (char *)jarg3; 
+  arg4 = (FbxDataType *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxDataType const & type is null", 0);
+    return 0;
+  } 
+  arg5 = (FbxString *)jarg5;
+  if (!arg5) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString const & type is null", 0);
+    return 0;
+  } 
+  arg6 = jarg6 ? true : false; 
+  result = (FbxProperty *) &(arg1)->StaticInit(arg2,(char const *)arg3,(FbxDataType const &)*arg4,(FbxString const &)*arg5,arg6);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyString_StaticInit__SWIG_4(void * jarg1, void * jarg2, char * jarg3, void * jarg4, void * jarg5, unsigned int jarg6, void * jarg7) {
+  void * jresult ;
+  FbxPropertyT< FbxString > *arg1 = (FbxPropertyT< FbxString > *) 0 ;
+  FbxProperty arg2 ;
+  char *arg3 = (char *) 0 ;
+  FbxDataType *arg4 = 0 ;
+  FbxString *arg5 = 0 ;
+  bool arg6 ;
+  FbxPropertyFlags::EFlags arg7 ;
+  FbxProperty *argp2 ;
+  FbxPropertyFlags::EFlags *argp7 ;
+  FbxProperty *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxString > *)jarg1; 
+  argp2 = (FbxProperty *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxProperty", 0);
+    return 0;
+  }
+  arg2 = *argp2; 
+  arg3 = (char *)jarg3; 
+  arg4 = (FbxDataType *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxDataType const & type is null", 0);
+    return 0;
+  } 
+  arg5 = (FbxString *)jarg5;
+  if (!arg5) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString const & type is null", 0);
+    return 0;
+  } 
+  arg6 = jarg6 ? true : false; 
+  argp7 = (FbxPropertyFlags::EFlags *)jarg7; 
+  if (!argp7) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxPropertyFlags::EFlags", 0);
+    return 0;
+  }
+  arg7 = *argp7; 
+  result = (FbxProperty *) &(arg1)->StaticInit(arg2,(char const *)arg3,(FbxDataType const &)*arg4,(FbxString const &)*arg5,arg6,arg7);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyString_StaticInit__SWIG_5(void * jarg1, void * jarg2, char * jarg3, void * jarg4, void * jarg5, unsigned int jarg6) {
+  void * jresult ;
+  FbxPropertyT< FbxString > *arg1 = (FbxPropertyT< FbxString > *) 0 ;
+  FbxProperty arg2 ;
+  char *arg3 = (char *) 0 ;
+  FbxDataType *arg4 = 0 ;
+  FbxString *arg5 = 0 ;
+  bool arg6 ;
+  FbxProperty *argp2 ;
+  FbxProperty *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxString > *)jarg1; 
+  argp2 = (FbxProperty *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxProperty", 0);
+    return 0;
+  }
+  arg2 = *argp2; 
+  arg3 = (char *)jarg3; 
+  arg4 = (FbxDataType *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxDataType const & type is null", 0);
+    return 0;
+  } 
+  arg5 = (FbxString *)jarg5;
+  if (!arg5) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString const & type is null", 0);
+    return 0;
+  } 
+  arg6 = jarg6 ? true : false; 
+  result = (FbxProperty *) &(arg1)->StaticInit(arg2,(char const *)arg3,(FbxDataType const &)*arg4,(FbxString const &)*arg5,arg6);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyString_StaticInit__SWIG_6(void * jarg1, void * jarg2, char * jarg3, void * jarg4, void * jarg5) {
+  void * jresult ;
+  FbxPropertyT< FbxString > *arg1 = (FbxPropertyT< FbxString > *) 0 ;
+  FbxProperty arg2 ;
+  char *arg3 = (char *) 0 ;
+  FbxDataType *arg4 = 0 ;
+  FbxString *arg5 = 0 ;
+  FbxProperty *argp2 ;
+  FbxProperty *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxString > *)jarg1; 
+  argp2 = (FbxProperty *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxProperty", 0);
+    return 0;
+  }
+  arg2 = *argp2; 
+  arg3 = (char *)jarg3; 
+  arg4 = (FbxDataType *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxDataType const & type is null", 0);
+    return 0;
+  } 
+  arg5 = (FbxString *)jarg5;
+  if (!arg5) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString const & type is null", 0);
+    return 0;
+  } 
+  result = (FbxProperty *) &(arg1)->StaticInit(arg2,(char const *)arg3,(FbxDataType const &)*arg4,(FbxString const &)*arg5);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyString_Set(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxPropertyT< FbxString > *arg1 = (FbxPropertyT< FbxString > *) 0 ;
+  FbxString *arg2 = 0 ;
+  FbxPropertyT< FbxString > *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxString > *)jarg1; 
+  arg2 = (FbxString *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString const & type is null", 0);
+    return 0;
+  } 
+  result = (FbxPropertyT< FbxString > *) &(arg1)->Set((FbxString const &)*arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyString_Get(void * jarg1) {
+  void * jresult ;
+  FbxPropertyT< FbxString > *arg1 = (FbxPropertyT< FbxString > *) 0 ;
+  FbxString result;
+  
+  arg1 = (FbxPropertyT< FbxString > *)jarg1; 
+  result = ((FbxPropertyT< FbxString > const *)arg1)->Get();
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyString_assign(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxPropertyT< FbxString > *arg1 = (FbxPropertyT< FbxString > *) 0 ;
+  FbxString *arg2 = 0 ;
+  FbxPropertyT< FbxString > *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxString > *)jarg1; 
+  arg2 = (FbxString *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString const & type is null", 0);
+    return 0;
+  } 
+  result = (FbxPropertyT< FbxString > *) &(arg1)->operator =((FbxString const &)*arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyString_EvaluateValue__SWIG_0(void * jarg1, void * jarg2, unsigned int jarg3) {
+  void * jresult ;
+  FbxPropertyT< FbxString > *arg1 = (FbxPropertyT< FbxString > *) 0 ;
+  FbxTime *arg2 = 0 ;
+  bool arg3 ;
+  FbxString result;
+  
+  arg1 = (FbxPropertyT< FbxString > *)jarg1; 
+  arg2 = (FbxTime *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  arg3 = jarg3 ? true : false; 
+  result = (arg1)->EvaluateValue((FbxTime const &)*arg2,arg3);
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyString_EvaluateValue__SWIG_1(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxPropertyT< FbxString > *arg1 = (FbxPropertyT< FbxString > *) 0 ;
+  FbxTime *arg2 = 0 ;
+  FbxString result;
+  
+  arg1 = (FbxPropertyT< FbxString > *)jarg1; 
+  arg2 = (FbxTime *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  result = (arg1)->EvaluateValue((FbxTime const &)*arg2);
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyString_EvaluateValue__SWIG_2(void * jarg1) {
+  void * jresult ;
+  FbxPropertyT< FbxString > *arg1 = (FbxPropertyT< FbxString > *) 0 ;
+  FbxString result;
+  
+  arg1 = (FbxPropertyT< FbxString > *)jarg1; 
+  result = (arg1)->EvaluateValue();
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxPropertyString__SWIG_0() {
+  void * jresult ;
+  FbxPropertyT< FbxString > *result = 0 ;
+  
+  result = (FbxPropertyT< FbxString > *)new FbxPropertyT< FbxString >();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxPropertyString__SWIG_1(void * jarg1) {
+  void * jresult ;
+  FbxProperty *arg1 = 0 ;
+  FbxPropertyT< FbxString > *result = 0 ;
+  
+  arg1 = (FbxProperty *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxProperty const & type is null", 0);
+    return 0;
+  } 
+  result = (FbxPropertyT< FbxString > *)new FbxPropertyT< FbxString >((FbxProperty const &)*arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxPropertyString(void * jarg1) {
+  FbxPropertyT< FbxString > *arg1 = (FbxPropertyT< FbxString > *) 0 ;
+  
+  arg1 = (FbxPropertyT< FbxString > *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyDouble3_StaticInit__SWIG_0(void * jarg1, void * jarg2, char * jarg3, void * jarg4, unsigned int jarg5, void * jarg6) {
+  void * jresult ;
+  FbxPropertyT< FbxDouble3 > *arg1 = (FbxPropertyT< FbxDouble3 > *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  char *arg3 = (char *) 0 ;
+  FbxVectorTemplate3< double > *arg4 = 0 ;
+  bool arg5 ;
+  FbxPropertyFlags::EFlags arg6 ;
+  FbxPropertyFlags::EFlags *argp6 ;
+  FbxProperty *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxDouble3 > *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (char *)jarg3; 
+  arg4 = (FbxVectorTemplate3< double > *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxVectorTemplate3< double > const & type is null", 0);
+    return 0;
+  } 
+  arg5 = jarg5 ? true : false; 
+  argp6 = (FbxPropertyFlags::EFlags *)jarg6; 
+  if (!argp6) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxPropertyFlags::EFlags", 0);
+    return 0;
+  }
+  arg6 = *argp6; 
+  result = (FbxProperty *) &(arg1)->StaticInit(arg2,(char const *)arg3,(FbxVectorTemplate3< double > const &)*arg4,arg5,arg6);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyDouble3_StaticInit__SWIG_1(void * jarg1, void * jarg2, char * jarg3, void * jarg4, unsigned int jarg5) {
+  void * jresult ;
+  FbxPropertyT< FbxDouble3 > *arg1 = (FbxPropertyT< FbxDouble3 > *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  char *arg3 = (char *) 0 ;
+  FbxVectorTemplate3< double > *arg4 = 0 ;
+  bool arg5 ;
+  FbxProperty *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxDouble3 > *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (char *)jarg3; 
+  arg4 = (FbxVectorTemplate3< double > *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxVectorTemplate3< double > const & type is null", 0);
+    return 0;
+  } 
+  arg5 = jarg5 ? true : false; 
+  result = (FbxProperty *) &(arg1)->StaticInit(arg2,(char const *)arg3,(FbxVectorTemplate3< double > const &)*arg4,arg5);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyDouble3_StaticInit__SWIG_2(void * jarg1, void * jarg2, char * jarg3, void * jarg4, void * jarg5, unsigned int jarg6, void * jarg7) {
+  void * jresult ;
+  FbxPropertyT< FbxDouble3 > *arg1 = (FbxPropertyT< FbxDouble3 > *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  char *arg3 = (char *) 0 ;
+  FbxDataType *arg4 = 0 ;
+  FbxVectorTemplate3< double > *arg5 = 0 ;
+  bool arg6 ;
+  FbxPropertyFlags::EFlags arg7 ;
+  FbxPropertyFlags::EFlags *argp7 ;
+  FbxProperty *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxDouble3 > *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (char *)jarg3; 
+  arg4 = (FbxDataType *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxDataType const & type is null", 0);
+    return 0;
+  } 
+  arg5 = (FbxVectorTemplate3< double > *)jarg5;
+  if (!arg5) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxVectorTemplate3< double > const & type is null", 0);
+    return 0;
+  } 
+  arg6 = jarg6 ? true : false; 
+  argp7 = (FbxPropertyFlags::EFlags *)jarg7; 
+  if (!argp7) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxPropertyFlags::EFlags", 0);
+    return 0;
+  }
+  arg7 = *argp7; 
+  result = (FbxProperty *) &(arg1)->StaticInit(arg2,(char const *)arg3,(FbxDataType const &)*arg4,(FbxVectorTemplate3< double > const &)*arg5,arg6,arg7);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyDouble3_StaticInit__SWIG_3(void * jarg1, void * jarg2, char * jarg3, void * jarg4, void * jarg5, unsigned int jarg6) {
+  void * jresult ;
+  FbxPropertyT< FbxDouble3 > *arg1 = (FbxPropertyT< FbxDouble3 > *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  char *arg3 = (char *) 0 ;
+  FbxDataType *arg4 = 0 ;
+  FbxVectorTemplate3< double > *arg5 = 0 ;
+  bool arg6 ;
+  FbxProperty *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxDouble3 > *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (char *)jarg3; 
+  arg4 = (FbxDataType *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxDataType const & type is null", 0);
+    return 0;
+  } 
+  arg5 = (FbxVectorTemplate3< double > *)jarg5;
+  if (!arg5) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxVectorTemplate3< double > const & type is null", 0);
+    return 0;
+  } 
+  arg6 = jarg6 ? true : false; 
+  result = (FbxProperty *) &(arg1)->StaticInit(arg2,(char const *)arg3,(FbxDataType const &)*arg4,(FbxVectorTemplate3< double > const &)*arg5,arg6);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyDouble3_StaticInit__SWIG_4(void * jarg1, void * jarg2, char * jarg3, void * jarg4, void * jarg5, unsigned int jarg6, void * jarg7) {
+  void * jresult ;
+  FbxPropertyT< FbxDouble3 > *arg1 = (FbxPropertyT< FbxDouble3 > *) 0 ;
+  FbxProperty arg2 ;
+  char *arg3 = (char *) 0 ;
+  FbxDataType *arg4 = 0 ;
+  FbxVectorTemplate3< double > *arg5 = 0 ;
+  bool arg6 ;
+  FbxPropertyFlags::EFlags arg7 ;
+  FbxProperty *argp2 ;
+  FbxPropertyFlags::EFlags *argp7 ;
+  FbxProperty *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxDouble3 > *)jarg1; 
+  argp2 = (FbxProperty *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxProperty", 0);
+    return 0;
+  }
+  arg2 = *argp2; 
+  arg3 = (char *)jarg3; 
+  arg4 = (FbxDataType *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxDataType const & type is null", 0);
+    return 0;
+  } 
+  arg5 = (FbxVectorTemplate3< double > *)jarg5;
+  if (!arg5) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxVectorTemplate3< double > const & type is null", 0);
+    return 0;
+  } 
+  arg6 = jarg6 ? true : false; 
+  argp7 = (FbxPropertyFlags::EFlags *)jarg7; 
+  if (!argp7) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxPropertyFlags::EFlags", 0);
+    return 0;
+  }
+  arg7 = *argp7; 
+  result = (FbxProperty *) &(arg1)->StaticInit(arg2,(char const *)arg3,(FbxDataType const &)*arg4,(FbxVectorTemplate3< double > const &)*arg5,arg6,arg7);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyDouble3_StaticInit__SWIG_5(void * jarg1, void * jarg2, char * jarg3, void * jarg4, void * jarg5, unsigned int jarg6) {
+  void * jresult ;
+  FbxPropertyT< FbxDouble3 > *arg1 = (FbxPropertyT< FbxDouble3 > *) 0 ;
+  FbxProperty arg2 ;
+  char *arg3 = (char *) 0 ;
+  FbxDataType *arg4 = 0 ;
+  FbxVectorTemplate3< double > *arg5 = 0 ;
+  bool arg6 ;
+  FbxProperty *argp2 ;
+  FbxProperty *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxDouble3 > *)jarg1; 
+  argp2 = (FbxProperty *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxProperty", 0);
+    return 0;
+  }
+  arg2 = *argp2; 
+  arg3 = (char *)jarg3; 
+  arg4 = (FbxDataType *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxDataType const & type is null", 0);
+    return 0;
+  } 
+  arg5 = (FbxVectorTemplate3< double > *)jarg5;
+  if (!arg5) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxVectorTemplate3< double > const & type is null", 0);
+    return 0;
+  } 
+  arg6 = jarg6 ? true : false; 
+  result = (FbxProperty *) &(arg1)->StaticInit(arg2,(char const *)arg3,(FbxDataType const &)*arg4,(FbxVectorTemplate3< double > const &)*arg5,arg6);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyDouble3_StaticInit__SWIG_6(void * jarg1, void * jarg2, char * jarg3, void * jarg4, void * jarg5) {
+  void * jresult ;
+  FbxPropertyT< FbxDouble3 > *arg1 = (FbxPropertyT< FbxDouble3 > *) 0 ;
+  FbxProperty arg2 ;
+  char *arg3 = (char *) 0 ;
+  FbxDataType *arg4 = 0 ;
+  FbxVectorTemplate3< double > *arg5 = 0 ;
+  FbxProperty *argp2 ;
+  FbxProperty *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxDouble3 > *)jarg1; 
+  argp2 = (FbxProperty *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxProperty", 0);
+    return 0;
+  }
+  arg2 = *argp2; 
+  arg3 = (char *)jarg3; 
+  arg4 = (FbxDataType *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxDataType const & type is null", 0);
+    return 0;
+  } 
+  arg5 = (FbxVectorTemplate3< double > *)jarg5;
+  if (!arg5) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxVectorTemplate3< double > const & type is null", 0);
+    return 0;
+  } 
+  result = (FbxProperty *) &(arg1)->StaticInit(arg2,(char const *)arg3,(FbxDataType const &)*arg4,(FbxVectorTemplate3< double > const &)*arg5);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyDouble3_Set(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxPropertyT< FbxDouble3 > *arg1 = (FbxPropertyT< FbxDouble3 > *) 0 ;
+  FbxVectorTemplate3< double > *arg2 = 0 ;
+  FbxPropertyT< FbxDouble3 > *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxDouble3 > *)jarg1; 
+  arg2 = (FbxVectorTemplate3< double > *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxVectorTemplate3< double > const & type is null", 0);
+    return 0;
+  } 
+  result = (FbxPropertyT< FbxDouble3 > *) &(arg1)->Set((FbxVectorTemplate3< double > const &)*arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyDouble3_Get(void * jarg1) {
+  void * jresult ;
+  FbxPropertyT< FbxDouble3 > *arg1 = (FbxPropertyT< FbxDouble3 > *) 0 ;
+  FbxVectorTemplate3< double > result;
+  
+  arg1 = (FbxPropertyT< FbxDouble3 > *)jarg1; 
+  result = ((FbxPropertyT< FbxDouble3 > const *)arg1)->Get();
+  jresult = new FbxVectorTemplate3< double >((const FbxVectorTemplate3< double > &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyDouble3_assign(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxPropertyT< FbxDouble3 > *arg1 = (FbxPropertyT< FbxDouble3 > *) 0 ;
+  FbxVectorTemplate3< double > *arg2 = 0 ;
+  FbxPropertyT< FbxDouble3 > *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxDouble3 > *)jarg1; 
+  arg2 = (FbxVectorTemplate3< double > *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxVectorTemplate3< double > const & type is null", 0);
+    return 0;
+  } 
+  result = (FbxPropertyT< FbxDouble3 > *) &(arg1)->operator =((FbxVectorTemplate3< double > const &)*arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyDouble3_EvaluateValue__SWIG_0(void * jarg1, void * jarg2, unsigned int jarg3) {
+  void * jresult ;
+  FbxPropertyT< FbxDouble3 > *arg1 = (FbxPropertyT< FbxDouble3 > *) 0 ;
+  FbxTime *arg2 = 0 ;
+  bool arg3 ;
+  FbxVectorTemplate3< double > result;
+  
+  arg1 = (FbxPropertyT< FbxDouble3 > *)jarg1; 
+  arg2 = (FbxTime *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  arg3 = jarg3 ? true : false; 
+  result = (arg1)->EvaluateValue((FbxTime const &)*arg2,arg3);
+  jresult = new FbxVectorTemplate3< double >((const FbxVectorTemplate3< double > &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyDouble3_EvaluateValue__SWIG_1(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxPropertyT< FbxDouble3 > *arg1 = (FbxPropertyT< FbxDouble3 > *) 0 ;
+  FbxTime *arg2 = 0 ;
+  FbxVectorTemplate3< double > result;
+  
+  arg1 = (FbxPropertyT< FbxDouble3 > *)jarg1; 
+  arg2 = (FbxTime *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  result = (arg1)->EvaluateValue((FbxTime const &)*arg2);
+  jresult = new FbxVectorTemplate3< double >((const FbxVectorTemplate3< double > &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyDouble3_EvaluateValue__SWIG_2(void * jarg1) {
+  void * jresult ;
+  FbxPropertyT< FbxDouble3 > *arg1 = (FbxPropertyT< FbxDouble3 > *) 0 ;
+  FbxVectorTemplate3< double > result;
+  
+  arg1 = (FbxPropertyT< FbxDouble3 > *)jarg1; 
+  result = (arg1)->EvaluateValue();
+  jresult = new FbxVectorTemplate3< double >((const FbxVectorTemplate3< double > &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxPropertyDouble3__SWIG_0() {
+  void * jresult ;
+  FbxPropertyT< FbxDouble3 > *result = 0 ;
+  
+  result = (FbxPropertyT< FbxDouble3 > *)new FbxPropertyT< FbxDouble3 >();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxPropertyDouble3__SWIG_1(void * jarg1) {
+  void * jresult ;
+  FbxProperty *arg1 = 0 ;
+  FbxPropertyT< FbxDouble3 > *result = 0 ;
+  
+  arg1 = (FbxProperty *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxProperty const & type is null", 0);
+    return 0;
+  } 
+  result = (FbxPropertyT< FbxDouble3 > *)new FbxPropertyT< FbxDouble3 >((FbxProperty const &)*arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxPropertyDouble3(void * jarg1) {
+  FbxPropertyT< FbxDouble3 > *arg1 = (FbxPropertyT< FbxDouble3 > *) 0 ;
+  
+  arg1 = (FbxPropertyT< FbxDouble3 > *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyDouble_StaticInit__SWIG_0(void * jarg1, void * jarg2, char * jarg3, double jarg4, unsigned int jarg5, void * jarg6) {
+  void * jresult ;
+  FbxPropertyT< FbxDouble > *arg1 = (FbxPropertyT< FbxDouble > *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  char *arg3 = (char *) 0 ;
+  double *arg4 = 0 ;
+  bool arg5 ;
+  FbxPropertyFlags::EFlags arg6 ;
+  double temp4 ;
+  FbxPropertyFlags::EFlags *argp6 ;
+  FbxProperty *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxDouble > *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (char *)jarg3; 
+  temp4 = (double)jarg4; 
+  arg4 = &temp4; 
+  arg5 = jarg5 ? true : false; 
+  argp6 = (FbxPropertyFlags::EFlags *)jarg6; 
+  if (!argp6) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxPropertyFlags::EFlags", 0);
+    return 0;
+  }
+  arg6 = *argp6; 
+  result = (FbxProperty *) &(arg1)->StaticInit(arg2,(char const *)arg3,(double const &)*arg4,arg5,arg6);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyDouble_StaticInit__SWIG_1(void * jarg1, void * jarg2, char * jarg3, double jarg4, unsigned int jarg5) {
+  void * jresult ;
+  FbxPropertyT< FbxDouble > *arg1 = (FbxPropertyT< FbxDouble > *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  char *arg3 = (char *) 0 ;
+  double *arg4 = 0 ;
+  bool arg5 ;
+  double temp4 ;
+  FbxProperty *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxDouble > *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (char *)jarg3; 
+  temp4 = (double)jarg4; 
+  arg4 = &temp4; 
+  arg5 = jarg5 ? true : false; 
+  result = (FbxProperty *) &(arg1)->StaticInit(arg2,(char const *)arg3,(double const &)*arg4,arg5);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyDouble_StaticInit__SWIG_2(void * jarg1, void * jarg2, char * jarg3, void * jarg4, double jarg5, unsigned int jarg6, void * jarg7) {
+  void * jresult ;
+  FbxPropertyT< FbxDouble > *arg1 = (FbxPropertyT< FbxDouble > *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  char *arg3 = (char *) 0 ;
+  FbxDataType *arg4 = 0 ;
+  double *arg5 = 0 ;
+  bool arg6 ;
+  FbxPropertyFlags::EFlags arg7 ;
+  double temp5 ;
+  FbxPropertyFlags::EFlags *argp7 ;
+  FbxProperty *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxDouble > *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (char *)jarg3; 
+  arg4 = (FbxDataType *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxDataType const & type is null", 0);
+    return 0;
+  } 
+  temp5 = (double)jarg5; 
+  arg5 = &temp5; 
+  arg6 = jarg6 ? true : false; 
+  argp7 = (FbxPropertyFlags::EFlags *)jarg7; 
+  if (!argp7) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxPropertyFlags::EFlags", 0);
+    return 0;
+  }
+  arg7 = *argp7; 
+  result = (FbxProperty *) &(arg1)->StaticInit(arg2,(char const *)arg3,(FbxDataType const &)*arg4,(double const &)*arg5,arg6,arg7);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyDouble_StaticInit__SWIG_3(void * jarg1, void * jarg2, char * jarg3, void * jarg4, double jarg5, unsigned int jarg6) {
+  void * jresult ;
+  FbxPropertyT< FbxDouble > *arg1 = (FbxPropertyT< FbxDouble > *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  char *arg3 = (char *) 0 ;
+  FbxDataType *arg4 = 0 ;
+  double *arg5 = 0 ;
+  bool arg6 ;
+  double temp5 ;
+  FbxProperty *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxDouble > *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (char *)jarg3; 
+  arg4 = (FbxDataType *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxDataType const & type is null", 0);
+    return 0;
+  } 
+  temp5 = (double)jarg5; 
+  arg5 = &temp5; 
+  arg6 = jarg6 ? true : false; 
+  result = (FbxProperty *) &(arg1)->StaticInit(arg2,(char const *)arg3,(FbxDataType const &)*arg4,(double const &)*arg5,arg6);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyDouble_StaticInit__SWIG_4(void * jarg1, void * jarg2, char * jarg3, void * jarg4, double jarg5, unsigned int jarg6, void * jarg7) {
+  void * jresult ;
+  FbxPropertyT< FbxDouble > *arg1 = (FbxPropertyT< FbxDouble > *) 0 ;
+  FbxProperty arg2 ;
+  char *arg3 = (char *) 0 ;
+  FbxDataType *arg4 = 0 ;
+  double *arg5 = 0 ;
+  bool arg6 ;
+  FbxPropertyFlags::EFlags arg7 ;
+  FbxProperty *argp2 ;
+  double temp5 ;
+  FbxPropertyFlags::EFlags *argp7 ;
+  FbxProperty *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxDouble > *)jarg1; 
+  argp2 = (FbxProperty *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxProperty", 0);
+    return 0;
+  }
+  arg2 = *argp2; 
+  arg3 = (char *)jarg3; 
+  arg4 = (FbxDataType *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxDataType const & type is null", 0);
+    return 0;
+  } 
+  temp5 = (double)jarg5; 
+  arg5 = &temp5; 
+  arg6 = jarg6 ? true : false; 
+  argp7 = (FbxPropertyFlags::EFlags *)jarg7; 
+  if (!argp7) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxPropertyFlags::EFlags", 0);
+    return 0;
+  }
+  arg7 = *argp7; 
+  result = (FbxProperty *) &(arg1)->StaticInit(arg2,(char const *)arg3,(FbxDataType const &)*arg4,(double const &)*arg5,arg6,arg7);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyDouble_StaticInit__SWIG_5(void * jarg1, void * jarg2, char * jarg3, void * jarg4, double jarg5, unsigned int jarg6) {
+  void * jresult ;
+  FbxPropertyT< FbxDouble > *arg1 = (FbxPropertyT< FbxDouble > *) 0 ;
+  FbxProperty arg2 ;
+  char *arg3 = (char *) 0 ;
+  FbxDataType *arg4 = 0 ;
+  double *arg5 = 0 ;
+  bool arg6 ;
+  FbxProperty *argp2 ;
+  double temp5 ;
+  FbxProperty *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxDouble > *)jarg1; 
+  argp2 = (FbxProperty *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxProperty", 0);
+    return 0;
+  }
+  arg2 = *argp2; 
+  arg3 = (char *)jarg3; 
+  arg4 = (FbxDataType *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxDataType const & type is null", 0);
+    return 0;
+  } 
+  temp5 = (double)jarg5; 
+  arg5 = &temp5; 
+  arg6 = jarg6 ? true : false; 
+  result = (FbxProperty *) &(arg1)->StaticInit(arg2,(char const *)arg3,(FbxDataType const &)*arg4,(double const &)*arg5,arg6);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyDouble_StaticInit__SWIG_6(void * jarg1, void * jarg2, char * jarg3, void * jarg4, double jarg5) {
+  void * jresult ;
+  FbxPropertyT< FbxDouble > *arg1 = (FbxPropertyT< FbxDouble > *) 0 ;
+  FbxProperty arg2 ;
+  char *arg3 = (char *) 0 ;
+  FbxDataType *arg4 = 0 ;
+  double *arg5 = 0 ;
+  FbxProperty *argp2 ;
+  double temp5 ;
+  FbxProperty *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxDouble > *)jarg1; 
+  argp2 = (FbxProperty *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxProperty", 0);
+    return 0;
+  }
+  arg2 = *argp2; 
+  arg3 = (char *)jarg3; 
+  arg4 = (FbxDataType *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxDataType const & type is null", 0);
+    return 0;
+  } 
+  temp5 = (double)jarg5; 
+  arg5 = &temp5; 
+  result = (FbxProperty *) &(arg1)->StaticInit(arg2,(char const *)arg3,(FbxDataType const &)*arg4,(double const &)*arg5);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyDouble_Set(void * jarg1, double jarg2) {
+  void * jresult ;
+  FbxPropertyT< FbxDouble > *arg1 = (FbxPropertyT< FbxDouble > *) 0 ;
+  double *arg2 = 0 ;
+  double temp2 ;
+  FbxPropertyT< FbxDouble > *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxDouble > *)jarg1; 
+  temp2 = (double)jarg2; 
+  arg2 = &temp2; 
+  result = (FbxPropertyT< FbxDouble > *) &(arg1)->Set((double const &)*arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT double SWIGSTDCALL CSharp_Fbx_FbxPropertyDouble_Get(void * jarg1) {
+  double jresult ;
+  FbxPropertyT< FbxDouble > *arg1 = (FbxPropertyT< FbxDouble > *) 0 ;
+  double result;
+  
+  arg1 = (FbxPropertyT< FbxDouble > *)jarg1; 
+  result = (double)((FbxPropertyT< FbxDouble > const *)arg1)->Get();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyDouble_assign(void * jarg1, double jarg2) {
+  void * jresult ;
+  FbxPropertyT< FbxDouble > *arg1 = (FbxPropertyT< FbxDouble > *) 0 ;
+  double *arg2 = 0 ;
+  double temp2 ;
+  FbxPropertyT< FbxDouble > *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxDouble > *)jarg1; 
+  temp2 = (double)jarg2; 
+  arg2 = &temp2; 
+  result = (FbxPropertyT< FbxDouble > *) &(arg1)->operator =((double const &)*arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT double SWIGSTDCALL CSharp_Fbx_FbxPropertyDouble_EvaluateValue__SWIG_0(void * jarg1, void * jarg2, unsigned int jarg3) {
+  double jresult ;
+  FbxPropertyT< FbxDouble > *arg1 = (FbxPropertyT< FbxDouble > *) 0 ;
+  FbxTime *arg2 = 0 ;
+  bool arg3 ;
+  double result;
+  
+  arg1 = (FbxPropertyT< FbxDouble > *)jarg1; 
+  arg2 = (FbxTime *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  arg3 = jarg3 ? true : false; 
+  result = (double)(arg1)->EvaluateValue((FbxTime const &)*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT double SWIGSTDCALL CSharp_Fbx_FbxPropertyDouble_EvaluateValue__SWIG_1(void * jarg1, void * jarg2) {
+  double jresult ;
+  FbxPropertyT< FbxDouble > *arg1 = (FbxPropertyT< FbxDouble > *) 0 ;
+  FbxTime *arg2 = 0 ;
+  double result;
+  
+  arg1 = (FbxPropertyT< FbxDouble > *)jarg1; 
+  arg2 = (FbxTime *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  result = (double)(arg1)->EvaluateValue((FbxTime const &)*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT double SWIGSTDCALL CSharp_Fbx_FbxPropertyDouble_EvaluateValue__SWIG_2(void * jarg1) {
+  double jresult ;
+  FbxPropertyT< FbxDouble > *arg1 = (FbxPropertyT< FbxDouble > *) 0 ;
+  double result;
+  
+  arg1 = (FbxPropertyT< FbxDouble > *)jarg1; 
+  result = (double)(arg1)->EvaluateValue();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxPropertyDouble__SWIG_0() {
+  void * jresult ;
+  FbxPropertyT< FbxDouble > *result = 0 ;
+  
+  result = (FbxPropertyT< FbxDouble > *)new FbxPropertyT< FbxDouble >();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxPropertyDouble__SWIG_1(void * jarg1) {
+  void * jresult ;
+  FbxProperty *arg1 = 0 ;
+  FbxPropertyT< FbxDouble > *result = 0 ;
+  
+  arg1 = (FbxProperty *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxProperty const & type is null", 0);
+    return 0;
+  } 
+  result = (FbxPropertyT< FbxDouble > *)new FbxPropertyT< FbxDouble >((FbxProperty const &)*arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxPropertyDouble(void * jarg1) {
+  FbxPropertyT< FbxDouble > *arg1 = (FbxPropertyT< FbxDouble > *) 0 ;
+  
+  arg1 = (FbxPropertyT< FbxDouble > *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyBool_StaticInit__SWIG_0(void * jarg1, void * jarg2, char * jarg3, unsigned int jarg4, unsigned int jarg5, void * jarg6) {
+  void * jresult ;
+  FbxPropertyT< FbxBool > *arg1 = (FbxPropertyT< FbxBool > *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  char *arg3 = (char *) 0 ;
+  bool *arg4 = 0 ;
+  bool arg5 ;
+  FbxPropertyFlags::EFlags arg6 ;
+  bool temp4 ;
+  FbxPropertyFlags::EFlags *argp6 ;
+  FbxProperty *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxBool > *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (char *)jarg3; 
+  temp4 = jarg4 ? true : false; 
+  arg4 = &temp4; 
+  arg5 = jarg5 ? true : false; 
+  argp6 = (FbxPropertyFlags::EFlags *)jarg6; 
+  if (!argp6) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxPropertyFlags::EFlags", 0);
+    return 0;
+  }
+  arg6 = *argp6; 
+  result = (FbxProperty *) &(arg1)->StaticInit(arg2,(char const *)arg3,(bool const &)*arg4,arg5,arg6);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyBool_StaticInit__SWIG_1(void * jarg1, void * jarg2, char * jarg3, unsigned int jarg4, unsigned int jarg5) {
+  void * jresult ;
+  FbxPropertyT< FbxBool > *arg1 = (FbxPropertyT< FbxBool > *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  char *arg3 = (char *) 0 ;
+  bool *arg4 = 0 ;
+  bool arg5 ;
+  bool temp4 ;
+  FbxProperty *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxBool > *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (char *)jarg3; 
+  temp4 = jarg4 ? true : false; 
+  arg4 = &temp4; 
+  arg5 = jarg5 ? true : false; 
+  result = (FbxProperty *) &(arg1)->StaticInit(arg2,(char const *)arg3,(bool const &)*arg4,arg5);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyBool_StaticInit__SWIG_2(void * jarg1, void * jarg2, char * jarg3, void * jarg4, unsigned int jarg5, unsigned int jarg6, void * jarg7) {
+  void * jresult ;
+  FbxPropertyT< FbxBool > *arg1 = (FbxPropertyT< FbxBool > *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  char *arg3 = (char *) 0 ;
+  FbxDataType *arg4 = 0 ;
+  bool *arg5 = 0 ;
+  bool arg6 ;
+  FbxPropertyFlags::EFlags arg7 ;
+  bool temp5 ;
+  FbxPropertyFlags::EFlags *argp7 ;
+  FbxProperty *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxBool > *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (char *)jarg3; 
+  arg4 = (FbxDataType *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxDataType const & type is null", 0);
+    return 0;
+  } 
+  temp5 = jarg5 ? true : false; 
+  arg5 = &temp5; 
+  arg6 = jarg6 ? true : false; 
+  argp7 = (FbxPropertyFlags::EFlags *)jarg7; 
+  if (!argp7) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxPropertyFlags::EFlags", 0);
+    return 0;
+  }
+  arg7 = *argp7; 
+  result = (FbxProperty *) &(arg1)->StaticInit(arg2,(char const *)arg3,(FbxDataType const &)*arg4,(bool const &)*arg5,arg6,arg7);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyBool_StaticInit__SWIG_3(void * jarg1, void * jarg2, char * jarg3, void * jarg4, unsigned int jarg5, unsigned int jarg6) {
+  void * jresult ;
+  FbxPropertyT< FbxBool > *arg1 = (FbxPropertyT< FbxBool > *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  char *arg3 = (char *) 0 ;
+  FbxDataType *arg4 = 0 ;
+  bool *arg5 = 0 ;
+  bool arg6 ;
+  bool temp5 ;
+  FbxProperty *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxBool > *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (char *)jarg3; 
+  arg4 = (FbxDataType *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxDataType const & type is null", 0);
+    return 0;
+  } 
+  temp5 = jarg5 ? true : false; 
+  arg5 = &temp5; 
+  arg6 = jarg6 ? true : false; 
+  result = (FbxProperty *) &(arg1)->StaticInit(arg2,(char const *)arg3,(FbxDataType const &)*arg4,(bool const &)*arg5,arg6);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyBool_StaticInit__SWIG_4(void * jarg1, void * jarg2, char * jarg3, void * jarg4, unsigned int jarg5, unsigned int jarg6, void * jarg7) {
+  void * jresult ;
+  FbxPropertyT< FbxBool > *arg1 = (FbxPropertyT< FbxBool > *) 0 ;
+  FbxProperty arg2 ;
+  char *arg3 = (char *) 0 ;
+  FbxDataType *arg4 = 0 ;
+  bool *arg5 = 0 ;
+  bool arg6 ;
+  FbxPropertyFlags::EFlags arg7 ;
+  FbxProperty *argp2 ;
+  bool temp5 ;
+  FbxPropertyFlags::EFlags *argp7 ;
+  FbxProperty *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxBool > *)jarg1; 
+  argp2 = (FbxProperty *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxProperty", 0);
+    return 0;
+  }
+  arg2 = *argp2; 
+  arg3 = (char *)jarg3; 
+  arg4 = (FbxDataType *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxDataType const & type is null", 0);
+    return 0;
+  } 
+  temp5 = jarg5 ? true : false; 
+  arg5 = &temp5; 
+  arg6 = jarg6 ? true : false; 
+  argp7 = (FbxPropertyFlags::EFlags *)jarg7; 
+  if (!argp7) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxPropertyFlags::EFlags", 0);
+    return 0;
+  }
+  arg7 = *argp7; 
+  result = (FbxProperty *) &(arg1)->StaticInit(arg2,(char const *)arg3,(FbxDataType const &)*arg4,(bool const &)*arg5,arg6,arg7);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyBool_StaticInit__SWIG_5(void * jarg1, void * jarg2, char * jarg3, void * jarg4, unsigned int jarg5, unsigned int jarg6) {
+  void * jresult ;
+  FbxPropertyT< FbxBool > *arg1 = (FbxPropertyT< FbxBool > *) 0 ;
+  FbxProperty arg2 ;
+  char *arg3 = (char *) 0 ;
+  FbxDataType *arg4 = 0 ;
+  bool *arg5 = 0 ;
+  bool arg6 ;
+  FbxProperty *argp2 ;
+  bool temp5 ;
+  FbxProperty *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxBool > *)jarg1; 
+  argp2 = (FbxProperty *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxProperty", 0);
+    return 0;
+  }
+  arg2 = *argp2; 
+  arg3 = (char *)jarg3; 
+  arg4 = (FbxDataType *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxDataType const & type is null", 0);
+    return 0;
+  } 
+  temp5 = jarg5 ? true : false; 
+  arg5 = &temp5; 
+  arg6 = jarg6 ? true : false; 
+  result = (FbxProperty *) &(arg1)->StaticInit(arg2,(char const *)arg3,(FbxDataType const &)*arg4,(bool const &)*arg5,arg6);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyBool_StaticInit__SWIG_6(void * jarg1, void * jarg2, char * jarg3, void * jarg4, unsigned int jarg5) {
+  void * jresult ;
+  FbxPropertyT< FbxBool > *arg1 = (FbxPropertyT< FbxBool > *) 0 ;
+  FbxProperty arg2 ;
+  char *arg3 = (char *) 0 ;
+  FbxDataType *arg4 = 0 ;
+  bool *arg5 = 0 ;
+  FbxProperty *argp2 ;
+  bool temp5 ;
+  FbxProperty *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxBool > *)jarg1; 
+  argp2 = (FbxProperty *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxProperty", 0);
+    return 0;
+  }
+  arg2 = *argp2; 
+  arg3 = (char *)jarg3; 
+  arg4 = (FbxDataType *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxDataType const & type is null", 0);
+    return 0;
+  } 
+  temp5 = jarg5 ? true : false; 
+  arg5 = &temp5; 
+  result = (FbxProperty *) &(arg1)->StaticInit(arg2,(char const *)arg3,(FbxDataType const &)*arg4,(bool const &)*arg5);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyBool_Set(void * jarg1, unsigned int jarg2) {
+  void * jresult ;
+  FbxPropertyT< FbxBool > *arg1 = (FbxPropertyT< FbxBool > *) 0 ;
+  bool *arg2 = 0 ;
+  bool temp2 ;
+  FbxPropertyT< FbxBool > *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxBool > *)jarg1; 
+  temp2 = jarg2 ? true : false; 
+  arg2 = &temp2; 
+  result = (FbxPropertyT< FbxBool > *) &(arg1)->Set((bool const &)*arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxPropertyBool_Get(void * jarg1) {
+  unsigned int jresult ;
+  FbxPropertyT< FbxBool > *arg1 = (FbxPropertyT< FbxBool > *) 0 ;
+  bool result;
+  
+  arg1 = (FbxPropertyT< FbxBool > *)jarg1; 
+  result = (bool)((FbxPropertyT< FbxBool > const *)arg1)->Get();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyBool_assign(void * jarg1, unsigned int jarg2) {
+  void * jresult ;
+  FbxPropertyT< FbxBool > *arg1 = (FbxPropertyT< FbxBool > *) 0 ;
+  bool *arg2 = 0 ;
+  bool temp2 ;
+  FbxPropertyT< FbxBool > *result = 0 ;
+  
+  arg1 = (FbxPropertyT< FbxBool > *)jarg1; 
+  temp2 = jarg2 ? true : false; 
+  arg2 = &temp2; 
+  result = (FbxPropertyT< FbxBool > *) &(arg1)->operator =((bool const &)*arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxPropertyBool_EvaluateValue__SWIG_0(void * jarg1, void * jarg2, unsigned int jarg3) {
+  unsigned int jresult ;
+  FbxPropertyT< FbxBool > *arg1 = (FbxPropertyT< FbxBool > *) 0 ;
+  FbxTime *arg2 = 0 ;
+  bool arg3 ;
+  bool result;
+  
+  arg1 = (FbxPropertyT< FbxBool > *)jarg1; 
+  arg2 = (FbxTime *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  arg3 = jarg3 ? true : false; 
+  result = (bool)(arg1)->EvaluateValue((FbxTime const &)*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxPropertyBool_EvaluateValue__SWIG_1(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxPropertyT< FbxBool > *arg1 = (FbxPropertyT< FbxBool > *) 0 ;
+  FbxTime *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxPropertyT< FbxBool > *)jarg1; 
+  arg2 = (FbxTime *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->EvaluateValue((FbxTime const &)*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxPropertyBool_EvaluateValue__SWIG_2(void * jarg1) {
+  unsigned int jresult ;
+  FbxPropertyT< FbxBool > *arg1 = (FbxPropertyT< FbxBool > *) 0 ;
+  bool result;
+  
+  arg1 = (FbxPropertyT< FbxBool > *)jarg1; 
+  result = (bool)(arg1)->EvaluateValue();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxPropertyBool__SWIG_0() {
+  void * jresult ;
+  FbxPropertyT< FbxBool > *result = 0 ;
+  
+  result = (FbxPropertyT< FbxBool > *)new FbxPropertyT< FbxBool >();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxPropertyBool__SWIG_1(void * jarg1) {
+  void * jresult ;
+  FbxProperty *arg1 = 0 ;
+  FbxPropertyT< FbxBool > *result = 0 ;
+  
+  arg1 = (FbxProperty *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxProperty const & type is null", 0);
+    return 0;
+  } 
+  result = (FbxPropertyT< FbxBool > *)new FbxPropertyT< FbxBool >((FbxProperty const &)*arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxPropertyBool(void * jarg1) {
+  FbxPropertyT< FbxBool > *arg1 = (FbxPropertyT< FbxBool > *) 0 ;
+  
+  arg1 = (FbxPropertyT< FbxBool > *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_ConversionOptions_mConvertRrsNodes_set(void * jarg1, unsigned int jarg2) {
+  FbxSystemUnit::ConversionOptions *arg1 = (FbxSystemUnit::ConversionOptions *) 0 ;
+  bool arg2 ;
+  
+  arg1 = (FbxSystemUnit::ConversionOptions *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  if (arg1) (arg1)->mConvertRrsNodes = arg2;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_ConversionOptions_mConvertRrsNodes_get(void * jarg1) {
+  unsigned int jresult ;
+  FbxSystemUnit::ConversionOptions *arg1 = (FbxSystemUnit::ConversionOptions *) 0 ;
+  bool result;
+  
+  arg1 = (FbxSystemUnit::ConversionOptions *)jarg1; 
+  result = (bool) ((arg1)->mConvertRrsNodes);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_ConversionOptions_mConvertLimits_set(void * jarg1, unsigned int jarg2) {
+  FbxSystemUnit::ConversionOptions *arg1 = (FbxSystemUnit::ConversionOptions *) 0 ;
+  bool arg2 ;
+  
+  arg1 = (FbxSystemUnit::ConversionOptions *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  if (arg1) (arg1)->mConvertLimits = arg2;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_ConversionOptions_mConvertLimits_get(void * jarg1) {
+  unsigned int jresult ;
+  FbxSystemUnit::ConversionOptions *arg1 = (FbxSystemUnit::ConversionOptions *) 0 ;
+  bool result;
+  
+  arg1 = (FbxSystemUnit::ConversionOptions *)jarg1; 
+  result = (bool) ((arg1)->mConvertLimits);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_ConversionOptions_mConvertClusters_set(void * jarg1, unsigned int jarg2) {
+  FbxSystemUnit::ConversionOptions *arg1 = (FbxSystemUnit::ConversionOptions *) 0 ;
+  bool arg2 ;
+  
+  arg1 = (FbxSystemUnit::ConversionOptions *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  if (arg1) (arg1)->mConvertClusters = arg2;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_ConversionOptions_mConvertClusters_get(void * jarg1) {
+  unsigned int jresult ;
+  FbxSystemUnit::ConversionOptions *arg1 = (FbxSystemUnit::ConversionOptions *) 0 ;
+  bool result;
+  
+  arg1 = (FbxSystemUnit::ConversionOptions *)jarg1; 
+  result = (bool) ((arg1)->mConvertClusters);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_ConversionOptions_mConvertLightIntensity_set(void * jarg1, unsigned int jarg2) {
+  FbxSystemUnit::ConversionOptions *arg1 = (FbxSystemUnit::ConversionOptions *) 0 ;
+  bool arg2 ;
+  
+  arg1 = (FbxSystemUnit::ConversionOptions *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  if (arg1) (arg1)->mConvertLightIntensity = arg2;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_ConversionOptions_mConvertLightIntensity_get(void * jarg1) {
+  unsigned int jresult ;
+  FbxSystemUnit::ConversionOptions *arg1 = (FbxSystemUnit::ConversionOptions *) 0 ;
+  bool result;
+  
+  arg1 = (FbxSystemUnit::ConversionOptions *)jarg1; 
+  result = (bool) ((arg1)->mConvertLightIntensity);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_ConversionOptions_mConvertPhotometricLProperties_set(void * jarg1, unsigned int jarg2) {
+  FbxSystemUnit::ConversionOptions *arg1 = (FbxSystemUnit::ConversionOptions *) 0 ;
+  bool arg2 ;
+  
+  arg1 = (FbxSystemUnit::ConversionOptions *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  if (arg1) (arg1)->mConvertPhotometricLProperties = arg2;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_ConversionOptions_mConvertPhotometricLProperties_get(void * jarg1) {
+  unsigned int jresult ;
+  FbxSystemUnit::ConversionOptions *arg1 = (FbxSystemUnit::ConversionOptions *) 0 ;
+  bool result;
+  
+  arg1 = (FbxSystemUnit::ConversionOptions *)jarg1; 
+  result = (bool) ((arg1)->mConvertPhotometricLProperties);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_ConversionOptions_mConvertCameraClipPlanes_set(void * jarg1, unsigned int jarg2) {
+  FbxSystemUnit::ConversionOptions *arg1 = (FbxSystemUnit::ConversionOptions *) 0 ;
+  bool arg2 ;
+  
+  arg1 = (FbxSystemUnit::ConversionOptions *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  if (arg1) (arg1)->mConvertCameraClipPlanes = arg2;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_ConversionOptions_mConvertCameraClipPlanes_get(void * jarg1) {
+  unsigned int jresult ;
+  FbxSystemUnit::ConversionOptions *arg1 = (FbxSystemUnit::ConversionOptions *) 0 ;
+  bool result;
+  
+  arg1 = (FbxSystemUnit::ConversionOptions *)jarg1; 
+  result = (bool) ((arg1)->mConvertCameraClipPlanes);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxSystemUnit_ConversionOptions() {
+  void * jresult ;
+  FbxSystemUnit::ConversionOptions *result = 0 ;
+  
+  result = (FbxSystemUnit::ConversionOptions *)new FbxSystemUnit::ConversionOptions();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxSystemUnit_ConversionOptions(void * jarg1) {
+  FbxSystemUnit::ConversionOptions *arg1 = (FbxSystemUnit::ConversionOptions *) 0 ;
+  
+  arg1 = (FbxSystemUnit::ConversionOptions *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxSystemUnit__SWIG_0() {
+  void * jresult ;
+  FbxSystemUnit *result = 0 ;
+  
+  result = (FbxSystemUnit *)new FbxSystemUnit();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxSystemUnit__SWIG_1(double jarg1, double jarg2) {
+  void * jresult ;
+  double arg1 ;
+  double arg2 ;
+  FbxSystemUnit *result = 0 ;
+  
+  arg1 = (double)jarg1; 
+  arg2 = (double)jarg2; 
+  result = (FbxSystemUnit *)new FbxSystemUnit(arg1,arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxSystemUnit__SWIG_2(double jarg1) {
+  void * jresult ;
+  double arg1 ;
+  FbxSystemUnit *result = 0 ;
+  
+  arg1 = (double)jarg1; 
+  result = (FbxSystemUnit *)new FbxSystemUnit(arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxSystemUnit(void * jarg1) {
+  FbxSystemUnit *arg1 = (FbxSystemUnit *) 0 ;
+  
+  arg1 = (FbxSystemUnit *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_mm_get() {
+  void * jresult ;
+  FbxSystemUnit *result = 0 ;
+  
+  result = (FbxSystemUnit *)&FbxSystemUnit::mm;
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_dm_get() {
+  void * jresult ;
+  FbxSystemUnit *result = 0 ;
+  
+  result = (FbxSystemUnit *)&FbxSystemUnit::dm;
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_cm_get() {
+  void * jresult ;
+  FbxSystemUnit *result = 0 ;
+  
+  result = (FbxSystemUnit *)&FbxSystemUnit::cm;
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_m_get() {
+  void * jresult ;
+  FbxSystemUnit *result = 0 ;
+  
+  result = (FbxSystemUnit *)&FbxSystemUnit::m;
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_km_get() {
+  void * jresult ;
+  FbxSystemUnit *result = 0 ;
+  
+  result = (FbxSystemUnit *)&FbxSystemUnit::km;
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_Inch_get() {
+  void * jresult ;
+  FbxSystemUnit *result = 0 ;
+  
+  result = (FbxSystemUnit *)&FbxSystemUnit::Inch;
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_Foot_get() {
+  void * jresult ;
+  FbxSystemUnit *result = 0 ;
+  
+  result = (FbxSystemUnit *)&FbxSystemUnit::Foot;
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_Mile_get() {
+  void * jresult ;
+  FbxSystemUnit *result = 0 ;
+  
+  result = (FbxSystemUnit *)&FbxSystemUnit::Mile;
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_Yard_get() {
+  void * jresult ;
+  FbxSystemUnit *result = 0 ;
+  
+  result = (FbxSystemUnit *)&FbxSystemUnit::Yard;
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FBXSDK_SYSTEM_UNIT_PREDEF_COUNT_get() {
+  int jresult ;
+  int result;
+  
+  result = (int)(9);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_sPredefinedUnits_set(void * jarg1) {
+  FbxSystemUnit *arg1 = (FbxSystemUnit *) 0 ;
+  
+  arg1 = (FbxSystemUnit *)jarg1; 
+  FbxSystemUnit::sPredefinedUnits = (FbxSystemUnit const *)arg1;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_sPredefinedUnits_get() {
+  void * jresult ;
+  FbxSystemUnit *result = 0 ;
+  
+  result = (FbxSystemUnit *)FbxSystemUnit::sPredefinedUnits;
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_DefaultConversionOptions_get() {
+  void * jresult ;
+  FbxSystemUnit::ConversionOptions *result = 0 ;
+  
+  result = (FbxSystemUnit::ConversionOptions *)&FbxSystemUnit::DefaultConversionOptions;
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_ConvertScene__SWIG_0(void * jarg1, void * jarg2, void * jarg3) {
+  FbxSystemUnit *arg1 = (FbxSystemUnit *) 0 ;
+  FbxScene *arg2 = (FbxScene *) 0 ;
+  FbxSystemUnit::ConversionOptions *arg3 = 0 ;
+  
+  arg1 = (FbxSystemUnit *)jarg1; 
+  arg2 = (FbxScene *)jarg2; 
+  arg3 = (FbxSystemUnit::ConversionOptions *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxSystemUnit::ConversionOptions const & type is null", 0);
+    return ;
+  } 
+  ((FbxSystemUnit const *)arg1)->ConvertScene(arg2,(FbxSystemUnit::ConversionOptions const &)*arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_ConvertScene__SWIG_1(void * jarg1, void * jarg2) {
+  FbxSystemUnit *arg1 = (FbxSystemUnit *) 0 ;
+  FbxScene *arg2 = (FbxScene *) 0 ;
+  
+  arg1 = (FbxSystemUnit *)jarg1; 
+  arg2 = (FbxScene *)jarg2; 
+  ((FbxSystemUnit const *)arg1)->ConvertScene(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_ConvertChildren__SWIG_0(void * jarg1, void * jarg2, void * jarg3, void * jarg4) {
+  FbxSystemUnit *arg1 = (FbxSystemUnit *) 0 ;
+  FbxNode *arg2 = (FbxNode *) 0 ;
+  FbxSystemUnit *arg3 = 0 ;
+  FbxSystemUnit::ConversionOptions *arg4 = 0 ;
+  
+  arg1 = (FbxSystemUnit *)jarg1; 
+  arg2 = (FbxNode *)jarg2; 
+  arg3 = (FbxSystemUnit *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxSystemUnit const & type is null", 0);
+    return ;
+  } 
+  arg4 = (FbxSystemUnit::ConversionOptions *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxSystemUnit::ConversionOptions const & type is null", 0);
+    return ;
+  } 
+  ((FbxSystemUnit const *)arg1)->ConvertChildren(arg2,(FbxSystemUnit const &)*arg3,(FbxSystemUnit::ConversionOptions const &)*arg4);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_ConvertChildren__SWIG_1(void * jarg1, void * jarg2, void * jarg3) {
+  FbxSystemUnit *arg1 = (FbxSystemUnit *) 0 ;
+  FbxNode *arg2 = (FbxNode *) 0 ;
+  FbxSystemUnit *arg3 = 0 ;
+  
+  arg1 = (FbxSystemUnit *)jarg1; 
+  arg2 = (FbxNode *)jarg2; 
+  arg3 = (FbxSystemUnit *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxSystemUnit const & type is null", 0);
+    return ;
+  } 
+  ((FbxSystemUnit const *)arg1)->ConvertChildren(arg2,(FbxSystemUnit const &)*arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_ConvertScene__SWIG_2(void * jarg1, void * jarg2, void * jarg3, void * jarg4) {
+  FbxSystemUnit *arg1 = (FbxSystemUnit *) 0 ;
+  FbxScene *arg2 = (FbxScene *) 0 ;
+  FbxNode *arg3 = (FbxNode *) 0 ;
+  FbxSystemUnit::ConversionOptions *arg4 = 0 ;
+  
+  arg1 = (FbxSystemUnit *)jarg1; 
+  arg2 = (FbxScene *)jarg2; 
+  arg3 = (FbxNode *)jarg3; 
+  arg4 = (FbxSystemUnit::ConversionOptions *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxSystemUnit::ConversionOptions const & type is null", 0);
+    return ;
+  } 
+  ((FbxSystemUnit const *)arg1)->ConvertScene(arg2,arg3,(FbxSystemUnit::ConversionOptions const &)*arg4);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_ConvertScene__SWIG_3(void * jarg1, void * jarg2, void * jarg3) {
+  FbxSystemUnit *arg1 = (FbxSystemUnit *) 0 ;
+  FbxScene *arg2 = (FbxScene *) 0 ;
+  FbxNode *arg3 = (FbxNode *) 0 ;
+  
+  arg1 = (FbxSystemUnit *)jarg1; 
+  arg2 = (FbxScene *)jarg2; 
+  arg3 = (FbxNode *)jarg3; 
+  ((FbxSystemUnit const *)arg1)->ConvertScene(arg2,arg3);
+}
+
+
+SWIGEXPORT double SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_GetScaleFactor(void * jarg1) {
+  double jresult ;
+  FbxSystemUnit *arg1 = (FbxSystemUnit *) 0 ;
+  double result;
+  
+  arg1 = (FbxSystemUnit *)jarg1; 
+  result = (double)((FbxSystemUnit const *)arg1)->GetScaleFactor();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_GetScaleFactorAsString__SWIG_0(void * jarg1, unsigned int jarg2) {
+  void * jresult ;
+  FbxSystemUnit *arg1 = (FbxSystemUnit *) 0 ;
+  bool arg2 ;
+  FbxString result;
+  
+  arg1 = (FbxSystemUnit *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  result = ((FbxSystemUnit const *)arg1)->GetScaleFactorAsString(arg2);
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_GetScaleFactorAsString__SWIG_1(void * jarg1) {
+  void * jresult ;
+  FbxSystemUnit *arg1 = (FbxSystemUnit *) 0 ;
+  FbxString result;
+  
+  arg1 = (FbxSystemUnit *)jarg1; 
+  result = ((FbxSystemUnit const *)arg1)->GetScaleFactorAsString();
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_GetScaleFactorAsString_Plurial(void * jarg1) {
+  void * jresult ;
+  FbxSystemUnit *arg1 = (FbxSystemUnit *) 0 ;
+  FbxString result;
+  
+  arg1 = (FbxSystemUnit *)jarg1; 
+  result = ((FbxSystemUnit const *)arg1)->GetScaleFactorAsString_Plurial();
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT double SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_GetMultiplier(void * jarg1) {
+  double jresult ;
+  FbxSystemUnit *arg1 = (FbxSystemUnit *) 0 ;
+  double result;
+  
+  arg1 = (FbxSystemUnit *)jarg1; 
+  result = (double)((FbxSystemUnit const *)arg1)->GetMultiplier();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_eq(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxSystemUnit *arg1 = (FbxSystemUnit *) 0 ;
+  FbxSystemUnit *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxSystemUnit *)jarg1; 
+  arg2 = (FbxSystemUnit *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxSystemUnit const & type is null", 0);
+    return 0;
+  } 
+  result = (bool)((FbxSystemUnit const *)arg1)->operator ==((FbxSystemUnit const &)*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_ne(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxSystemUnit *arg1 = (FbxSystemUnit *) 0 ;
+  FbxSystemUnit *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxSystemUnit *)jarg1; 
+  arg2 = (FbxSystemUnit *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxSystemUnit const & type is null", 0);
+    return 0;
+  } 
+  result = (bool)((FbxSystemUnit const *)arg1)->operator !=((FbxSystemUnit const &)*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_assign(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxSystemUnit *arg1 = (FbxSystemUnit *) 0 ;
+  FbxSystemUnit *arg2 = 0 ;
+  FbxSystemUnit *result = 0 ;
+  
+  arg1 = (FbxSystemUnit *)jarg1; 
+  arg2 = (FbxSystemUnit *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxSystemUnit const & type is null", 0);
+    return 0;
+  } 
+  result = (FbxSystemUnit *) &(arg1)->operator =((FbxSystemUnit const &)*arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT double SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_GetConversionFactorTo(void * jarg1, void * jarg2) {
+  double jresult ;
+  FbxSystemUnit *arg1 = (FbxSystemUnit *) 0 ;
+  FbxSystemUnit *arg2 = 0 ;
+  double result;
+  
+  arg1 = (FbxSystemUnit *)jarg1; 
+  arg2 = (FbxSystemUnit *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxSystemUnit const & type is null", 0);
+    return 0;
+  } 
+  result = (double)((FbxSystemUnit const *)arg1)->GetConversionFactorTo((FbxSystemUnit const &)*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT double SWIGSTDCALL CSharp_Fbx_FbxSystemUnit_GetConversionFactorFrom(void * jarg1, void * jarg2) {
+  double jresult ;
+  FbxSystemUnit *arg1 = (FbxSystemUnit *) 0 ;
+  FbxSystemUnit *arg2 = 0 ;
+  double result;
+  
+  arg1 = (FbxSystemUnit *)jarg1; 
+  arg2 = (FbxSystemUnit *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxSystemUnit const & type is null", 0);
+    return 0;
+  } 
+  result = (double)((FbxSystemUnit const *)arg1)->GetConversionFactorFrom((FbxSystemUnit const &)*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
 SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxDocumentInfo_ClassId_set(void * jarg1) {
   FbxClassId arg1 ;
   FbxClassId *argp1 ;
@@ -10577,168 +16577,132 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxDocumentInfo_EmbeddedUrl_get(void * 
 
 SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxDocumentInfo_mTitle_set(void * jarg1, void * jarg2) {
   FbxDocumentInfo *arg1 = (FbxDocumentInfo *) 0 ;
-  FbxString arg2 ;
-  FbxString *argp2 ;
+  FbxString *arg2 = (FbxString *) 0 ;
   
   arg1 = (FbxDocumentInfo *)jarg1; 
-  argp2 = (FbxString *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxString", 0);
-    return ;
-  }
-  arg2 = *argp2; 
-  if (arg1) (arg1)->mTitle = arg2;
+  arg2 = (FbxString *)jarg2; 
+  if (arg1) (arg1)->mTitle = *arg2;
 }
 
 
 SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxDocumentInfo_mTitle_get(void * jarg1) {
   void * jresult ;
   FbxDocumentInfo *arg1 = (FbxDocumentInfo *) 0 ;
-  FbxString result;
+  FbxString *result = 0 ;
   
   arg1 = (FbxDocumentInfo *)jarg1; 
-  result =  ((arg1)->mTitle);
-  jresult = new FbxString((const FbxString &)result); 
+  result = (FbxString *)& ((arg1)->mTitle);
+  jresult = (void *)result; 
   return jresult;
 }
 
 
 SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxDocumentInfo_mSubject_set(void * jarg1, void * jarg2) {
   FbxDocumentInfo *arg1 = (FbxDocumentInfo *) 0 ;
-  FbxString arg2 ;
-  FbxString *argp2 ;
+  FbxString *arg2 = (FbxString *) 0 ;
   
   arg1 = (FbxDocumentInfo *)jarg1; 
-  argp2 = (FbxString *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxString", 0);
-    return ;
-  }
-  arg2 = *argp2; 
-  if (arg1) (arg1)->mSubject = arg2;
+  arg2 = (FbxString *)jarg2; 
+  if (arg1) (arg1)->mSubject = *arg2;
 }
 
 
 SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxDocumentInfo_mSubject_get(void * jarg1) {
   void * jresult ;
   FbxDocumentInfo *arg1 = (FbxDocumentInfo *) 0 ;
-  FbxString result;
+  FbxString *result = 0 ;
   
   arg1 = (FbxDocumentInfo *)jarg1; 
-  result =  ((arg1)->mSubject);
-  jresult = new FbxString((const FbxString &)result); 
+  result = (FbxString *)& ((arg1)->mSubject);
+  jresult = (void *)result; 
   return jresult;
 }
 
 
 SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxDocumentInfo_mAuthor_set(void * jarg1, void * jarg2) {
   FbxDocumentInfo *arg1 = (FbxDocumentInfo *) 0 ;
-  FbxString arg2 ;
-  FbxString *argp2 ;
+  FbxString *arg2 = (FbxString *) 0 ;
   
   arg1 = (FbxDocumentInfo *)jarg1; 
-  argp2 = (FbxString *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxString", 0);
-    return ;
-  }
-  arg2 = *argp2; 
-  if (arg1) (arg1)->mAuthor = arg2;
+  arg2 = (FbxString *)jarg2; 
+  if (arg1) (arg1)->mAuthor = *arg2;
 }
 
 
 SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxDocumentInfo_mAuthor_get(void * jarg1) {
   void * jresult ;
   FbxDocumentInfo *arg1 = (FbxDocumentInfo *) 0 ;
-  FbxString result;
+  FbxString *result = 0 ;
   
   arg1 = (FbxDocumentInfo *)jarg1; 
-  result =  ((arg1)->mAuthor);
-  jresult = new FbxString((const FbxString &)result); 
+  result = (FbxString *)& ((arg1)->mAuthor);
+  jresult = (void *)result; 
   return jresult;
 }
 
 
 SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxDocumentInfo_mKeywords_set(void * jarg1, void * jarg2) {
   FbxDocumentInfo *arg1 = (FbxDocumentInfo *) 0 ;
-  FbxString arg2 ;
-  FbxString *argp2 ;
+  FbxString *arg2 = (FbxString *) 0 ;
   
   arg1 = (FbxDocumentInfo *)jarg1; 
-  argp2 = (FbxString *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxString", 0);
-    return ;
-  }
-  arg2 = *argp2; 
-  if (arg1) (arg1)->mKeywords = arg2;
+  arg2 = (FbxString *)jarg2; 
+  if (arg1) (arg1)->mKeywords = *arg2;
 }
 
 
 SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxDocumentInfo_mKeywords_get(void * jarg1) {
   void * jresult ;
   FbxDocumentInfo *arg1 = (FbxDocumentInfo *) 0 ;
-  FbxString result;
+  FbxString *result = 0 ;
   
   arg1 = (FbxDocumentInfo *)jarg1; 
-  result =  ((arg1)->mKeywords);
-  jresult = new FbxString((const FbxString &)result); 
+  result = (FbxString *)& ((arg1)->mKeywords);
+  jresult = (void *)result; 
   return jresult;
 }
 
 
 SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxDocumentInfo_mRevision_set(void * jarg1, void * jarg2) {
   FbxDocumentInfo *arg1 = (FbxDocumentInfo *) 0 ;
-  FbxString arg2 ;
-  FbxString *argp2 ;
+  FbxString *arg2 = (FbxString *) 0 ;
   
   arg1 = (FbxDocumentInfo *)jarg1; 
-  argp2 = (FbxString *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxString", 0);
-    return ;
-  }
-  arg2 = *argp2; 
-  if (arg1) (arg1)->mRevision = arg2;
+  arg2 = (FbxString *)jarg2; 
+  if (arg1) (arg1)->mRevision = *arg2;
 }
 
 
 SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxDocumentInfo_mRevision_get(void * jarg1) {
   void * jresult ;
   FbxDocumentInfo *arg1 = (FbxDocumentInfo *) 0 ;
-  FbxString result;
+  FbxString *result = 0 ;
   
   arg1 = (FbxDocumentInfo *)jarg1; 
-  result =  ((arg1)->mRevision);
-  jresult = new FbxString((const FbxString &)result); 
+  result = (FbxString *)& ((arg1)->mRevision);
+  jresult = (void *)result; 
   return jresult;
 }
 
 
 SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxDocumentInfo_mComment_set(void * jarg1, void * jarg2) {
   FbxDocumentInfo *arg1 = (FbxDocumentInfo *) 0 ;
-  FbxString arg2 ;
-  FbxString *argp2 ;
+  FbxString *arg2 = (FbxString *) 0 ;
   
   arg1 = (FbxDocumentInfo *)jarg1; 
-  argp2 = (FbxString *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxString", 0);
-    return ;
-  }
-  arg2 = *argp2; 
-  if (arg1) (arg1)->mComment = arg2;
+  arg2 = (FbxString *)jarg2; 
+  if (arg1) (arg1)->mComment = *arg2;
 }
 
 
 SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxDocumentInfo_mComment_get(void * jarg1) {
   void * jresult ;
   FbxDocumentInfo *arg1 = (FbxDocumentInfo *) 0 ;
-  FbxString result;
+  FbxString *result = 0 ;
   
   arg1 = (FbxDocumentInfo *)jarg1; 
-  result =  ((arg1)->mComment);
-  jresult = new FbxString((const FbxString &)result); 
+  result = (FbxString *)& ((arg1)->mComment);
+  jresult = (void *)result; 
   return jresult;
 }
 
@@ -12625,20 +18589,14 @@ SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxScene_UpdateScaleCompensate(void * jar
 }
 
 
-SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxScene_ConvertAttributeTypeToClassID(void * jarg1, void * jarg2) {
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxScene_ConvertAttributeTypeToClassID(void * jarg1, int jarg2) {
   void * jresult ;
   FbxScene *arg1 = (FbxScene *) 0 ;
   FbxNodeAttribute::EType arg2 ;
-  FbxNodeAttribute::EType *argp2 ;
   FbxClassId result;
   
   arg1 = (FbxScene *)jarg1; 
-  argp2 = (FbxNodeAttribute::EType *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxNodeAttribute::EType", 0);
-    return 0;
-  }
-  arg2 = *argp2; 
+  arg2 = (FbxNodeAttribute::EType)jarg2; 
   result = (arg1)->ConvertAttributeTypeToClassID(arg2);
   jresult = new FbxClassId((const FbxClassId &)result); 
   return jresult;
@@ -13095,28 +19053,22 @@ SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAxisSystem_ConvertChildren(void * jarg
 
 SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKeyBase_mTime_set(void * jarg1, void * jarg2) {
   FbxAnimCurveKeyBase *arg1 = (FbxAnimCurveKeyBase *) 0 ;
-  FbxTime arg2 ;
-  FbxTime *argp2 ;
+  FbxTime *arg2 = (FbxTime *) 0 ;
   
   arg1 = (FbxAnimCurveKeyBase *)jarg1; 
-  argp2 = (FbxTime *)jarg2; 
-  if (!argp2) {
-    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
-    return ;
-  }
-  arg2 = *argp2; 
-  if (arg1) (arg1)->mTime = arg2;
+  arg2 = (FbxTime *)jarg2; 
+  if (arg1) (arg1)->mTime = *arg2;
 }
 
 
 SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKeyBase_mTime_get(void * jarg1) {
   void * jresult ;
   FbxAnimCurveKeyBase *arg1 = (FbxAnimCurveKeyBase *) 0 ;
-  FbxTime result;
+  FbxTime *result = 0 ;
   
   arg1 = (FbxAnimCurveKeyBase *)jarg1; 
-  result =  ((arg1)->mTime);
-  jresult = new FbxTime((const FbxTime &)result); 
+  result = (FbxTime *)& ((arg1)->mTime);
+  jresult = (void *)result; 
   return jresult;
 }
 
@@ -20101,6 +26053,12471 @@ SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxTypeOf__SWIG_2(void * jarg1) {
 }
 
 
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxNodeAttribute_ClassId_set(void * jarg1) {
+  FbxClassId arg1 ;
+  FbxClassId *argp1 ;
+  
+  argp1 = (FbxClassId *)jarg1; 
+  if (!argp1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxClassId", 0);
+    return ;
+  }
+  arg1 = *argp1; 
+  FbxNodeAttribute::ClassId = arg1;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxNodeAttribute_ClassId_get() {
+  void * jresult ;
+  FbxClassId result;
+  
+  result = FbxNodeAttribute::ClassId;
+  jresult = new FbxClassId((const FbxClassId &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxNodeAttribute_GetClassId(void * jarg1) {
+  void * jresult ;
+  FbxNodeAttribute *arg1 = (FbxNodeAttribute *) 0 ;
+  FbxClassId result;
+  
+  arg1 = (FbxNodeAttribute *)jarg1; 
+  result = ((FbxNodeAttribute const *)arg1)->GetClassId();
+  jresult = new FbxClassId((const FbxClassId &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxNodeAttribute_Create__SWIG_0(void * jarg1, char * jarg2) {
+  void * jresult ;
+  FbxManager *arg1 = (FbxManager *) 0 ;
+  char *arg2 = (char *) 0 ;
+  FbxNodeAttribute *result = 0 ;
+  
+  arg1 = (FbxManager *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (FbxNodeAttribute *)FbxNodeAttribute::Create(arg1,(char const *)arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxNodeAttribute_Create__SWIG_1(void * jarg1, char * jarg2) {
+  void * jresult ;
+  FbxObject *arg1 = (FbxObject *) 0 ;
+  char *arg2 = (char *) 0 ;
+  FbxNodeAttribute *result = 0 ;
+  
+  arg1 = (FbxObject *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (FbxNodeAttribute *)FbxNodeAttribute::Create(arg1,(char const *)arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxNodeAttribute_sColor_set(char * jarg1) {
+  char *arg1 = (char *) 0 ;
+  
+  arg1 = (char *)jarg1; 
+  {
+    if (arg1) {
+      FbxNodeAttribute::sColor = (char const *) (new char[strlen((const char *)arg1)+1]);
+      strcpy((char *)FbxNodeAttribute::sColor, (const char *)arg1);
+    } else {
+      FbxNodeAttribute::sColor = 0;
+    }
+  }
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FbxNodeAttribute_sColor_get() {
+  char * jresult ;
+  char *result = 0 ;
+  
+  result = (char *)FbxNodeAttribute::sColor;
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxNodeAttribute_sDefaultColor_get() {
+  void * jresult ;
+  FbxDouble3 *result = 0 ;
+  
+  result = (FbxDouble3 *)&FbxNodeAttribute::sDefaultColor;
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxNodeAttribute_Color_set(void * jarg1, void * jarg2) {
+  FbxNodeAttribute *arg1 = (FbxNodeAttribute *) 0 ;
+  FbxPropertyT< FbxDouble3 > *arg2 = (FbxPropertyT< FbxDouble3 > *) 0 ;
+  
+  arg1 = (FbxNodeAttribute *)jarg1; 
+  arg2 = (FbxPropertyT< FbxDouble3 > *)jarg2; 
+  if (arg1) (arg1)->Color = *arg2;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxNodeAttribute_Color_get(void * jarg1) {
+  void * jresult ;
+  FbxNodeAttribute *arg1 = (FbxNodeAttribute *) 0 ;
+  FbxPropertyT< FbxDouble3 > *result = 0 ;
+  
+  arg1 = (FbxNodeAttribute *)jarg1; 
+  result = (FbxPropertyT< FbxDouble3 > *)& ((arg1)->Color);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxNodeAttribute_GetAttributeType(void * jarg1) {
+  int jresult ;
+  FbxNodeAttribute *arg1 = (FbxNodeAttribute *) 0 ;
+  FbxNodeAttribute::EType result;
+  
+  arg1 = (FbxNodeAttribute *)jarg1; 
+  result = (FbxNodeAttribute::EType)((FbxNodeAttribute const *)arg1)->GetAttributeType();
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxNodeAttribute_GetNodeCount(void * jarg1) {
+  int jresult ;
+  FbxNodeAttribute *arg1 = (FbxNodeAttribute *) 0 ;
+  int result;
+  
+  arg1 = (FbxNodeAttribute *)jarg1; 
+  result = (int)((FbxNodeAttribute const *)arg1)->GetNodeCount();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxNodeAttribute_GetNode__SWIG_0(void * jarg1, int jarg2) {
+  void * jresult ;
+  FbxNodeAttribute *arg1 = (FbxNodeAttribute *) 0 ;
+  int arg2 ;
+  FbxNode *result = 0 ;
+  
+  arg1 = (FbxNodeAttribute *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (FbxNode *)((FbxNodeAttribute const *)arg1)->GetNode(arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxNodeAttribute_GetNode__SWIG_1(void * jarg1) {
+  void * jresult ;
+  FbxNodeAttribute *arg1 = (FbxNodeAttribute *) 0 ;
+  FbxNode *result = 0 ;
+  
+  arg1 = (FbxNodeAttribute *)jarg1; 
+  result = (FbxNode *)((FbxNodeAttribute const *)arg1)->GetNode();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxSkeleton_ClassId_set(void * jarg1) {
+  FbxClassId arg1 ;
+  FbxClassId *argp1 ;
+  
+  argp1 = (FbxClassId *)jarg1; 
+  if (!argp1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxClassId", 0);
+    return ;
+  }
+  arg1 = *argp1; 
+  FbxSkeleton::ClassId = arg1;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSkeleton_ClassId_get() {
+  void * jresult ;
+  FbxClassId result;
+  
+  result = FbxSkeleton::ClassId;
+  jresult = new FbxClassId((const FbxClassId &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSkeleton_GetClassId(void * jarg1) {
+  void * jresult ;
+  FbxSkeleton *arg1 = (FbxSkeleton *) 0 ;
+  FbxClassId result;
+  
+  arg1 = (FbxSkeleton *)jarg1; 
+  result = ((FbxSkeleton const *)arg1)->GetClassId();
+  jresult = new FbxClassId((const FbxClassId &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSkeleton_Create__SWIG_0(void * jarg1, char * jarg2) {
+  void * jresult ;
+  FbxManager *arg1 = (FbxManager *) 0 ;
+  char *arg2 = (char *) 0 ;
+  FbxSkeleton *result = 0 ;
+  
+  arg1 = (FbxManager *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (FbxSkeleton *)FbxSkeleton::Create(arg1,(char const *)arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSkeleton_Create__SWIG_1(void * jarg1, char * jarg2) {
+  void * jresult ;
+  FbxObject *arg1 = (FbxObject *) 0 ;
+  char *arg2 = (char *) 0 ;
+  FbxSkeleton *result = 0 ;
+  
+  arg1 = (FbxObject *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (FbxSkeleton *)FbxSkeleton::Create(arg1,(char const *)arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxSkeleton_GetAttributeType(void * jarg1) {
+  int jresult ;
+  FbxSkeleton *arg1 = (FbxSkeleton *) 0 ;
+  FbxNodeAttribute::EType result;
+  
+  arg1 = (FbxSkeleton *)jarg1; 
+  result = (FbxNodeAttribute::EType)((FbxSkeleton const *)arg1)->GetAttributeType();
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxSkeleton_Reset(void * jarg1) {
+  FbxSkeleton *arg1 = (FbxSkeleton *) 0 ;
+  
+  arg1 = (FbxSkeleton *)jarg1; 
+  (arg1)->Reset();
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxSkeleton_SetSkeletonType(void * jarg1, int jarg2) {
+  FbxSkeleton *arg1 = (FbxSkeleton *) 0 ;
+  FbxSkeleton::EType arg2 ;
+  
+  arg1 = (FbxSkeleton *)jarg1; 
+  arg2 = (FbxSkeleton::EType)jarg2; 
+  (arg1)->SetSkeletonType(arg2);
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxSkeleton_GetSkeletonType(void * jarg1) {
+  int jresult ;
+  FbxSkeleton *arg1 = (FbxSkeleton *) 0 ;
+  FbxSkeleton::EType result;
+  
+  arg1 = (FbxSkeleton *)jarg1; 
+  result = (FbxSkeleton::EType)((FbxSkeleton const *)arg1)->GetSkeletonType();
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxSkeleton_GetSkeletonTypeIsSet(void * jarg1) {
+  unsigned int jresult ;
+  FbxSkeleton *arg1 = (FbxSkeleton *) 0 ;
+  bool result;
+  
+  arg1 = (FbxSkeleton *)jarg1; 
+  result = (bool)((FbxSkeleton const *)arg1)->GetSkeletonTypeIsSet();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxSkeleton_GetSkeletonTypeDefaultValue(void * jarg1) {
+  int jresult ;
+  FbxSkeleton *arg1 = (FbxSkeleton *) 0 ;
+  FbxSkeleton::EType result;
+  
+  arg1 = (FbxSkeleton *)jarg1; 
+  result = (FbxSkeleton::EType)((FbxSkeleton const *)arg1)->GetSkeletonTypeDefaultValue();
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT double SWIGSTDCALL CSharp_Fbx_FbxSkeleton_GetLimbLengthDefaultValue(void * jarg1) {
+  double jresult ;
+  FbxSkeleton *arg1 = (FbxSkeleton *) 0 ;
+  double result;
+  
+  arg1 = (FbxSkeleton *)jarg1; 
+  result = (double)((FbxSkeleton const *)arg1)->GetLimbLengthDefaultValue();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT double SWIGSTDCALL CSharp_Fbx_FbxSkeleton_GetLimbNodeSizeDefaultValue(void * jarg1) {
+  double jresult ;
+  FbxSkeleton *arg1 = (FbxSkeleton *) 0 ;
+  double result;
+  
+  arg1 = (FbxSkeleton *)jarg1; 
+  result = (double)((FbxSkeleton const *)arg1)->GetLimbNodeSizeDefaultValue();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxSkeleton_SetLimbNodeColor(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxSkeleton *arg1 = (FbxSkeleton *) 0 ;
+  FbxColor *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxSkeleton *)jarg1; 
+  arg2 = (FbxColor *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxColor const & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->SetLimbNodeColor((FbxColor const &)*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSkeleton_GetLimbNodeColor(void * jarg1) {
+  void * jresult ;
+  FbxSkeleton *arg1 = (FbxSkeleton *) 0 ;
+  FbxColor result;
+  
+  arg1 = (FbxSkeleton *)jarg1; 
+  result = ((FbxSkeleton const *)arg1)->GetLimbNodeColor();
+  jresult = new FbxColor((const FbxColor &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxSkeleton_GetLimbNodeColorIsSet(void * jarg1) {
+  unsigned int jresult ;
+  FbxSkeleton *arg1 = (FbxSkeleton *) 0 ;
+  bool result;
+  
+  arg1 = (FbxSkeleton *)jarg1; 
+  result = (bool)((FbxSkeleton const *)arg1)->GetLimbNodeColorIsSet();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSkeleton_GetLimbNodeColorDefaultValue(void * jarg1) {
+  void * jresult ;
+  FbxSkeleton *arg1 = (FbxSkeleton *) 0 ;
+  FbxColor result;
+  
+  arg1 = (FbxSkeleton *)jarg1; 
+  result = ((FbxSkeleton const *)arg1)->GetLimbNodeColorDefaultValue();
+  jresult = new FbxColor((const FbxColor &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxSkeleton_IsSkeletonRoot(void * jarg1) {
+  unsigned int jresult ;
+  FbxSkeleton *arg1 = (FbxSkeleton *) 0 ;
+  bool result;
+  
+  arg1 = (FbxSkeleton *)jarg1; 
+  result = (bool)((FbxSkeleton const *)arg1)->IsSkeletonRoot();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxSkeleton_sSize_set(char * jarg1) {
+  char *arg1 = (char *) 0 ;
+  
+  arg1 = (char *)jarg1; 
+  {
+    if (arg1) {
+      FbxSkeleton::sSize = (char const *) (new char[strlen((const char *)arg1)+1]);
+      strcpy((char *)FbxSkeleton::sSize, (const char *)arg1);
+    } else {
+      FbxSkeleton::sSize = 0;
+    }
+  }
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FbxSkeleton_sSize_get() {
+  char * jresult ;
+  char *result = 0 ;
+  
+  result = (char *)FbxSkeleton::sSize;
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxSkeleton_sLimbLength_set(char * jarg1) {
+  char *arg1 = (char *) 0 ;
+  
+  arg1 = (char *)jarg1; 
+  {
+    if (arg1) {
+      FbxSkeleton::sLimbLength = (char const *) (new char[strlen((const char *)arg1)+1]);
+      strcpy((char *)FbxSkeleton::sLimbLength, (const char *)arg1);
+    } else {
+      FbxSkeleton::sLimbLength = 0;
+    }
+  }
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FbxSkeleton_sLimbLength_get() {
+  char * jresult ;
+  char *result = 0 ;
+  
+  result = (char *)FbxSkeleton::sLimbLength;
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT double SWIGSTDCALL CSharp_Fbx_FbxSkeleton_sDefaultSize_get() {
+  double jresult ;
+  FbxDouble result;
+  
+  result = (FbxDouble)(FbxDouble)FbxSkeleton::sDefaultSize;
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT double SWIGSTDCALL CSharp_Fbx_FbxSkeleton_sDefaultLimbLength_get() {
+  double jresult ;
+  FbxDouble result;
+  
+  result = (FbxDouble)(FbxDouble)FbxSkeleton::sDefaultLimbLength;
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxSkeleton_Size_set(void * jarg1, void * jarg2) {
+  FbxSkeleton *arg1 = (FbxSkeleton *) 0 ;
+  FbxPropertyT< FbxDouble > *arg2 = (FbxPropertyT< FbxDouble > *) 0 ;
+  
+  arg1 = (FbxSkeleton *)jarg1; 
+  arg2 = (FbxPropertyT< FbxDouble > *)jarg2; 
+  if (arg1) (arg1)->Size = *arg2;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSkeleton_Size_get(void * jarg1) {
+  void * jresult ;
+  FbxSkeleton *arg1 = (FbxSkeleton *) 0 ;
+  FbxPropertyT< FbxDouble > *result = 0 ;
+  
+  arg1 = (FbxSkeleton *)jarg1; 
+  result = (FbxPropertyT< FbxDouble > *)& ((arg1)->Size);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxSkeleton_LimbLength_set(void * jarg1, void * jarg2) {
+  FbxSkeleton *arg1 = (FbxSkeleton *) 0 ;
+  FbxPropertyT< FbxDouble > *arg2 = (FbxPropertyT< FbxDouble > *) 0 ;
+  
+  arg1 = (FbxSkeleton *)jarg1; 
+  arg2 = (FbxPropertyT< FbxDouble > *)jarg2; 
+  if (arg1) (arg1)->LimbLength = *arg2;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSkeleton_LimbLength_get(void * jarg1) {
+  void * jresult ;
+  FbxSkeleton *arg1 = (FbxSkeleton *) 0 ;
+  FbxPropertyT< FbxDouble > *result = 0 ;
+  
+  arg1 = (FbxSkeleton *)jarg1; 
+  result = (FbxPropertyT< FbxDouble > *)& ((arg1)->LimbLength);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSkeleton_Copy(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxSkeleton *arg1 = (FbxSkeleton *) 0 ;
+  FbxObject *arg2 = 0 ;
+  FbxObject *result = 0 ;
+  
+  arg1 = (FbxSkeleton *)jarg1; 
+  arg2 = (FbxObject *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxObject const & type is null", 0);
+    return 0;
+  } 
+  result = (FbxObject *) &(arg1)->Copy((FbxObject const &)*arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxDeformer_ClassId_set(void * jarg1) {
+  FbxClassId arg1 ;
+  FbxClassId *argp1 ;
+  
+  argp1 = (FbxClassId *)jarg1; 
+  if (!argp1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxClassId", 0);
+    return ;
+  }
+  arg1 = *argp1; 
+  FbxDeformer::ClassId = arg1;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxDeformer_ClassId_get() {
+  void * jresult ;
+  FbxClassId result;
+  
+  result = FbxDeformer::ClassId;
+  jresult = new FbxClassId((const FbxClassId &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxDeformer_GetClassId(void * jarg1) {
+  void * jresult ;
+  FbxDeformer *arg1 = (FbxDeformer *) 0 ;
+  FbxClassId result;
+  
+  arg1 = (FbxDeformer *)jarg1; 
+  result = ((FbxDeformer const *)arg1)->GetClassId();
+  jresult = new FbxClassId((const FbxClassId &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxDeformer_Create__SWIG_0(void * jarg1, char * jarg2) {
+  void * jresult ;
+  FbxManager *arg1 = (FbxManager *) 0 ;
+  char *arg2 = (char *) 0 ;
+  FbxDeformer *result = 0 ;
+  
+  arg1 = (FbxManager *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (FbxDeformer *)FbxDeformer::Create(arg1,(char const *)arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxDeformer_Create__SWIG_1(void * jarg1, char * jarg2) {
+  void * jresult ;
+  FbxObject *arg1 = (FbxObject *) 0 ;
+  char *arg2 = (char *) 0 ;
+  FbxDeformer *result = 0 ;
+  
+  arg1 = (FbxObject *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (FbxDeformer *)FbxDeformer::Create(arg1,(char const *)arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxDeformer_SetMultiLayer(void * jarg1, unsigned int jarg2) {
+  FbxDeformer *arg1 = (FbxDeformer *) 0 ;
+  bool arg2 ;
+  
+  arg1 = (FbxDeformer *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  (arg1)->SetMultiLayer(arg2);
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxDeformer_GetMultiLayer(void * jarg1) {
+  unsigned int jresult ;
+  FbxDeformer *arg1 = (FbxDeformer *) 0 ;
+  bool result;
+  
+  arg1 = (FbxDeformer *)jarg1; 
+  result = (bool)((FbxDeformer const *)arg1)->GetMultiLayer();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxDeformer_GetDeformerType(void * jarg1) {
+  int jresult ;
+  FbxDeformer *arg1 = (FbxDeformer *) 0 ;
+  FbxDeformer::EDeformerType result;
+  
+  arg1 = (FbxDeformer *)jarg1; 
+  result = (FbxDeformer::EDeformerType)((FbxDeformer const *)arg1)->GetDeformerType();
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxSkin_ClassId_set(void * jarg1) {
+  FbxClassId arg1 ;
+  FbxClassId *argp1 ;
+  
+  argp1 = (FbxClassId *)jarg1; 
+  if (!argp1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxClassId", 0);
+    return ;
+  }
+  arg1 = *argp1; 
+  FbxSkin::ClassId = arg1;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSkin_ClassId_get() {
+  void * jresult ;
+  FbxClassId result;
+  
+  result = FbxSkin::ClassId;
+  jresult = new FbxClassId((const FbxClassId &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSkin_GetClassId(void * jarg1) {
+  void * jresult ;
+  FbxSkin *arg1 = (FbxSkin *) 0 ;
+  FbxClassId result;
+  
+  arg1 = (FbxSkin *)jarg1; 
+  result = ((FbxSkin const *)arg1)->GetClassId();
+  jresult = new FbxClassId((const FbxClassId &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSkin_Create__SWIG_0(void * jarg1, char * jarg2) {
+  void * jresult ;
+  FbxManager *arg1 = (FbxManager *) 0 ;
+  char *arg2 = (char *) 0 ;
+  FbxSkin *result = 0 ;
+  
+  arg1 = (FbxManager *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (FbxSkin *)FbxSkin::Create(arg1,(char const *)arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSkin_Create__SWIG_1(void * jarg1, char * jarg2) {
+  void * jresult ;
+  FbxObject *arg1 = (FbxObject *) 0 ;
+  char *arg2 = (char *) 0 ;
+  FbxSkin *result = 0 ;
+  
+  arg1 = (FbxObject *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (FbxSkin *)FbxSkin::Create(arg1,(char const *)arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxSkin_SetDeformAccuracy(void * jarg1, double jarg2) {
+  FbxSkin *arg1 = (FbxSkin *) 0 ;
+  double arg2 ;
+  
+  arg1 = (FbxSkin *)jarg1; 
+  arg2 = (double)jarg2; 
+  (arg1)->SetDeformAccuracy(arg2);
+}
+
+
+SWIGEXPORT double SWIGSTDCALL CSharp_Fbx_FbxSkin_GetDeformAccuracy(void * jarg1) {
+  double jresult ;
+  FbxSkin *arg1 = (FbxSkin *) 0 ;
+  double result;
+  
+  arg1 = (FbxSkin *)jarg1; 
+  result = (double)((FbxSkin const *)arg1)->GetDeformAccuracy();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxSkin_SetGeometry(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxSkin *arg1 = (FbxSkin *) 0 ;
+  FbxGeometry *arg2 = (FbxGeometry *) 0 ;
+  bool result;
+  
+  arg1 = (FbxSkin *)jarg1; 
+  arg2 = (FbxGeometry *)jarg2; 
+  result = (bool)(arg1)->SetGeometry(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSkin_GetGeometry(void * jarg1) {
+  void * jresult ;
+  FbxSkin *arg1 = (FbxSkin *) 0 ;
+  FbxGeometry *result = 0 ;
+  
+  arg1 = (FbxSkin *)jarg1; 
+  result = (FbxGeometry *)(arg1)->GetGeometry();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxSkin_AddCluster(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxSkin *arg1 = (FbxSkin *) 0 ;
+  FbxCluster *arg2 = (FbxCluster *) 0 ;
+  bool result;
+  
+  arg1 = (FbxSkin *)jarg1; 
+  arg2 = (FbxCluster *)jarg2; 
+  result = (bool)(arg1)->AddCluster(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSkin_RemoveCluster(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxSkin *arg1 = (FbxSkin *) 0 ;
+  FbxCluster *arg2 = (FbxCluster *) 0 ;
+  FbxCluster *result = 0 ;
+  
+  arg1 = (FbxSkin *)jarg1; 
+  arg2 = (FbxCluster *)jarg2; 
+  result = (FbxCluster *)(arg1)->RemoveCluster(arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxSkin_GetClusterCount(void * jarg1) {
+  int jresult ;
+  FbxSkin *arg1 = (FbxSkin *) 0 ;
+  int result;
+  
+  arg1 = (FbxSkin *)jarg1; 
+  result = (int)((FbxSkin const *)arg1)->GetClusterCount();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSkin_GetCluster__SWIG_0(void * jarg1, int jarg2) {
+  void * jresult ;
+  FbxSkin *arg1 = (FbxSkin *) 0 ;
+  int arg2 ;
+  FbxCluster *result = 0 ;
+  
+  arg1 = (FbxSkin *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (FbxCluster *)(arg1)->GetCluster(arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxSkin_GetDeformerType(void * jarg1) {
+  int jresult ;
+  FbxSkin *arg1 = (FbxSkin *) 0 ;
+  FbxDeformer::EDeformerType result;
+  
+  arg1 = (FbxSkin *)jarg1; 
+  result = (FbxDeformer::EDeformerType)((FbxSkin const *)arg1)->GetDeformerType();
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxSkin_SetSkinningType(void * jarg1, int jarg2) {
+  FbxSkin *arg1 = (FbxSkin *) 0 ;
+  FbxSkin::EType arg2 ;
+  
+  arg1 = (FbxSkin *)jarg1; 
+  arg2 = (FbxSkin::EType)jarg2; 
+  (arg1)->SetSkinningType(arg2);
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxSkin_GetSkinningType(void * jarg1) {
+  int jresult ;
+  FbxSkin *arg1 = (FbxSkin *) 0 ;
+  FbxSkin::EType result;
+  
+  arg1 = (FbxSkin *)jarg1; 
+  result = (FbxSkin::EType)((FbxSkin const *)arg1)->GetSkinningType();
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxSkin_AddControlPointIndex__SWIG_0(void * jarg1, int jarg2, double jarg3) {
+  FbxSkin *arg1 = (FbxSkin *) 0 ;
+  int arg2 ;
+  double arg3 ;
+  
+  arg1 = (FbxSkin *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (double)jarg3; 
+  (arg1)->AddControlPointIndex(arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxSkin_AddControlPointIndex__SWIG_1(void * jarg1, int jarg2) {
+  FbxSkin *arg1 = (FbxSkin *) 0 ;
+  int arg2 ;
+  
+  arg1 = (FbxSkin *)jarg1; 
+  arg2 = (int)jarg2; 
+  (arg1)->AddControlPointIndex(arg2);
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxSkin_GetControlPointIndicesCount(void * jarg1) {
+  int jresult ;
+  FbxSkin *arg1 = (FbxSkin *) 0 ;
+  int result;
+  
+  arg1 = (FbxSkin *)jarg1; 
+  result = (int)((FbxSkin const *)arg1)->GetControlPointIndicesCount();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSkin_GetControlPointIndices(void * jarg1) {
+  void * jresult ;
+  FbxSkin *arg1 = (FbxSkin *) 0 ;
+  int *result = 0 ;
+  
+  arg1 = (FbxSkin *)jarg1; 
+  result = (int *)((FbxSkin const *)arg1)->GetControlPointIndices();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSkin_GetControlPointBlendWeights(void * jarg1) {
+  void * jresult ;
+  FbxSkin *arg1 = (FbxSkin *) 0 ;
+  double *result = 0 ;
+  
+  arg1 = (FbxSkin *)jarg1; 
+  result = (double *)((FbxSkin const *)arg1)->GetControlPointBlendWeights();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxSkin_SetControlPointIWCount(void * jarg1, int jarg2) {
+  FbxSkin *arg1 = (FbxSkin *) 0 ;
+  int arg2 ;
+  
+  arg1 = (FbxSkin *)jarg1; 
+  arg2 = (int)jarg2; 
+  (arg1)->SetControlPointIWCount(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxSkin_Compact(void * jarg1) {
+  FbxSkin *arg1 = (FbxSkin *) 0 ;
+  
+  arg1 = (FbxSkin *)jarg1; 
+  (arg1)->Compact();
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSkin_Copy(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxSkin *arg1 = (FbxSkin *) 0 ;
+  FbxObject *arg2 = 0 ;
+  FbxObject *result = 0 ;
+  
+  arg1 = (FbxSkin *)jarg1; 
+  arg2 = (FbxObject *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxObject const & type is null", 0);
+    return 0;
+  } 
+  result = (FbxObject *) &(arg1)->Copy((FbxObject const &)*arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSkin_Clone__SWIG_0(void * jarg1, int jarg2, void * jarg3, void * jarg4) {
+  void * jresult ;
+  FbxSkin *arg1 = (FbxSkin *) 0 ;
+  FbxObject::ECloneType arg2 ;
+  FbxObject *arg3 = (FbxObject *) 0 ;
+  void *arg4 = (void *) 0 ;
+  FbxObject *result = 0 ;
+  
+  arg1 = (FbxSkin *)jarg1; 
+  arg2 = (FbxObject::ECloneType)jarg2; 
+  arg3 = (FbxObject *)jarg3; 
+  arg4 = (void *)jarg4; 
+  result = (FbxObject *)((FbxSkin const *)arg1)->Clone(arg2,arg3,arg4);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSkin_Clone__SWIG_1(void * jarg1, int jarg2, void * jarg3) {
+  void * jresult ;
+  FbxSkin *arg1 = (FbxSkin *) 0 ;
+  FbxObject::ECloneType arg2 ;
+  FbxObject *arg3 = (FbxObject *) 0 ;
+  FbxObject *result = 0 ;
+  
+  arg1 = (FbxSkin *)jarg1; 
+  arg2 = (FbxObject::ECloneType)jarg2; 
+  arg3 = (FbxObject *)jarg3; 
+  result = (FbxObject *)((FbxSkin const *)arg1)->Clone(arg2,arg3);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSkin_Clone__SWIG_2(void * jarg1, int jarg2) {
+  void * jresult ;
+  FbxSkin *arg1 = (FbxSkin *) 0 ;
+  FbxObject::ECloneType arg2 ;
+  FbxObject *result = 0 ;
+  
+  arg1 = (FbxSkin *)jarg1; 
+  arg2 = (FbxObject::ECloneType)jarg2; 
+  result = (FbxObject *)((FbxSkin const *)arg1)->Clone(arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxSkin_Clone__SWIG_3(void * jarg1) {
+  void * jresult ;
+  FbxSkin *arg1 = (FbxSkin *) 0 ;
+  FbxObject *result = 0 ;
+  
+  arg1 = (FbxSkin *)jarg1; 
+  result = (FbxObject *)((FbxSkin const *)arg1)->Clone();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FBXSDK_IO_END_NODE_STR_get() {
+  char * jresult ;
+  char *result = 0 ;
+  
+  result = (char *)("_End");
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxIOBase_ClassId_set(void * jarg1) {
+  FbxClassId arg1 ;
+  FbxClassId *argp1 ;
+  
+  argp1 = (FbxClassId *)jarg1; 
+  if (!argp1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxClassId", 0);
+    return ;
+  }
+  arg1 = *argp1; 
+  FbxIOBase::ClassId = arg1;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxIOBase_ClassId_get() {
+  void * jresult ;
+  FbxClassId result;
+  
+  result = FbxIOBase::ClassId;
+  jresult = new FbxClassId((const FbxClassId &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxIOBase_GetClassId(void * jarg1) {
+  void * jresult ;
+  FbxIOBase *arg1 = (FbxIOBase *) 0 ;
+  FbxClassId result;
+  
+  arg1 = (FbxIOBase *)jarg1; 
+  result = ((FbxIOBase const *)arg1)->GetClassId();
+  jresult = new FbxClassId((const FbxClassId &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxIOBase_Create__SWIG_0(void * jarg1, char * jarg2) {
+  void * jresult ;
+  FbxManager *arg1 = (FbxManager *) 0 ;
+  char *arg2 = (char *) 0 ;
+  FbxIOBase *result = 0 ;
+  
+  arg1 = (FbxManager *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (FbxIOBase *)FbxIOBase::Create(arg1,(char const *)arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxIOBase_Create__SWIG_1(void * jarg1, char * jarg2) {
+  void * jresult ;
+  FbxObject *arg1 = (FbxObject *) 0 ;
+  char *arg2 = (char *) 0 ;
+  FbxIOBase *result = 0 ;
+  
+  arg1 = (FbxObject *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (FbxIOBase *)FbxIOBase::Create(arg1,(char const *)arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxIOBase_Initialize__SWIG_0(void * jarg1, char * jarg2, int jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxIOBase *arg1 = (FbxIOBase *) 0 ;
+  char *arg2 = (char *) 0 ;
+  int arg3 ;
+  FbxIOSettings *arg4 = (FbxIOSettings *) 0 ;
+  bool result;
+  
+  arg1 = (FbxIOBase *)jarg1; 
+  arg2 = (char *)jarg2; 
+  arg3 = (int)jarg3; 
+  arg4 = (FbxIOSettings *)jarg4; 
+  result = (bool)(arg1)->Initialize((char const *)arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxIOBase_Initialize__SWIG_1(void * jarg1, char * jarg2, int jarg3) {
+  unsigned int jresult ;
+  FbxIOBase *arg1 = (FbxIOBase *) 0 ;
+  char *arg2 = (char *) 0 ;
+  int arg3 ;
+  bool result;
+  
+  arg1 = (FbxIOBase *)jarg1; 
+  arg2 = (char *)jarg2; 
+  arg3 = (int)jarg3; 
+  result = (bool)(arg1)->Initialize((char const *)arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxIOBase_Initialize__SWIG_2(void * jarg1, char * jarg2) {
+  unsigned int jresult ;
+  FbxIOBase *arg1 = (FbxIOBase *) 0 ;
+  char *arg2 = (char *) 0 ;
+  bool result;
+  
+  arg1 = (FbxIOBase *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (bool)(arg1)->Initialize((char const *)arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxIOBase_GetFileName(void * jarg1) {
+  void * jresult ;
+  FbxIOBase *arg1 = (FbxIOBase *) 0 ;
+  FbxString result;
+  
+  arg1 = (FbxIOBase *)jarg1; 
+  result = (arg1)->GetFileName();
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxIOBase_GetStatus(void * jarg1) {
+  void * jresult ;
+  FbxIOBase *arg1 = (FbxIOBase *) 0 ;
+  FbxStatus *result = 0 ;
+  
+  arg1 = (FbxIOBase *)jarg1; 
+  result = (FbxStatus *) &(arg1)->GetStatus();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxExporter_ClassId_set(void * jarg1) {
+  FbxClassId arg1 ;
+  FbxClassId *argp1 ;
+  
+  argp1 = (FbxClassId *)jarg1; 
+  if (!argp1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxClassId", 0);
+    return ;
+  }
+  arg1 = *argp1; 
+  FbxExporter::ClassId = arg1;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxExporter_ClassId_get() {
+  void * jresult ;
+  FbxClassId result;
+  
+  result = FbxExporter::ClassId;
+  jresult = new FbxClassId((const FbxClassId &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxExporter_GetClassId(void * jarg1) {
+  void * jresult ;
+  FbxExporter *arg1 = (FbxExporter *) 0 ;
+  FbxClassId result;
+  
+  arg1 = (FbxExporter *)jarg1; 
+  result = ((FbxExporter const *)arg1)->GetClassId();
+  jresult = new FbxClassId((const FbxClassId &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxExporter_Create__SWIG_0(void * jarg1, char * jarg2) {
+  void * jresult ;
+  FbxManager *arg1 = (FbxManager *) 0 ;
+  char *arg2 = (char *) 0 ;
+  FbxExporter *result = 0 ;
+  
+  arg1 = (FbxManager *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (FbxExporter *)FbxExporter::Create(arg1,(char const *)arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxExporter_Create__SWIG_1(void * jarg1, char * jarg2) {
+  void * jresult ;
+  FbxObject *arg1 = (FbxObject *) 0 ;
+  char *arg2 = (char *) 0 ;
+  FbxExporter *result = 0 ;
+  
+  arg1 = (FbxObject *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (FbxExporter *)FbxExporter::Create(arg1,(char const *)arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxExporter_Initialize__SWIG_0(void * jarg1, char * jarg2, int jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxExporter *arg1 = (FbxExporter *) 0 ;
+  char *arg2 = (char *) 0 ;
+  int arg3 ;
+  FbxIOSettings *arg4 = (FbxIOSettings *) 0 ;
+  bool result;
+  
+  arg1 = (FbxExporter *)jarg1; 
+  arg2 = (char *)jarg2; 
+  arg3 = (int)jarg3; 
+  arg4 = (FbxIOSettings *)jarg4; 
+  result = (bool)(arg1)->Initialize((char const *)arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxExporter_Initialize__SWIG_1(void * jarg1, char * jarg2, int jarg3) {
+  unsigned int jresult ;
+  FbxExporter *arg1 = (FbxExporter *) 0 ;
+  char *arg2 = (char *) 0 ;
+  int arg3 ;
+  bool result;
+  
+  arg1 = (FbxExporter *)jarg1; 
+  arg2 = (char *)jarg2; 
+  arg3 = (int)jarg3; 
+  result = (bool)(arg1)->Initialize((char const *)arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxExporter_Initialize__SWIG_2(void * jarg1, char * jarg2) {
+  unsigned int jresult ;
+  FbxExporter *arg1 = (FbxExporter *) 0 ;
+  char *arg2 = (char *) 0 ;
+  bool result;
+  
+  arg1 = (FbxExporter *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (bool)(arg1)->Initialize((char const *)arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxExporter_Initialize__SWIG_3(void * jarg1, void * jarg2, void * jarg3, int jarg4, void * jarg5) {
+  unsigned int jresult ;
+  FbxExporter *arg1 = (FbxExporter *) 0 ;
+  FbxStream *arg2 = (FbxStream *) 0 ;
+  void *arg3 = (void *) 0 ;
+  int arg4 ;
+  FbxIOSettings *arg5 = (FbxIOSettings *) 0 ;
+  bool result;
+  
+  arg1 = (FbxExporter *)jarg1; 
+  arg2 = (FbxStream *)jarg2; 
+  arg3 = (void *)jarg3; 
+  arg4 = (int)jarg4; 
+  arg5 = (FbxIOSettings *)jarg5; 
+  result = (bool)(arg1)->Initialize(arg2,arg3,arg4,arg5);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxExporter_Initialize__SWIG_4(void * jarg1, void * jarg2, void * jarg3, int jarg4) {
+  unsigned int jresult ;
+  FbxExporter *arg1 = (FbxExporter *) 0 ;
+  FbxStream *arg2 = (FbxStream *) 0 ;
+  void *arg3 = (void *) 0 ;
+  int arg4 ;
+  bool result;
+  
+  arg1 = (FbxExporter *)jarg1; 
+  arg2 = (FbxStream *)jarg2; 
+  arg3 = (void *)jarg3; 
+  arg4 = (int)jarg4; 
+  result = (bool)(arg1)->Initialize(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxExporter_Initialize__SWIG_5(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxExporter *arg1 = (FbxExporter *) 0 ;
+  FbxStream *arg2 = (FbxStream *) 0 ;
+  void *arg3 = (void *) 0 ;
+  bool result;
+  
+  arg1 = (FbxExporter *)jarg1; 
+  arg2 = (FbxStream *)jarg2; 
+  arg3 = (void *)jarg3; 
+  result = (bool)(arg1)->Initialize(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxExporter_Initialize__SWIG_6(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxExporter *arg1 = (FbxExporter *) 0 ;
+  FbxStream *arg2 = (FbxStream *) 0 ;
+  bool result;
+  
+  arg1 = (FbxExporter *)jarg1; 
+  arg2 = (FbxStream *)jarg2; 
+  result = (bool)(arg1)->Initialize(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxExporter_GetExportOptions__SWIG_0(void * jarg1) {
+  unsigned int jresult ;
+  FbxExporter *arg1 = (FbxExporter *) 0 ;
+  bool result;
+  
+  arg1 = (FbxExporter *)jarg1; 
+  result = (bool)(arg1)->GetExportOptions();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxExporter_GetIOSettings(void * jarg1) {
+  void * jresult ;
+  FbxExporter *arg1 = (FbxExporter *) 0 ;
+  FbxIOSettings *result = 0 ;
+  
+  arg1 = (FbxExporter *)jarg1; 
+  result = (FbxIOSettings *)(arg1)->GetIOSettings();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxExporter_SetIOSettings(void * jarg1, void * jarg2) {
+  FbxExporter *arg1 = (FbxExporter *) 0 ;
+  FbxIOSettings *arg2 = (FbxIOSettings *) 0 ;
+  
+  arg1 = (FbxExporter *)jarg1; 
+  arg2 = (FbxIOSettings *)jarg2; 
+  (arg1)->SetIOSettings(arg2);
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxExporter_Export__SWIG_0(void * jarg1, void * jarg2, unsigned int jarg3) {
+  unsigned int jresult ;
+  FbxExporter *arg1 = (FbxExporter *) 0 ;
+  FbxDocument *arg2 = (FbxDocument *) 0 ;
+  bool arg3 ;
+  bool result;
+  
+  arg1 = (FbxExporter *)jarg1; 
+  arg2 = (FbxDocument *)jarg2; 
+  arg3 = jarg3 ? true : false; 
+  result = (bool)(arg1)->Export(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxExporter_Export__SWIG_1(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxExporter *arg1 = (FbxExporter *) 0 ;
+  FbxDocument *arg2 = (FbxDocument *) 0 ;
+  bool result;
+  
+  arg1 = (FbxExporter *)jarg1; 
+  arg2 = (FbxDocument *)jarg2; 
+  result = (bool)(arg1)->Export(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxExporter_IsExporting(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxExporter *arg1 = (FbxExporter *) 0 ;
+  bool *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxExporter *)jarg1; 
+  arg2 = (bool *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "bool & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->IsExporting(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxExporter_GetProgress__SWIG_0(void * jarg1, void * jarg2) {
+  float jresult ;
+  FbxExporter *arg1 = (FbxExporter *) 0 ;
+  FbxString *arg2 = (FbxString *) 0 ;
+  float result;
+  
+  arg1 = (FbxExporter *)jarg1; 
+  arg2 = (FbxString *)jarg2; 
+  result = (float)(arg1)->GetProgress(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxExporter_GetProgress__SWIG_1(void * jarg1) {
+  float jresult ;
+  FbxExporter *arg1 = (FbxExporter *) 0 ;
+  float result;
+  
+  arg1 = (FbxExporter *)jarg1; 
+  result = (float)(arg1)->GetProgress();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxExporter_SetProgressCallback__SWIG_0(void * jarg1, void * jarg2, void * jarg3) {
+  FbxExporter *arg1 = (FbxExporter *) 0 ;
+  FbxProgressCallback arg2 ;
+  void *arg3 = (void *) 0 ;
+  FbxProgressCallback *argp2 ;
+  
+  arg1 = (FbxExporter *)jarg1; 
+  argp2 = (FbxProgressCallback *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxProgressCallback", 0);
+    return ;
+  }
+  arg2 = *argp2; 
+  arg3 = (void *)jarg3; 
+  (arg1)->SetProgressCallback(arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxExporter_SetProgressCallback__SWIG_1(void * jarg1, void * jarg2) {
+  FbxExporter *arg1 = (FbxExporter *) 0 ;
+  FbxProgressCallback arg2 ;
+  FbxProgressCallback *argp2 ;
+  
+  arg1 = (FbxExporter *)jarg1; 
+  argp2 = (FbxProgressCallback *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxProgressCallback", 0);
+    return ;
+  }
+  arg2 = *argp2; 
+  (arg1)->SetProgressCallback(arg2);
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxExporter_GetFileFormat(void * jarg1) {
+  int jresult ;
+  FbxExporter *arg1 = (FbxExporter *) 0 ;
+  int result;
+  
+  arg1 = (FbxExporter *)jarg1; 
+  result = (int)(arg1)->GetFileFormat();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxExporter_IsFBX(void * jarg1) {
+  unsigned int jresult ;
+  FbxExporter *arg1 = (FbxExporter *) 0 ;
+  bool result;
+  
+  arg1 = (FbxExporter *)jarg1; 
+  result = (bool)(arg1)->IsFBX();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxExporter_GetCurrentWritableVersions(void * jarg1) {
+  void * jresult ;
+  FbxExporter *arg1 = (FbxExporter *) 0 ;
+  char **result = 0 ;
+  
+  arg1 = (FbxExporter *)jarg1; 
+  result = (char **)(arg1)->GetCurrentWritableVersions();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxExporter_SetFileExportVersion__SWIG_0(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxExporter *arg1 = (FbxExporter *) 0 ;
+  FbxString arg2 ;
+  FbxSceneRenamer::ERenamingMode arg3 ;
+  FbxString *argp2 ;
+  FbxSceneRenamer::ERenamingMode *argp3 ;
+  bool result;
+  
+  arg1 = (FbxExporter *)jarg1; 
+  argp2 = (FbxString *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxString", 0);
+    return 0;
+  }
+  arg2 = *argp2; 
+  argp3 = (FbxSceneRenamer::ERenamingMode *)jarg3; 
+  if (!argp3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxSceneRenamer::ERenamingMode", 0);
+    return 0;
+  }
+  arg3 = *argp3; 
+  result = (bool)(arg1)->SetFileExportVersion(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxExporter_SetFileExportVersion__SWIG_1(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxExporter *arg1 = (FbxExporter *) 0 ;
+  FbxString arg2 ;
+  FbxString *argp2 ;
+  bool result;
+  
+  arg1 = (FbxExporter *)jarg1; 
+  argp2 = (FbxString *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxString", 0);
+    return 0;
+  }
+  arg2 = *argp2; 
+  result = (bool)(arg1)->SetFileExportVersion(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxExporter_SetResamplingRate(void * jarg1, double jarg2) {
+  FbxExporter *arg1 = (FbxExporter *) 0 ;
+  double arg2 ;
+  
+  arg1 = (FbxExporter *)jarg1; 
+  arg2 = (double)jarg2; 
+  (arg1)->SetResamplingRate(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxExporter_SetDefaultRenderResolution(void * jarg1, void * jarg2, void * jarg3, double jarg4, double jarg5) {
+  FbxExporter *arg1 = (FbxExporter *) 0 ;
+  FbxString arg2 ;
+  FbxString arg3 ;
+  double arg4 ;
+  double arg5 ;
+  FbxString *argp2 ;
+  FbxString *argp3 ;
+  
+  arg1 = (FbxExporter *)jarg1; 
+  argp2 = (FbxString *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxString", 0);
+    return ;
+  }
+  arg2 = *argp2; 
+  argp3 = (FbxString *)jarg3; 
+  if (!argp3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxString", 0);
+    return ;
+  }
+  arg3 = *argp3; 
+  arg4 = (double)jarg4; 
+  arg5 = (double)jarg5; 
+  (arg1)->SetDefaultRenderResolution(arg2,arg3,arg4,arg5);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxExporter_GetFileHeaderInfo(void * jarg1) {
+  void * jresult ;
+  FbxExporter *arg1 = (FbxExporter *) 0 ;
+  FbxIOFileHeaderInfo *result = 0 ;
+  
+  arg1 = (FbxExporter *)jarg1; 
+  result = (FbxIOFileHeaderInfo *)(arg1)->GetFileHeaderInfo();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxExporter_GetExportOptions__SWIG_1(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxExporter *arg1 = (FbxExporter *) 0 ;
+  FbxIO *arg2 = (FbxIO *) 0 ;
+  bool result;
+  
+  arg1 = (FbxExporter *)jarg1; 
+  arg2 = (FbxIO *)jarg2; 
+  result = (bool)(arg1)->GetExportOptions(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxExporter_Export__SWIG_2(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxExporter *arg1 = (FbxExporter *) 0 ;
+  FbxDocument *arg2 = (FbxDocument *) 0 ;
+  FbxIO *arg3 = (FbxIO *) 0 ;
+  bool result;
+  
+  arg1 = (FbxExporter *)jarg1; 
+  arg2 = (FbxDocument *)jarg2; 
+  arg3 = (FbxIO *)jarg3; 
+  result = (bool)(arg1)->Export(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FbxEventPreExport_GetEventName(void * jarg1) {
+  char * jresult ;
+  FbxEventPreExport *arg1 = (FbxEventPreExport *) 0 ;
+  char *result = 0 ;
+  
+  arg1 = (FbxEventPreExport *)jarg1; 
+  result = (char *)((FbxEventPreExport const *)arg1)->GetEventName();
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxEventPreExport(void * jarg1) {
+  void * jresult ;
+  FbxDocument *arg1 = (FbxDocument *) 0 ;
+  FbxEventPreExport *result = 0 ;
+  
+  arg1 = (FbxDocument *)jarg1; 
+  result = (FbxEventPreExport *)new FbxEventPreExport(arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxEventPreExport_mDocument_set(void * jarg1, void * jarg2) {
+  FbxEventPreExport *arg1 = (FbxEventPreExport *) 0 ;
+  FbxDocument *arg2 = (FbxDocument *) 0 ;
+  
+  arg1 = (FbxEventPreExport *)jarg1; 
+  arg2 = (FbxDocument *)jarg2; 
+  if (arg1) (arg1)->mDocument = arg2;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxEventPreExport_mDocument_get(void * jarg1) {
+  void * jresult ;
+  FbxEventPreExport *arg1 = (FbxEventPreExport *) 0 ;
+  FbxDocument *result = 0 ;
+  
+  arg1 = (FbxEventPreExport *)jarg1; 
+  result = (FbxDocument *) ((arg1)->mDocument);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxEventPreExport(void * jarg1) {
+  FbxEventPreExport *arg1 = (FbxEventPreExport *) 0 ;
+  
+  arg1 = (FbxEventPreExport *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FbxEventPostExport_GetEventName(void * jarg1) {
+  char * jresult ;
+  FbxEventPostExport *arg1 = (FbxEventPostExport *) 0 ;
+  char *result = 0 ;
+  
+  arg1 = (FbxEventPostExport *)jarg1; 
+  result = (char *)((FbxEventPostExport const *)arg1)->GetEventName();
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxEventPostExport(void * jarg1) {
+  void * jresult ;
+  FbxDocument *arg1 = (FbxDocument *) 0 ;
+  FbxEventPostExport *result = 0 ;
+  
+  arg1 = (FbxDocument *)jarg1; 
+  result = (FbxEventPostExport *)new FbxEventPostExport(arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxEventPostExport_mDocument_set(void * jarg1, void * jarg2) {
+  FbxEventPostExport *arg1 = (FbxEventPostExport *) 0 ;
+  FbxDocument *arg2 = (FbxDocument *) 0 ;
+  
+  arg1 = (FbxEventPostExport *)jarg1; 
+  arg2 = (FbxDocument *)jarg2; 
+  if (arg1) (arg1)->mDocument = arg2;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxEventPostExport_mDocument_get(void * jarg1) {
+  void * jresult ;
+  FbxEventPostExport *arg1 = (FbxEventPostExport *) 0 ;
+  FbxDocument *result = 0 ;
+  
+  arg1 = (FbxEventPostExport *)jarg1; 
+  result = (FbxDocument *) ((arg1)->mDocument);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxEventPostExport(void * jarg1) {
+  FbxEventPostExport *arg1 = (FbxEventPostExport *) 0 ;
+  
+  arg1 = (FbxEventPostExport *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_ClassId_set(void * jarg1) {
+  FbxClassId arg1 ;
+  FbxClassId *argp1 ;
+  
+  argp1 = (FbxClassId *)jarg1; 
+  if (!argp1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxClassId", 0);
+    return ;
+  }
+  arg1 = *argp1; 
+  FbxGlobalSettings::ClassId = arg1;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_ClassId_get() {
+  void * jresult ;
+  FbxClassId result;
+  
+  result = FbxGlobalSettings::ClassId;
+  jresult = new FbxClassId((const FbxClassId &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_GetClassId(void * jarg1) {
+  void * jresult ;
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  FbxClassId result;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  result = ((FbxGlobalSettings const *)arg1)->GetClassId();
+  jresult = new FbxClassId((const FbxClassId &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_Create__SWIG_0(void * jarg1, char * jarg2) {
+  void * jresult ;
+  FbxManager *arg1 = (FbxManager *) 0 ;
+  char *arg2 = (char *) 0 ;
+  FbxGlobalSettings *result = 0 ;
+  
+  arg1 = (FbxManager *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (FbxGlobalSettings *)FbxGlobalSettings::Create(arg1,(char const *)arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_Create__SWIG_1(void * jarg1, char * jarg2) {
+  void * jresult ;
+  FbxObject *arg1 = (FbxObject *) 0 ;
+  char *arg2 = (char *) 0 ;
+  FbxGlobalSettings *result = 0 ;
+  
+  arg1 = (FbxObject *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (FbxGlobalSettings *)FbxGlobalSettings::Create(arg1,(char const *)arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_SetAxisSystem(void * jarg1, void * jarg2) {
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  FbxAxisSystem *arg2 = 0 ;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  arg2 = (FbxAxisSystem *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAxisSystem const & type is null", 0);
+    return ;
+  } 
+  (arg1)->SetAxisSystem((FbxAxisSystem const &)*arg2);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_GetAxisSystem(void * jarg1) {
+  void * jresult ;
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  FbxAxisSystem result;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  result = (arg1)->GetAxisSystem();
+  jresult = new FbxAxisSystem((const FbxAxisSystem &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_SetOriginalUpAxis(void * jarg1, void * jarg2) {
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  FbxAxisSystem *arg2 = 0 ;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  arg2 = (FbxAxisSystem *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAxisSystem const & type is null", 0);
+    return ;
+  } 
+  (arg1)->SetOriginalUpAxis((FbxAxisSystem const &)*arg2);
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_GetOriginalUpAxis(void * jarg1) {
+  int jresult ;
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  int result;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  result = (int)((FbxGlobalSettings const *)arg1)->GetOriginalUpAxis();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_SetSystemUnit(void * jarg1, void * jarg2) {
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  FbxSystemUnit *arg2 = 0 ;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  arg2 = (FbxSystemUnit *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxSystemUnit const & type is null", 0);
+    return ;
+  } 
+  (arg1)->SetSystemUnit((FbxSystemUnit const &)*arg2);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_GetSystemUnit(void * jarg1) {
+  void * jresult ;
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  FbxSystemUnit result;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  result = ((FbxGlobalSettings const *)arg1)->GetSystemUnit();
+  jresult = new FbxSystemUnit((const FbxSystemUnit &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_SetOriginalSystemUnit(void * jarg1, void * jarg2) {
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  FbxSystemUnit *arg2 = 0 ;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  arg2 = (FbxSystemUnit *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxSystemUnit const & type is null", 0);
+    return ;
+  } 
+  (arg1)->SetOriginalSystemUnit((FbxSystemUnit const &)*arg2);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_GetOriginalSystemUnit(void * jarg1) {
+  void * jresult ;
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  FbxSystemUnit result;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  result = ((FbxGlobalSettings const *)arg1)->GetOriginalSystemUnit();
+  jresult = new FbxSystemUnit((const FbxSystemUnit &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_SetAmbientColor(void * jarg1, void * jarg2) {
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  FbxColor arg2 ;
+  FbxColor *argp2 ;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  argp2 = (FbxColor *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxColor", 0);
+    return ;
+  }
+  arg2 = *argp2; 
+  (arg1)->SetAmbientColor(arg2);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_GetAmbientColor(void * jarg1) {
+  void * jresult ;
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  FbxColor result;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  result = ((FbxGlobalSettings const *)arg1)->GetAmbientColor();
+  jresult = new FbxColor((const FbxColor &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_SetDefaultCamera(void * jarg1, char * jarg2) {
+  unsigned int jresult ;
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  char *arg2 = (char *) 0 ;
+  bool result;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (bool)(arg1)->SetDefaultCamera((char const *)arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_GetDefaultCamera(void * jarg1) {
+  void * jresult ;
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  FbxString result;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  result = ((FbxGlobalSettings const *)arg1)->GetDefaultCamera();
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_SetTimeMode(void * jarg1, int jarg2) {
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  FbxTime::EMode arg2 ;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  arg2 = (FbxTime::EMode)jarg2; 
+  (arg1)->SetTimeMode(arg2);
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_GetTimeMode(void * jarg1) {
+  int jresult ;
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  FbxTime::EMode result;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  result = (FbxTime::EMode)((FbxGlobalSettings const *)arg1)->GetTimeMode();
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_SetTimeProtocol(void * jarg1, int jarg2) {
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  FbxTime::EProtocol arg2 ;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  arg2 = (FbxTime::EProtocol)jarg2; 
+  (arg1)->SetTimeProtocol(arg2);
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_GetTimeProtocol(void * jarg1) {
+  int jresult ;
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  FbxTime::EProtocol result;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  result = (FbxTime::EProtocol)((FbxGlobalSettings const *)arg1)->GetTimeProtocol();
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_SetSnapOnFrameMode(void * jarg1, int jarg2) {
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  FbxGlobalSettings::ESnapOnFrameMode arg2 ;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  arg2 = (FbxGlobalSettings::ESnapOnFrameMode)jarg2; 
+  (arg1)->SetSnapOnFrameMode(arg2);
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_GetSnapOnFrameMode(void * jarg1) {
+  int jresult ;
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  FbxGlobalSettings::ESnapOnFrameMode result;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  result = (FbxGlobalSettings::ESnapOnFrameMode)((FbxGlobalSettings const *)arg1)->GetSnapOnFrameMode();
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_SetTimelineDefaultTimeSpan(void * jarg1, void * jarg2) {
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  FbxTimeSpan *arg2 = 0 ;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  arg2 = (FbxTimeSpan *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTimeSpan const & type is null", 0);
+    return ;
+  } 
+  (arg1)->SetTimelineDefaultTimeSpan((FbxTimeSpan const &)*arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_GetTimelineDefaultTimeSpan(void * jarg1, void * jarg2) {
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  FbxTimeSpan *arg2 = 0 ;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  arg2 = (FbxTimeSpan *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTimeSpan & type is null", 0);
+    return ;
+  } 
+  ((FbxGlobalSettings const *)arg1)->GetTimelineDefaultTimeSpan(*arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_SetCustomFrameRate(void * jarg1, double jarg2) {
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  double arg2 ;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  arg2 = (double)jarg2; 
+  (arg1)->SetCustomFrameRate(arg2);
+}
+
+
+SWIGEXPORT double SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_GetCustomFrameRate(void * jarg1) {
+  double jresult ;
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  double result;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  result = (double)((FbxGlobalSettings const *)arg1)->GetCustomFrameRate();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxGlobalSettings_TimeMarker__SWIG_0() {
+  void * jresult ;
+  FbxGlobalSettings::TimeMarker *result = 0 ;
+  
+  result = (FbxGlobalSettings::TimeMarker *)new FbxGlobalSettings::TimeMarker();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxGlobalSettings_TimeMarker__SWIG_1(void * jarg1) {
+  void * jresult ;
+  FbxGlobalSettings::TimeMarker *arg1 = 0 ;
+  FbxGlobalSettings::TimeMarker *result = 0 ;
+  
+  arg1 = (FbxGlobalSettings::TimeMarker *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxGlobalSettings::TimeMarker const & type is null", 0);
+    return 0;
+  } 
+  result = (FbxGlobalSettings::TimeMarker *)new FbxGlobalSettings::TimeMarker((FbxGlobalSettings::TimeMarker const &)*arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_TimeMarker_assign(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxGlobalSettings::TimeMarker *arg1 = (FbxGlobalSettings::TimeMarker *) 0 ;
+  FbxGlobalSettings::TimeMarker *arg2 = 0 ;
+  FbxGlobalSettings::TimeMarker *result = 0 ;
+  
+  arg1 = (FbxGlobalSettings::TimeMarker *)jarg1; 
+  arg2 = (FbxGlobalSettings::TimeMarker *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxGlobalSettings::TimeMarker const & type is null", 0);
+    return 0;
+  } 
+  result = (FbxGlobalSettings::TimeMarker *) &(arg1)->operator =((FbxGlobalSettings::TimeMarker const &)*arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_TimeMarker_mName_set(void * jarg1, void * jarg2) {
+  FbxGlobalSettings::TimeMarker *arg1 = (FbxGlobalSettings::TimeMarker *) 0 ;
+  FbxString *arg2 = (FbxString *) 0 ;
+  
+  arg1 = (FbxGlobalSettings::TimeMarker *)jarg1; 
+  arg2 = (FbxString *)jarg2; 
+  if (arg1) (arg1)->mName = *arg2;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_TimeMarker_mName_get(void * jarg1) {
+  void * jresult ;
+  FbxGlobalSettings::TimeMarker *arg1 = (FbxGlobalSettings::TimeMarker *) 0 ;
+  FbxString *result = 0 ;
+  
+  arg1 = (FbxGlobalSettings::TimeMarker *)jarg1; 
+  result = (FbxString *)& ((arg1)->mName);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_TimeMarker_mTime_set(void * jarg1, void * jarg2) {
+  FbxGlobalSettings::TimeMarker *arg1 = (FbxGlobalSettings::TimeMarker *) 0 ;
+  FbxTime *arg2 = (FbxTime *) 0 ;
+  
+  arg1 = (FbxGlobalSettings::TimeMarker *)jarg1; 
+  arg2 = (FbxTime *)jarg2; 
+  if (arg1) (arg1)->mTime = *arg2;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_TimeMarker_mTime_get(void * jarg1) {
+  void * jresult ;
+  FbxGlobalSettings::TimeMarker *arg1 = (FbxGlobalSettings::TimeMarker *) 0 ;
+  FbxTime *result = 0 ;
+  
+  arg1 = (FbxGlobalSettings::TimeMarker *)jarg1; 
+  result = (FbxTime *)& ((arg1)->mTime);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_TimeMarker_mLoop_set(void * jarg1, unsigned int jarg2) {
+  FbxGlobalSettings::TimeMarker *arg1 = (FbxGlobalSettings::TimeMarker *) 0 ;
+  bool arg2 ;
+  
+  arg1 = (FbxGlobalSettings::TimeMarker *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  if (arg1) (arg1)->mLoop = arg2;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_TimeMarker_mLoop_get(void * jarg1) {
+  unsigned int jresult ;
+  FbxGlobalSettings::TimeMarker *arg1 = (FbxGlobalSettings::TimeMarker *) 0 ;
+  bool result;
+  
+  arg1 = (FbxGlobalSettings::TimeMarker *)jarg1; 
+  result = (bool) ((arg1)->mLoop);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxGlobalSettings_TimeMarker(void * jarg1) {
+  FbxGlobalSettings::TimeMarker *arg1 = (FbxGlobalSettings::TimeMarker *) 0 ;
+  
+  arg1 = (FbxGlobalSettings::TimeMarker *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_GetTimeMarkerCount(void * jarg1) {
+  int jresult ;
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  int result;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  result = (int)((FbxGlobalSettings const *)arg1)->GetTimeMarkerCount();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_GetTimeMarker__SWIG_0(void * jarg1, int jarg2, void * jarg3) {
+  void * jresult ;
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  int arg2 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  FbxGlobalSettings::TimeMarker result;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (FbxStatus *)jarg3; 
+  result = ((FbxGlobalSettings const *)arg1)->GetTimeMarker(arg2,arg3);
+  jresult = new FbxGlobalSettings::TimeMarker((const FbxGlobalSettings::TimeMarker &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_GetTimeMarker__SWIG_1(void * jarg1, int jarg2) {
+  void * jresult ;
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  int arg2 ;
+  FbxGlobalSettings::TimeMarker result;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = ((FbxGlobalSettings const *)arg1)->GetTimeMarker(arg2);
+  jresult = new FbxGlobalSettings::TimeMarker((const FbxGlobalSettings::TimeMarker &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_AddTimeMarker__SWIG_0(void * jarg1, void * jarg2, void * jarg3) {
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  FbxGlobalSettings::TimeMarker *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  arg2 = (FbxGlobalSettings::TimeMarker *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxGlobalSettings::TimeMarker const & type is null", 0);
+    return ;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  (arg1)->AddTimeMarker((FbxGlobalSettings::TimeMarker const &)*arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_AddTimeMarker__SWIG_1(void * jarg1, void * jarg2) {
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  FbxGlobalSettings::TimeMarker *arg2 = 0 ;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  arg2 = (FbxGlobalSettings::TimeMarker *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxGlobalSettings::TimeMarker const & type is null", 0);
+    return ;
+  } 
+  (arg1)->AddTimeMarker((FbxGlobalSettings::TimeMarker const &)*arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_ReplaceTimeMarker__SWIG_0(void * jarg1, int jarg2, void * jarg3, void * jarg4) {
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  int arg2 ;
+  FbxGlobalSettings::TimeMarker *arg3 = 0 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (FbxGlobalSettings::TimeMarker *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxGlobalSettings::TimeMarker const & type is null", 0);
+    return ;
+  } 
+  arg4 = (FbxStatus *)jarg4; 
+  (arg1)->ReplaceTimeMarker(arg2,(FbxGlobalSettings::TimeMarker const &)*arg3,arg4);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_ReplaceTimeMarker__SWIG_1(void * jarg1, int jarg2, void * jarg3) {
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  int arg2 ;
+  FbxGlobalSettings::TimeMarker *arg3 = 0 ;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (FbxGlobalSettings::TimeMarker *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxGlobalSettings::TimeMarker const & type is null", 0);
+    return ;
+  } 
+  (arg1)->ReplaceTimeMarker(arg2,(FbxGlobalSettings::TimeMarker const &)*arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_RemoveAllTimeMarkers(void * jarg1) {
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  (arg1)->RemoveAllTimeMarkers();
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_SetCurrentTimeMarker__SWIG_0(void * jarg1, int jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  int arg2 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->SetCurrentTimeMarker(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_SetCurrentTimeMarker__SWIG_1(void * jarg1, int jarg2) {
+  unsigned int jresult ;
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  int arg2 ;
+  bool result;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (bool)(arg1)->SetCurrentTimeMarker(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_GetCurrentTimeMarker(void * jarg1) {
+  int jresult ;
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  int result;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  result = (int)((FbxGlobalSettings const *)arg1)->GetCurrentTimeMarker();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_Copy(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxGlobalSettings *arg1 = (FbxGlobalSettings *) 0 ;
+  FbxObject *arg2 = 0 ;
+  FbxObject *result = 0 ;
+  
+  arg1 = (FbxGlobalSettings *)jarg1; 
+  arg2 = (FbxObject *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxObject const & type is null", 0);
+    return 0;
+  } 
+  result = (FbxObject *) &(arg1)->Copy((FbxObject const &)*arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxTypeOf__SWIG_3(int jarg1) {
+  void * jresult ;
+  FbxTime::EMode *arg1 = 0 ;
+  FbxTime::EMode temp1 ;
+  EFbxType result;
+  
+  temp1 = (FbxTime::EMode)jarg1; 
+  arg1 = &temp1; 
+  result = FbxTypeOf((enum FbxTime::EMode const &)*arg1);
+  jresult = new EFbxType((const EFbxType &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxLibrary_ClassId_set(void * jarg1) {
+  FbxClassId arg1 ;
+  FbxClassId *argp1 ;
+  
+  argp1 = (FbxClassId *)jarg1; 
+  if (!argp1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxClassId", 0);
+    return ;
+  }
+  arg1 = *argp1; 
+  FbxLibrary::ClassId = arg1;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxLibrary_ClassId_get() {
+  void * jresult ;
+  FbxClassId result;
+  
+  result = FbxLibrary::ClassId;
+  jresult = new FbxClassId((const FbxClassId &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxLibrary_GetClassId(void * jarg1) {
+  void * jresult ;
+  FbxLibrary *arg1 = (FbxLibrary *) 0 ;
+  FbxClassId result;
+  
+  arg1 = (FbxLibrary *)jarg1; 
+  result = ((FbxLibrary const *)arg1)->GetClassId();
+  jresult = new FbxClassId((const FbxClassId &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxLibrary_Create__SWIG_0(void * jarg1, char * jarg2) {
+  void * jresult ;
+  FbxManager *arg1 = (FbxManager *) 0 ;
+  char *arg2 = (char *) 0 ;
+  FbxLibrary *result = 0 ;
+  
+  arg1 = (FbxManager *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (FbxLibrary *)FbxLibrary::Create(arg1,(char const *)arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxLibrary_Create__SWIG_1(void * jarg1, char * jarg2) {
+  void * jresult ;
+  FbxObject *arg1 = (FbxObject *) 0 ;
+  char *arg2 = (char *) 0 ;
+  FbxLibrary *result = 0 ;
+  
+  arg1 = (FbxObject *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (FbxLibrary *)FbxLibrary::Create(arg1,(char const *)arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxLibrary_GetParentLibrary(void * jarg1) {
+  void * jresult ;
+  FbxLibrary *arg1 = (FbxLibrary *) 0 ;
+  FbxLibrary *result = 0 ;
+  
+  arg1 = (FbxLibrary *)jarg1; 
+  result = (FbxLibrary *)((FbxLibrary const *)arg1)->GetParentLibrary();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxLibrary_SystemLibrary(void * jarg1, unsigned int jarg2) {
+  FbxLibrary *arg1 = (FbxLibrary *) 0 ;
+  bool arg2 ;
+  
+  arg1 = (FbxLibrary *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  (arg1)->SystemLibrary(arg2);
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxLibrary_IsSystemLibrary(void * jarg1) {
+  unsigned int jresult ;
+  FbxLibrary *arg1 = (FbxLibrary *) 0 ;
+  bool result;
+  
+  arg1 = (FbxLibrary *)jarg1; 
+  result = (bool)((FbxLibrary const *)arg1)->IsSystemLibrary();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxLibrary_LocalizationBaseNamePrefix__SWIG_0(void * jarg1, char * jarg2) {
+  FbxLibrary *arg1 = (FbxLibrary *) 0 ;
+  char *arg2 = (char *) 0 ;
+  
+  arg1 = (FbxLibrary *)jarg1; 
+  arg2 = (char *)jarg2; 
+  (arg1)->LocalizationBaseNamePrefix((char const *)arg2);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxLibrary_LocalizationBaseNamePrefix__SWIG_1(void * jarg1) {
+  void * jresult ;
+  FbxLibrary *arg1 = (FbxLibrary *) 0 ;
+  FbxString result;
+  
+  arg1 = (FbxLibrary *)jarg1; 
+  result = ((FbxLibrary const *)arg1)->LocalizationBaseNamePrefix();
+  jresult = new FbxString((const FbxString &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxLibrary_AddSubLibrary(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxLibrary *arg1 = (FbxLibrary *) 0 ;
+  FbxLibrary *arg2 = (FbxLibrary *) 0 ;
+  bool result;
+  
+  arg1 = (FbxLibrary *)jarg1; 
+  arg2 = (FbxLibrary *)jarg2; 
+  result = (bool)(arg1)->AddSubLibrary(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxLibrary_RemoveSubLibrary(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxLibrary *arg1 = (FbxLibrary *) 0 ;
+  FbxLibrary *arg2 = (FbxLibrary *) 0 ;
+  bool result;
+  
+  arg1 = (FbxLibrary *)jarg1; 
+  arg2 = (FbxLibrary *)jarg2; 
+  result = (bool)(arg1)->RemoveSubLibrary(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxLibrary_GetSubLibraryCount(void * jarg1) {
+  int jresult ;
+  FbxLibrary *arg1 = (FbxLibrary *) 0 ;
+  int result;
+  
+  arg1 = (FbxLibrary *)jarg1; 
+  result = (int)((FbxLibrary const *)arg1)->GetSubLibraryCount();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxLibrary_GetSubLibrary(void * jarg1, int jarg2) {
+  void * jresult ;
+  FbxLibrary *arg1 = (FbxLibrary *) 0 ;
+  int arg2 ;
+  FbxLibrary *result = 0 ;
+  
+  arg1 = (FbxLibrary *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (FbxLibrary *)((FbxLibrary const *)arg1)->GetSubLibrary(arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxLibrary_CloneAsset__SWIG_0(void * jarg1, void * jarg2, void * jarg3) {
+  void * jresult ;
+  FbxLibrary *arg1 = (FbxLibrary *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxObject *arg3 = (FbxObject *) 0 ;
+  FbxObject *result = 0 ;
+  
+  arg1 = (FbxLibrary *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxObject *)jarg3; 
+  result = (FbxObject *)((FbxLibrary const *)arg1)->CloneAsset(arg2,arg3);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxLibrary_CloneAsset__SWIG_1(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxLibrary *arg1 = (FbxLibrary *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxObject *result = 0 ;
+  
+  arg1 = (FbxLibrary *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  result = (FbxObject *)((FbxLibrary const *)arg1)->CloneAsset(arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxLibrary_GetAssetCriteriaFilter() {
+  void * jresult ;
+  FbxCriteria result;
+  
+  result = FbxLibrary::GetAssetCriteriaFilter();
+  jresult = new FbxCriteria((const FbxCriteria &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxLibrary_GetAssetDependentsFilter() {
+  void * jresult ;
+  FbxCriteria result;
+  
+  result = FbxLibrary::GetAssetDependentsFilter();
+  jresult = new FbxCriteria((const FbxCriteria &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxLibrary_ImportAssets__SWIG_0(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxLibrary *arg1 = (FbxLibrary *) 0 ;
+  FbxLibrary *arg2 = (FbxLibrary *) 0 ;
+  bool result;
+  
+  arg1 = (FbxLibrary *)jarg1; 
+  arg2 = (FbxLibrary *)jarg2; 
+  result = (bool)(arg1)->ImportAssets(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxLibrary_ImportAssets__SWIG_1(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxLibrary *arg1 = (FbxLibrary *) 0 ;
+  FbxLibrary *arg2 = (FbxLibrary *) 0 ;
+  FbxCriteria *arg3 = 0 ;
+  bool result;
+  
+  arg1 = (FbxLibrary *)jarg1; 
+  arg2 = (FbxLibrary *)jarg2; 
+  arg3 = (FbxCriteria *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxCriteria const & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->ImportAssets(arg2,(FbxCriteria const &)*arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxLibrary_GetLocalizationManager(void * jarg1) {
+  void * jresult ;
+  FbxLibrary *arg1 = (FbxLibrary *) 0 ;
+  FbxLocalizationManager *result = 0 ;
+  
+  arg1 = (FbxLibrary *)jarg1; 
+  result = (FbxLocalizationManager *) &((FbxLibrary const *)arg1)->GetLocalizationManager();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FbxLibrary_Localize__SWIG_0(void * jarg1, char * jarg2, char * jarg3) {
+  char * jresult ;
+  FbxLibrary *arg1 = (FbxLibrary *) 0 ;
+  char *arg2 = (char *) 0 ;
+  char *arg3 = (char *) 0 ;
+  char *result = 0 ;
+  
+  arg1 = (FbxLibrary *)jarg1; 
+  arg2 = (char *)jarg2; 
+  arg3 = (char *)jarg3; 
+  result = (char *)((FbxLibrary const *)arg1)->Localize((char const *)arg2,(char const *)arg3);
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FbxLibrary_Localize__SWIG_1(void * jarg1, char * jarg2) {
+  char * jresult ;
+  FbxLibrary *arg1 = (FbxLibrary *) 0 ;
+  char *arg2 = (char *) 0 ;
+  char *result = 0 ;
+  
+  arg1 = (FbxLibrary *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (char *)((FbxLibrary const *)arg1)->Localize((char const *)arg2);
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxLibrary_AddShadingObject(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxLibrary *arg1 = (FbxLibrary *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  bool result;
+  
+  arg1 = (FbxLibrary *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  result = (bool)(arg1)->AddShadingObject(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxLibrary_RemoveShadingObject(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxLibrary *arg1 = (FbxLibrary *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  bool result;
+  
+  arg1 = (FbxLibrary *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  result = (bool)(arg1)->RemoveShadingObject(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxLibrary_GetShadingObjectCount__SWIG_0(void * jarg1) {
+  int jresult ;
+  FbxLibrary *arg1 = (FbxLibrary *) 0 ;
+  int result;
+  
+  arg1 = (FbxLibrary *)jarg1; 
+  result = (int)((FbxLibrary const *)arg1)->GetShadingObjectCount();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxLibrary_GetShadingObject__SWIG_0(void * jarg1, int jarg2) {
+  void * jresult ;
+  FbxLibrary *arg1 = (FbxLibrary *) 0 ;
+  int arg2 ;
+  FbxObject *result = 0 ;
+  
+  arg1 = (FbxLibrary *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (FbxObject *)((FbxLibrary const *)arg1)->GetShadingObject(arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxLibrary_GetShadingObjectCount__SWIG_1(void * jarg1, void * jarg2) {
+  int jresult ;
+  FbxLibrary *arg1 = (FbxLibrary *) 0 ;
+  FbxImplementationFilter *arg2 = 0 ;
+  int result;
+  
+  arg1 = (FbxLibrary *)jarg1; 
+  arg2 = (FbxImplementationFilter *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxImplementationFilter const & type is null", 0);
+    return 0;
+  } 
+  result = (int)((FbxLibrary const *)arg1)->GetShadingObjectCount((FbxImplementationFilter const &)*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxLibrary_GetShadingObject__SWIG_1(void * jarg1, int jarg2, void * jarg3) {
+  void * jresult ;
+  FbxLibrary *arg1 = (FbxLibrary *) 0 ;
+  int arg2 ;
+  FbxImplementationFilter *arg3 = 0 ;
+  FbxObject *result = 0 ;
+  
+  arg1 = (FbxLibrary *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (FbxImplementationFilter *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxImplementationFilter const & type is null", 0);
+    return 0;
+  } 
+  result = (FbxObject *)((FbxLibrary const *)arg1)->GetShadingObject(arg2,(FbxImplementationFilter const &)*arg3);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FbxEventPopulateSystemLibrary_GetEventName(void * jarg1) {
+  char * jresult ;
+  FbxEventPopulateSystemLibrary *arg1 = (FbxEventPopulateSystemLibrary *) 0 ;
+  char *result = 0 ;
+  
+  arg1 = (FbxEventPopulateSystemLibrary *)jarg1; 
+  result = (char *)((FbxEventPopulateSystemLibrary const *)arg1)->GetEventName();
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxEventPopulateSystemLibrary(void * jarg1) {
+  void * jresult ;
+  FbxLibrary *arg1 = (FbxLibrary *) 0 ;
+  FbxEventPopulateSystemLibrary *result = 0 ;
+  
+  arg1 = (FbxLibrary *)jarg1; 
+  result = (FbxEventPopulateSystemLibrary *)new FbxEventPopulateSystemLibrary(arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxEventPopulateSystemLibrary_GetLibrary(void * jarg1) {
+  void * jresult ;
+  FbxEventPopulateSystemLibrary *arg1 = (FbxEventPopulateSystemLibrary *) 0 ;
+  FbxLibrary *result = 0 ;
+  
+  arg1 = (FbxEventPopulateSystemLibrary *)jarg1; 
+  result = (FbxLibrary *)((FbxEventPopulateSystemLibrary const *)arg1)->GetLibrary();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxEventPopulateSystemLibrary(void * jarg1) {
+  FbxEventPopulateSystemLibrary *arg1 = (FbxEventPopulateSystemLibrary *) 0 ;
+  
+  arg1 = (FbxEventPopulateSystemLibrary *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FbxEventUpdateSystemLibrary_GetEventName(void * jarg1) {
+  char * jresult ;
+  FbxEventUpdateSystemLibrary *arg1 = (FbxEventUpdateSystemLibrary *) 0 ;
+  char *result = 0 ;
+  
+  arg1 = (FbxEventUpdateSystemLibrary *)jarg1; 
+  result = (char *)((FbxEventUpdateSystemLibrary const *)arg1)->GetEventName();
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxEventUpdateSystemLibrary(void * jarg1) {
+  void * jresult ;
+  FbxLibrary *arg1 = (FbxLibrary *) 0 ;
+  FbxEventUpdateSystemLibrary *result = 0 ;
+  
+  arg1 = (FbxLibrary *)jarg1; 
+  result = (FbxEventUpdateSystemLibrary *)new FbxEventUpdateSystemLibrary(arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxEventUpdateSystemLibrary_GetLibrary(void * jarg1) {
+  void * jresult ;
+  FbxEventUpdateSystemLibrary *arg1 = (FbxEventUpdateSystemLibrary *) 0 ;
+  FbxLibrary *result = 0 ;
+  
+  arg1 = (FbxEventUpdateSystemLibrary *)jarg1; 
+  result = (FbxLibrary *)((FbxEventUpdateSystemLibrary const *)arg1)->GetLibrary();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxEventUpdateSystemLibrary(void * jarg1) {
+  FbxEventUpdateSystemLibrary *arg1 = (FbxEventUpdateSystemLibrary *) 0 ;
+  
+  arg1 = (FbxEventUpdateSystemLibrary *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FbxEventWriteLocalization_GetEventName(void * jarg1) {
+  char * jresult ;
+  FbxEventWriteLocalization *arg1 = (FbxEventWriteLocalization *) 0 ;
+  char *result = 0 ;
+  
+  arg1 = (FbxEventWriteLocalization *)jarg1; 
+  result = (char *)((FbxEventWriteLocalization const *)arg1)->GetEventName();
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxEventWriteLocalization(void * jarg1) {
+  void * jresult ;
+  FbxLibrary *arg1 = (FbxLibrary *) 0 ;
+  FbxEventWriteLocalization *result = 0 ;
+  
+  arg1 = (FbxLibrary *)jarg1; 
+  result = (FbxEventWriteLocalization *)new FbxEventWriteLocalization(arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxEventWriteLocalization_GetLibrary(void * jarg1) {
+  void * jresult ;
+  FbxEventWriteLocalization *arg1 = (FbxEventWriteLocalization *) 0 ;
+  FbxLibrary *result = 0 ;
+  
+  arg1 = (FbxEventWriteLocalization *)jarg1; 
+  result = (FbxLibrary *)((FbxEventWriteLocalization const *)arg1)->GetLibrary();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxEventWriteLocalization(void * jarg1) {
+  FbxEventWriteLocalization *arg1 = (FbxEventWriteLocalization *) 0 ;
+  
+  arg1 = (FbxEventWriteLocalization *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FbxEventMapAssetFileToAssetObject_GetEventName(void * jarg1) {
+  char * jresult ;
+  FbxEventMapAssetFileToAssetObject *arg1 = (FbxEventMapAssetFileToAssetObject *) 0 ;
+  char *result = 0 ;
+  
+  arg1 = (FbxEventMapAssetFileToAssetObject *)jarg1; 
+  result = (char *)((FbxEventMapAssetFileToAssetObject const *)arg1)->GetEventName();
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxEventMapAssetFileToAssetObject(char * jarg1) {
+  void * jresult ;
+  char *arg1 = (char *) 0 ;
+  FbxEventMapAssetFileToAssetObject *result = 0 ;
+  
+  arg1 = (char *)jarg1; 
+  result = (FbxEventMapAssetFileToAssetObject *)new FbxEventMapAssetFileToAssetObject((char const *)arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FbxEventMapAssetFileToAssetObject_GetFilePath(void * jarg1) {
+  char * jresult ;
+  FbxEventMapAssetFileToAssetObject *arg1 = (FbxEventMapAssetFileToAssetObject *) 0 ;
+  char *result = 0 ;
+  
+  arg1 = (FbxEventMapAssetFileToAssetObject *)jarg1; 
+  result = (char *)((FbxEventMapAssetFileToAssetObject const *)arg1)->GetFilePath();
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxEventMapAssetFileToAssetObject_mAsset_set(void * jarg1, void * jarg2) {
+  FbxEventMapAssetFileToAssetObject *arg1 = (FbxEventMapAssetFileToAssetObject *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  
+  arg1 = (FbxEventMapAssetFileToAssetObject *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  if (arg1) (arg1)->mAsset = arg2;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxEventMapAssetFileToAssetObject_mAsset_get(void * jarg1) {
+  void * jresult ;
+  FbxEventMapAssetFileToAssetObject *arg1 = (FbxEventMapAssetFileToAssetObject *) 0 ;
+  FbxObject *result = 0 ;
+  
+  arg1 = (FbxEventMapAssetFileToAssetObject *)jarg1; 
+  result = (FbxObject *) ((arg1)->mAsset);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxEventMapAssetFileToAssetObject(void * jarg1) {
+  FbxEventMapAssetFileToAssetObject *arg1 = (FbxEventMapAssetFileToAssetObject *) 0 ;
+  
+  arg1 = (FbxEventMapAssetFileToAssetObject *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxAnimCurveDef_sDEFAULT_WEIGHT_get() {
+  float jresult ;
+  float result;
+  
+  result = (float)(float)FbxAnimCurveDef::sDEFAULT_WEIGHT;
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxAnimCurveDef_sMIN_WEIGHT_get() {
+  float jresult ;
+  float result;
+  
+  result = (float)(float)FbxAnimCurveDef::sMIN_WEIGHT;
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxAnimCurveDef_sMAX_WEIGHT_get() {
+  float jresult ;
+  float result;
+  
+  result = (float)(float)FbxAnimCurveDef::sMAX_WEIGHT;
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxAnimCurveDef_sDEFAULT_VELOCITY_get() {
+  float jresult ;
+  float result;
+  
+  result = (float)(float)FbxAnimCurveDef::sDEFAULT_VELOCITY;
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxAnimCurveDef() {
+  void * jresult ;
+  FbxAnimCurveDef *result = 0 ;
+  
+  result = (FbxAnimCurveDef *)new FbxAnimCurveDef();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxAnimCurveDef(void * jarg1) {
+  FbxAnimCurveDef *arg1 = (FbxAnimCurveDef *) 0 ;
+  
+  arg1 = (FbxAnimCurveDef *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxAnimCurveTangentInfo() {
+  void * jresult ;
+  FbxAnimCurveTangentInfo *result = 0 ;
+  
+  result = (FbxAnimCurveTangentInfo *)new FbxAnimCurveTangentInfo();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveTangentInfo_mDerivative_set(void * jarg1, float jarg2) {
+  FbxAnimCurveTangentInfo *arg1 = (FbxAnimCurveTangentInfo *) 0 ;
+  float arg2 ;
+  
+  arg1 = (FbxAnimCurveTangentInfo *)jarg1; 
+  arg2 = (float)jarg2; 
+  if (arg1) (arg1)->mDerivative = arg2;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxAnimCurveTangentInfo_mDerivative_get(void * jarg1) {
+  float jresult ;
+  FbxAnimCurveTangentInfo *arg1 = (FbxAnimCurveTangentInfo *) 0 ;
+  float result;
+  
+  arg1 = (FbxAnimCurveTangentInfo *)jarg1; 
+  result = (float) ((arg1)->mDerivative);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveTangentInfo_mWeight_set(void * jarg1, float jarg2) {
+  FbxAnimCurveTangentInfo *arg1 = (FbxAnimCurveTangentInfo *) 0 ;
+  float arg2 ;
+  
+  arg1 = (FbxAnimCurveTangentInfo *)jarg1; 
+  arg2 = (float)jarg2; 
+  if (arg1) (arg1)->mWeight = arg2;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxAnimCurveTangentInfo_mWeight_get(void * jarg1) {
+  float jresult ;
+  FbxAnimCurveTangentInfo *arg1 = (FbxAnimCurveTangentInfo *) 0 ;
+  float result;
+  
+  arg1 = (FbxAnimCurveTangentInfo *)jarg1; 
+  result = (float) ((arg1)->mWeight);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveTangentInfo_mVelocity_set(void * jarg1, float jarg2) {
+  FbxAnimCurveTangentInfo *arg1 = (FbxAnimCurveTangentInfo *) 0 ;
+  float arg2 ;
+  
+  arg1 = (FbxAnimCurveTangentInfo *)jarg1; 
+  arg2 = (float)jarg2; 
+  if (arg1) (arg1)->mVelocity = arg2;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxAnimCurveTangentInfo_mVelocity_get(void * jarg1) {
+  float jresult ;
+  FbxAnimCurveTangentInfo *arg1 = (FbxAnimCurveTangentInfo *) 0 ;
+  float result;
+  
+  arg1 = (FbxAnimCurveTangentInfo *)jarg1; 
+  result = (float) ((arg1)->mVelocity);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveTangentInfo_mAuto_set(void * jarg1, float jarg2) {
+  FbxAnimCurveTangentInfo *arg1 = (FbxAnimCurveTangentInfo *) 0 ;
+  float arg2 ;
+  
+  arg1 = (FbxAnimCurveTangentInfo *)jarg1; 
+  arg2 = (float)jarg2; 
+  if (arg1) (arg1)->mAuto = arg2;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxAnimCurveTangentInfo_mAuto_get(void * jarg1) {
+  float jresult ;
+  FbxAnimCurveTangentInfo *arg1 = (FbxAnimCurveTangentInfo *) 0 ;
+  float result;
+  
+  arg1 = (FbxAnimCurveTangentInfo *)jarg1; 
+  result = (float) ((arg1)->mAuto);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveTangentInfo_mWeighted_set(void * jarg1, unsigned int jarg2) {
+  FbxAnimCurveTangentInfo *arg1 = (FbxAnimCurveTangentInfo *) 0 ;
+  bool arg2 ;
+  
+  arg1 = (FbxAnimCurveTangentInfo *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  if (arg1) (arg1)->mWeighted = arg2;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveTangentInfo_mWeighted_get(void * jarg1) {
+  unsigned int jresult ;
+  FbxAnimCurveTangentInfo *arg1 = (FbxAnimCurveTangentInfo *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveTangentInfo *)jarg1; 
+  result = (bool) ((arg1)->mWeighted);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveTangentInfo_mHasVelocity_set(void * jarg1, unsigned int jarg2) {
+  FbxAnimCurveTangentInfo *arg1 = (FbxAnimCurveTangentInfo *) 0 ;
+  bool arg2 ;
+  
+  arg1 = (FbxAnimCurveTangentInfo *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  if (arg1) (arg1)->mHasVelocity = arg2;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveTangentInfo_mHasVelocity_get(void * jarg1) {
+  unsigned int jresult ;
+  FbxAnimCurveTangentInfo *arg1 = (FbxAnimCurveTangentInfo *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveTangentInfo *)jarg1; 
+  result = (bool) ((arg1)->mHasVelocity);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxAnimCurveTangentInfo(void * jarg1) {
+  FbxAnimCurveTangentInfo *arg1 = (FbxAnimCurveTangentInfo *) 0 ;
+  
+  arg1 = (FbxAnimCurveTangentInfo *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxAnimCurveKey_Impl(void * jarg1) {
+  FbxAnimCurveKey_Impl *arg1 = (FbxAnimCurveKey_Impl *) 0 ;
+  
+  arg1 = (FbxAnimCurveKey_Impl *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_Impl_assign(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxAnimCurveKey_Impl *arg1 = (FbxAnimCurveKey_Impl *) 0 ;
+  FbxAnimCurveKey_Impl *arg2 = 0 ;
+  FbxAnimCurveKey_Impl *result = 0 ;
+  
+  arg1 = (FbxAnimCurveKey_Impl *)jarg1; 
+  arg2 = (FbxAnimCurveKey_Impl *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveKey_Impl const & type is null", 0);
+    return 0;
+  } 
+  result = (FbxAnimCurveKey_Impl *) &(arg1)->operator =((FbxAnimCurveKey_Impl const &)*arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_Impl_Set(void * jarg1, void * jarg2, float jarg3) {
+  FbxAnimCurveKey_Impl *arg1 = (FbxAnimCurveKey_Impl *) 0 ;
+  FbxTime arg2 ;
+  float arg3 ;
+  FbxTime *argp2 ;
+  
+  arg1 = (FbxAnimCurveKey_Impl *)jarg1; 
+  argp2 = (FbxTime *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg2 = *argp2; 
+  arg3 = (float)jarg3; 
+  (arg1)->Set(arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_Impl_SetTCB__SWIG_0(void * jarg1, void * jarg2, float jarg3, float jarg4, float jarg5, float jarg6) {
+  FbxAnimCurveKey_Impl *arg1 = (FbxAnimCurveKey_Impl *) 0 ;
+  FbxTime arg2 ;
+  float arg3 ;
+  float arg4 ;
+  float arg5 ;
+  float arg6 ;
+  FbxTime *argp2 ;
+  
+  arg1 = (FbxAnimCurveKey_Impl *)jarg1; 
+  argp2 = (FbxTime *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg2 = *argp2; 
+  arg3 = (float)jarg3; 
+  arg4 = (float)jarg4; 
+  arg5 = (float)jarg5; 
+  arg6 = (float)jarg6; 
+  (arg1)->SetTCB(arg2,arg3,arg4,arg5,arg6);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_Impl_SetTCB__SWIG_1(void * jarg1, void * jarg2, float jarg3, float jarg4, float jarg5) {
+  FbxAnimCurveKey_Impl *arg1 = (FbxAnimCurveKey_Impl *) 0 ;
+  FbxTime arg2 ;
+  float arg3 ;
+  float arg4 ;
+  float arg5 ;
+  FbxTime *argp2 ;
+  
+  arg1 = (FbxAnimCurveKey_Impl *)jarg1; 
+  argp2 = (FbxTime *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg2 = *argp2; 
+  arg3 = (float)jarg3; 
+  arg4 = (float)jarg4; 
+  arg5 = (float)jarg5; 
+  (arg1)->SetTCB(arg2,arg3,arg4,arg5);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_Impl_SetTCB__SWIG_2(void * jarg1, void * jarg2, float jarg3, float jarg4) {
+  FbxAnimCurveKey_Impl *arg1 = (FbxAnimCurveKey_Impl *) 0 ;
+  FbxTime arg2 ;
+  float arg3 ;
+  float arg4 ;
+  FbxTime *argp2 ;
+  
+  arg1 = (FbxAnimCurveKey_Impl *)jarg1; 
+  argp2 = (FbxTime *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg2 = *argp2; 
+  arg3 = (float)jarg3; 
+  arg4 = (float)jarg4; 
+  (arg1)->SetTCB(arg2,arg3,arg4);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_Impl_SetTCB__SWIG_3(void * jarg1, void * jarg2, float jarg3) {
+  FbxAnimCurveKey_Impl *arg1 = (FbxAnimCurveKey_Impl *) 0 ;
+  FbxTime arg2 ;
+  float arg3 ;
+  FbxTime *argp2 ;
+  
+  arg1 = (FbxAnimCurveKey_Impl *)jarg1; 
+  argp2 = (FbxTime *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg2 = *argp2; 
+  arg3 = (float)jarg3; 
+  (arg1)->SetTCB(arg2,arg3);
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_Impl_GetValue(void * jarg1) {
+  float jresult ;
+  FbxAnimCurveKey_Impl *arg1 = (FbxAnimCurveKey_Impl *) 0 ;
+  float result;
+  
+  arg1 = (FbxAnimCurveKey_Impl *)jarg1; 
+  result = (float)((FbxAnimCurveKey_Impl const *)arg1)->GetValue();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_Impl_SetValue(void * jarg1, float jarg2) {
+  FbxAnimCurveKey_Impl *arg1 = (FbxAnimCurveKey_Impl *) 0 ;
+  float arg2 ;
+  
+  arg1 = (FbxAnimCurveKey_Impl *)jarg1; 
+  arg2 = (float)jarg2; 
+  (arg1)->SetValue(arg2);
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_Impl_GetInterpolation(void * jarg1) {
+  int jresult ;
+  FbxAnimCurveKey_Impl *arg1 = (FbxAnimCurveKey_Impl *) 0 ;
+  FbxAnimCurveDef::EInterpolationType result;
+  
+  arg1 = (FbxAnimCurveKey_Impl *)jarg1; 
+  result = (FbxAnimCurveDef::EInterpolationType)((FbxAnimCurveKey_Impl const *)arg1)->GetInterpolation();
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_Impl_SetInterpolation(void * jarg1, int jarg2) {
+  FbxAnimCurveKey_Impl *arg1 = (FbxAnimCurveKey_Impl *) 0 ;
+  FbxAnimCurveDef::EInterpolationType arg2 ;
+  
+  arg1 = (FbxAnimCurveKey_Impl *)jarg1; 
+  arg2 = (FbxAnimCurveDef::EInterpolationType)jarg2; 
+  (arg1)->SetInterpolation(arg2);
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_Impl_GetTangentMode__SWIG_0(void * jarg1, unsigned int jarg2) {
+  int jresult ;
+  FbxAnimCurveKey_Impl *arg1 = (FbxAnimCurveKey_Impl *) 0 ;
+  bool arg2 ;
+  FbxAnimCurveDef::ETangentMode result;
+  
+  arg1 = (FbxAnimCurveKey_Impl *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  result = (FbxAnimCurveDef::ETangentMode)((FbxAnimCurveKey_Impl const *)arg1)->GetTangentMode(arg2);
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_Impl_GetTangentMode__SWIG_1(void * jarg1) {
+  int jresult ;
+  FbxAnimCurveKey_Impl *arg1 = (FbxAnimCurveKey_Impl *) 0 ;
+  FbxAnimCurveDef::ETangentMode result;
+  
+  arg1 = (FbxAnimCurveKey_Impl *)jarg1; 
+  result = (FbxAnimCurveDef::ETangentMode)((FbxAnimCurveKey_Impl const *)arg1)->GetTangentMode();
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_Impl_SetTangentMode(void * jarg1, int jarg2) {
+  FbxAnimCurveKey_Impl *arg1 = (FbxAnimCurveKey_Impl *) 0 ;
+  FbxAnimCurveDef::ETangentMode arg2 ;
+  
+  arg1 = (FbxAnimCurveKey_Impl *)jarg1; 
+  arg2 = (FbxAnimCurveDef::ETangentMode)jarg2; 
+  (arg1)->SetTangentMode(arg2);
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_Impl_GetTangentWeightMode(void * jarg1) {
+  int jresult ;
+  FbxAnimCurveKey_Impl *arg1 = (FbxAnimCurveKey_Impl *) 0 ;
+  FbxAnimCurveDef::EWeightedMode result;
+  
+  arg1 = (FbxAnimCurveKey_Impl *)jarg1; 
+  result = (FbxAnimCurveDef::EWeightedMode)((FbxAnimCurveKey_Impl const *)arg1)->GetTangentWeightMode();
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_Impl_SetTangentWeightMode__SWIG_0(void * jarg1, int jarg2, int jarg3) {
+  FbxAnimCurveKey_Impl *arg1 = (FbxAnimCurveKey_Impl *) 0 ;
+  FbxAnimCurveDef::EWeightedMode arg2 ;
+  FbxAnimCurveDef::EWeightedMode arg3 ;
+  
+  arg1 = (FbxAnimCurveKey_Impl *)jarg1; 
+  arg2 = (FbxAnimCurveDef::EWeightedMode)jarg2; 
+  arg3 = (FbxAnimCurveDef::EWeightedMode)jarg3; 
+  (arg1)->SetTangentWeightMode(arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_Impl_SetTangentWeightMode__SWIG_1(void * jarg1, int jarg2) {
+  FbxAnimCurveKey_Impl *arg1 = (FbxAnimCurveKey_Impl *) 0 ;
+  FbxAnimCurveDef::EWeightedMode arg2 ;
+  
+  arg1 = (FbxAnimCurveKey_Impl *)jarg1; 
+  arg2 = (FbxAnimCurveDef::EWeightedMode)jarg2; 
+  (arg1)->SetTangentWeightMode(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_Impl_SetTangentWeightAndAdjustTangent(void * jarg1, int jarg2, double jarg3) {
+  FbxAnimCurveKey_Impl *arg1 = (FbxAnimCurveKey_Impl *) 0 ;
+  FbxAnimCurveDef::EDataIndex arg2 ;
+  double arg3 ;
+  
+  arg1 = (FbxAnimCurveKey_Impl *)jarg1; 
+  arg2 = (FbxAnimCurveDef::EDataIndex)jarg2; 
+  arg3 = (double)jarg3; 
+  (arg1)->SetTangentWeightAndAdjustTangent(arg2,arg3);
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_Impl_GetTangentVelocityMode(void * jarg1) {
+  int jresult ;
+  FbxAnimCurveKey_Impl *arg1 = (FbxAnimCurveKey_Impl *) 0 ;
+  FbxAnimCurveDef::EVelocityMode result;
+  
+  arg1 = (FbxAnimCurveKey_Impl *)jarg1; 
+  result = (FbxAnimCurveDef::EVelocityMode)((FbxAnimCurveKey_Impl const *)arg1)->GetTangentVelocityMode();
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_Impl_SetTangentVelocityMode__SWIG_0(void * jarg1, int jarg2, int jarg3) {
+  FbxAnimCurveKey_Impl *arg1 = (FbxAnimCurveKey_Impl *) 0 ;
+  FbxAnimCurveDef::EVelocityMode arg2 ;
+  FbxAnimCurveDef::EVelocityMode arg3 ;
+  
+  arg1 = (FbxAnimCurveKey_Impl *)jarg1; 
+  arg2 = (FbxAnimCurveDef::EVelocityMode)jarg2; 
+  arg3 = (FbxAnimCurveDef::EVelocityMode)jarg3; 
+  (arg1)->SetTangentVelocityMode(arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_Impl_SetTangentVelocityMode__SWIG_1(void * jarg1, int jarg2) {
+  FbxAnimCurveKey_Impl *arg1 = (FbxAnimCurveKey_Impl *) 0 ;
+  FbxAnimCurveDef::EVelocityMode arg2 ;
+  
+  arg1 = (FbxAnimCurveKey_Impl *)jarg1; 
+  arg2 = (FbxAnimCurveDef::EVelocityMode)jarg2; 
+  (arg1)->SetTangentVelocityMode(arg2);
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_Impl_GetConstantMode(void * jarg1) {
+  int jresult ;
+  FbxAnimCurveKey_Impl *arg1 = (FbxAnimCurveKey_Impl *) 0 ;
+  FbxAnimCurveDef::EConstantMode result;
+  
+  arg1 = (FbxAnimCurveKey_Impl *)jarg1; 
+  result = (FbxAnimCurveDef::EConstantMode)((FbxAnimCurveKey_Impl const *)arg1)->GetConstantMode();
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_Impl_SetConstantMode(void * jarg1, int jarg2) {
+  FbxAnimCurveKey_Impl *arg1 = (FbxAnimCurveKey_Impl *) 0 ;
+  FbxAnimCurveDef::EConstantMode arg2 ;
+  
+  arg1 = (FbxAnimCurveKey_Impl *)jarg1; 
+  arg2 = (FbxAnimCurveDef::EConstantMode)jarg2; 
+  (arg1)->SetConstantMode(arg2);
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_Impl_GetDataFloat(void * jarg1, int jarg2) {
+  float jresult ;
+  FbxAnimCurveKey_Impl *arg1 = (FbxAnimCurveKey_Impl *) 0 ;
+  FbxAnimCurveDef::EDataIndex arg2 ;
+  float result;
+  
+  arg1 = (FbxAnimCurveKey_Impl *)jarg1; 
+  arg2 = (FbxAnimCurveDef::EDataIndex)jarg2; 
+  result = (float)((FbxAnimCurveKey_Impl const *)arg1)->GetDataFloat(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_Impl_SetDataFloat(void * jarg1, int jarg2, float jarg3) {
+  FbxAnimCurveKey_Impl *arg1 = (FbxAnimCurveKey_Impl *) 0 ;
+  FbxAnimCurveDef::EDataIndex arg2 ;
+  float arg3 ;
+  
+  arg1 = (FbxAnimCurveKey_Impl *)jarg1; 
+  arg2 = (FbxAnimCurveDef::EDataIndex)jarg2; 
+  arg3 = (float)jarg3; 
+  (arg1)->SetDataFloat(arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_Impl_SetTangentVisibility(void * jarg1, int jarg2) {
+  FbxAnimCurveKey_Impl *arg1 = (FbxAnimCurveKey_Impl *) 0 ;
+  FbxAnimCurveDef::ETangentVisibility arg2 ;
+  
+  arg1 = (FbxAnimCurveKey_Impl *)jarg1; 
+  arg2 = (FbxAnimCurveDef::ETangentVisibility)jarg2; 
+  (arg1)->SetTangentVisibility(arg2);
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_Impl_GetTangentVisibility(void * jarg1) {
+  int jresult ;
+  FbxAnimCurveKey_Impl *arg1 = (FbxAnimCurveKey_Impl *) 0 ;
+  FbxAnimCurveDef::ETangentVisibility result;
+  
+  arg1 = (FbxAnimCurveKey_Impl *)jarg1; 
+  result = (FbxAnimCurveDef::ETangentVisibility)((FbxAnimCurveKey_Impl const *)arg1)->GetTangentVisibility();
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_Impl_SetBreak(void * jarg1, unsigned int jarg2) {
+  FbxAnimCurveKey_Impl *arg1 = (FbxAnimCurveKey_Impl *) 0 ;
+  bool arg2 ;
+  
+  arg1 = (FbxAnimCurveKey_Impl *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  (arg1)->SetBreak(arg2);
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_Impl_GetBreak(void * jarg1) {
+  unsigned int jresult ;
+  FbxAnimCurveKey_Impl *arg1 = (FbxAnimCurveKey_Impl *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveKey_Impl *)jarg1; 
+  result = (bool)((FbxAnimCurveKey_Impl const *)arg1)->GetBreak();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxAnimCurveKey__SWIG_0() {
+  void * jresult ;
+  FbxAnimCurveKey *result = 0 ;
+  
+  result = (FbxAnimCurveKey *)new FbxAnimCurveKey();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxAnimCurveKey__SWIG_1(void * jarg1) {
+  void * jresult ;
+  FbxTime arg1 ;
+  FbxTime *argp1 ;
+  FbxAnimCurveKey *result = 0 ;
+  
+  argp1 = (FbxTime *)jarg1; 
+  if (!argp1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return 0;
+  }
+  arg1 = *argp1; 
+  result = (FbxAnimCurveKey *)new FbxAnimCurveKey(arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxAnimCurveKey__SWIG_2(void * jarg1, float jarg2) {
+  void * jresult ;
+  FbxTime arg1 ;
+  float arg2 ;
+  FbxTime *argp1 ;
+  FbxAnimCurveKey *result = 0 ;
+  
+  argp1 = (FbxTime *)jarg1; 
+  if (!argp1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return 0;
+  }
+  arg1 = *argp1; 
+  arg2 = (float)jarg2; 
+  result = (FbxAnimCurveKey *)new FbxAnimCurveKey(arg1,arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxAnimCurveKey__SWIG_3(void * jarg1) {
+  void * jresult ;
+  FbxAnimCurveKey *arg1 = 0 ;
+  FbxAnimCurveKey *result = 0 ;
+  
+  arg1 = (FbxAnimCurveKey *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveKey const & type is null", 0);
+    return 0;
+  } 
+  result = (FbxAnimCurveKey *)new FbxAnimCurveKey((FbxAnimCurveKey const &)*arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxAnimCurveKey(void * jarg1) {
+  FbxAnimCurveKey *arg1 = (FbxAnimCurveKey *) 0 ;
+  
+  arg1 = (FbxAnimCurveKey *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_assign(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxAnimCurveKey *arg1 = (FbxAnimCurveKey *) 0 ;
+  FbxAnimCurveKey *arg2 = 0 ;
+  FbxAnimCurveKey *result = 0 ;
+  
+  arg1 = (FbxAnimCurveKey *)jarg1; 
+  arg2 = (FbxAnimCurveKey *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveKey const & type is null", 0);
+    return 0;
+  } 
+  result = (FbxAnimCurveKey *) &(arg1)->operator =((FbxAnimCurveKey const &)*arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_GetTime(void * jarg1) {
+  void * jresult ;
+  FbxAnimCurveKey *arg1 = (FbxAnimCurveKey *) 0 ;
+  FbxTime result;
+  
+  arg1 = (FbxAnimCurveKey *)jarg1; 
+  result = ((FbxAnimCurveKey const *)arg1)->GetTime();
+  jresult = new FbxTime((const FbxTime &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_SetTime(void * jarg1, void * jarg2) {
+  FbxAnimCurveKey *arg1 = (FbxAnimCurveKey *) 0 ;
+  FbxTime *arg2 = 0 ;
+  
+  arg1 = (FbxAnimCurveKey *)jarg1; 
+  arg2 = (FbxTime *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return ;
+  } 
+  (arg1)->SetTime((FbxTime const &)*arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_Set(void * jarg1, void * jarg2, float jarg3) {
+  FbxAnimCurveKey *arg1 = (FbxAnimCurveKey *) 0 ;
+  FbxTime arg2 ;
+  float arg3 ;
+  FbxTime *argp2 ;
+  
+  arg1 = (FbxAnimCurveKey *)jarg1; 
+  argp2 = (FbxTime *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg2 = *argp2; 
+  arg3 = (float)jarg3; 
+  (arg1)->Set(arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_SetTCB__SWIG_0(void * jarg1, void * jarg2, float jarg3, float jarg4, float jarg5, float jarg6) {
+  FbxAnimCurveKey *arg1 = (FbxAnimCurveKey *) 0 ;
+  FbxTime arg2 ;
+  float arg3 ;
+  float arg4 ;
+  float arg5 ;
+  float arg6 ;
+  FbxTime *argp2 ;
+  
+  arg1 = (FbxAnimCurveKey *)jarg1; 
+  argp2 = (FbxTime *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg2 = *argp2; 
+  arg3 = (float)jarg3; 
+  arg4 = (float)jarg4; 
+  arg5 = (float)jarg5; 
+  arg6 = (float)jarg6; 
+  (arg1)->SetTCB(arg2,arg3,arg4,arg5,arg6);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_SetTCB__SWIG_1(void * jarg1, void * jarg2, float jarg3, float jarg4, float jarg5) {
+  FbxAnimCurveKey *arg1 = (FbxAnimCurveKey *) 0 ;
+  FbxTime arg2 ;
+  float arg3 ;
+  float arg4 ;
+  float arg5 ;
+  FbxTime *argp2 ;
+  
+  arg1 = (FbxAnimCurveKey *)jarg1; 
+  argp2 = (FbxTime *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg2 = *argp2; 
+  arg3 = (float)jarg3; 
+  arg4 = (float)jarg4; 
+  arg5 = (float)jarg5; 
+  (arg1)->SetTCB(arg2,arg3,arg4,arg5);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_SetTCB__SWIG_2(void * jarg1, void * jarg2, float jarg3, float jarg4) {
+  FbxAnimCurveKey *arg1 = (FbxAnimCurveKey *) 0 ;
+  FbxTime arg2 ;
+  float arg3 ;
+  float arg4 ;
+  FbxTime *argp2 ;
+  
+  arg1 = (FbxAnimCurveKey *)jarg1; 
+  argp2 = (FbxTime *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg2 = *argp2; 
+  arg3 = (float)jarg3; 
+  arg4 = (float)jarg4; 
+  (arg1)->SetTCB(arg2,arg3,arg4);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_SetTCB__SWIG_3(void * jarg1, void * jarg2, float jarg3) {
+  FbxAnimCurveKey *arg1 = (FbxAnimCurveKey *) 0 ;
+  FbxTime arg2 ;
+  float arg3 ;
+  FbxTime *argp2 ;
+  
+  arg1 = (FbxAnimCurveKey *)jarg1; 
+  argp2 = (FbxTime *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg2 = *argp2; 
+  arg3 = (float)jarg3; 
+  (arg1)->SetTCB(arg2,arg3);
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_GetValue(void * jarg1) {
+  float jresult ;
+  FbxAnimCurveKey *arg1 = (FbxAnimCurveKey *) 0 ;
+  float result;
+  
+  arg1 = (FbxAnimCurveKey *)jarg1; 
+  result = (float)((FbxAnimCurveKey const *)arg1)->GetValue();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_SetValue(void * jarg1, float jarg2) {
+  FbxAnimCurveKey *arg1 = (FbxAnimCurveKey *) 0 ;
+  float arg2 ;
+  
+  arg1 = (FbxAnimCurveKey *)jarg1; 
+  arg2 = (float)jarg2; 
+  (arg1)->SetValue(arg2);
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_GetInterpolation(void * jarg1) {
+  int jresult ;
+  FbxAnimCurveKey *arg1 = (FbxAnimCurveKey *) 0 ;
+  FbxAnimCurveDef::EInterpolationType result;
+  
+  arg1 = (FbxAnimCurveKey *)jarg1; 
+  result = (FbxAnimCurveDef::EInterpolationType)(arg1)->GetInterpolation();
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_SetInterpolation(void * jarg1, int jarg2) {
+  FbxAnimCurveKey *arg1 = (FbxAnimCurveKey *) 0 ;
+  FbxAnimCurveDef::EInterpolationType arg2 ;
+  
+  arg1 = (FbxAnimCurveKey *)jarg1; 
+  arg2 = (FbxAnimCurveDef::EInterpolationType)jarg2; 
+  (arg1)->SetInterpolation(arg2);
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_GetTangentMode__SWIG_0(void * jarg1, unsigned int jarg2) {
+  int jresult ;
+  FbxAnimCurveKey *arg1 = (FbxAnimCurveKey *) 0 ;
+  bool arg2 ;
+  FbxAnimCurveDef::ETangentMode result;
+  
+  arg1 = (FbxAnimCurveKey *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  result = (FbxAnimCurveDef::ETangentMode)(arg1)->GetTangentMode(arg2);
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_GetTangentMode__SWIG_1(void * jarg1) {
+  int jresult ;
+  FbxAnimCurveKey *arg1 = (FbxAnimCurveKey *) 0 ;
+  FbxAnimCurveDef::ETangentMode result;
+  
+  arg1 = (FbxAnimCurveKey *)jarg1; 
+  result = (FbxAnimCurveDef::ETangentMode)(arg1)->GetTangentMode();
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_SetTangentMode(void * jarg1, int jarg2) {
+  FbxAnimCurveKey *arg1 = (FbxAnimCurveKey *) 0 ;
+  FbxAnimCurveDef::ETangentMode arg2 ;
+  
+  arg1 = (FbxAnimCurveKey *)jarg1; 
+  arg2 = (FbxAnimCurveDef::ETangentMode)jarg2; 
+  (arg1)->SetTangentMode(arg2);
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_GetTangentWeightMode(void * jarg1) {
+  int jresult ;
+  FbxAnimCurveKey *arg1 = (FbxAnimCurveKey *) 0 ;
+  FbxAnimCurveDef::EWeightedMode result;
+  
+  arg1 = (FbxAnimCurveKey *)jarg1; 
+  result = (FbxAnimCurveDef::EWeightedMode)((FbxAnimCurveKey const *)arg1)->GetTangentWeightMode();
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_SetTangentWeightMode__SWIG_0(void * jarg1, int jarg2, int jarg3) {
+  FbxAnimCurveKey *arg1 = (FbxAnimCurveKey *) 0 ;
+  FbxAnimCurveDef::EWeightedMode arg2 ;
+  FbxAnimCurveDef::EWeightedMode arg3 ;
+  
+  arg1 = (FbxAnimCurveKey *)jarg1; 
+  arg2 = (FbxAnimCurveDef::EWeightedMode)jarg2; 
+  arg3 = (FbxAnimCurveDef::EWeightedMode)jarg3; 
+  (arg1)->SetTangentWeightMode(arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_SetTangentWeightMode__SWIG_1(void * jarg1, int jarg2) {
+  FbxAnimCurveKey *arg1 = (FbxAnimCurveKey *) 0 ;
+  FbxAnimCurveDef::EWeightedMode arg2 ;
+  
+  arg1 = (FbxAnimCurveKey *)jarg1; 
+  arg2 = (FbxAnimCurveDef::EWeightedMode)jarg2; 
+  (arg1)->SetTangentWeightMode(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_SetTangentWeightAndAdjustTangent(void * jarg1, int jarg2, double jarg3) {
+  FbxAnimCurveKey *arg1 = (FbxAnimCurveKey *) 0 ;
+  FbxAnimCurveDef::EDataIndex arg2 ;
+  double arg3 ;
+  
+  arg1 = (FbxAnimCurveKey *)jarg1; 
+  arg2 = (FbxAnimCurveDef::EDataIndex)jarg2; 
+  arg3 = (double)jarg3; 
+  (arg1)->SetTangentWeightAndAdjustTangent(arg2,arg3);
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_GetTangentVelocityMode(void * jarg1) {
+  int jresult ;
+  FbxAnimCurveKey *arg1 = (FbxAnimCurveKey *) 0 ;
+  FbxAnimCurveDef::EVelocityMode result;
+  
+  arg1 = (FbxAnimCurveKey *)jarg1; 
+  result = (FbxAnimCurveDef::EVelocityMode)((FbxAnimCurveKey const *)arg1)->GetTangentVelocityMode();
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_SetTangentVelocityMode__SWIG_0(void * jarg1, int jarg2, int jarg3) {
+  FbxAnimCurveKey *arg1 = (FbxAnimCurveKey *) 0 ;
+  FbxAnimCurveDef::EVelocityMode arg2 ;
+  FbxAnimCurveDef::EVelocityMode arg3 ;
+  
+  arg1 = (FbxAnimCurveKey *)jarg1; 
+  arg2 = (FbxAnimCurveDef::EVelocityMode)jarg2; 
+  arg3 = (FbxAnimCurveDef::EVelocityMode)jarg3; 
+  (arg1)->SetTangentVelocityMode(arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_SetTangentVelocityMode__SWIG_1(void * jarg1, int jarg2) {
+  FbxAnimCurveKey *arg1 = (FbxAnimCurveKey *) 0 ;
+  FbxAnimCurveDef::EVelocityMode arg2 ;
+  
+  arg1 = (FbxAnimCurveKey *)jarg1; 
+  arg2 = (FbxAnimCurveDef::EVelocityMode)jarg2; 
+  (arg1)->SetTangentVelocityMode(arg2);
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_GetConstantMode(void * jarg1) {
+  int jresult ;
+  FbxAnimCurveKey *arg1 = (FbxAnimCurveKey *) 0 ;
+  FbxAnimCurveDef::EConstantMode result;
+  
+  arg1 = (FbxAnimCurveKey *)jarg1; 
+  result = (FbxAnimCurveDef::EConstantMode)((FbxAnimCurveKey const *)arg1)->GetConstantMode();
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_SetConstantMode(void * jarg1, int jarg2) {
+  FbxAnimCurveKey *arg1 = (FbxAnimCurveKey *) 0 ;
+  FbxAnimCurveDef::EConstantMode arg2 ;
+  
+  arg1 = (FbxAnimCurveKey *)jarg1; 
+  arg2 = (FbxAnimCurveDef::EConstantMode)jarg2; 
+  (arg1)->SetConstantMode(arg2);
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_GetDataFloat(void * jarg1, int jarg2) {
+  float jresult ;
+  FbxAnimCurveKey *arg1 = (FbxAnimCurveKey *) 0 ;
+  FbxAnimCurveDef::EDataIndex arg2 ;
+  float result;
+  
+  arg1 = (FbxAnimCurveKey *)jarg1; 
+  arg2 = (FbxAnimCurveDef::EDataIndex)jarg2; 
+  result = (float)((FbxAnimCurveKey const *)arg1)->GetDataFloat(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_SetDataFloat(void * jarg1, int jarg2, float jarg3) {
+  FbxAnimCurveKey *arg1 = (FbxAnimCurveKey *) 0 ;
+  FbxAnimCurveDef::EDataIndex arg2 ;
+  float arg3 ;
+  
+  arg1 = (FbxAnimCurveKey *)jarg1; 
+  arg2 = (FbxAnimCurveDef::EDataIndex)jarg2; 
+  arg3 = (float)jarg3; 
+  (arg1)->SetDataFloat(arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_SetTangentVisibility(void * jarg1, int jarg2) {
+  FbxAnimCurveKey *arg1 = (FbxAnimCurveKey *) 0 ;
+  FbxAnimCurveDef::ETangentVisibility arg2 ;
+  
+  arg1 = (FbxAnimCurveKey *)jarg1; 
+  arg2 = (FbxAnimCurveDef::ETangentVisibility)jarg2; 
+  (arg1)->SetTangentVisibility(arg2);
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_GetTangentVisibility(void * jarg1) {
+  int jresult ;
+  FbxAnimCurveKey *arg1 = (FbxAnimCurveKey *) 0 ;
+  FbxAnimCurveDef::ETangentVisibility result;
+  
+  arg1 = (FbxAnimCurveKey *)jarg1; 
+  result = (FbxAnimCurveDef::ETangentVisibility)((FbxAnimCurveKey const *)arg1)->GetTangentVisibility();
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_SetBreak(void * jarg1, unsigned int jarg2) {
+  FbxAnimCurveKey *arg1 = (FbxAnimCurveKey *) 0 ;
+  bool arg2 ;
+  
+  arg1 = (FbxAnimCurveKey *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  (arg1)->SetBreak(arg2);
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_GetBreak(void * jarg1) {
+  unsigned int jresult ;
+  FbxAnimCurveKey *arg1 = (FbxAnimCurveKey *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveKey *)jarg1; 
+  result = (bool)((FbxAnimCurveKey const *)arg1)->GetBreak();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_GetImpl(void * jarg1) {
+  void * jresult ;
+  FbxAnimCurveKey *arg1 = (FbxAnimCurveKey *) 0 ;
+  FbxAnimCurveKey_Impl *result = 0 ;
+  
+  arg1 = (FbxAnimCurveKey *)jarg1; 
+  result = (FbxAnimCurveKey_Impl *)((FbxAnimCurveKey const *)arg1)->GetImpl();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_SetAllocatorFct(void * jarg1) {
+  FbxAnimCurveKey_Impl *(*arg1)() = (FbxAnimCurveKey_Impl *(*)()) 0 ;
+  
+  arg1 = (FbxAnimCurveKey_Impl *(*)())jarg1; 
+  FbxAnimCurveKey::SetAllocatorFct(arg1);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_SetCopyAllocatorFct(void * jarg1) {
+  FbxAnimCurveKey_Impl *(*arg1)(FbxAnimCurveKey_Impl *) = (FbxAnimCurveKey_Impl *(*)(FbxAnimCurveKey_Impl *)) 0 ;
+  
+  arg1 = (FbxAnimCurveKey_Impl *(*)(FbxAnimCurveKey_Impl *))jarg1; 
+  FbxAnimCurveKey::SetCopyAllocatorFct(arg1);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_SetDeallocatorFct(void * jarg1) {
+  void (*arg1)(FbxAnimCurveKey_Impl *) = (void (*)(FbxAnimCurveKey_Impl *)) 0 ;
+  
+  arg1 = (void (*)(FbxAnimCurveKey_Impl *))jarg1; 
+  FbxAnimCurveKey::SetDeallocatorFct(arg1);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_ClassId_set(void * jarg1) {
+  FbxClassId arg1 ;
+  FbxClassId *argp1 ;
+  
+  argp1 = (FbxClassId *)jarg1; 
+  if (!argp1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxClassId", 0);
+    return ;
+  }
+  arg1 = *argp1; 
+  FbxAnimCurve::ClassId = arg1;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_ClassId_get() {
+  void * jresult ;
+  FbxClassId result;
+  
+  result = FbxAnimCurve::ClassId;
+  jresult = new FbxClassId((const FbxClassId &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_GetClassId(void * jarg1) {
+  void * jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  FbxClassId result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  result = ((FbxAnimCurve const *)arg1)->GetClassId();
+  jresult = new FbxClassId((const FbxClassId &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_Create__SWIG_0(void * jarg1, char * jarg2) {
+  void * jresult ;
+  FbxManager *arg1 = (FbxManager *) 0 ;
+  char *arg2 = (char *) 0 ;
+  FbxAnimCurve *result = 0 ;
+  
+  arg1 = (FbxManager *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (FbxAnimCurve *)FbxAnimCurve::Create(arg1,(char const *)arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_Create__SWIG_1(void * jarg1, char * jarg2) {
+  void * jresult ;
+  FbxScene *arg1 = (FbxScene *) 0 ;
+  char *arg2 = (char *) 0 ;
+  FbxAnimCurve *result = 0 ;
+  
+  arg1 = (FbxScene *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (FbxAnimCurve *)FbxAnimCurve::Create(arg1,(char const *)arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_ResizeKeyBuffer(void * jarg1, int jarg2) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  (arg1)->ResizeKeyBuffer(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyModifyBegin(void * jarg1) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  (arg1)->KeyModifyBegin();
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyModifyEnd(void * jarg1) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  (arg1)->KeyModifyEnd();
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyClear(void * jarg1) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  (arg1)->KeyClear();
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyGetCount(void * jarg1) {
+  int jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  result = (int)((FbxAnimCurve const *)arg1)->KeyGetCount();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyAdd__SWIG_0(void * jarg1, void * jarg2, void * jarg3, void * jarg4) {
+  int jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  FbxTime arg2 ;
+  FbxAnimCurveKeyBase *arg3 = 0 ;
+  int *arg4 = (int *) 0 ;
+  FbxTime *argp2 ;
+  int result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  argp2 = (FbxTime *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return 0;
+  }
+  arg2 = *argp2; 
+  arg3 = (FbxAnimCurveKeyBase *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveKeyBase & type is null", 0);
+    return 0;
+  } 
+  arg4 = (int *)jarg4; 
+  result = (int)(arg1)->KeyAdd(arg2,*arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyAdd__SWIG_1(void * jarg1, void * jarg2, void * jarg3) {
+  int jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  FbxTime arg2 ;
+  FbxAnimCurveKeyBase *arg3 = 0 ;
+  FbxTime *argp2 ;
+  int result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  argp2 = (FbxTime *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return 0;
+  }
+  arg2 = *argp2; 
+  arg3 = (FbxAnimCurveKeyBase *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveKeyBase & type is null", 0);
+    return 0;
+  } 
+  result = (int)(arg1)->KeyAdd(arg2,*arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyAdd__SWIG_2(void * jarg1, void * jarg2, void * jarg3) {
+  int jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  FbxTime arg2 ;
+  int *arg3 = (int *) 0 ;
+  FbxTime *argp2 ;
+  int result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  argp2 = (FbxTime *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return 0;
+  }
+  arg2 = *argp2; 
+  arg3 = (int *)jarg3; 
+  result = (int)(arg1)->KeyAdd(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyAdd__SWIG_3(void * jarg1, void * jarg2) {
+  int jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  FbxTime arg2 ;
+  FbxTime *argp2 ;
+  int result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  argp2 = (FbxTime *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return 0;
+  }
+  arg2 = *argp2; 
+  result = (int)(arg1)->KeyAdd(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeySet__SWIG_0(void * jarg1, int jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  FbxAnimCurveKeyBase *arg3 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (FbxAnimCurveKeyBase *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveKeyBase & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->KeySet(arg2,*arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyRemove__SWIG_0(void * jarg1, int jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (bool)(arg1)->KeyRemove(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyRemove__SWIG_1(void * jarg1, int jarg2, int jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  int arg3 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (int)jarg3; 
+  result = (bool)(arg1)->KeyRemove(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyInsert__SWIG_0(void * jarg1, void * jarg2, void * jarg3) {
+  int jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  FbxTime arg2 ;
+  int *arg3 = (int *) 0 ;
+  FbxTime *argp2 ;
+  int result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  argp2 = (FbxTime *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return 0;
+  }
+  arg2 = *argp2; 
+  arg3 = (int *)jarg3; 
+  result = (int)(arg1)->KeyInsert(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyInsert__SWIG_1(void * jarg1, void * jarg2) {
+  int jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  FbxTime arg2 ;
+  FbxTime *argp2 ;
+  int result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  argp2 = (FbxTime *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return 0;
+  }
+  arg2 = *argp2; 
+  result = (int)(arg1)->KeyInsert(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT double SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyFind__SWIG_0(void * jarg1, void * jarg2, void * jarg3) {
+  double jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  FbxTime arg2 ;
+  int *arg3 = (int *) 0 ;
+  FbxTime *argp2 ;
+  double result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  argp2 = (FbxTime *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return 0;
+  }
+  arg2 = *argp2; 
+  arg3 = (int *)jarg3; 
+  result = (double)(arg1)->KeyFind(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT double SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyFind__SWIG_1(void * jarg1, void * jarg2) {
+  double jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  FbxTime arg2 ;
+  FbxTime *argp2 ;
+  double result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  argp2 = (FbxTime *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return 0;
+  }
+  arg2 = *argp2; 
+  result = (double)(arg1)->KeyFind(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyScaleValue(void * jarg1, float jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  float arg2 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (float)jarg2; 
+  result = (bool)(arg1)->KeyScaleValue(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyScaleValueAndTangent(void * jarg1, float jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  float arg2 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (float)jarg2; 
+  result = (bool)(arg1)->KeyScaleValueAndTangent(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeySet__SWIG_1(void * jarg1, int jarg2, void * jarg3, float jarg4, int jarg5, int jarg6, float jarg7, float jarg8, int jarg9, float jarg10, float jarg11, float jarg12, float jarg13) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  FbxTime arg3 ;
+  float arg4 ;
+  FbxAnimCurveDef::EInterpolationType arg5 ;
+  FbxAnimCurveDef::ETangentMode arg6 ;
+  float arg7 ;
+  float arg8 ;
+  FbxAnimCurveDef::EWeightedMode arg9 ;
+  float arg10 ;
+  float arg11 ;
+  float arg12 ;
+  float arg13 ;
+  FbxTime *argp3 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  argp3 = (FbxTime *)jarg3; 
+  if (!argp3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg3 = *argp3; 
+  arg4 = (float)jarg4; 
+  arg5 = (FbxAnimCurveDef::EInterpolationType)jarg5; 
+  arg6 = (FbxAnimCurveDef::ETangentMode)jarg6; 
+  arg7 = (float)jarg7; 
+  arg8 = (float)jarg8; 
+  arg9 = (FbxAnimCurveDef::EWeightedMode)jarg9; 
+  arg10 = (float)jarg10; 
+  arg11 = (float)jarg11; 
+  arg12 = (float)jarg12; 
+  arg13 = (float)jarg13; 
+  (arg1)->KeySet(arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10,arg11,arg12,arg13);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeySet__SWIG_2(void * jarg1, int jarg2, void * jarg3, float jarg4, int jarg5, int jarg6, float jarg7, float jarg8, int jarg9, float jarg10, float jarg11, float jarg12) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  FbxTime arg3 ;
+  float arg4 ;
+  FbxAnimCurveDef::EInterpolationType arg5 ;
+  FbxAnimCurveDef::ETangentMode arg6 ;
+  float arg7 ;
+  float arg8 ;
+  FbxAnimCurveDef::EWeightedMode arg9 ;
+  float arg10 ;
+  float arg11 ;
+  float arg12 ;
+  FbxTime *argp3 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  argp3 = (FbxTime *)jarg3; 
+  if (!argp3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg3 = *argp3; 
+  arg4 = (float)jarg4; 
+  arg5 = (FbxAnimCurveDef::EInterpolationType)jarg5; 
+  arg6 = (FbxAnimCurveDef::ETangentMode)jarg6; 
+  arg7 = (float)jarg7; 
+  arg8 = (float)jarg8; 
+  arg9 = (FbxAnimCurveDef::EWeightedMode)jarg9; 
+  arg10 = (float)jarg10; 
+  arg11 = (float)jarg11; 
+  arg12 = (float)jarg12; 
+  (arg1)->KeySet(arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10,arg11,arg12);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeySet__SWIG_3(void * jarg1, int jarg2, void * jarg3, float jarg4, int jarg5, int jarg6, float jarg7, float jarg8, int jarg9, float jarg10, float jarg11) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  FbxTime arg3 ;
+  float arg4 ;
+  FbxAnimCurveDef::EInterpolationType arg5 ;
+  FbxAnimCurveDef::ETangentMode arg6 ;
+  float arg7 ;
+  float arg8 ;
+  FbxAnimCurveDef::EWeightedMode arg9 ;
+  float arg10 ;
+  float arg11 ;
+  FbxTime *argp3 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  argp3 = (FbxTime *)jarg3; 
+  if (!argp3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg3 = *argp3; 
+  arg4 = (float)jarg4; 
+  arg5 = (FbxAnimCurveDef::EInterpolationType)jarg5; 
+  arg6 = (FbxAnimCurveDef::ETangentMode)jarg6; 
+  arg7 = (float)jarg7; 
+  arg8 = (float)jarg8; 
+  arg9 = (FbxAnimCurveDef::EWeightedMode)jarg9; 
+  arg10 = (float)jarg10; 
+  arg11 = (float)jarg11; 
+  (arg1)->KeySet(arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10,arg11);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeySet__SWIG_4(void * jarg1, int jarg2, void * jarg3, float jarg4, int jarg5, int jarg6, float jarg7, float jarg8, int jarg9, float jarg10) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  FbxTime arg3 ;
+  float arg4 ;
+  FbxAnimCurveDef::EInterpolationType arg5 ;
+  FbxAnimCurveDef::ETangentMode arg6 ;
+  float arg7 ;
+  float arg8 ;
+  FbxAnimCurveDef::EWeightedMode arg9 ;
+  float arg10 ;
+  FbxTime *argp3 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  argp3 = (FbxTime *)jarg3; 
+  if (!argp3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg3 = *argp3; 
+  arg4 = (float)jarg4; 
+  arg5 = (FbxAnimCurveDef::EInterpolationType)jarg5; 
+  arg6 = (FbxAnimCurveDef::ETangentMode)jarg6; 
+  arg7 = (float)jarg7; 
+  arg8 = (float)jarg8; 
+  arg9 = (FbxAnimCurveDef::EWeightedMode)jarg9; 
+  arg10 = (float)jarg10; 
+  (arg1)->KeySet(arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9,arg10);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeySet__SWIG_5(void * jarg1, int jarg2, void * jarg3, float jarg4, int jarg5, int jarg6, float jarg7, float jarg8, int jarg9) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  FbxTime arg3 ;
+  float arg4 ;
+  FbxAnimCurveDef::EInterpolationType arg5 ;
+  FbxAnimCurveDef::ETangentMode arg6 ;
+  float arg7 ;
+  float arg8 ;
+  FbxAnimCurveDef::EWeightedMode arg9 ;
+  FbxTime *argp3 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  argp3 = (FbxTime *)jarg3; 
+  if (!argp3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg3 = *argp3; 
+  arg4 = (float)jarg4; 
+  arg5 = (FbxAnimCurveDef::EInterpolationType)jarg5; 
+  arg6 = (FbxAnimCurveDef::ETangentMode)jarg6; 
+  arg7 = (float)jarg7; 
+  arg8 = (float)jarg8; 
+  arg9 = (FbxAnimCurveDef::EWeightedMode)jarg9; 
+  (arg1)->KeySet(arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeySet__SWIG_6(void * jarg1, int jarg2, void * jarg3, float jarg4, int jarg5, int jarg6, float jarg7, float jarg8) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  FbxTime arg3 ;
+  float arg4 ;
+  FbxAnimCurveDef::EInterpolationType arg5 ;
+  FbxAnimCurveDef::ETangentMode arg6 ;
+  float arg7 ;
+  float arg8 ;
+  FbxTime *argp3 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  argp3 = (FbxTime *)jarg3; 
+  if (!argp3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg3 = *argp3; 
+  arg4 = (float)jarg4; 
+  arg5 = (FbxAnimCurveDef::EInterpolationType)jarg5; 
+  arg6 = (FbxAnimCurveDef::ETangentMode)jarg6; 
+  arg7 = (float)jarg7; 
+  arg8 = (float)jarg8; 
+  (arg1)->KeySet(arg2,arg3,arg4,arg5,arg6,arg7,arg8);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeySet__SWIG_7(void * jarg1, int jarg2, void * jarg3, float jarg4, int jarg5, int jarg6, float jarg7) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  FbxTime arg3 ;
+  float arg4 ;
+  FbxAnimCurveDef::EInterpolationType arg5 ;
+  FbxAnimCurveDef::ETangentMode arg6 ;
+  float arg7 ;
+  FbxTime *argp3 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  argp3 = (FbxTime *)jarg3; 
+  if (!argp3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg3 = *argp3; 
+  arg4 = (float)jarg4; 
+  arg5 = (FbxAnimCurveDef::EInterpolationType)jarg5; 
+  arg6 = (FbxAnimCurveDef::ETangentMode)jarg6; 
+  arg7 = (float)jarg7; 
+  (arg1)->KeySet(arg2,arg3,arg4,arg5,arg6,arg7);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeySet__SWIG_8(void * jarg1, int jarg2, void * jarg3, float jarg4, int jarg5, int jarg6) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  FbxTime arg3 ;
+  float arg4 ;
+  FbxAnimCurveDef::EInterpolationType arg5 ;
+  FbxAnimCurveDef::ETangentMode arg6 ;
+  FbxTime *argp3 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  argp3 = (FbxTime *)jarg3; 
+  if (!argp3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg3 = *argp3; 
+  arg4 = (float)jarg4; 
+  arg5 = (FbxAnimCurveDef::EInterpolationType)jarg5; 
+  arg6 = (FbxAnimCurveDef::ETangentMode)jarg6; 
+  (arg1)->KeySet(arg2,arg3,arg4,arg5,arg6);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeySet__SWIG_9(void * jarg1, int jarg2, void * jarg3, float jarg4, int jarg5) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  FbxTime arg3 ;
+  float arg4 ;
+  FbxAnimCurveDef::EInterpolationType arg5 ;
+  FbxTime *argp3 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  argp3 = (FbxTime *)jarg3; 
+  if (!argp3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg3 = *argp3; 
+  arg4 = (float)jarg4; 
+  arg5 = (FbxAnimCurveDef::EInterpolationType)jarg5; 
+  (arg1)->KeySet(arg2,arg3,arg4,arg5);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeySet__SWIG_10(void * jarg1, int jarg2, void * jarg3, float jarg4) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  FbxTime arg3 ;
+  float arg4 ;
+  FbxTime *argp3 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  argp3 = (FbxTime *)jarg3; 
+  if (!argp3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg3 = *argp3; 
+  arg4 = (float)jarg4; 
+  (arg1)->KeySet(arg2,arg3,arg4);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeySetTCB__SWIG_0(void * jarg1, int jarg2, void * jarg3, float jarg4, float jarg5, float jarg6, float jarg7) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  FbxTime arg3 ;
+  float arg4 ;
+  float arg5 ;
+  float arg6 ;
+  float arg7 ;
+  FbxTime *argp3 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  argp3 = (FbxTime *)jarg3; 
+  if (!argp3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg3 = *argp3; 
+  arg4 = (float)jarg4; 
+  arg5 = (float)jarg5; 
+  arg6 = (float)jarg6; 
+  arg7 = (float)jarg7; 
+  (arg1)->KeySetTCB(arg2,arg3,arg4,arg5,arg6,arg7);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeySetTCB__SWIG_1(void * jarg1, int jarg2, void * jarg3, float jarg4, float jarg5, float jarg6) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  FbxTime arg3 ;
+  float arg4 ;
+  float arg5 ;
+  float arg6 ;
+  FbxTime *argp3 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  argp3 = (FbxTime *)jarg3; 
+  if (!argp3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg3 = *argp3; 
+  arg4 = (float)jarg4; 
+  arg5 = (float)jarg5; 
+  arg6 = (float)jarg6; 
+  (arg1)->KeySetTCB(arg2,arg3,arg4,arg5,arg6);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeySetTCB__SWIG_2(void * jarg1, int jarg2, void * jarg3, float jarg4, float jarg5) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  FbxTime arg3 ;
+  float arg4 ;
+  float arg5 ;
+  FbxTime *argp3 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  argp3 = (FbxTime *)jarg3; 
+  if (!argp3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg3 = *argp3; 
+  arg4 = (float)jarg4; 
+  arg5 = (float)jarg5; 
+  (arg1)->KeySetTCB(arg2,arg3,arg4,arg5);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeySetTCB__SWIG_3(void * jarg1, int jarg2, void * jarg3, float jarg4) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  FbxTime arg3 ;
+  float arg4 ;
+  FbxTime *argp3 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  argp3 = (FbxTime *)jarg3; 
+  if (!argp3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg3 = *argp3; 
+  arg4 = (float)jarg4; 
+  (arg1)->KeySetTCB(arg2,arg3,arg4);
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyGetInterpolation(void * jarg1, int jarg2) {
+  int jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  FbxAnimCurveDef::EInterpolationType result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (FbxAnimCurveDef::EInterpolationType)((FbxAnimCurve const *)arg1)->KeyGetInterpolation(arg2);
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeySetInterpolation(void * jarg1, int jarg2, int jarg3) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  FbxAnimCurveDef::EInterpolationType arg3 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (FbxAnimCurveDef::EInterpolationType)jarg3; 
+  (arg1)->KeySetInterpolation(arg2,arg3);
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyGetConstantMode(void * jarg1, int jarg2) {
+  int jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  FbxAnimCurveDef::EConstantMode result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (FbxAnimCurveDef::EConstantMode)((FbxAnimCurve const *)arg1)->KeyGetConstantMode(arg2);
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyGetTangentMode__SWIG_0(void * jarg1, int jarg2, unsigned int jarg3) {
+  int jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  bool arg3 ;
+  FbxAnimCurveDef::ETangentMode result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = jarg3 ? true : false; 
+  result = (FbxAnimCurveDef::ETangentMode)((FbxAnimCurve const *)arg1)->KeyGetTangentMode(arg2,arg3);
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyGetTangentMode__SWIG_1(void * jarg1, int jarg2) {
+  int jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  FbxAnimCurveDef::ETangentMode result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (FbxAnimCurveDef::ETangentMode)((FbxAnimCurve const *)arg1)->KeyGetTangentMode(arg2);
+  jresult = (int)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeySetConstantMode(void * jarg1, int jarg2, int jarg3) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  FbxAnimCurveDef::EConstantMode arg3 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (FbxAnimCurveDef::EConstantMode)jarg3; 
+  (arg1)->KeySetConstantMode(arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeySetTangentMode(void * jarg1, int jarg2, int jarg3) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  FbxAnimCurveDef::ETangentMode arg3 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (FbxAnimCurveDef::ETangentMode)jarg3; 
+  (arg1)->KeySetTangentMode(arg2,arg3);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyGet(void * jarg1, int jarg2) {
+  void * jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  FbxAnimCurveKey result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = ((FbxAnimCurve const *)arg1)->KeyGet(arg2);
+  jresult = new FbxAnimCurveKey((const FbxAnimCurveKey &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyGetValue(void * jarg1, int jarg2) {
+  float jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  float result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (float)((FbxAnimCurve const *)arg1)->KeyGetValue(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeySetValue(void * jarg1, int jarg2, float jarg3) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  float arg3 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (float)jarg3; 
+  (arg1)->KeySetValue(arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyIncValue(void * jarg1, int jarg2, float jarg3) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  float arg3 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (float)jarg3; 
+  (arg1)->KeyIncValue(arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyMultValue(void * jarg1, int jarg2, float jarg3) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  float arg3 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (float)jarg3; 
+  (arg1)->KeyMultValue(arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyMultTangent(void * jarg1, int jarg2, float jarg3) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  float arg3 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (float)jarg3; 
+  (arg1)->KeyMultTangent(arg2,arg3);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyGetTime(void * jarg1, int jarg2) {
+  void * jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  FbxTime result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = ((FbxAnimCurve const *)arg1)->KeyGetTime(arg2);
+  jresult = new FbxTime((const FbxTime &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeySetTime(void * jarg1, int jarg2, void * jarg3) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  FbxTime arg3 ;
+  FbxTime *argp3 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  argp3 = (FbxTime *)jarg3; 
+  if (!argp3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg3 = *argp3; 
+  (arg1)->KeySetTime(arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeySetBreak(void * jarg1, int jarg2, unsigned int jarg3) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  bool arg3 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = jarg3 ? true : false; 
+  (arg1)->KeySetBreak(arg2,arg3);
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyGetBreak(void * jarg1, int jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (bool)((FbxAnimCurve const *)arg1)->KeyGetBreak(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyGetLeftDerivative(void * jarg1, int jarg2) {
+  float jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  float result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (float)(arg1)->KeyGetLeftDerivative(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeySetLeftDerivative(void * jarg1, int jarg2, float jarg3) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  float arg3 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (float)jarg3; 
+  (arg1)->KeySetLeftDerivative(arg2,arg3);
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyGetLeftAuto__SWIG_0(void * jarg1, int jarg2, unsigned int jarg3) {
+  float jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  bool arg3 ;
+  float result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = jarg3 ? true : false; 
+  result = (float)(arg1)->KeyGetLeftAuto(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyGetLeftAuto__SWIG_1(void * jarg1, int jarg2) {
+  float jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  float result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (float)(arg1)->KeyGetLeftAuto(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyGetLeftDerivativeInfo(void * jarg1, int jarg2) {
+  void * jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  FbxAnimCurveTangentInfo result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (arg1)->KeyGetLeftDerivativeInfo(arg2);
+  jresult = new FbxAnimCurveTangentInfo((const FbxAnimCurveTangentInfo &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeySetLeftDerivativeInfo__SWIG_0(void * jarg1, int jarg2, void * jarg3, unsigned int jarg4) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  FbxAnimCurveTangentInfo *arg3 = 0 ;
+  bool arg4 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (FbxAnimCurveTangentInfo *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveTangentInfo const & type is null", 0);
+    return ;
+  } 
+  arg4 = jarg4 ? true : false; 
+  (arg1)->KeySetLeftDerivativeInfo(arg2,(FbxAnimCurveTangentInfo const &)*arg3,arg4);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeySetLeftDerivativeInfo__SWIG_1(void * jarg1, int jarg2, void * jarg3) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  FbxAnimCurveTangentInfo *arg3 = 0 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (FbxAnimCurveTangentInfo *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveTangentInfo const & type is null", 0);
+    return ;
+  } 
+  (arg1)->KeySetLeftDerivativeInfo(arg2,(FbxAnimCurveTangentInfo const &)*arg3);
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyGetRightDerivative(void * jarg1, int jarg2) {
+  float jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  float result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (float)(arg1)->KeyGetRightDerivative(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeySetRightDerivative(void * jarg1, int jarg2, float jarg3) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  float arg3 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (float)jarg3; 
+  (arg1)->KeySetRightDerivative(arg2,arg3);
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyGetRightAuto__SWIG_0(void * jarg1, int jarg2, unsigned int jarg3) {
+  float jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  bool arg3 ;
+  float result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = jarg3 ? true : false; 
+  result = (float)(arg1)->KeyGetRightAuto(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyGetRightAuto__SWIG_1(void * jarg1, int jarg2) {
+  float jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  float result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (float)(arg1)->KeyGetRightAuto(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyGetRightDerivativeInfo(void * jarg1, int jarg2) {
+  void * jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  FbxAnimCurveTangentInfo result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (arg1)->KeyGetRightDerivativeInfo(arg2);
+  jresult = new FbxAnimCurveTangentInfo((const FbxAnimCurveTangentInfo &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeySetRightDerivativeInfo__SWIG_0(void * jarg1, int jarg2, void * jarg3, unsigned int jarg4) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  FbxAnimCurveTangentInfo *arg3 = 0 ;
+  bool arg4 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (FbxAnimCurveTangentInfo *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveTangentInfo const & type is null", 0);
+    return ;
+  } 
+  arg4 = jarg4 ? true : false; 
+  (arg1)->KeySetRightDerivativeInfo(arg2,(FbxAnimCurveTangentInfo const &)*arg3,arg4);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeySetRightDerivativeInfo__SWIG_1(void * jarg1, int jarg2, void * jarg3) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  FbxAnimCurveTangentInfo *arg3 = 0 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (FbxAnimCurveTangentInfo *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveTangentInfo const & type is null", 0);
+    return ;
+  } 
+  (arg1)->KeySetRightDerivativeInfo(arg2,(FbxAnimCurveTangentInfo const &)*arg3);
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyIsLeftTangentWeighted(void * jarg1, int jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (bool)((FbxAnimCurve const *)arg1)->KeyIsLeftTangentWeighted(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyIsRightTangentWeighted(void * jarg1, int jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (bool)((FbxAnimCurve const *)arg1)->KeyIsRightTangentWeighted(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyGetLeftTangentWeight(void * jarg1, int jarg2) {
+  float jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  float result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (float)((FbxAnimCurve const *)arg1)->KeyGetLeftTangentWeight(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyGetRightTangentWeight(void * jarg1, int jarg2) {
+  float jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  float result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (float)((FbxAnimCurve const *)arg1)->KeyGetRightTangentWeight(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeySetLeftTangentWeight__SWIG_0(void * jarg1, int jarg2, float jarg3, unsigned int jarg4) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  float arg3 ;
+  bool arg4 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (float)jarg3; 
+  arg4 = jarg4 ? true : false; 
+  (arg1)->KeySetLeftTangentWeight(arg2,arg3,arg4);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeySetLeftTangentWeight__SWIG_1(void * jarg1, int jarg2, float jarg3) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  float arg3 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (float)jarg3; 
+  (arg1)->KeySetLeftTangentWeight(arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeySetRightTangentWeight__SWIG_0(void * jarg1, int jarg2, float jarg3, unsigned int jarg4) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  float arg3 ;
+  bool arg4 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (float)jarg3; 
+  arg4 = jarg4 ? true : false; 
+  (arg1)->KeySetRightTangentWeight(arg2,arg3,arg4);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeySetRightTangentWeight__SWIG_1(void * jarg1, int jarg2, float jarg3) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  float arg3 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  arg3 = (float)jarg3; 
+  (arg1)->KeySetRightTangentWeight(arg2,arg3);
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyGetLeftTangentVelocity(void * jarg1, int jarg2) {
+  float jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  float result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (float)((FbxAnimCurve const *)arg1)->KeyGetLeftTangentVelocity(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_KeyGetRightTangentVelocity(void * jarg1, int jarg2) {
+  float jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  float result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (float)((FbxAnimCurve const *)arg1)->KeyGetRightTangentVelocity(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_Evaluate__SWIG_0(void * jarg1, void * jarg2, void * jarg3) {
+  float jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  FbxTime arg2 ;
+  int *arg3 = (int *) 0 ;
+  FbxTime *argp2 ;
+  float result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  argp2 = (FbxTime *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return 0;
+  }
+  arg2 = *argp2; 
+  arg3 = (int *)jarg3; 
+  result = (float)(arg1)->Evaluate(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_Evaluate__SWIG_1(void * jarg1, void * jarg2) {
+  float jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  FbxTime arg2 ;
+  FbxTime *argp2 ;
+  float result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  argp2 = (FbxTime *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return 0;
+  }
+  arg2 = *argp2; 
+  result = (float)(arg1)->Evaluate(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_EvaluateIndex(void * jarg1, double jarg2) {
+  float jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  double arg2 ;
+  float result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (double)jarg2; 
+  result = (float)(arg1)->EvaluateIndex(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_EvaluateLeftDerivative__SWIG_0(void * jarg1, void * jarg2, void * jarg3) {
+  float jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  FbxTime arg2 ;
+  int *arg3 = (int *) 0 ;
+  FbxTime *argp2 ;
+  float result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  argp2 = (FbxTime *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return 0;
+  }
+  arg2 = *argp2; 
+  arg3 = (int *)jarg3; 
+  result = (float)(arg1)->EvaluateLeftDerivative(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_EvaluateLeftDerivative__SWIG_1(void * jarg1, void * jarg2) {
+  float jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  FbxTime arg2 ;
+  FbxTime *argp2 ;
+  float result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  argp2 = (FbxTime *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return 0;
+  }
+  arg2 = *argp2; 
+  result = (float)(arg1)->EvaluateLeftDerivative(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_EvaluateRightDerivative__SWIG_0(void * jarg1, void * jarg2, void * jarg3) {
+  float jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  FbxTime arg2 ;
+  int *arg3 = (int *) 0 ;
+  FbxTime *argp2 ;
+  float result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  argp2 = (FbxTime *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return 0;
+  }
+  arg2 = *argp2; 
+  arg3 = (int *)jarg3; 
+  result = (float)(arg1)->EvaluateRightDerivative(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_EvaluateRightDerivative__SWIG_1(void * jarg1, void * jarg2) {
+  float jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  FbxTime arg2 ;
+  FbxTime *argp2 ;
+  float result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  argp2 = (FbxTime *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return 0;
+  }
+  arg2 = *argp2; 
+  result = (float)(arg1)->EvaluateRightDerivative(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_GetTimeInterval(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  FbxTimeSpan *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (FbxTimeSpan *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTimeSpan & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->GetTimeInterval(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_CopyFrom__SWIG_0(void * jarg1, void * jarg2, unsigned int jarg3) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  bool arg3 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return ;
+  } 
+  arg3 = jarg3 ? true : false; 
+  (arg1)->CopyFrom(*arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_CopyFrom__SWIG_1(void * jarg1, void * jarg2) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return ;
+  } 
+  (arg1)->CopyFrom(*arg2);
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_GetValue__SWIG_0(void * jarg1, int jarg2) {
+  float jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  int arg2 ;
+  float result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (float)(arg1)->GetValue(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_GetValue__SWIG_1(void * jarg1) {
+  float jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  float result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  result = (float)(arg1)->GetValue();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_SetValue__SWIG_0(void * jarg1, float jarg2, int jarg3) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  float arg2 ;
+  int arg3 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (float)jarg2; 
+  arg3 = (int)jarg3; 
+  (arg1)->SetValue(arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_SetValue__SWIG_1(void * jarg1, float jarg2) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  float arg2 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (float)jarg2; 
+  (arg1)->SetValue(arg2);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_GetKFCurve(void * jarg1) {
+  void * jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  KFCurve *result = 0 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  result = (KFCurve *)(arg1)->GetKFCurve();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_Store__SWIG_0(void * jarg1, void * jarg2, unsigned int jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  FbxIO *arg2 = (FbxIO *) 0 ;
+  bool arg3 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (FbxIO *)jarg2; 
+  arg3 = jarg3 ? true : false; 
+  result = (bool)(arg1)->Store(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_Store__SWIG_1(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  FbxIO *arg2 = (FbxIO *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (FbxIO *)jarg2; 
+  result = (bool)(arg1)->Store(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_Retrieve(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  FbxIO *arg2 = (FbxIO *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (FbxIO *)jarg2; 
+  result = (bool)(arg1)->Retrieve(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_ExtrapolationSyncCallback(void * jarg1) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  (arg1)->ExtrapolationSyncCallback();
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxAnimCurveFilter(void * jarg1) {
+  FbxAnimCurveFilter *arg1 = (FbxAnimCurveFilter *) 0 ;
+  
+  arg1 = (FbxAnimCurveFilter *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilter_GetName(void * jarg1) {
+  char * jresult ;
+  FbxAnimCurveFilter *arg1 = (FbxAnimCurveFilter *) 0 ;
+  char *result = 0 ;
+  
+  arg1 = (FbxAnimCurveFilter *)jarg1; 
+  result = (char *)((FbxAnimCurveFilter const *)arg1)->GetName();
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilter_GetStartTime(void * jarg1) {
+  void * jresult ;
+  FbxAnimCurveFilter *arg1 = (FbxAnimCurveFilter *) 0 ;
+  FbxTime *result = 0 ;
+  
+  arg1 = (FbxAnimCurveFilter *)jarg1; 
+  result = (FbxTime *) &(arg1)->GetStartTime();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilter_SetStartTime(void * jarg1, void * jarg2) {
+  FbxAnimCurveFilter *arg1 = (FbxAnimCurveFilter *) 0 ;
+  FbxTime *arg2 = 0 ;
+  
+  arg1 = (FbxAnimCurveFilter *)jarg1; 
+  arg2 = (FbxTime *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime & type is null", 0);
+    return ;
+  } 
+  (arg1)->SetStartTime(*arg2);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilter_GetStopTime(void * jarg1) {
+  void * jresult ;
+  FbxAnimCurveFilter *arg1 = (FbxAnimCurveFilter *) 0 ;
+  FbxTime *result = 0 ;
+  
+  arg1 = (FbxAnimCurveFilter *)jarg1; 
+  result = (FbxTime *) &(arg1)->GetStopTime();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilter_SetStopTime(void * jarg1, void * jarg2) {
+  FbxAnimCurveFilter *arg1 = (FbxAnimCurveFilter *) 0 ;
+  FbxTime *arg2 = 0 ;
+  
+  arg1 = (FbxAnimCurveFilter *)jarg1; 
+  arg2 = (FbxTime *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime & type is null", 0);
+    return ;
+  } 
+  (arg1)->SetStopTime(*arg2);
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilter_GetStartKey(void * jarg1, void * jarg2) {
+  int jresult ;
+  FbxAnimCurveFilter *arg1 = (FbxAnimCurveFilter *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  int result;
+  
+  arg1 = (FbxAnimCurveFilter *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  result = (int)((FbxAnimCurveFilter const *)arg1)->GetStartKey(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilter_GetStopKey(void * jarg1, void * jarg2) {
+  int jresult ;
+  FbxAnimCurveFilter *arg1 = (FbxAnimCurveFilter *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  int result;
+  
+  arg1 = (FbxAnimCurveFilter *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  result = (int)((FbxAnimCurveFilter const *)arg1)->GetStopKey(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilter_NeedApply__SWIG_0(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilter *arg1 = (FbxAnimCurveFilter *) 0 ;
+  FbxAnimStack *arg2 = (FbxAnimStack *) 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilter *)jarg1; 
+  arg2 = (FbxAnimStack *)jarg2; 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->NeedApply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilter_NeedApply__SWIG_1(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilter *arg1 = (FbxAnimCurveFilter *) 0 ;
+  FbxAnimStack *arg2 = (FbxAnimStack *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilter *)jarg1; 
+  arg2 = (FbxAnimStack *)jarg2; 
+  result = (bool)(arg1)->NeedApply(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilter_NeedApply__SWIG_2(void * jarg1, void * jarg2, void * jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilter *arg1 = (FbxAnimCurveFilter *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilter *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxAnimStack *)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->NeedApply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilter_NeedApply__SWIG_3(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilter *arg1 = (FbxAnimCurveFilter *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilter *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxAnimStack *)jarg3; 
+  result = (bool)(arg1)->NeedApply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilter_NeedApply__SWIG_4(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilter *arg1 = (FbxAnimCurveFilter *) 0 ;
+  FbxAnimCurveNode *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilter *)jarg1; 
+  arg2 = (FbxAnimCurveNode *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveNode & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->NeedApply(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilter_NeedApply__SWIG_5(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilter *arg1 = (FbxAnimCurveFilter *) 0 ;
+  FbxAnimCurveNode *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilter *)jarg1; 
+  arg2 = (FbxAnimCurveNode *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveNode & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->NeedApply(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilter_NeedApply__SWIG_6(void * jarg1, void * jarg2, int jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilter *arg1 = (FbxAnimCurveFilter *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilter *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->NeedApply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilter_NeedApply__SWIG_7(void * jarg1, void * jarg2, int jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilter *arg1 = (FbxAnimCurveFilter *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilter *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  result = (bool)(arg1)->NeedApply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilter_NeedApply__SWIG_8(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilter *arg1 = (FbxAnimCurveFilter *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilter *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->NeedApply(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilter_NeedApply__SWIG_9(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilter *arg1 = (FbxAnimCurveFilter *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilter *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->NeedApply(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilter_Apply__SWIG_0(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilter *arg1 = (FbxAnimCurveFilter *) 0 ;
+  FbxAnimStack *arg2 = (FbxAnimStack *) 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilter *)jarg1; 
+  arg2 = (FbxAnimStack *)jarg2; 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilter_Apply__SWIG_1(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilter *arg1 = (FbxAnimCurveFilter *) 0 ;
+  FbxAnimStack *arg2 = (FbxAnimStack *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilter *)jarg1; 
+  arg2 = (FbxAnimStack *)jarg2; 
+  result = (bool)(arg1)->Apply(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilter_Apply__SWIG_2(void * jarg1, void * jarg2, void * jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilter *arg1 = (FbxAnimCurveFilter *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilter *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxAnimStack *)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->Apply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilter_Apply__SWIG_3(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilter *arg1 = (FbxAnimCurveFilter *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilter *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxAnimStack *)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilter_Apply__SWIG_4(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilter *arg1 = (FbxAnimCurveFilter *) 0 ;
+  FbxAnimCurveNode *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilter *)jarg1; 
+  arg2 = (FbxAnimCurveNode *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveNode & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilter_Apply__SWIG_5(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilter *arg1 = (FbxAnimCurveFilter *) 0 ;
+  FbxAnimCurveNode *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilter *)jarg1; 
+  arg2 = (FbxAnimCurveNode *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveNode & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->Apply(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilter_Apply__SWIG_6(void * jarg1, void * jarg2, int jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilter *arg1 = (FbxAnimCurveFilter *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilter *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->Apply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilter_Apply__SWIG_7(void * jarg1, void * jarg2, int jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilter *arg1 = (FbxAnimCurveFilter *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilter *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilter_Apply__SWIG_8(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilter *arg1 = (FbxAnimCurveFilter *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilter *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilter_Apply__SWIG_9(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilter *arg1 = (FbxAnimCurveFilter *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilter *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->Apply(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilter_Reset(void * jarg1) {
+  FbxAnimCurveFilter *arg1 = (FbxAnimCurveFilter *) 0 ;
+  
+  arg1 = (FbxAnimCurveFilter *)jarg1; 
+  (arg1)->Reset();
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilter_GetContinuousOffset(void * jarg1, void * jarg2, void * jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxRotationOrder *arg1 = 0 ;
+  FbxVector4 *arg2 = 0 ;
+  FbxVector4 *arg3 = 0 ;
+  FbxVector4 *arg4 = 0 ;
+  bool result;
+  
+  arg1 = (FbxRotationOrder *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxRotationOrder & type is null", 0);
+    return 0;
+  } 
+  arg2 = (FbxVector4 *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxVector4 & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxVector4 *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxVector4 & type is null", 0);
+    return 0;
+  } 
+  arg4 = (FbxVector4 *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxVector4 & type is null", 0);
+    return 0;
+  } 
+  result = (bool)FbxAnimCurveFilter::GetContinuousOffset(*arg1,*arg2,*arg3,*arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxAnimCurveFilterConstantKeyReducer() {
+  void * jresult ;
+  FbxAnimCurveFilterConstantKeyReducer *result = 0 ;
+  
+  result = (FbxAnimCurveFilterConstantKeyReducer *)new FbxAnimCurveFilterConstantKeyReducer();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxAnimCurveFilterConstantKeyReducer(void * jarg1) {
+  FbxAnimCurveFilterConstantKeyReducer *arg1 = (FbxAnimCurveFilterConstantKeyReducer *) 0 ;
+  
+  arg1 = (FbxAnimCurveFilterConstantKeyReducer *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_GetName(void * jarg1) {
+  char * jresult ;
+  FbxAnimCurveFilterConstantKeyReducer *arg1 = (FbxAnimCurveFilterConstantKeyReducer *) 0 ;
+  char *result = 0 ;
+  
+  arg1 = (FbxAnimCurveFilterConstantKeyReducer *)jarg1; 
+  result = (char *)((FbxAnimCurveFilterConstantKeyReducer const *)arg1)->GetName();
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_Apply__SWIG_0(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterConstantKeyReducer *arg1 = (FbxAnimCurveFilterConstantKeyReducer *) 0 ;
+  FbxAnimStack *arg2 = (FbxAnimStack *) 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterConstantKeyReducer *)jarg1; 
+  arg2 = (FbxAnimStack *)jarg2; 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_Apply__SWIG_1(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterConstantKeyReducer *arg1 = (FbxAnimCurveFilterConstantKeyReducer *) 0 ;
+  FbxAnimStack *arg2 = (FbxAnimStack *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterConstantKeyReducer *)jarg1; 
+  arg2 = (FbxAnimStack *)jarg2; 
+  result = (bool)(arg1)->Apply(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_Apply__SWIG_2(void * jarg1, void * jarg2, void * jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterConstantKeyReducer *arg1 = (FbxAnimCurveFilterConstantKeyReducer *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterConstantKeyReducer *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxAnimStack *)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->Apply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_Apply__SWIG_3(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterConstantKeyReducer *arg1 = (FbxAnimCurveFilterConstantKeyReducer *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterConstantKeyReducer *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxAnimStack *)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_Apply__SWIG_4(void * jarg1, void * jarg2, int jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterConstantKeyReducer *arg1 = (FbxAnimCurveFilterConstantKeyReducer *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterConstantKeyReducer *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->Apply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_Apply__SWIG_5(void * jarg1, void * jarg2, int jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterConstantKeyReducer *arg1 = (FbxAnimCurveFilterConstantKeyReducer *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterConstantKeyReducer *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_Apply__SWIG_6(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterConstantKeyReducer *arg1 = (FbxAnimCurveFilterConstantKeyReducer *) 0 ;
+  FbxAnimCurveNode *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterConstantKeyReducer *)jarg1; 
+  arg2 = (FbxAnimCurveNode *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveNode & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_Apply__SWIG_7(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterConstantKeyReducer *arg1 = (FbxAnimCurveFilterConstantKeyReducer *) 0 ;
+  FbxAnimCurveNode *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterConstantKeyReducer *)jarg1; 
+  arg2 = (FbxAnimCurveNode *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveNode & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->Apply(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_Apply__SWIG_8(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterConstantKeyReducer *arg1 = (FbxAnimCurveFilterConstantKeyReducer *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterConstantKeyReducer *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_Apply__SWIG_9(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterConstantKeyReducer *arg1 = (FbxAnimCurveFilterConstantKeyReducer *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterConstantKeyReducer *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->Apply(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_Reset(void * jarg1) {
+  FbxAnimCurveFilterConstantKeyReducer *arg1 = (FbxAnimCurveFilterConstantKeyReducer *) 0 ;
+  
+  arg1 = (FbxAnimCurveFilterConstantKeyReducer *)jarg1; 
+  (arg1)->Reset();
+}
+
+
+SWIGEXPORT double SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_GetDerivativeTolerance(void * jarg1) {
+  double jresult ;
+  FbxAnimCurveFilterConstantKeyReducer *arg1 = (FbxAnimCurveFilterConstantKeyReducer *) 0 ;
+  double result;
+  
+  arg1 = (FbxAnimCurveFilterConstantKeyReducer *)jarg1; 
+  result = (double)((FbxAnimCurveFilterConstantKeyReducer const *)arg1)->GetDerivativeTolerance();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_SetDerivativeTolerance(void * jarg1, double jarg2) {
+  FbxAnimCurveFilterConstantKeyReducer *arg1 = (FbxAnimCurveFilterConstantKeyReducer *) 0 ;
+  double arg2 ;
+  
+  arg1 = (FbxAnimCurveFilterConstantKeyReducer *)jarg1; 
+  arg2 = (double)jarg2; 
+  (arg1)->SetDerivativeTolerance(arg2);
+}
+
+
+SWIGEXPORT double SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_GetValueTolerance(void * jarg1) {
+  double jresult ;
+  FbxAnimCurveFilterConstantKeyReducer *arg1 = (FbxAnimCurveFilterConstantKeyReducer *) 0 ;
+  double result;
+  
+  arg1 = (FbxAnimCurveFilterConstantKeyReducer *)jarg1; 
+  result = (double)((FbxAnimCurveFilterConstantKeyReducer const *)arg1)->GetValueTolerance();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_SetValueTolerance(void * jarg1, double jarg2) {
+  FbxAnimCurveFilterConstantKeyReducer *arg1 = (FbxAnimCurveFilterConstantKeyReducer *) 0 ;
+  double arg2 ;
+  
+  arg1 = (FbxAnimCurveFilterConstantKeyReducer *)jarg1; 
+  arg2 = (double)jarg2; 
+  (arg1)->SetValueTolerance(arg2);
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_GetKeepFirstAndLastKeys(void * jarg1) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterConstantKeyReducer *arg1 = (FbxAnimCurveFilterConstantKeyReducer *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterConstantKeyReducer *)jarg1; 
+  result = (bool)((FbxAnimCurveFilterConstantKeyReducer const *)arg1)->GetKeepFirstAndLastKeys();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_SetKeepFirstAndLastKeys(void * jarg1, unsigned int jarg2) {
+  FbxAnimCurveFilterConstantKeyReducer *arg1 = (FbxAnimCurveFilterConstantKeyReducer *) 0 ;
+  bool arg2 ;
+  
+  arg1 = (FbxAnimCurveFilterConstantKeyReducer *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  (arg1)->SetKeepFirstAndLastKeys(arg2);
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_GetKeepOneKey(void * jarg1) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterConstantKeyReducer *arg1 = (FbxAnimCurveFilterConstantKeyReducer *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterConstantKeyReducer *)jarg1; 
+  result = (bool)((FbxAnimCurveFilterConstantKeyReducer const *)arg1)->GetKeepOneKey();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_SetKeepOneKey(void * jarg1, unsigned int jarg2) {
+  FbxAnimCurveFilterConstantKeyReducer *arg1 = (FbxAnimCurveFilterConstantKeyReducer *) 0 ;
+  bool arg2 ;
+  
+  arg1 = (FbxAnimCurveFilterConstantKeyReducer *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  (arg1)->SetKeepOneKey(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_SetKeepNotPureAutoKeys(void * jarg1, unsigned int jarg2) {
+  FbxAnimCurveFilterConstantKeyReducer *arg1 = (FbxAnimCurveFilterConstantKeyReducer *) 0 ;
+  bool arg2 ;
+  
+  arg1 = (FbxAnimCurveFilterConstantKeyReducer *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  (arg1)->SetKeepNotPureAutoKeys(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_SetTranslationThreshold(void * jarg1, double jarg2) {
+  FbxAnimCurveFilterConstantKeyReducer *arg1 = (FbxAnimCurveFilterConstantKeyReducer *) 0 ;
+  double arg2 ;
+  
+  arg1 = (FbxAnimCurveFilterConstantKeyReducer *)jarg1; 
+  arg2 = (double)jarg2; 
+  (arg1)->SetTranslationThreshold(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_SetRotationThreshold(void * jarg1, double jarg2) {
+  FbxAnimCurveFilterConstantKeyReducer *arg1 = (FbxAnimCurveFilterConstantKeyReducer *) 0 ;
+  double arg2 ;
+  
+  arg1 = (FbxAnimCurveFilterConstantKeyReducer *)jarg1; 
+  arg2 = (double)jarg2; 
+  (arg1)->SetRotationThreshold(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_SetScalingThreshold(void * jarg1, double jarg2) {
+  FbxAnimCurveFilterConstantKeyReducer *arg1 = (FbxAnimCurveFilterConstantKeyReducer *) 0 ;
+  double arg2 ;
+  
+  arg1 = (FbxAnimCurveFilterConstantKeyReducer *)jarg1; 
+  arg2 = (double)jarg2; 
+  (arg1)->SetScalingThreshold(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_SetDefaultThreshold(void * jarg1, double jarg2) {
+  FbxAnimCurveFilterConstantKeyReducer *arg1 = (FbxAnimCurveFilterConstantKeyReducer *) 0 ;
+  double arg2 ;
+  
+  arg1 = (FbxAnimCurveFilterConstantKeyReducer *)jarg1; 
+  arg2 = (double)jarg2; 
+  (arg1)->SetDefaultThreshold(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_SetModes(void * jarg1, unsigned int jarg2, void * jarg3) {
+  FbxAnimCurveFilterConstantKeyReducer *arg1 = (FbxAnimCurveFilterConstantKeyReducer *) 0 ;
+  bool arg2 ;
+  FbxIOSettings *arg3 = 0 ;
+  
+  arg1 = (FbxAnimCurveFilterConstantKeyReducer *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  arg3 = (FbxIOSettings *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxIOSettings & type is null", 0);
+    return ;
+  } 
+  (arg1)->SetModes(arg2,*arg3);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxAnimCurveFilterScaleCompensate() {
+  void * jresult ;
+  FbxAnimCurveFilterScaleCompensate *result = 0 ;
+  
+  result = (FbxAnimCurveFilterScaleCompensate *)new FbxAnimCurveFilterScaleCompensate();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScaleCompensate_GetName(void * jarg1) {
+  char * jresult ;
+  FbxAnimCurveFilterScaleCompensate *arg1 = (FbxAnimCurveFilterScaleCompensate *) 0 ;
+  char *result = 0 ;
+  
+  arg1 = (FbxAnimCurveFilterScaleCompensate *)jarg1; 
+  result = (char *)((FbxAnimCurveFilterScaleCompensate const *)arg1)->GetName();
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScaleCompensate_Apply__SWIG_0(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterScaleCompensate *arg1 = (FbxAnimCurveFilterScaleCompensate *) 0 ;
+  FbxAnimStack *arg2 = (FbxAnimStack *) 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterScaleCompensate *)jarg1; 
+  arg2 = (FbxAnimStack *)jarg2; 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScaleCompensate_Apply__SWIG_1(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterScaleCompensate *arg1 = (FbxAnimCurveFilterScaleCompensate *) 0 ;
+  FbxAnimStack *arg2 = (FbxAnimStack *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterScaleCompensate *)jarg1; 
+  arg2 = (FbxAnimStack *)jarg2; 
+  result = (bool)(arg1)->Apply(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScaleCompensate_Apply__SWIG_2(void * jarg1, void * jarg2, void * jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterScaleCompensate *arg1 = (FbxAnimCurveFilterScaleCompensate *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterScaleCompensate *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxAnimStack *)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->Apply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScaleCompensate_Apply__SWIG_3(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterScaleCompensate *arg1 = (FbxAnimCurveFilterScaleCompensate *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterScaleCompensate *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxAnimStack *)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScaleCompensate_Apply__SWIG_4(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterScaleCompensate *arg1 = (FbxAnimCurveFilterScaleCompensate *) 0 ;
+  FbxAnimCurveNode *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterScaleCompensate *)jarg1; 
+  arg2 = (FbxAnimCurveNode *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveNode & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScaleCompensate_Apply__SWIG_5(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterScaleCompensate *arg1 = (FbxAnimCurveFilterScaleCompensate *) 0 ;
+  FbxAnimCurveNode *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterScaleCompensate *)jarg1; 
+  arg2 = (FbxAnimCurveNode *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveNode & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->Apply(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScaleCompensate_Apply__SWIG_6(void * jarg1, void * jarg2, int jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterScaleCompensate *arg1 = (FbxAnimCurveFilterScaleCompensate *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterScaleCompensate *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->Apply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScaleCompensate_Apply__SWIG_7(void * jarg1, void * jarg2, int jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterScaleCompensate *arg1 = (FbxAnimCurveFilterScaleCompensate *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterScaleCompensate *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScaleCompensate_Apply__SWIG_8(void * jarg1, void * jarg2, int jarg3, void * jarg4, void * jarg5) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterScaleCompensate *arg1 = (FbxAnimCurveFilterScaleCompensate *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  FbxIOSettings *arg4 = 0 ;
+  FbxStatus *arg5 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterScaleCompensate *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  arg4 = (FbxIOSettings *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxIOSettings & type is null", 0);
+    return 0;
+  } 
+  arg5 = (FbxStatus *)jarg5; 
+  result = (bool)(arg1)->Apply(arg2,arg3,*arg4,arg5);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScaleCompensate_Apply__SWIG_9(void * jarg1, void * jarg2, int jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterScaleCompensate *arg1 = (FbxAnimCurveFilterScaleCompensate *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  FbxIOSettings *arg4 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterScaleCompensate *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  arg4 = (FbxIOSettings *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxIOSettings & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->Apply(arg2,arg3,*arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScaleCompensate_Apply__SWIG_10(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterScaleCompensate *arg1 = (FbxAnimCurveFilterScaleCompensate *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterScaleCompensate *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScaleCompensate_Apply__SWIG_11(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterScaleCompensate *arg1 = (FbxAnimCurveFilterScaleCompensate *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterScaleCompensate *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->Apply(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxAnimCurveFilterScaleCompensate(void * jarg1) {
+  FbxAnimCurveFilterScaleCompensate *arg1 = (FbxAnimCurveFilterScaleCompensate *) 0 ;
+  
+  arg1 = (FbxAnimCurveFilterScaleCompensate *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxAnimCurveFilterGimbleKiller() {
+  void * jresult ;
+  FbxAnimCurveFilterGimbleKiller *result = 0 ;
+  
+  result = (FbxAnimCurveFilterGimbleKiller *)new FbxAnimCurveFilterGimbleKiller();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxAnimCurveFilterGimbleKiller(void * jarg1) {
+  FbxAnimCurveFilterGimbleKiller *arg1 = (FbxAnimCurveFilterGimbleKiller *) 0 ;
+  
+  arg1 = (FbxAnimCurveFilterGimbleKiller *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_GetName(void * jarg1) {
+  char * jresult ;
+  FbxAnimCurveFilterGimbleKiller *arg1 = (FbxAnimCurveFilterGimbleKiller *) 0 ;
+  char *result = 0 ;
+  
+  arg1 = (FbxAnimCurveFilterGimbleKiller *)jarg1; 
+  result = (char *)((FbxAnimCurveFilterGimbleKiller const *)arg1)->GetName();
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_NeedApply__SWIG_0(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterGimbleKiller *arg1 = (FbxAnimCurveFilterGimbleKiller *) 0 ;
+  FbxAnimStack *arg2 = (FbxAnimStack *) 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterGimbleKiller *)jarg1; 
+  arg2 = (FbxAnimStack *)jarg2; 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->NeedApply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_NeedApply__SWIG_1(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterGimbleKiller *arg1 = (FbxAnimCurveFilterGimbleKiller *) 0 ;
+  FbxAnimStack *arg2 = (FbxAnimStack *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterGimbleKiller *)jarg1; 
+  arg2 = (FbxAnimStack *)jarg2; 
+  result = (bool)(arg1)->NeedApply(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_NeedApply__SWIG_2(void * jarg1, void * jarg2, void * jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterGimbleKiller *arg1 = (FbxAnimCurveFilterGimbleKiller *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterGimbleKiller *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxAnimStack *)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->NeedApply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_NeedApply__SWIG_3(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterGimbleKiller *arg1 = (FbxAnimCurveFilterGimbleKiller *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterGimbleKiller *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxAnimStack *)jarg3; 
+  result = (bool)(arg1)->NeedApply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_NeedApply__SWIG_4(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterGimbleKiller *arg1 = (FbxAnimCurveFilterGimbleKiller *) 0 ;
+  FbxAnimCurveNode *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterGimbleKiller *)jarg1; 
+  arg2 = (FbxAnimCurveNode *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveNode & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->NeedApply(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_NeedApply__SWIG_5(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterGimbleKiller *arg1 = (FbxAnimCurveFilterGimbleKiller *) 0 ;
+  FbxAnimCurveNode *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterGimbleKiller *)jarg1; 
+  arg2 = (FbxAnimCurveNode *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveNode & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->NeedApply(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_NeedApply__SWIG_6(void * jarg1, void * jarg2, int jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterGimbleKiller *arg1 = (FbxAnimCurveFilterGimbleKiller *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterGimbleKiller *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->NeedApply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_NeedApply__SWIG_7(void * jarg1, void * jarg2, int jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterGimbleKiller *arg1 = (FbxAnimCurveFilterGimbleKiller *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterGimbleKiller *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  result = (bool)(arg1)->NeedApply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_NeedApply__SWIG_8(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterGimbleKiller *arg1 = (FbxAnimCurveFilterGimbleKiller *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterGimbleKiller *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->NeedApply(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_NeedApply__SWIG_9(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterGimbleKiller *arg1 = (FbxAnimCurveFilterGimbleKiller *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterGimbleKiller *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->NeedApply(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_Apply__SWIG_0(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterGimbleKiller *arg1 = (FbxAnimCurveFilterGimbleKiller *) 0 ;
+  FbxAnimStack *arg2 = (FbxAnimStack *) 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterGimbleKiller *)jarg1; 
+  arg2 = (FbxAnimStack *)jarg2; 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_Apply__SWIG_1(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterGimbleKiller *arg1 = (FbxAnimCurveFilterGimbleKiller *) 0 ;
+  FbxAnimStack *arg2 = (FbxAnimStack *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterGimbleKiller *)jarg1; 
+  arg2 = (FbxAnimStack *)jarg2; 
+  result = (bool)(arg1)->Apply(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_Apply__SWIG_2(void * jarg1, void * jarg2, void * jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterGimbleKiller *arg1 = (FbxAnimCurveFilterGimbleKiller *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterGimbleKiller *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxAnimStack *)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->Apply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_Apply__SWIG_3(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterGimbleKiller *arg1 = (FbxAnimCurveFilterGimbleKiller *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterGimbleKiller *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxAnimStack *)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_Apply__SWIG_4(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterGimbleKiller *arg1 = (FbxAnimCurveFilterGimbleKiller *) 0 ;
+  FbxAnimCurveNode *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterGimbleKiller *)jarg1; 
+  arg2 = (FbxAnimCurveNode *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveNode & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_Apply__SWIG_5(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterGimbleKiller *arg1 = (FbxAnimCurveFilterGimbleKiller *) 0 ;
+  FbxAnimCurveNode *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterGimbleKiller *)jarg1; 
+  arg2 = (FbxAnimCurveNode *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveNode & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->Apply(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_Apply__SWIG_6(void * jarg1, void * jarg2, int jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterGimbleKiller *arg1 = (FbxAnimCurveFilterGimbleKiller *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterGimbleKiller *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->Apply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_Apply__SWIG_7(void * jarg1, void * jarg2, int jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterGimbleKiller *arg1 = (FbxAnimCurveFilterGimbleKiller *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterGimbleKiller *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_Apply__SWIG_8(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterGimbleKiller *arg1 = (FbxAnimCurveFilterGimbleKiller *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterGimbleKiller *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_Apply__SWIG_9(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterGimbleKiller *arg1 = (FbxAnimCurveFilterGimbleKiller *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterGimbleKiller *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->Apply(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_Reset(void * jarg1) {
+  FbxAnimCurveFilterGimbleKiller *arg1 = (FbxAnimCurveFilterGimbleKiller *) 0 ;
+  
+  arg1 = (FbxAnimCurveFilterGimbleKiller *)jarg1; 
+  (arg1)->Reset();
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_GetApplyKeySyncFilter(void * jarg1) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterGimbleKiller *arg1 = (FbxAnimCurveFilterGimbleKiller *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterGimbleKiller *)jarg1; 
+  result = (bool)((FbxAnimCurveFilterGimbleKiller const *)arg1)->GetApplyKeySyncFilter();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_SetApplyKeySyncFilter(void * jarg1, unsigned int jarg2) {
+  FbxAnimCurveFilterGimbleKiller *arg1 = (FbxAnimCurveFilterGimbleKiller *) 0 ;
+  bool arg2 ;
+  
+  arg1 = (FbxAnimCurveFilterGimbleKiller *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  (arg1)->SetApplyKeySyncFilter(arg2);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxAnimCurveFilterKeyReducer() {
+  void * jresult ;
+  FbxAnimCurveFilterKeyReducer *result = 0 ;
+  
+  result = (FbxAnimCurveFilterKeyReducer *)new FbxAnimCurveFilterKeyReducer();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxAnimCurveFilterKeyReducer(void * jarg1) {
+  FbxAnimCurveFilterKeyReducer *arg1 = (FbxAnimCurveFilterKeyReducer *) 0 ;
+  
+  arg1 = (FbxAnimCurveFilterKeyReducer *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeyReducer_GetName(void * jarg1) {
+  char * jresult ;
+  FbxAnimCurveFilterKeyReducer *arg1 = (FbxAnimCurveFilterKeyReducer *) 0 ;
+  char *result = 0 ;
+  
+  arg1 = (FbxAnimCurveFilterKeyReducer *)jarg1; 
+  result = (char *)((FbxAnimCurveFilterKeyReducer const *)arg1)->GetName();
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeyReducer_Apply__SWIG_0(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterKeyReducer *arg1 = (FbxAnimCurveFilterKeyReducer *) 0 ;
+  FbxAnimStack *arg2 = (FbxAnimStack *) 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterKeyReducer *)jarg1; 
+  arg2 = (FbxAnimStack *)jarg2; 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeyReducer_Apply__SWIG_1(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterKeyReducer *arg1 = (FbxAnimCurveFilterKeyReducer *) 0 ;
+  FbxAnimStack *arg2 = (FbxAnimStack *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterKeyReducer *)jarg1; 
+  arg2 = (FbxAnimStack *)jarg2; 
+  result = (bool)(arg1)->Apply(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeyReducer_Apply__SWIG_2(void * jarg1, void * jarg2, void * jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterKeyReducer *arg1 = (FbxAnimCurveFilterKeyReducer *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterKeyReducer *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxAnimStack *)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->Apply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeyReducer_Apply__SWIG_3(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterKeyReducer *arg1 = (FbxAnimCurveFilterKeyReducer *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterKeyReducer *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxAnimStack *)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeyReducer_Apply__SWIG_4(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterKeyReducer *arg1 = (FbxAnimCurveFilterKeyReducer *) 0 ;
+  FbxAnimCurveNode *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterKeyReducer *)jarg1; 
+  arg2 = (FbxAnimCurveNode *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveNode & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeyReducer_Apply__SWIG_5(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterKeyReducer *arg1 = (FbxAnimCurveFilterKeyReducer *) 0 ;
+  FbxAnimCurveNode *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterKeyReducer *)jarg1; 
+  arg2 = (FbxAnimCurveNode *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveNode & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->Apply(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeyReducer_Apply__SWIG_6(void * jarg1, void * jarg2, int jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterKeyReducer *arg1 = (FbxAnimCurveFilterKeyReducer *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterKeyReducer *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->Apply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeyReducer_Apply__SWIG_7(void * jarg1, void * jarg2, int jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterKeyReducer *arg1 = (FbxAnimCurveFilterKeyReducer *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterKeyReducer *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeyReducer_Apply__SWIG_8(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterKeyReducer *arg1 = (FbxAnimCurveFilterKeyReducer *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterKeyReducer *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeyReducer_Apply__SWIG_9(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterKeyReducer *arg1 = (FbxAnimCurveFilterKeyReducer *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterKeyReducer *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->Apply(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeyReducer_Reset(void * jarg1) {
+  FbxAnimCurveFilterKeyReducer *arg1 = (FbxAnimCurveFilterKeyReducer *) 0 ;
+  
+  arg1 = (FbxAnimCurveFilterKeyReducer *)jarg1; 
+  (arg1)->Reset();
+}
+
+
+SWIGEXPORT double SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeyReducer_GetPrecision(void * jarg1) {
+  double jresult ;
+  FbxAnimCurveFilterKeyReducer *arg1 = (FbxAnimCurveFilterKeyReducer *) 0 ;
+  double result;
+  
+  arg1 = (FbxAnimCurveFilterKeyReducer *)jarg1; 
+  result = (double)((FbxAnimCurveFilterKeyReducer const *)arg1)->GetPrecision();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeyReducer_SetPrecision(void * jarg1, double jarg2) {
+  FbxAnimCurveFilterKeyReducer *arg1 = (FbxAnimCurveFilterKeyReducer *) 0 ;
+  double arg2 ;
+  
+  arg1 = (FbxAnimCurveFilterKeyReducer *)jarg1; 
+  arg2 = (double)jarg2; 
+  (arg1)->SetPrecision(arg2);
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeyReducer_GetKeySync(void * jarg1) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterKeyReducer *arg1 = (FbxAnimCurveFilterKeyReducer *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterKeyReducer *)jarg1; 
+  result = (bool)((FbxAnimCurveFilterKeyReducer const *)arg1)->GetKeySync();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeyReducer_SetKeySync(void * jarg1, unsigned int jarg2) {
+  FbxAnimCurveFilterKeyReducer *arg1 = (FbxAnimCurveFilterKeyReducer *) 0 ;
+  bool arg2 ;
+  
+  arg1 = (FbxAnimCurveFilterKeyReducer *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  (arg1)->SetKeySync(arg2);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxAnimCurveFilterKeySync() {
+  void * jresult ;
+  FbxAnimCurveFilterKeySync *result = 0 ;
+  
+  result = (FbxAnimCurveFilterKeySync *)new FbxAnimCurveFilterKeySync();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxAnimCurveFilterKeySync(void * jarg1) {
+  FbxAnimCurveFilterKeySync *arg1 = (FbxAnimCurveFilterKeySync *) 0 ;
+  
+  arg1 = (FbxAnimCurveFilterKeySync *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeySync_GetName(void * jarg1) {
+  char * jresult ;
+  FbxAnimCurveFilterKeySync *arg1 = (FbxAnimCurveFilterKeySync *) 0 ;
+  char *result = 0 ;
+  
+  arg1 = (FbxAnimCurveFilterKeySync *)jarg1; 
+  result = (char *)((FbxAnimCurveFilterKeySync const *)arg1)->GetName();
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeySync_NeedApply__SWIG_0(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterKeySync *arg1 = (FbxAnimCurveFilterKeySync *) 0 ;
+  FbxAnimStack *arg2 = (FbxAnimStack *) 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterKeySync *)jarg1; 
+  arg2 = (FbxAnimStack *)jarg2; 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->NeedApply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeySync_NeedApply__SWIG_1(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterKeySync *arg1 = (FbxAnimCurveFilterKeySync *) 0 ;
+  FbxAnimStack *arg2 = (FbxAnimStack *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterKeySync *)jarg1; 
+  arg2 = (FbxAnimStack *)jarg2; 
+  result = (bool)(arg1)->NeedApply(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeySync_NeedApply__SWIG_2(void * jarg1, void * jarg2, void * jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterKeySync *arg1 = (FbxAnimCurveFilterKeySync *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterKeySync *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxAnimStack *)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->NeedApply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeySync_NeedApply__SWIG_3(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterKeySync *arg1 = (FbxAnimCurveFilterKeySync *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterKeySync *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxAnimStack *)jarg3; 
+  result = (bool)(arg1)->NeedApply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeySync_NeedApply__SWIG_4(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterKeySync *arg1 = (FbxAnimCurveFilterKeySync *) 0 ;
+  FbxAnimCurveNode *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterKeySync *)jarg1; 
+  arg2 = (FbxAnimCurveNode *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveNode & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->NeedApply(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeySync_NeedApply__SWIG_5(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterKeySync *arg1 = (FbxAnimCurveFilterKeySync *) 0 ;
+  FbxAnimCurveNode *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterKeySync *)jarg1; 
+  arg2 = (FbxAnimCurveNode *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveNode & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->NeedApply(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeySync_Apply__SWIG_0(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterKeySync *arg1 = (FbxAnimCurveFilterKeySync *) 0 ;
+  FbxAnimStack *arg2 = (FbxAnimStack *) 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterKeySync *)jarg1; 
+  arg2 = (FbxAnimStack *)jarg2; 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeySync_Apply__SWIG_1(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterKeySync *arg1 = (FbxAnimCurveFilterKeySync *) 0 ;
+  FbxAnimStack *arg2 = (FbxAnimStack *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterKeySync *)jarg1; 
+  arg2 = (FbxAnimStack *)jarg2; 
+  result = (bool)(arg1)->Apply(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeySync_Apply__SWIG_2(void * jarg1, void * jarg2, void * jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterKeySync *arg1 = (FbxAnimCurveFilterKeySync *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterKeySync *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxAnimStack *)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->Apply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeySync_Apply__SWIG_3(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterKeySync *arg1 = (FbxAnimCurveFilterKeySync *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterKeySync *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxAnimStack *)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeySync_Apply__SWIG_4(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterKeySync *arg1 = (FbxAnimCurveFilterKeySync *) 0 ;
+  FbxAnimCurveNode *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterKeySync *)jarg1; 
+  arg2 = (FbxAnimCurveNode *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveNode & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeySync_Apply__SWIG_5(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterKeySync *arg1 = (FbxAnimCurveFilterKeySync *) 0 ;
+  FbxAnimCurveNode *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterKeySync *)jarg1; 
+  arg2 = (FbxAnimCurveNode *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveNode & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->Apply(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeySync_NeedApply__SWIG_6(void * jarg1, void * jarg2, int jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterKeySync *arg1 = (FbxAnimCurveFilterKeySync *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterKeySync *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->NeedApply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeySync_NeedApply__SWIG_7(void * jarg1, void * jarg2, int jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterKeySync *arg1 = (FbxAnimCurveFilterKeySync *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterKeySync *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  result = (bool)(arg1)->NeedApply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeySync_NeedApply__SWIG_8(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterKeySync *arg1 = (FbxAnimCurveFilterKeySync *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterKeySync *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->NeedApply(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeySync_NeedApply__SWIG_9(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterKeySync *arg1 = (FbxAnimCurveFilterKeySync *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterKeySync *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->NeedApply(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeySync_Apply__SWIG_6(void * jarg1, void * jarg2, int jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterKeySync *arg1 = (FbxAnimCurveFilterKeySync *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterKeySync *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->Apply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeySync_Apply__SWIG_7(void * jarg1, void * jarg2, int jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterKeySync *arg1 = (FbxAnimCurveFilterKeySync *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterKeySync *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeySync_Apply__SWIG_8(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterKeySync *arg1 = (FbxAnimCurveFilterKeySync *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterKeySync *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeySync_Apply__SWIG_9(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterKeySync *arg1 = (FbxAnimCurveFilterKeySync *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterKeySync *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->Apply(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxAnimCurveFilterResample() {
+  void * jresult ;
+  FbxAnimCurveFilterResample *result = 0 ;
+  
+  result = (FbxAnimCurveFilterResample *)new FbxAnimCurveFilterResample();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxAnimCurveFilterResample(void * jarg1) {
+  FbxAnimCurveFilterResample *arg1 = (FbxAnimCurveFilterResample *) 0 ;
+  
+  arg1 = (FbxAnimCurveFilterResample *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterResample_GetName(void * jarg1) {
+  char * jresult ;
+  FbxAnimCurveFilterResample *arg1 = (FbxAnimCurveFilterResample *) 0 ;
+  char *result = 0 ;
+  
+  arg1 = (FbxAnimCurveFilterResample *)jarg1; 
+  result = (char *)((FbxAnimCurveFilterResample const *)arg1)->GetName();
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterResample_Apply__SWIG_0(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterResample *arg1 = (FbxAnimCurveFilterResample *) 0 ;
+  FbxAnimStack *arg2 = (FbxAnimStack *) 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterResample *)jarg1; 
+  arg2 = (FbxAnimStack *)jarg2; 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterResample_Apply__SWIG_1(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterResample *arg1 = (FbxAnimCurveFilterResample *) 0 ;
+  FbxAnimStack *arg2 = (FbxAnimStack *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterResample *)jarg1; 
+  arg2 = (FbxAnimStack *)jarg2; 
+  result = (bool)(arg1)->Apply(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterResample_Apply__SWIG_2(void * jarg1, void * jarg2, void * jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterResample *arg1 = (FbxAnimCurveFilterResample *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterResample *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxAnimStack *)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->Apply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterResample_Apply__SWIG_3(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterResample *arg1 = (FbxAnimCurveFilterResample *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterResample *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxAnimStack *)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterResample_Apply__SWIG_4(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterResample *arg1 = (FbxAnimCurveFilterResample *) 0 ;
+  FbxAnimCurveNode *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterResample *)jarg1; 
+  arg2 = (FbxAnimCurveNode *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveNode & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterResample_Apply__SWIG_5(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterResample *arg1 = (FbxAnimCurveFilterResample *) 0 ;
+  FbxAnimCurveNode *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterResample *)jarg1; 
+  arg2 = (FbxAnimCurveNode *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveNode & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->Apply(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterResample_Apply__SWIG_6(void * jarg1, void * jarg2, int jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterResample *arg1 = (FbxAnimCurveFilterResample *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterResample *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->Apply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterResample_Apply__SWIG_7(void * jarg1, void * jarg2, int jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterResample *arg1 = (FbxAnimCurveFilterResample *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterResample *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterResample_Apply__SWIG_8(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterResample *arg1 = (FbxAnimCurveFilterResample *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterResample *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterResample_Apply__SWIG_9(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterResample *arg1 = (FbxAnimCurveFilterResample *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterResample *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->Apply(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterResample_Reset(void * jarg1) {
+  FbxAnimCurveFilterResample *arg1 = (FbxAnimCurveFilterResample *) 0 ;
+  
+  arg1 = (FbxAnimCurveFilterResample *)jarg1; 
+  (arg1)->Reset();
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterResample_SetKeysOnFrame(void * jarg1, unsigned int jarg2) {
+  FbxAnimCurveFilterResample *arg1 = (FbxAnimCurveFilterResample *) 0 ;
+  bool arg2 ;
+  
+  arg1 = (FbxAnimCurveFilterResample *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  (arg1)->SetKeysOnFrame(arg2);
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterResample_GetKeysOnFrame(void * jarg1) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterResample *arg1 = (FbxAnimCurveFilterResample *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterResample *)jarg1; 
+  result = (bool)((FbxAnimCurveFilterResample const *)arg1)->GetKeysOnFrame();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterResample_GetPeriodTime(void * jarg1) {
+  void * jresult ;
+  FbxAnimCurveFilterResample *arg1 = (FbxAnimCurveFilterResample *) 0 ;
+  FbxTime result;
+  
+  arg1 = (FbxAnimCurveFilterResample *)jarg1; 
+  result = ((FbxAnimCurveFilterResample const *)arg1)->GetPeriodTime();
+  jresult = new FbxTime((const FbxTime &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterResample_SetPeriodTime(void * jarg1, void * jarg2) {
+  FbxAnimCurveFilterResample *arg1 = (FbxAnimCurveFilterResample *) 0 ;
+  FbxTime *arg2 = 0 ;
+  
+  arg1 = (FbxAnimCurveFilterResample *)jarg1; 
+  arg2 = (FbxTime *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime & type is null", 0);
+    return ;
+  } 
+  (arg1)->SetPeriodTime(*arg2);
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterResample_GetIntelligentMode(void * jarg1) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterResample *arg1 = (FbxAnimCurveFilterResample *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterResample *)jarg1; 
+  result = (bool)((FbxAnimCurveFilterResample const *)arg1)->GetIntelligentMode();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterResample_SetIntelligentMode(void * jarg1, unsigned int jarg2) {
+  FbxAnimCurveFilterResample *arg1 = (FbxAnimCurveFilterResample *) 0 ;
+  bool arg2 ;
+  
+  arg1 = (FbxAnimCurveFilterResample *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  (arg1)->SetIntelligentMode(arg2);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxAnimCurveFilterScale() {
+  void * jresult ;
+  FbxAnimCurveFilterScale *result = 0 ;
+  
+  result = (FbxAnimCurveFilterScale *)new FbxAnimCurveFilterScale();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxAnimCurveFilterScale(void * jarg1) {
+  FbxAnimCurveFilterScale *arg1 = (FbxAnimCurveFilterScale *) 0 ;
+  
+  arg1 = (FbxAnimCurveFilterScale *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScale_GetName(void * jarg1) {
+  char * jresult ;
+  FbxAnimCurveFilterScale *arg1 = (FbxAnimCurveFilterScale *) 0 ;
+  char *result = 0 ;
+  
+  arg1 = (FbxAnimCurveFilterScale *)jarg1; 
+  result = (char *)((FbxAnimCurveFilterScale const *)arg1)->GetName();
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScale_Apply__SWIG_0(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterScale *arg1 = (FbxAnimCurveFilterScale *) 0 ;
+  FbxAnimStack *arg2 = (FbxAnimStack *) 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterScale *)jarg1; 
+  arg2 = (FbxAnimStack *)jarg2; 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScale_Apply__SWIG_1(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterScale *arg1 = (FbxAnimCurveFilterScale *) 0 ;
+  FbxAnimStack *arg2 = (FbxAnimStack *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterScale *)jarg1; 
+  arg2 = (FbxAnimStack *)jarg2; 
+  result = (bool)(arg1)->Apply(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScale_Apply__SWIG_2(void * jarg1, void * jarg2, void * jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterScale *arg1 = (FbxAnimCurveFilterScale *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterScale *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxAnimStack *)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->Apply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScale_Apply__SWIG_3(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterScale *arg1 = (FbxAnimCurveFilterScale *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterScale *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxAnimStack *)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScale_Apply__SWIG_4(void * jarg1, void * jarg2, int jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterScale *arg1 = (FbxAnimCurveFilterScale *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterScale *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->Apply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScale_Apply__SWIG_5(void * jarg1, void * jarg2, int jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterScale *arg1 = (FbxAnimCurveFilterScale *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterScale *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScale_Apply__SWIG_6(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterScale *arg1 = (FbxAnimCurveFilterScale *) 0 ;
+  FbxAnimCurveNode *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterScale *)jarg1; 
+  arg2 = (FbxAnimCurveNode *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveNode & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScale_Apply__SWIG_7(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterScale *arg1 = (FbxAnimCurveFilterScale *) 0 ;
+  FbxAnimCurveNode *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterScale *)jarg1; 
+  arg2 = (FbxAnimCurveNode *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveNode & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->Apply(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScale_Apply__SWIG_8(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterScale *arg1 = (FbxAnimCurveFilterScale *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterScale *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScale_Apply__SWIG_9(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterScale *arg1 = (FbxAnimCurveFilterScale *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterScale *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->Apply(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScale_Reset(void * jarg1) {
+  FbxAnimCurveFilterScale *arg1 = (FbxAnimCurveFilterScale *) 0 ;
+  
+  arg1 = (FbxAnimCurveFilterScale *)jarg1; 
+  (arg1)->Reset();
+}
+
+
+SWIGEXPORT double SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScale_GetScale(void * jarg1) {
+  double jresult ;
+  FbxAnimCurveFilterScale *arg1 = (FbxAnimCurveFilterScale *) 0 ;
+  double result;
+  
+  arg1 = (FbxAnimCurveFilterScale *)jarg1; 
+  result = (double)((FbxAnimCurveFilterScale const *)arg1)->GetScale();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScale_SetScale(void * jarg1, double jarg2) {
+  FbxAnimCurveFilterScale *arg1 = (FbxAnimCurveFilterScale *) 0 ;
+  double arg2 ;
+  
+  arg1 = (FbxAnimCurveFilterScale *)jarg1; 
+  arg2 = (double)jarg2; 
+  (arg1)->SetScale(arg2);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxAnimCurveFilterScaleByCurve() {
+  void * jresult ;
+  FbxAnimCurveFilterScaleByCurve *result = 0 ;
+  
+  result = (FbxAnimCurveFilterScaleByCurve *)new FbxAnimCurveFilterScaleByCurve();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxAnimCurveFilterScaleByCurve(void * jarg1) {
+  FbxAnimCurveFilterScaleByCurve *arg1 = (FbxAnimCurveFilterScaleByCurve *) 0 ;
+  
+  arg1 = (FbxAnimCurveFilterScaleByCurve *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScaleByCurve_GetName(void * jarg1) {
+  char * jresult ;
+  FbxAnimCurveFilterScaleByCurve *arg1 = (FbxAnimCurveFilterScaleByCurve *) 0 ;
+  char *result = 0 ;
+  
+  arg1 = (FbxAnimCurveFilterScaleByCurve *)jarg1; 
+  result = (char *)((FbxAnimCurveFilterScaleByCurve const *)arg1)->GetName();
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScaleByCurve_Apply__SWIG_0(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterScaleByCurve *arg1 = (FbxAnimCurveFilterScaleByCurve *) 0 ;
+  FbxAnimStack *arg2 = (FbxAnimStack *) 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterScaleByCurve *)jarg1; 
+  arg2 = (FbxAnimStack *)jarg2; 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScaleByCurve_Apply__SWIG_1(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterScaleByCurve *arg1 = (FbxAnimCurveFilterScaleByCurve *) 0 ;
+  FbxAnimStack *arg2 = (FbxAnimStack *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterScaleByCurve *)jarg1; 
+  arg2 = (FbxAnimStack *)jarg2; 
+  result = (bool)(arg1)->Apply(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScaleByCurve_Apply__SWIG_2(void * jarg1, void * jarg2, void * jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterScaleByCurve *arg1 = (FbxAnimCurveFilterScaleByCurve *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterScaleByCurve *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxAnimStack *)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->Apply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScaleByCurve_Apply__SWIG_3(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterScaleByCurve *arg1 = (FbxAnimCurveFilterScaleByCurve *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterScaleByCurve *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxAnimStack *)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScaleByCurve_Apply__SWIG_4(void * jarg1, void * jarg2, int jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterScaleByCurve *arg1 = (FbxAnimCurveFilterScaleByCurve *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterScaleByCurve *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->Apply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScaleByCurve_Apply__SWIG_5(void * jarg1, void * jarg2, int jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterScaleByCurve *arg1 = (FbxAnimCurveFilterScaleByCurve *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterScaleByCurve *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScaleByCurve_Apply__SWIG_6(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterScaleByCurve *arg1 = (FbxAnimCurveFilterScaleByCurve *) 0 ;
+  FbxAnimCurveNode *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterScaleByCurve *)jarg1; 
+  arg2 = (FbxAnimCurveNode *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveNode & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScaleByCurve_Apply__SWIG_7(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterScaleByCurve *arg1 = (FbxAnimCurveFilterScaleByCurve *) 0 ;
+  FbxAnimCurveNode *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterScaleByCurve *)jarg1; 
+  arg2 = (FbxAnimCurveNode *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveNode & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->Apply(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScaleByCurve_Apply__SWIG_8(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterScaleByCurve *arg1 = (FbxAnimCurveFilterScaleByCurve *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterScaleByCurve *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScaleByCurve_Apply__SWIG_9(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterScaleByCurve *arg1 = (FbxAnimCurveFilterScaleByCurve *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterScaleByCurve *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->Apply(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScaleByCurve_Reset(void * jarg1) {
+  FbxAnimCurveFilterScaleByCurve *arg1 = (FbxAnimCurveFilterScaleByCurve *) 0 ;
+  
+  arg1 = (FbxAnimCurveFilterScaleByCurve *)jarg1; 
+  (arg1)->Reset();
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScaleByCurve_GetScale(void * jarg1) {
+  void * jresult ;
+  FbxAnimCurveFilterScaleByCurve *arg1 = (FbxAnimCurveFilterScaleByCurve *) 0 ;
+  FbxAnimCurve *result = 0 ;
+  
+  arg1 = (FbxAnimCurveFilterScaleByCurve *)jarg1; 
+  result = (FbxAnimCurve *)((FbxAnimCurveFilterScaleByCurve const *)arg1)->GetScale();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScaleByCurve_SetScale(void * jarg1, void * jarg2) {
+  FbxAnimCurveFilterScaleByCurve *arg1 = (FbxAnimCurveFilterScaleByCurve *) 0 ;
+  FbxAnimCurve *arg2 = (FbxAnimCurve *) 0 ;
+  
+  arg1 = (FbxAnimCurveFilterScaleByCurve *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2; 
+  (arg1)->SetScale(arg2);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxAnimCurveFilterTSS() {
+  void * jresult ;
+  FbxAnimCurveFilterTSS *result = 0 ;
+  
+  result = (FbxAnimCurveFilterTSS *)new FbxAnimCurveFilterTSS();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxAnimCurveFilterTSS(void * jarg1) {
+  FbxAnimCurveFilterTSS *arg1 = (FbxAnimCurveFilterTSS *) 0 ;
+  
+  arg1 = (FbxAnimCurveFilterTSS *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterTSS_GetName(void * jarg1) {
+  char * jresult ;
+  FbxAnimCurveFilterTSS *arg1 = (FbxAnimCurveFilterTSS *) 0 ;
+  char *result = 0 ;
+  
+  arg1 = (FbxAnimCurveFilterTSS *)jarg1; 
+  result = (char *)((FbxAnimCurveFilterTSS const *)arg1)->GetName();
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterTSS_Apply__SWIG_0(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterTSS *arg1 = (FbxAnimCurveFilterTSS *) 0 ;
+  FbxAnimStack *arg2 = (FbxAnimStack *) 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterTSS *)jarg1; 
+  arg2 = (FbxAnimStack *)jarg2; 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterTSS_Apply__SWIG_1(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterTSS *arg1 = (FbxAnimCurveFilterTSS *) 0 ;
+  FbxAnimStack *arg2 = (FbxAnimStack *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterTSS *)jarg1; 
+  arg2 = (FbxAnimStack *)jarg2; 
+  result = (bool)(arg1)->Apply(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterTSS_Apply__SWIG_2(void * jarg1, void * jarg2, void * jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterTSS *arg1 = (FbxAnimCurveFilterTSS *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterTSS *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxAnimStack *)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->Apply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterTSS_Apply__SWIG_3(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterTSS *arg1 = (FbxAnimCurveFilterTSS *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterTSS *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxAnimStack *)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterTSS_Apply__SWIG_4(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterTSS *arg1 = (FbxAnimCurveFilterTSS *) 0 ;
+  FbxAnimCurveNode *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterTSS *)jarg1; 
+  arg2 = (FbxAnimCurveNode *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveNode & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterTSS_Apply__SWIG_5(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterTSS *arg1 = (FbxAnimCurveFilterTSS *) 0 ;
+  FbxAnimCurveNode *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterTSS *)jarg1; 
+  arg2 = (FbxAnimCurveNode *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveNode & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->Apply(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterTSS_Apply__SWIG_6(void * jarg1, void * jarg2, int jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterTSS *arg1 = (FbxAnimCurveFilterTSS *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterTSS *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->Apply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterTSS_Apply__SWIG_7(void * jarg1, void * jarg2, int jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterTSS *arg1 = (FbxAnimCurveFilterTSS *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterTSS *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterTSS_Apply__SWIG_8(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterTSS *arg1 = (FbxAnimCurveFilterTSS *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterTSS *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterTSS_Apply__SWIG_9(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterTSS *arg1 = (FbxAnimCurveFilterTSS *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterTSS *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->Apply(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterTSS_Reset(void * jarg1) {
+  FbxAnimCurveFilterTSS *arg1 = (FbxAnimCurveFilterTSS *) 0 ;
+  
+  arg1 = (FbxAnimCurveFilterTSS *)jarg1; 
+  (arg1)->Reset();
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterTSS_GetShift(void * jarg1) {
+  void * jresult ;
+  FbxAnimCurveFilterTSS *arg1 = (FbxAnimCurveFilterTSS *) 0 ;
+  FbxTime result;
+  
+  arg1 = (FbxAnimCurveFilterTSS *)jarg1; 
+  result = ((FbxAnimCurveFilterTSS const *)arg1)->GetShift();
+  jresult = new FbxTime((const FbxTime &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterTSS_SetShift(void * jarg1, void * jarg2) {
+  FbxAnimCurveFilterTSS *arg1 = (FbxAnimCurveFilterTSS *) 0 ;
+  FbxTime *arg2 = 0 ;
+  
+  arg1 = (FbxAnimCurveFilterTSS *)jarg1; 
+  arg2 = (FbxTime *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime & type is null", 0);
+    return ;
+  } 
+  (arg1)->SetShift(*arg2);
+}
+
+
+SWIGEXPORT double SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterTSS_GetScale(void * jarg1) {
+  double jresult ;
+  FbxAnimCurveFilterTSS *arg1 = (FbxAnimCurveFilterTSS *) 0 ;
+  double result;
+  
+  arg1 = (FbxAnimCurveFilterTSS *)jarg1; 
+  result = (double)((FbxAnimCurveFilterTSS const *)arg1)->GetScale();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterTSS_SetScale(void * jarg1, double jarg2) {
+  FbxAnimCurveFilterTSS *arg1 = (FbxAnimCurveFilterTSS *) 0 ;
+  double arg2 ;
+  
+  arg1 = (FbxAnimCurveFilterTSS *)jarg1; 
+  arg2 = (double)jarg2; 
+  (arg1)->SetScale(arg2);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxAnimCurveFilterUnroll() {
+  void * jresult ;
+  FbxAnimCurveFilterUnroll *result = 0 ;
+  
+  result = (FbxAnimCurveFilterUnroll *)new FbxAnimCurveFilterUnroll();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxAnimCurveFilterUnroll(void * jarg1) {
+  FbxAnimCurveFilterUnroll *arg1 = (FbxAnimCurveFilterUnroll *) 0 ;
+  
+  arg1 = (FbxAnimCurveFilterUnroll *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterUnroll_GetName(void * jarg1) {
+  char * jresult ;
+  FbxAnimCurveFilterUnroll *arg1 = (FbxAnimCurveFilterUnroll *) 0 ;
+  char *result = 0 ;
+  
+  arg1 = (FbxAnimCurveFilterUnroll *)jarg1; 
+  result = (char *)((FbxAnimCurveFilterUnroll const *)arg1)->GetName();
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterUnroll_NeedApply__SWIG_0(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterUnroll *arg1 = (FbxAnimCurveFilterUnroll *) 0 ;
+  FbxAnimStack *arg2 = (FbxAnimStack *) 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterUnroll *)jarg1; 
+  arg2 = (FbxAnimStack *)jarg2; 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->NeedApply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterUnroll_NeedApply__SWIG_1(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterUnroll *arg1 = (FbxAnimCurveFilterUnroll *) 0 ;
+  FbxAnimStack *arg2 = (FbxAnimStack *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterUnroll *)jarg1; 
+  arg2 = (FbxAnimStack *)jarg2; 
+  result = (bool)(arg1)->NeedApply(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterUnroll_NeedApply__SWIG_2(void * jarg1, void * jarg2, void * jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterUnroll *arg1 = (FbxAnimCurveFilterUnroll *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterUnroll *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxAnimStack *)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->NeedApply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterUnroll_NeedApply__SWIG_3(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterUnroll *arg1 = (FbxAnimCurveFilterUnroll *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterUnroll *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxAnimStack *)jarg3; 
+  result = (bool)(arg1)->NeedApply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterUnroll_NeedApply__SWIG_4(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterUnroll *arg1 = (FbxAnimCurveFilterUnroll *) 0 ;
+  FbxAnimCurveNode *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterUnroll *)jarg1; 
+  arg2 = (FbxAnimCurveNode *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveNode & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->NeedApply(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterUnroll_NeedApply__SWIG_5(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterUnroll *arg1 = (FbxAnimCurveFilterUnroll *) 0 ;
+  FbxAnimCurveNode *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterUnroll *)jarg1; 
+  arg2 = (FbxAnimCurveNode *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveNode & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->NeedApply(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterUnroll_NeedApply__SWIG_6(void * jarg1, void * jarg2, int jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterUnroll *arg1 = (FbxAnimCurveFilterUnroll *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterUnroll *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->NeedApply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterUnroll_NeedApply__SWIG_7(void * jarg1, void * jarg2, int jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterUnroll *arg1 = (FbxAnimCurveFilterUnroll *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterUnroll *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  result = (bool)(arg1)->NeedApply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterUnroll_NeedApply__SWIG_8(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterUnroll *arg1 = (FbxAnimCurveFilterUnroll *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterUnroll *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->NeedApply(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterUnroll_NeedApply__SWIG_9(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterUnroll *arg1 = (FbxAnimCurveFilterUnroll *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterUnroll *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->NeedApply(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterUnroll_Apply__SWIG_0(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterUnroll *arg1 = (FbxAnimCurveFilterUnroll *) 0 ;
+  FbxAnimStack *arg2 = (FbxAnimStack *) 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterUnroll *)jarg1; 
+  arg2 = (FbxAnimStack *)jarg2; 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterUnroll_Apply__SWIG_1(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterUnroll *arg1 = (FbxAnimCurveFilterUnroll *) 0 ;
+  FbxAnimStack *arg2 = (FbxAnimStack *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterUnroll *)jarg1; 
+  arg2 = (FbxAnimStack *)jarg2; 
+  result = (bool)(arg1)->Apply(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterUnroll_Apply__SWIG_2(void * jarg1, void * jarg2, void * jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterUnroll *arg1 = (FbxAnimCurveFilterUnroll *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterUnroll *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxAnimStack *)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->Apply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterUnroll_Apply__SWIG_3(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterUnroll *arg1 = (FbxAnimCurveFilterUnroll *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterUnroll *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxAnimStack *)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterUnroll_Apply__SWIG_4(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterUnroll *arg1 = (FbxAnimCurveFilterUnroll *) 0 ;
+  FbxAnimCurveNode *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterUnroll *)jarg1; 
+  arg2 = (FbxAnimCurveNode *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveNode & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterUnroll_Apply__SWIG_5(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterUnroll *arg1 = (FbxAnimCurveFilterUnroll *) 0 ;
+  FbxAnimCurveNode *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterUnroll *)jarg1; 
+  arg2 = (FbxAnimCurveNode *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveNode & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->Apply(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterUnroll_Apply__SWIG_6(void * jarg1, void * jarg2, int jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterUnroll *arg1 = (FbxAnimCurveFilterUnroll *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterUnroll *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->Apply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterUnroll_Apply__SWIG_7(void * jarg1, void * jarg2, int jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterUnroll *arg1 = (FbxAnimCurveFilterUnroll *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterUnroll *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterUnroll_Apply__SWIG_8(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterUnroll *arg1 = (FbxAnimCurveFilterUnroll *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterUnroll *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterUnroll_Apply__SWIG_9(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterUnroll *arg1 = (FbxAnimCurveFilterUnroll *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterUnroll *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->Apply(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterUnroll_Reset(void * jarg1) {
+  FbxAnimCurveFilterUnroll *arg1 = (FbxAnimCurveFilterUnroll *) 0 ;
+  
+  arg1 = (FbxAnimCurveFilterUnroll *)jarg1; 
+  (arg1)->Reset();
+}
+
+
+SWIGEXPORT double SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterUnroll_GetQualityTolerance(void * jarg1) {
+  double jresult ;
+  FbxAnimCurveFilterUnroll *arg1 = (FbxAnimCurveFilterUnroll *) 0 ;
+  double result;
+  
+  arg1 = (FbxAnimCurveFilterUnroll *)jarg1; 
+  result = (double)((FbxAnimCurveFilterUnroll const *)arg1)->GetQualityTolerance();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterUnroll_SetQualityTolerance(void * jarg1, double jarg2) {
+  FbxAnimCurveFilterUnroll *arg1 = (FbxAnimCurveFilterUnroll *) 0 ;
+  double arg2 ;
+  
+  arg1 = (FbxAnimCurveFilterUnroll *)jarg1; 
+  arg2 = (double)jarg2; 
+  (arg1)->SetQualityTolerance(arg2);
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterUnroll_GetTestForPath(void * jarg1) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterUnroll *arg1 = (FbxAnimCurveFilterUnroll *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterUnroll *)jarg1; 
+  result = (bool)((FbxAnimCurveFilterUnroll const *)arg1)->GetTestForPath();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterUnroll_SetTestForPath(void * jarg1, unsigned int jarg2) {
+  FbxAnimCurveFilterUnroll *arg1 = (FbxAnimCurveFilterUnroll *) 0 ;
+  bool arg2 ;
+  
+  arg1 = (FbxAnimCurveFilterUnroll *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  (arg1)->SetTestForPath(arg2);
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterUnroll_GetForceAutoTangents(void * jarg1) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterUnroll *arg1 = (FbxAnimCurveFilterUnroll *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterUnroll *)jarg1; 
+  result = (bool)((FbxAnimCurveFilterUnroll const *)arg1)->GetForceAutoTangents();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterUnroll_SetForceAutoTangents(void * jarg1, unsigned int jarg2) {
+  FbxAnimCurveFilterUnroll *arg1 = (FbxAnimCurveFilterUnroll *) 0 ;
+  bool arg2 ;
+  
+  arg1 = (FbxAnimCurveFilterUnroll *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  (arg1)->SetForceAutoTangents(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterUnroll_SetRotationOrder(void * jarg1, void * jarg2) {
+  FbxAnimCurveFilterUnroll *arg1 = (FbxAnimCurveFilterUnroll *) 0 ;
+  FbxEuler::EOrder arg2 ;
+  FbxEuler::EOrder *argp2 ;
+  
+  arg1 = (FbxAnimCurveFilterUnroll *)jarg1; 
+  argp2 = (FbxEuler::EOrder *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxEuler::EOrder", 0);
+    return ;
+  }
+  arg2 = *argp2; 
+  (arg1)->SetRotationOrder(arg2);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxAnimCurveFilterMatrixConverter() {
+  void * jresult ;
+  FbxAnimCurveFilterMatrixConverter *result = 0 ;
+  
+  result = (FbxAnimCurveFilterMatrixConverter *)new FbxAnimCurveFilterMatrixConverter();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxAnimCurveFilterMatrixConverter(void * jarg1) {
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_GetName(void * jarg1) {
+  char * jresult ;
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  char *result = 0 ;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  result = (char *)((FbxAnimCurveFilterMatrixConverter const *)arg1)->GetName();
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_0(void * jarg1, void * jarg2, int jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->NeedApply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_1(void * jarg1, void * jarg2, int jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  result = (bool)(arg1)->NeedApply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_2(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxAnimCurveNode *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = (FbxAnimCurveNode *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveNode & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->NeedApply(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_3(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxAnimCurveNode *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = (FbxAnimCurveNode *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveNode & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->NeedApply(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_Apply__SWIG_0(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxAnimCurveNode *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = (FbxAnimCurveNode *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveNode & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_Apply__SWIG_1(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxAnimCurveNode *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = (FbxAnimCurveNode *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurveNode & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->Apply(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_4(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxAnimStack *arg2 = (FbxAnimStack *) 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = (FbxAnimStack *)jarg2; 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->NeedApply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_5(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxAnimStack *arg2 = (FbxAnimStack *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = (FbxAnimStack *)jarg2; 
+  result = (bool)(arg1)->NeedApply(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_6(void * jarg1, void * jarg2, void * jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxAnimStack *)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->NeedApply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_7(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxAnimStack *)jarg3; 
+  result = (bool)(arg1)->NeedApply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_8(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxAnimCurveNode **arg2 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = (FbxAnimCurveNode **)jarg2; 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->NeedApply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_9(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxAnimCurveNode **arg2 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = (FbxAnimCurveNode **)jarg2; 
+  result = (bool)(arg1)->NeedApply(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_10(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->NeedApply(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_11(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->NeedApply(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_Apply__SWIG_2(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxAnimStack *arg2 = (FbxAnimStack *) 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = (FbxAnimStack *)jarg2; 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_Apply__SWIG_3(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxAnimStack *arg2 = (FbxAnimStack *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = (FbxAnimStack *)jarg2; 
+  result = (bool)(arg1)->Apply(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_Apply__SWIG_4(void * jarg1, void * jarg2, void * jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxAnimStack *)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->Apply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_Apply__SWIG_5(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxObject *arg2 = (FbxObject *) 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = (FbxObject *)jarg2; 
+  arg3 = (FbxAnimStack *)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_Apply__SWIG_6(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxAnimCurveNode **arg2 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = (FbxAnimCurveNode **)jarg2; 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_Apply__SWIG_7(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxAnimCurveNode **arg2 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = (FbxAnimCurveNode **)jarg2; 
+  result = (bool)(arg1)->Apply(arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_Apply__SWIG_8(void * jarg1, void * jarg2, int jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->Apply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_Apply__SWIG_9(void * jarg1, void * jarg2, int jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  int arg3 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (int)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_Apply__SWIG_10(void * jarg1, void * jarg2, void * jarg3, void * jarg4) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  double *arg3 = (double *) 0 ;
+  FbxStatus *arg4 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (double *)jarg3; 
+  arg4 = (FbxStatus *)jarg4; 
+  result = (bool)(arg1)->Apply(arg2,arg3,arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_Apply__SWIG_11(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxAnimCurve **arg2 = (FbxAnimCurve **) 0 ;
+  double *arg3 = (double *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = (FbxAnimCurve **)jarg2; 
+  arg3 = (double *)jarg3; 
+  result = (bool)(arg1)->Apply(arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_Apply__SWIG_12(void * jarg1, void * jarg2, void * jarg3) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  FbxStatus *arg3 = (FbxStatus *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxStatus *)jarg3; 
+  result = (bool)(arg1)->Apply(*arg2,arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_Apply__SWIG_13(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->Apply(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_Reset(void * jarg1) {
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  (arg1)->Reset();
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_GetSourceMatrix(void * jarg1, int jarg2, void * jarg3) {
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxAnimCurveFilterMatrixConverter::EMatrixIndex arg2 ;
+  FbxAMatrix *arg3 = 0 ;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = (FbxAnimCurveFilterMatrixConverter::EMatrixIndex)jarg2; 
+  arg3 = (FbxAMatrix *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAMatrix & type is null", 0);
+    return ;
+  } 
+  ((FbxAnimCurveFilterMatrixConverter const *)arg1)->GetSourceMatrix(arg2,*arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_SetSourceMatrix(void * jarg1, int jarg2, void * jarg3) {
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxAnimCurveFilterMatrixConverter::EMatrixIndex arg2 ;
+  FbxAMatrix *arg3 = 0 ;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = (FbxAnimCurveFilterMatrixConverter::EMatrixIndex)jarg2; 
+  arg3 = (FbxAMatrix *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAMatrix & type is null", 0);
+    return ;
+  } 
+  (arg1)->SetSourceMatrix(arg2,*arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_GetDestMatrix(void * jarg1, int jarg2, void * jarg3) {
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxAnimCurveFilterMatrixConverter::EMatrixIndex arg2 ;
+  FbxAMatrix *arg3 = 0 ;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = (FbxAnimCurveFilterMatrixConverter::EMatrixIndex)jarg2; 
+  arg3 = (FbxAMatrix *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAMatrix & type is null", 0);
+    return ;
+  } 
+  ((FbxAnimCurveFilterMatrixConverter const *)arg1)->GetDestMatrix(arg2,*arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_SetDestMatrix(void * jarg1, int jarg2, void * jarg3) {
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxAnimCurveFilterMatrixConverter::EMatrixIndex arg2 ;
+  FbxAMatrix *arg3 = 0 ;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = (FbxAnimCurveFilterMatrixConverter::EMatrixIndex)jarg2; 
+  arg3 = (FbxAMatrix *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAMatrix & type is null", 0);
+    return ;
+  } 
+  (arg1)->SetDestMatrix(arg2,*arg3);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_GetResamplingPeriod(void * jarg1) {
+  void * jresult ;
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxTime result;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  result = ((FbxAnimCurveFilterMatrixConverter const *)arg1)->GetResamplingPeriod();
+  jresult = new FbxTime((const FbxTime &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_SetResamplingPeriod(void * jarg1, void * jarg2) {
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxTime *arg2 = 0 ;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = (FbxTime *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime & type is null", 0);
+    return ;
+  } 
+  (arg1)->SetResamplingPeriod(*arg2);
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_GetGenerateLastKeyExactlyAtEndTime(void * jarg1) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  result = (bool)((FbxAnimCurveFilterMatrixConverter const *)arg1)->GetGenerateLastKeyExactlyAtEndTime();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_SetGenerateLastKeyExactlyAtEndTime(void * jarg1, unsigned int jarg2) {
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  bool arg2 ;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  (arg1)->SetGenerateLastKeyExactlyAtEndTime(arg2);
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_GetResamplingOnFrameRateMultiple(void * jarg1) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  result = (bool)((FbxAnimCurveFilterMatrixConverter const *)arg1)->GetResamplingOnFrameRateMultiple();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_SetResamplingOnFrameRateMultiple(void * jarg1, unsigned int jarg2) {
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  bool arg2 ;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  (arg1)->SetResamplingOnFrameRateMultiple(arg2);
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_GetApplyUnroll(void * jarg1) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  result = (bool)((FbxAnimCurveFilterMatrixConverter const *)arg1)->GetApplyUnroll();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_SetApplyUnroll(void * jarg1, unsigned int jarg2) {
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  bool arg2 ;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  (arg1)->SetApplyUnroll(arg2);
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_GetApplyConstantKeyReducer(void * jarg1) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  result = (bool)((FbxAnimCurveFilterMatrixConverter const *)arg1)->GetApplyConstantKeyReducer();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_SetApplyConstantKeyReducer(void * jarg1, unsigned int jarg2) {
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  bool arg2 ;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  (arg1)->SetApplyConstantKeyReducer(arg2);
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_GetResampleTranslation(void * jarg1) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  result = (bool)((FbxAnimCurveFilterMatrixConverter const *)arg1)->GetResampleTranslation();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_SetResampleTranslation(void * jarg1, unsigned int jarg2) {
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  bool arg2 ;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  (arg1)->SetResampleTranslation(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_SetSrcRotateOrder(void * jarg1, void * jarg2) {
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxEuler::EOrder arg2 ;
+  FbxEuler::EOrder *argp2 ;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  argp2 = (FbxEuler::EOrder *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxEuler::EOrder", 0);
+    return ;
+  }
+  arg2 = *argp2; 
+  (arg1)->SetSrcRotateOrder(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_SetDestRotateOrder(void * jarg1, void * jarg2) {
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxEuler::EOrder arg2 ;
+  FbxEuler::EOrder *argp2 ;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  argp2 = (FbxEuler::EOrder *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxEuler::EOrder", 0);
+    return ;
+  }
+  arg2 = *argp2; 
+  (arg1)->SetDestRotateOrder(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_SetForceApply(void * jarg1, unsigned int jarg2) {
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  bool arg2 ;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  (arg1)->SetForceApply(arg2);
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_GetForceApply(void * jarg1) {
+  unsigned int jresult ;
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  result = (bool)((FbxAnimCurveFilterMatrixConverter const *)arg1)->GetForceApply();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_SetTranslationLimits(void * jarg1, void * jarg2) {
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxLimits *arg2 = 0 ;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = (FbxLimits *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxLimits & type is null", 0);
+    return ;
+  } 
+  (arg1)->SetTranslationLimits(*arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_SetRotationLimits(void * jarg1, void * jarg2) {
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxLimits *arg2 = 0 ;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = (FbxLimits *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxLimits & type is null", 0);
+    return ;
+  } 
+  (arg1)->SetRotationLimits(*arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_SetScalingLimits(void * jarg1, void * jarg2) {
+  FbxAnimCurveFilterMatrixConverter *arg1 = (FbxAnimCurveFilterMatrixConverter *) 0 ;
+  FbxLimits *arg2 = 0 ;
+  
+  arg1 = (FbxAnimCurveFilterMatrixConverter *)jarg1; 
+  arg2 = (FbxLimits *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxLimits & type is null", 0);
+    return ;
+  } 
+  (arg1)->SetScalingLimits(*arg2);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvalState_GetTime(void * jarg1) {
+  void * jresult ;
+  FbxAnimEvalState *arg1 = (FbxAnimEvalState *) 0 ;
+  FbxTime result;
+  
+  arg1 = (FbxAnimEvalState *)jarg1; 
+  result = ((FbxAnimEvalState const *)arg1)->GetTime();
+  jresult = new FbxTime((const FbxTime &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimEvalState_Reset(void * jarg1) {
+  FbxAnimEvalState *arg1 = (FbxAnimEvalState *) 0 ;
+  
+  arg1 = (FbxAnimEvalState *)jarg1; 
+  (arg1)->Reset();
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimEvalState_Begin(void * jarg1, void * jarg2) {
+  FbxAnimEvalState *arg1 = (FbxAnimEvalState *) 0 ;
+  FbxTime *arg2 = 0 ;
+  
+  arg1 = (FbxAnimEvalState *)jarg1; 
+  arg2 = (FbxTime *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return ;
+  } 
+  (arg1)->Begin((FbxTime const &)*arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimEvalState_Flush__SWIG_0(void * jarg1, void * jarg2) {
+  FbxAnimEvalState *arg1 = (FbxAnimEvalState *) 0 ;
+  FbxNode *arg2 = (FbxNode *) 0 ;
+  
+  arg1 = (FbxAnimEvalState *)jarg1; 
+  arg2 = (FbxNode *)jarg2; 
+  (arg1)->Flush(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimEvalState_Flush__SWIG_1(void * jarg1, void * jarg2) {
+  FbxAnimEvalState *arg1 = (FbxAnimEvalState *) 0 ;
+  FbxProperty *arg2 = 0 ;
+  
+  arg1 = (FbxAnimEvalState *)jarg1; 
+  arg2 = (FbxProperty *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxProperty & type is null", 0);
+    return ;
+  } 
+  (arg1)->Flush(*arg2);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvalState_GetNodeEvalState(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxAnimEvalState *arg1 = (FbxAnimEvalState *) 0 ;
+  FbxNode *arg2 = (FbxNode *) 0 ;
+  FbxNodeEvalState *result = 0 ;
+  
+  arg1 = (FbxAnimEvalState *)jarg1; 
+  arg2 = (FbxNode *)jarg2; 
+  result = (FbxNodeEvalState *)(arg1)->GetNodeEvalState(arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvalState_GetPropertyEvalState(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxAnimEvalState *arg1 = (FbxAnimEvalState *) 0 ;
+  FbxProperty *arg2 = 0 ;
+  FbxPropertyEvalState *result = 0 ;
+  
+  arg1 = (FbxAnimEvalState *)jarg1; 
+  arg2 = (FbxProperty *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxProperty & type is null", 0);
+    return 0;
+  } 
+  result = (FbxPropertyEvalState *)(arg1)->GetPropertyEvalState(*arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvalState_GetPropertyCurveNode(void * jarg1, void * jarg2, void * jarg3) {
+  void * jresult ;
+  FbxAnimEvalState *arg1 = (FbxAnimEvalState *) 0 ;
+  FbxProperty *arg2 = 0 ;
+  FbxAnimLayer *arg3 = (FbxAnimLayer *) 0 ;
+  FbxAnimCurveNode *result = 0 ;
+  
+  arg1 = (FbxAnimEvalState *)jarg1; 
+  arg2 = (FbxProperty *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxProperty & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxAnimLayer *)jarg3; 
+  result = (FbxAnimCurveNode *)(arg1)->GetPropertyCurveNode(*arg2,arg3);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxAnimEvalState() {
+  void * jresult ;
+  FbxAnimEvalState *result = 0 ;
+  
+  result = (FbxAnimEvalState *)new FbxAnimEvalState();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxAnimEvalState(void * jarg1) {
+  FbxAnimEvalState *arg1 = (FbxAnimEvalState *) 0 ;
+  
+  arg1 = (FbxAnimEvalState *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxEvalState() {
+  void * jresult ;
+  FbxEvalState *result = 0 ;
+  
+  result = (FbxEvalState *)new FbxEvalState();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxEvalState_mUpToDate_set(void * jarg1, unsigned int jarg2) {
+  FbxEvalState *arg1 = (FbxEvalState *) 0 ;
+  bool arg2 ;
+  
+  arg1 = (FbxEvalState *)jarg1; 
+  arg2 = jarg2 ? true : false; 
+  if (arg1) (arg1)->mUpToDate = arg2;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxEvalState_mUpToDate_get(void * jarg1) {
+  unsigned int jresult ;
+  FbxEvalState *arg1 = (FbxEvalState *) 0 ;
+  bool result;
+  
+  arg1 = (FbxEvalState *)jarg1; 
+  result = (bool) ((arg1)->mUpToDate);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxEvalState(void * jarg1) {
+  FbxEvalState *arg1 = (FbxEvalState *) 0 ;
+  
+  arg1 = (FbxEvalState *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxNodeEvalState(void * jarg1) {
+  void * jresult ;
+  FbxNode *arg1 = (FbxNode *) 0 ;
+  FbxNodeEvalState *result = 0 ;
+  
+  arg1 = (FbxNode *)jarg1; 
+  result = (FbxNodeEvalState *)new FbxNodeEvalState(arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxNodeEvalState_mLT_set(void * jarg1, void * jarg2) {
+  FbxNodeEvalState *arg1 = (FbxNodeEvalState *) 0 ;
+  FbxVector4 *arg2 = (FbxVector4 *) 0 ;
+  
+  arg1 = (FbxNodeEvalState *)jarg1; 
+  arg2 = (FbxVector4 *)jarg2; 
+  if (arg1) (arg1)->mLT = *arg2;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxNodeEvalState_mLT_get(void * jarg1) {
+  void * jresult ;
+  FbxNodeEvalState *arg1 = (FbxNodeEvalState *) 0 ;
+  FbxVector4 *result = 0 ;
+  
+  arg1 = (FbxNodeEvalState *)jarg1; 
+  result = (FbxVector4 *)& ((arg1)->mLT);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxNodeEvalState_mLR_set(void * jarg1, void * jarg2) {
+  FbxNodeEvalState *arg1 = (FbxNodeEvalState *) 0 ;
+  FbxVector4 *arg2 = (FbxVector4 *) 0 ;
+  
+  arg1 = (FbxNodeEvalState *)jarg1; 
+  arg2 = (FbxVector4 *)jarg2; 
+  if (arg1) (arg1)->mLR = *arg2;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxNodeEvalState_mLR_get(void * jarg1) {
+  void * jresult ;
+  FbxNodeEvalState *arg1 = (FbxNodeEvalState *) 0 ;
+  FbxVector4 *result = 0 ;
+  
+  arg1 = (FbxNodeEvalState *)jarg1; 
+  result = (FbxVector4 *)& ((arg1)->mLR);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxNodeEvalState_mLS_set(void * jarg1, void * jarg2) {
+  FbxNodeEvalState *arg1 = (FbxNodeEvalState *) 0 ;
+  FbxVector4 *arg2 = (FbxVector4 *) 0 ;
+  
+  arg1 = (FbxNodeEvalState *)jarg1; 
+  arg2 = (FbxVector4 *)jarg2; 
+  if (arg1) (arg1)->mLS = *arg2;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxNodeEvalState_mLS_get(void * jarg1) {
+  void * jresult ;
+  FbxNodeEvalState *arg1 = (FbxNodeEvalState *) 0 ;
+  FbxVector4 *result = 0 ;
+  
+  arg1 = (FbxNodeEvalState *)jarg1; 
+  result = (FbxVector4 *)& ((arg1)->mLS);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxNodeEvalState_mLX_set(void * jarg1, void * jarg2) {
+  FbxNodeEvalState *arg1 = (FbxNodeEvalState *) 0 ;
+  FbxAMatrix *arg2 = (FbxAMatrix *) 0 ;
+  
+  arg1 = (FbxNodeEvalState *)jarg1; 
+  arg2 = (FbxAMatrix *)jarg2; 
+  if (arg1) (arg1)->mLX = *arg2;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxNodeEvalState_mLX_get(void * jarg1) {
+  void * jresult ;
+  FbxNodeEvalState *arg1 = (FbxNodeEvalState *) 0 ;
+  FbxAMatrix *result = 0 ;
+  
+  arg1 = (FbxNodeEvalState *)jarg1; 
+  result = (FbxAMatrix *)& ((arg1)->mLX);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxNodeEvalState_mGX_set(void * jarg1, void * jarg2) {
+  FbxNodeEvalState *arg1 = (FbxNodeEvalState *) 0 ;
+  FbxAMatrix *arg2 = (FbxAMatrix *) 0 ;
+  
+  arg1 = (FbxNodeEvalState *)jarg1; 
+  arg2 = (FbxAMatrix *)jarg2; 
+  if (arg1) (arg1)->mGX = *arg2;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxNodeEvalState_mGX_get(void * jarg1) {
+  void * jresult ;
+  FbxNodeEvalState *arg1 = (FbxNodeEvalState *) 0 ;
+  FbxAMatrix *result = 0 ;
+  
+  arg1 = (FbxNodeEvalState *)jarg1; 
+  result = (FbxAMatrix *)& ((arg1)->mGX);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxNodeEvalState_mTransform_set(void * jarg1, void * jarg2) {
+  FbxNodeEvalState *arg1 = (FbxNodeEvalState *) 0 ;
+  FbxTransform *arg2 = (FbxTransform *) 0 ;
+  
+  arg1 = (FbxNodeEvalState *)jarg1; 
+  arg2 = (FbxTransform *)jarg2; 
+  if (arg1) (arg1)->mTransform = arg2;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxNodeEvalState_mTransform_get(void * jarg1) {
+  void * jresult ;
+  FbxNodeEvalState *arg1 = (FbxNodeEvalState *) 0 ;
+  FbxTransform *result = 0 ;
+  
+  arg1 = (FbxNodeEvalState *)jarg1; 
+  result = (FbxTransform *) ((arg1)->mTransform);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxNodeEvalState(void * jarg1) {
+  FbxNodeEvalState *arg1 = (FbxNodeEvalState *) 0 ;
+  
+  arg1 = (FbxNodeEvalState *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxPropertyEvalState(void * jarg1) {
+  void * jresult ;
+  FbxProperty *arg1 = 0 ;
+  FbxPropertyEvalState *result = 0 ;
+  
+  arg1 = (FbxProperty *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxProperty & type is null", 0);
+    return 0;
+  } 
+  result = (FbxPropertyEvalState *)new FbxPropertyEvalState(*arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxPropertyEvalState(void * jarg1) {
+  FbxPropertyEvalState *arg1 = (FbxPropertyEvalState *) 0 ;
+  
+  arg1 = (FbxPropertyEvalState *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxPropertyEvalState_mValue_set(void * jarg1, void * jarg2) {
+  FbxPropertyEvalState *arg1 = (FbxPropertyEvalState *) 0 ;
+  FbxPropertyValue *arg2 = (FbxPropertyValue *) 0 ;
+  
+  arg1 = (FbxPropertyEvalState *)jarg1; 
+  arg2 = (FbxPropertyValue *)jarg2; 
+  if (arg1) (arg1)->mValue = arg2;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxPropertyEvalState_mValue_get(void * jarg1) {
+  void * jresult ;
+  FbxPropertyEvalState *arg1 = (FbxPropertyEvalState *) 0 ;
+  FbxPropertyValue *result = 0 ;
+  
+  arg1 = (FbxPropertyEvalState *)jarg1; 
+  result = (FbxPropertyValue *) ((arg1)->mValue);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_ClassId_set(void * jarg1) {
+  FbxClassId arg1 ;
+  FbxClassId *argp1 ;
+  
+  argp1 = (FbxClassId *)jarg1; 
+  if (!argp1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxClassId", 0);
+    return ;
+  }
+  arg1 = *argp1; 
+  FbxAnimEvaluator::ClassId = arg1;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_ClassId_get() {
+  void * jresult ;
+  FbxClassId result;
+  
+  result = FbxAnimEvaluator::ClassId;
+  jresult = new FbxClassId((const FbxClassId &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_GetClassId(void * jarg1) {
+  void * jresult ;
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxClassId result;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  result = ((FbxAnimEvaluator const *)arg1)->GetClassId();
+  jresult = new FbxClassId((const FbxClassId &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_Create(void * jarg1, char * jarg2) {
+  void * jresult ;
+  FbxManager *arg1 = (FbxManager *) 0 ;
+  char *arg2 = (char *) 0 ;
+  FbxAnimEvaluator *result = 0 ;
+  
+  arg1 = (FbxManager *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (FbxAnimEvaluator *)FbxAnimEvaluator::Create(arg1,(char const *)arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_GetNodeGlobalTransform__SWIG_0(void * jarg1, void * jarg2, void * jarg3, int jarg4, unsigned int jarg5, unsigned int jarg6) {
+  void * jresult ;
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxNode *arg2 = (FbxNode *) 0 ;
+  FbxTime *arg3 = 0 ;
+  FbxNode::EPivotSet arg4 ;
+  bool arg5 ;
+  bool arg6 ;
+  FbxAMatrix *result = 0 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxNode *)jarg2; 
+  arg3 = (FbxTime *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  arg4 = (FbxNode::EPivotSet)jarg4; 
+  arg5 = jarg5 ? true : false; 
+  arg6 = jarg6 ? true : false; 
+  result = (FbxAMatrix *) &(arg1)->GetNodeGlobalTransform(arg2,(FbxTime const &)*arg3,arg4,arg5,arg6);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_GetNodeGlobalTransform__SWIG_1(void * jarg1, void * jarg2, void * jarg3, int jarg4, unsigned int jarg5) {
+  void * jresult ;
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxNode *arg2 = (FbxNode *) 0 ;
+  FbxTime *arg3 = 0 ;
+  FbxNode::EPivotSet arg4 ;
+  bool arg5 ;
+  FbxAMatrix *result = 0 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxNode *)jarg2; 
+  arg3 = (FbxTime *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  arg4 = (FbxNode::EPivotSet)jarg4; 
+  arg5 = jarg5 ? true : false; 
+  result = (FbxAMatrix *) &(arg1)->GetNodeGlobalTransform(arg2,(FbxTime const &)*arg3,arg4,arg5);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_GetNodeGlobalTransform__SWIG_2(void * jarg1, void * jarg2, void * jarg3, int jarg4) {
+  void * jresult ;
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxNode *arg2 = (FbxNode *) 0 ;
+  FbxTime *arg3 = 0 ;
+  FbxNode::EPivotSet arg4 ;
+  FbxAMatrix *result = 0 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxNode *)jarg2; 
+  arg3 = (FbxTime *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  arg4 = (FbxNode::EPivotSet)jarg4; 
+  result = (FbxAMatrix *) &(arg1)->GetNodeGlobalTransform(arg2,(FbxTime const &)*arg3,arg4);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_GetNodeGlobalTransform__SWIG_3(void * jarg1, void * jarg2, void * jarg3) {
+  void * jresult ;
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxNode *arg2 = (FbxNode *) 0 ;
+  FbxTime *arg3 = 0 ;
+  FbxAMatrix *result = 0 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxNode *)jarg2; 
+  arg3 = (FbxTime *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  result = (FbxAMatrix *) &(arg1)->GetNodeGlobalTransform(arg2,(FbxTime const &)*arg3);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_GetNodeGlobalTransform__SWIG_4(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxNode *arg2 = (FbxNode *) 0 ;
+  FbxAMatrix *result = 0 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxNode *)jarg2; 
+  result = (FbxAMatrix *) &(arg1)->GetNodeGlobalTransform(arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalTransform__SWIG_0(void * jarg1, void * jarg2, void * jarg3, int jarg4, unsigned int jarg5, unsigned int jarg6) {
+  void * jresult ;
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxNode *arg2 = (FbxNode *) 0 ;
+  FbxTime *arg3 = 0 ;
+  FbxNode::EPivotSet arg4 ;
+  bool arg5 ;
+  bool arg6 ;
+  FbxAMatrix *result = 0 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxNode *)jarg2; 
+  arg3 = (FbxTime *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  arg4 = (FbxNode::EPivotSet)jarg4; 
+  arg5 = jarg5 ? true : false; 
+  arg6 = jarg6 ? true : false; 
+  result = (FbxAMatrix *) &(arg1)->GetNodeLocalTransform(arg2,(FbxTime const &)*arg3,arg4,arg5,arg6);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalTransform__SWIG_1(void * jarg1, void * jarg2, void * jarg3, int jarg4, unsigned int jarg5) {
+  void * jresult ;
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxNode *arg2 = (FbxNode *) 0 ;
+  FbxTime *arg3 = 0 ;
+  FbxNode::EPivotSet arg4 ;
+  bool arg5 ;
+  FbxAMatrix *result = 0 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxNode *)jarg2; 
+  arg3 = (FbxTime *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  arg4 = (FbxNode::EPivotSet)jarg4; 
+  arg5 = jarg5 ? true : false; 
+  result = (FbxAMatrix *) &(arg1)->GetNodeLocalTransform(arg2,(FbxTime const &)*arg3,arg4,arg5);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalTransform__SWIG_2(void * jarg1, void * jarg2, void * jarg3, int jarg4) {
+  void * jresult ;
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxNode *arg2 = (FbxNode *) 0 ;
+  FbxTime *arg3 = 0 ;
+  FbxNode::EPivotSet arg4 ;
+  FbxAMatrix *result = 0 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxNode *)jarg2; 
+  arg3 = (FbxTime *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  arg4 = (FbxNode::EPivotSet)jarg4; 
+  result = (FbxAMatrix *) &(arg1)->GetNodeLocalTransform(arg2,(FbxTime const &)*arg3,arg4);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalTransform__SWIG_3(void * jarg1, void * jarg2, void * jarg3) {
+  void * jresult ;
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxNode *arg2 = (FbxNode *) 0 ;
+  FbxTime *arg3 = 0 ;
+  FbxAMatrix *result = 0 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxNode *)jarg2; 
+  arg3 = (FbxTime *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  result = (FbxAMatrix *) &(arg1)->GetNodeLocalTransform(arg2,(FbxTime const &)*arg3);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalTransform__SWIG_4(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxNode *arg2 = (FbxNode *) 0 ;
+  FbxAMatrix *result = 0 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxNode *)jarg2; 
+  result = (FbxAMatrix *) &(arg1)->GetNodeLocalTransform(arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalTranslation__SWIG_0(void * jarg1, void * jarg2, void * jarg3, int jarg4, unsigned int jarg5, unsigned int jarg6) {
+  void * jresult ;
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxNode *arg2 = (FbxNode *) 0 ;
+  FbxTime *arg3 = 0 ;
+  FbxNode::EPivotSet arg4 ;
+  bool arg5 ;
+  bool arg6 ;
+  FbxVector4 *result = 0 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxNode *)jarg2; 
+  arg3 = (FbxTime *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  arg4 = (FbxNode::EPivotSet)jarg4; 
+  arg5 = jarg5 ? true : false; 
+  arg6 = jarg6 ? true : false; 
+  result = (FbxVector4 *) &(arg1)->GetNodeLocalTranslation(arg2,(FbxTime const &)*arg3,arg4,arg5,arg6);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalTranslation__SWIG_1(void * jarg1, void * jarg2, void * jarg3, int jarg4, unsigned int jarg5) {
+  void * jresult ;
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxNode *arg2 = (FbxNode *) 0 ;
+  FbxTime *arg3 = 0 ;
+  FbxNode::EPivotSet arg4 ;
+  bool arg5 ;
+  FbxVector4 *result = 0 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxNode *)jarg2; 
+  arg3 = (FbxTime *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  arg4 = (FbxNode::EPivotSet)jarg4; 
+  arg5 = jarg5 ? true : false; 
+  result = (FbxVector4 *) &(arg1)->GetNodeLocalTranslation(arg2,(FbxTime const &)*arg3,arg4,arg5);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalTranslation__SWIG_2(void * jarg1, void * jarg2, void * jarg3, int jarg4) {
+  void * jresult ;
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxNode *arg2 = (FbxNode *) 0 ;
+  FbxTime *arg3 = 0 ;
+  FbxNode::EPivotSet arg4 ;
+  FbxVector4 *result = 0 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxNode *)jarg2; 
+  arg3 = (FbxTime *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  arg4 = (FbxNode::EPivotSet)jarg4; 
+  result = (FbxVector4 *) &(arg1)->GetNodeLocalTranslation(arg2,(FbxTime const &)*arg3,arg4);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalTranslation__SWIG_3(void * jarg1, void * jarg2, void * jarg3) {
+  void * jresult ;
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxNode *arg2 = (FbxNode *) 0 ;
+  FbxTime *arg3 = 0 ;
+  FbxVector4 *result = 0 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxNode *)jarg2; 
+  arg3 = (FbxTime *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  result = (FbxVector4 *) &(arg1)->GetNodeLocalTranslation(arg2,(FbxTime const &)*arg3);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalTranslation__SWIG_4(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxNode *arg2 = (FbxNode *) 0 ;
+  FbxVector4 *result = 0 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxNode *)jarg2; 
+  result = (FbxVector4 *) &(arg1)->GetNodeLocalTranslation(arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalRotation__SWIG_0(void * jarg1, void * jarg2, void * jarg3, int jarg4, unsigned int jarg5, unsigned int jarg6) {
+  void * jresult ;
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxNode *arg2 = (FbxNode *) 0 ;
+  FbxTime *arg3 = 0 ;
+  FbxNode::EPivotSet arg4 ;
+  bool arg5 ;
+  bool arg6 ;
+  FbxVector4 *result = 0 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxNode *)jarg2; 
+  arg3 = (FbxTime *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  arg4 = (FbxNode::EPivotSet)jarg4; 
+  arg5 = jarg5 ? true : false; 
+  arg6 = jarg6 ? true : false; 
+  result = (FbxVector4 *) &(arg1)->GetNodeLocalRotation(arg2,(FbxTime const &)*arg3,arg4,arg5,arg6);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalRotation__SWIG_1(void * jarg1, void * jarg2, void * jarg3, int jarg4, unsigned int jarg5) {
+  void * jresult ;
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxNode *arg2 = (FbxNode *) 0 ;
+  FbxTime *arg3 = 0 ;
+  FbxNode::EPivotSet arg4 ;
+  bool arg5 ;
+  FbxVector4 *result = 0 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxNode *)jarg2; 
+  arg3 = (FbxTime *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  arg4 = (FbxNode::EPivotSet)jarg4; 
+  arg5 = jarg5 ? true : false; 
+  result = (FbxVector4 *) &(arg1)->GetNodeLocalRotation(arg2,(FbxTime const &)*arg3,arg4,arg5);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalRotation__SWIG_2(void * jarg1, void * jarg2, void * jarg3, int jarg4) {
+  void * jresult ;
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxNode *arg2 = (FbxNode *) 0 ;
+  FbxTime *arg3 = 0 ;
+  FbxNode::EPivotSet arg4 ;
+  FbxVector4 *result = 0 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxNode *)jarg2; 
+  arg3 = (FbxTime *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  arg4 = (FbxNode::EPivotSet)jarg4; 
+  result = (FbxVector4 *) &(arg1)->GetNodeLocalRotation(arg2,(FbxTime const &)*arg3,arg4);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalRotation__SWIG_3(void * jarg1, void * jarg2, void * jarg3) {
+  void * jresult ;
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxNode *arg2 = (FbxNode *) 0 ;
+  FbxTime *arg3 = 0 ;
+  FbxVector4 *result = 0 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxNode *)jarg2; 
+  arg3 = (FbxTime *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  result = (FbxVector4 *) &(arg1)->GetNodeLocalRotation(arg2,(FbxTime const &)*arg3);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalRotation__SWIG_4(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxNode *arg2 = (FbxNode *) 0 ;
+  FbxVector4 *result = 0 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxNode *)jarg2; 
+  result = (FbxVector4 *) &(arg1)->GetNodeLocalRotation(arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalScaling__SWIG_0(void * jarg1, void * jarg2, void * jarg3, int jarg4, unsigned int jarg5, unsigned int jarg6) {
+  void * jresult ;
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxNode *arg2 = (FbxNode *) 0 ;
+  FbxTime *arg3 = 0 ;
+  FbxNode::EPivotSet arg4 ;
+  bool arg5 ;
+  bool arg6 ;
+  FbxVector4 *result = 0 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxNode *)jarg2; 
+  arg3 = (FbxTime *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  arg4 = (FbxNode::EPivotSet)jarg4; 
+  arg5 = jarg5 ? true : false; 
+  arg6 = jarg6 ? true : false; 
+  result = (FbxVector4 *) &(arg1)->GetNodeLocalScaling(arg2,(FbxTime const &)*arg3,arg4,arg5,arg6);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalScaling__SWIG_1(void * jarg1, void * jarg2, void * jarg3, int jarg4, unsigned int jarg5) {
+  void * jresult ;
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxNode *arg2 = (FbxNode *) 0 ;
+  FbxTime *arg3 = 0 ;
+  FbxNode::EPivotSet arg4 ;
+  bool arg5 ;
+  FbxVector4 *result = 0 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxNode *)jarg2; 
+  arg3 = (FbxTime *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  arg4 = (FbxNode::EPivotSet)jarg4; 
+  arg5 = jarg5 ? true : false; 
+  result = (FbxVector4 *) &(arg1)->GetNodeLocalScaling(arg2,(FbxTime const &)*arg3,arg4,arg5);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalScaling__SWIG_2(void * jarg1, void * jarg2, void * jarg3, int jarg4) {
+  void * jresult ;
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxNode *arg2 = (FbxNode *) 0 ;
+  FbxTime *arg3 = 0 ;
+  FbxNode::EPivotSet arg4 ;
+  FbxVector4 *result = 0 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxNode *)jarg2; 
+  arg3 = (FbxTime *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  arg4 = (FbxNode::EPivotSet)jarg4; 
+  result = (FbxVector4 *) &(arg1)->GetNodeLocalScaling(arg2,(FbxTime const &)*arg3,arg4);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalScaling__SWIG_3(void * jarg1, void * jarg2, void * jarg3) {
+  void * jresult ;
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxNode *arg2 = (FbxNode *) 0 ;
+  FbxTime *arg3 = 0 ;
+  FbxVector4 *result = 0 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxNode *)jarg2; 
+  arg3 = (FbxTime *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  result = (FbxVector4 *) &(arg1)->GetNodeLocalScaling(arg2,(FbxTime const &)*arg3);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalScaling__SWIG_4(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxNode *arg2 = (FbxNode *) 0 ;
+  FbxVector4 *result = 0 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxNode *)jarg2; 
+  result = (FbxVector4 *) &(arg1)->GetNodeLocalScaling(arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_GetPropertyValue__SWIG_2(void * jarg1, void * jarg2, void * jarg3, unsigned int jarg4) {
+  void * jresult ;
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxProperty *arg2 = 0 ;
+  FbxTime *arg3 = 0 ;
+  bool arg4 ;
+  FbxPropertyValue *result = 0 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxProperty *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxProperty & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxTime *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  arg4 = jarg4 ? true : false; 
+  result = (FbxPropertyValue *) &(arg1)->GetPropertyValue(*arg2,(FbxTime const &)*arg3,arg4);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_GetPropertyValue__SWIG_3(void * jarg1, void * jarg2, void * jarg3) {
+  void * jresult ;
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxProperty *arg2 = 0 ;
+  FbxTime *arg3 = 0 ;
+  FbxPropertyValue *result = 0 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxProperty *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxProperty & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxTime *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  result = (FbxPropertyValue *) &(arg1)->GetPropertyValue(*arg2,(FbxTime const &)*arg3);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_GetPropertyCurveNode(void * jarg1, void * jarg2, void * jarg3) {
+  void * jresult ;
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxProperty *arg2 = 0 ;
+  FbxAnimLayer *arg3 = (FbxAnimLayer *) 0 ;
+  FbxAnimCurveNode *result = 0 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxProperty *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxProperty & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxAnimLayer *)jarg3; 
+  result = (FbxAnimCurveNode *)(arg1)->GetPropertyCurveNode(*arg2,arg3);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_ValidateTime(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxTime *arg2 = 0 ;
+  FbxTime result;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxTime *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return 0;
+  } 
+  result = (arg1)->ValidateTime((FbxTime const &)*arg2);
+  jresult = new FbxTime((const FbxTime &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_Reset(void * jarg1) {
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  (arg1)->Reset();
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_Flush__SWIG_0(void * jarg1, void * jarg2) {
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxNode *arg2 = (FbxNode *) 0 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxNode *)jarg2; 
+  (arg1)->Flush(arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_Flush__SWIG_1(void * jarg1, void * jarg2) {
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxProperty *arg2 = 0 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxProperty *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxProperty & type is null", 0);
+    return ;
+  } 
+  (arg1)->Flush(*arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_ComputeLocalTRSFromGlobal__SWIG_0(void * jarg1, void * jarg2, void * jarg3, void * jarg4, void * jarg5, void * jarg6, void * jarg7, int jarg8, unsigned int jarg9, unsigned int jarg10) {
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxVector4 *arg2 = 0 ;
+  FbxVector4 *arg3 = 0 ;
+  FbxVector4 *arg4 = 0 ;
+  FbxNode *arg5 = (FbxNode *) 0 ;
+  FbxAMatrix *arg6 = 0 ;
+  FbxTime *arg7 = 0 ;
+  FbxNode::EPivotSet arg8 ;
+  bool arg9 ;
+  bool arg10 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxVector4 *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxVector4 & type is null", 0);
+    return ;
+  } 
+  arg3 = (FbxVector4 *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxVector4 & type is null", 0);
+    return ;
+  } 
+  arg4 = (FbxVector4 *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxVector4 & type is null", 0);
+    return ;
+  } 
+  arg5 = (FbxNode *)jarg5; 
+  arg6 = (FbxAMatrix *)jarg6;
+  if (!arg6) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAMatrix & type is null", 0);
+    return ;
+  } 
+  arg7 = (FbxTime *)jarg7;
+  if (!arg7) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return ;
+  } 
+  arg8 = (FbxNode::EPivotSet)jarg8; 
+  arg9 = jarg9 ? true : false; 
+  arg10 = jarg10 ? true : false; 
+  (arg1)->ComputeLocalTRSFromGlobal(*arg2,*arg3,*arg4,arg5,*arg6,(FbxTime const &)*arg7,arg8,arg9,arg10);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_ComputeLocalTRSFromGlobal__SWIG_1(void * jarg1, void * jarg2, void * jarg3, void * jarg4, void * jarg5, void * jarg6, void * jarg7, int jarg8, unsigned int jarg9) {
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxVector4 *arg2 = 0 ;
+  FbxVector4 *arg3 = 0 ;
+  FbxVector4 *arg4 = 0 ;
+  FbxNode *arg5 = (FbxNode *) 0 ;
+  FbxAMatrix *arg6 = 0 ;
+  FbxTime *arg7 = 0 ;
+  FbxNode::EPivotSet arg8 ;
+  bool arg9 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxVector4 *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxVector4 & type is null", 0);
+    return ;
+  } 
+  arg3 = (FbxVector4 *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxVector4 & type is null", 0);
+    return ;
+  } 
+  arg4 = (FbxVector4 *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxVector4 & type is null", 0);
+    return ;
+  } 
+  arg5 = (FbxNode *)jarg5; 
+  arg6 = (FbxAMatrix *)jarg6;
+  if (!arg6) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAMatrix & type is null", 0);
+    return ;
+  } 
+  arg7 = (FbxTime *)jarg7;
+  if (!arg7) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return ;
+  } 
+  arg8 = (FbxNode::EPivotSet)jarg8; 
+  arg9 = jarg9 ? true : false; 
+  (arg1)->ComputeLocalTRSFromGlobal(*arg2,*arg3,*arg4,arg5,*arg6,(FbxTime const &)*arg7,arg8,arg9);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_ComputeLocalTRSFromGlobal__SWIG_2(void * jarg1, void * jarg2, void * jarg3, void * jarg4, void * jarg5, void * jarg6, void * jarg7, int jarg8) {
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxVector4 *arg2 = 0 ;
+  FbxVector4 *arg3 = 0 ;
+  FbxVector4 *arg4 = 0 ;
+  FbxNode *arg5 = (FbxNode *) 0 ;
+  FbxAMatrix *arg6 = 0 ;
+  FbxTime *arg7 = 0 ;
+  FbxNode::EPivotSet arg8 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxVector4 *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxVector4 & type is null", 0);
+    return ;
+  } 
+  arg3 = (FbxVector4 *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxVector4 & type is null", 0);
+    return ;
+  } 
+  arg4 = (FbxVector4 *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxVector4 & type is null", 0);
+    return ;
+  } 
+  arg5 = (FbxNode *)jarg5; 
+  arg6 = (FbxAMatrix *)jarg6;
+  if (!arg6) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAMatrix & type is null", 0);
+    return ;
+  } 
+  arg7 = (FbxTime *)jarg7;
+  if (!arg7) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return ;
+  } 
+  arg8 = (FbxNode::EPivotSet)jarg8; 
+  (arg1)->ComputeLocalTRSFromGlobal(*arg2,*arg3,*arg4,arg5,*arg6,(FbxTime const &)*arg7,arg8);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_ComputeLocalTRSFromGlobal__SWIG_3(void * jarg1, void * jarg2, void * jarg3, void * jarg4, void * jarg5, void * jarg6, void * jarg7) {
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxVector4 *arg2 = 0 ;
+  FbxVector4 *arg3 = 0 ;
+  FbxVector4 *arg4 = 0 ;
+  FbxNode *arg5 = (FbxNode *) 0 ;
+  FbxAMatrix *arg6 = 0 ;
+  FbxTime *arg7 = 0 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxVector4 *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxVector4 & type is null", 0);
+    return ;
+  } 
+  arg3 = (FbxVector4 *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxVector4 & type is null", 0);
+    return ;
+  } 
+  arg4 = (FbxVector4 *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxVector4 & type is null", 0);
+    return ;
+  } 
+  arg5 = (FbxNode *)jarg5; 
+  arg6 = (FbxAMatrix *)jarg6;
+  if (!arg6) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAMatrix & type is null", 0);
+    return ;
+  } 
+  arg7 = (FbxTime *)jarg7;
+  if (!arg7) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime const & type is null", 0);
+    return ;
+  } 
+  (arg1)->ComputeLocalTRSFromGlobal(*arg2,*arg3,*arg4,arg5,*arg6,(FbxTime const &)*arg7);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_ComputeLocalTRSFromGlobal__SWIG_4(void * jarg1, void * jarg2, void * jarg3, void * jarg4, void * jarg5, void * jarg6) {
+  FbxAnimEvaluator *arg1 = (FbxAnimEvaluator *) 0 ;
+  FbxVector4 *arg2 = 0 ;
+  FbxVector4 *arg3 = 0 ;
+  FbxVector4 *arg4 = 0 ;
+  FbxNode *arg5 = (FbxNode *) 0 ;
+  FbxAMatrix *arg6 = 0 ;
+  
+  arg1 = (FbxAnimEvaluator *)jarg1; 
+  arg2 = (FbxVector4 *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxVector4 & type is null", 0);
+    return ;
+  } 
+  arg3 = (FbxVector4 *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxVector4 & type is null", 0);
+    return ;
+  } 
+  arg4 = (FbxVector4 *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxVector4 & type is null", 0);
+    return ;
+  } 
+  arg5 = (FbxNode *)jarg5; 
+  arg6 = (FbxAMatrix *)jarg6;
+  if (!arg6) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAMatrix & type is null", 0);
+    return ;
+  } 
+  (arg1)->ComputeLocalTRSFromGlobal(*arg2,*arg3,*arg4,arg5,*arg6);
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_IsAnimated(void * jarg1) {
+  unsigned int jresult ;
+  FbxObject *arg1 = (FbxObject *) 0 ;
+  bool result;
+  
+  arg1 = (FbxObject *)jarg1; 
+  result = (bool)FbxAnimUtilities::IsAnimated(arg1);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_IsChannelAnimated__SWIG_0(void * jarg1, char * jarg2, char * jarg3) {
+  unsigned int jresult ;
+  FbxObject *arg1 = (FbxObject *) 0 ;
+  char *arg2 = (char *) 0 ;
+  char *arg3 = (char *) 0 ;
+  bool result;
+  
+  arg1 = (FbxObject *)jarg1; 
+  arg2 = (char *)jarg2; 
+  arg3 = (char *)jarg3; 
+  result = (bool)FbxAnimUtilities::IsChannelAnimated(arg1,(char const *)arg2,(char const *)arg3);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_IsChannelAnimated__SWIG_1(void * jarg1, char * jarg2) {
+  unsigned int jresult ;
+  FbxObject *arg1 = (FbxObject *) 0 ;
+  char *arg2 = (char *) 0 ;
+  bool result;
+  
+  arg1 = (FbxObject *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (bool)FbxAnimUtilities::IsChannelAnimated(arg1,(char const *)arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_FbxAnimSplitDef_mName_set(void * jarg1, void * jarg2) {
+  FbxAnimUtilities::FbxAnimSplitDef *arg1 = (FbxAnimUtilities::FbxAnimSplitDef *) 0 ;
+  FbxString *arg2 = (FbxString *) 0 ;
+  
+  arg1 = (FbxAnimUtilities::FbxAnimSplitDef *)jarg1; 
+  arg2 = (FbxString *)jarg2; 
+  if (arg1) (arg1)->mName = *arg2;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_FbxAnimSplitDef_mName_get(void * jarg1) {
+  void * jresult ;
+  FbxAnimUtilities::FbxAnimSplitDef *arg1 = (FbxAnimUtilities::FbxAnimSplitDef *) 0 ;
+  FbxString *result = 0 ;
+  
+  arg1 = (FbxAnimUtilities::FbxAnimSplitDef *)jarg1; 
+  result = (FbxString *)& ((arg1)->mName);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_FbxAnimSplitDef_mStart_set(void * jarg1, void * jarg2) {
+  FbxAnimUtilities::FbxAnimSplitDef *arg1 = (FbxAnimUtilities::FbxAnimSplitDef *) 0 ;
+  FbxTime *arg2 = (FbxTime *) 0 ;
+  
+  arg1 = (FbxAnimUtilities::FbxAnimSplitDef *)jarg1; 
+  arg2 = (FbxTime *)jarg2; 
+  if (arg1) (arg1)->mStart = *arg2;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_FbxAnimSplitDef_mStart_get(void * jarg1) {
+  void * jresult ;
+  FbxAnimUtilities::FbxAnimSplitDef *arg1 = (FbxAnimUtilities::FbxAnimSplitDef *) 0 ;
+  FbxTime *result = 0 ;
+  
+  arg1 = (FbxAnimUtilities::FbxAnimSplitDef *)jarg1; 
+  result = (FbxTime *)& ((arg1)->mStart);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_FbxAnimSplitDef_mEnd_set(void * jarg1, void * jarg2) {
+  FbxAnimUtilities::FbxAnimSplitDef *arg1 = (FbxAnimUtilities::FbxAnimSplitDef *) 0 ;
+  FbxTime *arg2 = (FbxTime *) 0 ;
+  
+  arg1 = (FbxAnimUtilities::FbxAnimSplitDef *)jarg1; 
+  arg2 = (FbxTime *)jarg2; 
+  if (arg1) (arg1)->mEnd = *arg2;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_FbxAnimSplitDef_mEnd_get(void * jarg1) {
+  void * jresult ;
+  FbxAnimUtilities::FbxAnimSplitDef *arg1 = (FbxAnimUtilities::FbxAnimSplitDef *) 0 ;
+  FbxTime *result = 0 ;
+  
+  arg1 = (FbxAnimUtilities::FbxAnimSplitDef *)jarg1; 
+  result = (FbxTime *)& ((arg1)->mEnd);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxAnimUtilities_FbxAnimSplitDef__SWIG_0() {
+  void * jresult ;
+  FbxAnimUtilities::FbxAnimSplitDef *result = 0 ;
+  
+  result = (FbxAnimUtilities::FbxAnimSplitDef *)new FbxAnimUtilities::FbxAnimSplitDef();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxAnimUtilities_FbxAnimSplitDef__SWIG_1(void * jarg1, void * jarg2, void * jarg3) {
+  void * jresult ;
+  FbxString *arg1 = 0 ;
+  FbxTime *arg2 = 0 ;
+  FbxTime *arg3 = 0 ;
+  FbxAnimUtilities::FbxAnimSplitDef *result = 0 ;
+  
+  arg1 = (FbxString *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxString const & type is null", 0);
+    return 0;
+  } 
+  arg2 = (FbxTime *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxTime *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime & type is null", 0);
+    return 0;
+  } 
+  result = (FbxAnimUtilities::FbxAnimSplitDef *)new FbxAnimUtilities::FbxAnimSplitDef((FbxString const &)*arg1,*arg2,*arg3);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_FbxAnimSplitDef_assign(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxAnimUtilities::FbxAnimSplitDef *arg1 = (FbxAnimUtilities::FbxAnimSplitDef *) 0 ;
+  FbxAnimUtilities::FbxAnimSplitDef *arg2 = 0 ;
+  FbxAnimUtilities::FbxAnimSplitDef *result = 0 ;
+  
+  arg1 = (FbxAnimUtilities::FbxAnimSplitDef *)jarg1; 
+  arg2 = (FbxAnimUtilities::FbxAnimSplitDef *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimUtilities::FbxAnimSplitDef const & type is null", 0);
+    return 0;
+  } 
+  result = (FbxAnimUtilities::FbxAnimSplitDef *) &(arg1)->operator =((FbxAnimUtilities::FbxAnimSplitDef const &)*arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxAnimUtilities_FbxAnimSplitDef(void * jarg1) {
+  FbxAnimUtilities::FbxAnimSplitDef *arg1 = (FbxAnimUtilities::FbxAnimSplitDef *) 0 ;
+  
+  arg1 = (FbxAnimUtilities::FbxAnimSplitDef *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxAnimUtilities_CurveNodeIntfce(void * jarg1) {
+  void * jresult ;
+  void *arg1 = (void *) 0 ;
+  FbxAnimUtilities::CurveNodeIntfce *result = 0 ;
+  
+  arg1 = (void *)jarg1; 
+  result = (FbxAnimUtilities::CurveNodeIntfce *)new FbxAnimUtilities::CurveNodeIntfce(arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxAnimUtilities_CurveNodeIntfce(void * jarg1) {
+  FbxAnimUtilities::CurveNodeIntfce *arg1 = (FbxAnimUtilities::CurveNodeIntfce *) 0 ;
+  
+  arg1 = (FbxAnimUtilities::CurveNodeIntfce *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_CurveNodeIntfce_GetHandle__SWIG_0(void * jarg1) {
+  void * jresult ;
+  FbxAnimUtilities::CurveNodeIntfce *arg1 = (FbxAnimUtilities::CurveNodeIntfce *) 0 ;
+  FbxHandle result;
+  
+  arg1 = (FbxAnimUtilities::CurveNodeIntfce *)jarg1; 
+  result = (arg1)->GetHandle();
+  jresult = new FbxHandle((const FbxHandle &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT char * SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_CurveNodeIntfce_GetTimeWarpName(void * jarg1) {
+  char * jresult ;
+  FbxAnimUtilities::CurveNodeIntfce *arg1 = (FbxAnimUtilities::CurveNodeIntfce *) 0 ;
+  char *result = 0 ;
+  
+  arg1 = (FbxAnimUtilities::CurveNodeIntfce *)jarg1; 
+  result = (char *)((FbxAnimUtilities::CurveNodeIntfce const *)arg1)->GetTimeWarpName();
+  jresult = SWIG_csharp_string_callback((const char *)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_CurveNodeIntfce_GetTimeWarp(void * jarg1) {
+  void * jresult ;
+  FbxAnimUtilities::CurveNodeIntfce *arg1 = (FbxAnimUtilities::CurveNodeIntfce *) 0 ;
+  SwigValueWrapper< FbxAnimUtilities::CurveNodeIntfce > result;
+  
+  arg1 = (FbxAnimUtilities::CurveNodeIntfce *)jarg1; 
+  result = (arg1)->GetTimeWarp();
+  jresult = new FbxAnimUtilities::CurveNodeIntfce((const FbxAnimUtilities::CurveNodeIntfce &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_CurveNodeIntfce_GetLayer(void * jarg1, int jarg2) {
+  void * jresult ;
+  FbxAnimUtilities::CurveNodeIntfce *arg1 = (FbxAnimUtilities::CurveNodeIntfce *) 0 ;
+  int arg2 ;
+  SwigValueWrapper< FbxAnimUtilities::CurveNodeIntfce > result;
+  
+  arg1 = (FbxAnimUtilities::CurveNodeIntfce *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (arg1)->GetLayer(arg2);
+  jresult = new FbxAnimUtilities::CurveNodeIntfce((const FbxAnimUtilities::CurveNodeIntfce &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_CurveNodeIntfce_GetCount(void * jarg1) {
+  int jresult ;
+  FbxAnimUtilities::CurveNodeIntfce *arg1 = (FbxAnimUtilities::CurveNodeIntfce *) 0 ;
+  int result;
+  
+  arg1 = (FbxAnimUtilities::CurveNodeIntfce *)jarg1; 
+  result = (int)(arg1)->GetCount();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_CurveNodeIntfce_GetHandle__SWIG_1(void * jarg1, unsigned int jarg2) {
+  void * jresult ;
+  FbxAnimUtilities::CurveNodeIntfce *arg1 = (FbxAnimUtilities::CurveNodeIntfce *) 0 ;
+  unsigned int arg2 ;
+  void *result = 0 ;
+  
+  arg1 = (FbxAnimUtilities::CurveNodeIntfce *)jarg1; 
+  arg2 = (unsigned int)jarg2; 
+  result = (void *)(arg1)->GetHandle(arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_CurveNodeIntfce_GetCurveHandle__SWIG_0(void * jarg1, int jarg2) {
+  void * jresult ;
+  FbxAnimUtilities::CurveNodeIntfce *arg1 = (FbxAnimUtilities::CurveNodeIntfce *) 0 ;
+  int arg2 ;
+  void *result = 0 ;
+  
+  arg1 = (FbxAnimUtilities::CurveNodeIntfce *)jarg1; 
+  arg2 = (int)jarg2; 
+  result = (void *)(arg1)->GetCurveHandle(arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_CurveNodeIntfce_GetCurveHandle__SWIG_1(void * jarg1) {
+  void * jresult ;
+  FbxAnimUtilities::CurveNodeIntfce *arg1 = (FbxAnimUtilities::CurveNodeIntfce *) 0 ;
+  void *result = 0 ;
+  
+  arg1 = (FbxAnimUtilities::CurveNodeIntfce *)jarg1; 
+  result = (void *)(arg1)->GetCurveHandle();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_CurveNodeIntfce_SetCurveHandle__SWIG_0(void * jarg1, void * jarg2, int jarg3) {
+  FbxAnimUtilities::CurveNodeIntfce *arg1 = (FbxAnimUtilities::CurveNodeIntfce *) 0 ;
+  void *arg2 = (void *) 0 ;
+  int arg3 ;
+  
+  arg1 = (FbxAnimUtilities::CurveNodeIntfce *)jarg1; 
+  arg2 = (void *)jarg2; 
+  arg3 = (int)jarg3; 
+  (arg1)->SetCurveHandle(arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_CurveNodeIntfce_SetCurveHandle__SWIG_1(void * jarg1, void * jarg2) {
+  FbxAnimUtilities::CurveNodeIntfce *arg1 = (FbxAnimUtilities::CurveNodeIntfce *) 0 ;
+  void *arg2 = (void *) 0 ;
+  
+  arg1 = (FbxAnimUtilities::CurveNodeIntfce *)jarg1; 
+  arg2 = (void *)jarg2; 
+  (arg1)->SetCurveHandle(arg2);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_CurveNodeIntfce_FindRecursive(void * jarg1, char * jarg2) {
+  void * jresult ;
+  FbxAnimUtilities::CurveNodeIntfce *arg1 = (FbxAnimUtilities::CurveNodeIntfce *) 0 ;
+  char *arg2 = (char *) 0 ;
+  SwigValueWrapper< FbxAnimUtilities::CurveNodeIntfce > result;
+  
+  arg1 = (FbxAnimUtilities::CurveNodeIntfce *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = (arg1)->FindRecursive((char const *)arg2);
+  jresult = new FbxAnimUtilities::CurveNodeIntfce((const FbxAnimUtilities::CurveNodeIntfce &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_CurveNodeIntfce_IsValid(void * jarg1) {
+  unsigned int jresult ;
+  FbxAnimUtilities::CurveNodeIntfce *arg1 = (FbxAnimUtilities::CurveNodeIntfce *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimUtilities::CurveNodeIntfce *)jarg1; 
+  result = (bool)(arg1)->IsValid();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_CurveNodeIntfce_assign(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxAnimUtilities::CurveNodeIntfce *arg1 = (FbxAnimUtilities::CurveNodeIntfce *) 0 ;
+  FbxAnimUtilities::CurveNodeIntfce *arg2 = 0 ;
+  FbxAnimUtilities::CurveNodeIntfce *result = 0 ;
+  
+  arg1 = (FbxAnimUtilities::CurveNodeIntfce *)jarg1; 
+  arg2 = (FbxAnimUtilities::CurveNodeIntfce *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimUtilities::CurveNodeIntfce & type is null", 0);
+    return 0;
+  } 
+  result = (FbxAnimUtilities::CurveNodeIntfce *) &(arg1)->operator =(*arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_CurveNodeIntfce_eq(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimUtilities::CurveNodeIntfce *arg1 = (FbxAnimUtilities::CurveNodeIntfce *) 0 ;
+  FbxAnimUtilities::CurveNodeIntfce *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimUtilities::CurveNodeIntfce *)jarg1; 
+  arg2 = (FbxAnimUtilities::CurveNodeIntfce *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimUtilities::CurveNodeIntfce & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->operator ==(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxAnimUtilities_CurveIntfce__SWIG_0(void * jarg1) {
+  void * jresult ;
+  void *arg1 = (void *) 0 ;
+  FbxAnimUtilities::CurveIntfce *result = 0 ;
+  
+  arg1 = (void *)jarg1; 
+  result = (FbxAnimUtilities::CurveIntfce *)new FbxAnimUtilities::CurveIntfce(arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxAnimUtilities_CurveIntfce__SWIG_1(void * jarg1) {
+  void * jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  FbxAnimUtilities::CurveIntfce *result = 0 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  result = (FbxAnimUtilities::CurveIntfce *)new FbxAnimUtilities::CurveIntfce(arg1);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxAnimUtilities_CurveIntfce(void * jarg1) {
+  FbxAnimUtilities::CurveIntfce *arg1 = (FbxAnimUtilities::CurveIntfce *) 0 ;
+  
+  arg1 = (FbxAnimUtilities::CurveIntfce *)jarg1; 
+  delete arg1;
+}
+
+
+SWIGEXPORT float SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_CurveIntfce_GetValue(void * jarg1) {
+  float jresult ;
+  FbxAnimUtilities::CurveIntfce *arg1 = (FbxAnimUtilities::CurveIntfce *) 0 ;
+  float result;
+  
+  arg1 = (FbxAnimUtilities::CurveIntfce *)jarg1; 
+  result = (float)(arg1)->GetValue();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_CurveIntfce_SetValue(void * jarg1, float jarg2) {
+  FbxAnimUtilities::CurveIntfce *arg1 = (FbxAnimUtilities::CurveIntfce *) 0 ;
+  float arg2 ;
+  
+  arg1 = (FbxAnimUtilities::CurveIntfce *)jarg1; 
+  arg2 = (float)jarg2; 
+  (arg1)->SetValue(arg2);
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_CurveIntfce_KeyGetCount(void * jarg1) {
+  int jresult ;
+  FbxAnimUtilities::CurveIntfce *arg1 = (FbxAnimUtilities::CurveIntfce *) 0 ;
+  int result;
+  
+  arg1 = (FbxAnimUtilities::CurveIntfce *)jarg1; 
+  result = (int)(arg1)->KeyGetCount();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_CurveIntfce_GetCurveHandle(void * jarg1) {
+  void * jresult ;
+  FbxAnimUtilities::CurveIntfce *arg1 = (FbxAnimUtilities::CurveIntfce *) 0 ;
+  void *result = 0 ;
+  
+  arg1 = (FbxAnimUtilities::CurveIntfce *)jarg1; 
+  result = (void *)(arg1)->GetCurveHandle();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_CurveIntfce_SetCurveHandle(void * jarg1, void * jarg2) {
+  FbxAnimUtilities::CurveIntfce *arg1 = (FbxAnimUtilities::CurveIntfce *) 0 ;
+  void *arg2 = (void *) 0 ;
+  
+  arg1 = (FbxAnimUtilities::CurveIntfce *)jarg1; 
+  arg2 = (void *)jarg2; 
+  (arg1)->SetCurveHandle(arg2);
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_CurveIntfce_GetPreExtrapolation(void * jarg1) {
+  int jresult ;
+  FbxAnimUtilities::CurveIntfce *arg1 = (FbxAnimUtilities::CurveIntfce *) 0 ;
+  int result;
+  
+  arg1 = (FbxAnimUtilities::CurveIntfce *)jarg1; 
+  result = (int)(arg1)->GetPreExtrapolation();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_CurveIntfce_GetPreExtrapolationCount(void * jarg1) {
+  int jresult ;
+  FbxAnimUtilities::CurveIntfce *arg1 = (FbxAnimUtilities::CurveIntfce *) 0 ;
+  int result;
+  
+  arg1 = (FbxAnimUtilities::CurveIntfce *)jarg1; 
+  result = (int)(arg1)->GetPreExtrapolationCount();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_CurveIntfce_GetPostExtrapolation(void * jarg1) {
+  int jresult ;
+  FbxAnimUtilities::CurveIntfce *arg1 = (FbxAnimUtilities::CurveIntfce *) 0 ;
+  int result;
+  
+  arg1 = (FbxAnimUtilities::CurveIntfce *)jarg1; 
+  result = (int)(arg1)->GetPostExtrapolation();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_CurveIntfce_GetPostExtrapolationCount(void * jarg1) {
+  int jresult ;
+  FbxAnimUtilities::CurveIntfce *arg1 = (FbxAnimUtilities::CurveIntfce *) 0 ;
+  int result;
+  
+  arg1 = (FbxAnimUtilities::CurveIntfce *)jarg1; 
+  result = (int)(arg1)->GetPostExtrapolationCount();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_CurveIntfce_IsValid(void * jarg1) {
+  unsigned int jresult ;
+  FbxAnimUtilities::CurveIntfce *arg1 = (FbxAnimUtilities::CurveIntfce *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimUtilities::CurveIntfce *)jarg1; 
+  result = (bool)(arg1)->IsValid();
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_CurveIntfce_assign(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxAnimUtilities::CurveIntfce *arg1 = (FbxAnimUtilities::CurveIntfce *) 0 ;
+  FbxAnimUtilities::CurveIntfce *arg2 = 0 ;
+  FbxAnimUtilities::CurveIntfce *result = 0 ;
+  
+  arg1 = (FbxAnimUtilities::CurveIntfce *)jarg1; 
+  arg2 = (FbxAnimUtilities::CurveIntfce *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimUtilities::CurveIntfce & type is null", 0);
+    return 0;
+  } 
+  result = (FbxAnimUtilities::CurveIntfce *) &(arg1)->operator =(*arg2);
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_CurveIntfce_eq(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimUtilities::CurveIntfce *arg1 = (FbxAnimUtilities::CurveIntfce *) 0 ;
+  FbxAnimUtilities::CurveIntfce *arg2 = 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimUtilities::CurveIntfce *)jarg1; 
+  arg2 = (FbxAnimUtilities::CurveIntfce *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimUtilities::CurveIntfce & type is null", 0);
+    return 0;
+  } 
+  result = (bool)(arg1)->operator ==(*arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT int SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_SplitAnimationIntoMultipleStacks(void * jarg1, void * jarg2, void * jarg3, void * jarg4) {
+  int jresult ;
+  FbxScene *arg1 = (FbxScene *) 0 ;
+  FbxArray< FbxAnimUtilities::FbxAnimSplitDef * > *arg2 = 0 ;
+  FbxAnimStack *arg3 = (FbxAnimStack *) 0 ;
+  FbxArray< FbxAnimStack * > *arg4 = 0 ;
+  int result;
+  
+  arg1 = (FbxScene *)jarg1; 
+  arg2 = (FbxArray< FbxAnimUtilities::FbxAnimSplitDef * > *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxArray< FbxAnimUtilities::FbxAnimSplitDef * > const & type is null", 0);
+    return 0;
+  } 
+  arg3 = (FbxAnimStack *)jarg3; 
+  arg4 = (FbxArray< FbxAnimStack * > *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxArray< FbxAnimStack * > & type is null", 0);
+    return 0;
+  } 
+  result = (int)FbxAnimUtilities::SplitAnimationIntoMultipleStacks(arg1,(FbxArray< FbxAnimUtilities::FbxAnimSplitDef * > const &)*arg2,(FbxAnimStack const *)arg3,*arg4);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_ShareAnimCurves(void * jarg1, void * jarg2, void * jarg3) {
+  FbxProperty *arg1 = 0 ;
+  FbxProperty *arg2 = 0 ;
+  FbxScene *arg3 = (FbxScene *) 0 ;
+  
+  arg1 = (FbxProperty *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxProperty & type is null", 0);
+    return ;
+  } 
+  arg2 = (FbxProperty *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxProperty & type is null", 0);
+    return ;
+  } 
+  arg3 = (FbxScene *)jarg3; 
+  FbxAnimUtilities::ShareAnimCurves(*arg1,*arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_SetTimeWarpSet(void * jarg1) {
+  FbxMultiMap *arg1 = (FbxMultiMap *) 0 ;
+  
+  arg1 = (FbxMultiMap *)jarg1; 
+  FbxAnimUtilities::SetTimeWarpSet(arg1);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_CreateCurveNode__SWIG_0(char * jarg1) {
+  void * jresult ;
+  char *arg1 = (char *) 0 ;
+  SwigValueWrapper< FbxAnimUtilities::CurveNodeIntfce > result;
+  
+  arg1 = (char *)jarg1; 
+  result = FbxAnimUtilities::CreateCurveNode((char const *)arg1);
+  jresult = new FbxAnimUtilities::CurveNodeIntfce((const FbxAnimUtilities::CurveNodeIntfce &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_CreateCurveNode__SWIG_1(void * jarg1) {
+  void * jresult ;
+  FbxIO *arg1 = (FbxIO *) 0 ;
+  SwigValueWrapper< FbxAnimUtilities::CurveNodeIntfce > result;
+  
+  arg1 = (FbxIO *)jarg1; 
+  result = FbxAnimUtilities::CreateCurveNode(arg1);
+  jresult = new FbxAnimUtilities::CurveNodeIntfce((const FbxAnimUtilities::CurveNodeIntfce &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_CreateCurveNode__SWIG_2(void * jarg1, void * jarg2, unsigned int jarg3) {
+  void * jresult ;
+  FbxIO *arg1 = (FbxIO *) 0 ;
+  FbxAnimUtilities::CurveNodeIntfce *arg2 = 0 ;
+  bool arg3 ;
+  SwigValueWrapper< FbxAnimUtilities::CurveNodeIntfce > result;
+  
+  arg1 = (FbxIO *)jarg1; 
+  arg2 = (FbxAnimUtilities::CurveNodeIntfce *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimUtilities::CurveNodeIntfce & type is null", 0);
+    return 0;
+  } 
+  arg3 = jarg3 ? true : false; 
+  result = FbxAnimUtilities::CreateCurveNode(arg1,*arg2,arg3);
+  jresult = new FbxAnimUtilities::CurveNodeIntfce((const FbxAnimUtilities::CurveNodeIntfce &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_CreateCurveNode__SWIG_3(void * jarg1, void * jarg2) {
+  void * jresult ;
+  FbxIO *arg1 = (FbxIO *) 0 ;
+  FbxAnimUtilities::CurveNodeIntfce *arg2 = 0 ;
+  SwigValueWrapper< FbxAnimUtilities::CurveNodeIntfce > result;
+  
+  arg1 = (FbxIO *)jarg1; 
+  arg2 = (FbxAnimUtilities::CurveNodeIntfce *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimUtilities::CurveNodeIntfce & type is null", 0);
+    return 0;
+  } 
+  result = FbxAnimUtilities::CreateCurveNode(arg1,*arg2);
+  jresult = new FbxAnimUtilities::CurveNodeIntfce((const FbxAnimUtilities::CurveNodeIntfce &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_CreateTimeWarpNode(void * jarg1, char * jarg2) {
+  void * jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  char *arg2 = (char *) 0 ;
+  SwigValueWrapper< FbxAnimUtilities::CurveNodeIntfce > result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (char *)jarg2; 
+  result = FbxAnimUtilities::CreateTimeWarpNode(arg1,(char const *)arg2);
+  jresult = new FbxAnimUtilities::CurveNodeIntfce((const FbxAnimUtilities::CurveNodeIntfce &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_GrabCurveNode(void * jarg1) {
+  void * jresult ;
+  FbxAnimCurveNode *arg1 = (FbxAnimCurveNode *) 0 ;
+  SwigValueWrapper< FbxAnimUtilities::CurveNodeIntfce > result;
+  
+  arg1 = (FbxAnimCurveNode *)jarg1; 
+  result = FbxAnimUtilities::GrabCurveNode(arg1);
+  jresult = new FbxAnimUtilities::CurveNodeIntfce((const FbxAnimUtilities::CurveNodeIntfce &)result); 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_RestrieveCurveNode(void * jarg1, void * jarg2) {
+  FbxAnimUtilities::CurveNodeIntfce *arg1 = 0 ;
+  FbxIO *arg2 = (FbxIO *) 0 ;
+  
+  arg1 = (FbxAnimUtilities::CurveNodeIntfce *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimUtilities::CurveNodeIntfce & type is null", 0);
+    return ;
+  } 
+  arg2 = (FbxIO *)jarg2; 
+  FbxAnimUtilities::RestrieveCurveNode(*arg1,arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_StoreCurveNode(void * jarg1, void * jarg2) {
+  FbxAnimUtilities::CurveNodeIntfce *arg1 = 0 ;
+  FbxIO *arg2 = (FbxIO *) 0 ;
+  
+  arg1 = (FbxAnimUtilities::CurveNodeIntfce *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimUtilities::CurveNodeIntfce & type is null", 0);
+    return ;
+  } 
+  arg2 = (FbxIO *)jarg2; 
+  FbxAnimUtilities::StoreCurveNode(*arg1,arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_ReleaseCurveNode(void * jarg1) {
+  FbxAnimCurveNode *arg1 = (FbxAnimCurveNode *) 0 ;
+  
+  arg1 = (FbxAnimCurveNode *)jarg1; 
+  FbxAnimUtilities::ReleaseCurveNode(arg1);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_DestroyCurveNode(void * jarg1) {
+  FbxAnimUtilities::CurveNodeIntfce *arg1 = 0 ;
+  
+  arg1 = (FbxAnimUtilities::CurveNodeIntfce *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimUtilities::CurveNodeIntfce & type is null", 0);
+    return ;
+  } 
+  FbxAnimUtilities::DestroyCurveNode(*arg1);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_DestroyCurve(void * jarg1) {
+  FbxAnimUtilities::CurveIntfce *arg1 = 0 ;
+  
+  arg1 = (FbxAnimUtilities::CurveIntfce *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimUtilities::CurveIntfce & type is null", 0);
+    return ;
+  } 
+  FbxAnimUtilities::DestroyCurve(*arg1);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_ConnectTimeWarp(void * jarg1, void * jarg2, void * jarg3) {
+  FbxAnimCurveNode *arg1 = (FbxAnimCurveNode *) 0 ;
+  FbxAnimUtilities::CurveNodeIntfce *arg2 = 0 ;
+  FbxMultiMap *arg3 = 0 ;
+  
+  arg1 = (FbxAnimCurveNode *)jarg1; 
+  arg2 = (FbxAnimUtilities::CurveNodeIntfce *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimUtilities::CurveNodeIntfce & type is null", 0);
+    return ;
+  } 
+  arg3 = (FbxMultiMap *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxMultiMap & type is null", 0);
+    return ;
+  } 
+  FbxAnimUtilities::ConnectTimeWarp(arg1,*arg2,*arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_MergeLayerAndTimeWarp(void * jarg1, void * jarg2) {
+  FbxObject *arg1 = (FbxObject *) 0 ;
+  FbxAnimLayer *arg2 = (FbxAnimLayer *) 0 ;
+  
+  arg1 = (FbxObject *)jarg1; 
+  arg2 = (FbxAnimLayer *)jarg2; 
+  FbxAnimUtilities::MergeLayerAndTimeWarp(arg1,arg2);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_CopyFrom(void * jarg1, void * jarg2) {
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  FbxAnimUtilities::CurveIntfce *arg2 = 0 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (FbxAnimUtilities::CurveIntfce *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimUtilities::CurveIntfce & type is null", 0);
+    return ;
+  } 
+  FbxAnimUtilities::CopyFrom(arg1,*arg2);
+}
+
+
+SWIGEXPORT unsigned int SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_CompareCurves(void * jarg1, void * jarg2) {
+  unsigned int jresult ;
+  FbxAnimCurve *arg1 = (FbxAnimCurve *) 0 ;
+  FbxAnimCurve *arg2 = (FbxAnimCurve *) 0 ;
+  bool result;
+  
+  arg1 = (FbxAnimCurve *)jarg1; 
+  arg2 = (FbxAnimCurve *)jarg2; 
+  result = (bool)FbxAnimUtilities::CompareCurves(arg1,arg2);
+  jresult = result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_Resample__SWIG_0(void * jarg1, void * jarg2, void * jarg3, void * jarg4, void * jarg5, int jarg6, int jarg7, unsigned int jarg8) {
+  FbxAnimCurve *arg1 = 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  FbxTime *arg3 = 0 ;
+  FbxTime *arg4 = 0 ;
+  FbxTime *arg5 = 0 ;
+  FbxAnimCurveDef::EInterpolationType arg6 ;
+  FbxAnimCurveDef::ETangentMode arg7 ;
+  bool arg8 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return ;
+  } 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return ;
+  } 
+  arg3 = (FbxTime *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime & type is null", 0);
+    return ;
+  } 
+  arg4 = (FbxTime *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime & type is null", 0);
+    return ;
+  } 
+  arg5 = (FbxTime *)jarg5;
+  if (!arg5) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime & type is null", 0);
+    return ;
+  } 
+  arg6 = (FbxAnimCurveDef::EInterpolationType)jarg6; 
+  arg7 = (FbxAnimCurveDef::ETangentMode)jarg7; 
+  arg8 = jarg8 ? true : false; 
+  FbxAnimUtilities::Resample(*arg1,*arg2,*arg3,*arg4,*arg5,arg6,arg7,arg8);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_Resample__SWIG_1(void * jarg1, void * jarg2, void * jarg3, void * jarg4, void * jarg5, int jarg6, int jarg7) {
+  FbxAnimCurve *arg1 = 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  FbxTime *arg3 = 0 ;
+  FbxTime *arg4 = 0 ;
+  FbxTime *arg5 = 0 ;
+  FbxAnimCurveDef::EInterpolationType arg6 ;
+  FbxAnimCurveDef::ETangentMode arg7 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return ;
+  } 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return ;
+  } 
+  arg3 = (FbxTime *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime & type is null", 0);
+    return ;
+  } 
+  arg4 = (FbxTime *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime & type is null", 0);
+    return ;
+  } 
+  arg5 = (FbxTime *)jarg5;
+  if (!arg5) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime & type is null", 0);
+    return ;
+  } 
+  arg6 = (FbxAnimCurveDef::EInterpolationType)jarg6; 
+  arg7 = (FbxAnimCurveDef::ETangentMode)jarg7; 
+  FbxAnimUtilities::Resample(*arg1,*arg2,*arg3,*arg4,*arg5,arg6,arg7);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_Resample__SWIG_2(void * jarg1, void * jarg2, void * jarg3, void * jarg4, void * jarg5, unsigned int jarg6) {
+  FbxAnimCurve *arg1 = 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  FbxTime *arg3 = 0 ;
+  FbxTime *arg4 = 0 ;
+  FbxTime *arg5 = 0 ;
+  bool arg6 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return ;
+  } 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return ;
+  } 
+  arg3 = (FbxTime *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime & type is null", 0);
+    return ;
+  } 
+  arg4 = (FbxTime *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime & type is null", 0);
+    return ;
+  } 
+  arg5 = (FbxTime *)jarg5;
+  if (!arg5) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime & type is null", 0);
+    return ;
+  } 
+  arg6 = jarg6 ? true : false; 
+  FbxAnimUtilities::Resample(*arg1,*arg2,*arg3,*arg4,*arg5,arg6);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_Resample__SWIG_3(void * jarg1, void * jarg2, void * jarg3, void * jarg4, void * jarg5) {
+  FbxAnimCurve *arg1 = 0 ;
+  FbxAnimCurve *arg2 = 0 ;
+  FbxTime *arg3 = 0 ;
+  FbxTime *arg4 = 0 ;
+  FbxTime *arg5 = 0 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return ;
+  } 
+  arg2 = (FbxAnimCurve *)jarg2;
+  if (!arg2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return ;
+  } 
+  arg3 = (FbxTime *)jarg3;
+  if (!arg3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime & type is null", 0);
+    return ;
+  } 
+  arg4 = (FbxTime *)jarg4;
+  if (!arg4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime & type is null", 0);
+    return ;
+  } 
+  arg5 = (FbxTime *)jarg5;
+  if (!arg5) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxTime & type is null", 0);
+    return ;
+  } 
+  FbxAnimUtilities::Resample(*arg1,*arg2,*arg3,*arg4,*arg5);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_Resample__SWIG_4(void * jarg1, void * jarg2, void * jarg3, void * jarg4, unsigned int jarg5) {
+  FbxAnimCurve *arg1 = 0 ;
+  FbxTime arg2 ;
+  FbxTime arg3 ;
+  FbxTime arg4 ;
+  bool arg5 ;
+  FbxTime *argp2 ;
+  FbxTime *argp3 ;
+  FbxTime *argp4 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return ;
+  } 
+  argp2 = (FbxTime *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg2 = *argp2; 
+  argp3 = (FbxTime *)jarg3; 
+  if (!argp3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg3 = *argp3; 
+  argp4 = (FbxTime *)jarg4; 
+  if (!argp4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg4 = *argp4; 
+  arg5 = jarg5 ? true : false; 
+  FbxAnimUtilities::Resample(*arg1,arg2,arg3,arg4,arg5);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_Resample__SWIG_5(void * jarg1, void * jarg2, void * jarg3, void * jarg4) {
+  FbxAnimCurve *arg1 = 0 ;
+  FbxTime arg2 ;
+  FbxTime arg3 ;
+  FbxTime arg4 ;
+  FbxTime *argp2 ;
+  FbxTime *argp3 ;
+  FbxTime *argp4 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return ;
+  } 
+  argp2 = (FbxTime *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg2 = *argp2; 
+  argp3 = (FbxTime *)jarg3; 
+  if (!argp3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg3 = *argp3; 
+  argp4 = (FbxTime *)jarg4; 
+  if (!argp4) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg4 = *argp4; 
+  FbxAnimUtilities::Resample(*arg1,arg2,arg3,arg4);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_Resample__SWIG_6(void * jarg1, void * jarg2, void * jarg3) {
+  FbxAnimCurve *arg1 = 0 ;
+  FbxTime arg2 ;
+  FbxTime arg3 ;
+  FbxTime *argp2 ;
+  FbxTime *argp3 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return ;
+  } 
+  argp2 = (FbxTime *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg2 = *argp2; 
+  argp3 = (FbxTime *)jarg3; 
+  if (!argp3) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg3 = *argp3; 
+  FbxAnimUtilities::Resample(*arg1,arg2,arg3);
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_FbxAnimUtilities_Resample__SWIG_7(void * jarg1, void * jarg2) {
+  FbxAnimCurve *arg1 = 0 ;
+  FbxTime arg2 ;
+  FbxTime *argp2 ;
+  
+  arg1 = (FbxAnimCurve *)jarg1;
+  if (!arg1) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "FbxAnimCurve & type is null", 0);
+    return ;
+  } 
+  argp2 = (FbxTime *)jarg2; 
+  if (!argp2) {
+    SWIG_CSharpSetPendingExceptionArgument(SWIG_CSharpArgumentNullException, "Attempt to dereference null FbxTime", 0);
+    return ;
+  }
+  arg2 = *argp2; 
+  FbxAnimUtilities::Resample(*arg1,arg2);
+}
+
+
+SWIGEXPORT void * SWIGSTDCALL CSharp_Fbx_new_FbxAnimUtilities() {
+  void * jresult ;
+  FbxAnimUtilities *result = 0 ;
+  
+  result = (FbxAnimUtilities *)new FbxAnimUtilities();
+  jresult = (void *)result; 
+  return jresult;
+}
+
+
+SWIGEXPORT void SWIGSTDCALL CSharp_Fbx_delete_FbxAnimUtilities(void * jarg1) {
+  FbxAnimUtilities *arg1 = (FbxAnimUtilities *) 0 ;
+  
+  arg1 = (FbxAnimUtilities *)jarg1; 
+  delete arg1;
+}
+
+
 SWIGEXPORT FbxVectorTemplate2< FbxDouble > * SWIGSTDCALL CSharp_Fbx_FbxVector2_SWIGUpcast(FbxVector2 *jarg1) {
     return (FbxVectorTemplate2< FbxDouble > *)jarg1;
 }
@@ -20123,6 +38540,22 @@ SWIGEXPORT FbxEvent< FbxObjectPropertyChanged > * SWIGSTDCALL CSharp_Fbx_FbxObje
 
 SWIGEXPORT FbxObject * SWIGSTDCALL CSharp_Fbx_FbxIOSettings_SWIGUpcast(FbxIOSettings *jarg1) {
     return (FbxObject *)jarg1;
+}
+
+SWIGEXPORT FbxProperty * SWIGSTDCALL CSharp_Fbx_FbxPropertyString_SWIGUpcast(FbxPropertyT< FbxString > *jarg1) {
+    return (FbxProperty *)jarg1;
+}
+
+SWIGEXPORT FbxProperty * SWIGSTDCALL CSharp_Fbx_FbxPropertyDouble3_SWIGUpcast(FbxPropertyT< FbxDouble3 > *jarg1) {
+    return (FbxProperty *)jarg1;
+}
+
+SWIGEXPORT FbxProperty * SWIGSTDCALL CSharp_Fbx_FbxPropertyDouble_SWIGUpcast(FbxPropertyT< FbxDouble > *jarg1) {
+    return (FbxProperty *)jarg1;
+}
+
+SWIGEXPORT FbxProperty * SWIGSTDCALL CSharp_Fbx_FbxPropertyBool_SWIGUpcast(FbxPropertyT< FbxBool > *jarg1) {
+    return (FbxProperty *)jarg1;
 }
 
 SWIGEXPORT FbxObject * SWIGSTDCALL CSharp_Fbx_FbxDocumentInfo_SWIGUpcast(FbxDocumentInfo *jarg1) {
@@ -20158,6 +38591,102 @@ SWIGEXPORT FbxCollection * SWIGSTDCALL CSharp_Fbx_FbxAnimStack_SWIGUpcast(FbxAni
 }
 
 SWIGEXPORT FbxObject * SWIGSTDCALL CSharp_Fbx_FbxNode_SWIGUpcast(FbxNode *jarg1) {
+    return (FbxObject *)jarg1;
+}
+
+SWIGEXPORT FbxObject * SWIGSTDCALL CSharp_Fbx_FbxNodeAttribute_SWIGUpcast(FbxNodeAttribute *jarg1) {
+    return (FbxObject *)jarg1;
+}
+
+SWIGEXPORT FbxNodeAttribute * SWIGSTDCALL CSharp_Fbx_FbxSkeleton_SWIGUpcast(FbxSkeleton *jarg1) {
+    return (FbxNodeAttribute *)jarg1;
+}
+
+SWIGEXPORT FbxObject * SWIGSTDCALL CSharp_Fbx_FbxDeformer_SWIGUpcast(FbxDeformer *jarg1) {
+    return (FbxObject *)jarg1;
+}
+
+SWIGEXPORT FbxDeformer * SWIGSTDCALL CSharp_Fbx_FbxSkin_SWIGUpcast(FbxSkin *jarg1) {
+    return (FbxDeformer *)jarg1;
+}
+
+SWIGEXPORT FbxObject * SWIGSTDCALL CSharp_Fbx_FbxIOBase_SWIGUpcast(FbxIOBase *jarg1) {
+    return (FbxObject *)jarg1;
+}
+
+SWIGEXPORT FbxIOBase * SWIGSTDCALL CSharp_Fbx_FbxExporter_SWIGUpcast(FbxExporter *jarg1) {
+    return (FbxIOBase *)jarg1;
+}
+
+SWIGEXPORT FbxObject * SWIGSTDCALL CSharp_Fbx_FbxGlobalSettings_SWIGUpcast(FbxGlobalSettings *jarg1) {
+    return (FbxObject *)jarg1;
+}
+
+SWIGEXPORT FbxDocument * SWIGSTDCALL CSharp_Fbx_FbxLibrary_SWIGUpcast(FbxLibrary *jarg1) {
+    return (FbxDocument *)jarg1;
+}
+
+SWIGEXPORT FbxAnimCurveKeyBase * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveKey_SWIGUpcast(FbxAnimCurveKey *jarg1) {
+    return (FbxAnimCurveKeyBase *)jarg1;
+}
+
+SWIGEXPORT FbxAnimCurveBase * SWIGSTDCALL CSharp_Fbx_FbxAnimCurve_SWIGUpcast(FbxAnimCurve *jarg1) {
+    return (FbxAnimCurveBase *)jarg1;
+}
+
+SWIGEXPORT FbxAnimCurveFilter * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_SWIGUpcast(FbxAnimCurveFilterConstantKeyReducer *jarg1) {
+    return (FbxAnimCurveFilter *)jarg1;
+}
+
+SWIGEXPORT FbxAnimCurveFilter * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScaleCompensate_SWIGUpcast(FbxAnimCurveFilterScaleCompensate *jarg1) {
+    return (FbxAnimCurveFilter *)jarg1;
+}
+
+SWIGEXPORT FbxAnimCurveFilter * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_SWIGUpcast(FbxAnimCurveFilterGimbleKiller *jarg1) {
+    return (FbxAnimCurveFilter *)jarg1;
+}
+
+SWIGEXPORT FbxAnimCurveFilter * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeyReducer_SWIGUpcast(FbxAnimCurveFilterKeyReducer *jarg1) {
+    return (FbxAnimCurveFilter *)jarg1;
+}
+
+SWIGEXPORT FbxAnimCurveFilter * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterKeySync_SWIGUpcast(FbxAnimCurveFilterKeySync *jarg1) {
+    return (FbxAnimCurveFilter *)jarg1;
+}
+
+SWIGEXPORT FbxAnimCurveFilter * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterResample_SWIGUpcast(FbxAnimCurveFilterResample *jarg1) {
+    return (FbxAnimCurveFilter *)jarg1;
+}
+
+SWIGEXPORT FbxAnimCurveFilter * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScale_SWIGUpcast(FbxAnimCurveFilterScale *jarg1) {
+    return (FbxAnimCurveFilter *)jarg1;
+}
+
+SWIGEXPORT FbxAnimCurveFilter * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterScaleByCurve_SWIGUpcast(FbxAnimCurveFilterScaleByCurve *jarg1) {
+    return (FbxAnimCurveFilter *)jarg1;
+}
+
+SWIGEXPORT FbxAnimCurveFilter * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterTSS_SWIGUpcast(FbxAnimCurveFilterTSS *jarg1) {
+    return (FbxAnimCurveFilter *)jarg1;
+}
+
+SWIGEXPORT FbxAnimCurveFilter * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterUnroll_SWIGUpcast(FbxAnimCurveFilterUnroll *jarg1) {
+    return (FbxAnimCurveFilter *)jarg1;
+}
+
+SWIGEXPORT FbxAnimCurveFilter * SWIGSTDCALL CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_SWIGUpcast(FbxAnimCurveFilterMatrixConverter *jarg1) {
+    return (FbxAnimCurveFilter *)jarg1;
+}
+
+SWIGEXPORT FbxEvalState * SWIGSTDCALL CSharp_Fbx_FbxNodeEvalState_SWIGUpcast(FbxNodeEvalState *jarg1) {
+    return (FbxEvalState *)jarg1;
+}
+
+SWIGEXPORT FbxEvalState * SWIGSTDCALL CSharp_Fbx_FbxPropertyEvalState_SWIGUpcast(FbxPropertyEvalState *jarg1) {
+    return (FbxEvalState *)jarg1;
+}
+
+SWIGEXPORT FbxObject * SWIGSTDCALL CSharp_Fbx_FbxAnimEvaluator_SWIGUpcast(FbxAnimEvaluator *jarg1) {
     return (FbxObject *)jarg1;
 }
 

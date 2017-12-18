@@ -173,15 +173,15 @@ public class FbxNode : FbxObject {
     return ret;
   }
 
-  public SWIGTYPE_p_FbxNodeAttribute SetNodeAttribute(SWIGTYPE_p_FbxNodeAttribute pNodeAttribute) {
-    global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_SetNodeAttribute(swigCPtr, SWIGTYPE_p_FbxNodeAttribute.getCPtr(pNodeAttribute));
-    SWIGTYPE_p_FbxNodeAttribute ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxNodeAttribute(cPtr, false);
+  public FbxNodeAttribute SetNodeAttribute(FbxNodeAttribute pNodeAttribute) {
+    global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_SetNodeAttribute(swigCPtr, FbxNodeAttribute.getCPtr(pNodeAttribute));
+    FbxNodeAttribute ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxNodeAttribute(cPtr, false);
     return ret;
   }
 
-  public SWIGTYPE_p_FbxNodeAttribute GetNodeAttribute() {
+  public FbxNodeAttribute GetNodeAttribute() {
     global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_GetNodeAttribute__SWIG_0(swigCPtr);
-    SWIGTYPE_p_FbxNodeAttribute ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxNodeAttribute(cPtr, false);
+    FbxNodeAttribute ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxNodeAttribute(cPtr, false);
     return ret;
   }
 
@@ -205,41 +205,41 @@ public class FbxNode : FbxObject {
     return ret;
   }
 
-  public SWIGTYPE_p_FbxNodeAttribute GetNodeAttributeByIndex(int pIndex) {
+  public FbxNodeAttribute GetNodeAttributeByIndex(int pIndex) {
     global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_GetNodeAttributeByIndex__SWIG_0(swigCPtr, pIndex);
-    SWIGTYPE_p_FbxNodeAttribute ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxNodeAttribute(cPtr, false);
+    FbxNodeAttribute ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxNodeAttribute(cPtr, false);
     return ret;
   }
 
-  public int GetNodeAttributeIndex(SWIGTYPE_p_FbxNodeAttribute pNodeAttribute, SWIGTYPE_p_FbxStatus pStatus) {
-    int ret = fbx_wrapperPINVOKE.FbxNode_GetNodeAttributeIndex__SWIG_0(swigCPtr, SWIGTYPE_p_FbxNodeAttribute.getCPtr(pNodeAttribute), SWIGTYPE_p_FbxStatus.getCPtr(pStatus));
+  public int GetNodeAttributeIndex(FbxNodeAttribute pNodeAttribute, SWIGTYPE_p_FbxStatus pStatus) {
+    int ret = fbx_wrapperPINVOKE.FbxNode_GetNodeAttributeIndex__SWIG_0(swigCPtr, FbxNodeAttribute.getCPtr(pNodeAttribute), SWIGTYPE_p_FbxStatus.getCPtr(pStatus));
     return ret;
   }
 
-  public int GetNodeAttributeIndex(SWIGTYPE_p_FbxNodeAttribute pNodeAttribute) {
-    int ret = fbx_wrapperPINVOKE.FbxNode_GetNodeAttributeIndex__SWIG_1(swigCPtr, SWIGTYPE_p_FbxNodeAttribute.getCPtr(pNodeAttribute));
+  public int GetNodeAttributeIndex(FbxNodeAttribute pNodeAttribute) {
+    int ret = fbx_wrapperPINVOKE.FbxNode_GetNodeAttributeIndex__SWIG_1(swigCPtr, FbxNodeAttribute.getCPtr(pNodeAttribute));
     return ret;
   }
 
-  public bool AddNodeAttribute(SWIGTYPE_p_FbxNodeAttribute pNodeAttribute, SWIGTYPE_p_FbxStatus pStatus) {
-    bool ret = fbx_wrapperPINVOKE.FbxNode_AddNodeAttribute__SWIG_0(swigCPtr, SWIGTYPE_p_FbxNodeAttribute.getCPtr(pNodeAttribute), SWIGTYPE_p_FbxStatus.getCPtr(pStatus));
+  public bool AddNodeAttribute(FbxNodeAttribute pNodeAttribute, SWIGTYPE_p_FbxStatus pStatus) {
+    bool ret = fbx_wrapperPINVOKE.FbxNode_AddNodeAttribute__SWIG_0(swigCPtr, FbxNodeAttribute.getCPtr(pNodeAttribute), SWIGTYPE_p_FbxStatus.getCPtr(pStatus));
     return ret;
   }
 
-  public bool AddNodeAttribute(SWIGTYPE_p_FbxNodeAttribute pNodeAttribute) {
-    bool ret = fbx_wrapperPINVOKE.FbxNode_AddNodeAttribute__SWIG_1(swigCPtr, SWIGTYPE_p_FbxNodeAttribute.getCPtr(pNodeAttribute));
+  public bool AddNodeAttribute(FbxNodeAttribute pNodeAttribute) {
+    bool ret = fbx_wrapperPINVOKE.FbxNode_AddNodeAttribute__SWIG_1(swigCPtr, FbxNodeAttribute.getCPtr(pNodeAttribute));
     return ret;
   }
 
-  public SWIGTYPE_p_FbxNodeAttribute RemoveNodeAttribute(SWIGTYPE_p_FbxNodeAttribute pNodeAttribute) {
-    global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_RemoveNodeAttribute(swigCPtr, SWIGTYPE_p_FbxNodeAttribute.getCPtr(pNodeAttribute));
-    SWIGTYPE_p_FbxNodeAttribute ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxNodeAttribute(cPtr, false);
+  public FbxNodeAttribute RemoveNodeAttribute(FbxNodeAttribute pNodeAttribute) {
+    global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_RemoveNodeAttribute(swigCPtr, FbxNodeAttribute.getCPtr(pNodeAttribute));
+    FbxNodeAttribute ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxNodeAttribute(cPtr, false);
     return ret;
   }
 
-  public SWIGTYPE_p_FbxNodeAttribute RemoveNodeAttributeByIndex(int pIndex) {
+  public FbxNodeAttribute RemoveNodeAttributeByIndex(int pIndex) {
     global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_RemoveNodeAttributeByIndex(swigCPtr, pIndex);
-    SWIGTYPE_p_FbxNodeAttribute ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxNodeAttribute(cPtr, false);
+    FbxNodeAttribute ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxNodeAttribute(cPtr, false);
     return ret;
   }
 
@@ -267,9 +267,9 @@ public class FbxNode : FbxObject {
     return ret;
   }
 
-  public SWIGTYPE_p_FbxSkeleton GetSkeleton() {
+  public FbxSkeleton GetSkeleton() {
     global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_GetSkeleton(swigCPtr);
-    SWIGTYPE_p_FbxSkeleton ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxSkeleton(cPtr, false);
+    FbxSkeleton ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxSkeleton(cPtr, false);
     return ret;
   }
 
@@ -605,32 +605,32 @@ public class FbxNode : FbxObject {
     fbx_wrapperPINVOKE.FbxNode_SetRotationPivotAsCenterRecursive__SWIG_1(swigCPtr);
   }
 
-  public SWIGTYPE_p_FbxAnimEvaluator GetAnimationEvaluator() {
+  public FbxAnimEvaluator GetAnimationEvaluator() {
     global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_GetAnimationEvaluator(swigCPtr);
-    SWIGTYPE_p_FbxAnimEvaluator ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxAnimEvaluator(cPtr, false);
+    FbxAnimEvaluator ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxAnimEvaluator(cPtr, false);
     return ret;
   }
 
-  public SWIGTYPE_p_FbxAMatrix EvaluateGlobalTransform(SWIGTYPE_p_FbxTime pTime, FbxNode.EPivotSet pPivotSet, bool pApplyTarget, bool pForceEval) {
-    SWIGTYPE_p_FbxAMatrix ret = new SWIGTYPE_p_FbxAMatrix(fbx_wrapperPINVOKE.FbxNode_EvaluateGlobalTransform__SWIG_0(swigCPtr, SWIGTYPE_p_FbxTime.getCPtr(pTime), (int)pPivotSet, pApplyTarget, pForceEval), false);
+  public SWIGTYPE_p_FbxAMatrix EvaluateGlobalTransform(FbxTime pTime, FbxNode.EPivotSet pPivotSet, bool pApplyTarget, bool pForceEval) {
+    SWIGTYPE_p_FbxAMatrix ret = new SWIGTYPE_p_FbxAMatrix(fbx_wrapperPINVOKE.FbxNode_EvaluateGlobalTransform__SWIG_0(swigCPtr, FbxTime.getCPtr(pTime), (int)pPivotSet, pApplyTarget, pForceEval), false);
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public SWIGTYPE_p_FbxAMatrix EvaluateGlobalTransform(SWIGTYPE_p_FbxTime pTime, FbxNode.EPivotSet pPivotSet, bool pApplyTarget) {
-    SWIGTYPE_p_FbxAMatrix ret = new SWIGTYPE_p_FbxAMatrix(fbx_wrapperPINVOKE.FbxNode_EvaluateGlobalTransform__SWIG_1(swigCPtr, SWIGTYPE_p_FbxTime.getCPtr(pTime), (int)pPivotSet, pApplyTarget), false);
+  public SWIGTYPE_p_FbxAMatrix EvaluateGlobalTransform(FbxTime pTime, FbxNode.EPivotSet pPivotSet, bool pApplyTarget) {
+    SWIGTYPE_p_FbxAMatrix ret = new SWIGTYPE_p_FbxAMatrix(fbx_wrapperPINVOKE.FbxNode_EvaluateGlobalTransform__SWIG_1(swigCPtr, FbxTime.getCPtr(pTime), (int)pPivotSet, pApplyTarget), false);
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public SWIGTYPE_p_FbxAMatrix EvaluateGlobalTransform(SWIGTYPE_p_FbxTime pTime, FbxNode.EPivotSet pPivotSet) {
-    SWIGTYPE_p_FbxAMatrix ret = new SWIGTYPE_p_FbxAMatrix(fbx_wrapperPINVOKE.FbxNode_EvaluateGlobalTransform__SWIG_2(swigCPtr, SWIGTYPE_p_FbxTime.getCPtr(pTime), (int)pPivotSet), false);
+  public SWIGTYPE_p_FbxAMatrix EvaluateGlobalTransform(FbxTime pTime, FbxNode.EPivotSet pPivotSet) {
+    SWIGTYPE_p_FbxAMatrix ret = new SWIGTYPE_p_FbxAMatrix(fbx_wrapperPINVOKE.FbxNode_EvaluateGlobalTransform__SWIG_2(swigCPtr, FbxTime.getCPtr(pTime), (int)pPivotSet), false);
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public SWIGTYPE_p_FbxAMatrix EvaluateGlobalTransform(SWIGTYPE_p_FbxTime pTime) {
-    SWIGTYPE_p_FbxAMatrix ret = new SWIGTYPE_p_FbxAMatrix(fbx_wrapperPINVOKE.FbxNode_EvaluateGlobalTransform__SWIG_3(swigCPtr, SWIGTYPE_p_FbxTime.getCPtr(pTime)), false);
+  public SWIGTYPE_p_FbxAMatrix EvaluateGlobalTransform(FbxTime pTime) {
+    SWIGTYPE_p_FbxAMatrix ret = new SWIGTYPE_p_FbxAMatrix(fbx_wrapperPINVOKE.FbxNode_EvaluateGlobalTransform__SWIG_3(swigCPtr, FbxTime.getCPtr(pTime)), false);
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
@@ -640,26 +640,26 @@ public class FbxNode : FbxObject {
     return ret;
   }
 
-  public SWIGTYPE_p_FbxAMatrix EvaluateLocalTransform(SWIGTYPE_p_FbxTime pTime, FbxNode.EPivotSet pPivotSet, bool pApplyTarget, bool pForceEval) {
-    SWIGTYPE_p_FbxAMatrix ret = new SWIGTYPE_p_FbxAMatrix(fbx_wrapperPINVOKE.FbxNode_EvaluateLocalTransform__SWIG_0(swigCPtr, SWIGTYPE_p_FbxTime.getCPtr(pTime), (int)pPivotSet, pApplyTarget, pForceEval), false);
+  public SWIGTYPE_p_FbxAMatrix EvaluateLocalTransform(FbxTime pTime, FbxNode.EPivotSet pPivotSet, bool pApplyTarget, bool pForceEval) {
+    SWIGTYPE_p_FbxAMatrix ret = new SWIGTYPE_p_FbxAMatrix(fbx_wrapperPINVOKE.FbxNode_EvaluateLocalTransform__SWIG_0(swigCPtr, FbxTime.getCPtr(pTime), (int)pPivotSet, pApplyTarget, pForceEval), false);
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public SWIGTYPE_p_FbxAMatrix EvaluateLocalTransform(SWIGTYPE_p_FbxTime pTime, FbxNode.EPivotSet pPivotSet, bool pApplyTarget) {
-    SWIGTYPE_p_FbxAMatrix ret = new SWIGTYPE_p_FbxAMatrix(fbx_wrapperPINVOKE.FbxNode_EvaluateLocalTransform__SWIG_1(swigCPtr, SWIGTYPE_p_FbxTime.getCPtr(pTime), (int)pPivotSet, pApplyTarget), false);
+  public SWIGTYPE_p_FbxAMatrix EvaluateLocalTransform(FbxTime pTime, FbxNode.EPivotSet pPivotSet, bool pApplyTarget) {
+    SWIGTYPE_p_FbxAMatrix ret = new SWIGTYPE_p_FbxAMatrix(fbx_wrapperPINVOKE.FbxNode_EvaluateLocalTransform__SWIG_1(swigCPtr, FbxTime.getCPtr(pTime), (int)pPivotSet, pApplyTarget), false);
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public SWIGTYPE_p_FbxAMatrix EvaluateLocalTransform(SWIGTYPE_p_FbxTime pTime, FbxNode.EPivotSet pPivotSet) {
-    SWIGTYPE_p_FbxAMatrix ret = new SWIGTYPE_p_FbxAMatrix(fbx_wrapperPINVOKE.FbxNode_EvaluateLocalTransform__SWIG_2(swigCPtr, SWIGTYPE_p_FbxTime.getCPtr(pTime), (int)pPivotSet), false);
+  public SWIGTYPE_p_FbxAMatrix EvaluateLocalTransform(FbxTime pTime, FbxNode.EPivotSet pPivotSet) {
+    SWIGTYPE_p_FbxAMatrix ret = new SWIGTYPE_p_FbxAMatrix(fbx_wrapperPINVOKE.FbxNode_EvaluateLocalTransform__SWIG_2(swigCPtr, FbxTime.getCPtr(pTime), (int)pPivotSet), false);
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public SWIGTYPE_p_FbxAMatrix EvaluateLocalTransform(SWIGTYPE_p_FbxTime pTime) {
-    SWIGTYPE_p_FbxAMatrix ret = new SWIGTYPE_p_FbxAMatrix(fbx_wrapperPINVOKE.FbxNode_EvaluateLocalTransform__SWIG_3(swigCPtr, SWIGTYPE_p_FbxTime.getCPtr(pTime)), false);
+  public SWIGTYPE_p_FbxAMatrix EvaluateLocalTransform(FbxTime pTime) {
+    SWIGTYPE_p_FbxAMatrix ret = new SWIGTYPE_p_FbxAMatrix(fbx_wrapperPINVOKE.FbxNode_EvaluateLocalTransform__SWIG_3(swigCPtr, FbxTime.getCPtr(pTime)), false);
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
@@ -669,26 +669,26 @@ public class FbxNode : FbxObject {
     return ret;
   }
 
-  public FbxVector4 EvaluateLocalTranslation(SWIGTYPE_p_FbxTime pTime, FbxNode.EPivotSet pPivotSet, bool pApplyTarget, bool pForceEval) {
-    FbxVector4 ret = new FbxVector4(fbx_wrapperPINVOKE.FbxNode_EvaluateLocalTranslation__SWIG_0(swigCPtr, SWIGTYPE_p_FbxTime.getCPtr(pTime), (int)pPivotSet, pApplyTarget, pForceEval), false);
+  public FbxVector4 EvaluateLocalTranslation(FbxTime pTime, FbxNode.EPivotSet pPivotSet, bool pApplyTarget, bool pForceEval) {
+    FbxVector4 ret = new FbxVector4(fbx_wrapperPINVOKE.FbxNode_EvaluateLocalTranslation__SWIG_0(swigCPtr, FbxTime.getCPtr(pTime), (int)pPivotSet, pApplyTarget, pForceEval), false);
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public FbxVector4 EvaluateLocalTranslation(SWIGTYPE_p_FbxTime pTime, FbxNode.EPivotSet pPivotSet, bool pApplyTarget) {
-    FbxVector4 ret = new FbxVector4(fbx_wrapperPINVOKE.FbxNode_EvaluateLocalTranslation__SWIG_1(swigCPtr, SWIGTYPE_p_FbxTime.getCPtr(pTime), (int)pPivotSet, pApplyTarget), false);
+  public FbxVector4 EvaluateLocalTranslation(FbxTime pTime, FbxNode.EPivotSet pPivotSet, bool pApplyTarget) {
+    FbxVector4 ret = new FbxVector4(fbx_wrapperPINVOKE.FbxNode_EvaluateLocalTranslation__SWIG_1(swigCPtr, FbxTime.getCPtr(pTime), (int)pPivotSet, pApplyTarget), false);
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public FbxVector4 EvaluateLocalTranslation(SWIGTYPE_p_FbxTime pTime, FbxNode.EPivotSet pPivotSet) {
-    FbxVector4 ret = new FbxVector4(fbx_wrapperPINVOKE.FbxNode_EvaluateLocalTranslation__SWIG_2(swigCPtr, SWIGTYPE_p_FbxTime.getCPtr(pTime), (int)pPivotSet), false);
+  public FbxVector4 EvaluateLocalTranslation(FbxTime pTime, FbxNode.EPivotSet pPivotSet) {
+    FbxVector4 ret = new FbxVector4(fbx_wrapperPINVOKE.FbxNode_EvaluateLocalTranslation__SWIG_2(swigCPtr, FbxTime.getCPtr(pTime), (int)pPivotSet), false);
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public FbxVector4 EvaluateLocalTranslation(SWIGTYPE_p_FbxTime pTime) {
-    FbxVector4 ret = new FbxVector4(fbx_wrapperPINVOKE.FbxNode_EvaluateLocalTranslation__SWIG_3(swigCPtr, SWIGTYPE_p_FbxTime.getCPtr(pTime)), false);
+  public FbxVector4 EvaluateLocalTranslation(FbxTime pTime) {
+    FbxVector4 ret = new FbxVector4(fbx_wrapperPINVOKE.FbxNode_EvaluateLocalTranslation__SWIG_3(swigCPtr, FbxTime.getCPtr(pTime)), false);
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
@@ -698,26 +698,26 @@ public class FbxNode : FbxObject {
     return ret;
   }
 
-  public FbxVector4 EvaluateLocalRotation(SWIGTYPE_p_FbxTime pTime, FbxNode.EPivotSet pPivotSet, bool pApplyTarget, bool pForceEval) {
-    FbxVector4 ret = new FbxVector4(fbx_wrapperPINVOKE.FbxNode_EvaluateLocalRotation__SWIG_0(swigCPtr, SWIGTYPE_p_FbxTime.getCPtr(pTime), (int)pPivotSet, pApplyTarget, pForceEval), false);
+  public FbxVector4 EvaluateLocalRotation(FbxTime pTime, FbxNode.EPivotSet pPivotSet, bool pApplyTarget, bool pForceEval) {
+    FbxVector4 ret = new FbxVector4(fbx_wrapperPINVOKE.FbxNode_EvaluateLocalRotation__SWIG_0(swigCPtr, FbxTime.getCPtr(pTime), (int)pPivotSet, pApplyTarget, pForceEval), false);
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public FbxVector4 EvaluateLocalRotation(SWIGTYPE_p_FbxTime pTime, FbxNode.EPivotSet pPivotSet, bool pApplyTarget) {
-    FbxVector4 ret = new FbxVector4(fbx_wrapperPINVOKE.FbxNode_EvaluateLocalRotation__SWIG_1(swigCPtr, SWIGTYPE_p_FbxTime.getCPtr(pTime), (int)pPivotSet, pApplyTarget), false);
+  public FbxVector4 EvaluateLocalRotation(FbxTime pTime, FbxNode.EPivotSet pPivotSet, bool pApplyTarget) {
+    FbxVector4 ret = new FbxVector4(fbx_wrapperPINVOKE.FbxNode_EvaluateLocalRotation__SWIG_1(swigCPtr, FbxTime.getCPtr(pTime), (int)pPivotSet, pApplyTarget), false);
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public FbxVector4 EvaluateLocalRotation(SWIGTYPE_p_FbxTime pTime, FbxNode.EPivotSet pPivotSet) {
-    FbxVector4 ret = new FbxVector4(fbx_wrapperPINVOKE.FbxNode_EvaluateLocalRotation__SWIG_2(swigCPtr, SWIGTYPE_p_FbxTime.getCPtr(pTime), (int)pPivotSet), false);
+  public FbxVector4 EvaluateLocalRotation(FbxTime pTime, FbxNode.EPivotSet pPivotSet) {
+    FbxVector4 ret = new FbxVector4(fbx_wrapperPINVOKE.FbxNode_EvaluateLocalRotation__SWIG_2(swigCPtr, FbxTime.getCPtr(pTime), (int)pPivotSet), false);
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public FbxVector4 EvaluateLocalRotation(SWIGTYPE_p_FbxTime pTime) {
-    FbxVector4 ret = new FbxVector4(fbx_wrapperPINVOKE.FbxNode_EvaluateLocalRotation__SWIG_3(swigCPtr, SWIGTYPE_p_FbxTime.getCPtr(pTime)), false);
+  public FbxVector4 EvaluateLocalRotation(FbxTime pTime) {
+    FbxVector4 ret = new FbxVector4(fbx_wrapperPINVOKE.FbxNode_EvaluateLocalRotation__SWIG_3(swigCPtr, FbxTime.getCPtr(pTime)), false);
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
@@ -727,26 +727,26 @@ public class FbxNode : FbxObject {
     return ret;
   }
 
-  public FbxVector4 EvaluateLocalScaling(SWIGTYPE_p_FbxTime pTime, FbxNode.EPivotSet pPivotSet, bool pApplyTarget, bool pForceEval) {
-    FbxVector4 ret = new FbxVector4(fbx_wrapperPINVOKE.FbxNode_EvaluateLocalScaling__SWIG_0(swigCPtr, SWIGTYPE_p_FbxTime.getCPtr(pTime), (int)pPivotSet, pApplyTarget, pForceEval), false);
+  public FbxVector4 EvaluateLocalScaling(FbxTime pTime, FbxNode.EPivotSet pPivotSet, bool pApplyTarget, bool pForceEval) {
+    FbxVector4 ret = new FbxVector4(fbx_wrapperPINVOKE.FbxNode_EvaluateLocalScaling__SWIG_0(swigCPtr, FbxTime.getCPtr(pTime), (int)pPivotSet, pApplyTarget, pForceEval), false);
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public FbxVector4 EvaluateLocalScaling(SWIGTYPE_p_FbxTime pTime, FbxNode.EPivotSet pPivotSet, bool pApplyTarget) {
-    FbxVector4 ret = new FbxVector4(fbx_wrapperPINVOKE.FbxNode_EvaluateLocalScaling__SWIG_1(swigCPtr, SWIGTYPE_p_FbxTime.getCPtr(pTime), (int)pPivotSet, pApplyTarget), false);
+  public FbxVector4 EvaluateLocalScaling(FbxTime pTime, FbxNode.EPivotSet pPivotSet, bool pApplyTarget) {
+    FbxVector4 ret = new FbxVector4(fbx_wrapperPINVOKE.FbxNode_EvaluateLocalScaling__SWIG_1(swigCPtr, FbxTime.getCPtr(pTime), (int)pPivotSet, pApplyTarget), false);
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public FbxVector4 EvaluateLocalScaling(SWIGTYPE_p_FbxTime pTime, FbxNode.EPivotSet pPivotSet) {
-    FbxVector4 ret = new FbxVector4(fbx_wrapperPINVOKE.FbxNode_EvaluateLocalScaling__SWIG_2(swigCPtr, SWIGTYPE_p_FbxTime.getCPtr(pTime), (int)pPivotSet), false);
+  public FbxVector4 EvaluateLocalScaling(FbxTime pTime, FbxNode.EPivotSet pPivotSet) {
+    FbxVector4 ret = new FbxVector4(fbx_wrapperPINVOKE.FbxNode_EvaluateLocalScaling__SWIG_2(swigCPtr, FbxTime.getCPtr(pTime), (int)pPivotSet), false);
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public FbxVector4 EvaluateLocalScaling(SWIGTYPE_p_FbxTime pTime) {
-    FbxVector4 ret = new FbxVector4(fbx_wrapperPINVOKE.FbxNode_EvaluateLocalScaling__SWIG_3(swigCPtr, SWIGTYPE_p_FbxTime.getCPtr(pTime)), false);
+  public FbxVector4 EvaluateLocalScaling(FbxTime pTime) {
+    FbxVector4 ret = new FbxVector4(fbx_wrapperPINVOKE.FbxNode_EvaluateLocalScaling__SWIG_3(swigCPtr, FbxTime.getCPtr(pTime)), false);
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
@@ -756,8 +756,8 @@ public class FbxNode : FbxObject {
     return ret;
   }
 
-  public bool EvaluateGlobalBoundingBoxMinMaxCenter(FbxVector4 pBBoxMin, FbxVector4 pBBoxMax, FbxVector4 pBBoxCenter, SWIGTYPE_p_FbxTime pTime) {
-    bool ret = fbx_wrapperPINVOKE.FbxNode_EvaluateGlobalBoundingBoxMinMaxCenter__SWIG_0(swigCPtr, FbxVector4.getCPtr(pBBoxMin), FbxVector4.getCPtr(pBBoxMax), FbxVector4.getCPtr(pBBoxCenter), SWIGTYPE_p_FbxTime.getCPtr(pTime));
+  public bool EvaluateGlobalBoundingBoxMinMaxCenter(FbxVector4 pBBoxMin, FbxVector4 pBBoxMax, FbxVector4 pBBoxCenter, FbxTime pTime) {
+    bool ret = fbx_wrapperPINVOKE.FbxNode_EvaluateGlobalBoundingBoxMinMaxCenter__SWIG_0(swigCPtr, FbxVector4.getCPtr(pBBoxMin), FbxVector4.getCPtr(pBBoxMax), FbxVector4.getCPtr(pBBoxCenter), FbxTime.getCPtr(pTime));
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
@@ -768,8 +768,8 @@ public class FbxNode : FbxObject {
     return ret;
   }
 
-  public bool EvaluateRayIntersectionPoint(FbxVector4 pOut, FbxVector4 pRayOrigin, FbxVector4 pRayDir, bool pCulling, SWIGTYPE_p_FbxTime pTime) {
-    bool ret = fbx_wrapperPINVOKE.FbxNode_EvaluateRayIntersectionPoint__SWIG_0(swigCPtr, FbxVector4.getCPtr(pOut), FbxVector4.getCPtr(pRayOrigin), FbxVector4.getCPtr(pRayDir), pCulling, SWIGTYPE_p_FbxTime.getCPtr(pTime));
+  public bool EvaluateRayIntersectionPoint(FbxVector4 pOut, FbxVector4 pRayOrigin, FbxVector4 pRayDir, bool pCulling, FbxTime pTime) {
+    bool ret = fbx_wrapperPINVOKE.FbxNode_EvaluateRayIntersectionPoint__SWIG_0(swigCPtr, FbxVector4.getCPtr(pOut), FbxVector4.getCPtr(pRayOrigin), FbxVector4.getCPtr(pRayDir), pCulling, FbxTime.getCPtr(pTime));
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
@@ -801,20 +801,20 @@ public class FbxNode : FbxObject {
     return ret;
   }
 
-  public bool GetAnimationInterval(SWIGTYPE_p_FbxTimeSpan pInterval, FbxAnimStack pAnimStack, int pAnimLayerId) {
-    bool ret = fbx_wrapperPINVOKE.FbxNode_GetAnimationInterval__SWIG_0(swigCPtr, SWIGTYPE_p_FbxTimeSpan.getCPtr(pInterval), FbxAnimStack.getCPtr(pAnimStack), pAnimLayerId);
+  public bool GetAnimationInterval(FbxTimeSpan pInterval, FbxAnimStack pAnimStack, int pAnimLayerId) {
+    bool ret = fbx_wrapperPINVOKE.FbxNode_GetAnimationInterval__SWIG_0(swigCPtr, FbxTimeSpan.getCPtr(pInterval), FbxAnimStack.getCPtr(pAnimStack), pAnimLayerId);
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public bool GetAnimationInterval(SWIGTYPE_p_FbxTimeSpan pInterval, FbxAnimStack pAnimStack) {
-    bool ret = fbx_wrapperPINVOKE.FbxNode_GetAnimationInterval__SWIG_1(swigCPtr, SWIGTYPE_p_FbxTimeSpan.getCPtr(pInterval), FbxAnimStack.getCPtr(pAnimStack));
+  public bool GetAnimationInterval(FbxTimeSpan pInterval, FbxAnimStack pAnimStack) {
+    bool ret = fbx_wrapperPINVOKE.FbxNode_GetAnimationInterval__SWIG_1(swigCPtr, FbxTimeSpan.getCPtr(pInterval), FbxAnimStack.getCPtr(pAnimStack));
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public bool GetAnimationInterval(SWIGTYPE_p_FbxTimeSpan pInterval) {
-    bool ret = fbx_wrapperPINVOKE.FbxNode_GetAnimationInterval__SWIG_2(swigCPtr, SWIGTYPE_p_FbxTimeSpan.getCPtr(pInterval));
+  public bool GetAnimationInterval(FbxTimeSpan pInterval) {
+    bool ret = fbx_wrapperPINVOKE.FbxNode_GetAnimationInterval__SWIG_2(swigCPtr, FbxTimeSpan.getCPtr(pInterval));
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
@@ -849,57 +849,57 @@ public class FbxNode : FbxObject {
     return ret;
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t LclTranslation {
+  public FbxPropertyDouble3 LclTranslation {
     set {
-      fbx_wrapperPINVOKE.FbxNode_LclTranslation_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_LclTranslation_set(swigCPtr, FbxPropertyDouble3.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_LclTranslation_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t(cPtr, false);
+      FbxPropertyDouble3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble3(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t LclRotation {
+  public FbxPropertyDouble3 LclRotation {
     set {
-      fbx_wrapperPINVOKE.FbxNode_LclRotation_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_LclRotation_set(swigCPtr, FbxPropertyDouble3.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_LclRotation_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t(cPtr, false);
+      FbxPropertyDouble3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble3(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t LclScaling {
+  public FbxPropertyDouble3 LclScaling {
     set {
-      fbx_wrapperPINVOKE.FbxNode_LclScaling_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_LclScaling_set(swigCPtr, FbxPropertyDouble3.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_LclScaling_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t(cPtr, false);
+      FbxPropertyDouble3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble3(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_double_t Visibility {
+  public FbxPropertyDouble Visibility {
     set {
-      fbx_wrapperPINVOKE.FbxNode_Visibility_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_double_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_Visibility_set(swigCPtr, FbxPropertyDouble.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_Visibility_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_double_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_double_t(cPtr, false);
+      FbxPropertyDouble ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_bool_t VisibilityInheritance {
+  public FbxPropertyBool VisibilityInheritance {
     set {
-      fbx_wrapperPINVOKE.FbxNode_VisibilityInheritance_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_bool_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_VisibilityInheritance_set(swigCPtr, FbxPropertyBool.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_VisibilityInheritance_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_bool_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_bool_t(cPtr, false);
+      FbxPropertyBool ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyBool(cPtr, false);
       return ret;
     } 
   }
@@ -915,145 +915,145 @@ public class FbxNode : FbxObject {
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t RotationOffset {
+  public FbxPropertyDouble3 RotationOffset {
     set {
-      fbx_wrapperPINVOKE.FbxNode_RotationOffset_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_RotationOffset_set(swigCPtr, FbxPropertyDouble3.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_RotationOffset_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t(cPtr, false);
+      FbxPropertyDouble3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble3(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t RotationPivot {
+  public FbxPropertyDouble3 RotationPivot {
     set {
-      fbx_wrapperPINVOKE.FbxNode_RotationPivot_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_RotationPivot_set(swigCPtr, FbxPropertyDouble3.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_RotationPivot_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t(cPtr, false);
+      FbxPropertyDouble3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble3(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t ScalingOffset {
+  public FbxPropertyDouble3 ScalingOffset {
     set {
-      fbx_wrapperPINVOKE.FbxNode_ScalingOffset_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_ScalingOffset_set(swigCPtr, FbxPropertyDouble3.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_ScalingOffset_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t(cPtr, false);
+      FbxPropertyDouble3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble3(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t ScalingPivot {
+  public FbxPropertyDouble3 ScalingPivot {
     set {
-      fbx_wrapperPINVOKE.FbxNode_ScalingPivot_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_ScalingPivot_set(swigCPtr, FbxPropertyDouble3.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_ScalingPivot_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t(cPtr, false);
+      FbxPropertyDouble3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble3(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_bool_t TranslationActive {
+  public FbxPropertyBool TranslationActive {
     set {
-      fbx_wrapperPINVOKE.FbxNode_TranslationActive_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_bool_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_TranslationActive_set(swigCPtr, FbxPropertyBool.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_TranslationActive_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_bool_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_bool_t(cPtr, false);
+      FbxPropertyBool ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyBool(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t TranslationMin {
+  public FbxPropertyDouble3 TranslationMin {
     set {
-      fbx_wrapperPINVOKE.FbxNode_TranslationMin_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_TranslationMin_set(swigCPtr, FbxPropertyDouble3.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_TranslationMin_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t(cPtr, false);
+      FbxPropertyDouble3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble3(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t TranslationMax {
+  public FbxPropertyDouble3 TranslationMax {
     set {
-      fbx_wrapperPINVOKE.FbxNode_TranslationMax_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_TranslationMax_set(swigCPtr, FbxPropertyDouble3.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_TranslationMax_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t(cPtr, false);
+      FbxPropertyDouble3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble3(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_bool_t TranslationMinX {
+  public FbxPropertyBool TranslationMinX {
     set {
-      fbx_wrapperPINVOKE.FbxNode_TranslationMinX_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_bool_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_TranslationMinX_set(swigCPtr, FbxPropertyBool.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_TranslationMinX_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_bool_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_bool_t(cPtr, false);
+      FbxPropertyBool ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyBool(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_bool_t TranslationMinY {
+  public FbxPropertyBool TranslationMinY {
     set {
-      fbx_wrapperPINVOKE.FbxNode_TranslationMinY_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_bool_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_TranslationMinY_set(swigCPtr, FbxPropertyBool.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_TranslationMinY_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_bool_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_bool_t(cPtr, false);
+      FbxPropertyBool ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyBool(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_bool_t TranslationMinZ {
+  public FbxPropertyBool TranslationMinZ {
     set {
-      fbx_wrapperPINVOKE.FbxNode_TranslationMinZ_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_bool_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_TranslationMinZ_set(swigCPtr, FbxPropertyBool.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_TranslationMinZ_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_bool_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_bool_t(cPtr, false);
+      FbxPropertyBool ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyBool(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_bool_t TranslationMaxX {
+  public FbxPropertyBool TranslationMaxX {
     set {
-      fbx_wrapperPINVOKE.FbxNode_TranslationMaxX_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_bool_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_TranslationMaxX_set(swigCPtr, FbxPropertyBool.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_TranslationMaxX_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_bool_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_bool_t(cPtr, false);
+      FbxPropertyBool ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyBool(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_bool_t TranslationMaxY {
+  public FbxPropertyBool TranslationMaxY {
     set {
-      fbx_wrapperPINVOKE.FbxNode_TranslationMaxY_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_bool_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_TranslationMaxY_set(swigCPtr, FbxPropertyBool.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_TranslationMaxY_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_bool_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_bool_t(cPtr, false);
+      FbxPropertyBool ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyBool(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_bool_t TranslationMaxZ {
+  public FbxPropertyBool TranslationMaxZ {
     set {
-      fbx_wrapperPINVOKE.FbxNode_TranslationMaxZ_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_bool_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_TranslationMaxZ_set(swigCPtr, FbxPropertyBool.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_TranslationMaxZ_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_bool_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_bool_t(cPtr, false);
+      FbxPropertyBool ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyBool(cPtr, false);
       return ret;
     } 
   }
@@ -1069,178 +1069,178 @@ public class FbxNode : FbxObject {
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_bool_t RotationSpaceForLimitOnly {
+  public FbxPropertyBool RotationSpaceForLimitOnly {
     set {
-      fbx_wrapperPINVOKE.FbxNode_RotationSpaceForLimitOnly_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_bool_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_RotationSpaceForLimitOnly_set(swigCPtr, FbxPropertyBool.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_RotationSpaceForLimitOnly_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_bool_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_bool_t(cPtr, false);
+      FbxPropertyBool ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyBool(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_double_t RotationStiffnessX {
+  public FbxPropertyDouble RotationStiffnessX {
     set {
-      fbx_wrapperPINVOKE.FbxNode_RotationStiffnessX_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_double_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_RotationStiffnessX_set(swigCPtr, FbxPropertyDouble.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_RotationStiffnessX_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_double_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_double_t(cPtr, false);
+      FbxPropertyDouble ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_double_t RotationStiffnessY {
+  public FbxPropertyDouble RotationStiffnessY {
     set {
-      fbx_wrapperPINVOKE.FbxNode_RotationStiffnessY_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_double_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_RotationStiffnessY_set(swigCPtr, FbxPropertyDouble.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_RotationStiffnessY_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_double_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_double_t(cPtr, false);
+      FbxPropertyDouble ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_double_t RotationStiffnessZ {
+  public FbxPropertyDouble RotationStiffnessZ {
     set {
-      fbx_wrapperPINVOKE.FbxNode_RotationStiffnessZ_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_double_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_RotationStiffnessZ_set(swigCPtr, FbxPropertyDouble.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_RotationStiffnessZ_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_double_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_double_t(cPtr, false);
+      FbxPropertyDouble ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_double_t AxisLen {
+  public FbxPropertyDouble AxisLen {
     set {
-      fbx_wrapperPINVOKE.FbxNode_AxisLen_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_double_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_AxisLen_set(swigCPtr, FbxPropertyDouble.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_AxisLen_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_double_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_double_t(cPtr, false);
+      FbxPropertyDouble ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t PreRotation {
+  public FbxPropertyDouble3 PreRotation {
     set {
-      fbx_wrapperPINVOKE.FbxNode_PreRotation_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_PreRotation_set(swigCPtr, FbxPropertyDouble3.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_PreRotation_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t(cPtr, false);
+      FbxPropertyDouble3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble3(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t PostRotation {
+  public FbxPropertyDouble3 PostRotation {
     set {
-      fbx_wrapperPINVOKE.FbxNode_PostRotation_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_PostRotation_set(swigCPtr, FbxPropertyDouble3.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_PostRotation_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t(cPtr, false);
+      FbxPropertyDouble3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble3(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_bool_t RotationActive {
+  public FbxPropertyBool RotationActive {
     set {
-      fbx_wrapperPINVOKE.FbxNode_RotationActive_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_bool_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_RotationActive_set(swigCPtr, FbxPropertyBool.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_RotationActive_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_bool_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_bool_t(cPtr, false);
+      FbxPropertyBool ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyBool(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t RotationMin {
+  public FbxPropertyDouble3 RotationMin {
     set {
-      fbx_wrapperPINVOKE.FbxNode_RotationMin_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_RotationMin_set(swigCPtr, FbxPropertyDouble3.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_RotationMin_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t(cPtr, false);
+      FbxPropertyDouble3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble3(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t RotationMax {
+  public FbxPropertyDouble3 RotationMax {
     set {
-      fbx_wrapperPINVOKE.FbxNode_RotationMax_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_RotationMax_set(swigCPtr, FbxPropertyDouble3.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_RotationMax_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t(cPtr, false);
+      FbxPropertyDouble3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble3(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_bool_t RotationMinX {
+  public FbxPropertyBool RotationMinX {
     set {
-      fbx_wrapperPINVOKE.FbxNode_RotationMinX_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_bool_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_RotationMinX_set(swigCPtr, FbxPropertyBool.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_RotationMinX_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_bool_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_bool_t(cPtr, false);
+      FbxPropertyBool ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyBool(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_bool_t RotationMinY {
+  public FbxPropertyBool RotationMinY {
     set {
-      fbx_wrapperPINVOKE.FbxNode_RotationMinY_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_bool_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_RotationMinY_set(swigCPtr, FbxPropertyBool.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_RotationMinY_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_bool_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_bool_t(cPtr, false);
+      FbxPropertyBool ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyBool(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_bool_t RotationMinZ {
+  public FbxPropertyBool RotationMinZ {
     set {
-      fbx_wrapperPINVOKE.FbxNode_RotationMinZ_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_bool_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_RotationMinZ_set(swigCPtr, FbxPropertyBool.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_RotationMinZ_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_bool_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_bool_t(cPtr, false);
+      FbxPropertyBool ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyBool(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_bool_t RotationMaxX {
+  public FbxPropertyBool RotationMaxX {
     set {
-      fbx_wrapperPINVOKE.FbxNode_RotationMaxX_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_bool_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_RotationMaxX_set(swigCPtr, FbxPropertyBool.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_RotationMaxX_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_bool_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_bool_t(cPtr, false);
+      FbxPropertyBool ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyBool(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_bool_t RotationMaxY {
+  public FbxPropertyBool RotationMaxY {
     set {
-      fbx_wrapperPINVOKE.FbxNode_RotationMaxY_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_bool_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_RotationMaxY_set(swigCPtr, FbxPropertyBool.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_RotationMaxY_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_bool_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_bool_t(cPtr, false);
+      FbxPropertyBool ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyBool(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_bool_t RotationMaxZ {
+  public FbxPropertyBool RotationMaxZ {
     set {
-      fbx_wrapperPINVOKE.FbxNode_RotationMaxZ_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_bool_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_RotationMaxZ_set(swigCPtr, FbxPropertyBool.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_RotationMaxZ_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_bool_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_bool_t(cPtr, false);
+      FbxPropertyBool ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyBool(cPtr, false);
       return ret;
     } 
   }
@@ -1256,299 +1256,299 @@ public class FbxNode : FbxObject {
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_bool_t ScalingActive {
+  public FbxPropertyBool ScalingActive {
     set {
-      fbx_wrapperPINVOKE.FbxNode_ScalingActive_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_bool_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_ScalingActive_set(swigCPtr, FbxPropertyBool.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_ScalingActive_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_bool_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_bool_t(cPtr, false);
+      FbxPropertyBool ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyBool(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t ScalingMin {
+  public FbxPropertyDouble3 ScalingMin {
     set {
-      fbx_wrapperPINVOKE.FbxNode_ScalingMin_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_ScalingMin_set(swigCPtr, FbxPropertyDouble3.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_ScalingMin_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t(cPtr, false);
+      FbxPropertyDouble3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble3(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t ScalingMax {
+  public FbxPropertyDouble3 ScalingMax {
     set {
-      fbx_wrapperPINVOKE.FbxNode_ScalingMax_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_ScalingMax_set(swigCPtr, FbxPropertyDouble3.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_ScalingMax_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t(cPtr, false);
+      FbxPropertyDouble3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble3(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_bool_t ScalingMinX {
+  public FbxPropertyBool ScalingMinX {
     set {
-      fbx_wrapperPINVOKE.FbxNode_ScalingMinX_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_bool_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_ScalingMinX_set(swigCPtr, FbxPropertyBool.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_ScalingMinX_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_bool_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_bool_t(cPtr, false);
+      FbxPropertyBool ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyBool(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_bool_t ScalingMinY {
+  public FbxPropertyBool ScalingMinY {
     set {
-      fbx_wrapperPINVOKE.FbxNode_ScalingMinY_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_bool_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_ScalingMinY_set(swigCPtr, FbxPropertyBool.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_ScalingMinY_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_bool_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_bool_t(cPtr, false);
+      FbxPropertyBool ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyBool(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_bool_t ScalingMinZ {
+  public FbxPropertyBool ScalingMinZ {
     set {
-      fbx_wrapperPINVOKE.FbxNode_ScalingMinZ_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_bool_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_ScalingMinZ_set(swigCPtr, FbxPropertyBool.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_ScalingMinZ_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_bool_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_bool_t(cPtr, false);
+      FbxPropertyBool ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyBool(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_bool_t ScalingMaxX {
+  public FbxPropertyBool ScalingMaxX {
     set {
-      fbx_wrapperPINVOKE.FbxNode_ScalingMaxX_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_bool_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_ScalingMaxX_set(swigCPtr, FbxPropertyBool.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_ScalingMaxX_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_bool_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_bool_t(cPtr, false);
+      FbxPropertyBool ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyBool(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_bool_t ScalingMaxY {
+  public FbxPropertyBool ScalingMaxY {
     set {
-      fbx_wrapperPINVOKE.FbxNode_ScalingMaxY_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_bool_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_ScalingMaxY_set(swigCPtr, FbxPropertyBool.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_ScalingMaxY_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_bool_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_bool_t(cPtr, false);
+      FbxPropertyBool ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyBool(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_bool_t ScalingMaxZ {
+  public FbxPropertyBool ScalingMaxZ {
     set {
-      fbx_wrapperPINVOKE.FbxNode_ScalingMaxZ_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_bool_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_ScalingMaxZ_set(swigCPtr, FbxPropertyBool.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_ScalingMaxZ_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_bool_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_bool_t(cPtr, false);
+      FbxPropertyBool ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyBool(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t GeometricTranslation {
+  public FbxPropertyDouble3 GeometricTranslation {
     set {
-      fbx_wrapperPINVOKE.FbxNode_GeometricTranslation_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_GeometricTranslation_set(swigCPtr, FbxPropertyDouble3.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_GeometricTranslation_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t(cPtr, false);
+      FbxPropertyDouble3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble3(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t GeometricRotation {
+  public FbxPropertyDouble3 GeometricRotation {
     set {
-      fbx_wrapperPINVOKE.FbxNode_GeometricRotation_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_GeometricRotation_set(swigCPtr, FbxPropertyDouble3.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_GeometricRotation_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t(cPtr, false);
+      FbxPropertyDouble3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble3(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t GeometricScaling {
+  public FbxPropertyDouble3 GeometricScaling {
     set {
-      fbx_wrapperPINVOKE.FbxNode_GeometricScaling_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_GeometricScaling_set(swigCPtr, FbxPropertyDouble3.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_GeometricScaling_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t(cPtr, false);
+      FbxPropertyDouble3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble3(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_double_t MinDampRangeX {
+  public FbxPropertyDouble MinDampRangeX {
     set {
-      fbx_wrapperPINVOKE.FbxNode_MinDampRangeX_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_double_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_MinDampRangeX_set(swigCPtr, FbxPropertyDouble.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_MinDampRangeX_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_double_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_double_t(cPtr, false);
+      FbxPropertyDouble ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_double_t MinDampRangeY {
+  public FbxPropertyDouble MinDampRangeY {
     set {
-      fbx_wrapperPINVOKE.FbxNode_MinDampRangeY_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_double_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_MinDampRangeY_set(swigCPtr, FbxPropertyDouble.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_MinDampRangeY_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_double_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_double_t(cPtr, false);
+      FbxPropertyDouble ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_double_t MinDampRangeZ {
+  public FbxPropertyDouble MinDampRangeZ {
     set {
-      fbx_wrapperPINVOKE.FbxNode_MinDampRangeZ_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_double_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_MinDampRangeZ_set(swigCPtr, FbxPropertyDouble.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_MinDampRangeZ_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_double_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_double_t(cPtr, false);
+      FbxPropertyDouble ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_double_t MaxDampRangeX {
+  public FbxPropertyDouble MaxDampRangeX {
     set {
-      fbx_wrapperPINVOKE.FbxNode_MaxDampRangeX_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_double_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_MaxDampRangeX_set(swigCPtr, FbxPropertyDouble.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_MaxDampRangeX_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_double_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_double_t(cPtr, false);
+      FbxPropertyDouble ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_double_t MaxDampRangeY {
+  public FbxPropertyDouble MaxDampRangeY {
     set {
-      fbx_wrapperPINVOKE.FbxNode_MaxDampRangeY_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_double_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_MaxDampRangeY_set(swigCPtr, FbxPropertyDouble.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_MaxDampRangeY_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_double_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_double_t(cPtr, false);
+      FbxPropertyDouble ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_double_t MaxDampRangeZ {
+  public FbxPropertyDouble MaxDampRangeZ {
     set {
-      fbx_wrapperPINVOKE.FbxNode_MaxDampRangeZ_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_double_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_MaxDampRangeZ_set(swigCPtr, FbxPropertyDouble.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_MaxDampRangeZ_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_double_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_double_t(cPtr, false);
+      FbxPropertyDouble ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_double_t MinDampStrengthX {
+  public FbxPropertyDouble MinDampStrengthX {
     set {
-      fbx_wrapperPINVOKE.FbxNode_MinDampStrengthX_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_double_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_MinDampStrengthX_set(swigCPtr, FbxPropertyDouble.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_MinDampStrengthX_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_double_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_double_t(cPtr, false);
+      FbxPropertyDouble ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_double_t MinDampStrengthY {
+  public FbxPropertyDouble MinDampStrengthY {
     set {
-      fbx_wrapperPINVOKE.FbxNode_MinDampStrengthY_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_double_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_MinDampStrengthY_set(swigCPtr, FbxPropertyDouble.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_MinDampStrengthY_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_double_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_double_t(cPtr, false);
+      FbxPropertyDouble ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_double_t MinDampStrengthZ {
+  public FbxPropertyDouble MinDampStrengthZ {
     set {
-      fbx_wrapperPINVOKE.FbxNode_MinDampStrengthZ_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_double_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_MinDampStrengthZ_set(swigCPtr, FbxPropertyDouble.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_MinDampStrengthZ_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_double_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_double_t(cPtr, false);
+      FbxPropertyDouble ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_double_t MaxDampStrengthX {
+  public FbxPropertyDouble MaxDampStrengthX {
     set {
-      fbx_wrapperPINVOKE.FbxNode_MaxDampStrengthX_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_double_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_MaxDampStrengthX_set(swigCPtr, FbxPropertyDouble.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_MaxDampStrengthX_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_double_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_double_t(cPtr, false);
+      FbxPropertyDouble ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_double_t MaxDampStrengthY {
+  public FbxPropertyDouble MaxDampStrengthY {
     set {
-      fbx_wrapperPINVOKE.FbxNode_MaxDampStrengthY_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_double_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_MaxDampStrengthY_set(swigCPtr, FbxPropertyDouble.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_MaxDampStrengthY_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_double_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_double_t(cPtr, false);
+      FbxPropertyDouble ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_double_t MaxDampStrengthZ {
+  public FbxPropertyDouble MaxDampStrengthZ {
     set {
-      fbx_wrapperPINVOKE.FbxNode_MaxDampStrengthZ_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_double_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_MaxDampStrengthZ_set(swigCPtr, FbxPropertyDouble.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_MaxDampStrengthZ_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_double_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_double_t(cPtr, false);
+      FbxPropertyDouble ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_double_t PreferedAngleX {
+  public FbxPropertyDouble PreferedAngleX {
     set {
-      fbx_wrapperPINVOKE.FbxNode_PreferedAngleX_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_double_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_PreferedAngleX_set(swigCPtr, FbxPropertyDouble.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_PreferedAngleX_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_double_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_double_t(cPtr, false);
+      FbxPropertyDouble ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_double_t PreferedAngleY {
+  public FbxPropertyDouble PreferedAngleY {
     set {
-      fbx_wrapperPINVOKE.FbxNode_PreferedAngleY_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_double_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_PreferedAngleY_set(swigCPtr, FbxPropertyDouble.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_PreferedAngleY_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_double_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_double_t(cPtr, false);
+      FbxPropertyDouble ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_double_t PreferedAngleZ {
+  public FbxPropertyDouble PreferedAngleZ {
     set {
-      fbx_wrapperPINVOKE.FbxNode_PreferedAngleZ_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_double_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_PreferedAngleZ_set(swigCPtr, FbxPropertyDouble.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_PreferedAngleZ_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_double_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_double_t(cPtr, false);
+      FbxPropertyDouble ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble(cPtr, false);
       return ret;
     } 
   }
@@ -1575,24 +1575,24 @@ public class FbxNode : FbxObject {
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_bool_t Show {
+  public FbxPropertyBool Show {
     set {
-      fbx_wrapperPINVOKE.FbxNode_Show_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_bool_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_Show_set(swigCPtr, FbxPropertyBool.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_Show_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_bool_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_bool_t(cPtr, false);
+      FbxPropertyBool ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyBool(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_bool_t NegativePercentShapeSupport {
+  public FbxPropertyBool NegativePercentShapeSupport {
     set {
-      fbx_wrapperPINVOKE.FbxNode_NegativePercentShapeSupport_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_bool_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_NegativePercentShapeSupport_set(swigCPtr, FbxPropertyBool.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_NegativePercentShapeSupport_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_bool_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_bool_t(cPtr, false);
+      FbxPropertyBool ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyBool(cPtr, false);
       return ret;
     } 
   }
@@ -1608,24 +1608,24 @@ public class FbxNode : FbxObject {
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_bool_t Freeze {
+  public FbxPropertyBool Freeze {
     set {
-      fbx_wrapperPINVOKE.FbxNode_Freeze_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_bool_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_Freeze_set(swigCPtr, FbxPropertyBool.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_Freeze_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_bool_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_bool_t(cPtr, false);
+      FbxPropertyBool ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyBool(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_bool_t LODBox {
+  public FbxPropertyBool LODBox {
     set {
-      fbx_wrapperPINVOKE.FbxNode_LODBox_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_bool_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxNode_LODBox_set(swigCPtr, FbxPropertyBool.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxNode_LODBox_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_bool_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_bool_t(cPtr, false);
+      FbxPropertyBool ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyBool(cPtr, false);
       return ret;
     } 
   }

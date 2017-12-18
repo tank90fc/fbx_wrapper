@@ -64,24 +64,24 @@ public class FbxDocumentInfo : FbxObject {
     return ret;
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_FbxString_t LastSavedUrl {
+  public FbxPropertyString LastSavedUrl {
     set {
-      fbx_wrapperPINVOKE.FbxDocumentInfo_LastSavedUrl_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_FbxString_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxDocumentInfo_LastSavedUrl_set(swigCPtr, FbxPropertyString.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxDocumentInfo_LastSavedUrl_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_FbxString_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_FbxString_t(cPtr, false);
+      FbxPropertyString ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyString(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_FbxString_t Url {
+  public FbxPropertyString Url {
     set {
-      fbx_wrapperPINVOKE.FbxDocumentInfo_Url_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_FbxString_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxDocumentInfo_Url_set(swigCPtr, FbxPropertyString.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxDocumentInfo_Url_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_FbxString_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_FbxString_t(cPtr, false);
+      FbxPropertyString ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyString(cPtr, false);
       return ret;
     } 
   }
@@ -97,46 +97,46 @@ public class FbxDocumentInfo : FbxObject {
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_FbxString_t Original_ApplicationVendor {
+  public FbxPropertyString Original_ApplicationVendor {
     set {
-      fbx_wrapperPINVOKE.FbxDocumentInfo_Original_ApplicationVendor_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_FbxString_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxDocumentInfo_Original_ApplicationVendor_set(swigCPtr, FbxPropertyString.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxDocumentInfo_Original_ApplicationVendor_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_FbxString_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_FbxString_t(cPtr, false);
+      FbxPropertyString ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyString(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_FbxString_t Original_ApplicationName {
+  public FbxPropertyString Original_ApplicationName {
     set {
-      fbx_wrapperPINVOKE.FbxDocumentInfo_Original_ApplicationName_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_FbxString_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxDocumentInfo_Original_ApplicationName_set(swigCPtr, FbxPropertyString.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxDocumentInfo_Original_ApplicationName_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_FbxString_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_FbxString_t(cPtr, false);
+      FbxPropertyString ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyString(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_FbxString_t Original_ApplicationVersion {
+  public FbxPropertyString Original_ApplicationVersion {
     set {
-      fbx_wrapperPINVOKE.FbxDocumentInfo_Original_ApplicationVersion_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_FbxString_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxDocumentInfo_Original_ApplicationVersion_set(swigCPtr, FbxPropertyString.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxDocumentInfo_Original_ApplicationVersion_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_FbxString_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_FbxString_t(cPtr, false);
+      FbxPropertyString ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyString(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_FbxString_t Original_FileName {
+  public FbxPropertyString Original_FileName {
     set {
-      fbx_wrapperPINVOKE.FbxDocumentInfo_Original_FileName_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_FbxString_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxDocumentInfo_Original_FileName_set(swigCPtr, FbxPropertyString.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxDocumentInfo_Original_FileName_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_FbxString_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_FbxString_t(cPtr, false);
+      FbxPropertyString ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyString(cPtr, false);
       return ret;
     } 
   }
@@ -163,35 +163,35 @@ public class FbxDocumentInfo : FbxObject {
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_FbxString_t LastSaved_ApplicationVendor {
+  public FbxPropertyString LastSaved_ApplicationVendor {
     set {
-      fbx_wrapperPINVOKE.FbxDocumentInfo_LastSaved_ApplicationVendor_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_FbxString_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxDocumentInfo_LastSaved_ApplicationVendor_set(swigCPtr, FbxPropertyString.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxDocumentInfo_LastSaved_ApplicationVendor_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_FbxString_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_FbxString_t(cPtr, false);
+      FbxPropertyString ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyString(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_FbxString_t LastSaved_ApplicationName {
+  public FbxPropertyString LastSaved_ApplicationName {
     set {
-      fbx_wrapperPINVOKE.FbxDocumentInfo_LastSaved_ApplicationName_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_FbxString_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxDocumentInfo_LastSaved_ApplicationName_set(swigCPtr, FbxPropertyString.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxDocumentInfo_LastSaved_ApplicationName_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_FbxString_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_FbxString_t(cPtr, false);
+      FbxPropertyString ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyString(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_FbxString_t LastSaved_ApplicationVersion {
+  public FbxPropertyString LastSaved_ApplicationVersion {
     set {
-      fbx_wrapperPINVOKE.FbxDocumentInfo_LastSaved_ApplicationVersion_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_FbxString_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxDocumentInfo_LastSaved_ApplicationVersion_set(swigCPtr, FbxPropertyString.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxDocumentInfo_LastSaved_ApplicationVersion_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_FbxString_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_FbxString_t(cPtr, false);
+      FbxPropertyString ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyString(cPtr, false);
       return ret;
     } 
   }
@@ -207,85 +207,79 @@ public class FbxDocumentInfo : FbxObject {
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_FbxString_t EmbeddedUrl {
+  public FbxPropertyString EmbeddedUrl {
     set {
-      fbx_wrapperPINVOKE.FbxDocumentInfo_EmbeddedUrl_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_FbxString_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxDocumentInfo_EmbeddedUrl_set(swigCPtr, FbxPropertyString.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxDocumentInfo_EmbeddedUrl_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_FbxString_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_FbxString_t(cPtr, false);
+      FbxPropertyString ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyString(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxString mTitle {
+  public FbxString mTitle {
     set {
-      fbx_wrapperPINVOKE.FbxDocumentInfo_mTitle_set(swigCPtr, SWIGTYPE_p_FbxString.getCPtr(value));
-      if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+      fbx_wrapperPINVOKE.FbxDocumentInfo_mTitle_set(swigCPtr, FbxString.getCPtr(value));
     } 
     get {
-      SWIGTYPE_p_FbxString ret = new SWIGTYPE_p_FbxString(fbx_wrapperPINVOKE.FbxDocumentInfo_mTitle_get(swigCPtr), true);
-      if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+      global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxDocumentInfo_mTitle_get(swigCPtr);
+      FbxString ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxString(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxString mSubject {
+  public FbxString mSubject {
     set {
-      fbx_wrapperPINVOKE.FbxDocumentInfo_mSubject_set(swigCPtr, SWIGTYPE_p_FbxString.getCPtr(value));
-      if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+      fbx_wrapperPINVOKE.FbxDocumentInfo_mSubject_set(swigCPtr, FbxString.getCPtr(value));
     } 
     get {
-      SWIGTYPE_p_FbxString ret = new SWIGTYPE_p_FbxString(fbx_wrapperPINVOKE.FbxDocumentInfo_mSubject_get(swigCPtr), true);
-      if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+      global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxDocumentInfo_mSubject_get(swigCPtr);
+      FbxString ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxString(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxString mAuthor {
+  public FbxString mAuthor {
     set {
-      fbx_wrapperPINVOKE.FbxDocumentInfo_mAuthor_set(swigCPtr, SWIGTYPE_p_FbxString.getCPtr(value));
-      if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+      fbx_wrapperPINVOKE.FbxDocumentInfo_mAuthor_set(swigCPtr, FbxString.getCPtr(value));
     } 
     get {
-      SWIGTYPE_p_FbxString ret = new SWIGTYPE_p_FbxString(fbx_wrapperPINVOKE.FbxDocumentInfo_mAuthor_get(swigCPtr), true);
-      if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+      global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxDocumentInfo_mAuthor_get(swigCPtr);
+      FbxString ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxString(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxString mKeywords {
+  public FbxString mKeywords {
     set {
-      fbx_wrapperPINVOKE.FbxDocumentInfo_mKeywords_set(swigCPtr, SWIGTYPE_p_FbxString.getCPtr(value));
-      if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+      fbx_wrapperPINVOKE.FbxDocumentInfo_mKeywords_set(swigCPtr, FbxString.getCPtr(value));
     } 
     get {
-      SWIGTYPE_p_FbxString ret = new SWIGTYPE_p_FbxString(fbx_wrapperPINVOKE.FbxDocumentInfo_mKeywords_get(swigCPtr), true);
-      if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+      global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxDocumentInfo_mKeywords_get(swigCPtr);
+      FbxString ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxString(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxString mRevision {
+  public FbxString mRevision {
     set {
-      fbx_wrapperPINVOKE.FbxDocumentInfo_mRevision_set(swigCPtr, SWIGTYPE_p_FbxString.getCPtr(value));
-      if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+      fbx_wrapperPINVOKE.FbxDocumentInfo_mRevision_set(swigCPtr, FbxString.getCPtr(value));
     } 
     get {
-      SWIGTYPE_p_FbxString ret = new SWIGTYPE_p_FbxString(fbx_wrapperPINVOKE.FbxDocumentInfo_mRevision_get(swigCPtr), true);
-      if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+      global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxDocumentInfo_mRevision_get(swigCPtr);
+      FbxString ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxString(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxString mComment {
+  public FbxString mComment {
     set {
-      fbx_wrapperPINVOKE.FbxDocumentInfo_mComment_set(swigCPtr, SWIGTYPE_p_FbxString.getCPtr(value));
-      if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+      fbx_wrapperPINVOKE.FbxDocumentInfo_mComment_set(swigCPtr, FbxString.getCPtr(value));
     } 
     get {
-      SWIGTYPE_p_FbxString ret = new SWIGTYPE_p_FbxString(fbx_wrapperPINVOKE.FbxDocumentInfo_mComment_get(swigCPtr), true);
-      if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+      global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxDocumentInfo_mComment_get(swigCPtr);
+      FbxString ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxString(cPtr, false);
       return ret;
     } 
   }

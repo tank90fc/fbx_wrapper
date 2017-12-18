@@ -47,23 +47,21 @@ public class FbxIOInfo : global::System.IDisposable {
     fbx_wrapperPINVOKE.FbxIOInfo_Reset(swigCPtr, (int)pImpExp);
   }
 
-  public void SetTimeMode(SWIGTYPE_p_FbxTime__EMode pTimeMode, double pCustomFrameRate) {
-    fbx_wrapperPINVOKE.FbxIOInfo_SetTimeMode__SWIG_0(swigCPtr, SWIGTYPE_p_FbxTime__EMode.getCPtr(pTimeMode), pCustomFrameRate);
-    if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+  public void SetTimeMode(FbxTime.EMode pTimeMode, double pCustomFrameRate) {
+    fbx_wrapperPINVOKE.FbxIOInfo_SetTimeMode__SWIG_0(swigCPtr, (int)pTimeMode, pCustomFrameRate);
   }
 
-  public void SetTimeMode(SWIGTYPE_p_FbxTime__EMode pTimeMode) {
-    fbx_wrapperPINVOKE.FbxIOInfo_SetTimeMode__SWIG_1(swigCPtr, SWIGTYPE_p_FbxTime__EMode.getCPtr(pTimeMode));
-    if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+  public void SetTimeMode(FbxTime.EMode pTimeMode) {
+    fbx_wrapperPINVOKE.FbxIOInfo_SetTimeMode__SWIG_1(swigCPtr, (int)pTimeMode);
   }
 
-  public SWIGTYPE_p_FbxTime__EMode GetTimeMode() {
-    SWIGTYPE_p_FbxTime__EMode ret = new SWIGTYPE_p_FbxTime__EMode(fbx_wrapperPINVOKE.FbxIOInfo_GetTimeMode(swigCPtr), true);
+  public FbxTime.EMode GetTimeMode() {
+    FbxTime.EMode ret = (FbxTime.EMode)fbx_wrapperPINVOKE.FbxIOInfo_GetTimeMode(swigCPtr);
     return ret;
   }
 
-  public SWIGTYPE_p_FbxTime GetFramePeriod() {
-    SWIGTYPE_p_FbxTime ret = new SWIGTYPE_p_FbxTime(fbx_wrapperPINVOKE.FbxIOInfo_GetFramePeriod(swigCPtr), true);
+  public FbxTime GetFramePeriod() {
+    FbxTime ret = new FbxTime(fbx_wrapperPINVOKE.FbxIOInfo_GetFramePeriod(swigCPtr), true);
     return ret;
   }
 

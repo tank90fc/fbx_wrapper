@@ -1,9 +1,9 @@
 E:\tools\swigwin-3.0.12\test\bin\Debug\test.exe
 E:\tools\swigwin-3.0.12\test\bin\Debug\test.exe.config
 E:\tools\swigwin-3.0.12\test\bin\Debug\test.pdb
-E:\tools\swigwin-3.0.12\test\bin\Debug\FbxWrapper.dll
 E:\tools\swigwin-3.0.12\test\bin\Debug\FbxWrapper.pdb
 E:\tools\swigwin-3.0.12\test\obj\Debug\sample.csprojResolveAssemblyReference.cache
 E:\tools\swigwin-3.0.12\test\obj\Debug\sample.csproj.CoreCompileInputs.cache
 E:\tools\swigwin-3.0.12\test\obj\Debug\test.exe
 E:\tools\swigwin-3.0.12\test\obj\Debug\test.pdb
+E:\tools\swigwin-3.0.12\test\bin\Debug\FbxWrapper.dll

@@ -103,6 +103,11 @@ public class FbxDouble4x4 : global::System.IDisposable {
     } 
   }
 
+  public void setDataValue(int pIndex, FbxDouble4 dValue) {
+    fbx_wrapperPINVOKE.FbxDouble4x4_setDataValue(swigCPtr, pIndex, FbxDouble4.getCPtr(dValue));
+    if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+  }
+
 }
 
 }

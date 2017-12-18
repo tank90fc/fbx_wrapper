@@ -64,57 +64,57 @@ public class FbxAnimLayer : FbxCollection {
     return ret;
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_double_t Weight {
+  public FbxPropertyDouble Weight {
     set {
-      fbx_wrapperPINVOKE.FbxAnimLayer_Weight_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_double_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxAnimLayer_Weight_set(swigCPtr, FbxPropertyDouble.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxAnimLayer_Weight_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_double_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_double_t(cPtr, false);
+      FbxPropertyDouble ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_bool_t Mute {
+  public FbxPropertyBool Mute {
     set {
-      fbx_wrapperPINVOKE.FbxAnimLayer_Mute_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_bool_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxAnimLayer_Mute_set(swigCPtr, FbxPropertyBool.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxAnimLayer_Mute_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_bool_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_bool_t(cPtr, false);
+      FbxPropertyBool ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyBool(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_bool_t Solo {
+  public FbxPropertyBool Solo {
     set {
-      fbx_wrapperPINVOKE.FbxAnimLayer_Solo_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_bool_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxAnimLayer_Solo_set(swigCPtr, FbxPropertyBool.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxAnimLayer_Solo_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_bool_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_bool_t(cPtr, false);
+      FbxPropertyBool ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyBool(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_bool_t Lock {
+  public FbxPropertyBool Lock {
     set {
-      fbx_wrapperPINVOKE.FbxAnimLayer_Lock_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_bool_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxAnimLayer_Lock_set(swigCPtr, FbxPropertyBool.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxAnimLayer_Lock_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_bool_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_bool_t(cPtr, false);
+      FbxPropertyBool ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyBool(cPtr, false);
       return ret;
     } 
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t Color {
+  public FbxPropertyDouble3 Color {
     set {
-      fbx_wrapperPINVOKE.FbxAnimLayer_Color_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxAnimLayer_Color_set(swigCPtr, FbxPropertyDouble3.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxAnimLayer_Color_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_FbxVectorTemplate3T_FbxDouble_t_t(cPtr, false);
+      FbxPropertyDouble3 ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyDouble3(cPtr, false);
       return ret;
     } 
   }

@@ -140,8 +140,8 @@ public class FbxProperty : global::System.IDisposable {
     return ret;
   }
 
-  public SWIGTYPE_p_FbxString GetName() {
-    SWIGTYPE_p_FbxString ret = new SWIGTYPE_p_FbxString(fbx_wrapperPINVOKE.FbxProperty_GetName(swigCPtr), true);
+  public FbxString GetName() {
+    FbxString ret = new FbxString(fbx_wrapperPINVOKE.FbxProperty_GetName(swigCPtr), true);
     return ret;
   }
 
@@ -150,23 +150,23 @@ public class FbxProperty : global::System.IDisposable {
     return ret;
   }
 
-  public SWIGTYPE_p_FbxString GetHierarchicalName() {
-    SWIGTYPE_p_FbxString ret = new SWIGTYPE_p_FbxString(fbx_wrapperPINVOKE.FbxProperty_GetHierarchicalName(swigCPtr), true);
+  public FbxString GetHierarchicalName() {
+    FbxString ret = new FbxString(fbx_wrapperPINVOKE.FbxProperty_GetHierarchicalName(swigCPtr), true);
     return ret;
   }
 
-  public SWIGTYPE_p_FbxString GetLabel(bool pReturnNameIfEmpty) {
-    SWIGTYPE_p_FbxString ret = new SWIGTYPE_p_FbxString(fbx_wrapperPINVOKE.FbxProperty_GetLabel__SWIG_0(swigCPtr, pReturnNameIfEmpty), true);
+  public FbxString GetLabel(bool pReturnNameIfEmpty) {
+    FbxString ret = new FbxString(fbx_wrapperPINVOKE.FbxProperty_GetLabel__SWIG_0(swigCPtr, pReturnNameIfEmpty), true);
     return ret;
   }
 
-  public SWIGTYPE_p_FbxString GetLabel() {
-    SWIGTYPE_p_FbxString ret = new SWIGTYPE_p_FbxString(fbx_wrapperPINVOKE.FbxProperty_GetLabel__SWIG_1(swigCPtr), true);
+  public FbxString GetLabel() {
+    FbxString ret = new FbxString(fbx_wrapperPINVOKE.FbxProperty_GetLabel__SWIG_1(swigCPtr), true);
     return ret;
   }
 
-  public void SetLabel(SWIGTYPE_p_FbxString pLabel) {
-    fbx_wrapperPINVOKE.FbxProperty_SetLabel(swigCPtr, SWIGTYPE_p_FbxString.getCPtr(pLabel));
+  public void SetLabel(FbxString pLabel) {
+    fbx_wrapperPINVOKE.FbxProperty_SetLabel(swigCPtr, FbxString.getCPtr(pLabel));
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
   }
 
@@ -506,9 +506,9 @@ public class FbxProperty : global::System.IDisposable {
   
   }
 
-  public SWIGTYPE_p_FbxAnimEvaluator GetAnimationEvaluator() {
+  public FbxAnimEvaluator GetAnimationEvaluator() {
     global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxProperty_GetAnimationEvaluator(swigCPtr);
-    SWIGTYPE_p_FbxAnimEvaluator ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxAnimEvaluator(cPtr, false);
+    FbxAnimEvaluator ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxAnimEvaluator(cPtr, false);
     return ret;
   }
 
@@ -522,14 +522,14 @@ public class FbxProperty : global::System.IDisposable {
     return ret;
   }
 
-  public SWIGTYPE_p_FbxPropertyValue EvaluateValue(SWIGTYPE_p_FbxTime pTime, bool pForceEval) {
-    SWIGTYPE_p_FbxPropertyValue ret = new SWIGTYPE_p_FbxPropertyValue(fbx_wrapperPINVOKE.FbxProperty_EvaluateValue__SWIG_3(swigCPtr, SWIGTYPE_p_FbxTime.getCPtr(pTime), pForceEval), false);
+  public SWIGTYPE_p_FbxPropertyValue EvaluateValue(FbxTime pTime, bool pForceEval) {
+    SWIGTYPE_p_FbxPropertyValue ret = new SWIGTYPE_p_FbxPropertyValue(fbx_wrapperPINVOKE.FbxProperty_EvaluateValue__SWIG_3(swigCPtr, FbxTime.getCPtr(pTime), pForceEval), false);
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public SWIGTYPE_p_FbxPropertyValue EvaluateValue(SWIGTYPE_p_FbxTime pTime) {
-    SWIGTYPE_p_FbxPropertyValue ret = new SWIGTYPE_p_FbxPropertyValue(fbx_wrapperPINVOKE.FbxProperty_EvaluateValue__SWIG_4(swigCPtr, SWIGTYPE_p_FbxTime.getCPtr(pTime)), false);
+  public SWIGTYPE_p_FbxPropertyValue EvaluateValue(FbxTime pTime) {
+    SWIGTYPE_p_FbxPropertyValue ret = new SWIGTYPE_p_FbxPropertyValue(fbx_wrapperPINVOKE.FbxProperty_EvaluateValue__SWIG_4(swigCPtr, FbxTime.getCPtr(pTime)), false);
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
@@ -581,33 +581,33 @@ public class FbxProperty : global::System.IDisposable {
     return ret;
   }
 
-  public SWIGTYPE_p_FbxAnimCurve GetCurve(FbxAnimLayer pAnimLayer, bool pCreate) {
+  public FbxAnimCurve GetCurve(FbxAnimLayer pAnimLayer, bool pCreate) {
     global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxProperty_GetCurve__SWIG_0(swigCPtr, FbxAnimLayer.getCPtr(pAnimLayer), pCreate);
-    SWIGTYPE_p_FbxAnimCurve ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxAnimCurve(cPtr, false);
+    FbxAnimCurve ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxAnimCurve(cPtr, false);
     return ret;
   }
 
-  public SWIGTYPE_p_FbxAnimCurve GetCurve(FbxAnimLayer pAnimLayer) {
+  public FbxAnimCurve GetCurve(FbxAnimLayer pAnimLayer) {
     global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxProperty_GetCurve__SWIG_1(swigCPtr, FbxAnimLayer.getCPtr(pAnimLayer));
-    SWIGTYPE_p_FbxAnimCurve ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxAnimCurve(cPtr, false);
+    FbxAnimCurve ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxAnimCurve(cPtr, false);
     return ret;
   }
 
-  public SWIGTYPE_p_FbxAnimCurve GetCurve(FbxAnimLayer pAnimLayer, string pChannel, bool pCreate) {
+  public FbxAnimCurve GetCurve(FbxAnimLayer pAnimLayer, string pChannel, bool pCreate) {
     global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxProperty_GetCurve__SWIG_2(swigCPtr, FbxAnimLayer.getCPtr(pAnimLayer), pChannel, pCreate);
-    SWIGTYPE_p_FbxAnimCurve ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxAnimCurve(cPtr, false);
+    FbxAnimCurve ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxAnimCurve(cPtr, false);
     return ret;
   }
 
-  public SWIGTYPE_p_FbxAnimCurve GetCurve(FbxAnimLayer pAnimLayer, string pChannel) {
+  public FbxAnimCurve GetCurve(FbxAnimLayer pAnimLayer, string pChannel) {
     global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxProperty_GetCurve__SWIG_3(swigCPtr, FbxAnimLayer.getCPtr(pAnimLayer), pChannel);
-    SWIGTYPE_p_FbxAnimCurve ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxAnimCurve(cPtr, false);
+    FbxAnimCurve ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxAnimCurve(cPtr, false);
     return ret;
   }
 
-  public SWIGTYPE_p_FbxAnimCurve GetCurve(FbxAnimLayer pAnimLayer, string pName, string pChannel, bool pCreate) {
+  public FbxAnimCurve GetCurve(FbxAnimLayer pAnimLayer, string pName, string pChannel, bool pCreate) {
     global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxProperty_GetCurve__SWIG_4(swigCPtr, FbxAnimLayer.getCPtr(pAnimLayer), pName, pChannel, pCreate);
-    SWIGTYPE_p_FbxAnimCurve ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxAnimCurve(cPtr, false);
+    FbxAnimCurve ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxAnimCurve(cPtr, false);
     return ret;
   }
 

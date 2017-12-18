@@ -64,13 +64,13 @@ public class FbxAnimStack : FbxCollection {
     return ret;
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_FbxString_t Description {
+  public FbxPropertyString Description {
     set {
-      fbx_wrapperPINVOKE.FbxAnimStack_Description_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_FbxString_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxAnimStack_Description_set(swigCPtr, FbxPropertyString.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxAnimStack_Description_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_FbxString_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_FbxString_t(cPtr, false);
+      FbxPropertyString ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyString(cPtr, false);
       return ret;
     } 
   }
@@ -127,28 +127,28 @@ public class FbxAnimStack : FbxCollection {
     fbx_wrapperPINVOKE.FbxAnimStack_Reset__SWIG_1(swigCPtr);
   }
 
-  public SWIGTYPE_p_FbxTimeSpan GetLocalTimeSpan() {
-    SWIGTYPE_p_FbxTimeSpan ret = new SWIGTYPE_p_FbxTimeSpan(fbx_wrapperPINVOKE.FbxAnimStack_GetLocalTimeSpan(swigCPtr), true);
+  public FbxTimeSpan GetLocalTimeSpan() {
+    FbxTimeSpan ret = new FbxTimeSpan(fbx_wrapperPINVOKE.FbxAnimStack_GetLocalTimeSpan(swigCPtr), true);
     return ret;
   }
 
-  public void SetLocalTimeSpan(SWIGTYPE_p_FbxTimeSpan pTimeSpan) {
-    fbx_wrapperPINVOKE.FbxAnimStack_SetLocalTimeSpan(swigCPtr, SWIGTYPE_p_FbxTimeSpan.getCPtr(pTimeSpan));
+  public void SetLocalTimeSpan(FbxTimeSpan pTimeSpan) {
+    fbx_wrapperPINVOKE.FbxAnimStack_SetLocalTimeSpan(swigCPtr, FbxTimeSpan.getCPtr(pTimeSpan));
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public SWIGTYPE_p_FbxTimeSpan GetReferenceTimeSpan() {
-    SWIGTYPE_p_FbxTimeSpan ret = new SWIGTYPE_p_FbxTimeSpan(fbx_wrapperPINVOKE.FbxAnimStack_GetReferenceTimeSpan(swigCPtr), true);
+  public FbxTimeSpan GetReferenceTimeSpan() {
+    FbxTimeSpan ret = new FbxTimeSpan(fbx_wrapperPINVOKE.FbxAnimStack_GetReferenceTimeSpan(swigCPtr), true);
     return ret;
   }
 
-  public void SetReferenceTimeSpan(SWIGTYPE_p_FbxTimeSpan pTimeSpan) {
-    fbx_wrapperPINVOKE.FbxAnimStack_SetReferenceTimeSpan(swigCPtr, SWIGTYPE_p_FbxTimeSpan.getCPtr(pTimeSpan));
+  public void SetReferenceTimeSpan(FbxTimeSpan pTimeSpan) {
+    fbx_wrapperPINVOKE.FbxAnimStack_SetReferenceTimeSpan(swigCPtr, FbxTimeSpan.getCPtr(pTimeSpan));
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public bool BakeLayers(SWIGTYPE_p_FbxAnimEvaluator pEvaluator, SWIGTYPE_p_FbxTime pStart, SWIGTYPE_p_FbxTime pStop, SWIGTYPE_p_FbxTime pPeriod) {
-    bool ret = fbx_wrapperPINVOKE.FbxAnimStack_BakeLayers(swigCPtr, SWIGTYPE_p_FbxAnimEvaluator.getCPtr(pEvaluator), SWIGTYPE_p_FbxTime.getCPtr(pStart), SWIGTYPE_p_FbxTime.getCPtr(pStop), SWIGTYPE_p_FbxTime.getCPtr(pPeriod));
+  public bool BakeLayers(FbxAnimEvaluator pEvaluator, FbxTime pStart, FbxTime pStop, FbxTime pPeriod) {
+    bool ret = fbx_wrapperPINVOKE.FbxAnimStack_BakeLayers(swigCPtr, FbxAnimEvaluator.getCPtr(pEvaluator), FbxTime.getCPtr(pStart), FbxTime.getCPtr(pStop), FbxTime.getCPtr(pPeriod));
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }

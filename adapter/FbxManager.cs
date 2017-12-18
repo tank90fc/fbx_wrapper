@@ -175,21 +175,21 @@ public class FbxManager : global::System.IDisposable {
     return ret;
   }
 
-  public SWIGTYPE_p_FbxLibrary GetRootLibrary() {
+  public FbxLibrary GetRootLibrary() {
     global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxManager_GetRootLibrary(swigCPtr);
-    SWIGTYPE_p_FbxLibrary ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxLibrary(cPtr, false);
+    FbxLibrary ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxLibrary(cPtr, false);
     return ret;
   }
 
-  public SWIGTYPE_p_FbxLibrary GetSystemLibraries() {
+  public FbxLibrary GetSystemLibraries() {
     global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxManager_GetSystemLibraries(swigCPtr);
-    SWIGTYPE_p_FbxLibrary ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxLibrary(cPtr, false);
+    FbxLibrary ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxLibrary(cPtr, false);
     return ret;
   }
 
-  public SWIGTYPE_p_FbxLibrary GetUserLibraries() {
+  public FbxLibrary GetUserLibraries() {
     global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxManager_GetUserLibraries(swigCPtr);
-    SWIGTYPE_p_FbxLibrary ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxLibrary(cPtr, false);
+    FbxLibrary ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxLibrary(cPtr, false);
     return ret;
   }
 
@@ -308,8 +308,8 @@ public class FbxManager : global::System.IDisposable {
     return ret;
   }
 
-  public static SWIGTYPE_p_FbxString PrefixName(string pPrefix, string pName) {
-    SWIGTYPE_p_FbxString ret = new SWIGTYPE_p_FbxString(fbx_wrapperPINVOKE.FbxManager_PrefixName(pPrefix, pName), true);
+  public static FbxString PrefixName(string pPrefix, string pName) {
+    FbxString ret = new FbxString(fbx_wrapperPINVOKE.FbxManager_PrefixName(pPrefix, pName), true);
     return ret;
   }
 

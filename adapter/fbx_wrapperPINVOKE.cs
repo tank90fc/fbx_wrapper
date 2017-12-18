@@ -191,6 +191,114 @@ class fbx_wrapperPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx__MSC_VER_get")]
   public static extern int _MSC_VER_get();
 
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_DoubleArray")]
+  public static extern global::System.IntPtr new_DoubleArray(int jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_DoubleArray")]
+  public static extern void delete_DoubleArray(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_DoubleArray_getitem")]
+  public static extern double DoubleArray_getitem(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_DoubleArray_setitem")]
+  public static extern void DoubleArray_setitem(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, double jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_DoubleArray_cast")]
+  public static extern global::System.IntPtr DoubleArray_cast(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_DoubleArray_frompointer")]
+  public static extern global::System.IntPtr DoubleArray_frompointer(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FloatArray")]
+  public static extern global::System.IntPtr new_FloatArray(int jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FloatArray")]
+  public static extern void delete_FloatArray(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FloatArray_getitem")]
+  public static extern float FloatArray_getitem(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FloatArray_setitem")]
+  public static extern void FloatArray_setitem(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FloatArray_cast")]
+  public static extern global::System.IntPtr FloatArray_cast(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FloatArray_frompointer")]
+  public static extern global::System.IntPtr FloatArray_frompointer(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_IntArray")]
+  public static extern global::System.IntPtr new_IntArray(int jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_IntArray")]
+  public static extern void delete_IntArray(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_IntArray_getitem")]
+  public static extern int IntArray_getitem(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_IntArray_setitem")]
+  public static extern void IntArray_setitem(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_IntArray_cast")]
+  public static extern global::System.IntPtr IntArray_cast(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_IntArray_frompointer")]
+  public static extern global::System.IntPtr IntArray_frompointer(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_int_p")]
+  public static extern global::System.IntPtr new_int_p();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_int_p")]
+  public static extern void delete_int_p(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_int_p_assign")]
+  public static extern void int_p_assign(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_int_p_value")]
+  public static extern int int_p_value(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_int_p_cast")]
+  public static extern global::System.IntPtr int_p_cast(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_int_p_frompointer")]
+  public static extern global::System.IntPtr int_p_frompointer(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_Float_p")]
+  public static extern global::System.IntPtr new_Float_p();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_Float_p")]
+  public static extern void delete_Float_p(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_Float_p_assign")]
+  public static extern void Float_p_assign(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_Float_p_value")]
+  public static extern float Float_p_value(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_Float_p_cast")]
+  public static extern global::System.IntPtr Float_p_cast(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_Float_p_frompointer")]
+  public static extern global::System.IntPtr Float_p_frompointer(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_double_p")]
+  public static extern global::System.IntPtr new_double_p();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_double_p")]
+  public static extern void delete_double_p(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_double_p_assign")]
+  public static extern void double_p_assign(global::System.Runtime.InteropServices.HandleRef jarg1, double jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_double_p_value")]
+  public static extern double double_p_value(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_double_p_cast")]
+  public static extern global::System.IntPtr double_p_cast(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_double_p_frompointer")]
+  public static extern global::System.IntPtr double_p_frompointer(global::System.Runtime.InteropServices.HandleRef jarg1);
+
   [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FBXSDK_ENV_WIN_get")]
   public static extern int FBXSDK_ENV_WIN_get();
 
@@ -356,6 +464,9 @@ class fbx_wrapperPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxDouble2_mData_get")]
   public static extern global::System.IntPtr FbxDouble2_mData_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxDouble2_setDataValue")]
+  public static extern void FbxDouble2_setDataValue(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, double jarg3);
+
   [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxDouble3__SWIG_0")]
   public static extern global::System.IntPtr new_FbxDouble3__SWIG_0();
 
@@ -394,6 +505,9 @@ class fbx_wrapperPINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxDouble3_mData_get")]
   public static extern global::System.IntPtr FbxDouble3_mData_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxDouble3_setDataValue")]
+  public static extern void FbxDouble3_setDataValue(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, double jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxDouble4__SWIG_0")]
   public static extern global::System.IntPtr new_FbxDouble4__SWIG_0();
@@ -434,6 +548,9 @@ class fbx_wrapperPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxDouble4_mData_get")]
   public static extern global::System.IntPtr FbxDouble4_mData_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxDouble4_setDataValue")]
+  public static extern void FbxDouble4_setDataValue(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, double jarg3);
+
   [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxDouble4x4__SWIG_0")]
   public static extern global::System.IntPtr new_FbxDouble4x4__SWIG_0();
 
@@ -472,6 +589,9 @@ class fbx_wrapperPINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxDouble4x4_mData_get")]
   public static extern global::System.IntPtr FbxDouble4x4_mData_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxDouble4x4_setDataValue")]
+  public static extern void FbxDouble4x4_setDataValue(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxVector2__SWIG_0")]
   public static extern global::System.IntPtr new_FbxVector2__SWIG_0();
@@ -704,6 +824,315 @@ class fbx_wrapperPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxVector4")]
   public static extern void delete_FbxVector4(global::System.Runtime.InteropServices.HandleRef jarg1);
 
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxUTF8ToWC__SWIG_0")]
+  public static extern void FbxUTF8ToWC__SWIG_0(string jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxUTF8ToWC__SWIG_1")]
+  public static extern void FbxUTF8ToWC__SWIG_1(string jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxWCToUTF8__SWIG_0")]
+  public static extern void FbxWCToUTF8__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxWCToUTF8__SWIG_1")]
+  public static extern void FbxWCToUTF8__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxWCToAnsi__SWIG_0")]
+  public static extern void FbxWCToAnsi__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxWCToAnsi__SWIG_1")]
+  public static extern void FbxWCToAnsi__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnsiToWC__SWIG_0")]
+  public static extern void FbxAnsiToWC__SWIG_0(string jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnsiToWC__SWIG_1")]
+  public static extern void FbxAnsiToWC__SWIG_1(string jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnsiToUTF8__SWIG_0")]
+  public static extern void FbxAnsiToUTF8__SWIG_0(string jarg1, string jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnsiToUTF8__SWIG_1")]
+  public static extern void FbxAnsiToUTF8__SWIG_1(string jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxUTF8ToAnsi__SWIG_0")]
+  public static extern void FbxUTF8ToAnsi__SWIG_0(string jarg1, string jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxUTF8ToAnsi__SWIG_1")]
+  public static extern void FbxUTF8ToAnsi__SWIG_1(string jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxString__SWIG_0")]
+  public static extern global::System.IntPtr new_FbxString__SWIG_0();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxString__SWIG_1")]
+  public static extern global::System.IntPtr new_FbxString__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxString__SWIG_2")]
+  public static extern global::System.IntPtr new_FbxString__SWIG_2(string jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxString__SWIG_3")]
+  public static extern global::System.IntPtr new_FbxString__SWIG_3(char jarg1, uint jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxString__SWIG_4")]
+  public static extern global::System.IntPtr new_FbxString__SWIG_4(char jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxString__SWIG_5")]
+  public static extern global::System.IntPtr new_FbxString__SWIG_5(string jarg1, uint jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxString__SWIG_6")]
+  public static extern global::System.IntPtr new_FbxString__SWIG_6(int jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxString__SWIG_7")]
+  public static extern global::System.IntPtr new_FbxString__SWIG_7(float jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxString__SWIG_8")]
+  public static extern global::System.IntPtr new_FbxString__SWIG_8(double jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxString")]
+  public static extern void delete_FbxString(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_GetLen")]
+  public static extern uint FbxString_GetLen(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_Size")]
+  public static extern uint FbxString_Size(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_IsEmpty")]
+  public static extern bool FbxString_IsEmpty(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_Clear")]
+  public static extern global::System.IntPtr FbxString_Clear(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_at__SWIG_0")]
+  public static extern global::System.IntPtr FbxString_at__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_Buffer__SWIG_0")]
+  public static extern string FbxString_Buffer__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_assign__SWIG_0")]
+  public static extern global::System.IntPtr FbxString_assign__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_assign__SWIG_1")]
+  public static extern global::System.IntPtr FbxString_assign__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, char jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_assign__SWIG_2")]
+  public static extern global::System.IntPtr FbxString_assign__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_assign__SWIG_3")]
+  public static extern global::System.IntPtr FbxString_assign__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_assign__SWIG_4")]
+  public static extern global::System.IntPtr FbxString_assign__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_assign__SWIG_5")]
+  public static extern global::System.IntPtr FbxString_assign__SWIG_5(global::System.Runtime.InteropServices.HandleRef jarg1, double jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_add_assign__SWIG_0")]
+  public static extern global::System.IntPtr FbxString_add_assign__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_add_assign__SWIG_1")]
+  public static extern global::System.IntPtr FbxString_add_assign__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, char jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_add_assign__SWIG_2")]
+  public static extern global::System.IntPtr FbxString_add_assign__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_add_assign__SWIG_3")]
+  public static extern global::System.IntPtr FbxString_add_assign__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_add_assign__SWIG_4")]
+  public static extern global::System.IntPtr FbxString_add_assign__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_add_assign__SWIG_5")]
+  public static extern global::System.IntPtr FbxString_add_assign__SWIG_5(global::System.Runtime.InteropServices.HandleRef jarg1, double jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_eq__SWIG_0")]
+  public static extern bool FbxString_eq__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_ne__SWIG_0")]
+  public static extern bool FbxString_ne__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_lt__SWIG_0")]
+  public static extern bool FbxString_lt__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_lte__SWIG_0")]
+  public static extern bool FbxString_lte__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_gte__SWIG_0")]
+  public static extern bool FbxString_gte__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_gt__SWIG_0")]
+  public static extern bool FbxString_gt__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_eq__SWIG_1")]
+  public static extern bool FbxString_eq__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_ne__SWIG_1")]
+  public static extern bool FbxString_ne__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_lt__SWIG_1")]
+  public static extern bool FbxString_lt__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_lte__SWIG_1")]
+  public static extern bool FbxString_lte__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_gte__SWIG_1")]
+  public static extern bool FbxString_gte__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_gt__SWIG_1")]
+  public static extern bool FbxString_gt__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_add__SWIG_0")]
+  public static extern global::System.IntPtr add__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_add__SWIG_1")]
+  public static extern global::System.IntPtr add__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, char jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_add__SWIG_2")]
+  public static extern global::System.IntPtr add__SWIG_2(char jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_add__SWIG_3")]
+  public static extern global::System.IntPtr add__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_add__SWIG_4")]
+  public static extern global::System.IntPtr add__SWIG_4(string jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_add__SWIG_5")]
+  public static extern global::System.IntPtr add__SWIG_5(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_add__SWIG_6")]
+  public static extern global::System.IntPtr add__SWIG_6(int jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_add__SWIG_7")]
+  public static extern global::System.IntPtr add__SWIG_7(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_add__SWIG_8")]
+  public static extern global::System.IntPtr add__SWIG_8(float jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_add__SWIG_9")]
+  public static extern global::System.IntPtr add__SWIG_9(global::System.Runtime.InteropServices.HandleRef jarg1, double jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_Copy")]
+  public static extern global::System.IntPtr FbxString_Copy(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, uint jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_Append")]
+  public static extern global::System.IntPtr FbxString_Append(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, uint jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_Compare")]
+  public static extern int FbxString_Compare(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_CompareNoCase")]
+  public static extern int FbxString_CompareNoCase(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_Swap")]
+  public static extern void FbxString_Swap(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_Upper")]
+  public static extern global::System.IntPtr FbxString_Upper(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_Lower")]
+  public static extern global::System.IntPtr FbxString_Lower(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_Mid__SWIG_0")]
+  public static extern global::System.IntPtr FbxString_Mid__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2, uint jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_Mid__SWIG_1")]
+  public static extern global::System.IntPtr FbxString_Mid__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_Left")]
+  public static extern global::System.IntPtr FbxString_Left(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_Right")]
+  public static extern global::System.IntPtr FbxString_Right(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_Pad__SWIG_0")]
+  public static extern global::System.IntPtr FbxString_Pad__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, uint jarg3, char jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_Pad__SWIG_1")]
+  public static extern global::System.IntPtr FbxString_Pad__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, uint jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_UnPad__SWIG_0")]
+  public static extern global::System.IntPtr FbxString_UnPad__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, char jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_UnPad__SWIG_1")]
+  public static extern global::System.IntPtr FbxString_UnPad__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_Find__SWIG_0")]
+  public static extern int FbxString_Find__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, char jarg2, uint jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_Find__SWIG_1")]
+  public static extern int FbxString_Find__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, char jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_Find__SWIG_2")]
+  public static extern int FbxString_Find__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, uint jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_Find__SWIG_3")]
+  public static extern int FbxString_Find__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_ReverseFind")]
+  public static extern int FbxString_ReverseFind(global::System.Runtime.InteropServices.HandleRef jarg1, char jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_FindOneOf__SWIG_0")]
+  public static extern int FbxString_FindOneOf__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, uint jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_FindOneOf__SWIG_1")]
+  public static extern int FbxString_FindOneOf__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_FindAndReplace__SWIG_0")]
+  public static extern bool FbxString_FindAndReplace__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, string jarg3, uint jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_FindAndReplace__SWIG_1")]
+  public static extern bool FbxString_FindAndReplace__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, string jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_ReplaceAll__SWIG_0")]
+  public static extern bool FbxString_ReplaceAll__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, string jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_ReplaceAll__SWIG_1")]
+  public static extern bool FbxString_ReplaceAll__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, char jarg2, char jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_GetTokenCount")]
+  public static extern int FbxString_GetTokenCount(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxString_GetToken")]
+  public static extern global::System.IntPtr FbxString_GetToken(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, string jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxStringCompare_cast")]
+  public static extern int FbxStringCompare_cast(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxStringCompare")]
+  public static extern global::System.IntPtr new_FbxStringCompare();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxStringCompare")]
+  public static extern void delete_FbxStringCompare(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxStringCompareNoCase_cast")]
+  public static extern int FbxStringCompareNoCase_cast(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxStringCompareNoCase")]
+  public static extern global::System.IntPtr new_FbxStringCompareNoCase();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxStringCompareNoCase")]
+  public static extern void delete_FbxStringCompareNoCase(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxCharPtrCompare_cast")]
+  public static extern int FbxCharPtrCompare_cast(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, string jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxCharPtrCompare")]
+  public static extern global::System.IntPtr new_FbxCharPtrCompare();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxCharPtrCompare")]
+  public static extern void delete_FbxCharPtrCompare(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxCharPtrCompareNoCase_cast")]
+  public static extern int FbxCharPtrCompareNoCase_cast(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, string jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxCharPtrCompareNoCase")]
+  public static extern global::System.IntPtr new_FbxCharPtrCompareNoCase();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxCharPtrCompareNoCase")]
+  public static extern void delete_FbxCharPtrCompareNoCase(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxRemoveChar")]
+  public static extern void FbxRemoveChar(global::System.Runtime.InteropServices.HandleRef jarg1, char jarg2);
+
   [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxManager_Create")]
   public static extern global::System.IntPtr FbxManager_Create();
 
@@ -886,6 +1315,408 @@ class fbx_wrapperPINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxManager_GetNextFbxClass")]
   public static extern global::System.IntPtr FbxManager_GetNextFbxClass(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FBXSDK_TIME_ASSERT_EPSILON_get")]
+  public static extern double FBXSDK_TIME_ASSERT_EPSILON_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FBXSDK_TIME_FORWARD_get")]
+  public static extern int FBXSDK_TIME_FORWARD_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FBXSDK_TIME_BACKWARD_get")]
+  public static extern int FBXSDK_TIME_BACKWARD_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxTime__SWIG_0")]
+  public static extern global::System.IntPtr new_FbxTime__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxTime__SWIG_1")]
+  public static extern global::System.IntPtr new_FbxTime__SWIG_1();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_SetGlobalTimeMode__SWIG_0")]
+  public static extern void FbxTime_SetGlobalTimeMode__SWIG_0(int jarg1, double jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_SetGlobalTimeMode__SWIG_1")]
+  public static extern void FbxTime_SetGlobalTimeMode__SWIG_1(int jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_GetGlobalTimeMode")]
+  public static extern int FbxTime_GetGlobalTimeMode();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_SetGlobalTimeProtocol")]
+  public static extern void FbxTime_SetGlobalTimeProtocol(int jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_GetGlobalTimeProtocol")]
+  public static extern int FbxTime_GetGlobalTimeProtocol();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_GetFrameRate")]
+  public static extern double FbxTime_GetFrameRate(int jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_ConvertFrameRateToTimeMode__SWIG_0")]
+  public static extern int FbxTime_ConvertFrameRateToTimeMode__SWIG_0(double jarg1, double jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_ConvertFrameRateToTimeMode__SWIG_1")]
+  public static extern int FbxTime_ConvertFrameRateToTimeMode__SWIG_1(double jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_Set")]
+  public static extern void FbxTime_Set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_Get")]
+  public static extern global::System.IntPtr FbxTime_Get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_SetMilliSeconds")]
+  public static extern void FbxTime_SetMilliSeconds(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_GetMilliSeconds")]
+  public static extern global::System.IntPtr FbxTime_GetMilliSeconds(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_SetSecondDouble")]
+  public static extern void FbxTime_SetSecondDouble(global::System.Runtime.InteropServices.HandleRef jarg1, double jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_GetSecondDouble")]
+  public static extern double FbxTime_GetSecondDouble(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_SetTime__SWIG_0")]
+  public static extern void FbxTime_SetTime__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, int jarg3, int jarg4, int jarg5, int jarg6, int jarg7);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_SetTime__SWIG_1")]
+  public static extern void FbxTime_SetTime__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, int jarg3, int jarg4, int jarg5, int jarg6);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_SetTime__SWIG_2")]
+  public static extern void FbxTime_SetTime__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, int jarg3, int jarg4, int jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_SetTime__SWIG_3")]
+  public static extern void FbxTime_SetTime__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, int jarg3, int jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_SetTime__SWIG_4")]
+  public static extern void FbxTime_SetTime__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, int jarg3, int jarg4, int jarg5, int jarg6, int jarg7, int jarg8);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_GetTime__SWIG_0")]
+  public static extern bool FbxTime_GetTime__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, global::System.Runtime.InteropServices.HandleRef jarg5, global::System.Runtime.InteropServices.HandleRef jarg6, global::System.Runtime.InteropServices.HandleRef jarg7, int jarg8);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_GetTime__SWIG_1")]
+  public static extern bool FbxTime_GetTime__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, global::System.Runtime.InteropServices.HandleRef jarg5, global::System.Runtime.InteropServices.HandleRef jarg6, global::System.Runtime.InteropServices.HandleRef jarg7);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_GetFramedTime__SWIG_0")]
+  public static extern global::System.IntPtr FbxTime_GetFramedTime__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_GetFramedTime__SWIG_1")]
+  public static extern global::System.IntPtr FbxTime_GetFramedTime__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_SetFrame__SWIG_0")]
+  public static extern void FbxTime_SetFrame__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_SetFrame__SWIG_1")]
+  public static extern void FbxTime_SetFrame__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_SetFramePrecise__SWIG_0")]
+  public static extern void FbxTime_SetFramePrecise__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, double jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_SetFramePrecise__SWIG_1")]
+  public static extern void FbxTime_SetFramePrecise__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, double jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_GetHourCount")]
+  public static extern int FbxTime_GetHourCount(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_GetMinuteCount")]
+  public static extern int FbxTime_GetMinuteCount(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_GetSecondCount")]
+  public static extern int FbxTime_GetSecondCount(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_GetFrameCount__SWIG_0")]
+  public static extern global::System.IntPtr FbxTime_GetFrameCount__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_GetFrameCount__SWIG_1")]
+  public static extern global::System.IntPtr FbxTime_GetFrameCount__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_GetFrameCountPrecise__SWIG_0")]
+  public static extern double FbxTime_GetFrameCountPrecise__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_GetFrameCountPrecise__SWIG_1")]
+  public static extern double FbxTime_GetFrameCountPrecise__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_GetFieldCount__SWIG_0")]
+  public static extern global::System.IntPtr FbxTime_GetFieldCount__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_GetFieldCount__SWIG_1")]
+  public static extern global::System.IntPtr FbxTime_GetFieldCount__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_GetResidual__SWIG_0")]
+  public static extern int FbxTime_GetResidual__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_GetResidual__SWIG_1")]
+  public static extern int FbxTime_GetResidual__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_IsDropFrame__SWIG_0")]
+  public static extern bool FbxTime_IsDropFrame__SWIG_0(int jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_IsDropFrame__SWIG_1")]
+  public static extern bool FbxTime_IsDropFrame__SWIG_1();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_GetFrameSeparator__SWIG_0")]
+  public static extern char FbxTime_GetFrameSeparator__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_GetFrameSeparator__SWIG_1")]
+  public static extern char FbxTime_GetFrameSeparator__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_GetTimeString__SWIG_0")]
+  public static extern string FbxTime_GetTimeString__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, ushort jarg3, int jarg4, int jarg5, int jarg6);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_GetTimeString__SWIG_1")]
+  public static extern string FbxTime_GetTimeString__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, ushort jarg3, int jarg4, int jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_GetTimeString__SWIG_2")]
+  public static extern string FbxTime_GetTimeString__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, ushort jarg3, int jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_GetTimeString__SWIG_3")]
+  public static extern string FbxTime_GetTimeString__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, ushort jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_GetTimeString__SWIG_4")]
+  public static extern global::System.IntPtr FbxTime_GetTimeString__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, int jarg3, int jarg4, int jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_GetTimeString__SWIG_5")]
+  public static extern global::System.IntPtr FbxTime_GetTimeString__SWIG_5(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, int jarg3, int jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_GetTimeString__SWIG_6")]
+  public static extern global::System.IntPtr FbxTime_GetTimeString__SWIG_6(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_GetTimeString__SWIG_7")]
+  public static extern global::System.IntPtr FbxTime_GetTimeString__SWIG_7(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_GetTimeString__SWIG_8")]
+  public static extern global::System.IntPtr FbxTime_GetTimeString__SWIG_8(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_SetTimeString__SWIG_0")]
+  public static extern bool FbxTime_SetTimeString__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, int jarg3, int jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_SetTimeString__SWIG_1")]
+  public static extern bool FbxTime_SetTimeString__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_SetTimeString__SWIG_2")]
+  public static extern bool FbxTime_SetTimeString__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_eq")]
+  public static extern bool FbxTime_eq(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_ne")]
+  public static extern bool FbxTime_ne(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_gte")]
+  public static extern bool FbxTime_gte(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_lte")]
+  public static extern bool FbxTime_lte(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_gt")]
+  public static extern bool FbxTime_gt(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_lt")]
+  public static extern bool FbxTime_lt(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_assign")]
+  public static extern global::System.IntPtr FbxTime_assign(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_add_assign")]
+  public static extern global::System.IntPtr FbxTime_add_assign(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_sub_assign")]
+  public static extern global::System.IntPtr FbxTime_sub_assign(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_add")]
+  public static extern global::System.IntPtr FbxTime_add(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_sub")]
+  public static extern global::System.IntPtr FbxTime_sub(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_mul__SWIG_0")]
+  public static extern global::System.IntPtr FbxTime_mul__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_div")]
+  public static extern global::System.IntPtr FbxTime_div(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_mul__SWIG_1")]
+  public static extern global::System.IntPtr FbxTime_mul__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_GetOneFrameValue__SWIG_0")]
+  public static extern global::System.IntPtr FbxTime_GetOneFrameValue__SWIG_0(int jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTime_GetOneFrameValue__SWIG_1")]
+  public static extern global::System.IntPtr FbxTime_GetOneFrameValue__SWIG_1();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGetGlobalTimeMode")]
+  public static extern int FbxGetGlobalTimeMode();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGetGlobalTimeModeObject")]
+  public static extern global::System.IntPtr FbxGetGlobalTimeModeObject();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGetGlobalTimeFormat")]
+  public static extern int FbxGetGlobalTimeFormat();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSetGlobalTimeMode__SWIG_0")]
+  public static extern void FbxSetGlobalTimeMode__SWIG_0(int jarg1, double jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSetGlobalTimeFormat")]
+  public static extern void FbxSetGlobalTimeFormat(int jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxTime")]
+  public static extern void delete_FbxTime(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTimeSeconds__SWIG_0")]
+  public static extern global::System.IntPtr FbxTimeSeconds__SWIG_0(double jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTimeSeconds__SWIG_1")]
+  public static extern global::System.IntPtr FbxTimeSeconds__SWIG_1();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxTimeSpan__SWIG_0")]
+  public static extern global::System.IntPtr new_FbxTimeSpan__SWIG_0();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxTimeSpan__SWIG_1")]
+  public static extern global::System.IntPtr new_FbxTimeSpan__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTimeSpan_Set")]
+  public static extern void FbxTimeSpan_Set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTimeSpan_SetStart")]
+  public static extern void FbxTimeSpan_SetStart(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTimeSpan_SetStop")]
+  public static extern void FbxTimeSpan_SetStop(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTimeSpan_GetStart")]
+  public static extern global::System.IntPtr FbxTimeSpan_GetStart(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTimeSpan_GetStop")]
+  public static extern global::System.IntPtr FbxTimeSpan_GetStop(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTimeSpan_GetDuration")]
+  public static extern global::System.IntPtr FbxTimeSpan_GetDuration(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTimeSpan_GetSignedDuration")]
+  public static extern global::System.IntPtr FbxTimeSpan_GetSignedDuration(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTimeSpan_GetDirection")]
+  public static extern int FbxTimeSpan_GetDirection(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTimeSpan_IsInside")]
+  public static extern bool FbxTimeSpan_IsInside(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTimeSpan_Intersect")]
+  public static extern global::System.IntPtr FbxTimeSpan_Intersect(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTimeSpan_ne")]
+  public static extern bool FbxTimeSpan_ne(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTimeSpan_eq")]
+  public static extern bool FbxTimeSpan_eq(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTimeSpan_UnionAssignment__SWIG_0")]
+  public static extern void FbxTimeSpan_UnionAssignment__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTimeSpan_UnionAssignment__SWIG_1")]
+  public static extern void FbxTimeSpan_UnionAssignment__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxTimeSpan")]
+  public static extern void delete_FbxTimeSpan(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxLocalTime")]
+  public static extern global::System.IntPtr new_FbxLocalTime();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLocalTime_mYear_set")]
+  public static extern void FbxLocalTime_mYear_set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLocalTime_mYear_get")]
+  public static extern int FbxLocalTime_mYear_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLocalTime_mMonth_set")]
+  public static extern void FbxLocalTime_mMonth_set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLocalTime_mMonth_get")]
+  public static extern int FbxLocalTime_mMonth_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLocalTime_mDay_set")]
+  public static extern void FbxLocalTime_mDay_set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLocalTime_mDay_get")]
+  public static extern int FbxLocalTime_mDay_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLocalTime_mHour_set")]
+  public static extern void FbxLocalTime_mHour_set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLocalTime_mHour_get")]
+  public static extern int FbxLocalTime_mHour_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLocalTime_mMinute_set")]
+  public static extern void FbxLocalTime_mMinute_set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLocalTime_mMinute_get")]
+  public static extern int FbxLocalTime_mMinute_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLocalTime_mSecond_set")]
+  public static extern void FbxLocalTime_mSecond_set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLocalTime_mSecond_get")]
+  public static extern int FbxLocalTime_mSecond_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLocalTime_mMillisecond_set")]
+  public static extern void FbxLocalTime_mMillisecond_set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLocalTime_mMillisecond_get")]
+  public static extern int FbxLocalTime_mMillisecond_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxLocalTime")]
+  public static extern void delete_FbxLocalTime(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGetCurrentLocalTime")]
+  public static extern void FbxGetCurrentLocalTime(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSetGlobalTimeMode__SWIG_1")]
+  public static extern void FbxSetGlobalTimeMode__SWIG_1(int jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGetOldTimeModeCorrespondance")]
+  public static extern int FbxGetOldTimeModeCorrespondance(int jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGetTimeModeFromOldValue")]
+  public static extern int FbxGetTimeModeFromOldValue(int jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGetTimeModeFromFrameRate")]
+  public static extern int FbxGetTimeModeFromFrameRate(string jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGetControlStringList")]
+  public static extern void FbxGetControlStringList(string jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGetGlobalFrameRateString")]
+  public static extern string FbxGetGlobalFrameRateString(int jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGetGlobalTimeModeString")]
+  public static extern string FbxGetGlobalTimeModeString(int jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGetFrameRate")]
+  public static extern double FbxGetFrameRate(int jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSelectionToTimeFormat")]
+  public static extern int FbxSelectionToTimeFormat(int jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSelectionToTimeMode")]
+  public static extern int FbxSelectionToTimeMode(int jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTimeToSelection__SWIG_0")]
+  public static extern int FbxTimeToSelection__SWIG_0(int jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTimeToSelection__SWIG_1")]
+  public static extern int FbxTimeToSelection__SWIG_1(int jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTimeToSelection__SWIG_2")]
+  public static extern int FbxTimeToSelection__SWIG_2();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGetTimeModeName")]
+  public static extern string FbxGetTimeModeName(int jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGetFrameRateStringListIndex")]
+  public static extern int FbxGetFrameRateStringListIndex(int jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxIsValidCustomFrameRate")]
+  public static extern bool FbxIsValidCustomFrameRate(double jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGetNearestCustomFrameRate")]
+  public static extern bool FbxGetNearestCustomFrameRate(double jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxEventBase")]
   public static extern void delete_FbxEventBase(global::System.Runtime.InteropServices.HandleRef jarg1);
@@ -1476,13 +2307,13 @@ class fbx_wrapperPINVOKE {
   public static extern void FbxIOInfo_Reset(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxIOInfo_SetTimeMode__SWIG_0")]
-  public static extern void FbxIOInfo_SetTimeMode__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, double jarg3);
+  public static extern void FbxIOInfo_SetTimeMode__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, double jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxIOInfo_SetTimeMode__SWIG_1")]
-  public static extern void FbxIOInfo_SetTimeMode__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern void FbxIOInfo_SetTimeMode__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxIOInfo_GetTimeMode")]
-  public static extern global::System.IntPtr FbxIOInfo_GetTimeMode(global::System.Runtime.InteropServices.HandleRef jarg1);
+  public static extern int FbxIOInfo_GetTimeMode(global::System.Runtime.InteropServices.HandleRef jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxIOInfo_GetFramePeriod")]
   public static extern global::System.IntPtr FbxIOInfo_GetFramePeriod(global::System.Runtime.InteropServices.HandleRef jarg1);
@@ -2177,6 +3008,339 @@ class fbx_wrapperPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxProperty_sHierarchicalSeparator_get")]
   public static extern string FbxProperty_sHierarchicalSeparator_get();
 
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyString_StaticInit__SWIG_0")]
+  public static extern global::System.IntPtr FbxPropertyString_StaticInit__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, string jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, bool jarg5, global::System.Runtime.InteropServices.HandleRef jarg6);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyString_StaticInit__SWIG_1")]
+  public static extern global::System.IntPtr FbxPropertyString_StaticInit__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, string jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, bool jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyString_StaticInit__SWIG_2")]
+  public static extern global::System.IntPtr FbxPropertyString_StaticInit__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, string jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, global::System.Runtime.InteropServices.HandleRef jarg5, bool jarg6, global::System.Runtime.InteropServices.HandleRef jarg7);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyString_StaticInit__SWIG_3")]
+  public static extern global::System.IntPtr FbxPropertyString_StaticInit__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, string jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, global::System.Runtime.InteropServices.HandleRef jarg5, bool jarg6);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyString_StaticInit__SWIG_4")]
+  public static extern global::System.IntPtr FbxPropertyString_StaticInit__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, string jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, global::System.Runtime.InteropServices.HandleRef jarg5, bool jarg6, global::System.Runtime.InteropServices.HandleRef jarg7);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyString_StaticInit__SWIG_5")]
+  public static extern global::System.IntPtr FbxPropertyString_StaticInit__SWIG_5(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, string jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, global::System.Runtime.InteropServices.HandleRef jarg5, bool jarg6);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyString_StaticInit__SWIG_6")]
+  public static extern global::System.IntPtr FbxPropertyString_StaticInit__SWIG_6(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, string jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, global::System.Runtime.InteropServices.HandleRef jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyString_Set")]
+  public static extern global::System.IntPtr FbxPropertyString_Set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyString_Get")]
+  public static extern global::System.IntPtr FbxPropertyString_Get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyString_assign")]
+  public static extern global::System.IntPtr FbxPropertyString_assign(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyString_EvaluateValue__SWIG_0")]
+  public static extern global::System.IntPtr FbxPropertyString_EvaluateValue__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, bool jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyString_EvaluateValue__SWIG_1")]
+  public static extern global::System.IntPtr FbxPropertyString_EvaluateValue__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyString_EvaluateValue__SWIG_2")]
+  public static extern global::System.IntPtr FbxPropertyString_EvaluateValue__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxPropertyString__SWIG_0")]
+  public static extern global::System.IntPtr new_FbxPropertyString__SWIG_0();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxPropertyString__SWIG_1")]
+  public static extern global::System.IntPtr new_FbxPropertyString__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxPropertyString")]
+  public static extern void delete_FbxPropertyString(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyDouble3_StaticInit__SWIG_0")]
+  public static extern global::System.IntPtr FbxPropertyDouble3_StaticInit__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, string jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, bool jarg5, global::System.Runtime.InteropServices.HandleRef jarg6);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyDouble3_StaticInit__SWIG_1")]
+  public static extern global::System.IntPtr FbxPropertyDouble3_StaticInit__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, string jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, bool jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyDouble3_StaticInit__SWIG_2")]
+  public static extern global::System.IntPtr FbxPropertyDouble3_StaticInit__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, string jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, global::System.Runtime.InteropServices.HandleRef jarg5, bool jarg6, global::System.Runtime.InteropServices.HandleRef jarg7);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyDouble3_StaticInit__SWIG_3")]
+  public static extern global::System.IntPtr FbxPropertyDouble3_StaticInit__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, string jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, global::System.Runtime.InteropServices.HandleRef jarg5, bool jarg6);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyDouble3_StaticInit__SWIG_4")]
+  public static extern global::System.IntPtr FbxPropertyDouble3_StaticInit__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, string jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, global::System.Runtime.InteropServices.HandleRef jarg5, bool jarg6, global::System.Runtime.InteropServices.HandleRef jarg7);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyDouble3_StaticInit__SWIG_5")]
+  public static extern global::System.IntPtr FbxPropertyDouble3_StaticInit__SWIG_5(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, string jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, global::System.Runtime.InteropServices.HandleRef jarg5, bool jarg6);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyDouble3_StaticInit__SWIG_6")]
+  public static extern global::System.IntPtr FbxPropertyDouble3_StaticInit__SWIG_6(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, string jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, global::System.Runtime.InteropServices.HandleRef jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyDouble3_Set")]
+  public static extern global::System.IntPtr FbxPropertyDouble3_Set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyDouble3_Get")]
+  public static extern global::System.IntPtr FbxPropertyDouble3_Get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyDouble3_assign")]
+  public static extern global::System.IntPtr FbxPropertyDouble3_assign(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyDouble3_EvaluateValue__SWIG_0")]
+  public static extern global::System.IntPtr FbxPropertyDouble3_EvaluateValue__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, bool jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyDouble3_EvaluateValue__SWIG_1")]
+  public static extern global::System.IntPtr FbxPropertyDouble3_EvaluateValue__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyDouble3_EvaluateValue__SWIG_2")]
+  public static extern global::System.IntPtr FbxPropertyDouble3_EvaluateValue__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxPropertyDouble3__SWIG_0")]
+  public static extern global::System.IntPtr new_FbxPropertyDouble3__SWIG_0();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxPropertyDouble3__SWIG_1")]
+  public static extern global::System.IntPtr new_FbxPropertyDouble3__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxPropertyDouble3")]
+  public static extern void delete_FbxPropertyDouble3(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyDouble_StaticInit__SWIG_0")]
+  public static extern global::System.IntPtr FbxPropertyDouble_StaticInit__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, string jarg3, double jarg4, bool jarg5, global::System.Runtime.InteropServices.HandleRef jarg6);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyDouble_StaticInit__SWIG_1")]
+  public static extern global::System.IntPtr FbxPropertyDouble_StaticInit__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, string jarg3, double jarg4, bool jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyDouble_StaticInit__SWIG_2")]
+  public static extern global::System.IntPtr FbxPropertyDouble_StaticInit__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, string jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, double jarg5, bool jarg6, global::System.Runtime.InteropServices.HandleRef jarg7);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyDouble_StaticInit__SWIG_3")]
+  public static extern global::System.IntPtr FbxPropertyDouble_StaticInit__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, string jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, double jarg5, bool jarg6);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyDouble_StaticInit__SWIG_4")]
+  public static extern global::System.IntPtr FbxPropertyDouble_StaticInit__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, string jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, double jarg5, bool jarg6, global::System.Runtime.InteropServices.HandleRef jarg7);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyDouble_StaticInit__SWIG_5")]
+  public static extern global::System.IntPtr FbxPropertyDouble_StaticInit__SWIG_5(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, string jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, double jarg5, bool jarg6);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyDouble_StaticInit__SWIG_6")]
+  public static extern global::System.IntPtr FbxPropertyDouble_StaticInit__SWIG_6(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, string jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, double jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyDouble_Set")]
+  public static extern global::System.IntPtr FbxPropertyDouble_Set(global::System.Runtime.InteropServices.HandleRef jarg1, double jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyDouble_Get")]
+  public static extern double FbxPropertyDouble_Get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyDouble_assign")]
+  public static extern global::System.IntPtr FbxPropertyDouble_assign(global::System.Runtime.InteropServices.HandleRef jarg1, double jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyDouble_EvaluateValue__SWIG_0")]
+  public static extern double FbxPropertyDouble_EvaluateValue__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, bool jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyDouble_EvaluateValue__SWIG_1")]
+  public static extern double FbxPropertyDouble_EvaluateValue__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyDouble_EvaluateValue__SWIG_2")]
+  public static extern double FbxPropertyDouble_EvaluateValue__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxPropertyDouble__SWIG_0")]
+  public static extern global::System.IntPtr new_FbxPropertyDouble__SWIG_0();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxPropertyDouble__SWIG_1")]
+  public static extern global::System.IntPtr new_FbxPropertyDouble__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxPropertyDouble")]
+  public static extern void delete_FbxPropertyDouble(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyBool_StaticInit__SWIG_0")]
+  public static extern global::System.IntPtr FbxPropertyBool_StaticInit__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, string jarg3, bool jarg4, bool jarg5, global::System.Runtime.InteropServices.HandleRef jarg6);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyBool_StaticInit__SWIG_1")]
+  public static extern global::System.IntPtr FbxPropertyBool_StaticInit__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, string jarg3, bool jarg4, bool jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyBool_StaticInit__SWIG_2")]
+  public static extern global::System.IntPtr FbxPropertyBool_StaticInit__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, string jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, bool jarg5, bool jarg6, global::System.Runtime.InteropServices.HandleRef jarg7);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyBool_StaticInit__SWIG_3")]
+  public static extern global::System.IntPtr FbxPropertyBool_StaticInit__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, string jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, bool jarg5, bool jarg6);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyBool_StaticInit__SWIG_4")]
+  public static extern global::System.IntPtr FbxPropertyBool_StaticInit__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, string jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, bool jarg5, bool jarg6, global::System.Runtime.InteropServices.HandleRef jarg7);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyBool_StaticInit__SWIG_5")]
+  public static extern global::System.IntPtr FbxPropertyBool_StaticInit__SWIG_5(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, string jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, bool jarg5, bool jarg6);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyBool_StaticInit__SWIG_6")]
+  public static extern global::System.IntPtr FbxPropertyBool_StaticInit__SWIG_6(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, string jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, bool jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyBool_Set")]
+  public static extern global::System.IntPtr FbxPropertyBool_Set(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyBool_Get")]
+  public static extern bool FbxPropertyBool_Get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyBool_assign")]
+  public static extern global::System.IntPtr FbxPropertyBool_assign(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyBool_EvaluateValue__SWIG_0")]
+  public static extern bool FbxPropertyBool_EvaluateValue__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, bool jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyBool_EvaluateValue__SWIG_1")]
+  public static extern bool FbxPropertyBool_EvaluateValue__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyBool_EvaluateValue__SWIG_2")]
+  public static extern bool FbxPropertyBool_EvaluateValue__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxPropertyBool__SWIG_0")]
+  public static extern global::System.IntPtr new_FbxPropertyBool__SWIG_0();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxPropertyBool__SWIG_1")]
+  public static extern global::System.IntPtr new_FbxPropertyBool__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxPropertyBool")]
+  public static extern void delete_FbxPropertyBool(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_ConversionOptions_mConvertRrsNodes_set")]
+  public static extern void FbxSystemUnit_ConversionOptions_mConvertRrsNodes_set(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_ConversionOptions_mConvertRrsNodes_get")]
+  public static extern bool FbxSystemUnit_ConversionOptions_mConvertRrsNodes_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_ConversionOptions_mConvertLimits_set")]
+  public static extern void FbxSystemUnit_ConversionOptions_mConvertLimits_set(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_ConversionOptions_mConvertLimits_get")]
+  public static extern bool FbxSystemUnit_ConversionOptions_mConvertLimits_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_ConversionOptions_mConvertClusters_set")]
+  public static extern void FbxSystemUnit_ConversionOptions_mConvertClusters_set(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_ConversionOptions_mConvertClusters_get")]
+  public static extern bool FbxSystemUnit_ConversionOptions_mConvertClusters_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_ConversionOptions_mConvertLightIntensity_set")]
+  public static extern void FbxSystemUnit_ConversionOptions_mConvertLightIntensity_set(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_ConversionOptions_mConvertLightIntensity_get")]
+  public static extern bool FbxSystemUnit_ConversionOptions_mConvertLightIntensity_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_ConversionOptions_mConvertPhotometricLProperties_set")]
+  public static extern void FbxSystemUnit_ConversionOptions_mConvertPhotometricLProperties_set(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_ConversionOptions_mConvertPhotometricLProperties_get")]
+  public static extern bool FbxSystemUnit_ConversionOptions_mConvertPhotometricLProperties_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_ConversionOptions_mConvertCameraClipPlanes_set")]
+  public static extern void FbxSystemUnit_ConversionOptions_mConvertCameraClipPlanes_set(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_ConversionOptions_mConvertCameraClipPlanes_get")]
+  public static extern bool FbxSystemUnit_ConversionOptions_mConvertCameraClipPlanes_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxSystemUnit_ConversionOptions")]
+  public static extern global::System.IntPtr new_FbxSystemUnit_ConversionOptions();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxSystemUnit_ConversionOptions")]
+  public static extern void delete_FbxSystemUnit_ConversionOptions(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxSystemUnit__SWIG_0")]
+  public static extern global::System.IntPtr new_FbxSystemUnit__SWIG_0();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxSystemUnit__SWIG_1")]
+  public static extern global::System.IntPtr new_FbxSystemUnit__SWIG_1(double jarg1, double jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxSystemUnit__SWIG_2")]
+  public static extern global::System.IntPtr new_FbxSystemUnit__SWIG_2(double jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxSystemUnit")]
+  public static extern void delete_FbxSystemUnit(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_mm_get")]
+  public static extern global::System.IntPtr FbxSystemUnit_mm_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_dm_get")]
+  public static extern global::System.IntPtr FbxSystemUnit_dm_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_cm_get")]
+  public static extern global::System.IntPtr FbxSystemUnit_cm_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_m_get")]
+  public static extern global::System.IntPtr FbxSystemUnit_m_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_km_get")]
+  public static extern global::System.IntPtr FbxSystemUnit_km_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_Inch_get")]
+  public static extern global::System.IntPtr FbxSystemUnit_Inch_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_Foot_get")]
+  public static extern global::System.IntPtr FbxSystemUnit_Foot_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_Mile_get")]
+  public static extern global::System.IntPtr FbxSystemUnit_Mile_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_Yard_get")]
+  public static extern global::System.IntPtr FbxSystemUnit_Yard_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FBXSDK_SYSTEM_UNIT_PREDEF_COUNT_get")]
+  public static extern int FBXSDK_SYSTEM_UNIT_PREDEF_COUNT_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_sPredefinedUnits_set")]
+  public static extern void FbxSystemUnit_sPredefinedUnits_set(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_sPredefinedUnits_get")]
+  public static extern global::System.IntPtr FbxSystemUnit_sPredefinedUnits_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_DefaultConversionOptions_get")]
+  public static extern global::System.IntPtr FbxSystemUnit_DefaultConversionOptions_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_ConvertScene__SWIG_0")]
+  public static extern void FbxSystemUnit_ConvertScene__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_ConvertScene__SWIG_1")]
+  public static extern void FbxSystemUnit_ConvertScene__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_ConvertChildren__SWIG_0")]
+  public static extern void FbxSystemUnit_ConvertChildren__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_ConvertChildren__SWIG_1")]
+  public static extern void FbxSystemUnit_ConvertChildren__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_ConvertScene__SWIG_2")]
+  public static extern void FbxSystemUnit_ConvertScene__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_ConvertScene__SWIG_3")]
+  public static extern void FbxSystemUnit_ConvertScene__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_GetScaleFactor")]
+  public static extern double FbxSystemUnit_GetScaleFactor(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_GetScaleFactorAsString__SWIG_0")]
+  public static extern global::System.IntPtr FbxSystemUnit_GetScaleFactorAsString__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_GetScaleFactorAsString__SWIG_1")]
+  public static extern global::System.IntPtr FbxSystemUnit_GetScaleFactorAsString__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_GetScaleFactorAsString_Plurial")]
+  public static extern global::System.IntPtr FbxSystemUnit_GetScaleFactorAsString_Plurial(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_GetMultiplier")]
+  public static extern double FbxSystemUnit_GetMultiplier(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_eq")]
+  public static extern bool FbxSystemUnit_eq(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_ne")]
+  public static extern bool FbxSystemUnit_ne(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_assign")]
+  public static extern global::System.IntPtr FbxSystemUnit_assign(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_GetConversionFactorTo")]
+  public static extern double FbxSystemUnit_GetConversionFactorTo(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSystemUnit_GetConversionFactorFrom")]
+  public static extern double FbxSystemUnit_GetConversionFactorFrom(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
   [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxDocumentInfo_ClassId_set")]
   public static extern void FbxDocumentInfo_ClassId_set(global::System.Runtime.InteropServices.HandleRef jarg1);
 
@@ -2730,7 +3894,7 @@ class fbx_wrapperPINVOKE {
   public static extern void FbxScene_UpdateScaleCompensate(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
   [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxScene_ConvertAttributeTypeToClassID")]
-  public static extern global::System.IntPtr FbxScene_ConvertAttributeTypeToClassID(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+  public static extern global::System.IntPtr FbxScene_ConvertAttributeTypeToClassID(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
   [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxScene_GlobalLightSettings")]
   public static extern global::System.IntPtr FbxScene_GlobalLightSettings(global::System.Runtime.InteropServices.HandleRef jarg1);
@@ -4424,6 +5588,2565 @@ class fbx_wrapperPINVOKE {
   [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTypeOf__SWIG_2")]
   public static extern global::System.IntPtr FbxTypeOf__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1);
 
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxNodeAttribute_ClassId_set")]
+  public static extern void FbxNodeAttribute_ClassId_set(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxNodeAttribute_ClassId_get")]
+  public static extern global::System.IntPtr FbxNodeAttribute_ClassId_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxNodeAttribute_GetClassId")]
+  public static extern global::System.IntPtr FbxNodeAttribute_GetClassId(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxNodeAttribute_Create__SWIG_0")]
+  public static extern global::System.IntPtr FbxNodeAttribute_Create__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxNodeAttribute_Create__SWIG_1")]
+  public static extern global::System.IntPtr FbxNodeAttribute_Create__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxNodeAttribute_sColor_set")]
+  public static extern void FbxNodeAttribute_sColor_set(string jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxNodeAttribute_sColor_get")]
+  public static extern string FbxNodeAttribute_sColor_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxNodeAttribute_sDefaultColor_get")]
+  public static extern global::System.IntPtr FbxNodeAttribute_sDefaultColor_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxNodeAttribute_Color_set")]
+  public static extern void FbxNodeAttribute_Color_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxNodeAttribute_Color_get")]
+  public static extern global::System.IntPtr FbxNodeAttribute_Color_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxNodeAttribute_GetAttributeType")]
+  public static extern int FbxNodeAttribute_GetAttributeType(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxNodeAttribute_GetNodeCount")]
+  public static extern int FbxNodeAttribute_GetNodeCount(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxNodeAttribute_GetNode__SWIG_0")]
+  public static extern global::System.IntPtr FbxNodeAttribute_GetNode__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxNodeAttribute_GetNode__SWIG_1")]
+  public static extern global::System.IntPtr FbxNodeAttribute_GetNode__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkeleton_ClassId_set")]
+  public static extern void FbxSkeleton_ClassId_set(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkeleton_ClassId_get")]
+  public static extern global::System.IntPtr FbxSkeleton_ClassId_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkeleton_GetClassId")]
+  public static extern global::System.IntPtr FbxSkeleton_GetClassId(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkeleton_Create__SWIG_0")]
+  public static extern global::System.IntPtr FbxSkeleton_Create__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkeleton_Create__SWIG_1")]
+  public static extern global::System.IntPtr FbxSkeleton_Create__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkeleton_GetAttributeType")]
+  public static extern int FbxSkeleton_GetAttributeType(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkeleton_Reset")]
+  public static extern void FbxSkeleton_Reset(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkeleton_SetSkeletonType")]
+  public static extern void FbxSkeleton_SetSkeletonType(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkeleton_GetSkeletonType")]
+  public static extern int FbxSkeleton_GetSkeletonType(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkeleton_GetSkeletonTypeIsSet")]
+  public static extern bool FbxSkeleton_GetSkeletonTypeIsSet(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkeleton_GetSkeletonTypeDefaultValue")]
+  public static extern int FbxSkeleton_GetSkeletonTypeDefaultValue(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkeleton_GetLimbLengthDefaultValue")]
+  public static extern double FbxSkeleton_GetLimbLengthDefaultValue(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkeleton_GetLimbNodeSizeDefaultValue")]
+  public static extern double FbxSkeleton_GetLimbNodeSizeDefaultValue(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkeleton_SetLimbNodeColor")]
+  public static extern bool FbxSkeleton_SetLimbNodeColor(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkeleton_GetLimbNodeColor")]
+  public static extern global::System.IntPtr FbxSkeleton_GetLimbNodeColor(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkeleton_GetLimbNodeColorIsSet")]
+  public static extern bool FbxSkeleton_GetLimbNodeColorIsSet(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkeleton_GetLimbNodeColorDefaultValue")]
+  public static extern global::System.IntPtr FbxSkeleton_GetLimbNodeColorDefaultValue(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkeleton_IsSkeletonRoot")]
+  public static extern bool FbxSkeleton_IsSkeletonRoot(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkeleton_sSize_set")]
+  public static extern void FbxSkeleton_sSize_set(string jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkeleton_sSize_get")]
+  public static extern string FbxSkeleton_sSize_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkeleton_sLimbLength_set")]
+  public static extern void FbxSkeleton_sLimbLength_set(string jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkeleton_sLimbLength_get")]
+  public static extern string FbxSkeleton_sLimbLength_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkeleton_sDefaultSize_get")]
+  public static extern double FbxSkeleton_sDefaultSize_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkeleton_sDefaultLimbLength_get")]
+  public static extern double FbxSkeleton_sDefaultLimbLength_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkeleton_Size_set")]
+  public static extern void FbxSkeleton_Size_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkeleton_Size_get")]
+  public static extern global::System.IntPtr FbxSkeleton_Size_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkeleton_LimbLength_set")]
+  public static extern void FbxSkeleton_LimbLength_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkeleton_LimbLength_get")]
+  public static extern global::System.IntPtr FbxSkeleton_LimbLength_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkeleton_Copy")]
+  public static extern global::System.IntPtr FbxSkeleton_Copy(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxDeformer_ClassId_set")]
+  public static extern void FbxDeformer_ClassId_set(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxDeformer_ClassId_get")]
+  public static extern global::System.IntPtr FbxDeformer_ClassId_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxDeformer_GetClassId")]
+  public static extern global::System.IntPtr FbxDeformer_GetClassId(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxDeformer_Create__SWIG_0")]
+  public static extern global::System.IntPtr FbxDeformer_Create__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxDeformer_Create__SWIG_1")]
+  public static extern global::System.IntPtr FbxDeformer_Create__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxDeformer_SetMultiLayer")]
+  public static extern void FbxDeformer_SetMultiLayer(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxDeformer_GetMultiLayer")]
+  public static extern bool FbxDeformer_GetMultiLayer(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxDeformer_GetDeformerType")]
+  public static extern int FbxDeformer_GetDeformerType(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkin_ClassId_set")]
+  public static extern void FbxSkin_ClassId_set(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkin_ClassId_get")]
+  public static extern global::System.IntPtr FbxSkin_ClassId_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkin_GetClassId")]
+  public static extern global::System.IntPtr FbxSkin_GetClassId(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkin_Create__SWIG_0")]
+  public static extern global::System.IntPtr FbxSkin_Create__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkin_Create__SWIG_1")]
+  public static extern global::System.IntPtr FbxSkin_Create__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkin_SetDeformAccuracy")]
+  public static extern void FbxSkin_SetDeformAccuracy(global::System.Runtime.InteropServices.HandleRef jarg1, double jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkin_GetDeformAccuracy")]
+  public static extern double FbxSkin_GetDeformAccuracy(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkin_SetGeometry")]
+  public static extern bool FbxSkin_SetGeometry(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkin_GetGeometry")]
+  public static extern global::System.IntPtr FbxSkin_GetGeometry(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkin_AddCluster")]
+  public static extern bool FbxSkin_AddCluster(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkin_RemoveCluster")]
+  public static extern global::System.IntPtr FbxSkin_RemoveCluster(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkin_GetClusterCount")]
+  public static extern int FbxSkin_GetClusterCount(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkin_GetCluster__SWIG_0")]
+  public static extern global::System.IntPtr FbxSkin_GetCluster__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkin_GetDeformerType")]
+  public static extern int FbxSkin_GetDeformerType(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkin_SetSkinningType")]
+  public static extern void FbxSkin_SetSkinningType(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkin_GetSkinningType")]
+  public static extern int FbxSkin_GetSkinningType(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkin_AddControlPointIndex__SWIG_0")]
+  public static extern void FbxSkin_AddControlPointIndex__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, double jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkin_AddControlPointIndex__SWIG_1")]
+  public static extern void FbxSkin_AddControlPointIndex__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkin_GetControlPointIndicesCount")]
+  public static extern int FbxSkin_GetControlPointIndicesCount(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkin_GetControlPointIndices")]
+  public static extern global::System.IntPtr FbxSkin_GetControlPointIndices(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkin_GetControlPointBlendWeights")]
+  public static extern global::System.IntPtr FbxSkin_GetControlPointBlendWeights(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkin_SetControlPointIWCount")]
+  public static extern void FbxSkin_SetControlPointIWCount(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkin_Compact")]
+  public static extern void FbxSkin_Compact(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkin_Copy")]
+  public static extern global::System.IntPtr FbxSkin_Copy(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkin_Clone__SWIG_0")]
+  public static extern global::System.IntPtr FbxSkin_Clone__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkin_Clone__SWIG_1")]
+  public static extern global::System.IntPtr FbxSkin_Clone__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkin_Clone__SWIG_2")]
+  public static extern global::System.IntPtr FbxSkin_Clone__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkin_Clone__SWIG_3")]
+  public static extern global::System.IntPtr FbxSkin_Clone__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FBXSDK_IO_END_NODE_STR_get")]
+  public static extern string FBXSDK_IO_END_NODE_STR_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxIOBase_ClassId_set")]
+  public static extern void FbxIOBase_ClassId_set(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxIOBase_ClassId_get")]
+  public static extern global::System.IntPtr FbxIOBase_ClassId_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxIOBase_GetClassId")]
+  public static extern global::System.IntPtr FbxIOBase_GetClassId(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxIOBase_Create__SWIG_0")]
+  public static extern global::System.IntPtr FbxIOBase_Create__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxIOBase_Create__SWIG_1")]
+  public static extern global::System.IntPtr FbxIOBase_Create__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxIOBase_Initialize__SWIG_0")]
+  public static extern bool FbxIOBase_Initialize__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, int jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxIOBase_Initialize__SWIG_1")]
+  public static extern bool FbxIOBase_Initialize__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxIOBase_Initialize__SWIG_2")]
+  public static extern bool FbxIOBase_Initialize__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxIOBase_GetFileName")]
+  public static extern global::System.IntPtr FbxIOBase_GetFileName(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxIOBase_GetStatus")]
+  public static extern global::System.IntPtr FbxIOBase_GetStatus(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxExporter_ClassId_set")]
+  public static extern void FbxExporter_ClassId_set(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxExporter_ClassId_get")]
+  public static extern global::System.IntPtr FbxExporter_ClassId_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxExporter_GetClassId")]
+  public static extern global::System.IntPtr FbxExporter_GetClassId(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxExporter_Create__SWIG_0")]
+  public static extern global::System.IntPtr FbxExporter_Create__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxExporter_Create__SWIG_1")]
+  public static extern global::System.IntPtr FbxExporter_Create__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxExporter_Initialize__SWIG_0")]
+  public static extern bool FbxExporter_Initialize__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, int jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxExporter_Initialize__SWIG_1")]
+  public static extern bool FbxExporter_Initialize__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxExporter_Initialize__SWIG_2")]
+  public static extern bool FbxExporter_Initialize__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxExporter_Initialize__SWIG_3")]
+  public static extern bool FbxExporter_Initialize__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, int jarg4, global::System.Runtime.InteropServices.HandleRef jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxExporter_Initialize__SWIG_4")]
+  public static extern bool FbxExporter_Initialize__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, int jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxExporter_Initialize__SWIG_5")]
+  public static extern bool FbxExporter_Initialize__SWIG_5(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxExporter_Initialize__SWIG_6")]
+  public static extern bool FbxExporter_Initialize__SWIG_6(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxExporter_GetExportOptions__SWIG_0")]
+  public static extern bool FbxExporter_GetExportOptions__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxExporter_GetIOSettings")]
+  public static extern global::System.IntPtr FbxExporter_GetIOSettings(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxExporter_SetIOSettings")]
+  public static extern void FbxExporter_SetIOSettings(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxExporter_Export__SWIG_0")]
+  public static extern bool FbxExporter_Export__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, bool jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxExporter_Export__SWIG_1")]
+  public static extern bool FbxExporter_Export__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxExporter_IsExporting")]
+  public static extern bool FbxExporter_IsExporting(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxExporter_GetProgress__SWIG_0")]
+  public static extern float FbxExporter_GetProgress__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxExporter_GetProgress__SWIG_1")]
+  public static extern float FbxExporter_GetProgress__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxExporter_SetProgressCallback__SWIG_0")]
+  public static extern void FbxExporter_SetProgressCallback__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxExporter_SetProgressCallback__SWIG_1")]
+  public static extern void FbxExporter_SetProgressCallback__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxExporter_GetFileFormat")]
+  public static extern int FbxExporter_GetFileFormat(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxExporter_IsFBX")]
+  public static extern bool FbxExporter_IsFBX(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxExporter_GetCurrentWritableVersions")]
+  public static extern global::System.IntPtr FbxExporter_GetCurrentWritableVersions(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxExporter_SetFileExportVersion__SWIG_0")]
+  public static extern bool FbxExporter_SetFileExportVersion__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxExporter_SetFileExportVersion__SWIG_1")]
+  public static extern bool FbxExporter_SetFileExportVersion__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxExporter_SetResamplingRate")]
+  public static extern void FbxExporter_SetResamplingRate(global::System.Runtime.InteropServices.HandleRef jarg1, double jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxExporter_SetDefaultRenderResolution")]
+  public static extern void FbxExporter_SetDefaultRenderResolution(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, double jarg4, double jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxExporter_GetFileHeaderInfo")]
+  public static extern global::System.IntPtr FbxExporter_GetFileHeaderInfo(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxExporter_GetExportOptions__SWIG_1")]
+  public static extern bool FbxExporter_GetExportOptions__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxExporter_Export__SWIG_2")]
+  public static extern bool FbxExporter_Export__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxEventPreExport_GetEventName")]
+  public static extern string FbxEventPreExport_GetEventName(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxEventPreExport")]
+  public static extern global::System.IntPtr new_FbxEventPreExport(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxEventPreExport_mDocument_set")]
+  public static extern void FbxEventPreExport_mDocument_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxEventPreExport_mDocument_get")]
+  public static extern global::System.IntPtr FbxEventPreExport_mDocument_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxEventPreExport")]
+  public static extern void delete_FbxEventPreExport(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxEventPostExport_GetEventName")]
+  public static extern string FbxEventPostExport_GetEventName(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxEventPostExport")]
+  public static extern global::System.IntPtr new_FbxEventPostExport(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxEventPostExport_mDocument_set")]
+  public static extern void FbxEventPostExport_mDocument_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxEventPostExport_mDocument_get")]
+  public static extern global::System.IntPtr FbxEventPostExport_mDocument_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxEventPostExport")]
+  public static extern void delete_FbxEventPostExport(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_ClassId_set")]
+  public static extern void FbxGlobalSettings_ClassId_set(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_ClassId_get")]
+  public static extern global::System.IntPtr FbxGlobalSettings_ClassId_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_GetClassId")]
+  public static extern global::System.IntPtr FbxGlobalSettings_GetClassId(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_Create__SWIG_0")]
+  public static extern global::System.IntPtr FbxGlobalSettings_Create__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_Create__SWIG_1")]
+  public static extern global::System.IntPtr FbxGlobalSettings_Create__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_SetAxisSystem")]
+  public static extern void FbxGlobalSettings_SetAxisSystem(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_GetAxisSystem")]
+  public static extern global::System.IntPtr FbxGlobalSettings_GetAxisSystem(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_SetOriginalUpAxis")]
+  public static extern void FbxGlobalSettings_SetOriginalUpAxis(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_GetOriginalUpAxis")]
+  public static extern int FbxGlobalSettings_GetOriginalUpAxis(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_SetSystemUnit")]
+  public static extern void FbxGlobalSettings_SetSystemUnit(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_GetSystemUnit")]
+  public static extern global::System.IntPtr FbxGlobalSettings_GetSystemUnit(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_SetOriginalSystemUnit")]
+  public static extern void FbxGlobalSettings_SetOriginalSystemUnit(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_GetOriginalSystemUnit")]
+  public static extern global::System.IntPtr FbxGlobalSettings_GetOriginalSystemUnit(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_SetAmbientColor")]
+  public static extern void FbxGlobalSettings_SetAmbientColor(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_GetAmbientColor")]
+  public static extern global::System.IntPtr FbxGlobalSettings_GetAmbientColor(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_SetDefaultCamera")]
+  public static extern bool FbxGlobalSettings_SetDefaultCamera(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_GetDefaultCamera")]
+  public static extern global::System.IntPtr FbxGlobalSettings_GetDefaultCamera(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_SetTimeMode")]
+  public static extern void FbxGlobalSettings_SetTimeMode(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_GetTimeMode")]
+  public static extern int FbxGlobalSettings_GetTimeMode(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_SetTimeProtocol")]
+  public static extern void FbxGlobalSettings_SetTimeProtocol(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_GetTimeProtocol")]
+  public static extern int FbxGlobalSettings_GetTimeProtocol(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_SetSnapOnFrameMode")]
+  public static extern void FbxGlobalSettings_SetSnapOnFrameMode(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_GetSnapOnFrameMode")]
+  public static extern int FbxGlobalSettings_GetSnapOnFrameMode(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_SetTimelineDefaultTimeSpan")]
+  public static extern void FbxGlobalSettings_SetTimelineDefaultTimeSpan(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_GetTimelineDefaultTimeSpan")]
+  public static extern void FbxGlobalSettings_GetTimelineDefaultTimeSpan(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_SetCustomFrameRate")]
+  public static extern void FbxGlobalSettings_SetCustomFrameRate(global::System.Runtime.InteropServices.HandleRef jarg1, double jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_GetCustomFrameRate")]
+  public static extern double FbxGlobalSettings_GetCustomFrameRate(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxGlobalSettings_TimeMarker__SWIG_0")]
+  public static extern global::System.IntPtr new_FbxGlobalSettings_TimeMarker__SWIG_0();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxGlobalSettings_TimeMarker__SWIG_1")]
+  public static extern global::System.IntPtr new_FbxGlobalSettings_TimeMarker__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_TimeMarker_assign")]
+  public static extern global::System.IntPtr FbxGlobalSettings_TimeMarker_assign(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_TimeMarker_mName_set")]
+  public static extern void FbxGlobalSettings_TimeMarker_mName_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_TimeMarker_mName_get")]
+  public static extern global::System.IntPtr FbxGlobalSettings_TimeMarker_mName_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_TimeMarker_mTime_set")]
+  public static extern void FbxGlobalSettings_TimeMarker_mTime_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_TimeMarker_mTime_get")]
+  public static extern global::System.IntPtr FbxGlobalSettings_TimeMarker_mTime_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_TimeMarker_mLoop_set")]
+  public static extern void FbxGlobalSettings_TimeMarker_mLoop_set(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_TimeMarker_mLoop_get")]
+  public static extern bool FbxGlobalSettings_TimeMarker_mLoop_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxGlobalSettings_TimeMarker")]
+  public static extern void delete_FbxGlobalSettings_TimeMarker(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_GetTimeMarkerCount")]
+  public static extern int FbxGlobalSettings_GetTimeMarkerCount(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_GetTimeMarker__SWIG_0")]
+  public static extern global::System.IntPtr FbxGlobalSettings_GetTimeMarker__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_GetTimeMarker__SWIG_1")]
+  public static extern global::System.IntPtr FbxGlobalSettings_GetTimeMarker__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_AddTimeMarker__SWIG_0")]
+  public static extern void FbxGlobalSettings_AddTimeMarker__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_AddTimeMarker__SWIG_1")]
+  public static extern void FbxGlobalSettings_AddTimeMarker__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_ReplaceTimeMarker__SWIG_0")]
+  public static extern void FbxGlobalSettings_ReplaceTimeMarker__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_ReplaceTimeMarker__SWIG_1")]
+  public static extern void FbxGlobalSettings_ReplaceTimeMarker__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_RemoveAllTimeMarkers")]
+  public static extern void FbxGlobalSettings_RemoveAllTimeMarkers(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_SetCurrentTimeMarker__SWIG_0")]
+  public static extern bool FbxGlobalSettings_SetCurrentTimeMarker__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_SetCurrentTimeMarker__SWIG_1")]
+  public static extern bool FbxGlobalSettings_SetCurrentTimeMarker__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_GetCurrentTimeMarker")]
+  public static extern int FbxGlobalSettings_GetCurrentTimeMarker(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_Copy")]
+  public static extern global::System.IntPtr FbxGlobalSettings_Copy(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxTypeOf__SWIG_3")]
+  public static extern global::System.IntPtr FbxTypeOf__SWIG_3(int jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLibrary_ClassId_set")]
+  public static extern void FbxLibrary_ClassId_set(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLibrary_ClassId_get")]
+  public static extern global::System.IntPtr FbxLibrary_ClassId_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLibrary_GetClassId")]
+  public static extern global::System.IntPtr FbxLibrary_GetClassId(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLibrary_Create__SWIG_0")]
+  public static extern global::System.IntPtr FbxLibrary_Create__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLibrary_Create__SWIG_1")]
+  public static extern global::System.IntPtr FbxLibrary_Create__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLibrary_GetParentLibrary")]
+  public static extern global::System.IntPtr FbxLibrary_GetParentLibrary(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLibrary_SystemLibrary")]
+  public static extern void FbxLibrary_SystemLibrary(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLibrary_IsSystemLibrary")]
+  public static extern bool FbxLibrary_IsSystemLibrary(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLibrary_LocalizationBaseNamePrefix__SWIG_0")]
+  public static extern void FbxLibrary_LocalizationBaseNamePrefix__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLibrary_LocalizationBaseNamePrefix__SWIG_1")]
+  public static extern global::System.IntPtr FbxLibrary_LocalizationBaseNamePrefix__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLibrary_AddSubLibrary")]
+  public static extern bool FbxLibrary_AddSubLibrary(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLibrary_RemoveSubLibrary")]
+  public static extern bool FbxLibrary_RemoveSubLibrary(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLibrary_GetSubLibraryCount")]
+  public static extern int FbxLibrary_GetSubLibraryCount(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLibrary_GetSubLibrary")]
+  public static extern global::System.IntPtr FbxLibrary_GetSubLibrary(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLibrary_CloneAsset__SWIG_0")]
+  public static extern global::System.IntPtr FbxLibrary_CloneAsset__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLibrary_CloneAsset__SWIG_1")]
+  public static extern global::System.IntPtr FbxLibrary_CloneAsset__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLibrary_GetAssetCriteriaFilter")]
+  public static extern global::System.IntPtr FbxLibrary_GetAssetCriteriaFilter();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLibrary_GetAssetDependentsFilter")]
+  public static extern global::System.IntPtr FbxLibrary_GetAssetDependentsFilter();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLibrary_ImportAssets__SWIG_0")]
+  public static extern bool FbxLibrary_ImportAssets__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLibrary_ImportAssets__SWIG_1")]
+  public static extern bool FbxLibrary_ImportAssets__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLibrary_GetLocalizationManager")]
+  public static extern global::System.IntPtr FbxLibrary_GetLocalizationManager(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLibrary_Localize__SWIG_0")]
+  public static extern string FbxLibrary_Localize__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, string jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLibrary_Localize__SWIG_1")]
+  public static extern string FbxLibrary_Localize__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLibrary_AddShadingObject")]
+  public static extern bool FbxLibrary_AddShadingObject(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLibrary_RemoveShadingObject")]
+  public static extern bool FbxLibrary_RemoveShadingObject(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLibrary_GetShadingObjectCount__SWIG_0")]
+  public static extern int FbxLibrary_GetShadingObjectCount__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLibrary_GetShadingObject__SWIG_0")]
+  public static extern global::System.IntPtr FbxLibrary_GetShadingObject__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLibrary_GetShadingObjectCount__SWIG_1")]
+  public static extern int FbxLibrary_GetShadingObjectCount__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLibrary_GetShadingObject__SWIG_1")]
+  public static extern global::System.IntPtr FbxLibrary_GetShadingObject__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxEventPopulateSystemLibrary_GetEventName")]
+  public static extern string FbxEventPopulateSystemLibrary_GetEventName(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxEventPopulateSystemLibrary")]
+  public static extern global::System.IntPtr new_FbxEventPopulateSystemLibrary(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxEventPopulateSystemLibrary_GetLibrary")]
+  public static extern global::System.IntPtr FbxEventPopulateSystemLibrary_GetLibrary(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxEventPopulateSystemLibrary")]
+  public static extern void delete_FbxEventPopulateSystemLibrary(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxEventUpdateSystemLibrary_GetEventName")]
+  public static extern string FbxEventUpdateSystemLibrary_GetEventName(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxEventUpdateSystemLibrary")]
+  public static extern global::System.IntPtr new_FbxEventUpdateSystemLibrary(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxEventUpdateSystemLibrary_GetLibrary")]
+  public static extern global::System.IntPtr FbxEventUpdateSystemLibrary_GetLibrary(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxEventUpdateSystemLibrary")]
+  public static extern void delete_FbxEventUpdateSystemLibrary(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxEventWriteLocalization_GetEventName")]
+  public static extern string FbxEventWriteLocalization_GetEventName(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxEventWriteLocalization")]
+  public static extern global::System.IntPtr new_FbxEventWriteLocalization(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxEventWriteLocalization_GetLibrary")]
+  public static extern global::System.IntPtr FbxEventWriteLocalization_GetLibrary(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxEventWriteLocalization")]
+  public static extern void delete_FbxEventWriteLocalization(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxEventMapAssetFileToAssetObject_GetEventName")]
+  public static extern string FbxEventMapAssetFileToAssetObject_GetEventName(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxEventMapAssetFileToAssetObject")]
+  public static extern global::System.IntPtr new_FbxEventMapAssetFileToAssetObject(string jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxEventMapAssetFileToAssetObject_GetFilePath")]
+  public static extern string FbxEventMapAssetFileToAssetObject_GetFilePath(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxEventMapAssetFileToAssetObject_mAsset_set")]
+  public static extern void FbxEventMapAssetFileToAssetObject_mAsset_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxEventMapAssetFileToAssetObject_mAsset_get")]
+  public static extern global::System.IntPtr FbxEventMapAssetFileToAssetObject_mAsset_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxEventMapAssetFileToAssetObject")]
+  public static extern void delete_FbxEventMapAssetFileToAssetObject(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveDef_sDEFAULT_WEIGHT_get")]
+  public static extern float FbxAnimCurveDef_sDEFAULT_WEIGHT_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveDef_sMIN_WEIGHT_get")]
+  public static extern float FbxAnimCurveDef_sMIN_WEIGHT_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveDef_sMAX_WEIGHT_get")]
+  public static extern float FbxAnimCurveDef_sMAX_WEIGHT_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveDef_sDEFAULT_VELOCITY_get")]
+  public static extern float FbxAnimCurveDef_sDEFAULT_VELOCITY_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxAnimCurveDef")]
+  public static extern global::System.IntPtr new_FbxAnimCurveDef();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxAnimCurveDef")]
+  public static extern void delete_FbxAnimCurveDef(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxAnimCurveTangentInfo")]
+  public static extern global::System.IntPtr new_FbxAnimCurveTangentInfo();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveTangentInfo_mDerivative_set")]
+  public static extern void FbxAnimCurveTangentInfo_mDerivative_set(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveTangentInfo_mDerivative_get")]
+  public static extern float FbxAnimCurveTangentInfo_mDerivative_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveTangentInfo_mWeight_set")]
+  public static extern void FbxAnimCurveTangentInfo_mWeight_set(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveTangentInfo_mWeight_get")]
+  public static extern float FbxAnimCurveTangentInfo_mWeight_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveTangentInfo_mVelocity_set")]
+  public static extern void FbxAnimCurveTangentInfo_mVelocity_set(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveTangentInfo_mVelocity_get")]
+  public static extern float FbxAnimCurveTangentInfo_mVelocity_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveTangentInfo_mAuto_set")]
+  public static extern void FbxAnimCurveTangentInfo_mAuto_set(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveTangentInfo_mAuto_get")]
+  public static extern float FbxAnimCurveTangentInfo_mAuto_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveTangentInfo_mWeighted_set")]
+  public static extern void FbxAnimCurveTangentInfo_mWeighted_set(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveTangentInfo_mWeighted_get")]
+  public static extern bool FbxAnimCurveTangentInfo_mWeighted_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveTangentInfo_mHasVelocity_set")]
+  public static extern void FbxAnimCurveTangentInfo_mHasVelocity_set(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveTangentInfo_mHasVelocity_get")]
+  public static extern bool FbxAnimCurveTangentInfo_mHasVelocity_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxAnimCurveTangentInfo")]
+  public static extern void delete_FbxAnimCurveTangentInfo(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxAnimCurveKey_Impl")]
+  public static extern void delete_FbxAnimCurveKey_Impl(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_Impl_assign")]
+  public static extern global::System.IntPtr FbxAnimCurveKey_Impl_assign(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_Impl_Set")]
+  public static extern void FbxAnimCurveKey_Impl_Set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, float jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_Impl_SetTCB__SWIG_0")]
+  public static extern void FbxAnimCurveKey_Impl_SetTCB__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, float jarg3, float jarg4, float jarg5, float jarg6);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_Impl_SetTCB__SWIG_1")]
+  public static extern void FbxAnimCurveKey_Impl_SetTCB__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, float jarg3, float jarg4, float jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_Impl_SetTCB__SWIG_2")]
+  public static extern void FbxAnimCurveKey_Impl_SetTCB__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, float jarg3, float jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_Impl_SetTCB__SWIG_3")]
+  public static extern void FbxAnimCurveKey_Impl_SetTCB__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, float jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_Impl_GetValue")]
+  public static extern float FbxAnimCurveKey_Impl_GetValue(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_Impl_SetValue")]
+  public static extern void FbxAnimCurveKey_Impl_SetValue(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_Impl_GetInterpolation")]
+  public static extern int FbxAnimCurveKey_Impl_GetInterpolation(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_Impl_SetInterpolation")]
+  public static extern void FbxAnimCurveKey_Impl_SetInterpolation(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_Impl_GetTangentMode__SWIG_0")]
+  public static extern int FbxAnimCurveKey_Impl_GetTangentMode__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_Impl_GetTangentMode__SWIG_1")]
+  public static extern int FbxAnimCurveKey_Impl_GetTangentMode__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_Impl_SetTangentMode")]
+  public static extern void FbxAnimCurveKey_Impl_SetTangentMode(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_Impl_GetTangentWeightMode")]
+  public static extern int FbxAnimCurveKey_Impl_GetTangentWeightMode(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_Impl_SetTangentWeightMode__SWIG_0")]
+  public static extern void FbxAnimCurveKey_Impl_SetTangentWeightMode__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_Impl_SetTangentWeightMode__SWIG_1")]
+  public static extern void FbxAnimCurveKey_Impl_SetTangentWeightMode__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_Impl_SetTangentWeightAndAdjustTangent")]
+  public static extern void FbxAnimCurveKey_Impl_SetTangentWeightAndAdjustTangent(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, double jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_Impl_GetTangentVelocityMode")]
+  public static extern int FbxAnimCurveKey_Impl_GetTangentVelocityMode(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_Impl_SetTangentVelocityMode__SWIG_0")]
+  public static extern void FbxAnimCurveKey_Impl_SetTangentVelocityMode__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_Impl_SetTangentVelocityMode__SWIG_1")]
+  public static extern void FbxAnimCurveKey_Impl_SetTangentVelocityMode__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_Impl_GetConstantMode")]
+  public static extern int FbxAnimCurveKey_Impl_GetConstantMode(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_Impl_SetConstantMode")]
+  public static extern void FbxAnimCurveKey_Impl_SetConstantMode(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_Impl_GetDataFloat")]
+  public static extern float FbxAnimCurveKey_Impl_GetDataFloat(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_Impl_SetDataFloat")]
+  public static extern void FbxAnimCurveKey_Impl_SetDataFloat(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_Impl_SetTangentVisibility")]
+  public static extern void FbxAnimCurveKey_Impl_SetTangentVisibility(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_Impl_GetTangentVisibility")]
+  public static extern int FbxAnimCurveKey_Impl_GetTangentVisibility(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_Impl_SetBreak")]
+  public static extern void FbxAnimCurveKey_Impl_SetBreak(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_Impl_GetBreak")]
+  public static extern bool FbxAnimCurveKey_Impl_GetBreak(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxAnimCurveKey__SWIG_0")]
+  public static extern global::System.IntPtr new_FbxAnimCurveKey__SWIG_0();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxAnimCurveKey__SWIG_1")]
+  public static extern global::System.IntPtr new_FbxAnimCurveKey__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxAnimCurveKey__SWIG_2")]
+  public static extern global::System.IntPtr new_FbxAnimCurveKey__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxAnimCurveKey__SWIG_3")]
+  public static extern global::System.IntPtr new_FbxAnimCurveKey__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxAnimCurveKey")]
+  public static extern void delete_FbxAnimCurveKey(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_assign")]
+  public static extern global::System.IntPtr FbxAnimCurveKey_assign(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_GetTime")]
+  public static extern global::System.IntPtr FbxAnimCurveKey_GetTime(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_SetTime")]
+  public static extern void FbxAnimCurveKey_SetTime(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_Set")]
+  public static extern void FbxAnimCurveKey_Set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, float jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_SetTCB__SWIG_0")]
+  public static extern void FbxAnimCurveKey_SetTCB__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, float jarg3, float jarg4, float jarg5, float jarg6);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_SetTCB__SWIG_1")]
+  public static extern void FbxAnimCurveKey_SetTCB__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, float jarg3, float jarg4, float jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_SetTCB__SWIG_2")]
+  public static extern void FbxAnimCurveKey_SetTCB__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, float jarg3, float jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_SetTCB__SWIG_3")]
+  public static extern void FbxAnimCurveKey_SetTCB__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, float jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_GetValue")]
+  public static extern float FbxAnimCurveKey_GetValue(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_SetValue")]
+  public static extern void FbxAnimCurveKey_SetValue(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_GetInterpolation")]
+  public static extern int FbxAnimCurveKey_GetInterpolation(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_SetInterpolation")]
+  public static extern void FbxAnimCurveKey_SetInterpolation(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_GetTangentMode__SWIG_0")]
+  public static extern int FbxAnimCurveKey_GetTangentMode__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_GetTangentMode__SWIG_1")]
+  public static extern int FbxAnimCurveKey_GetTangentMode__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_SetTangentMode")]
+  public static extern void FbxAnimCurveKey_SetTangentMode(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_GetTangentWeightMode")]
+  public static extern int FbxAnimCurveKey_GetTangentWeightMode(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_SetTangentWeightMode__SWIG_0")]
+  public static extern void FbxAnimCurveKey_SetTangentWeightMode__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_SetTangentWeightMode__SWIG_1")]
+  public static extern void FbxAnimCurveKey_SetTangentWeightMode__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_SetTangentWeightAndAdjustTangent")]
+  public static extern void FbxAnimCurveKey_SetTangentWeightAndAdjustTangent(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, double jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_GetTangentVelocityMode")]
+  public static extern int FbxAnimCurveKey_GetTangentVelocityMode(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_SetTangentVelocityMode__SWIG_0")]
+  public static extern void FbxAnimCurveKey_SetTangentVelocityMode__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_SetTangentVelocityMode__SWIG_1")]
+  public static extern void FbxAnimCurveKey_SetTangentVelocityMode__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_GetConstantMode")]
+  public static extern int FbxAnimCurveKey_GetConstantMode(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_SetConstantMode")]
+  public static extern void FbxAnimCurveKey_SetConstantMode(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_GetDataFloat")]
+  public static extern float FbxAnimCurveKey_GetDataFloat(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_SetDataFloat")]
+  public static extern void FbxAnimCurveKey_SetDataFloat(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_SetTangentVisibility")]
+  public static extern void FbxAnimCurveKey_SetTangentVisibility(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_GetTangentVisibility")]
+  public static extern int FbxAnimCurveKey_GetTangentVisibility(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_SetBreak")]
+  public static extern void FbxAnimCurveKey_SetBreak(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_GetBreak")]
+  public static extern bool FbxAnimCurveKey_GetBreak(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_GetImpl")]
+  public static extern global::System.IntPtr FbxAnimCurveKey_GetImpl(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_SetAllocatorFct")]
+  public static extern void FbxAnimCurveKey_SetAllocatorFct(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_SetCopyAllocatorFct")]
+  public static extern void FbxAnimCurveKey_SetCopyAllocatorFct(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_SetDeallocatorFct")]
+  public static extern void FbxAnimCurveKey_SetDeallocatorFct(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_ClassId_set")]
+  public static extern void FbxAnimCurve_ClassId_set(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_ClassId_get")]
+  public static extern global::System.IntPtr FbxAnimCurve_ClassId_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_GetClassId")]
+  public static extern global::System.IntPtr FbxAnimCurve_GetClassId(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_Create__SWIG_0")]
+  public static extern global::System.IntPtr FbxAnimCurve_Create__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_Create__SWIG_1")]
+  public static extern global::System.IntPtr FbxAnimCurve_Create__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_ResizeKeyBuffer")]
+  public static extern void FbxAnimCurve_ResizeKeyBuffer(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyModifyBegin")]
+  public static extern void FbxAnimCurve_KeyModifyBegin(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyModifyEnd")]
+  public static extern void FbxAnimCurve_KeyModifyEnd(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyClear")]
+  public static extern void FbxAnimCurve_KeyClear(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyGetCount")]
+  public static extern int FbxAnimCurve_KeyGetCount(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyAdd__SWIG_0")]
+  public static extern int FbxAnimCurve_KeyAdd__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyAdd__SWIG_1")]
+  public static extern int FbxAnimCurve_KeyAdd__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyAdd__SWIG_2")]
+  public static extern int FbxAnimCurve_KeyAdd__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyAdd__SWIG_3")]
+  public static extern int FbxAnimCurve_KeyAdd__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeySet__SWIG_0")]
+  public static extern bool FbxAnimCurve_KeySet__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyRemove__SWIG_0")]
+  public static extern bool FbxAnimCurve_KeyRemove__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyRemove__SWIG_1")]
+  public static extern bool FbxAnimCurve_KeyRemove__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyInsert__SWIG_0")]
+  public static extern int FbxAnimCurve_KeyInsert__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyInsert__SWIG_1")]
+  public static extern int FbxAnimCurve_KeyInsert__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyFind__SWIG_0")]
+  public static extern double FbxAnimCurve_KeyFind__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyFind__SWIG_1")]
+  public static extern double FbxAnimCurve_KeyFind__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyScaleValue")]
+  public static extern bool FbxAnimCurve_KeyScaleValue(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyScaleValueAndTangent")]
+  public static extern bool FbxAnimCurve_KeyScaleValueAndTangent(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeySet__SWIG_1")]
+  public static extern void FbxAnimCurve_KeySet__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, float jarg4, int jarg5, int jarg6, float jarg7, float jarg8, int jarg9, float jarg10, float jarg11, float jarg12, float jarg13);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeySet__SWIG_2")]
+  public static extern void FbxAnimCurve_KeySet__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, float jarg4, int jarg5, int jarg6, float jarg7, float jarg8, int jarg9, float jarg10, float jarg11, float jarg12);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeySet__SWIG_3")]
+  public static extern void FbxAnimCurve_KeySet__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, float jarg4, int jarg5, int jarg6, float jarg7, float jarg8, int jarg9, float jarg10, float jarg11);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeySet__SWIG_4")]
+  public static extern void FbxAnimCurve_KeySet__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, float jarg4, int jarg5, int jarg6, float jarg7, float jarg8, int jarg9, float jarg10);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeySet__SWIG_5")]
+  public static extern void FbxAnimCurve_KeySet__SWIG_5(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, float jarg4, int jarg5, int jarg6, float jarg7, float jarg8, int jarg9);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeySet__SWIG_6")]
+  public static extern void FbxAnimCurve_KeySet__SWIG_6(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, float jarg4, int jarg5, int jarg6, float jarg7, float jarg8);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeySet__SWIG_7")]
+  public static extern void FbxAnimCurve_KeySet__SWIG_7(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, float jarg4, int jarg5, int jarg6, float jarg7);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeySet__SWIG_8")]
+  public static extern void FbxAnimCurve_KeySet__SWIG_8(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, float jarg4, int jarg5, int jarg6);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeySet__SWIG_9")]
+  public static extern void FbxAnimCurve_KeySet__SWIG_9(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, float jarg4, int jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeySet__SWIG_10")]
+  public static extern void FbxAnimCurve_KeySet__SWIG_10(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, float jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeySetTCB__SWIG_0")]
+  public static extern void FbxAnimCurve_KeySetTCB__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, float jarg4, float jarg5, float jarg6, float jarg7);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeySetTCB__SWIG_1")]
+  public static extern void FbxAnimCurve_KeySetTCB__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, float jarg4, float jarg5, float jarg6);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeySetTCB__SWIG_2")]
+  public static extern void FbxAnimCurve_KeySetTCB__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, float jarg4, float jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeySetTCB__SWIG_3")]
+  public static extern void FbxAnimCurve_KeySetTCB__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, float jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyGetInterpolation")]
+  public static extern int FbxAnimCurve_KeyGetInterpolation(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeySetInterpolation")]
+  public static extern void FbxAnimCurve_KeySetInterpolation(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyGetConstantMode")]
+  public static extern int FbxAnimCurve_KeyGetConstantMode(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyGetTangentMode__SWIG_0")]
+  public static extern int FbxAnimCurve_KeyGetTangentMode__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, bool jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyGetTangentMode__SWIG_1")]
+  public static extern int FbxAnimCurve_KeyGetTangentMode__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeySetConstantMode")]
+  public static extern void FbxAnimCurve_KeySetConstantMode(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeySetTangentMode")]
+  public static extern void FbxAnimCurve_KeySetTangentMode(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyGet")]
+  public static extern global::System.IntPtr FbxAnimCurve_KeyGet(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyGetValue")]
+  public static extern float FbxAnimCurve_KeyGetValue(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeySetValue")]
+  public static extern void FbxAnimCurve_KeySetValue(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyIncValue")]
+  public static extern void FbxAnimCurve_KeyIncValue(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyMultValue")]
+  public static extern void FbxAnimCurve_KeyMultValue(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyMultTangent")]
+  public static extern void FbxAnimCurve_KeyMultTangent(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyGetTime")]
+  public static extern global::System.IntPtr FbxAnimCurve_KeyGetTime(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeySetTime")]
+  public static extern void FbxAnimCurve_KeySetTime(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeySetBreak")]
+  public static extern void FbxAnimCurve_KeySetBreak(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, bool jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyGetBreak")]
+  public static extern bool FbxAnimCurve_KeyGetBreak(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyGetLeftDerivative")]
+  public static extern float FbxAnimCurve_KeyGetLeftDerivative(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeySetLeftDerivative")]
+  public static extern void FbxAnimCurve_KeySetLeftDerivative(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyGetLeftAuto__SWIG_0")]
+  public static extern float FbxAnimCurve_KeyGetLeftAuto__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, bool jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyGetLeftAuto__SWIG_1")]
+  public static extern float FbxAnimCurve_KeyGetLeftAuto__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyGetLeftDerivativeInfo")]
+  public static extern global::System.IntPtr FbxAnimCurve_KeyGetLeftDerivativeInfo(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeySetLeftDerivativeInfo__SWIG_0")]
+  public static extern void FbxAnimCurve_KeySetLeftDerivativeInfo__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, bool jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeySetLeftDerivativeInfo__SWIG_1")]
+  public static extern void FbxAnimCurve_KeySetLeftDerivativeInfo__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyGetRightDerivative")]
+  public static extern float FbxAnimCurve_KeyGetRightDerivative(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeySetRightDerivative")]
+  public static extern void FbxAnimCurve_KeySetRightDerivative(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyGetRightAuto__SWIG_0")]
+  public static extern float FbxAnimCurve_KeyGetRightAuto__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, bool jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyGetRightAuto__SWIG_1")]
+  public static extern float FbxAnimCurve_KeyGetRightAuto__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyGetRightDerivativeInfo")]
+  public static extern global::System.IntPtr FbxAnimCurve_KeyGetRightDerivativeInfo(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeySetRightDerivativeInfo__SWIG_0")]
+  public static extern void FbxAnimCurve_KeySetRightDerivativeInfo__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, bool jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeySetRightDerivativeInfo__SWIG_1")]
+  public static extern void FbxAnimCurve_KeySetRightDerivativeInfo__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyIsLeftTangentWeighted")]
+  public static extern bool FbxAnimCurve_KeyIsLeftTangentWeighted(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyIsRightTangentWeighted")]
+  public static extern bool FbxAnimCurve_KeyIsRightTangentWeighted(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyGetLeftTangentWeight")]
+  public static extern float FbxAnimCurve_KeyGetLeftTangentWeight(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyGetRightTangentWeight")]
+  public static extern float FbxAnimCurve_KeyGetRightTangentWeight(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeySetLeftTangentWeight__SWIG_0")]
+  public static extern void FbxAnimCurve_KeySetLeftTangentWeight__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3, bool jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeySetLeftTangentWeight__SWIG_1")]
+  public static extern void FbxAnimCurve_KeySetLeftTangentWeight__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeySetRightTangentWeight__SWIG_0")]
+  public static extern void FbxAnimCurve_KeySetRightTangentWeight__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3, bool jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeySetRightTangentWeight__SWIG_1")]
+  public static extern void FbxAnimCurve_KeySetRightTangentWeight__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, float jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyGetLeftTangentVelocity")]
+  public static extern float FbxAnimCurve_KeyGetLeftTangentVelocity(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_KeyGetRightTangentVelocity")]
+  public static extern float FbxAnimCurve_KeyGetRightTangentVelocity(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_Evaluate__SWIG_0")]
+  public static extern float FbxAnimCurve_Evaluate__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_Evaluate__SWIG_1")]
+  public static extern float FbxAnimCurve_Evaluate__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_EvaluateIndex")]
+  public static extern float FbxAnimCurve_EvaluateIndex(global::System.Runtime.InteropServices.HandleRef jarg1, double jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_EvaluateLeftDerivative__SWIG_0")]
+  public static extern float FbxAnimCurve_EvaluateLeftDerivative__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_EvaluateLeftDerivative__SWIG_1")]
+  public static extern float FbxAnimCurve_EvaluateLeftDerivative__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_EvaluateRightDerivative__SWIG_0")]
+  public static extern float FbxAnimCurve_EvaluateRightDerivative__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_EvaluateRightDerivative__SWIG_1")]
+  public static extern float FbxAnimCurve_EvaluateRightDerivative__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_GetTimeInterval")]
+  public static extern bool FbxAnimCurve_GetTimeInterval(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_CopyFrom__SWIG_0")]
+  public static extern void FbxAnimCurve_CopyFrom__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, bool jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_CopyFrom__SWIG_1")]
+  public static extern void FbxAnimCurve_CopyFrom__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_GetValue__SWIG_0")]
+  public static extern float FbxAnimCurve_GetValue__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_GetValue__SWIG_1")]
+  public static extern float FbxAnimCurve_GetValue__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_SetValue__SWIG_0")]
+  public static extern void FbxAnimCurve_SetValue__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_SetValue__SWIG_1")]
+  public static extern void FbxAnimCurve_SetValue__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_GetKFCurve")]
+  public static extern global::System.IntPtr FbxAnimCurve_GetKFCurve(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_Store__SWIG_0")]
+  public static extern bool FbxAnimCurve_Store__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, bool jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_Store__SWIG_1")]
+  public static extern bool FbxAnimCurve_Store__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_Retrieve")]
+  public static extern bool FbxAnimCurve_Retrieve(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_ExtrapolationSyncCallback")]
+  public static extern void FbxAnimCurve_ExtrapolationSyncCallback(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxAnimCurveFilter")]
+  public static extern void delete_FbxAnimCurveFilter(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilter_GetName")]
+  public static extern string FbxAnimCurveFilter_GetName(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilter_GetStartTime")]
+  public static extern global::System.IntPtr FbxAnimCurveFilter_GetStartTime(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilter_SetStartTime")]
+  public static extern void FbxAnimCurveFilter_SetStartTime(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilter_GetStopTime")]
+  public static extern global::System.IntPtr FbxAnimCurveFilter_GetStopTime(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilter_SetStopTime")]
+  public static extern void FbxAnimCurveFilter_SetStopTime(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilter_GetStartKey")]
+  public static extern int FbxAnimCurveFilter_GetStartKey(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilter_GetStopKey")]
+  public static extern int FbxAnimCurveFilter_GetStopKey(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilter_NeedApply__SWIG_0")]
+  public static extern bool FbxAnimCurveFilter_NeedApply__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilter_NeedApply__SWIG_1")]
+  public static extern bool FbxAnimCurveFilter_NeedApply__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilter_NeedApply__SWIG_2")]
+  public static extern bool FbxAnimCurveFilter_NeedApply__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilter_NeedApply__SWIG_3")]
+  public static extern bool FbxAnimCurveFilter_NeedApply__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilter_NeedApply__SWIG_4")]
+  public static extern bool FbxAnimCurveFilter_NeedApply__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilter_NeedApply__SWIG_5")]
+  public static extern bool FbxAnimCurveFilter_NeedApply__SWIG_5(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilter_NeedApply__SWIG_6")]
+  public static extern bool FbxAnimCurveFilter_NeedApply__SWIG_6(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilter_NeedApply__SWIG_7")]
+  public static extern bool FbxAnimCurveFilter_NeedApply__SWIG_7(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilter_NeedApply__SWIG_8")]
+  public static extern bool FbxAnimCurveFilter_NeedApply__SWIG_8(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilter_NeedApply__SWIG_9")]
+  public static extern bool FbxAnimCurveFilter_NeedApply__SWIG_9(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilter_Apply__SWIG_0")]
+  public static extern bool FbxAnimCurveFilter_Apply__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilter_Apply__SWIG_1")]
+  public static extern bool FbxAnimCurveFilter_Apply__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilter_Apply__SWIG_2")]
+  public static extern bool FbxAnimCurveFilter_Apply__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilter_Apply__SWIG_3")]
+  public static extern bool FbxAnimCurveFilter_Apply__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilter_Apply__SWIG_4")]
+  public static extern bool FbxAnimCurveFilter_Apply__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilter_Apply__SWIG_5")]
+  public static extern bool FbxAnimCurveFilter_Apply__SWIG_5(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilter_Apply__SWIG_6")]
+  public static extern bool FbxAnimCurveFilter_Apply__SWIG_6(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilter_Apply__SWIG_7")]
+  public static extern bool FbxAnimCurveFilter_Apply__SWIG_7(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilter_Apply__SWIG_8")]
+  public static extern bool FbxAnimCurveFilter_Apply__SWIG_8(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilter_Apply__SWIG_9")]
+  public static extern bool FbxAnimCurveFilter_Apply__SWIG_9(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilter_Reset")]
+  public static extern void FbxAnimCurveFilter_Reset(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilter_GetContinuousOffset")]
+  public static extern bool FbxAnimCurveFilter_GetContinuousOffset(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxAnimCurveFilterConstantKeyReducer")]
+  public static extern global::System.IntPtr new_FbxAnimCurveFilterConstantKeyReducer();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxAnimCurveFilterConstantKeyReducer")]
+  public static extern void delete_FbxAnimCurveFilterConstantKeyReducer(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_GetName")]
+  public static extern string FbxAnimCurveFilterConstantKeyReducer_GetName(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_Apply__SWIG_0")]
+  public static extern bool FbxAnimCurveFilterConstantKeyReducer_Apply__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_Apply__SWIG_1")]
+  public static extern bool FbxAnimCurveFilterConstantKeyReducer_Apply__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_Apply__SWIG_2")]
+  public static extern bool FbxAnimCurveFilterConstantKeyReducer_Apply__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_Apply__SWIG_3")]
+  public static extern bool FbxAnimCurveFilterConstantKeyReducer_Apply__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_Apply__SWIG_4")]
+  public static extern bool FbxAnimCurveFilterConstantKeyReducer_Apply__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_Apply__SWIG_5")]
+  public static extern bool FbxAnimCurveFilterConstantKeyReducer_Apply__SWIG_5(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_Apply__SWIG_6")]
+  public static extern bool FbxAnimCurveFilterConstantKeyReducer_Apply__SWIG_6(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_Apply__SWIG_7")]
+  public static extern bool FbxAnimCurveFilterConstantKeyReducer_Apply__SWIG_7(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_Apply__SWIG_8")]
+  public static extern bool FbxAnimCurveFilterConstantKeyReducer_Apply__SWIG_8(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_Apply__SWIG_9")]
+  public static extern bool FbxAnimCurveFilterConstantKeyReducer_Apply__SWIG_9(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_Reset")]
+  public static extern void FbxAnimCurveFilterConstantKeyReducer_Reset(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_GetDerivativeTolerance")]
+  public static extern double FbxAnimCurveFilterConstantKeyReducer_GetDerivativeTolerance(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_SetDerivativeTolerance")]
+  public static extern void FbxAnimCurveFilterConstantKeyReducer_SetDerivativeTolerance(global::System.Runtime.InteropServices.HandleRef jarg1, double jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_GetValueTolerance")]
+  public static extern double FbxAnimCurveFilterConstantKeyReducer_GetValueTolerance(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_SetValueTolerance")]
+  public static extern void FbxAnimCurveFilterConstantKeyReducer_SetValueTolerance(global::System.Runtime.InteropServices.HandleRef jarg1, double jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_GetKeepFirstAndLastKeys")]
+  public static extern bool FbxAnimCurveFilterConstantKeyReducer_GetKeepFirstAndLastKeys(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_SetKeepFirstAndLastKeys")]
+  public static extern void FbxAnimCurveFilterConstantKeyReducer_SetKeepFirstAndLastKeys(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_GetKeepOneKey")]
+  public static extern bool FbxAnimCurveFilterConstantKeyReducer_GetKeepOneKey(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_SetKeepOneKey")]
+  public static extern void FbxAnimCurveFilterConstantKeyReducer_SetKeepOneKey(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_SetKeepNotPureAutoKeys")]
+  public static extern void FbxAnimCurveFilterConstantKeyReducer_SetKeepNotPureAutoKeys(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_SetTranslationThreshold")]
+  public static extern void FbxAnimCurveFilterConstantKeyReducer_SetTranslationThreshold(global::System.Runtime.InteropServices.HandleRef jarg1, double jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_SetRotationThreshold")]
+  public static extern void FbxAnimCurveFilterConstantKeyReducer_SetRotationThreshold(global::System.Runtime.InteropServices.HandleRef jarg1, double jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_SetScalingThreshold")]
+  public static extern void FbxAnimCurveFilterConstantKeyReducer_SetScalingThreshold(global::System.Runtime.InteropServices.HandleRef jarg1, double jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_SetDefaultThreshold")]
+  public static extern void FbxAnimCurveFilterConstantKeyReducer_SetDefaultThreshold(global::System.Runtime.InteropServices.HandleRef jarg1, double jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_SetModes")]
+  public static extern void FbxAnimCurveFilterConstantKeyReducer_SetModes(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxAnimCurveFilterScaleCompensate")]
+  public static extern global::System.IntPtr new_FbxAnimCurveFilterScaleCompensate();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScaleCompensate_GetName")]
+  public static extern string FbxAnimCurveFilterScaleCompensate_GetName(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScaleCompensate_Apply__SWIG_0")]
+  public static extern bool FbxAnimCurveFilterScaleCompensate_Apply__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScaleCompensate_Apply__SWIG_1")]
+  public static extern bool FbxAnimCurveFilterScaleCompensate_Apply__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScaleCompensate_Apply__SWIG_2")]
+  public static extern bool FbxAnimCurveFilterScaleCompensate_Apply__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScaleCompensate_Apply__SWIG_3")]
+  public static extern bool FbxAnimCurveFilterScaleCompensate_Apply__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScaleCompensate_Apply__SWIG_4")]
+  public static extern bool FbxAnimCurveFilterScaleCompensate_Apply__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScaleCompensate_Apply__SWIG_5")]
+  public static extern bool FbxAnimCurveFilterScaleCompensate_Apply__SWIG_5(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScaleCompensate_Apply__SWIG_6")]
+  public static extern bool FbxAnimCurveFilterScaleCompensate_Apply__SWIG_6(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScaleCompensate_Apply__SWIG_7")]
+  public static extern bool FbxAnimCurveFilterScaleCompensate_Apply__SWIG_7(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScaleCompensate_Apply__SWIG_8")]
+  public static extern bool FbxAnimCurveFilterScaleCompensate_Apply__SWIG_8(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, global::System.Runtime.InteropServices.HandleRef jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScaleCompensate_Apply__SWIG_9")]
+  public static extern bool FbxAnimCurveFilterScaleCompensate_Apply__SWIG_9(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScaleCompensate_Apply__SWIG_10")]
+  public static extern bool FbxAnimCurveFilterScaleCompensate_Apply__SWIG_10(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScaleCompensate_Apply__SWIG_11")]
+  public static extern bool FbxAnimCurveFilterScaleCompensate_Apply__SWIG_11(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxAnimCurveFilterScaleCompensate")]
+  public static extern void delete_FbxAnimCurveFilterScaleCompensate(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxAnimCurveFilterGimbleKiller")]
+  public static extern global::System.IntPtr new_FbxAnimCurveFilterGimbleKiller();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxAnimCurveFilterGimbleKiller")]
+  public static extern void delete_FbxAnimCurveFilterGimbleKiller(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_GetName")]
+  public static extern string FbxAnimCurveFilterGimbleKiller_GetName(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_NeedApply__SWIG_0")]
+  public static extern bool FbxAnimCurveFilterGimbleKiller_NeedApply__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_NeedApply__SWIG_1")]
+  public static extern bool FbxAnimCurveFilterGimbleKiller_NeedApply__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_NeedApply__SWIG_2")]
+  public static extern bool FbxAnimCurveFilterGimbleKiller_NeedApply__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_NeedApply__SWIG_3")]
+  public static extern bool FbxAnimCurveFilterGimbleKiller_NeedApply__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_NeedApply__SWIG_4")]
+  public static extern bool FbxAnimCurveFilterGimbleKiller_NeedApply__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_NeedApply__SWIG_5")]
+  public static extern bool FbxAnimCurveFilterGimbleKiller_NeedApply__SWIG_5(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_NeedApply__SWIG_6")]
+  public static extern bool FbxAnimCurveFilterGimbleKiller_NeedApply__SWIG_6(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_NeedApply__SWIG_7")]
+  public static extern bool FbxAnimCurveFilterGimbleKiller_NeedApply__SWIG_7(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_NeedApply__SWIG_8")]
+  public static extern bool FbxAnimCurveFilterGimbleKiller_NeedApply__SWIG_8(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_NeedApply__SWIG_9")]
+  public static extern bool FbxAnimCurveFilterGimbleKiller_NeedApply__SWIG_9(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_Apply__SWIG_0")]
+  public static extern bool FbxAnimCurveFilterGimbleKiller_Apply__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_Apply__SWIG_1")]
+  public static extern bool FbxAnimCurveFilterGimbleKiller_Apply__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_Apply__SWIG_2")]
+  public static extern bool FbxAnimCurveFilterGimbleKiller_Apply__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_Apply__SWIG_3")]
+  public static extern bool FbxAnimCurveFilterGimbleKiller_Apply__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_Apply__SWIG_4")]
+  public static extern bool FbxAnimCurveFilterGimbleKiller_Apply__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_Apply__SWIG_5")]
+  public static extern bool FbxAnimCurveFilterGimbleKiller_Apply__SWIG_5(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_Apply__SWIG_6")]
+  public static extern bool FbxAnimCurveFilterGimbleKiller_Apply__SWIG_6(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_Apply__SWIG_7")]
+  public static extern bool FbxAnimCurveFilterGimbleKiller_Apply__SWIG_7(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_Apply__SWIG_8")]
+  public static extern bool FbxAnimCurveFilterGimbleKiller_Apply__SWIG_8(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_Apply__SWIG_9")]
+  public static extern bool FbxAnimCurveFilterGimbleKiller_Apply__SWIG_9(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_Reset")]
+  public static extern void FbxAnimCurveFilterGimbleKiller_Reset(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_GetApplyKeySyncFilter")]
+  public static extern bool FbxAnimCurveFilterGimbleKiller_GetApplyKeySyncFilter(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_SetApplyKeySyncFilter")]
+  public static extern void FbxAnimCurveFilterGimbleKiller_SetApplyKeySyncFilter(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxAnimCurveFilterKeyReducer")]
+  public static extern global::System.IntPtr new_FbxAnimCurveFilterKeyReducer();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxAnimCurveFilterKeyReducer")]
+  public static extern void delete_FbxAnimCurveFilterKeyReducer(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeyReducer_GetName")]
+  public static extern string FbxAnimCurveFilterKeyReducer_GetName(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeyReducer_Apply__SWIG_0")]
+  public static extern bool FbxAnimCurveFilterKeyReducer_Apply__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeyReducer_Apply__SWIG_1")]
+  public static extern bool FbxAnimCurveFilterKeyReducer_Apply__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeyReducer_Apply__SWIG_2")]
+  public static extern bool FbxAnimCurveFilterKeyReducer_Apply__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeyReducer_Apply__SWIG_3")]
+  public static extern bool FbxAnimCurveFilterKeyReducer_Apply__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeyReducer_Apply__SWIG_4")]
+  public static extern bool FbxAnimCurveFilterKeyReducer_Apply__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeyReducer_Apply__SWIG_5")]
+  public static extern bool FbxAnimCurveFilterKeyReducer_Apply__SWIG_5(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeyReducer_Apply__SWIG_6")]
+  public static extern bool FbxAnimCurveFilterKeyReducer_Apply__SWIG_6(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeyReducer_Apply__SWIG_7")]
+  public static extern bool FbxAnimCurveFilterKeyReducer_Apply__SWIG_7(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeyReducer_Apply__SWIG_8")]
+  public static extern bool FbxAnimCurveFilterKeyReducer_Apply__SWIG_8(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeyReducer_Apply__SWIG_9")]
+  public static extern bool FbxAnimCurveFilterKeyReducer_Apply__SWIG_9(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeyReducer_Reset")]
+  public static extern void FbxAnimCurveFilterKeyReducer_Reset(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeyReducer_GetPrecision")]
+  public static extern double FbxAnimCurveFilterKeyReducer_GetPrecision(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeyReducer_SetPrecision")]
+  public static extern void FbxAnimCurveFilterKeyReducer_SetPrecision(global::System.Runtime.InteropServices.HandleRef jarg1, double jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeyReducer_GetKeySync")]
+  public static extern bool FbxAnimCurveFilterKeyReducer_GetKeySync(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeyReducer_SetKeySync")]
+  public static extern void FbxAnimCurveFilterKeyReducer_SetKeySync(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxAnimCurveFilterKeySync")]
+  public static extern global::System.IntPtr new_FbxAnimCurveFilterKeySync();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxAnimCurveFilterKeySync")]
+  public static extern void delete_FbxAnimCurveFilterKeySync(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeySync_GetName")]
+  public static extern string FbxAnimCurveFilterKeySync_GetName(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeySync_NeedApply__SWIG_0")]
+  public static extern bool FbxAnimCurveFilterKeySync_NeedApply__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeySync_NeedApply__SWIG_1")]
+  public static extern bool FbxAnimCurveFilterKeySync_NeedApply__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeySync_NeedApply__SWIG_2")]
+  public static extern bool FbxAnimCurveFilterKeySync_NeedApply__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeySync_NeedApply__SWIG_3")]
+  public static extern bool FbxAnimCurveFilterKeySync_NeedApply__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeySync_NeedApply__SWIG_4")]
+  public static extern bool FbxAnimCurveFilterKeySync_NeedApply__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeySync_NeedApply__SWIG_5")]
+  public static extern bool FbxAnimCurveFilterKeySync_NeedApply__SWIG_5(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeySync_Apply__SWIG_0")]
+  public static extern bool FbxAnimCurveFilterKeySync_Apply__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeySync_Apply__SWIG_1")]
+  public static extern bool FbxAnimCurveFilterKeySync_Apply__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeySync_Apply__SWIG_2")]
+  public static extern bool FbxAnimCurveFilterKeySync_Apply__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeySync_Apply__SWIG_3")]
+  public static extern bool FbxAnimCurveFilterKeySync_Apply__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeySync_Apply__SWIG_4")]
+  public static extern bool FbxAnimCurveFilterKeySync_Apply__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeySync_Apply__SWIG_5")]
+  public static extern bool FbxAnimCurveFilterKeySync_Apply__SWIG_5(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeySync_NeedApply__SWIG_6")]
+  public static extern bool FbxAnimCurveFilterKeySync_NeedApply__SWIG_6(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeySync_NeedApply__SWIG_7")]
+  public static extern bool FbxAnimCurveFilterKeySync_NeedApply__SWIG_7(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeySync_NeedApply__SWIG_8")]
+  public static extern bool FbxAnimCurveFilterKeySync_NeedApply__SWIG_8(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeySync_NeedApply__SWIG_9")]
+  public static extern bool FbxAnimCurveFilterKeySync_NeedApply__SWIG_9(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeySync_Apply__SWIG_6")]
+  public static extern bool FbxAnimCurveFilterKeySync_Apply__SWIG_6(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeySync_Apply__SWIG_7")]
+  public static extern bool FbxAnimCurveFilterKeySync_Apply__SWIG_7(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeySync_Apply__SWIG_8")]
+  public static extern bool FbxAnimCurveFilterKeySync_Apply__SWIG_8(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeySync_Apply__SWIG_9")]
+  public static extern bool FbxAnimCurveFilterKeySync_Apply__SWIG_9(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxAnimCurveFilterResample")]
+  public static extern global::System.IntPtr new_FbxAnimCurveFilterResample();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxAnimCurveFilterResample")]
+  public static extern void delete_FbxAnimCurveFilterResample(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterResample_GetName")]
+  public static extern string FbxAnimCurveFilterResample_GetName(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterResample_Apply__SWIG_0")]
+  public static extern bool FbxAnimCurveFilterResample_Apply__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterResample_Apply__SWIG_1")]
+  public static extern bool FbxAnimCurveFilterResample_Apply__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterResample_Apply__SWIG_2")]
+  public static extern bool FbxAnimCurveFilterResample_Apply__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterResample_Apply__SWIG_3")]
+  public static extern bool FbxAnimCurveFilterResample_Apply__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterResample_Apply__SWIG_4")]
+  public static extern bool FbxAnimCurveFilterResample_Apply__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterResample_Apply__SWIG_5")]
+  public static extern bool FbxAnimCurveFilterResample_Apply__SWIG_5(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterResample_Apply__SWIG_6")]
+  public static extern bool FbxAnimCurveFilterResample_Apply__SWIG_6(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterResample_Apply__SWIG_7")]
+  public static extern bool FbxAnimCurveFilterResample_Apply__SWIG_7(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterResample_Apply__SWIG_8")]
+  public static extern bool FbxAnimCurveFilterResample_Apply__SWIG_8(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterResample_Apply__SWIG_9")]
+  public static extern bool FbxAnimCurveFilterResample_Apply__SWIG_9(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterResample_Reset")]
+  public static extern void FbxAnimCurveFilterResample_Reset(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterResample_SetKeysOnFrame")]
+  public static extern void FbxAnimCurveFilterResample_SetKeysOnFrame(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterResample_GetKeysOnFrame")]
+  public static extern bool FbxAnimCurveFilterResample_GetKeysOnFrame(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterResample_GetPeriodTime")]
+  public static extern global::System.IntPtr FbxAnimCurveFilterResample_GetPeriodTime(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterResample_SetPeriodTime")]
+  public static extern void FbxAnimCurveFilterResample_SetPeriodTime(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterResample_GetIntelligentMode")]
+  public static extern bool FbxAnimCurveFilterResample_GetIntelligentMode(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterResample_SetIntelligentMode")]
+  public static extern void FbxAnimCurveFilterResample_SetIntelligentMode(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxAnimCurveFilterScale")]
+  public static extern global::System.IntPtr new_FbxAnimCurveFilterScale();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxAnimCurveFilterScale")]
+  public static extern void delete_FbxAnimCurveFilterScale(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScale_GetName")]
+  public static extern string FbxAnimCurveFilterScale_GetName(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScale_Apply__SWIG_0")]
+  public static extern bool FbxAnimCurveFilterScale_Apply__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScale_Apply__SWIG_1")]
+  public static extern bool FbxAnimCurveFilterScale_Apply__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScale_Apply__SWIG_2")]
+  public static extern bool FbxAnimCurveFilterScale_Apply__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScale_Apply__SWIG_3")]
+  public static extern bool FbxAnimCurveFilterScale_Apply__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScale_Apply__SWIG_4")]
+  public static extern bool FbxAnimCurveFilterScale_Apply__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScale_Apply__SWIG_5")]
+  public static extern bool FbxAnimCurveFilterScale_Apply__SWIG_5(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScale_Apply__SWIG_6")]
+  public static extern bool FbxAnimCurveFilterScale_Apply__SWIG_6(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScale_Apply__SWIG_7")]
+  public static extern bool FbxAnimCurveFilterScale_Apply__SWIG_7(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScale_Apply__SWIG_8")]
+  public static extern bool FbxAnimCurveFilterScale_Apply__SWIG_8(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScale_Apply__SWIG_9")]
+  public static extern bool FbxAnimCurveFilterScale_Apply__SWIG_9(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScale_Reset")]
+  public static extern void FbxAnimCurveFilterScale_Reset(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScale_GetScale")]
+  public static extern double FbxAnimCurveFilterScale_GetScale(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScale_SetScale")]
+  public static extern void FbxAnimCurveFilterScale_SetScale(global::System.Runtime.InteropServices.HandleRef jarg1, double jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxAnimCurveFilterScaleByCurve")]
+  public static extern global::System.IntPtr new_FbxAnimCurveFilterScaleByCurve();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxAnimCurveFilterScaleByCurve")]
+  public static extern void delete_FbxAnimCurveFilterScaleByCurve(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScaleByCurve_GetName")]
+  public static extern string FbxAnimCurveFilterScaleByCurve_GetName(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScaleByCurve_Apply__SWIG_0")]
+  public static extern bool FbxAnimCurveFilterScaleByCurve_Apply__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScaleByCurve_Apply__SWIG_1")]
+  public static extern bool FbxAnimCurveFilterScaleByCurve_Apply__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScaleByCurve_Apply__SWIG_2")]
+  public static extern bool FbxAnimCurveFilterScaleByCurve_Apply__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScaleByCurve_Apply__SWIG_3")]
+  public static extern bool FbxAnimCurveFilterScaleByCurve_Apply__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScaleByCurve_Apply__SWIG_4")]
+  public static extern bool FbxAnimCurveFilterScaleByCurve_Apply__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScaleByCurve_Apply__SWIG_5")]
+  public static extern bool FbxAnimCurveFilterScaleByCurve_Apply__SWIG_5(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScaleByCurve_Apply__SWIG_6")]
+  public static extern bool FbxAnimCurveFilterScaleByCurve_Apply__SWIG_6(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScaleByCurve_Apply__SWIG_7")]
+  public static extern bool FbxAnimCurveFilterScaleByCurve_Apply__SWIG_7(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScaleByCurve_Apply__SWIG_8")]
+  public static extern bool FbxAnimCurveFilterScaleByCurve_Apply__SWIG_8(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScaleByCurve_Apply__SWIG_9")]
+  public static extern bool FbxAnimCurveFilterScaleByCurve_Apply__SWIG_9(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScaleByCurve_Reset")]
+  public static extern void FbxAnimCurveFilterScaleByCurve_Reset(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScaleByCurve_GetScale")]
+  public static extern global::System.IntPtr FbxAnimCurveFilterScaleByCurve_GetScale(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScaleByCurve_SetScale")]
+  public static extern void FbxAnimCurveFilterScaleByCurve_SetScale(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxAnimCurveFilterTSS")]
+  public static extern global::System.IntPtr new_FbxAnimCurveFilterTSS();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxAnimCurveFilterTSS")]
+  public static extern void delete_FbxAnimCurveFilterTSS(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterTSS_GetName")]
+  public static extern string FbxAnimCurveFilterTSS_GetName(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterTSS_Apply__SWIG_0")]
+  public static extern bool FbxAnimCurveFilterTSS_Apply__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterTSS_Apply__SWIG_1")]
+  public static extern bool FbxAnimCurveFilterTSS_Apply__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterTSS_Apply__SWIG_2")]
+  public static extern bool FbxAnimCurveFilterTSS_Apply__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterTSS_Apply__SWIG_3")]
+  public static extern bool FbxAnimCurveFilterTSS_Apply__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterTSS_Apply__SWIG_4")]
+  public static extern bool FbxAnimCurveFilterTSS_Apply__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterTSS_Apply__SWIG_5")]
+  public static extern bool FbxAnimCurveFilterTSS_Apply__SWIG_5(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterTSS_Apply__SWIG_6")]
+  public static extern bool FbxAnimCurveFilterTSS_Apply__SWIG_6(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterTSS_Apply__SWIG_7")]
+  public static extern bool FbxAnimCurveFilterTSS_Apply__SWIG_7(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterTSS_Apply__SWIG_8")]
+  public static extern bool FbxAnimCurveFilterTSS_Apply__SWIG_8(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterTSS_Apply__SWIG_9")]
+  public static extern bool FbxAnimCurveFilterTSS_Apply__SWIG_9(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterTSS_Reset")]
+  public static extern void FbxAnimCurveFilterTSS_Reset(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterTSS_GetShift")]
+  public static extern global::System.IntPtr FbxAnimCurveFilterTSS_GetShift(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterTSS_SetShift")]
+  public static extern void FbxAnimCurveFilterTSS_SetShift(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterTSS_GetScale")]
+  public static extern double FbxAnimCurveFilterTSS_GetScale(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterTSS_SetScale")]
+  public static extern void FbxAnimCurveFilterTSS_SetScale(global::System.Runtime.InteropServices.HandleRef jarg1, double jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxAnimCurveFilterUnroll")]
+  public static extern global::System.IntPtr new_FbxAnimCurveFilterUnroll();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxAnimCurveFilterUnroll")]
+  public static extern void delete_FbxAnimCurveFilterUnroll(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterUnroll_GetName")]
+  public static extern string FbxAnimCurveFilterUnroll_GetName(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterUnroll_NeedApply__SWIG_0")]
+  public static extern bool FbxAnimCurveFilterUnroll_NeedApply__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterUnroll_NeedApply__SWIG_1")]
+  public static extern bool FbxAnimCurveFilterUnroll_NeedApply__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterUnroll_NeedApply__SWIG_2")]
+  public static extern bool FbxAnimCurveFilterUnroll_NeedApply__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterUnroll_NeedApply__SWIG_3")]
+  public static extern bool FbxAnimCurveFilterUnroll_NeedApply__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterUnroll_NeedApply__SWIG_4")]
+  public static extern bool FbxAnimCurveFilterUnroll_NeedApply__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterUnroll_NeedApply__SWIG_5")]
+  public static extern bool FbxAnimCurveFilterUnroll_NeedApply__SWIG_5(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterUnroll_NeedApply__SWIG_6")]
+  public static extern bool FbxAnimCurveFilterUnroll_NeedApply__SWIG_6(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterUnroll_NeedApply__SWIG_7")]
+  public static extern bool FbxAnimCurveFilterUnroll_NeedApply__SWIG_7(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterUnroll_NeedApply__SWIG_8")]
+  public static extern bool FbxAnimCurveFilterUnroll_NeedApply__SWIG_8(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterUnroll_NeedApply__SWIG_9")]
+  public static extern bool FbxAnimCurveFilterUnroll_NeedApply__SWIG_9(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterUnroll_Apply__SWIG_0")]
+  public static extern bool FbxAnimCurveFilterUnroll_Apply__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterUnroll_Apply__SWIG_1")]
+  public static extern bool FbxAnimCurveFilterUnroll_Apply__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterUnroll_Apply__SWIG_2")]
+  public static extern bool FbxAnimCurveFilterUnroll_Apply__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterUnroll_Apply__SWIG_3")]
+  public static extern bool FbxAnimCurveFilterUnroll_Apply__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterUnroll_Apply__SWIG_4")]
+  public static extern bool FbxAnimCurveFilterUnroll_Apply__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterUnroll_Apply__SWIG_5")]
+  public static extern bool FbxAnimCurveFilterUnroll_Apply__SWIG_5(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterUnroll_Apply__SWIG_6")]
+  public static extern bool FbxAnimCurveFilterUnroll_Apply__SWIG_6(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterUnroll_Apply__SWIG_7")]
+  public static extern bool FbxAnimCurveFilterUnroll_Apply__SWIG_7(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterUnroll_Apply__SWIG_8")]
+  public static extern bool FbxAnimCurveFilterUnroll_Apply__SWIG_8(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterUnroll_Apply__SWIG_9")]
+  public static extern bool FbxAnimCurveFilterUnroll_Apply__SWIG_9(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterUnroll_Reset")]
+  public static extern void FbxAnimCurveFilterUnroll_Reset(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterUnroll_GetQualityTolerance")]
+  public static extern double FbxAnimCurveFilterUnroll_GetQualityTolerance(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterUnroll_SetQualityTolerance")]
+  public static extern void FbxAnimCurveFilterUnroll_SetQualityTolerance(global::System.Runtime.InteropServices.HandleRef jarg1, double jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterUnroll_GetTestForPath")]
+  public static extern bool FbxAnimCurveFilterUnroll_GetTestForPath(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterUnroll_SetTestForPath")]
+  public static extern void FbxAnimCurveFilterUnroll_SetTestForPath(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterUnroll_GetForceAutoTangents")]
+  public static extern bool FbxAnimCurveFilterUnroll_GetForceAutoTangents(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterUnroll_SetForceAutoTangents")]
+  public static extern void FbxAnimCurveFilterUnroll_SetForceAutoTangents(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterUnroll_SetRotationOrder")]
+  public static extern void FbxAnimCurveFilterUnroll_SetRotationOrder(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxAnimCurveFilterMatrixConverter")]
+  public static extern global::System.IntPtr new_FbxAnimCurveFilterMatrixConverter();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxAnimCurveFilterMatrixConverter")]
+  public static extern void delete_FbxAnimCurveFilterMatrixConverter(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_GetName")]
+  public static extern string FbxAnimCurveFilterMatrixConverter_GetName(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_0")]
+  public static extern bool FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_1")]
+  public static extern bool FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_2")]
+  public static extern bool FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_3")]
+  public static extern bool FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_Apply__SWIG_0")]
+  public static extern bool FbxAnimCurveFilterMatrixConverter_Apply__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_Apply__SWIG_1")]
+  public static extern bool FbxAnimCurveFilterMatrixConverter_Apply__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_4")]
+  public static extern bool FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_5")]
+  public static extern bool FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_5(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_6")]
+  public static extern bool FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_6(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_7")]
+  public static extern bool FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_7(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_8")]
+  public static extern bool FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_8(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_9")]
+  public static extern bool FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_9(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_10")]
+  public static extern bool FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_10(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_11")]
+  public static extern bool FbxAnimCurveFilterMatrixConverter_NeedApply__SWIG_11(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_Apply__SWIG_2")]
+  public static extern bool FbxAnimCurveFilterMatrixConverter_Apply__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_Apply__SWIG_3")]
+  public static extern bool FbxAnimCurveFilterMatrixConverter_Apply__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_Apply__SWIG_4")]
+  public static extern bool FbxAnimCurveFilterMatrixConverter_Apply__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_Apply__SWIG_5")]
+  public static extern bool FbxAnimCurveFilterMatrixConverter_Apply__SWIG_5(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_Apply__SWIG_6")]
+  public static extern bool FbxAnimCurveFilterMatrixConverter_Apply__SWIG_6(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_Apply__SWIG_7")]
+  public static extern bool FbxAnimCurveFilterMatrixConverter_Apply__SWIG_7(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_Apply__SWIG_8")]
+  public static extern bool FbxAnimCurveFilterMatrixConverter_Apply__SWIG_8(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_Apply__SWIG_9")]
+  public static extern bool FbxAnimCurveFilterMatrixConverter_Apply__SWIG_9(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_Apply__SWIG_10")]
+  public static extern bool FbxAnimCurveFilterMatrixConverter_Apply__SWIG_10(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_Apply__SWIG_11")]
+  public static extern bool FbxAnimCurveFilterMatrixConverter_Apply__SWIG_11(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_Apply__SWIG_12")]
+  public static extern bool FbxAnimCurveFilterMatrixConverter_Apply__SWIG_12(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_Apply__SWIG_13")]
+  public static extern bool FbxAnimCurveFilterMatrixConverter_Apply__SWIG_13(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_Reset")]
+  public static extern void FbxAnimCurveFilterMatrixConverter_Reset(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_GetSourceMatrix")]
+  public static extern void FbxAnimCurveFilterMatrixConverter_GetSourceMatrix(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_SetSourceMatrix")]
+  public static extern void FbxAnimCurveFilterMatrixConverter_SetSourceMatrix(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_GetDestMatrix")]
+  public static extern void FbxAnimCurveFilterMatrixConverter_GetDestMatrix(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_SetDestMatrix")]
+  public static extern void FbxAnimCurveFilterMatrixConverter_SetDestMatrix(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_GetResamplingPeriod")]
+  public static extern global::System.IntPtr FbxAnimCurveFilterMatrixConverter_GetResamplingPeriod(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_SetResamplingPeriod")]
+  public static extern void FbxAnimCurveFilterMatrixConverter_SetResamplingPeriod(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_GetGenerateLastKeyExactlyAtEndTime")]
+  public static extern bool FbxAnimCurveFilterMatrixConverter_GetGenerateLastKeyExactlyAtEndTime(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_SetGenerateLastKeyExactlyAtEndTime")]
+  public static extern void FbxAnimCurveFilterMatrixConverter_SetGenerateLastKeyExactlyAtEndTime(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_GetResamplingOnFrameRateMultiple")]
+  public static extern bool FbxAnimCurveFilterMatrixConverter_GetResamplingOnFrameRateMultiple(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_SetResamplingOnFrameRateMultiple")]
+  public static extern void FbxAnimCurveFilterMatrixConverter_SetResamplingOnFrameRateMultiple(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_GetApplyUnroll")]
+  public static extern bool FbxAnimCurveFilterMatrixConverter_GetApplyUnroll(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_SetApplyUnroll")]
+  public static extern void FbxAnimCurveFilterMatrixConverter_SetApplyUnroll(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_GetApplyConstantKeyReducer")]
+  public static extern bool FbxAnimCurveFilterMatrixConverter_GetApplyConstantKeyReducer(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_SetApplyConstantKeyReducer")]
+  public static extern void FbxAnimCurveFilterMatrixConverter_SetApplyConstantKeyReducer(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_GetResampleTranslation")]
+  public static extern bool FbxAnimCurveFilterMatrixConverter_GetResampleTranslation(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_SetResampleTranslation")]
+  public static extern void FbxAnimCurveFilterMatrixConverter_SetResampleTranslation(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_SetSrcRotateOrder")]
+  public static extern void FbxAnimCurveFilterMatrixConverter_SetSrcRotateOrder(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_SetDestRotateOrder")]
+  public static extern void FbxAnimCurveFilterMatrixConverter_SetDestRotateOrder(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_SetForceApply")]
+  public static extern void FbxAnimCurveFilterMatrixConverter_SetForceApply(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_GetForceApply")]
+  public static extern bool FbxAnimCurveFilterMatrixConverter_GetForceApply(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_SetTranslationLimits")]
+  public static extern void FbxAnimCurveFilterMatrixConverter_SetTranslationLimits(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_SetRotationLimits")]
+  public static extern void FbxAnimCurveFilterMatrixConverter_SetRotationLimits(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_SetScalingLimits")]
+  public static extern void FbxAnimCurveFilterMatrixConverter_SetScalingLimits(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvalState_GetTime")]
+  public static extern global::System.IntPtr FbxAnimEvalState_GetTime(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvalState_Reset")]
+  public static extern void FbxAnimEvalState_Reset(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvalState_Begin")]
+  public static extern void FbxAnimEvalState_Begin(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvalState_Flush__SWIG_0")]
+  public static extern void FbxAnimEvalState_Flush__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvalState_Flush__SWIG_1")]
+  public static extern void FbxAnimEvalState_Flush__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvalState_GetNodeEvalState")]
+  public static extern global::System.IntPtr FbxAnimEvalState_GetNodeEvalState(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvalState_GetPropertyEvalState")]
+  public static extern global::System.IntPtr FbxAnimEvalState_GetPropertyEvalState(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvalState_GetPropertyCurveNode")]
+  public static extern global::System.IntPtr FbxAnimEvalState_GetPropertyCurveNode(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxAnimEvalState")]
+  public static extern global::System.IntPtr new_FbxAnimEvalState();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxAnimEvalState")]
+  public static extern void delete_FbxAnimEvalState(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxEvalState")]
+  public static extern global::System.IntPtr new_FbxEvalState();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxEvalState_mUpToDate_set")]
+  public static extern void FbxEvalState_mUpToDate_set(global::System.Runtime.InteropServices.HandleRef jarg1, bool jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxEvalState_mUpToDate_get")]
+  public static extern bool FbxEvalState_mUpToDate_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxEvalState")]
+  public static extern void delete_FbxEvalState(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxNodeEvalState")]
+  public static extern global::System.IntPtr new_FbxNodeEvalState(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxNodeEvalState_mLT_set")]
+  public static extern void FbxNodeEvalState_mLT_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxNodeEvalState_mLT_get")]
+  public static extern global::System.IntPtr FbxNodeEvalState_mLT_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxNodeEvalState_mLR_set")]
+  public static extern void FbxNodeEvalState_mLR_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxNodeEvalState_mLR_get")]
+  public static extern global::System.IntPtr FbxNodeEvalState_mLR_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxNodeEvalState_mLS_set")]
+  public static extern void FbxNodeEvalState_mLS_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxNodeEvalState_mLS_get")]
+  public static extern global::System.IntPtr FbxNodeEvalState_mLS_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxNodeEvalState_mLX_set")]
+  public static extern void FbxNodeEvalState_mLX_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxNodeEvalState_mLX_get")]
+  public static extern global::System.IntPtr FbxNodeEvalState_mLX_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxNodeEvalState_mGX_set")]
+  public static extern void FbxNodeEvalState_mGX_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxNodeEvalState_mGX_get")]
+  public static extern global::System.IntPtr FbxNodeEvalState_mGX_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxNodeEvalState_mTransform_set")]
+  public static extern void FbxNodeEvalState_mTransform_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxNodeEvalState_mTransform_get")]
+  public static extern global::System.IntPtr FbxNodeEvalState_mTransform_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxNodeEvalState")]
+  public static extern void delete_FbxNodeEvalState(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxPropertyEvalState")]
+  public static extern global::System.IntPtr new_FbxPropertyEvalState(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxPropertyEvalState")]
+  public static extern void delete_FbxPropertyEvalState(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyEvalState_mValue_set")]
+  public static extern void FbxPropertyEvalState_mValue_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyEvalState_mValue_get")]
+  public static extern global::System.IntPtr FbxPropertyEvalState_mValue_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_ClassId_set")]
+  public static extern void FbxAnimEvaluator_ClassId_set(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_ClassId_get")]
+  public static extern global::System.IntPtr FbxAnimEvaluator_ClassId_get();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_GetClassId")]
+  public static extern global::System.IntPtr FbxAnimEvaluator_GetClassId(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_Create")]
+  public static extern global::System.IntPtr FbxAnimEvaluator_Create(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_GetNodeGlobalTransform__SWIG_0")]
+  public static extern global::System.IntPtr FbxAnimEvaluator_GetNodeGlobalTransform__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, int jarg4, bool jarg5, bool jarg6);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_GetNodeGlobalTransform__SWIG_1")]
+  public static extern global::System.IntPtr FbxAnimEvaluator_GetNodeGlobalTransform__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, int jarg4, bool jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_GetNodeGlobalTransform__SWIG_2")]
+  public static extern global::System.IntPtr FbxAnimEvaluator_GetNodeGlobalTransform__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, int jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_GetNodeGlobalTransform__SWIG_3")]
+  public static extern global::System.IntPtr FbxAnimEvaluator_GetNodeGlobalTransform__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_GetNodeGlobalTransform__SWIG_4")]
+  public static extern global::System.IntPtr FbxAnimEvaluator_GetNodeGlobalTransform__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalTransform__SWIG_0")]
+  public static extern global::System.IntPtr FbxAnimEvaluator_GetNodeLocalTransform__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, int jarg4, bool jarg5, bool jarg6);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalTransform__SWIG_1")]
+  public static extern global::System.IntPtr FbxAnimEvaluator_GetNodeLocalTransform__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, int jarg4, bool jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalTransform__SWIG_2")]
+  public static extern global::System.IntPtr FbxAnimEvaluator_GetNodeLocalTransform__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, int jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalTransform__SWIG_3")]
+  public static extern global::System.IntPtr FbxAnimEvaluator_GetNodeLocalTransform__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalTransform__SWIG_4")]
+  public static extern global::System.IntPtr FbxAnimEvaluator_GetNodeLocalTransform__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalTranslation__SWIG_0")]
+  public static extern global::System.IntPtr FbxAnimEvaluator_GetNodeLocalTranslation__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, int jarg4, bool jarg5, bool jarg6);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalTranslation__SWIG_1")]
+  public static extern global::System.IntPtr FbxAnimEvaluator_GetNodeLocalTranslation__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, int jarg4, bool jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalTranslation__SWIG_2")]
+  public static extern global::System.IntPtr FbxAnimEvaluator_GetNodeLocalTranslation__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, int jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalTranslation__SWIG_3")]
+  public static extern global::System.IntPtr FbxAnimEvaluator_GetNodeLocalTranslation__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalTranslation__SWIG_4")]
+  public static extern global::System.IntPtr FbxAnimEvaluator_GetNodeLocalTranslation__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalRotation__SWIG_0")]
+  public static extern global::System.IntPtr FbxAnimEvaluator_GetNodeLocalRotation__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, int jarg4, bool jarg5, bool jarg6);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalRotation__SWIG_1")]
+  public static extern global::System.IntPtr FbxAnimEvaluator_GetNodeLocalRotation__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, int jarg4, bool jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalRotation__SWIG_2")]
+  public static extern global::System.IntPtr FbxAnimEvaluator_GetNodeLocalRotation__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, int jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalRotation__SWIG_3")]
+  public static extern global::System.IntPtr FbxAnimEvaluator_GetNodeLocalRotation__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalRotation__SWIG_4")]
+  public static extern global::System.IntPtr FbxAnimEvaluator_GetNodeLocalRotation__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalScaling__SWIG_0")]
+  public static extern global::System.IntPtr FbxAnimEvaluator_GetNodeLocalScaling__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, int jarg4, bool jarg5, bool jarg6);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalScaling__SWIG_1")]
+  public static extern global::System.IntPtr FbxAnimEvaluator_GetNodeLocalScaling__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, int jarg4, bool jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalScaling__SWIG_2")]
+  public static extern global::System.IntPtr FbxAnimEvaluator_GetNodeLocalScaling__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, int jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalScaling__SWIG_3")]
+  public static extern global::System.IntPtr FbxAnimEvaluator_GetNodeLocalScaling__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_GetNodeLocalScaling__SWIG_4")]
+  public static extern global::System.IntPtr FbxAnimEvaluator_GetNodeLocalScaling__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_GetPropertyValue__SWIG_2")]
+  public static extern global::System.IntPtr FbxAnimEvaluator_GetPropertyValue__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, bool jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_GetPropertyValue__SWIG_3")]
+  public static extern global::System.IntPtr FbxAnimEvaluator_GetPropertyValue__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_GetPropertyCurveNode")]
+  public static extern global::System.IntPtr FbxAnimEvaluator_GetPropertyCurveNode(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_ValidateTime")]
+  public static extern global::System.IntPtr FbxAnimEvaluator_ValidateTime(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_Reset")]
+  public static extern void FbxAnimEvaluator_Reset(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_Flush__SWIG_0")]
+  public static extern void FbxAnimEvaluator_Flush__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_Flush__SWIG_1")]
+  public static extern void FbxAnimEvaluator_Flush__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_ComputeLocalTRSFromGlobal__SWIG_0")]
+  public static extern void FbxAnimEvaluator_ComputeLocalTRSFromGlobal__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, global::System.Runtime.InteropServices.HandleRef jarg5, global::System.Runtime.InteropServices.HandleRef jarg6, global::System.Runtime.InteropServices.HandleRef jarg7, int jarg8, bool jarg9, bool jarg10);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_ComputeLocalTRSFromGlobal__SWIG_1")]
+  public static extern void FbxAnimEvaluator_ComputeLocalTRSFromGlobal__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, global::System.Runtime.InteropServices.HandleRef jarg5, global::System.Runtime.InteropServices.HandleRef jarg6, global::System.Runtime.InteropServices.HandleRef jarg7, int jarg8, bool jarg9);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_ComputeLocalTRSFromGlobal__SWIG_2")]
+  public static extern void FbxAnimEvaluator_ComputeLocalTRSFromGlobal__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, global::System.Runtime.InteropServices.HandleRef jarg5, global::System.Runtime.InteropServices.HandleRef jarg6, global::System.Runtime.InteropServices.HandleRef jarg7, int jarg8);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_ComputeLocalTRSFromGlobal__SWIG_3")]
+  public static extern void FbxAnimEvaluator_ComputeLocalTRSFromGlobal__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, global::System.Runtime.InteropServices.HandleRef jarg5, global::System.Runtime.InteropServices.HandleRef jarg6, global::System.Runtime.InteropServices.HandleRef jarg7);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_ComputeLocalTRSFromGlobal__SWIG_4")]
+  public static extern void FbxAnimEvaluator_ComputeLocalTRSFromGlobal__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, global::System.Runtime.InteropServices.HandleRef jarg5, global::System.Runtime.InteropServices.HandleRef jarg6);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_IsAnimated")]
+  public static extern bool FbxAnimUtilities_IsAnimated(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_IsChannelAnimated__SWIG_0")]
+  public static extern bool FbxAnimUtilities_IsChannelAnimated__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, string jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_IsChannelAnimated__SWIG_1")]
+  public static extern bool FbxAnimUtilities_IsChannelAnimated__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_FbxAnimSplitDef_mName_set")]
+  public static extern void FbxAnimUtilities_FbxAnimSplitDef_mName_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_FbxAnimSplitDef_mName_get")]
+  public static extern global::System.IntPtr FbxAnimUtilities_FbxAnimSplitDef_mName_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_FbxAnimSplitDef_mStart_set")]
+  public static extern void FbxAnimUtilities_FbxAnimSplitDef_mStart_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_FbxAnimSplitDef_mStart_get")]
+  public static extern global::System.IntPtr FbxAnimUtilities_FbxAnimSplitDef_mStart_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_FbxAnimSplitDef_mEnd_set")]
+  public static extern void FbxAnimUtilities_FbxAnimSplitDef_mEnd_set(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_FbxAnimSplitDef_mEnd_get")]
+  public static extern global::System.IntPtr FbxAnimUtilities_FbxAnimSplitDef_mEnd_get(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxAnimUtilities_FbxAnimSplitDef__SWIG_0")]
+  public static extern global::System.IntPtr new_FbxAnimUtilities_FbxAnimSplitDef__SWIG_0();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxAnimUtilities_FbxAnimSplitDef__SWIG_1")]
+  public static extern global::System.IntPtr new_FbxAnimUtilities_FbxAnimSplitDef__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_FbxAnimSplitDef_assign")]
+  public static extern global::System.IntPtr FbxAnimUtilities_FbxAnimSplitDef_assign(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxAnimUtilities_FbxAnimSplitDef")]
+  public static extern void delete_FbxAnimUtilities_FbxAnimSplitDef(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxAnimUtilities_CurveNodeIntfce")]
+  public static extern global::System.IntPtr new_FbxAnimUtilities_CurveNodeIntfce(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxAnimUtilities_CurveNodeIntfce")]
+  public static extern void delete_FbxAnimUtilities_CurveNodeIntfce(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_CurveNodeIntfce_GetHandle__SWIG_0")]
+  public static extern global::System.IntPtr FbxAnimUtilities_CurveNodeIntfce_GetHandle__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_CurveNodeIntfce_GetTimeWarpName")]
+  public static extern string FbxAnimUtilities_CurveNodeIntfce_GetTimeWarpName(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_CurveNodeIntfce_GetTimeWarp")]
+  public static extern global::System.IntPtr FbxAnimUtilities_CurveNodeIntfce_GetTimeWarp(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_CurveNodeIntfce_GetLayer")]
+  public static extern global::System.IntPtr FbxAnimUtilities_CurveNodeIntfce_GetLayer(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_CurveNodeIntfce_GetCount")]
+  public static extern int FbxAnimUtilities_CurveNodeIntfce_GetCount(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_CurveNodeIntfce_GetHandle__SWIG_1")]
+  public static extern global::System.IntPtr FbxAnimUtilities_CurveNodeIntfce_GetHandle__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, uint jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_CurveNodeIntfce_GetCurveHandle__SWIG_0")]
+  public static extern global::System.IntPtr FbxAnimUtilities_CurveNodeIntfce_GetCurveHandle__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_CurveNodeIntfce_GetCurveHandle__SWIG_1")]
+  public static extern global::System.IntPtr FbxAnimUtilities_CurveNodeIntfce_GetCurveHandle__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_CurveNodeIntfce_SetCurveHandle__SWIG_0")]
+  public static extern void FbxAnimUtilities_CurveNodeIntfce_SetCurveHandle__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, int jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_CurveNodeIntfce_SetCurveHandle__SWIG_1")]
+  public static extern void FbxAnimUtilities_CurveNodeIntfce_SetCurveHandle__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_CurveNodeIntfce_FindRecursive")]
+  public static extern global::System.IntPtr FbxAnimUtilities_CurveNodeIntfce_FindRecursive(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_CurveNodeIntfce_IsValid")]
+  public static extern bool FbxAnimUtilities_CurveNodeIntfce_IsValid(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_CurveNodeIntfce_assign")]
+  public static extern global::System.IntPtr FbxAnimUtilities_CurveNodeIntfce_assign(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_CurveNodeIntfce_eq")]
+  public static extern bool FbxAnimUtilities_CurveNodeIntfce_eq(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxAnimUtilities_CurveIntfce__SWIG_0")]
+  public static extern global::System.IntPtr new_FbxAnimUtilities_CurveIntfce__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxAnimUtilities_CurveIntfce__SWIG_1")]
+  public static extern global::System.IntPtr new_FbxAnimUtilities_CurveIntfce__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxAnimUtilities_CurveIntfce")]
+  public static extern void delete_FbxAnimUtilities_CurveIntfce(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_CurveIntfce_GetValue")]
+  public static extern float FbxAnimUtilities_CurveIntfce_GetValue(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_CurveIntfce_SetValue")]
+  public static extern void FbxAnimUtilities_CurveIntfce_SetValue(global::System.Runtime.InteropServices.HandleRef jarg1, float jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_CurveIntfce_KeyGetCount")]
+  public static extern int FbxAnimUtilities_CurveIntfce_KeyGetCount(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_CurveIntfce_GetCurveHandle")]
+  public static extern global::System.IntPtr FbxAnimUtilities_CurveIntfce_GetCurveHandle(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_CurveIntfce_SetCurveHandle")]
+  public static extern void FbxAnimUtilities_CurveIntfce_SetCurveHandle(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_CurveIntfce_GetPreExtrapolation")]
+  public static extern int FbxAnimUtilities_CurveIntfce_GetPreExtrapolation(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_CurveIntfce_GetPreExtrapolationCount")]
+  public static extern int FbxAnimUtilities_CurveIntfce_GetPreExtrapolationCount(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_CurveIntfce_GetPostExtrapolation")]
+  public static extern int FbxAnimUtilities_CurveIntfce_GetPostExtrapolation(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_CurveIntfce_GetPostExtrapolationCount")]
+  public static extern int FbxAnimUtilities_CurveIntfce_GetPostExtrapolationCount(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_CurveIntfce_IsValid")]
+  public static extern bool FbxAnimUtilities_CurveIntfce_IsValid(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_CurveIntfce_assign")]
+  public static extern global::System.IntPtr FbxAnimUtilities_CurveIntfce_assign(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_CurveIntfce_eq")]
+  public static extern bool FbxAnimUtilities_CurveIntfce_eq(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_SplitAnimationIntoMultipleStacks")]
+  public static extern int FbxAnimUtilities_SplitAnimationIntoMultipleStacks(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_ShareAnimCurves")]
+  public static extern void FbxAnimUtilities_ShareAnimCurves(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_SetTimeWarpSet")]
+  public static extern void FbxAnimUtilities_SetTimeWarpSet(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_CreateCurveNode__SWIG_0")]
+  public static extern global::System.IntPtr FbxAnimUtilities_CreateCurveNode__SWIG_0(string jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_CreateCurveNode__SWIG_1")]
+  public static extern global::System.IntPtr FbxAnimUtilities_CreateCurveNode__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_CreateCurveNode__SWIG_2")]
+  public static extern global::System.IntPtr FbxAnimUtilities_CreateCurveNode__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, bool jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_CreateCurveNode__SWIG_3")]
+  public static extern global::System.IntPtr FbxAnimUtilities_CreateCurveNode__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_CreateTimeWarpNode")]
+  public static extern global::System.IntPtr FbxAnimUtilities_CreateTimeWarpNode(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_GrabCurveNode")]
+  public static extern global::System.IntPtr FbxAnimUtilities_GrabCurveNode(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_RestrieveCurveNode")]
+  public static extern void FbxAnimUtilities_RestrieveCurveNode(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_StoreCurveNode")]
+  public static extern void FbxAnimUtilities_StoreCurveNode(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_ReleaseCurveNode")]
+  public static extern void FbxAnimUtilities_ReleaseCurveNode(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_DestroyCurveNode")]
+  public static extern void FbxAnimUtilities_DestroyCurveNode(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_DestroyCurve")]
+  public static extern void FbxAnimUtilities_DestroyCurve(global::System.Runtime.InteropServices.HandleRef jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_ConnectTimeWarp")]
+  public static extern void FbxAnimUtilities_ConnectTimeWarp(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_MergeLayerAndTimeWarp")]
+  public static extern void FbxAnimUtilities_MergeLayerAndTimeWarp(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_CopyFrom")]
+  public static extern void FbxAnimUtilities_CopyFrom(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_CompareCurves")]
+  public static extern bool FbxAnimUtilities_CompareCurves(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_Resample__SWIG_0")]
+  public static extern void FbxAnimUtilities_Resample__SWIG_0(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, global::System.Runtime.InteropServices.HandleRef jarg5, int jarg6, int jarg7, bool jarg8);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_Resample__SWIG_1")]
+  public static extern void FbxAnimUtilities_Resample__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, global::System.Runtime.InteropServices.HandleRef jarg5, int jarg6, int jarg7);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_Resample__SWIG_2")]
+  public static extern void FbxAnimUtilities_Resample__SWIG_2(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, global::System.Runtime.InteropServices.HandleRef jarg5, bool jarg6);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_Resample__SWIG_3")]
+  public static extern void FbxAnimUtilities_Resample__SWIG_3(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, global::System.Runtime.InteropServices.HandleRef jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_Resample__SWIG_4")]
+  public static extern void FbxAnimUtilities_Resample__SWIG_4(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4, bool jarg5);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_Resample__SWIG_5")]
+  public static extern void FbxAnimUtilities_Resample__SWIG_5(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3, global::System.Runtime.InteropServices.HandleRef jarg4);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_Resample__SWIG_6")]
+  public static extern void FbxAnimUtilities_Resample__SWIG_6(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimUtilities_Resample__SWIG_7")]
+  public static extern void FbxAnimUtilities_Resample__SWIG_7(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_new_FbxAnimUtilities")]
+  public static extern global::System.IntPtr new_FbxAnimUtilities();
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_delete_FbxAnimUtilities")]
+  public static extern void delete_FbxAnimUtilities(global::System.Runtime.InteropServices.HandleRef jarg1);
+
   [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxVector2_SWIGUpcast")]
   public static extern global::System.IntPtr FbxVector2_SWIGUpcast(global::System.IntPtr jarg1);
 
@@ -4441,6 +8164,18 @@ class fbx_wrapperPINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxIOSettings_SWIGUpcast")]
   public static extern global::System.IntPtr FbxIOSettings_SWIGUpcast(global::System.IntPtr jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyString_SWIGUpcast")]
+  public static extern global::System.IntPtr FbxPropertyString_SWIGUpcast(global::System.IntPtr jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyDouble3_SWIGUpcast")]
+  public static extern global::System.IntPtr FbxPropertyDouble3_SWIGUpcast(global::System.IntPtr jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyDouble_SWIGUpcast")]
+  public static extern global::System.IntPtr FbxPropertyDouble_SWIGUpcast(global::System.IntPtr jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyBool_SWIGUpcast")]
+  public static extern global::System.IntPtr FbxPropertyBool_SWIGUpcast(global::System.IntPtr jarg1);
 
   [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxDocumentInfo_SWIGUpcast")]
   public static extern global::System.IntPtr FbxDocumentInfo_SWIGUpcast(global::System.IntPtr jarg1);
@@ -4468,6 +8203,78 @@ class fbx_wrapperPINVOKE {
 
   [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxNode_SWIGUpcast")]
   public static extern global::System.IntPtr FbxNode_SWIGUpcast(global::System.IntPtr jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxNodeAttribute_SWIGUpcast")]
+  public static extern global::System.IntPtr FbxNodeAttribute_SWIGUpcast(global::System.IntPtr jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkeleton_SWIGUpcast")]
+  public static extern global::System.IntPtr FbxSkeleton_SWIGUpcast(global::System.IntPtr jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxDeformer_SWIGUpcast")]
+  public static extern global::System.IntPtr FbxDeformer_SWIGUpcast(global::System.IntPtr jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxSkin_SWIGUpcast")]
+  public static extern global::System.IntPtr FbxSkin_SWIGUpcast(global::System.IntPtr jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxIOBase_SWIGUpcast")]
+  public static extern global::System.IntPtr FbxIOBase_SWIGUpcast(global::System.IntPtr jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxExporter_SWIGUpcast")]
+  public static extern global::System.IntPtr FbxExporter_SWIGUpcast(global::System.IntPtr jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxGlobalSettings_SWIGUpcast")]
+  public static extern global::System.IntPtr FbxGlobalSettings_SWIGUpcast(global::System.IntPtr jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxLibrary_SWIGUpcast")]
+  public static extern global::System.IntPtr FbxLibrary_SWIGUpcast(global::System.IntPtr jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveKey_SWIGUpcast")]
+  public static extern global::System.IntPtr FbxAnimCurveKey_SWIGUpcast(global::System.IntPtr jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurve_SWIGUpcast")]
+  public static extern global::System.IntPtr FbxAnimCurve_SWIGUpcast(global::System.IntPtr jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterConstantKeyReducer_SWIGUpcast")]
+  public static extern global::System.IntPtr FbxAnimCurveFilterConstantKeyReducer_SWIGUpcast(global::System.IntPtr jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScaleCompensate_SWIGUpcast")]
+  public static extern global::System.IntPtr FbxAnimCurveFilterScaleCompensate_SWIGUpcast(global::System.IntPtr jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterGimbleKiller_SWIGUpcast")]
+  public static extern global::System.IntPtr FbxAnimCurveFilterGimbleKiller_SWIGUpcast(global::System.IntPtr jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeyReducer_SWIGUpcast")]
+  public static extern global::System.IntPtr FbxAnimCurveFilterKeyReducer_SWIGUpcast(global::System.IntPtr jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterKeySync_SWIGUpcast")]
+  public static extern global::System.IntPtr FbxAnimCurveFilterKeySync_SWIGUpcast(global::System.IntPtr jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterResample_SWIGUpcast")]
+  public static extern global::System.IntPtr FbxAnimCurveFilterResample_SWIGUpcast(global::System.IntPtr jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScale_SWIGUpcast")]
+  public static extern global::System.IntPtr FbxAnimCurveFilterScale_SWIGUpcast(global::System.IntPtr jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterScaleByCurve_SWIGUpcast")]
+  public static extern global::System.IntPtr FbxAnimCurveFilterScaleByCurve_SWIGUpcast(global::System.IntPtr jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterTSS_SWIGUpcast")]
+  public static extern global::System.IntPtr FbxAnimCurveFilterTSS_SWIGUpcast(global::System.IntPtr jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterUnroll_SWIGUpcast")]
+  public static extern global::System.IntPtr FbxAnimCurveFilterUnroll_SWIGUpcast(global::System.IntPtr jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimCurveFilterMatrixConverter_SWIGUpcast")]
+  public static extern global::System.IntPtr FbxAnimCurveFilterMatrixConverter_SWIGUpcast(global::System.IntPtr jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxNodeEvalState_SWIGUpcast")]
+  public static extern global::System.IntPtr FbxNodeEvalState_SWIGUpcast(global::System.IntPtr jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxPropertyEvalState_SWIGUpcast")]
+  public static extern global::System.IntPtr FbxPropertyEvalState_SWIGUpcast(global::System.IntPtr jarg1);
+
+  [global::System.Runtime.InteropServices.DllImport("fbx_wrapper", EntryPoint="CSharp_Fbx_FbxAnimEvaluator_SWIGUpcast")]
+  public static extern global::System.IntPtr FbxAnimEvaluator_SWIGUpcast(global::System.IntPtr jarg1);
 }
 
 }

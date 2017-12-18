@@ -184,13 +184,13 @@ public class FbxObject : FbxEmitter {
     return ret;
   }
 
-  public SWIGTYPE_p_FbxString GetNameWithoutNameSpacePrefix() {
-    SWIGTYPE_p_FbxString ret = new SWIGTYPE_p_FbxString(fbx_wrapperPINVOKE.FbxObject_GetNameWithoutNameSpacePrefix(swigCPtr), true);
+  public FbxString GetNameWithoutNameSpacePrefix() {
+    FbxString ret = new FbxString(fbx_wrapperPINVOKE.FbxObject_GetNameWithoutNameSpacePrefix(swigCPtr), true);
     return ret;
   }
 
-  public SWIGTYPE_p_FbxString GetNameWithNameSpacePrefix() {
-    SWIGTYPE_p_FbxString ret = new SWIGTYPE_p_FbxString(fbx_wrapperPINVOKE.FbxObject_GetNameWithNameSpacePrefix(swigCPtr), true);
+  public FbxString GetNameWithNameSpacePrefix() {
+    FbxString ret = new FbxString(fbx_wrapperPINVOKE.FbxObject_GetNameWithNameSpacePrefix(swigCPtr), true);
     return ret;
   }
 
@@ -203,13 +203,13 @@ public class FbxObject : FbxEmitter {
     return ret;
   }
 
-  public SWIGTYPE_p_FbxString GetNameSpaceOnly() {
-    SWIGTYPE_p_FbxString ret = new SWIGTYPE_p_FbxString(fbx_wrapperPINVOKE.FbxObject_GetNameSpaceOnly(swigCPtr), true);
+  public FbxString GetNameSpaceOnly() {
+    FbxString ret = new FbxString(fbx_wrapperPINVOKE.FbxObject_GetNameSpaceOnly(swigCPtr), true);
     return ret;
   }
 
-  public void SetNameSpace(SWIGTYPE_p_FbxString pNameSpace) {
-    fbx_wrapperPINVOKE.FbxObject_SetNameSpace(swigCPtr, SWIGTYPE_p_FbxString.getCPtr(pNameSpace));
+  public void SetNameSpace(FbxString pNameSpace) {
+    fbx_wrapperPINVOKE.FbxObject_SetNameSpace(swigCPtr, FbxString.getCPtr(pNameSpace));
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
   }
 
@@ -218,29 +218,29 @@ public class FbxObject : FbxEmitter {
     return ret;
   }
 
-  public SWIGTYPE_p_FbxString GetNameOnly() {
-    SWIGTYPE_p_FbxString ret = new SWIGTYPE_p_FbxString(fbx_wrapperPINVOKE.FbxObject_GetNameOnly(swigCPtr), true);
+  public FbxString GetNameOnly() {
+    FbxString ret = new FbxString(fbx_wrapperPINVOKE.FbxObject_GetNameOnly(swigCPtr), true);
     return ret;
   }
 
-  public SWIGTYPE_p_FbxString GetNameSpacePrefix() {
-    SWIGTYPE_p_FbxString ret = new SWIGTYPE_p_FbxString(fbx_wrapperPINVOKE.FbxObject_GetNameSpacePrefix(swigCPtr), true);
+  public FbxString GetNameSpacePrefix() {
+    FbxString ret = new FbxString(fbx_wrapperPINVOKE.FbxObject_GetNameSpacePrefix(swigCPtr), true);
     return ret;
   }
 
-  public static SWIGTYPE_p_FbxString RemovePrefix(string pName) {
-    SWIGTYPE_p_FbxString ret = new SWIGTYPE_p_FbxString(fbx_wrapperPINVOKE.FbxObject_RemovePrefix(pName), true);
+  public static FbxString RemovePrefix(string pName) {
+    FbxString ret = new FbxString(fbx_wrapperPINVOKE.FbxObject_RemovePrefix(pName), true);
     return ret;
   }
 
-  public static SWIGTYPE_p_FbxString StripPrefix(SWIGTYPE_p_FbxString lName) {
-    SWIGTYPE_p_FbxString ret = new SWIGTYPE_p_FbxString(fbx_wrapperPINVOKE.FbxObject_StripPrefix__SWIG_0(SWIGTYPE_p_FbxString.getCPtr(lName)), true);
+  public static FbxString StripPrefix(FbxString lName) {
+    FbxString ret = new FbxString(fbx_wrapperPINVOKE.FbxObject_StripPrefix__SWIG_0(FbxString.getCPtr(lName)), true);
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public static SWIGTYPE_p_FbxString StripPrefix(string pName) {
-    SWIGTYPE_p_FbxString ret = new SWIGTYPE_p_FbxString(fbx_wrapperPINVOKE.FbxObject_StripPrefix__SWIG_1(pName), true);
+  public static FbxString StripPrefix(string pName) {
+    FbxString ret = new FbxString(fbx_wrapperPINVOKE.FbxObject_StripPrefix__SWIG_1(pName), true);
     return ret;
   }
 
@@ -670,9 +670,9 @@ public class FbxObject : FbxEmitter {
     return ret;
   }
 
-  public SWIGTYPE_p_FbxLibrary GetParentLibrary() {
+  public FbxLibrary GetParentLibrary() {
     global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxObject_GetParentLibrary(swigCPtr);
-    SWIGTYPE_p_FbxLibrary ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxLibrary(cPtr, false);
+    FbxLibrary ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxLibrary(cPtr, false);
     return ret;
   }
 
@@ -724,8 +724,8 @@ public class FbxObject : FbxEmitter {
     return ret;
   }
 
-  public virtual SWIGTYPE_p_FbxString GetUrl() {
-    SWIGTYPE_p_FbxString ret = new SWIGTYPE_p_FbxString(fbx_wrapperPINVOKE.FbxObject_GetUrl(swigCPtr), true);
+  public virtual FbxString GetUrl() {
+    FbxString ret = new FbxString(fbx_wrapperPINVOKE.FbxObject_GetUrl(swigCPtr), true);
     return ret;
   }
 

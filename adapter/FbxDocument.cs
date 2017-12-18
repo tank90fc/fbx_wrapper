@@ -193,8 +193,8 @@ public class FbxDocument : FbxCollection {
     return ret;
   }
 
-  public SWIGTYPE_p_FbxString GetPathToRootDocument() {
-    SWIGTYPE_p_FbxString ret = new SWIGTYPE_p_FbxString(fbx_wrapperPINVOKE.FbxDocument_GetPathToRootDocument(swigCPtr), true);
+  public FbxString GetPathToRootDocument() {
+    FbxString ret = new FbxString(fbx_wrapperPINVOKE.FbxDocument_GetPathToRootDocument(swigCPtr), true);
     return ret;
   }
 
@@ -213,13 +213,13 @@ public class FbxDocument : FbxCollection {
     return ret;
   }
 
-  public SWIGTYPE_p_FbxPropertyTT_FbxString_t ActiveAnimStackName {
+  public FbxPropertyString ActiveAnimStackName {
     set {
-      fbx_wrapperPINVOKE.FbxDocument_ActiveAnimStackName_set(swigCPtr, SWIGTYPE_p_FbxPropertyTT_FbxString_t.getCPtr(value));
+      fbx_wrapperPINVOKE.FbxDocument_ActiveAnimStackName_set(swigCPtr, FbxPropertyString.getCPtr(value));
     } 
     get {
       global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxDocument_ActiveAnimStackName_get(swigCPtr);
-      SWIGTYPE_p_FbxPropertyTT_FbxString_t ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxPropertyTT_FbxString_t(cPtr, false);
+      FbxPropertyString ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxPropertyString(cPtr, false);
       return ret;
     } 
   }
@@ -250,8 +250,8 @@ public class FbxDocument : FbxCollection {
     return ret;
   }
 
-  public SWIGTYPE_p_FbxTakeInfo GetTakeInfo(SWIGTYPE_p_FbxString pTakeName) {
-    global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxDocument_GetTakeInfo(swigCPtr, SWIGTYPE_p_FbxString.getCPtr(pTakeName));
+  public SWIGTYPE_p_FbxTakeInfo GetTakeInfo(FbxString pTakeName) {
+    global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxDocument_GetTakeInfo(swigCPtr, FbxString.getCPtr(pTakeName));
     SWIGTYPE_p_FbxTakeInfo ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxTakeInfo(cPtr, false);
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;

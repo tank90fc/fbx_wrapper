@@ -40,14 +40,13 @@ public class FbxAnimCurveKeyBase : global::System.IDisposable {
     }
   }
 
-  public SWIGTYPE_p_FbxTime mTime {
+  public FbxTime mTime {
     set {
-      fbx_wrapperPINVOKE.FbxAnimCurveKeyBase_mTime_set(swigCPtr, SWIGTYPE_p_FbxTime.getCPtr(value));
-      if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+      fbx_wrapperPINVOKE.FbxAnimCurveKeyBase_mTime_set(swigCPtr, FbxTime.getCPtr(value));
     } 
     get {
-      SWIGTYPE_p_FbxTime ret = new SWIGTYPE_p_FbxTime(fbx_wrapperPINVOKE.FbxAnimCurveKeyBase_mTime_get(swigCPtr), true);
-      if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+      global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxAnimCurveKeyBase_mTime_get(swigCPtr);
+      FbxTime ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxTime(cPtr, false);
       return ret;
     } 
   }
@@ -55,13 +54,13 @@ public class FbxAnimCurveKeyBase : global::System.IDisposable {
   public FbxAnimCurveKeyBase() : this(fbx_wrapperPINVOKE.new_FbxAnimCurveKeyBase(), true) {
   }
 
-  public virtual SWIGTYPE_p_FbxTime GetTime() {
-    SWIGTYPE_p_FbxTime ret = new SWIGTYPE_p_FbxTime(fbx_wrapperPINVOKE.FbxAnimCurveKeyBase_GetTime(swigCPtr), true);
+  public virtual FbxTime GetTime() {
+    FbxTime ret = new FbxTime(fbx_wrapperPINVOKE.FbxAnimCurveKeyBase_GetTime(swigCPtr), true);
     return ret;
   }
 
-  public virtual void SetTime(SWIGTYPE_p_FbxTime pTime) {
-    fbx_wrapperPINVOKE.FbxAnimCurveKeyBase_SetTime(swigCPtr, SWIGTYPE_p_FbxTime.getCPtr(pTime));
+  public virtual void SetTime(FbxTime pTime) {
+    fbx_wrapperPINVOKE.FbxAnimCurveKeyBase_SetTime(swigCPtr, FbxTime.getCPtr(pTime));
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
   }
 

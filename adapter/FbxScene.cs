@@ -207,8 +207,8 @@ public class FbxScene : FbxDocument {
     fbx_wrapperPINVOKE.FbxScene_SetSceneInfo(swigCPtr, FbxDocumentInfo.getCPtr(pSceneInfo));
   }
 
-  public SWIGTYPE_p_FbxGlobalSettings GetGlobalSettings() {
-    SWIGTYPE_p_FbxGlobalSettings ret = new SWIGTYPE_p_FbxGlobalSettings(fbx_wrapperPINVOKE.FbxScene_GetGlobalSettings__SWIG_0(swigCPtr), false);
+  public FbxGlobalSettings GetGlobalSettings() {
+    FbxGlobalSettings ret = new FbxGlobalSettings(fbx_wrapperPINVOKE.FbxScene_GetGlobalSettings__SWIG_0(swigCPtr), false);
     return ret;
   }
 
@@ -222,13 +222,13 @@ public class FbxScene : FbxDocument {
     return ret;
   }
 
-  public void SetAnimationEvaluator(SWIGTYPE_p_FbxAnimEvaluator pEvaluator) {
-    fbx_wrapperPINVOKE.FbxScene_SetAnimationEvaluator(swigCPtr, SWIGTYPE_p_FbxAnimEvaluator.getCPtr(pEvaluator));
+  public void SetAnimationEvaluator(FbxAnimEvaluator pEvaluator) {
+    fbx_wrapperPINVOKE.FbxScene_SetAnimationEvaluator(swigCPtr, FbxAnimEvaluator.getCPtr(pEvaluator));
   }
 
-  public SWIGTYPE_p_FbxAnimEvaluator GetAnimationEvaluator() {
+  public FbxAnimEvaluator GetAnimationEvaluator() {
     global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxScene_GetAnimationEvaluator(swigCPtr);
-    SWIGTYPE_p_FbxAnimEvaluator ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxAnimEvaluator(cPtr, false);
+    FbxAnimEvaluator ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxAnimEvaluator(cPtr, false);
     return ret;
   }
 
@@ -317,8 +317,8 @@ public class FbxScene : FbxDocument {
     return ret;
   }
 
-  public FbxNode FindNodeByName(SWIGTYPE_p_FbxString pName) {
-    global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxScene_FindNodeByName(swigCPtr, SWIGTYPE_p_FbxString.getCPtr(pName));
+  public FbxNode FindNodeByName(FbxString pName) {
+    global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxScene_FindNodeByName(swigCPtr, FbxString.getCPtr(pName));
     FbxNode ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxNode(cPtr, false);
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
@@ -370,8 +370,8 @@ public class FbxScene : FbxDocument {
     fbx_wrapperPINVOKE.FbxScene_SyncShowPropertyForInstance(swigCPtr);
   }
 
-  public bool ComputeBoundingBoxMinMaxCenter(FbxVector4 pBBoxMin, FbxVector4 pBBoxMax, FbxVector4 pBBoxCenter, bool pSelected, SWIGTYPE_p_FbxTime pTime) {
-    bool ret = fbx_wrapperPINVOKE.FbxScene_ComputeBoundingBoxMinMaxCenter__SWIG_0(swigCPtr, FbxVector4.getCPtr(pBBoxMin), FbxVector4.getCPtr(pBBoxMax), FbxVector4.getCPtr(pBBoxCenter), pSelected, SWIGTYPE_p_FbxTime.getCPtr(pTime));
+  public bool ComputeBoundingBoxMinMaxCenter(FbxVector4 pBBoxMin, FbxVector4 pBBoxMax, FbxVector4 pBBoxCenter, bool pSelected, FbxTime pTime) {
+    bool ret = fbx_wrapperPINVOKE.FbxScene_ComputeBoundingBoxMinMaxCenter__SWIG_0(swigCPtr, FbxVector4.getCPtr(pBBoxMin), FbxVector4.getCPtr(pBBoxMax), FbxVector4.getCPtr(pBBoxCenter), pSelected, FbxTime.getCPtr(pTime));
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
@@ -417,9 +417,8 @@ public class FbxScene : FbxDocument {
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
   }
 
-  public SWIGTYPE_p_FbxClassId ConvertAttributeTypeToClassID(SWIGTYPE_p_FbxNodeAttribute__EType pAttributeType) {
-    SWIGTYPE_p_FbxClassId ret = new SWIGTYPE_p_FbxClassId(fbx_wrapperPINVOKE.FbxScene_ConvertAttributeTypeToClassID(swigCPtr, SWIGTYPE_p_FbxNodeAttribute__EType.getCPtr(pAttributeType)), true);
-    if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+  public SWIGTYPE_p_FbxClassId ConvertAttributeTypeToClassID(FbxNodeAttribute.EType pAttributeType) {
+    SWIGTYPE_p_FbxClassId ret = new SWIGTYPE_p_FbxClassId(fbx_wrapperPINVOKE.FbxScene_ConvertAttributeTypeToClassID(swigCPtr, (int)pAttributeType), true);
     return ret;
   }
 

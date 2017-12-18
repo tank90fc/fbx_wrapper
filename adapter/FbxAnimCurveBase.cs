@@ -67,14 +67,14 @@ public class FbxAnimCurveBase : FbxObject {
     return ret;
   }
 
-  public virtual int KeyAdd(SWIGTYPE_p_FbxTime pTime, FbxAnimCurveKeyBase pKey, SWIGTYPE_p_int pLast) {
-    int ret = fbx_wrapperPINVOKE.FbxAnimCurveBase_KeyAdd__SWIG_0(swigCPtr, SWIGTYPE_p_FbxTime.getCPtr(pTime), FbxAnimCurveKeyBase.getCPtr(pKey), SWIGTYPE_p_int.getCPtr(pLast));
+  public virtual int KeyAdd(FbxTime pTime, FbxAnimCurveKeyBase pKey, SWIGTYPE_p_int pLast) {
+    int ret = fbx_wrapperPINVOKE.FbxAnimCurveBase_KeyAdd__SWIG_0(swigCPtr, FbxTime.getCPtr(pTime), FbxAnimCurveKeyBase.getCPtr(pKey), SWIGTYPE_p_int.getCPtr(pLast));
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public virtual int KeyAdd(SWIGTYPE_p_FbxTime pTime, FbxAnimCurveKeyBase pKey) {
-    int ret = fbx_wrapperPINVOKE.FbxAnimCurveBase_KeyAdd__SWIG_1(swigCPtr, SWIGTYPE_p_FbxTime.getCPtr(pTime), FbxAnimCurveKeyBase.getCPtr(pKey));
+  public virtual int KeyAdd(FbxTime pTime, FbxAnimCurveKeyBase pKey) {
+    int ret = fbx_wrapperPINVOKE.FbxAnimCurveBase_KeyAdd__SWIG_1(swigCPtr, FbxTime.getCPtr(pTime), FbxAnimCurveKeyBase.getCPtr(pKey));
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
@@ -95,13 +95,13 @@ public class FbxAnimCurveBase : FbxObject {
     return ret;
   }
 
-  public virtual SWIGTYPE_p_FbxTime KeyGetTime(int arg0) {
-    SWIGTYPE_p_FbxTime ret = new SWIGTYPE_p_FbxTime(fbx_wrapperPINVOKE.FbxAnimCurveBase_KeyGetTime(swigCPtr, arg0), true);
+  public virtual FbxTime KeyGetTime(int arg0) {
+    FbxTime ret = new FbxTime(fbx_wrapperPINVOKE.FbxAnimCurveBase_KeyGetTime(swigCPtr, arg0), true);
     return ret;
   }
 
-  public virtual void KeySetTime(int pKeyIndex, SWIGTYPE_p_FbxTime pTime) {
-    fbx_wrapperPINVOKE.FbxAnimCurveBase_KeySetTime(swigCPtr, pKeyIndex, SWIGTYPE_p_FbxTime.getCPtr(pTime));
+  public virtual void KeySetTime(int pKeyIndex, FbxTime pTime) {
+    fbx_wrapperPINVOKE.FbxAnimCurveBase_KeySetTime(swigCPtr, pKeyIndex, FbxTime.getCPtr(pTime));
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
   }
 
@@ -141,14 +141,14 @@ public class FbxAnimCurveBase : FbxObject {
     return ret;
   }
 
-  public virtual float Evaluate(SWIGTYPE_p_FbxTime pTime, SWIGTYPE_p_int pLast) {
-    float ret = fbx_wrapperPINVOKE.FbxAnimCurveBase_Evaluate__SWIG_0(swigCPtr, SWIGTYPE_p_FbxTime.getCPtr(pTime), SWIGTYPE_p_int.getCPtr(pLast));
+  public virtual float Evaluate(FbxTime pTime, SWIGTYPE_p_int pLast) {
+    float ret = fbx_wrapperPINVOKE.FbxAnimCurveBase_Evaluate__SWIG_0(swigCPtr, FbxTime.getCPtr(pTime), SWIGTYPE_p_int.getCPtr(pLast));
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
 
-  public virtual float Evaluate(SWIGTYPE_p_FbxTime pTime) {
-    float ret = fbx_wrapperPINVOKE.FbxAnimCurveBase_Evaluate__SWIG_1(swigCPtr, SWIGTYPE_p_FbxTime.getCPtr(pTime));
+  public virtual float Evaluate(FbxTime pTime) {
+    float ret = fbx_wrapperPINVOKE.FbxAnimCurveBase_Evaluate__SWIG_1(swigCPtr, FbxTime.getCPtr(pTime));
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
@@ -158,8 +158,8 @@ public class FbxAnimCurveBase : FbxObject {
     return ret;
   }
 
-  public virtual bool GetTimeInterval(SWIGTYPE_p_FbxTimeSpan pTimeInterval) {
-    bool ret = fbx_wrapperPINVOKE.FbxAnimCurveBase_GetTimeInterval(swigCPtr, SWIGTYPE_p_FbxTimeSpan.getCPtr(pTimeInterval));
+  public virtual bool GetTimeInterval(FbxTimeSpan pTimeInterval) {
+    bool ret = fbx_wrapperPINVOKE.FbxAnimCurveBase_GetTimeInterval(swigCPtr, FbxTimeSpan.getCPtr(pTimeInterval));
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }

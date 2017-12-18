@@ -74,8 +74,8 @@ public class FbxAnimCurveNode : FbxObject {
     return ret;
   }
 
-  public bool GetAnimationInterval(SWIGTYPE_p_FbxTimeSpan pTimeInterval) {
-    bool ret = fbx_wrapperPINVOKE.FbxAnimCurveNode_GetAnimationInterval(swigCPtr, SWIGTYPE_p_FbxTimeSpan.getCPtr(pTimeInterval));
+  public bool GetAnimationInterval(FbxTimeSpan pTimeInterval) {
+    bool ret = fbx_wrapperPINVOKE.FbxAnimCurveNode_GetAnimationInterval(swigCPtr, FbxTimeSpan.getCPtr(pTimeInterval));
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }
@@ -108,8 +108,8 @@ public class FbxAnimCurveNode : FbxObject {
     return ret;
   }
 
-  public SWIGTYPE_p_FbxString GetChannelName(int pChannelId) {
-    SWIGTYPE_p_FbxString ret = new SWIGTYPE_p_FbxString(fbx_wrapperPINVOKE.FbxAnimCurveNode_GetChannelName(swigCPtr, pChannelId), true);
+  public FbxString GetChannelName(int pChannelId) {
+    FbxString ret = new FbxString(fbx_wrapperPINVOKE.FbxAnimCurveNode_GetChannelName(swigCPtr, pChannelId), true);
     return ret;
   }
 
@@ -117,46 +117,46 @@ public class FbxAnimCurveNode : FbxObject {
     fbx_wrapperPINVOKE.FbxAnimCurveNode_ResetChannels(swigCPtr);
   }
 
-  public bool DisconnectFromChannel(SWIGTYPE_p_FbxAnimCurve pCurve, uint pChnlId) {
-    bool ret = fbx_wrapperPINVOKE.FbxAnimCurveNode_DisconnectFromChannel(swigCPtr, SWIGTYPE_p_FbxAnimCurve.getCPtr(pCurve), pChnlId);
+  public bool DisconnectFromChannel(FbxAnimCurve pCurve, uint pChnlId) {
+    bool ret = fbx_wrapperPINVOKE.FbxAnimCurveNode_DisconnectFromChannel(swigCPtr, FbxAnimCurve.getCPtr(pCurve), pChnlId);
     return ret;
   }
 
-  public bool ConnectToChannel(SWIGTYPE_p_FbxAnimCurve pCurve, string pChnl, bool pInFront) {
-    bool ret = fbx_wrapperPINVOKE.FbxAnimCurveNode_ConnectToChannel__SWIG_0(swigCPtr, SWIGTYPE_p_FbxAnimCurve.getCPtr(pCurve), pChnl, pInFront);
+  public bool ConnectToChannel(FbxAnimCurve pCurve, string pChnl, bool pInFront) {
+    bool ret = fbx_wrapperPINVOKE.FbxAnimCurveNode_ConnectToChannel__SWIG_0(swigCPtr, FbxAnimCurve.getCPtr(pCurve), pChnl, pInFront);
     return ret;
   }
 
-  public bool ConnectToChannel(SWIGTYPE_p_FbxAnimCurve pCurve, string pChnl) {
-    bool ret = fbx_wrapperPINVOKE.FbxAnimCurveNode_ConnectToChannel__SWIG_1(swigCPtr, SWIGTYPE_p_FbxAnimCurve.getCPtr(pCurve), pChnl);
+  public bool ConnectToChannel(FbxAnimCurve pCurve, string pChnl) {
+    bool ret = fbx_wrapperPINVOKE.FbxAnimCurveNode_ConnectToChannel__SWIG_1(swigCPtr, FbxAnimCurve.getCPtr(pCurve), pChnl);
     return ret;
   }
 
-  public bool ConnectToChannel(SWIGTYPE_p_FbxAnimCurve pCurve, uint pChnlId, bool pInFront) {
-    bool ret = fbx_wrapperPINVOKE.FbxAnimCurveNode_ConnectToChannel__SWIG_2(swigCPtr, SWIGTYPE_p_FbxAnimCurve.getCPtr(pCurve), pChnlId, pInFront);
+  public bool ConnectToChannel(FbxAnimCurve pCurve, uint pChnlId, bool pInFront) {
+    bool ret = fbx_wrapperPINVOKE.FbxAnimCurveNode_ConnectToChannel__SWIG_2(swigCPtr, FbxAnimCurve.getCPtr(pCurve), pChnlId, pInFront);
     return ret;
   }
 
-  public bool ConnectToChannel(SWIGTYPE_p_FbxAnimCurve pCurve, uint pChnlId) {
-    bool ret = fbx_wrapperPINVOKE.FbxAnimCurveNode_ConnectToChannel__SWIG_3(swigCPtr, SWIGTYPE_p_FbxAnimCurve.getCPtr(pCurve), pChnlId);
+  public bool ConnectToChannel(FbxAnimCurve pCurve, uint pChnlId) {
+    bool ret = fbx_wrapperPINVOKE.FbxAnimCurveNode_ConnectToChannel__SWIG_3(swigCPtr, FbxAnimCurve.getCPtr(pCurve), pChnlId);
     return ret;
   }
 
-  public SWIGTYPE_p_FbxAnimCurve CreateCurve(string pCurveNodeName, string pChannel) {
+  public FbxAnimCurve CreateCurve(string pCurveNodeName, string pChannel) {
     global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxAnimCurveNode_CreateCurve__SWIG_0(swigCPtr, pCurveNodeName, pChannel);
-    SWIGTYPE_p_FbxAnimCurve ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxAnimCurve(cPtr, false);
+    FbxAnimCurve ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxAnimCurve(cPtr, false);
     return ret;
   }
 
-  public SWIGTYPE_p_FbxAnimCurve CreateCurve(string pCurveNodeName, uint pChannelId) {
+  public FbxAnimCurve CreateCurve(string pCurveNodeName, uint pChannelId) {
     global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxAnimCurveNode_CreateCurve__SWIG_1(swigCPtr, pCurveNodeName, pChannelId);
-    SWIGTYPE_p_FbxAnimCurve ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxAnimCurve(cPtr, false);
+    FbxAnimCurve ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxAnimCurve(cPtr, false);
     return ret;
   }
 
-  public SWIGTYPE_p_FbxAnimCurve CreateCurve(string pCurveNodeName) {
+  public FbxAnimCurve CreateCurve(string pCurveNodeName) {
     global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxAnimCurveNode_CreateCurve__SWIG_2(swigCPtr, pCurveNodeName);
-    SWIGTYPE_p_FbxAnimCurve ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxAnimCurve(cPtr, false);
+    FbxAnimCurve ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxAnimCurve(cPtr, false);
     return ret;
   }
 
@@ -170,21 +170,21 @@ public class FbxAnimCurveNode : FbxObject {
     return ret;
   }
 
-  public SWIGTYPE_p_FbxAnimCurve GetCurve(uint pChannelId, uint pId, string pCurveNodeName) {
+  public FbxAnimCurve GetCurve(uint pChannelId, uint pId, string pCurveNodeName) {
     global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxAnimCurveNode_GetCurve__SWIG_0(swigCPtr, pChannelId, pId, pCurveNodeName);
-    SWIGTYPE_p_FbxAnimCurve ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxAnimCurve(cPtr, false);
+    FbxAnimCurve ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxAnimCurve(cPtr, false);
     return ret;
   }
 
-  public SWIGTYPE_p_FbxAnimCurve GetCurve(uint pChannelId, uint pId) {
+  public FbxAnimCurve GetCurve(uint pChannelId, uint pId) {
     global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxAnimCurveNode_GetCurve__SWIG_1(swigCPtr, pChannelId, pId);
-    SWIGTYPE_p_FbxAnimCurve ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxAnimCurve(cPtr, false);
+    FbxAnimCurve ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxAnimCurve(cPtr, false);
     return ret;
   }
 
-  public SWIGTYPE_p_FbxAnimCurve GetCurve(uint pChannelId) {
+  public FbxAnimCurve GetCurve(uint pChannelId) {
     global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxAnimCurveNode_GetCurve__SWIG_2(swigCPtr, pChannelId);
-    SWIGTYPE_p_FbxAnimCurve ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxAnimCurve(cPtr, false);
+    FbxAnimCurve ret = (cPtr == global::System.IntPtr.Zero) ? null : new FbxAnimCurve(cPtr, false);
     return ret;
   }
 
@@ -199,8 +199,8 @@ public class FbxAnimCurveNode : FbxObject {
     return ret;
   }
 
-  public static bool EvaluateChannels(FbxAnimCurveNode pCurveNode, SWIGTYPE_p_double pData, uint pCount, SWIGTYPE_p_FbxTime pTime) {
-    bool ret = fbx_wrapperPINVOKE.FbxAnimCurveNode_EvaluateChannels(FbxAnimCurveNode.getCPtr(pCurveNode), SWIGTYPE_p_double.getCPtr(pData), pCount, SWIGTYPE_p_FbxTime.getCPtr(pTime));
+  public static bool EvaluateChannels(FbxAnimCurveNode pCurveNode, SWIGTYPE_p_double pData, uint pCount, FbxTime pTime) {
+    bool ret = fbx_wrapperPINVOKE.FbxAnimCurveNode_EvaluateChannels(FbxAnimCurveNode.getCPtr(pCurveNode), SWIGTYPE_p_double.getCPtr(pData), pCount, FbxTime.getCPtr(pTime));
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
     return ret;
   }

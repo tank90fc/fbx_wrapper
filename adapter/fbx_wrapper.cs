@@ -115,6 +115,246 @@ public class fbx_wrapper {
     return ret;
   }
 
+  public static void FbxUTF8ToWC(string pInUTF8, SWIGTYPE_p_p_wchar_t pOutWideChar, SWIGTYPE_p_size_t pOutWideCharSize) {
+    fbx_wrapperPINVOKE.FbxUTF8ToWC__SWIG_0(pInUTF8, SWIGTYPE_p_p_wchar_t.getCPtr(pOutWideChar), SWIGTYPE_p_size_t.getCPtr(pOutWideCharSize));
+    if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public static void FbxUTF8ToWC(string pInUTF8, SWIGTYPE_p_p_wchar_t pOutWideChar) {
+    fbx_wrapperPINVOKE.FbxUTF8ToWC__SWIG_1(pInUTF8, SWIGTYPE_p_p_wchar_t.getCPtr(pOutWideChar));
+    if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public static void FbxWCToUTF8(SWIGTYPE_p_wchar_t pInWideChar, string pOutUTF8, SWIGTYPE_p_size_t pOutUTF8Size) {
+    fbx_wrapperPINVOKE.FbxWCToUTF8__SWIG_0(SWIGTYPE_p_wchar_t.getCPtr(pInWideChar), pOutUTF8, SWIGTYPE_p_size_t.getCPtr(pOutUTF8Size));
+  }
+
+  public static void FbxWCToUTF8(SWIGTYPE_p_wchar_t pInWideChar, string pOutUTF8) {
+    fbx_wrapperPINVOKE.FbxWCToUTF8__SWIG_1(SWIGTYPE_p_wchar_t.getCPtr(pInWideChar), pOutUTF8);
+  }
+
+  public static void FbxWCToAnsi(SWIGTYPE_p_wchar_t pInWideChar, string pOutANSI, SWIGTYPE_p_size_t pOutANSISize) {
+    fbx_wrapperPINVOKE.FbxWCToAnsi__SWIG_0(SWIGTYPE_p_wchar_t.getCPtr(pInWideChar), pOutANSI, SWIGTYPE_p_size_t.getCPtr(pOutANSISize));
+  }
+
+  public static void FbxWCToAnsi(SWIGTYPE_p_wchar_t pInWideChar, string pOutANSI) {
+    fbx_wrapperPINVOKE.FbxWCToAnsi__SWIG_1(SWIGTYPE_p_wchar_t.getCPtr(pInWideChar), pOutANSI);
+  }
+
+  public static void FbxAnsiToWC(string pInANSI, SWIGTYPE_p_p_wchar_t pOutWideChar, SWIGTYPE_p_size_t pOutWideCharSize) {
+    fbx_wrapperPINVOKE.FbxAnsiToWC__SWIG_0(pInANSI, SWIGTYPE_p_p_wchar_t.getCPtr(pOutWideChar), SWIGTYPE_p_size_t.getCPtr(pOutWideCharSize));
+    if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public static void FbxAnsiToWC(string pInANSI, SWIGTYPE_p_p_wchar_t pOutWideChar) {
+    fbx_wrapperPINVOKE.FbxAnsiToWC__SWIG_1(pInANSI, SWIGTYPE_p_p_wchar_t.getCPtr(pOutWideChar));
+    if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public static void FbxAnsiToUTF8(string pInANSI, string pOutUTF8, SWIGTYPE_p_size_t pOutUTF8Size) {
+    fbx_wrapperPINVOKE.FbxAnsiToUTF8__SWIG_0(pInANSI, pOutUTF8, SWIGTYPE_p_size_t.getCPtr(pOutUTF8Size));
+  }
+
+  public static void FbxAnsiToUTF8(string pInANSI, string pOutUTF8) {
+    fbx_wrapperPINVOKE.FbxAnsiToUTF8__SWIG_1(pInANSI, pOutUTF8);
+  }
+
+  public static void FbxUTF8ToAnsi(string pInUTF8, string pOutANSI, SWIGTYPE_p_size_t pOutANSISize) {
+    fbx_wrapperPINVOKE.FbxUTF8ToAnsi__SWIG_0(pInUTF8, pOutANSI, SWIGTYPE_p_size_t.getCPtr(pOutANSISize));
+  }
+
+  public static void FbxUTF8ToAnsi(string pInUTF8, string pOutANSI) {
+    fbx_wrapperPINVOKE.FbxUTF8ToAnsi__SWIG_1(pInUTF8, pOutANSI);
+  }
+
+  public static FbxString add(FbxString pString1, FbxString pString2) {
+    FbxString ret = new FbxString(fbx_wrapperPINVOKE.add__SWIG_0(FbxString.getCPtr(pString1), FbxString.getCPtr(pString2)), true);
+    if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public static FbxString add(FbxString pString, char pChar) {
+    FbxString ret = new FbxString(fbx_wrapperPINVOKE.add__SWIG_1(FbxString.getCPtr(pString), pChar), true);
+    if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public static FbxString add(char pChar, FbxString pString) {
+    FbxString ret = new FbxString(fbx_wrapperPINVOKE.add__SWIG_2(pChar, FbxString.getCPtr(pString)), true);
+    if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public static FbxString add(FbxString pString1, string pString2) {
+    FbxString ret = new FbxString(fbx_wrapperPINVOKE.add__SWIG_3(FbxString.getCPtr(pString1), pString2), true);
+    if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public static FbxString add(string pString1, FbxString pString2) {
+    FbxString ret = new FbxString(fbx_wrapperPINVOKE.add__SWIG_4(pString1, FbxString.getCPtr(pString2)), true);
+    if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public static FbxString add(FbxString pString, int pValue) {
+    FbxString ret = new FbxString(fbx_wrapperPINVOKE.add__SWIG_5(FbxString.getCPtr(pString), pValue), true);
+    if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public static FbxString add(int pValue, FbxString pString) {
+    FbxString ret = new FbxString(fbx_wrapperPINVOKE.add__SWIG_6(pValue, FbxString.getCPtr(pString)), true);
+    if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public static FbxString add(FbxString pString, float pValue) {
+    FbxString ret = new FbxString(fbx_wrapperPINVOKE.add__SWIG_7(FbxString.getCPtr(pString), pValue), true);
+    if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public static FbxString add(float pValue, FbxString pString) {
+    FbxString ret = new FbxString(fbx_wrapperPINVOKE.add__SWIG_8(pValue, FbxString.getCPtr(pString)), true);
+    if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public static FbxString add(FbxString pString, double pValue) {
+    FbxString ret = new FbxString(fbx_wrapperPINVOKE.add__SWIG_9(FbxString.getCPtr(pString), pValue), true);
+    if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
+  public static void FbxRemoveChar(FbxString pString, char pToRemove) {
+    fbx_wrapperPINVOKE.FbxRemoveChar(FbxString.getCPtr(pString), pToRemove);
+    if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public static FbxTime.EMode FbxGetGlobalTimeMode() {
+    FbxTime.EMode ret = (FbxTime.EMode)fbx_wrapperPINVOKE.FbxGetGlobalTimeMode();
+    return ret;
+  }
+
+  public static SWIGTYPE_p_FbxTimeModeObject FbxGetGlobalTimeModeObject() {
+    global::System.IntPtr cPtr = fbx_wrapperPINVOKE.FbxGetGlobalTimeModeObject();
+    SWIGTYPE_p_FbxTimeModeObject ret = (cPtr == global::System.IntPtr.Zero) ? null : new SWIGTYPE_p_FbxTimeModeObject(cPtr, false);
+    return ret;
+  }
+
+  public static FbxTime.EProtocol FbxGetGlobalTimeFormat() {
+    FbxTime.EProtocol ret = (FbxTime.EProtocol)fbx_wrapperPINVOKE.FbxGetGlobalTimeFormat();
+    return ret;
+  }
+
+  public static void FbxSetGlobalTimeMode(FbxTime.EMode pTimeMode, double pFrameRate) {
+    fbx_wrapperPINVOKE.FbxSetGlobalTimeMode__SWIG_0((int)pTimeMode, pFrameRate);
+  }
+
+  public static void FbxSetGlobalTimeFormat(FbxTime.EProtocol pTimeFormat) {
+    fbx_wrapperPINVOKE.FbxSetGlobalTimeFormat((int)pTimeFormat);
+  }
+
+  public static FbxTime FbxTimeSeconds(double pTime) {
+    FbxTime ret = new FbxTime(fbx_wrapperPINVOKE.FbxTimeSeconds__SWIG_0(pTime), true);
+    return ret;
+  }
+
+  public static FbxTime FbxTimeSeconds() {
+    FbxTime ret = new FbxTime(fbx_wrapperPINVOKE.FbxTimeSeconds__SWIG_1(), true);
+    return ret;
+  }
+
+  public static void FbxGetCurrentLocalTime(FbxLocalTime pLocalTime) {
+    fbx_wrapperPINVOKE.FbxGetCurrentLocalTime(FbxLocalTime.getCPtr(pLocalTime));
+    if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+  }
+
+  public static void FbxSetGlobalTimeMode(FbxTime.EMode pTimeMode) {
+    fbx_wrapperPINVOKE.FbxSetGlobalTimeMode__SWIG_1((int)pTimeMode);
+  }
+
+  public static FbxTime.EOldMode FbxGetOldTimeModeCorrespondance(FbxTime.EMode pMode) {
+    FbxTime.EOldMode ret = (FbxTime.EOldMode)fbx_wrapperPINVOKE.FbxGetOldTimeModeCorrespondance((int)pMode);
+    return ret;
+  }
+
+  public static FbxTime.EMode FbxGetTimeModeFromOldValue(FbxTime.EOldMode pOldMode) {
+    FbxTime.EMode ret = (FbxTime.EMode)fbx_wrapperPINVOKE.FbxGetTimeModeFromOldValue((int)pOldMode);
+    return ret;
+  }
+
+  public static FbxTime.EMode FbxGetTimeModeFromFrameRate(string pFrameRate) {
+    FbxTime.EMode ret = (FbxTime.EMode)fbx_wrapperPINVOKE.FbxGetTimeModeFromFrameRate(pFrameRate);
+    return ret;
+  }
+
+  public static void FbxGetControlStringList(string pControlString, FbxTime.EProtocol pTimeFormat) {
+    fbx_wrapperPINVOKE.FbxGetControlStringList(pControlString, (int)pTimeFormat);
+  }
+
+  public static string FbxGetGlobalFrameRateString(FbxTime.EMode pTimeMode) {
+    string ret = fbx_wrapperPINVOKE.FbxGetGlobalFrameRateString((int)pTimeMode);
+    return ret;
+  }
+
+  public static string FbxGetGlobalTimeModeString(FbxTime.EMode pTimeMode) {
+    string ret = fbx_wrapperPINVOKE.FbxGetGlobalTimeModeString((int)pTimeMode);
+    return ret;
+  }
+
+  public static double FbxGetFrameRate(FbxTime.EMode pTimeMode) {
+    double ret = fbx_wrapperPINVOKE.FbxGetFrameRate((int)pTimeMode);
+    return ret;
+  }
+
+  public static FbxTime.EProtocol FbxSelectionToTimeFormat(int pSelection) {
+    FbxTime.EProtocol ret = (FbxTime.EProtocol)fbx_wrapperPINVOKE.FbxSelectionToTimeFormat(pSelection);
+    return ret;
+  }
+
+  public static FbxTime.EMode FbxSelectionToTimeMode(int pSelection) {
+    FbxTime.EMode ret = (FbxTime.EMode)fbx_wrapperPINVOKE.FbxSelectionToTimeMode(pSelection);
+    return ret;
+  }
+
+  public static int FbxTimeToSelection(FbxTime.EMode pTimeMode, int pTimeFormat) {
+    int ret = fbx_wrapperPINVOKE.FbxTimeToSelection__SWIG_0((int)pTimeMode, pTimeFormat);
+    return ret;
+  }
+
+  public static int FbxTimeToSelection(FbxTime.EMode pTimeMode) {
+    int ret = fbx_wrapperPINVOKE.FbxTimeToSelection__SWIG_1((int)pTimeMode);
+    return ret;
+  }
+
+  public static int FbxTimeToSelection() {
+    int ret = fbx_wrapperPINVOKE.FbxTimeToSelection__SWIG_2();
+    return ret;
+  }
+
+  public static string FbxGetTimeModeName(FbxTime.EMode pTimeMode) {
+    string ret = fbx_wrapperPINVOKE.FbxGetTimeModeName((int)pTimeMode);
+    return ret;
+  }
+
+  public static int FbxGetFrameRateStringListIndex(FbxTime.EMode pTimeMode) {
+    int ret = fbx_wrapperPINVOKE.FbxGetFrameRateStringListIndex((int)pTimeMode);
+    return ret;
+  }
+
+  public static bool FbxIsValidCustomFrameRate(double pFramerate) {
+    bool ret = fbx_wrapperPINVOKE.FbxIsValidCustomFrameRate(pFramerate);
+    return ret;
+  }
+
+  public static bool FbxGetNearestCustomFrameRate(double pFramerate, SWIGTYPE_p_double pNearestRate) {
+    bool ret = fbx_wrapperPINVOKE.FbxGetNearestCustomFrameRate(pFramerate, SWIGTYPE_p_double.getCPtr(pNearestRate));
+    if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
+    return ret;
+  }
+
   public static void GetAllAnimCurves(FbxAnimStack pAnimStack, SWIGTYPE_p_FbxArrayT_FbxAnimCurve_p_t pCurves) {
     fbx_wrapperPINVOKE.GetAllAnimCurves__SWIG_0(FbxAnimStack.getCPtr(pAnimStack), SWIGTYPE_p_FbxArrayT_FbxAnimCurve_p_t.getCPtr(pCurves));
     if (fbx_wrapperPINVOKE.SWIGPendingException.Pending) throw fbx_wrapperPINVOKE.SWIGPendingException.Retrieve();
@@ -143,6 +383,11 @@ public class fbx_wrapper {
     return ret;
   }
 
+  public static SWIGTYPE_p_EFbxType FbxTypeOf(FbxTime.EMode arg0) {
+    SWIGTYPE_p_EFbxType ret = new SWIGTYPE_p_EFbxType(fbx_wrapperPINVOKE.FbxTypeOf__SWIG_3((int)arg0), true);
+    return ret;
+  }
+
   public static readonly int _MSC_VER = fbx_wrapperPINVOKE._MSC_VER_get();
   public static readonly int FBXSDK_ENV_WIN = fbx_wrapperPINVOKE.FBXSDK_ENV_WIN_get();
   public static readonly int FBXSDK_ARCH_AMD64 = fbx_wrapperPINVOKE.FBXSDK_ARCH_AMD64_get();
@@ -167,6 +412,9 @@ public class fbx_wrapper {
   public static readonly int FBXSDK_ULONG_MIN = fbx_wrapperPINVOKE.FBXSDK_ULONG_MIN_get();
   public static readonly int FBXSDK_ULONG_MAX = fbx_wrapperPINVOKE.FBXSDK_ULONG_MAX_get();
   public static readonly double FBXSDK_TOLERANCE = fbx_wrapperPINVOKE.FBXSDK_TOLERANCE_get();
+  public static readonly double FBXSDK_TIME_ASSERT_EPSILON = fbx_wrapperPINVOKE.FBXSDK_TIME_ASSERT_EPSILON_get();
+  public static readonly int FBXSDK_TIME_FORWARD = fbx_wrapperPINVOKE.FBXSDK_TIME_FORWARD_get();
+  public static readonly int FBXSDK_TIME_BACKWARD = fbx_wrapperPINVOKE.FBXSDK_TIME_BACKWARD_get();
   public static readonly bool IOSVisible = fbx_wrapperPINVOKE.IOSVisible_get();
   public static readonly bool IOSHidden = fbx_wrapperPINVOKE.IOSHidden_get();
   public static readonly bool IOSSavable = fbx_wrapperPINVOKE.IOSSavable_get();
@@ -175,6 +423,7 @@ public class fbx_wrapper {
   public static readonly bool IOSDisabled = fbx_wrapperPINVOKE.IOSDisabled_get();
   public static readonly int IOSBinary = fbx_wrapperPINVOKE.IOSBinary_get();
   public static readonly int IOSASCII = fbx_wrapperPINVOKE.IOSASCII_get();
+  public static readonly int FBXSDK_SYSTEM_UNIT_PREDEF_COUNT = fbx_wrapperPINVOKE.FBXSDK_SYSTEM_UNIT_PREDEF_COUNT_get();
   public static readonly string FBXSDK_CURVENODE_TRANSFORM = fbx_wrapperPINVOKE.FBXSDK_CURVENODE_TRANSFORM_get();
   public static readonly string FBXSDK_CURVENODE_TRANSLATION = fbx_wrapperPINVOKE.FBXSDK_CURVENODE_TRANSLATION_get();
   public static readonly string FBXSDK_CURVENODE_ROTATION = fbx_wrapperPINVOKE.FBXSDK_CURVENODE_ROTATION_get();
@@ -188,6 +437,7 @@ public class fbx_wrapper {
   public static readonly string FBXSDK_CURVENODE_COLOR_BLUE = fbx_wrapperPINVOKE.FBXSDK_CURVENODE_COLOR_BLUE_get();
   public static readonly string FBXSDK_TAKENODE_DEFAULT_NAME = fbx_wrapperPINVOKE.FBXSDK_TAKENODE_DEFAULT_NAME_get();
   public static readonly string FBXSDK_ROOTCURVE_DEFAULT_NAME = fbx_wrapperPINVOKE.FBXSDK_ROOTCURVE_DEFAULT_NAME_get();
+  public static readonly string FBXSDK_IO_END_NODE_STR = fbx_wrapperPINVOKE.FBXSDK_IO_END_NODE_STR_get();
 }
 
 }

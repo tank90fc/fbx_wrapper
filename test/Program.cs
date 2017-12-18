@@ -23,25 +23,15 @@ namespace test
     class Program
     {
 
-   
-
-
-        void Run()
-        {
-
-            FbxManager manager = FbxManager.Create();
-            //manager.SetIOSettings()
-            FbxIOSettings ios = FbxIOSettings.Create(manager, "IOSRoot");
-            manager.SetIOSettings(ios);
-
-        }
-
-
         static void Main(string[] args)
         {
-            
-            Program pro = new Program();
-            pro.Run();
+
+            //Program pro = new Program();
+            MyExport aMyExport = new MyExport();
+            aMyExport.Init();
+            aMyExport.CreateDocument();
+            aMyExport.Clear();
+
         }
 
 
