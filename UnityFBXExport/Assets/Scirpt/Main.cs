@@ -18,7 +18,7 @@ public class Main : MonoBehaviour {
 	{
 		if (GUI.Button (new Rect (0, 0, 100, 100), "ExportFBX")) {
 			MyExport myExport = new MyExport ();
-			myExport.Init ();
+			//myExport.Init ();
 			myExport.CreateDocument ();
 			myExport.Clear ();
 		}

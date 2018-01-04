@@ -1,0 +1,1911 @@
+; FBX 7.1.0 project file
+FBXHeaderExtension:  {
+	FBXHeaderVersion: 1003
+	FBXVersion: 7100
+	CreationTimeStamp:  {
+		Version: 1000
+		Year: 2017
+		Month: 11
+		Day: 28
+		Hour: 10
+		Minute: 25
+		Second: 8
+		Millisecond: 414
+	}
+	Creator: "Unity Studio by Chipicao"
+}
+
+GlobalSettings:  {
+	Version: 1000
+	Properties70:  {
+		P: "UpAxis", "int", "Integer", "",1
+		P: "UpAxisSign", "int", "Integer", "",1
+		P: "FrontAxis", "int", "Integer", "",2
+		P: "FrontAxisSign", "int", "Integer", "",1
+		P: "CoordAxis", "int", "Integer", "",0
+		P: "CoordAxisSign", "int", "Integer", "",1
+		P: "OriginalUpAxis", "int", "Integer", "",1
+		P: "OriginalUpAxisSign", "int", "Integer", "",1
+		P: "UnitScaleFactor", "double", "Number", "",2.54
+		P: "OriginalUnitScaleFactor", "double", "Number", "",1.0
+	}
+}
+
+Documents:  {
+	Count: 1
+	Document: 1234567890, "", "Scene" {
+		Properties70:  {
+			P: "SourceObject", "object", "", ""
+			P: "ActiveAnimStackName", "KString", "", "", ""
+		}
+		RootNode: 0
+	}
+}
+
+References:  {
+}
+
+Definitions:  {
+	Version: 100
+	Count: 166
+	ObjectType: "GlobalSettings" {
+		Count: 1
+	}
+	ObjectType: "Model" {
+		Count: 82
+	}
+	ObjectType: "NodeAttribute" {
+		Count: 82
+		PropertyTemplate: "FbxNull" {
+			Properties70:  {
+				P: "Color", "ColorRGB", "Color", "",0.8,0.8,0.8
+				P: "Size", "double", "Number", "",100
+				P: "Look", "enum", "", "",1
+			}
+		}
+	}
+	ObjectType: "Geometry" {
+		Count: 0
+	}
+	ObjectType: "Material" {
+		Count: 0
+	}
+	ObjectType: "Texture" {
+		Count: 0
+	}
+	ObjectType: "Video" {
+		Count: 0
+	}
+	ObjectType: "CollectionExclusive" {
+		Count: 0
+		PropertyTemplate: "FbxDisplayLayer" {
+			Properties70:  {
+				P: "Color", "ColorRGB", "Color", "",0.8,0.8,0.8
+				P: "Show", "bool", "", "",1
+				P: "Freeze", "bool", "", "",0
+				P: "LODBox", "bool", "", "",0
+			}
+		}
+	}
+	ObjectType: "Deformer" {
+		Count: 0
+	}
+	ObjectType: "Pose" {
+		Count: 1
+	}
+}
+
+Objects:  {
+	NodeAttribute: 200056, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 100056, "Model::cf_J_MouthLow", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-4.313747E-23,-0.007999999,0.00585764
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 200073, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 100073, "Model::cf_J_MouthCavity", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-2.460862E-23,-8.895662E-16,-0.015
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 200112, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 100112, "Model::cf_J_EarUp_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0.01660278,0.02125372,-0.01318478
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 200144, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 100144, "Model::cf_J_EarUp_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-0.0166,0.02125372,-0.01318478
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 200242, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 100242, "Model::p_cf_head_bone", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 200249, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 100249, "Model::cf_J_Eye_t_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-0.0317,0,0.0671
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 200256, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 100256, "Model::cf_J_FaceRoot", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-1.058791E-23,-1.776357E-16,2.775557E-18
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 200457, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 100457, "Model::cf_J_ChinTip_s", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-2.092767E-23,-0.01,0.01
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 200471, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 100471, "Model::cf_J_FaceLow_s", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-2.973714E-23,-1.734723E-17,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 200488, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 100488, "Model::cf_J_Eye03_s_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",5.551115E-18,0,0.01798833
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 200520, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 100520, "Model::cf_J_Eye03_s_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0.01798833
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 200581, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 100581, "Model::cf_J_look_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-1.110223E-17,1.065814E-15,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 200602, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 100602, "Model::cf_J_FaceUp_tz", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",2.308988E-17,0.0184,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 200900, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 100900, "Model::cf_J_CheekUp_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0.032,0.04,0.02
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 201037, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 101037, "Model::cf_J_Mouth_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-0.02,1.776357E-16,-0.002
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 201146, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 101146, "Model::cf_J_Eye04_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",5.551115E-18,0,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",20,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 201221, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 101221, "Model::cf_J_ChinLow", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-1.588187E-23,-0.03,-1.665334E-17
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 201356, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 101356, "Model::cf_J_CheekLow_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0.032,0.01,0.01
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 201358, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 101358, "Model::N_Nose", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 201392, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 101392, "Model::cf_J_NoseBridge_s", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,2.220446E-17
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 201413, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 101413, "Model::cf_J_NoseBase_s", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 201474, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 101474, "Model::cf_J_Eye_s_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0,-3.552713E-16,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 201591, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 101591, "Model::cf_J_EarBase_s_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0.068,5.551115E-18,1.110223E-17
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 201611, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 101611, "Model::cf_J_Eye_r_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",5.551115E-18,3.552713E-16,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 201618, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 101618, "Model::cf_J_EarRing_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0,7.105427E-16,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 201659, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 101659, "Model::cf_J_Eye_s_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 201680, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 101680, "Model::cf_J_Mouthup", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-2.196164E-23,0.007,0.01
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 202010, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 102010, "Model::cf_J_EarLow_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0.001127107,-0.0117,0.001712843
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 202024, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 102024, "Model::cf_J_FaceBase", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-1.005852E-22,0.02,0.006
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 202074, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 102074, "Model::cf_J_Eye03_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",5.551115E-18,0,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,50,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 202092, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 102092, "Model::cf_J_EyePos_rz_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",4.440892E-17,-1.421085E-15,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 202101, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 102101, "Model::cf_J_MayuMid_s_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-0.015,3.552713E-16,0.0007499999
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,-2,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 202104, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 102104, "Model::cf_J_CheekLow_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-0.032,0.01,0.01
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 202118, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 102118, "Model::cf_J_Nose_t", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",6.352747E-23,-1.065814E-15,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 202161, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 102161, "Model::cf_J_Eye04_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",5.551115E-18,0,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",20,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 202183, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 102183, "Model::cf_J_MouthBase_tr", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-6.203854E-25,7.105427E-16,0.04
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 202185, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 102185, "Model::cf_J_EarBase_s_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-0.068,0,1.110223E-17
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 202191, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 102191, "Model::cf_J_eye_rs_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",1.110223E-17,0,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 202219, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 102219, "Model::cf_J_pupil_s_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-2.775557E-17,0,0.0173
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 202333, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 102333, "Model::cf_J_EarRing_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 202430, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 102430, "Model::cf_J_EarLow_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-0.0011,-0.0117,0.001712843
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 202432, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 102432, "Model::cf_J_Eye04_s_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-5.551115E-18,0,0.01798833
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 202488, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 102488, "Model::cf_J_Mayu_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0.0325,0.02,0.09229999
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,10,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 202541, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 102541, "Model::cf_J_Chin_rs", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-1.641126E-22,-0.025,0.0269
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 202643, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 102643, "Model::cf_J_FaceUp_ty", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-2.308992E-17,0.03,5.551115E-18
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 202695, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 102695, "Model::cf_J_Eye_t_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0.0317,0,0.0671
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 202709, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 102709, "Model::cf_J_Eye02_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",5.551115E-18,0,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",-20,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 202732, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 102732, "Model::cf_J_NoseBridge_t", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-1.16467E-22,0.031,0.011
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 202803, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 102803, "Model::cf_J_MouthBase_s", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,-1.110223E-17
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 202882, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 102882, "Model::cf_J_Eye01_s_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",1.110223E-17,0,0.01798833
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 202888, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 102888, "Model::N_Megane", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",4.118946E-08,0.01,-0.08999999
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",-1.734267E-12,8.917128E-20,-5.536322E-19
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 203023, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 103023, "Model::cf_J_look_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 203178, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 103178, "Model::N_Earring_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,30,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 203292, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 103292, "Model::cf_J_pupil_s_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0.0173
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 203326, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 103326, "Model::cf_J_CheekUp_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-0.032,0.04,0.02
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 203328, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 103328, "Model::cf_J_EyePos_rz_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",3.330669E-17,3.552713E-16,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 203344, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 103344, "Model::cf_J_Eye04_s_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-5.551115E-18,-1.776357E-16,0.01798833
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 203346, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 103346, "Model::cf_J_Eye01_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",5.551115E-18,0,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,-35,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 203391, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 103391, "Model::cf_J_NoseBase_trs", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-6.352747E-23,0.0134,0.07929999
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 203432, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 103432, "Model::cf_J_megane", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",1.654361E-23,3.552713E-16,-1.110223E-17
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 203437, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 103437, "Model::N_Mouth", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 203440, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 103440, "Model::cf_J_MayuTip_s_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0.015,7.105427E-16,2.220446E-17
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,-2,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 203517, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 103517, "Model::cf_J_Eye02_s_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-5.551115E-18,1.776357E-16,0.01798833
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 203522, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 103522, "Model::cf_J_Eye01_s_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-1.110223E-17,3.552713E-16,0.01798833
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 203641, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 103641, "Model::cf_J_NoseWing_tx_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0.007999999,-0.004469228,0.011
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 203647, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 103647, "Model::cf_J_Mouth_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0.02,1.776357E-16,-0.002
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 203710, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 103710, "Model::cf_J_Eye02_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",5.551115E-18,0,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",-20,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 203752, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 103752, "Model::cf_J_Eye_r_L", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 203765, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 103765, "Model::N_Earring_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0,0,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,-30,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 203832, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 103832, "Model::cf_J_eye_rs_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-5.551115E-18,-7.105427E-16,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 203869, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 103869, "Model::cf_J_MayuMid_s_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",0.015,0,0.0007499999
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,-2,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 203925, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 103925, "Model::cf_J_Eye03_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",5.551115E-18,0,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,-50,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 203928, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 103928, "Model::cf_J_MayuTip_s_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-0.015,0,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,-2,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 203962, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 103962, "Model::cf_J_Mayu_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-0.0325,0.02,0.09229999
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,-10,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 203982, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 103982, "Model::cf_J_Nose_tip", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-5.293956E-24,0,0.0135
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 204044, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 104044, "Model::cf_J_NoseWing_tx_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-0.007999999,-0.004469228,0.011
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 204054, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 104054, "Model::cf_J_Eye02_s_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-1.665334E-17,1.776357E-16,0.01798833
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 204066, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 104066, "Model::N_Head", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-4.963083E-25,0,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,-1.516607E-21,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 204068, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 104068, "Model::cf_J_MouthMove", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-3.432799E-24,-6.938893E-19,-4.440892E-17
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 204106, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 104106, "Model::cf_J_Nose_r", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",2.757374E-09,-1.065814E-15,0.013
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 204125, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 104125, "Model::cf_J_Eye01_R", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",5.551115E-18,0,0
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,35,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	NodeAttribute: 204156, "NodeAttribute::", "Null" {
+		TypeFlags: "Null"
+	}
+	Model: 104156, "Model::cf_J_FaceLowBase", "Null" {
+		Version: 232
+		Properties70:  {
+			P: "InheritType", "enum", "", "",1
+			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
+			P: "DefaultAttributeIndex", "int", "Integer", "",0
+			P: "Lcl Translation", "Lcl Translation", "", "A",-1.787537E-22,-0.0145,0.044
+			P: "Lcl Rotation", "Lcl Rotation", "", "A",0,0,0
+			P: "Lcl Scaling", "Lcl Scaling", "", "A",1,1,1
+		}
+		Shading: T
+		Culling: "CullingOff"
+	}
+	Pose: 5123456789, "Pose::BIND_POSES", "BindPose" {
+		Type: "BindPose"
+		Version: 100
+		NbPoseNodes: 0
+	}
+}
+
+Connections:  {
+
+	;NodeAttribute::, Model::cf_J_MouthLow
+	C: "OO",200056,100056
+
+	;Model::cf_J_MouthLow, Model::cf_J_MouthMove
+	C: "OO",100056,104068
+
+	;NodeAttribute::, Model::cf_J_MouthCavity
+	C: "OO",200073,100073
+
+	;Model::cf_J_MouthCavity, Model::cf_J_MouthBase_tr
+	C: "OO",100073,102183
+
+	;NodeAttribute::, Model::cf_J_EarUp_L
+	C: "OO",200112,100112
+
+	;Model::cf_J_EarUp_L, Model::cf_J_EarBase_s_L
+	C: "OO",100112,101591
+
+	;NodeAttribute::, Model::cf_J_EarUp_R
+	C: "OO",200144,100144
+
+	;Model::cf_J_EarUp_R, Model::cf_J_EarBase_s_R
+	C: "OO",100144,102185
+
+	;NodeAttribute::, Model::p_cf_head_bone
+	C: "OO",200242,100242
+
+	;Model::p_cf_head_bone, Model::RootNode
+	C: "OO",100242,0
+
+	;NodeAttribute::, Model::cf_J_Eye_t_R
+	C: "OO",200249,100249
+
+	;Model::cf_J_Eye_t_R, Model::cf_J_FaceUp_tz
+	C: "OO",100249,100602
+
+	;NodeAttribute::, Model::cf_J_FaceRoot
+	C: "OO",200256,100256
+
+	;Model::cf_J_FaceRoot, Model::p_cf_head_bone
+	C: "OO",100256,100242
+
+	;NodeAttribute::, Model::cf_J_ChinTip_s
+	C: "OO",200457,100457
+
+	;Model::cf_J_ChinTip_s, Model::cf_J_Chin_rs
+	C: "OO",100457,102541
+
+	;NodeAttribute::, Model::cf_J_FaceLow_s
+	C: "OO",200471,100471
+
+	;Model::cf_J_FaceLow_s, Model::cf_J_FaceLowBase
+	C: "OO",100471,104156
+
+	;NodeAttribute::, Model::cf_J_Eye03_s_R
+	C: "OO",200488,100488
+
+	;Model::cf_J_Eye03_s_R, Model::cf_J_Eye03_R
+	C: "OO",100488,103925
+
+	;NodeAttribute::, Model::cf_J_Eye03_s_L
+	C: "OO",200520,100520
+
+	;Model::cf_J_Eye03_s_L, Model::cf_J_Eye03_L
+	C: "OO",100520,102074
+
+	;NodeAttribute::, Model::cf_J_look_L
+	C: "OO",200581,100581
+
+	;Model::cf_J_look_L, Model::cf_J_EyePos_rz_L
+	C: "OO",100581,102092
+
+	;NodeAttribute::, Model::cf_J_FaceUp_tz
+	C: "OO",200602,100602
+
+	;Model::cf_J_FaceUp_tz, Model::cf_J_FaceUp_ty
+	C: "OO",100602,102643
+
+	;NodeAttribute::, Model::cf_J_CheekUp_L
+	C: "OO",200900,100900
+
+	;Model::cf_J_CheekUp_L, Model::cf_J_FaceLow_s
+	C: "OO",100900,100471
+
+	;NodeAttribute::, Model::cf_J_Mouth_R
+	C: "OO",201037,101037
+
+	;Model::cf_J_Mouth_R, Model::cf_J_MouthMove
+	C: "OO",101037,104068
+
+	;NodeAttribute::, Model::cf_J_Eye04_R
+	C: "OO",201146,101146
+
+	;Model::cf_J_Eye04_R, Model::cf_J_Eye_r_R
+	C: "OO",101146,101611
+
+	;NodeAttribute::, Model::cf_J_ChinLow
+	C: "OO",201221,101221
+
+	;Model::cf_J_ChinLow, Model::cf_J_FaceLow_s
+	C: "OO",101221,100471
+
+	;NodeAttribute::, Model::cf_J_CheekLow_L
+	C: "OO",201356,101356
+
+	;Model::cf_J_CheekLow_L, Model::cf_J_FaceLow_s
+	C: "OO",101356,100471
+
+	;NodeAttribute::, Model::N_Nose
+	C: "OO",201358,101358
+
+	;Model::N_Nose, Model::cf_J_Nose_tip
+	C: "OO",101358,103982
+
+	;NodeAttribute::, Model::cf_J_NoseBridge_s
+	C: "OO",201392,101392
+
+	;Model::cf_J_NoseBridge_s, Model::cf_J_NoseBridge_t
+	C: "OO",101392,102732
+
+	;NodeAttribute::, Model::cf_J_NoseBase_s
+	C: "OO",201413,101413
+
+	;Model::cf_J_NoseBase_s, Model::cf_J_NoseBase_trs
+	C: "OO",101413,103391
+
+	;NodeAttribute::, Model::cf_J_Eye_s_R
+	C: "OO",201474,101474
+
+	;Model::cf_J_Eye_s_R, Model::cf_J_Eye_t_R
+	C: "OO",101474,100249
+
+	;NodeAttribute::, Model::cf_J_EarBase_s_L
+	C: "OO",201591,101591
+
+	;Model::cf_J_EarBase_s_L, Model::cf_J_FaceUp_ty
+	C: "OO",101591,102643
+
+	;NodeAttribute::, Model::cf_J_Eye_r_R
+	C: "OO",201611,101611
+
+	;Model::cf_J_Eye_r_R, Model::cf_J_Eye_s_R
+	C: "OO",101611,101474
+
+	;NodeAttribute::, Model::cf_J_EarRing_L
+	C: "OO",201618,101618
+
+	;Model::cf_J_EarRing_L, Model::cf_J_EarLow_L
+	C: "OO",101618,102010
+
+	;NodeAttribute::, Model::cf_J_Eye_s_L
+	C: "OO",201659,101659
+
+	;Model::cf_J_Eye_s_L, Model::cf_J_Eye_t_L
+	C: "OO",101659,102695
+
+	;NodeAttribute::, Model::cf_J_Mouthup
+	C: "OO",201680,101680
+
+	;Model::cf_J_Mouthup, Model::cf_J_MouthMove
+	C: "OO",101680,104068
+
+	;NodeAttribute::, Model::cf_J_EarLow_L
+	C: "OO",202010,102010
+
+	;Model::cf_J_EarLow_L, Model::cf_J_EarBase_s_L
+	C: "OO",102010,101591
+
+	;NodeAttribute::, Model::cf_J_FaceBase
+	C: "OO",202024,102024
+
+	;Model::cf_J_FaceBase, Model::cf_J_FaceRoot
+	C: "OO",102024,100256
+
+	;NodeAttribute::, Model::cf_J_Eye03_L
+	C: "OO",202074,102074
+
+	;Model::cf_J_Eye03_L, Model::cf_J_Eye_r_L
+	C: "OO",102074,103752
+
+	;NodeAttribute::, Model::cf_J_EyePos_rz_L
+	C: "OO",202092,102092
+
+	;Model::cf_J_EyePos_rz_L, Model::cf_J_Eye_s_L
+	C: "OO",102092,101659
+
+	;NodeAttribute::, Model::cf_J_MayuMid_s_L
+	C: "OO",202101,102101
+
+	;Model::cf_J_MayuMid_s_L, Model::cf_J_Mayu_L
+	C: "OO",102101,102488
+
+	;NodeAttribute::, Model::cf_J_CheekLow_R
+	C: "OO",202104,102104
+
+	;Model::cf_J_CheekLow_R, Model::cf_J_FaceLow_s
+	C: "OO",102104,100471
+
+	;NodeAttribute::, Model::cf_J_Nose_t
+	C: "OO",202118,102118
+
+	;Model::cf_J_Nose_t, Model::cf_J_Nose_r
+	C: "OO",102118,104106
+
+	;NodeAttribute::, Model::cf_J_Eye04_L
+	C: "OO",202161,102161
+
+	;Model::cf_J_Eye04_L, Model::cf_J_Eye_r_L
+	C: "OO",102161,103752
+
+	;NodeAttribute::, Model::cf_J_MouthBase_tr
+	C: "OO",202183,102183
+
+	;Model::cf_J_MouthBase_tr, Model::cf_J_FaceLowBase
+	C: "OO",102183,104156
+
+	;NodeAttribute::, Model::cf_J_EarBase_s_R
+	C: "OO",202185,102185
+
+	;Model::cf_J_EarBase_s_R, Model::cf_J_FaceUp_ty
+	C: "OO",102185,102643
+
+	;NodeAttribute::, Model::cf_J_eye_rs_L
+	C: "OO",202191,102191
+
+	;Model::cf_J_eye_rs_L, Model::cf_J_look_L
+	C: "OO",102191,100581
+
+	;NodeAttribute::, Model::cf_J_pupil_s_R
+	C: "OO",202219,102219
+
+	;Model::cf_J_pupil_s_R, Model::cf_J_eye_rs_R
+	C: "OO",102219,103832
+
+	;NodeAttribute::, Model::cf_J_EarRing_R
+	C: "OO",202333,102333
+
+	;Model::cf_J_EarRing_R, Model::cf_J_EarLow_R
+	C: "OO",102333,102430
+
+	;NodeAttribute::, Model::cf_J_EarLow_R
+	C: "OO",202430,102430
+
+	;Model::cf_J_EarLow_R, Model::cf_J_EarBase_s_R
+	C: "OO",102430,102185
+
+	;NodeAttribute::, Model::cf_J_Eye04_s_R
+	C: "OO",202432,102432
+
+	;Model::cf_J_Eye04_s_R, Model::cf_J_Eye04_R
+	C: "OO",102432,101146
+
+	;NodeAttribute::, Model::cf_J_Mayu_L
+	C: "OO",202488,102488
+
+	;Model::cf_J_Mayu_L, Model::cf_J_FaceUp_tz
+	C: "OO",102488,100602
+
+	;NodeAttribute::, Model::cf_J_Chin_rs
+	C: "OO",202541,102541
+
+	;Model::cf_J_Chin_rs, Model::cf_J_FaceLow_s
+	C: "OO",102541,100471
+
+	;NodeAttribute::, Model::cf_J_FaceUp_ty
+	C: "OO",202643,102643
+
+	;Model::cf_J_FaceUp_ty, Model::cf_J_FaceBase
+	C: "OO",102643,102024
+
+	;NodeAttribute::, Model::cf_J_Eye_t_L
+	C: "OO",202695,102695
+
+	;Model::cf_J_Eye_t_L, Model::cf_J_FaceUp_tz
+	C: "OO",102695,100602
+
+	;NodeAttribute::, Model::cf_J_Eye02_R
+	C: "OO",202709,102709
+
+	;Model::cf_J_Eye02_R, Model::cf_J_Eye_r_R
+	C: "OO",102709,101611
+
+	;NodeAttribute::, Model::cf_J_NoseBridge_t
+	C: "OO",202732,102732
+
+	;Model::cf_J_NoseBridge_t, Model::cf_J_NoseBase_trs
+	C: "OO",102732,103391
+
+	;NodeAttribute::, Model::cf_J_MouthBase_s
+	C: "OO",202803,102803
+
+	;Model::cf_J_MouthBase_s, Model::cf_J_MouthBase_tr
+	C: "OO",102803,102183
+
+	;NodeAttribute::, Model::cf_J_Eye01_s_R
+	C: "OO",202882,102882
+
+	;Model::cf_J_Eye01_s_R, Model::cf_J_Eye01_R
+	C: "OO",102882,104125
+
+	;NodeAttribute::, Model::N_Megane
+	C: "OO",202888,102888
+
+	;Model::N_Megane, Model::cf_J_megane
+	C: "OO",102888,103432
+
+	;NodeAttribute::, Model::cf_J_look_R
+	C: "OO",203023,103023
+
+	;Model::cf_J_look_R, Model::cf_J_EyePos_rz_R
+	C: "OO",103023,103328
+
+	;NodeAttribute::, Model::N_Earring_L
+	C: "OO",203178,103178
+
+	;Model::N_Earring_L, Model::cf_J_EarRing_L
+	C: "OO",103178,101618
+
+	;NodeAttribute::, Model::cf_J_pupil_s_L
+	C: "OO",203292,103292
+
+	;Model::cf_J_pupil_s_L, Model::cf_J_eye_rs_L
+	C: "OO",103292,102191
+
+	;NodeAttribute::, Model::cf_J_CheekUp_R
+	C: "OO",203326,103326
+
+	;Model::cf_J_CheekUp_R, Model::cf_J_FaceLow_s
+	C: "OO",103326,100471
+
+	;NodeAttribute::, Model::cf_J_EyePos_rz_R
+	C: "OO",203328,103328
+
+	;Model::cf_J_EyePos_rz_R, Model::cf_J_Eye_s_R
+	C: "OO",103328,101474
+
+	;NodeAttribute::, Model::cf_J_Eye04_s_L
+	C: "OO",203344,103344
+
+	;Model::cf_J_Eye04_s_L, Model::cf_J_Eye04_L
+	C: "OO",103344,102161
+
+	;NodeAttribute::, Model::cf_J_Eye01_L
+	C: "OO",203346,103346
+
+	;Model::cf_J_Eye01_L, Model::cf_J_Eye_r_L
+	C: "OO",103346,103752
+
+	;NodeAttribute::, Model::cf_J_NoseBase_trs
+	C: "OO",203391,103391
+
+	;Model::cf_J_NoseBase_trs, Model::cf_J_FaceBase
+	C: "OO",103391,102024
+
+	;NodeAttribute::, Model::cf_J_megane
+	C: "OO",203432,103432
+
+	;Model::cf_J_megane, Model::cf_J_NoseBridge_t
+	C: "OO",103432,102732
+
+	;NodeAttribute::, Model::N_Mouth
+	C: "OO",203437,103437
+
+	;Model::N_Mouth, Model::cf_J_MouthMove
+	C: "OO",103437,104068
+
+	;NodeAttribute::, Model::cf_J_MayuTip_s_L
+	C: "OO",203440,103440
+
+	;Model::cf_J_MayuTip_s_L, Model::cf_J_Mayu_L
+	C: "OO",103440,102488
+
+	;NodeAttribute::, Model::cf_J_Eye02_s_L
+	C: "OO",203517,103517
+
+	;Model::cf_J_Eye02_s_L, Model::cf_J_Eye02_L
+	C: "OO",103517,103710
+
+	;NodeAttribute::, Model::cf_J_Eye01_s_L
+	C: "OO",203522,103522
+
+	;Model::cf_J_Eye01_s_L, Model::cf_J_Eye01_L
+	C: "OO",103522,103346
+
+	;NodeAttribute::, Model::cf_J_NoseWing_tx_L
+	C: "OO",203641,103641
+
+	;Model::cf_J_NoseWing_tx_L, Model::cf_J_NoseBase_s
+	C: "OO",103641,101413
+
+	;NodeAttribute::, Model::cf_J_Mouth_L
+	C: "OO",203647,103647
+
+	;Model::cf_J_Mouth_L, Model::cf_J_MouthMove
+	C: "OO",103647,104068
+
+	;NodeAttribute::, Model::cf_J_Eye02_L
+	C: "OO",203710,103710
+
+	;Model::cf_J_Eye02_L, Model::cf_J_Eye_r_L
+	C: "OO",103710,103752
+
+	;NodeAttribute::, Model::cf_J_Eye_r_L
+	C: "OO",203752,103752
+
+	;Model::cf_J_Eye_r_L, Model::cf_J_Eye_s_L
+	C: "OO",103752,101659
+
+	;NodeAttribute::, Model::N_Earring_R
+	C: "OO",203765,103765
+
+	;Model::N_Earring_R, Model::cf_J_EarRing_R
+	C: "OO",103765,102333
+
+	;NodeAttribute::, Model::cf_J_eye_rs_R
+	C: "OO",203832,103832
+
+	;Model::cf_J_eye_rs_R, Model::cf_J_look_R
+	C: "OO",103832,103023
+
+	;NodeAttribute::, Model::cf_J_MayuMid_s_R
+	C: "OO",203869,103869
+
+	;Model::cf_J_MayuMid_s_R, Model::cf_J_Mayu_R
+	C: "OO",103869,103962
+
+	;NodeAttribute::, Model::cf_J_Eye03_R
+	C: "OO",203925,103925
+
+	;Model::cf_J_Eye03_R, Model::cf_J_Eye_r_R
+	C: "OO",103925,101611
+
+	;NodeAttribute::, Model::cf_J_MayuTip_s_R
+	C: "OO",203928,103928
+
+	;Model::cf_J_MayuTip_s_R, Model::cf_J_Mayu_R
+	C: "OO",103928,103962
+
+	;NodeAttribute::, Model::cf_J_Mayu_R
+	C: "OO",203962,103962
+
+	;Model::cf_J_Mayu_R, Model::cf_J_FaceUp_tz
+	C: "OO",103962,100602
+
+	;NodeAttribute::, Model::cf_J_Nose_tip
+	C: "OO",203982,103982
+
+	;Model::cf_J_Nose_tip, Model::cf_J_Nose_t
+	C: "OO",103982,102118
+
+	;NodeAttribute::, Model::cf_J_NoseWing_tx_R
+	C: "OO",204044,104044
+
+	;Model::cf_J_NoseWing_tx_R, Model::cf_J_NoseBase_s
+	C: "OO",104044,101413
+
+	;NodeAttribute::, Model::cf_J_Eye02_s_R
+	C: "OO",204054,104054
+
+	;Model::cf_J_Eye02_s_R, Model::cf_J_Eye02_R
+	C: "OO",104054,102709
+
+	;NodeAttribute::, Model::N_Head
+	C: "OO",204066,104066
+
+	;Model::N_Head, Model::cf_J_FaceUp_ty
+	C: "OO",104066,102643
+
+	;NodeAttribute::, Model::cf_J_MouthMove
+	C: "OO",204068,104068
+
+	;Model::cf_J_MouthMove, Model::cf_J_MouthBase_s
+	C: "OO",104068,102803
+
+	;NodeAttribute::, Model::cf_J_Nose_r
+	C: "OO",204106,104106
+
+	;Model::cf_J_Nose_r, Model::cf_J_NoseBase_s
+	C: "OO",104106,101413
+
+	;NodeAttribute::, Model::cf_J_Eye01_R
+	C: "OO",204125,104125
+
+	;Model::cf_J_Eye01_R, Model::cf_J_Eye_r_R
+	C: "OO",104125,101611
+
+	;NodeAttribute::, Model::cf_J_FaceLowBase
+	C: "OO",204156,104156
+
+	;Model::cf_J_FaceLowBase, Model::cf_J_FaceBase
+	C: "OO",104156,102024
+}

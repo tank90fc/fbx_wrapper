@@ -1,0 +1,37 @@
+ManifestFileVersion: 0
+CRC: 3429868137
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: adv/adv_02
+      Dependencies: {}
+    Info_1:
+      Name: def_card
+      Dependencies: {}
+    Info_2:
+      Name: adv/adv_00
+      Dependencies: {}
+    Info_3:
+      Name: pose
+      Dependencies: {}
+    Info_4:
+      Name: h_voice_ritsuko
+      Dependencies: {}
+    Info_5:
+      Name: adv/adv_trial
+      Dependencies: {}
+    Info_6:
+      Name: skybox
+      Dependencies: {}
+    Info_7:
+      Name: adv/adv_00_03
+      Dependencies: {}
+    Info_8:
+      Name: adv/adv_02_01
+      Dependencies: {}
+    Info_9:
+      Name: adv/adv_00_04
+      Dependencies: {}
+    Info_10:
+      Name: adv/adv_00_01
+      Dependencies: {}
